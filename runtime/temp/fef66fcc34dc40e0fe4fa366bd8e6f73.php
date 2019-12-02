@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/v1\view\charts\chart\add.html";i:1575250556;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\layout\dialog.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\meta.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\script.html";i:1575250246;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/v1\view\charts\chart\add.html";i:1575250825;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\layout\dialog.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\meta.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\script.html";i:1575274134;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
 <head>
@@ -73,7 +73,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="password" class="col-sm-3 control-label">排序：</label>
+                    <label for="sort" class="col-sm-3 control-label">排序：</label>
                     <div class="col-sm-9">
                         <input type="text" class="form-control form-control-sm" id="sort"  value=""/>
                     </div>
@@ -136,6 +136,10 @@
 
 <!-- chart js-->
 <script src="/static/assets/dist/js/chart.js"></script>
+<!-- banner.js-->
+<script src="/static/assets/dist/js/banner.js"></script>
+<!-- keyword-->
+<script src="/static/assets/dist/js/keyword.js"></script>
 <script>
     admin_module.changepas();
 </script>

@@ -29,6 +29,15 @@ class Bannerservice
         return self::$instance;
     }
 
+
+    /**
+     * 获取第一涨图
+     */
+    public function getImgsOne(){
+        $banner = Banner::instance()->order('id desc')->find();
+        return $banner;
+    }
+
     /**
      * 列表页
      */

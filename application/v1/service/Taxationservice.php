@@ -27,18 +27,6 @@ class Taxationservice
         return self::$instance;
     }
 
-    /**
-     * 只显示一调数据 前台
-     *
-     * return array
-     */
-     public  function  getOne(){
-         $chart = Taxation::instance()->order('create_time desc')->find();
-         return $chart;
-     }
-
-
-
 
    /**
     * 获取正常数据
@@ -46,6 +34,7 @@ class Taxationservice
    public function getList(){
        $w = ['status'=>1]; //正常
        $list = Taxation::instance()->where($w)->order(['id'=>'desc'])->paginate(15);
+
        return  $list;
    }
 

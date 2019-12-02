@@ -109,7 +109,7 @@
     <div class="bg_banner">
         <div class="w banner">
 
-            <img src="__HOME__/images/bg.png" alt="">
+            <img src="{$banner.imgs}" alt="">
         </div>
     </div>
 
@@ -135,7 +135,7 @@
                     <div class="govPolicy fl">行业资讯</div>
                     <div class="search-box fr">
                         <input type="text" id="keyword" value="{$Think.get.keyword}" placeholder="请输入关键字">
-                        <div id="searched" style="cursor:pointer;" data-url="{:url('/home/index/infoBiao')}">搜索</div>
+                        <div id="searched" style="cursor:pointer;" data-url="{:url('/home/industry/index')}">搜索</div>
                     </div>
                 </div>
 
@@ -146,10 +146,11 @@
                             onclick="location.href=$(this).attr('data-url')">
                             <span>热门关键词</span>
                         </li>
-
+                       {volist name='keywords' id='vo'}
                         <li onclick="hotsearch(this);" data-title="" data-url="{:url('/home/industry/index')}">
-                            <span>111111</span>
+                            <span>{$vo.title}</span>
                         </li>
+                        {/volist}
 
                     </ul>
 
@@ -163,7 +164,7 @@
 
                 <div class="tabs-items show">
                     <ul id="shang">
-                       <!--
+                        {empty name='list'}
                         <li>
                             <div class="tabs-items-content">
                                 <div class="tabs-items-content-text figcaption">
@@ -171,40 +172,45 @@
                                 </div>
                             </div>
                         </li>
-                       -->
+                       {else /}
+                        {volist name='list' id='lo'}
                         <li>
                             <a href="javascript:;"
-                               data-url="{:url('/home/index/getInfo',['mid' => null])}"
+                               data-url="{:url('/home/index/getInfo',['mid' =>$lo.id])}"
                                login_url="{$baseurl}"
-                               loca_url="{:config('curl.website')}/home/index/getInfo?mid=1111"
-                               mobile-phone="{$userinfo['mobile']}" data-id="111"
+                               loca_url="{:config('curl.website')}/home/index/getInfo?mid={$lo.id}"
+                               mobile-phone="{$userinfo['mobile']}" data-id="{$lo.id}"
                                onclick="home_module.show_detail(this)">
                                 <div class="infoItem">
                                     <div class="infoLeft">
-                                        <img src="__HOME__/images/infoItem.jpg" alt="">
+                                        <img src="{$lo.imgs?$lo.imgs:'__HOME__/images/infoItem.jpg'}" alt="">
                                     </div>
 
                                     <div class="infoRight">
                                         <div class="rightTop">
-                                            <div class="itemTitle">1111</div>
+                                            <div class="itemTitle">{$lo.title}</div>
                                             <span class="itemTime">
-                                                <img src="__HOME__/images/shijian2x.png" alt=""><span>2015:10:20</span>
+                                                <img src="__HOME__/images/shijian2x.png" alt=""><span>{$lo.create_time}</span>
                                             </span>
                                         </div>
                                         <p>
-                                       111111111111111111111111111111111111111111111111111111
+                                         {$lo.description|mb_substr='0','45','utf-8'}
                                         </p>
                                     </div>
 
                                 </div>
                             </a>
                             <ul class="tags">
-
-
-                                <li onclick="hotsearch(this);" data-title="" data-url="{:url('/home/industry/index')}" >11111</li>
-
+                                {empty name='$lo.keywords'}
+                                {else /}
+                                {foreach name="$lo.keywords" item="key" key="k" }
+                                <li onclick="hotsearch(this);" data-title="{$key}" data-url="{:url('/home/industry/index')}" >{$key}</li>
+                                {/foreach}
+                                {/empty}
                             </ul>
                         </li>
+                        {/volist}
+                        {/empty}
 
                     </ul>
                     <input type="hidden" id="sid" value="{$Think.get.keyword}">

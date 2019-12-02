@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\industry\index.html";i:1575266737;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\industry\index.html";i:1575290527;}*/ ?>
 <!DOCTYPE>
 <html lang="en">
 
@@ -110,7 +110,7 @@
     <div class="bg_banner">
         <div class="w banner">
 
-            <img src="/static/home/images/bg.png" alt="">
+            <img src="<?php echo $banner['imgs']; ?>" alt="">
         </div>
     </div>
 
@@ -136,7 +136,7 @@
                     <div class="govPolicy fl">行业资讯</div>
                     <div class="search-box fr">
                         <input type="text" id="keyword" value="<?php echo \think\Request::instance()->get('keyword'); ?>" placeholder="请输入关键字">
-                        <div id="searched" style="cursor:pointer;" data-url="<?php echo url('/home/index/infoBiao'); ?>">搜索</div>
+                        <div id="searched" style="cursor:pointer;" data-url="<?php echo url('/home/industry/index'); ?>">搜索</div>
                     </div>
                 </div>
 
@@ -147,10 +147,11 @@
                             onclick="location.href=$(this).attr('data-url')">
                             <span>热门关键词</span>
                         </li>
-
+                       <?php if(is_array($keywords) || $keywords instanceof \think\Collection || $keywords instanceof \think\Paginator): $i = 0; $__LIST__ = $keywords;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
                         <li onclick="hotsearch(this);" data-title="" data-url="<?php echo url('/home/industry/index'); ?>">
-                            <span>111111</span>
+                            <span><?php echo $vo['title']; ?></span>
                         </li>
+                        <?php endforeach; endif; else: echo "" ;endif; ?>
 
                     </ul>
 
@@ -164,7 +165,7 @@
 
                 <div class="tabs-items show">
                     <ul id="shang">
-                       <!--
+                        <?php if(empty($list) || (($list instanceof \think\Collection || $list instanceof \think\Paginator ) && $list->isEmpty())): ?>
                         <li>
                             <div class="tabs-items-content">
                                 <div class="tabs-items-content-text figcaption">
@@ -172,40 +173,40 @@
                                 </div>
                             </div>
                         </li>
-                       -->
+                       <?php else: if(is_array($list) || $list instanceof \think\Collection || $list instanceof \think\Paginator): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$lo): $mod = ($i % 2 );++$i;?>
                         <li>
                             <a href="javascript:;"
-                               data-url="<?php echo url('/home/index/getInfo',['mid' => null]); ?>"
+                               data-url="<?php echo url('/home/index/getInfo',['mid' =>$lo['id']]); ?>"
                                login_url="<?php echo $baseurl; ?>"
-                               loca_url="<?php echo config('curl.website'); ?>/home/index/getInfo?mid=1111"
-                               mobile-phone="<?php echo $userinfo['mobile']; ?>" data-id="111"
+                               loca_url="<?php echo config('curl.website'); ?>/home/index/getInfo?mid=<?php echo $lo['id']; ?>"
+                               mobile-phone="<?php echo $userinfo['mobile']; ?>" data-id="<?php echo $lo['id']; ?>"
                                onclick="home_module.show_detail(this)">
                                 <div class="infoItem">
                                     <div class="infoLeft">
-                                        <img src="/static/home/images/infoItem.jpg" alt="">
+                                        <img src="<?php echo !empty($lo['imgs'])?$lo['imgs']:'/static/home/images/infoItem.jpg'; ?>" alt="">
                                     </div>
 
                                     <div class="infoRight">
                                         <div class="rightTop">
-                                            <div class="itemTitle">1111</div>
+                                            <div class="itemTitle"><?php echo $lo['title']; ?></div>
                                             <span class="itemTime">
-                                                <img src="/static/home/images/shijian2x.png" alt=""><span>2015:10:20</span>
+                                                <img src="/static/home/images/shijian2x.png" alt=""><span><?php echo $lo['create_time']; ?></span>
                                             </span>
                                         </div>
                                         <p>
-                                       111111111111111111111111111111111111111111111111111111
+                                         <?php echo mb_substr($lo['description'],'0','45','utf-8'); ?>
                                         </p>
                                     </div>
 
                                 </div>
                             </a>
                             <ul class="tags">
-
-
-                                <li onclick="hotsearch(this);" data-title="" data-url="<?php echo url('/home/industry/index'); ?>" >11111</li>
-
+                                <?php if(empty($lo['keywords']) || (($lo['keywords'] instanceof \think\Collection || $lo['keywords'] instanceof \think\Paginator ) && $lo['keywords']->isEmpty())): else: if(is_array($lo['keywords']) || $lo['keywords'] instanceof \think\Collection || $lo['keywords'] instanceof \think\Paginator): if( count($lo['keywords'])==0 ) : echo "" ;else: foreach($lo['keywords'] as $k=>$key): ?>
+                                <li onclick="hotsearch(this);" data-title="<?php echo $key; ?>" data-url="<?php echo url('/home/industry/index'); ?>" ><?php echo $key; ?></li>
+                                <?php endforeach; endif; else: echo "" ;endif; endif; ?>
                             </ul>
                         </li>
+                        <?php endforeach; endif; else: echo "" ;endif; endif; ?>
 
                     </ul>
                     <input type="hidden" id="sid" value="<?php echo \think\Request::instance()->get('keyword'); ?>">
