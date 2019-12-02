@@ -49,7 +49,7 @@ function editData(id,urls){
    var hrefs = urls +'?mid='+id;
     layer.open({
         type: 2,
-        title: '添加',
+        title: '编辑',
         shadeClose: true,
         shade: 0.8,
         area: ['40%', '50%'],

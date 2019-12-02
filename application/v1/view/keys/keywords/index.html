@@ -8,7 +8,7 @@
         <div class="box-header with-border">
             <button type="button" class="btn btn-sm btn-refresh"><i class="fa fa-refresh"></i></button>
             <button type="button" class="btn bg-purple btn-sm btn-dialog"
-                    id="addusers" data-url="{:url('/v1/keys/keywords/add')}">
+                    id="addkeys" data-url="{:url('/v1/keys/keywords/add')}">
                 <i class="fa fa-plus-circle">添加关键字</i></button>
         </div>
         <div class="box-body">
@@ -20,21 +20,24 @@
                 <th class="text-center">关键字</th>
                 <th class="text-center">操作</th>
                 </thead>
+                {volist name='list' id='vo'}
                 <tbody>
                 <tr>
                     <td class="td-align td-padding">
                         <input type="checkbox" name="box_checked" data-id="" class="data-check_box">
                     </td>
-                    <td class="text-center">111</td>
+                    <td class="text-center">{$vo.title}</td>
 
                     <td class="text-center">
-                        <a href="javascript:void(0)" class="btn btn-info" data-url="" data-id="" onclick="">编辑</a>
+                        <a href="javascript:void(0)" class="btn btn-info" data-url="{:url('/v1/keys/keywords/edit')}"
+                           data-id="{$vo.id}" onclick="editlayer($(this).attr('data-url'),$(this).attr('data-id'))">编辑</a>
 
-                        <a href="javascript:void(0)" class="btn btn-danger" data-url="" data-id="" onclick="">删除</a>
+                        <a href="javascript:void(0)" class="btn btn-danger" data-url="{:url('/v1/keys/keywords/dels')}"
+                           data-id="{$vo.id}" onclick="delkeys($(this).attr('data-url'),$(this).attr('data-id'))">删除</a>
                     </td>
                 </tr>
-
                 </tbody>
+                {/volist}
             </table>
             <div class="pages"></div>
         </div>
