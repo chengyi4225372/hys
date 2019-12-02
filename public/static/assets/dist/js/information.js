@@ -1,7 +1,15 @@
 /**
  * 搜索
  */
- //  todo 未开始
+ $('#btn_search_taxa').click(function(){
+     var title = $('#keyword').val();
+     var urls  = $(this).attr('data-url');
+     if(title == '' || title == undefined || title == 'undefined'){
+         layer.msg('请输入搜索的文字或标题');
+         return false;
+     }
+     window.location.href =urls+'?title='+title;
+ })
 
 
 /**

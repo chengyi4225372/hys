@@ -336,3 +336,51 @@
 =======
 >>>>>>> 960da02c01b7bfe0c4d83d9a2defcb761ecb2a1b
 >>>>>>> 45194cf774920bdb9c64b83a1ef010bfe17343a2
+---------------------------------------------------------------
+[ 2019-12-02T21:11:45+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [2]Missing argument 1 for app\v1\service\Taxationservice::getList(), called in C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php on line 18 and defined[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\service\Taxationservice.php:35]
+---------------------------------------------------------------
+[ 2019-12-02T21:11:46+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [2]Missing argument 1 for app\v1\service\Taxationservice::getList(), called in C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php on line 18 and defined[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\service\Taxationservice.php:35]
+---------------------------------------------------------------
+[ 2019-12-02T21:11:47+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [2]Missing argument 1 for app\v1\service\Taxationservice::getList(), called in C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php on line 18 and defined[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\service\Taxationservice.php:35]
+---------------------------------------------------------------
+[ 2019-12-02T21:11:47+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [2]Missing argument 1 for app\v1\service\Taxationservice::getList(), called in C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php on line 18 and defined[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\service\Taxationservice.php:35]
+---------------------------------------------------------------
+[ 2019-12-02T21:11:48+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [2]Missing argument 1 for app\v1\service\Taxationservice::getList(), called in C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php on line 18 and defined[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\service\Taxationservice.php:35]
+---------------------------------------------------------------
+[ 2019-12-02T21:11:48+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [2]Missing argument 1 for app\v1\service\Taxationservice::getList(), called in C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php on line 18 and defined[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\service\Taxationservice.php:35]
+---------------------------------------------------------------
+[ 2019-12-02T21:12:34+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [2]Missing argument 1 for app\v1\service\Taxationservice::getList(), called in C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php on line 18 and defined[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\service\Taxationservice.php:35]
+---------------------------------------------------------------
+[ 2019-12-02T21:12:35+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [2]Missing argument 1 for app\v1\service\Taxationservice::getList(), called in C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php on line 18 and defined[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\service\Taxationservice.php:35]
+---------------------------------------------------------------
+[ 2019-12-02T21:12:35+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [2]Missing argument 1 for app\v1\service\Taxationservice::getList(), called in C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php on line 18 and defined[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\service\Taxationservice.php:35]
+---------------------------------------------------------------
+[ 2019-12-02T21:12:36+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [2]Missing argument 1 for app\v1\service\Taxationservice::getList(), called in C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php on line 18 and defined[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\service\Taxationservice.php:35]
+---------------------------------------------------------------
+[ 2019-12-02T21:12:41+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [2]Missing argument 1 for app\v1\service\Taxationservice::getList(), called in C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php on line 18 and defined[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\service\Taxationservice.php:35]
+---------------------------------------------------------------
+[ 2019-12-02T21:12:43+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [2]Missing argument 1 for app\v1\service\Taxationservice::getList(), called in C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php on line 18 and defined[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\service\Taxationservice.php:35]
+---------------------------------------------------------------
+[ 2019-12-02T21:12:54+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [2]Missing argument 1 for app\v1\service\Taxationservice::getList(), called in C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php on line 18 and defined[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\service\Taxationservice.php:35]
+---------------------------------------------------------------
+[ 2019-12-02T21:14:14+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'keyword' in 'where clause'[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\db\Connection.php:390]
+---------------------------------------------------------------
+[ 2019-12-02T21:14:24+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'desciption' in 'where clause'[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\db\Connection.php:390]
+---------------------------------------------------------------
+[ 2019-12-02T21:14:25+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'desciption' in 'where clause'[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\db\Connection.php:390]

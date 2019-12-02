@@ -14,14 +14,18 @@ class Industry extends BaseController
 
     public function index(){
        if($this->request->isGet()){
-           //获取关键字
+            $keyword  = input('get.keyword','','trim');
+            $title    = input('get.title','','trim');
+
+            $titles = isset($keyword) ?$keyword:$title;
+           //获取关键字列表
            $keywords = Keywordservice::instance()->getlist();
            $this->assign('keywords',$keywords);
            //首页头图
            $banner = Bannerservice::instance()->getImgsOne();
            $this->assign('banner',$banner);
            //列表
-           $list  = Taxationservice::instance()->getList();
+           $list  = Taxationservice::instance()->getList($titles);
            foreach($list as $key =>$val){
                $list[$key]['keywords'] = explode(',', $list[$key]['keywords']);
            }

@@ -30,11 +30,17 @@ class Taxationservice
 
    /**
     * 获取正常数据
+    * $title
     */
-   public function getList(){
-       $w = ['status'=>1]; //正常
-       $list = Taxation::instance()->where($w)->order(['id'=>'desc'])->paginate(15);
+   public function getList($title){
+       if(!empty($title) || isset($title)){
+           $w['status'] =1;
+           $w['title|keywords|description'] = ['like','%'.$title.'%'];
+       }else {
+           $w = ['status'=>1]; //正常
+       }
 
+       $list = Taxation::instance()->where($w)->order(['id'=>'desc'])->paginate(15);
        return  $list;
    }
 

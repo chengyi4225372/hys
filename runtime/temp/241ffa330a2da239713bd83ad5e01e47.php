@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\industry\index.html";i:1575290527;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\industry\index.html";i:1575292220;}*/ ?>
 <!DOCTYPE>
 <html lang="en">
 
@@ -14,6 +14,7 @@
     <script src="/static/assets/plugins/layui/layui.all.js"></script>
     <script src='/static/home/js/common.js'></script>
     <script src='/static/common/js/public.js'></script>
+    <script src='/static/home/js/industry.js'></script>
 </head>
 
 <body>
@@ -148,7 +149,7 @@
                             <span>热门关键词</span>
                         </li>
                        <?php if(is_array($keywords) || $keywords instanceof \think\Collection || $keywords instanceof \think\Paginator): $i = 0; $__LIST__ = $keywords;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-                        <li onclick="hotsearch(this);" data-title="" data-url="<?php echo url('/home/industry/index'); ?>">
+                        <li onclick="hotsearch(this);" data-title="<?php echo $vo['title']; ?>" data-url="<?php echo url('/home/industry/index'); ?>">
                             <span><?php echo $vo['title']; ?></span>
                         </li>
                         <?php endforeach; endif; else: echo "" ;endif; ?>
@@ -202,7 +203,7 @@
                             </a>
                             <ul class="tags">
                                 <?php if(empty($lo['keywords']) || (($lo['keywords'] instanceof \think\Collection || $lo['keywords'] instanceof \think\Paginator ) && $lo['keywords']->isEmpty())): else: if(is_array($lo['keywords']) || $lo['keywords'] instanceof \think\Collection || $lo['keywords'] instanceof \think\Paginator): if( count($lo['keywords'])==0 ) : echo "" ;else: foreach($lo['keywords'] as $k=>$key): ?>
-                                <li onclick="hotsearch(this);" data-title="<?php echo $key; ?>" data-url="<?php echo url('/home/industry/index'); ?>" ><?php echo $key; ?></li>
+                                <li onclick="hotsearch(this)" data-title="<?php echo $key; ?>" data-url="<?php echo url('/home/industry/index'); ?>" ><?php echo $key; ?></li>
                                 <?php endforeach; endif; else: echo "" ;endif; endif; ?>
                             </ul>
                         </li>

@@ -13,6 +13,7 @@
     <script src="__PUBLIC__/assets/plugins/layui/layui.all.js"></script>
     <script src='__HOME__/js/common.js'></script>
     <script src='__PUBLIC__/common/js/public.js'></script>
+    <script src='__HOME__/js/industry.js'></script>
 </head>
 
 <body>
@@ -147,7 +148,7 @@
                             <span>热门关键词</span>
                         </li>
                        {volist name='keywords' id='vo'}
-                        <li onclick="hotsearch(this);" data-title="" data-url="{:url('/home/industry/index')}">
+                        <li onclick="hotsearch(this);" data-title="{$vo.title}" data-url="{:url('/home/industry/index')}">
                             <span>{$vo.title}</span>
                         </li>
                         {/volist}
@@ -204,7 +205,7 @@
                                 {empty name='$lo.keywords'}
                                 {else /}
                                 {foreach name="$lo.keywords" item="key" key="k" }
-                                <li onclick="hotsearch(this);" data-title="{$key}" data-url="{:url('/home/industry/index')}" >{$key}</li>
+                                <li onclick="hotsearch(this)" data-title="{$key}" data-url="{:url('/home/industry/index')}" >{$key}</li>
                                 {/foreach}
                                 {/empty}
                             </ul>

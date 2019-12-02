@@ -15,8 +15,9 @@ class Taxation extends AuthController
     public function index()
     {
      if($this->request->isGet()){
-        $list = Taxationservice::instance()->getList();
-
+        $title = input('get.title','','trim');
+        $title =  $title?$title:'';
+        $list = Taxationservice::instance()->getList($title);
         $this->assign('list',$list);
         return $this->fetch();
      }
