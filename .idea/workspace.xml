@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1873f386-1c3c-47c3-8e3a-2d8ea2b5d82c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/application/home/view/Programme/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/home/view/Programme/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/home/view/Programme/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/v1/view/common/left.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/v1/view/common/left.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runtime/log/20191202_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/log/20191202_error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runtime/temp/98cd08512ca8cba2c421b12f9e0a2b1f.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/98cd08512ca8cba2c421b12f9e0a2b1f.php" afterDir="false" />
@@ -33,24 +33,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/v1/view/common/left.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="77" column="81" selection-start-line="77" selection-start-column="81" selection-end-line="77" selection-end-column="81" />
+            <state relative-caret-position="289">
+              <caret line="54" column="71" selection-start-line="54" selection-start-column="71" selection-end-line="54" selection-end-column="71" />
               <folding>
                 <element signature="n#li#2;n#ul#0;n#section#0;n#aside#0;n#!!top" />
-                <element signature="n#ul#0;n#li#2;n#ul#0;n#section#0;n#aside#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/home/view/Programme/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+            <state relative-caret-position="25">
+              <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -95,8 +94,8 @@
         <option value="$PROJECT_DIR$/application/home/view/industry/index.html" />
         <option value="$PROJECT_DIR$/application/home/controller/programme.php" />
         <option value="$PROJECT_DIR$/application/home/controller/Programme.php" />
-        <option value="$PROJECT_DIR$/application/v1/view/common/left.html" />
         <option value="$PROJECT_DIR$/application/home/view/Programme/index.html" />
+        <option value="$PROJECT_DIR$/application/v1/view/common/left.html" />
       </list>
     </option>
   </component>
@@ -142,14 +141,6 @@
               <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="home" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hys" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="Programme" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hys" type="b2602c69:ProjectViewProjectNode" />
@@ -202,12 +193,12 @@
       <option name="presentableId" value="Default" />
       <updated>1575008877310</updated>
       <workItem from="1575008878793" duration="8847000" />
-      <workItem from="1575246667534" duration="8728000" />
+      <workItem from="1575246667534" duration="8870000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17575000" />
+    <option name="totallyTimeSpent" value="17717000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -530,21 +521,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/v1/view/common/left.html">
+    <entry file="file://$PROJECT_DIR$/application/home/view/Programme/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="77" column="81" selection-start-line="77" selection-start-column="81" selection-end-line="77" selection-end-column="81" />
-          <folding>
-            <element signature="n#li#2;n#ul#0;n#section#0;n#aside#0;n#!!top" />
-            <element signature="n#ul#0;n#li#2;n#ul#0;n#section#0;n#aside#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="25">
+          <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/home/view/Programme/index.html">
+    <entry file="file://$PROJECT_DIR$/application/v1/view/common/left.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        <state relative-caret-position="289">
+          <caret line="54" column="71" selection-start-line="54" selection-start-column="71" selection-end-line="54" selection-end-column="71" />
+          <folding>
+            <element signature="n#li#2;n#ul#0;n#section#0;n#aside#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>

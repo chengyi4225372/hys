@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:7:{s:110:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/v1\view\charts\chart\index.html";i:1575254788;s:96:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\layout\default.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\meta.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\header.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\left.html";i:1575256654;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\footer.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\script.html";i:1575250246;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:7:{s:110:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/v1\view\charts\chart\index.html";i:1575254788;s:96:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\layout\default.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\meta.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\header.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\left.html";i:1575256821;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\footer.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\script.html";i:1575250246;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -209,17 +209,6 @@
                 </a>
 
                 <ul class="treeview-menu">
-                    <li class="<?php if($paths == '/v1/taxa/taxation/index'): ?>active<?php endif; ?>">
-                        <a href="<?php echo url('/v1/taxa/taxation/index'); ?>">
-                            <i class="glyphicon glyphicon-user"></i> <span>行业资讯</span>
-                            <span class="pull-right-container">
-                              <i class="fa fa-angle-left pull-right"></i>
-                            </span>
-                        </a>
-                    </li>
-                </ul>
-
-                <ul class="treeview-menu">
                     <li class="<?php if($paths == '/v1/charts/chart/index'): ?>active<?php endif; ?>">
                         <a href="<?php echo url('/v1/charts/chart/index'); ?>">
                             <i class="glyphicon glyphicon-user"></i> <span>首页轮播图</span>
@@ -246,7 +235,7 @@
 
             </li>
 
-            <li class="treeview <?php if($paths == '/v1/taxa/taxation/index): ?> active <?php endif; ?> " >
+            <li class="treeview <?php if($paths == '/v1/taxa/taxation/index'): ?> active <?php endif; ?> " >
                 <a href="#">
                     <i class="fa fa-share"></i> <span>行业资讯</span>
 

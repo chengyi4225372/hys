@@ -85,3 +85,12 @@
 ---------------------------------------------------------------
 [ 2019-12-02T11:17:36+08:00 ] 127.0.0.1 GET /v1/charts/chart/index.html
 [ error ] [0]语法解析错误: syntax error, unexpected ''): ?>active<?php endif; ?>">' (T_CONSTANT_ENCAPSED_STRING)[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\98cd08512ca8cba2c421b12f9e0a2b1f.php:260]
+---------------------------------------------------------------
+[ 2019-12-02T11:19:05+08:00 ] 127.0.0.1 GET /v1/charts/chart/index.html
+[ error ] [0]语法解析错误: syntax error, unexpected ''): ?>active<?php endif; ?>">' (T_CONSTANT_ENCAPSED_STRING)[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\98cd08512ca8cba2c421b12f9e0a2b1f.php:260]
+---------------------------------------------------------------
+[ 2019-12-02T11:19:48+08:00 ] 127.0.0.1 GET /v1/charts/chart/index.html
+[ error ] [0]语法解析错误: syntax error, unexpected ''): ?>active<?php endif; ?>">' (T_CONSTANT_ENCAPSED_STRING)[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\98cd08512ca8cba2c421b12f9e0a2b1f.php:249]
+---------------------------------------------------------------
+[ 2019-12-02T11:19:49+08:00 ] 127.0.0.1 GET /v1/charts/chart/index.html
+[ error ] [0]语法解析错误: syntax error, unexpected ''): ?>active<?php endif; ?>">' (T_CONSTANT_ENCAPSED_STRING)[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\98cd08512ca8cba2c421b12f9e0a2b1f.php:249]
