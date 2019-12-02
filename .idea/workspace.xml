@@ -1,28 +1,136 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1873f386-1c3c-47c3-8e3a-2d8ea2b5d82c" name="Default Changelist" comment="" />
+    <list default="true" id="1873f386-1c3c-47c3-8e3a-2d8ea2b5d82c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/hys.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLinters/jshint.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/home/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/home/controller/Index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/home/view/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/home/view/index/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/v1/view/common/left.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/v1/view/common/left.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/cache/ed/e52e2a25c687e7597e604724c976c6.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/0216938f3d01dba2b1fa0294d85abc05.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/04d2eb019d3a100b55629d5103a4304c.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/0646c071fde27190bfbe8728ab277cbe.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/1096785cd2843b4338777353216959a0.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/1718bfe8bd94207e708611a9f8e31168.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/1c02394b5b2c9976310167517a99559f.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/27501ceb617cd1cc0e67ee904cad5852.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/3db5fcd2d6428868286a07be19428d82.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/41aff27be01db13944761359d571fe5c.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/440be2a95e7f3d774f6d0f16442ff79f.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/4ae42f8376225e9b7a26ff01791ff3ca.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/4e88db68405977552e29920e921b048f.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/4f8065d0feb9a53e8c35c039f687ccdc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/50aa41e78f15ff56bfdba857031e38b1.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/590b73b9a37913337aefaa310349cce3.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/5acf27bd37ffa359a9eb00b621fc5de7.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/63f015fa0b426ccb7ea7cedd1e18ee63.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/686276fa161669d104f9c83deca08d38.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/824b87eb59b44dd72ba56c32a10e9639.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/8488bdc71dc98ad63d9e9cf2879cbd94.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/862701ec34d7915f2bebb183abf0d96b.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/87bea152458b950ecd431219174ca8c9.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/8f19d986a18071b3a45c23b7c6740052.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/9378643a4799b7fc5997bbbce0e5b660.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/945f09c82bf54e7e64c962b017b5be7d.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/98cd08512ca8cba2c421b12f9e0a2b1f.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/9aca8d0f9b2d5865d0f2cbc9e761a102.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/9cb09f24dd95333af1fec742051954ce.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/a2a60bbc91f4deefa707b8735284eca6.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/b56a99ec9aebc9f6dd4dda4347acddbc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/b5dfc2df563efd8e729c889121e9405f.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/d61998a171589c2bf38474f2405917ad.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/d69b490a6a4cfc60e2843c9b53f4438c.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/d72a09c247ebb866a46e023cb65b62c6.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/d736a560223380f5ba2f37afd20d2202.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/d80034a455d2cb755a268d04a8b5e75a.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/da9ad1738d104714029dffc4039fcd0d.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/ededeb25671bb033eece11e9bf13ec03.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/eec3f0a86829f985a45e938bd89e2e0e.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/fc43eb112f593b1af4478cc2ab82a207.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/View.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/View.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
     </execution>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/v1/controller/taxa/Taxation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-710">
-              <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+            <state relative-caret-position="-1502">
+              <caret line="53" column="27" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
               <folding>
                 <element signature="e#42#83#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/home/controller/Index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+              <folding>
+                <element signature="e#38#79#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/thinkphp/library/think/Controller.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="119" column="30" selection-start-line="119" selection-start-column="30" selection-end-line="119" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/thinkphp/library/think/View.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="175" column="7" selection-start-line="175" selection-start-column="7" selection-end-line="175" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/v1/view/common/left.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+              <folding>
+                <element signature="n#ul#2;n#li#3;n#ul#0;n#section#0;n#aside#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/home/view/index/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+              <folding>
+                <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -45,21 +153,23 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/application/v1/controller/taxation/Taxation.php" />
-        <option value="$PROJECT_DIR$/thinkphp/library/think/View.php" />
         <option value="$PROJECT_DIR$/application/v1/controller/taxa/Taxation.php" />
-        <option value="$PROJECT_DIR$/application/v1/view/common/left.html" />
         <option value="$PROJECT_DIR$/application/v1/service/Cateservice.php" />
         <option value="$PROJECT_DIR$/application/common/model/Cates.php" />
         <option value="$PROJECT_DIR$/application/v1/view/cate/cates/edit.html" />
         <option value="$PROJECT_DIR$/application/v1/view/cate/cates/index.html" />
         <option value="$PROJECT_DIR$/application/v1/view/cate/cates/add.html" />
-        <option value="$PROJECT_DIR$/application/v1/view/common/script.html" />
         <option value="$PROJECT_DIR$/public/static/assets/dist/js/cates.js" />
         <option value="$PROJECT_DIR$/application/v1/controller/cate/Cates.php" />
+        <option value="$PROJECT_DIR$/application/v1/view/common/script.html" />
+        <option value="$PROJECT_DIR$/application/home/controller/Index.php" />
+        <option value="$PROJECT_DIR$/application/home/view/index/index.html" />
+        <option value="$PROJECT_DIR$/thinkphp/library/think/View.php" />
+        <option value="$PROJECT_DIR$/application/v1/view/common/left.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="15" />
     <option name="width" value="1360" />
     <option name="height" value="728" />
@@ -70,7 +180,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -86,46 +195,73 @@
             <path>
               <item name="hys" type="b2602c69:ProjectViewProjectNode" />
               <item name="hys" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hys" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hys" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hys" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hys" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hys" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hys" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hys" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hys" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hys" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hys" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="v1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hys" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hys" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="v1" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hys" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hys" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="v1" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hys" type="b2602c69:ProjectViewProjectNode" />
               <item name="hys" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hys" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hys" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hys" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -153,24 +289,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1575008877310</updated>
-      <workItem from="1575008878793" duration="8519000" />
+      <workItem from="1575008878793" duration="8847000" />
+      <workItem from="1575246667534" duration="731000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8519000" />
+    <option name="totallyTimeSpent" value="9578000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="15" y="0" width="1360" height="728" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25384617" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -178,40 +311,21 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/thinkphp/library/think/View.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="170" selection-start-line="170" selection-end-line="170" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thinkphp/library/think/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="119" column="30" selection-start-line="119" selection-start-column="30" selection-end-line="119" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/v1/service/Taxationservice.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding>
-            <element signature="e#34#61#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/common/model/Taxation.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -238,16 +352,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/home/controller/Index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/v1/controller/cate/cates/Cates.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/application/v1/controller/cate/cates/Cates.php" />
     <entry file="file://$PROJECT_DIR$/api接口.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -272,17 +377,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/common/model/Cates.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#182#295#0#PHP" />
-            <element signature="e#300#458#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/application/common/model/Cates.php" />
     <entry file="file://$PROJECT_DIR$/application/v1/view/index/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="359">
@@ -290,9 +385,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/v1/view/cate/cates/edit.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/application/v1/view/cate/cates/edit.html" />
     <entry file="file://$PROJECT_DIR$/application/v1/view/protuct/protucts/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="359">
@@ -319,17 +412,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/v1/view/common/left.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-366">
-          <caret line="17" column="143" selection-start-line="17" selection-start-column="143" selection-end-line="17" selection-end-column="143" />
-          <folding>
-            <element signature="n#li#0;n#ul#0;n#li#2;n#ul#0;n#section#0;n#aside#0;n#!!top" />
-            <element signature="n#ul#1;n#li#2;n#ul#0;n#section#0;n#aside#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/static/assets/dist/js/protuct.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -337,57 +419,111 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/assets/dist/js/cates.js">
+    <entry file="file://$PROJECT_DIR$/application/v1/view/cate/cates/add.html" />
+    <entry file="file://$PROJECT_DIR$/application/v1/view/cate/cates/index.html" />
+    <entry file="file://$PROJECT_DIR$/application/v1/controller/cate/Cates.php" />
+    <entry file="file://$PROJECT_DIR$/public/static/assets/dist/js/cates.js" />
+    <entry file="file://$PROJECT_DIR$/application/v1/controller/users/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="31" column="16" lean-forward="true" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+        <state relative-caret-position="200">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/v1/view/cate/cates/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="24" column="52" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="52" />
-          <folding>
-            <element signature="n#style#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/v1/view/cate/cates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="29" column="86" selection-start-line="29" selection-start-column="78" selection-end-line="29" selection-end-column="86" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/v1/controller/cate/Cates.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#41#82#0#PHP" expanded="true" />
-            <element signature="e#575#613#0#PHP" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/application/v1/view/taxa/taxation/add.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/application/v1/view/common/script.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="49" column="9" lean-forward="true" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+        <state relative-caret-position="1125">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/home/controller/Login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2652">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runtime/cache/ed/e52e2a25c687e7597e604724c976c6.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" selection-start-line="1" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/common/controller/BaseController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/v1/service/Taxationservice.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1952">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <folding>
+            <element signature="e#34#61#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/v1/controller/taxa/Taxation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-710">
-          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        <state relative-caret-position="-1502">
+          <caret line="53" column="27" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
           <folding>
             <element signature="e#42#83#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/home/view/index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+          <folding>
+            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/home/controller/Index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+          <folding>
+            <element signature="e#38#79#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thinkphp/library/think/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="119" column="30" selection-start-line="119" selection-start-column="30" selection-end-line="119" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thinkphp/library/think/View.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="175" column="7" selection-start-line="175" selection-start-column="7" selection-end-line="175" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/v1/view/common/left.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="n#ul#2;n#li#3;n#ul#0;n#section#0;n#aside#0;n#!!top" />
           </folding>
         </state>
       </provider>

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:7:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/v1\view\cate\cates\index.html";i:1575018593;s:96:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\layout\default.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\meta.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\header.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\left.html";i:1575017414;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\footer.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\script.html";i:1575018978;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:7:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/v1\view\users\user\index.html";i:1575008787;s:96:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\layout\default.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\meta.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\header.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\left.html";i:1575247398;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\footer.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\script.html";i:1575020502;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -198,23 +198,15 @@
 
             </li>
 
+
             <li class="treeview <?php if($paths == '/v1/taxa/taxation/index' || $paths == '/v1/users/user/index' || $paths == '/v1/cate/cates/index'): ?> active <?php endif; ?> " >
                 <a href="#">
                     <i class="fa fa-share"></i> <span>惠优税</span>
+
                     <span class="pull-right-container">
                       <i class="fa fa-angle-left pull-right"></i>
                     </span>
                 </a>
-                <ul class="treeview-menu">
-                    <li class="<?php if($paths == '/v1/cate/cates/index'): ?>active<?php endif; ?>">
-                        <a href="<?php echo url('/v1/cate/cates/index'); ?>">
-                            <i class="glyphicon glyphicon-user"></i> <span>新闻标题分类</span>
-                            <span class="pull-right-container">
-                              <i class="fa fa-angle-left pull-right"></i>
-                            </span>
-                        </a>
-                    </li>
-                </ul>
 
                 <ul class="treeview-menu">
                     <li class="<?php if($paths == '/v1/taxa/taxation/index'): ?>active<?php endif; ?>">
@@ -253,17 +245,27 @@
 <div class="content" style="margin-bottom:0px;min-height:0px;">
     <div class="row">
         <div class="col-md-12">
-            <form class="form-inline">
+            <form class="form-inline"  id="form">
+
                 <div class="panel panel-default panel-btn">
                     <div class="panel-heading">
                         <div class="form-group">
-                            <input type="text"  class="form-control" name="names" id="names" value="<?php echo \think\Request::instance()->get('names'); ?>" placeholder="请输入产品名称搜索...">
+                            <label>状态：</label>
+                            <select class="form-control" name="status">
+                                <option value="">请选择</option>
+                                <option value="0" <?php if((isset($params['status'])) && ($params['status'] == 0)): ?>selected='selected'<?php endif; ?>>启用</option>
+                                <option value="1" <?php if((isset($params['status'])) && ($params['status'] == 1)): ?>selected='selected'<?php endif; ?>>禁用</option>
+                            </select>
+                        </div>
+
+
+                        <div class="form-group">
+                            <input type="text"  class="form-control" name="username" value="<?php echo $params['username']; ?>" placeholder="多姓名搜索(空格逗号隔开)">
                         </div>
 
                         <div class="form-group">
-                            <button class="btn btn-info" id="btn_search_protuct" type="button"  data-url="<?php echo url('/v1/protuct/protucts/index'); ?>"><i class="glyphicon glyphicon-search" aria-hidden="true"></i>搜索</button>
+                            <button class="btn btn-info" id="btn_search" type="Submit"  data-url="<?php echo url('/v1/users/user/index'); ?>"><i class="glyphicon glyphicon-search" aria-hidden="true"></i>搜索</button>
                         </div>
-
                     </div>
                 </div>
                 <br>
@@ -277,31 +279,39 @@
     <div class="box box-default color-palette-box" style="min-height:700px;">
         <div class="box-header with-border">
             <button type="button" class="btn btn-sm btn-refresh"><i class="fa fa-refresh"></i></button>
-            <button type="button" class="btn bg-purple btn-sm btn-dialog" id="addcates"
-                    data-url="<?php echo url('/v1/cate/cates/add'); ?>">
-                <i class="fa fa-plus-circle">添加</i></button>
+            <button type="button" class="btn bg-purple btn-sm btn-dialog"
+                    id="addusers" data-url="<?php echo url('/v1/users/user/adduser'); ?>">
+                <i class="fa fa-plus-circle">添加用户</i></button>
         </div>
         <div class="box-body">
             <table class="table table-bordered table-hover table-striped">
                 <thead>
-
-                <th class="text-center">新闻分类标题</th>
-                <th class="text-center">创建时间</th>
+                <th class="td-align td-width-40px">
+                    <input class="data-check_box_total" onclick="admin_module.check_out(this)" type="checkbox"/>
+                </th>
+                <th class="text-center">用户</th>
+                <th class="text-center">电话</th>
+                <th class="text-center">邮箱</th>
+                <th class="text-center">状态</th>
                 <th class="text-center">操作</th>
                 </thead>
                 <tbody>
-
+                <?php if(is_array($data_list) || $data_list instanceof \think\Collection || $data_list instanceof \think\Paginator): $i = 0; $__LIST__ = $data_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list): $mod = ($i % 2 );++$i;?>
                 <tr>
-                    <td class="text-center">1111</td>
-                    <td class="text-center">22222</td>
-
+                    <td class="td-align td-padding">
+                        <input type="checkbox" name="box_checked" data-id="<?php echo $list['id']; ?>" class="data-check_box">
+                    </td>
+                    <td class="text-center"><?php echo $list['username']; ?></td>
+                    <td class="text-center"><?php echo $list['tel']; ?></td>
+                    <td class="text-center"><?php echo $list['mail']; ?></td>
                     <td class="text-center">
-                        <a  class="btn btn-info edit_cates" data-url="<?php echo url('/v1/cate/cates/edit'); ?>">编辑</a>
-
-                        <a  class="btn btn-danger del_cates" data-url="<?php echo url('/v1/cate/cates/edit'); ?>">删除</a>
+                        <span class="btn <?php if($list['is_del'] == 0): ?>btn-success<?php else: ?>btn-danger<?php endif; ?>"><?php echo $status[$list['is_del']]; ?></span>
+                    </td>
+                    <td class="text-center">
+                        <a href="javascript:void(0)" class="btn btn-info" data-url="<?php echo url('/v1/users/user/edituser',['id' => $list['id']]); ?>" data-id="" onclick="admin_module.user_edit(this)">编辑</a>
                     </td>
                 </tr>
-
+                <?php endforeach; endif; else: echo "" ;endif; ?>
                 </tbody>
             </table>
             <div class="pages"></div>
@@ -366,8 +376,10 @@
 
 <!-- chart js-->
 <script src="/static/assets/dist/js/chart.js"></script>
-<!-- cates js-->
-<script src="/static/assets/dist/js/cates.js"></script>
+<<<<<<< HEAD
+
+=======
+>>>>>>> 81db3e01dfd51b11218ee092e2fc2f9918861ce9
 <script>
     admin_module.changepas();
 </script>

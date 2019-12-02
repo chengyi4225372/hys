@@ -1,0 +1,57 @@
+---------------------------------------------------------------
+[ 2019-12-02T08:34:03+08:00 ] 127.0.0.1 GET /
+[ error ] [0]语法解析错误: syntax error, unexpected '<<' (T_SL), expecting end of file[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\home\controller\Index.php:5]
+---------------------------------------------------------------
+[ 2019-12-02T08:34:53+08:00 ] 127.0.0.1 GET /
+[ error ] [0]语法解析错误: syntax error, unexpected '<<' (T_SL)[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\View.php:171]
+---------------------------------------------------------------
+[ 2019-12-02T08:34:54+08:00 ] 127.0.0.1 GET /
+[ error ] [0]语法解析错误: syntax error, unexpected '<<' (T_SL)[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\View.php:171]
+---------------------------------------------------------------
+[ 2019-12-02T08:34:54+08:00 ] 127.0.0.1 GET /
+[ error ] [0]语法解析错误: syntax error, unexpected '<<' (T_SL)[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\View.php:171]
+---------------------------------------------------------------
+[ 2019-12-02T08:35:34+08:00 ] 127.0.0.1 GET /
+[ error ] [0]语法解析错误: syntax error, unexpected '<<' (T_SL)[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\View.php:171]
+---------------------------------------------------------------
+[ 2019-12-02T08:35:34+08:00 ] 127.0.0.1 GET /
+[ error ] [0]语法解析错误: syntax error, unexpected '<<' (T_SL)[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\View.php:171]
+---------------------------------------------------------------
+[ 2019-12-02T08:35:35+08:00 ] 127.0.0.1 GET /
+[ error ] [0]语法解析错误: syntax error, unexpected '<<' (T_SL)[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\View.php:171]
+---------------------------------------------------------------
+[ 2019-12-02T08:35:37+08:00 ] 127.0.0.1 GET /
+[ error ] [0]语法解析错误: syntax error, unexpected '<<' (T_SL)[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\View.php:171]
+---------------------------------------------------------------
+[ 2019-12-02T08:35:37+08:00 ] 127.0.0.1 GET /
+[ error ] [0]语法解析错误: syntax error, unexpected '<<' (T_SL)[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\View.php:171]
+---------------------------------------------------------------
+[ 2019-12-02T08:35:38+08:00 ] 127.0.0.1 GET /
+[ error ] [0]语法解析错误: syntax error, unexpected '<<' (T_SL)[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\View.php:171]
+---------------------------------------------------------------
+[ 2019-12-02T08:36:41+08:00 ] 127.0.0.1 GET /v1
+[ error ] [0]语法解析错误: syntax error, unexpected '<<' (T_SL)[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\View.php:171]
+---------------------------------------------------------------
+[ 2019-12-02T08:37:19+08:00 ] 127.0.0.1 GET /v1
+[ error ] [0]语法解析错误: syntax error, unexpected '<<' (T_SL)[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\View.php:171]
+---------------------------------------------------------------
+[ 2019-12-02T08:37:20+08:00 ] 127.0.0.1 GET /v1
+[ error ] [0]语法解析错误: syntax error, unexpected '<<' (T_SL)[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\View.php:171]
+---------------------------------------------------------------
+[ 2019-12-02T08:37:22+08:00 ] 127.0.0.1 GET /
+[ error ] [0]语法解析错误: syntax error, unexpected '<<' (T_SL)[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\View.php:171]
+---------------------------------------------------------------
+[ 2019-12-02T08:38:34+08:00 ] 127.0.0.1 GET /
+[ error ] [0]语法解析错误: syntax error, unexpected '<<' (T_SL)[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\View.php:171]
+---------------------------------------------------------------
+[ 2019-12-02T08:38:35+08:00 ] 127.0.0.1 GET /
+[ error ] [0]语法解析错误: syntax error, unexpected '<<' (T_SL)[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\View.php:171]
+---------------------------------------------------------------
+[ 2019-12-02T08:38:35+08:00 ] 127.0.0.1 GET /
+[ error ] [0]语法解析错误: syntax error, unexpected '<<' (T_SL)[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\View.php:171]
+---------------------------------------------------------------
+[ 2019-12-02T08:38:35+08:00 ] 127.0.0.1 GET /
+[ error ] [0]语法解析错误: syntax error, unexpected '<<' (T_SL)[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\View.php:171]
+---------------------------------------------------------------
+[ 2019-12-02T08:38:36+08:00 ] 127.0.0.1 GET /
+[ error ] [0]语法解析错误: syntax error, unexpected '<<' (T_SL)[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\View.php:171]

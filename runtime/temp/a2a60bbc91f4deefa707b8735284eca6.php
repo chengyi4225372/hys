@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:7:{s:103:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/v1\view\index\index.html";i:1575008787;s:96:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\layout\default.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\meta.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\header.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\left.html";i:1575009525;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\footer.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\script.html";i:1575008787;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:7:{s:103:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/v1\view\index\index.html";i:1575008787;s:96:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\layout\default.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\meta.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\header.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\left.html";i:1575247317;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\footer.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\script.html";i:1575020502;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -198,17 +198,20 @@
 
             </li>
 
-            <li class="treeview <?php if($paths == '/v1/taxation/taxation/index' || $paths == '/v1/users/user/index'): ?> active <?php endif; ?> " >
+
+            <li class="treeview <?php if($paths == '/v1/charts/chart/index' || $paths == '/v1/users/user/index'): ?> active <?php endif; ?> " >
                 <a href="#">
-                    <i class="fa fa-share"></i> <span>惠优税</span>
+                    <i class="fa fa-share"></i> <span>惠找事</span>
+
                     <span class="pull-right-container">
                       <i class="fa fa-angle-left pull-right"></i>
                     </span>
                 </a>
                 <ul class="treeview-menu">
+
                     <li class="<?php if($paths == '/v1/charts/chart/index'): ?>active<?php endif; ?>">
-                        <a href="<?php echo url('/v1/texation/taxation/index'); ?>">
-                            <i class="glyphicon glyphicon-user"></i> <span>新闻列表</span>
+                        <a href="<?php echo url('/v1/charts/chart/index'); ?>">
+                            <i class="glyphicon glyphicon-user"></i> <span>首页图</span>
                             <span class="pull-right-container">
                               <i class="fa fa-angle-left pull-right"></i>
                             </span>
@@ -353,6 +356,10 @@
 
 <!-- chart js-->
 <script src="/static/assets/dist/js/chart.js"></script>
+<<<<<<< HEAD
+
+=======
+>>>>>>> 81db3e01dfd51b11218ee092e2fc2f9918861ce9
 <script>
     admin_module.changepas();
 </script>

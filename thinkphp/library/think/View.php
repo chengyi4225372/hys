@@ -168,10 +168,6 @@ class View
 
         // 获取并清空缓存
         $content = ob_get_clean();
-<<<<<<< HEAD
-
-=======
->>>>>>> 81db3e01dfd51b11218ee092e2fc2f9918861ce9
         // 内容过滤标签
         Hook::listen('view_filter', $content);
         return $content;
