@@ -2,6 +2,7 @@
 namespace app\home\controller;
 
 use app\common\controller\BaseController;
+use app\v1\service\Chartservice;
 use app\v1\service\Taxationservice;
 use think\Controller;
 use app\v1\service\Systems;
@@ -14,9 +15,10 @@ class Index extends BaseController
     {
 
         if ($this->request->isGet()) {
-            //用户信息
-            $chart = Taxationservice::instance()->getOne();
+            //轮播图
+            $chart = Chartservice::instance()->getList();
             $this->assign('chart',$chart);
+            //用户信息
             $this->assign('userinfo',$this->userinfo);
             $this->assign('title','惠优税');
             return $this->fetch();

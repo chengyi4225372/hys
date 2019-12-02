@@ -175,6 +175,27 @@ $('.edit_save').click(function(){
 /**
  *  修改状态
  */
-function savesort(val,id){
-   var urls = 
+function savesort(val,id,urls){
+
+   if(id == '' || id== undefined || id== 'undefined'){
+       return false;
+   }
+
+   if(urls == '' || urls == undefined){
+       return false;
+   }
+
+   $.post(urls,{'sort':val,'id':id},function(ret){
+       if(ret.code == 200){
+           layer.msg(ret.msg,{icon:6},function(){
+               parent.location.reload();
+           });
+       }
+
+       if(ret.code == 400){
+           layer.msg(ret.msg,{icon:5},function(){
+               parent.location.reload();
+           });
+       }
+   },'json');
 }

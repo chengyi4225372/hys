@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:105:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\index\index.html";i:1575249594;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:105:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\index\index.html";i:1575255024;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -241,9 +241,9 @@
           <div class="preferential-taxadvantage-content-title">我们得到了上海、安徽、江西、湖北等各地政府的大力支持，在全国各地有个多个园区</div>
           <div class="preferential-taxadvantage-content-imgs">
             <ul class="clearfix">
-              <li><img src="/static/home/images/fouse1.png" alt=""></li>
-              <li><img src="/static/home/images/fouse2.png" alt=""></li>
-              <li><img src="/static/home/images/fouse3.png" alt=""></li>
+              <?php if(is_array($chart) || $chart instanceof \think\Collection || $chart instanceof \think\Paginator): $i = 0; $__LIST__ = $chart;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+              <li><img src="<?php echo $vo['imgs']; ?>" alt=""></li>
+              <?php endforeach; endif; else: echo "" ;endif; ?>
             </ul>
             <span class="fouse-left" title="1"><img src="/static/home/images/focus-left.png" alt=""></span>
             <span class="fouse-right" title="0"><img src="/static/home/images/focus-right.png" alt=""></span>

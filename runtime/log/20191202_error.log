@@ -64,3 +64,21 @@
 ---------------------------------------------------------------
 [ 2019-12-02T09:29:04+08:00 ] 127.0.0.1 GET /v1/charts/chart/index.html
 [ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'huiqiyun.h_hys_chart' doesn't exist[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\db\Connection.php:390]
+---------------------------------------------------------------
+[ 2019-12-02T10:58:43+08:00 ] 127.0.0.1 GET /home/industry/index.html
+[ error ] [8]未定义变量: four[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\241ffa330a2da239713bd83ad5e01e47.php:154]
+---------------------------------------------------------------
+[ 2019-12-02T10:58:44+08:00 ] 127.0.0.1 GET /home/industry/index.html
+[ error ] [8]未定义变量: four[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\241ffa330a2da239713bd83ad5e01e47.php:154]
+---------------------------------------------------------------
+[ 2019-12-02T10:58:45+08:00 ] 127.0.0.1 GET /home/industry/index.html
+[ error ] [8]未定义变量: four[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\241ffa330a2da239713bd83ad5e01e47.php:154]
+---------------------------------------------------------------
+[ 2019-12-02T10:59:55+08:00 ] 127.0.0.1 GET /home/industry/index.html
+[ error ] [8]未定义变量: biao[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\241ffa330a2da239713bd83ad5e01e47.php:228]
+---------------------------------------------------------------
+[ 2019-12-02T10:59:56+08:00 ] 127.0.0.1 GET /home/industry/index.html
+[ error ] [8]未定义变量: biao[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\241ffa330a2da239713bd83ad5e01e47.php:228]
+---------------------------------------------------------------
+[ 2019-12-02T11:10:54+08:00 ] 127.0.0.1 GET /home/industry/index.html
+[ error ] [8]未定义变量: biao[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\241ffa330a2da239713bd83ad5e01e47.php:228]

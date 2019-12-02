@@ -240,9 +240,9 @@
           <div class="preferential-taxadvantage-content-title">我们得到了上海、安徽、江西、湖北等各地政府的大力支持，在全国各地有个多个园区</div>
           <div class="preferential-taxadvantage-content-imgs">
             <ul class="clearfix">
-              <li><img src="__HOME__/images/fouse1.png" alt=""></li>
-              <li><img src="__HOME__/images/fouse2.png" alt=""></li>
-              <li><img src="__HOME__/images/fouse3.png" alt=""></li>
+              {volist name='chart' id='vo'}
+              <li><img src="{$vo.imgs}" alt=""></li>
+              {/volist}
             </ul>
             <span class="fouse-left" title="1"><img src="__HOME__/images/focus-left.png" alt=""></span>
             <span class="fouse-right" title="0"><img src="__HOME__/images/focus-right.png" alt=""></span>

@@ -6,6 +6,7 @@
 namespace app\v1\controller\charts;
 
 use app\common\controller\AuthController;
+use app\v1\service\Cateservice;
 use app\v1\service\Chartservice;
 use think\Config;
 
@@ -51,7 +52,7 @@ class Chart extends AuthController
     }
 
     /**
-     * 编辑 todo 未完成
+     * 编辑
      * @return mixed
      */
     public function edit(){
@@ -80,7 +81,7 @@ class Chart extends AuthController
           }
 
         }
-
+      return false;
     }
 
 
@@ -100,6 +101,30 @@ class Chart extends AuthController
             }
         }
     }
+
+    /**
+     * 排序
+     * sort
+     * @id
+     * @sort
+     */
+    public function savesort(){
+       if($this->request->isPost()){
+          $id   = input('post.id','','int');
+          $sort = input('post.sort','','int');
+
+          $ret  = Chartservice::instance()->getsavesort($id,$sort);
+
+          if($ret){
+              return json(['code'=>200,'msg'=>'操作成功']);
+          }else{
+              return json(['code'=>400,'msg'=>'操作失败']);
+          }
+
+       }
+       return false;
+    }
+
 
 
     /**
