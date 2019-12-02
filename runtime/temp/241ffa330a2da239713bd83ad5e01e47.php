@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\industry\index.html";i:1575292220;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\industry\index.html";i:1575293413;}*/ ?>
 <!DOCTYPE>
 <html lang="en">
 
@@ -32,7 +32,7 @@
                 <li><a href="<?php echo url('/home/optimal/index'); ?>">产品服务</a>
                 </li>
                 <li>
-                    <a href="javascript:;">行业解决方案</a>
+                    <a href="<?php echo url('/home/programme/index'); ?>">行业解决方案</a>
                     <!-- 二级菜单 -->
                     <!-- <div class="w secondary-menu" id="secondary-menu">
                         <div>
