@@ -95,6 +95,7 @@
 [ 2019-12-02T11:19:49+08:00 ] 127.0.0.1 GET /v1/charts/chart/index.html
 [ error ] [0]语法解析错误: syntax error, unexpected ''): ?>active<?php endif; ?>">' (T_CONSTANT_ENCAPSED_STRING)[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\98cd08512ca8cba2c421b12f9e0a2b1f.php:249]
 ---------------------------------------------------------------
+<<<<<<< HEAD
 [ 2019-12-02T13:46:33+08:00 ] 127.0.0.1 GET /home/industry/index.html
 [ error ] [8]未定义变量: biao[C:\phpEnv\www\hys\runtime\temp\9e409fec6bdae0cb92de74a0ca3cc6fd.php:228]
 ---------------------------------------------------------------
@@ -145,3 +146,34 @@
 ---------------------------------------------------------------
 [ 2019-12-02T16:01:43+08:00 ] 127.0.0.1 GET /home/industry/index.html
 [ error ] [8]未定义变量: biao[C:\phpEnv\www\hys\runtime\temp\9e409fec6bdae0cb92de74a0ca3cc6fd.php:228]
+=======
+[ 2019-12-02T11:41:03+08:00 ] 127.0.0.1 GET /v1/ban/banner/index.html
+[ error ] [8]未定义变量: list[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\868f60ff674c5e08c61eea5935e9db5b.php:311]
+---------------------------------------------------------------
+[ 2019-12-02T11:41:04+08:00 ] 127.0.0.1 GET /v1/ban/banner/index.html
+[ error ] [8]未定义变量: list[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\868f60ff674c5e08c61eea5935e9db5b.php:311]
+---------------------------------------------------------------
+[ 2019-12-02T11:41:27+08:00 ] 127.0.0.1 GET /v1/ban/banner/index.html
+[ error ] [8]未定义变量: list[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\868f60ff674c5e08c61eea5935e9db5b.php:311]
+---------------------------------------------------------------
+[ 2019-12-02T11:41:28+08:00 ] 127.0.0.1 GET /v1/ban/banner/index.html
+[ error ] [8]未定义变量: list[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\868f60ff674c5e08c61eea5935e9db5b.php:311]
+---------------------------------------------------------------
+[ 2019-12-02T11:41:28+08:00 ] 127.0.0.1 GET /v1/ban/banner/index.html
+[ error ] [8]未定义变量: list[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\868f60ff674c5e08c61eea5935e9db5b.php:311]
+---------------------------------------------------------------
+[ 2019-12-02T11:41:29+08:00 ] 127.0.0.1 GET /v1/ban/banner/index.html
+[ error ] [8]未定义变量: list[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\868f60ff674c5e08c61eea5935e9db5b.php:311]
+---------------------------------------------------------------
+[ 2019-12-02T11:41:29+08:00 ] 127.0.0.1 GET /v1/ban/banner/index.html
+[ error ] [8]未定义变量: list[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\868f60ff674c5e08c61eea5935e9db5b.php:311]
+---------------------------------------------------------------
+[ 2019-12-02T11:51:40+08:00 ] 127.0.0.1 GET /home/industry/index.html
+[ error ] [8]未定义变量: biao[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\241ffa330a2da239713bd83ad5e01e47.php:228]
+---------------------------------------------------------------
+[ 2019-12-02T11:52:13+08:00 ] 127.0.0.1 GET /home/industry/index.html
+[ error ] [8]未定义变量: biao[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\241ffa330a2da239713bd83ad5e01e47.php:228]
+---------------------------------------------------------------
+[ 2019-12-02T11:52:13+08:00 ] 127.0.0.1 GET /home/industry/index.html
+[ error ] [8]未定义变量: biao[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\241ffa330a2da239713bd83ad5e01e47.php:228]
+>>>>>>> 960da02c01b7bfe0c4d83d9a2defcb761ecb2a1b
