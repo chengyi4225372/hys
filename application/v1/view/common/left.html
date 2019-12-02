@@ -52,7 +52,7 @@
 
             </li>
 
-            <li class="treeview {if $paths == '/v1/taxa/taxation/index'} active {/if} " >
+            <li class="treeview {if $paths == '/v1/taxa/taxation/index' || $paths == '/v1/ban/banner/index' || $paths == '/v1/keys/keywords/index'} active {/if} " >
                 <a href="#">
                     <i class="fa fa-share"></i> <span>行业资讯</span>
 
@@ -62,9 +62,31 @@
                 </a>
 
                 <ul class="treeview-menu">
+                    <li class="{if $paths == '/v1/ban/banner/index'}active{/if}">
+                        <a href="{:url('/v1/ban/banner/index')}">
+                            <i class="glyphicon glyphicon-hdd"></i> <span>行业资讯顶部图</span>
+                            <span class="pull-right-container">
+                              <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="treeview-menu">
+                    <li class="{if $paths == '/v1/keys/keywords/index'}active{/if}">
+                        <a href="{:url('/v1/keys/keywords/index')}">
+                            <i class="glyphicon glyphicon-comment"></i> <span>行业资讯关键字列表</span>
+                            <span class="pull-right-container">
+                              <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="treeview-menu">
                     <li class="{if $paths == '/v1/taxa/taxation/index'}active{/if}">
                         <a href="{:url('/v1/taxa/taxation/index')}">
-                            <i class="glyphicon glyphicon-user"></i> <span>行业资讯列表</span>
+                            <i class="glyphicon glyphicon-list"></i> <span>行业资讯列表</span>
                             <span class="pull-right-container">
                               <i class="fa fa-angle-left pull-right"></i>
                             </span>

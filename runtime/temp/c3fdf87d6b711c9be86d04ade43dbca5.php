@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:7:{s:111:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/v1\view\taxa\taxation\index.html";i:1575008787;s:96:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\layout\default.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\meta.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\header.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\left.html";i:1575258407;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\footer.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\script.html";i:1575250246;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:7:{s:111:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/v1\view\keys\keywords\index.html";i:1575258342;s:96:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\layout\default.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\meta.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\header.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\left.html";i:1575258407;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\footer.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\script.html";i:1575250246;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -286,7 +286,7 @@
     <!-- Full Width Column -->
     <div class="content-wrapper">
         
-
+<div class="content" style="margin-bottom:0px;min-height:0px;"></div>
 
 <!-- Main content -->
 <section class="content">
@@ -294,35 +294,32 @@
         <div class="box-header with-border">
             <button type="button" class="btn btn-sm btn-refresh"><i class="fa fa-refresh"></i></button>
             <button type="button" class="btn bg-purple btn-sm btn-dialog"
-                    id="addchart" data-url="<?php echo url('/v1/charts/chart/add'); ?>">
-                <i class="fa fa-plus-circle">添加</i></button>
+                    id="addusers" data-url="<?php echo url('/v1/keys/keywords/add'); ?>">
+                <i class="fa fa-plus-circle">添加关键字</i></button>
         </div>
         <div class="box-body">
             <table class="table table-bordered table-hover table-striped">
                 <thead>
-
-                <th class="text-center">图片</th>
-                <th class="text-center">创建时间</th>
+                <th class="td-align td-width-40px">
+                    <input class="data-check_box_total"  type="checkbox"/>
+                </th>
+                <th class="text-center">关键字</th>
                 <th class="text-center">操作</th>
                 </thead>
                 <tbody>
-                  <?php if(is_array($list) || $list instanceof \think\Collection || $list instanceof \think\Paginator): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
                 <tr>
-                    <td class="text-center">
-                        <a href="<?php echo (isset($vo['imgs']) && ($vo['imgs'] !== '')?$vo['imgs']:''); ?>">
-                            <img src="<?php echo (isset($vo['imgs']) && ($vo['imgs'] !== '')?$vo['imgs']:''); ?>"  style="width: 150px;height:80px;">
-                        </a>
+                    <td class="td-align td-padding">
+                        <input type="checkbox" name="box_checked" data-id="" class="data-check_box">
                     </td>
-                    <td class="text-center"><?php echo $vo['create_time']; ?></td>
+                    <td class="text-center">111</td>
 
                     <td class="text-center">
-                        <a href="javascript:void(0)" class="btn btn-info edits" data-url="<?php echo url('/v1/charts/chart/edit',['id'=>$vo['id']]); ?>"  >编辑</a>
+                        <a href="javascript:void(0)" class="btn btn-info" data-url="" data-id="" onclick="">编辑</a>
 
-                        <a href="javascript:void(0)" class="btn btn-danger" data-url="<?php echo url('/v1/charts/chart/del'); ?>" data-id="<?php echo $vo['id']; ?>" onclick="del(this)">删除</a>
-
+                        <a href="javascript:void(0)" class="btn btn-danger" data-url="" data-id="" onclick="">删除</a>
                     </td>
                 </tr>
-               <?php endforeach; endif; else: echo "" ;endif; ?>
+
                 </tbody>
             </table>
             <div class="pages"></div>
