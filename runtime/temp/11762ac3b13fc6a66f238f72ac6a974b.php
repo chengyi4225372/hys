@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1575275381;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,11 +7,11 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{$title}</title>
-    <link rel="stylesheet" href="__HOME__/css/base.css">
-    <link rel="stylesheet" href="__HOME__/css/index.css">
-    <script src="__HOME__/js/clamp.js"></script>
-    <script src='__HOME__/js/index.js'></script>
+    <title><?php echo $title; ?></title>
+    <link rel="stylesheet" href="/static/home/css/base.css">
+    <link rel="stylesheet" href="/static/home/css/index.css">
+    <script src="/static/home/js/clamp.js"></script>
+    <script src='/static/home/js/index.js'></script>
 </head>
 
 <body>
@@ -22,7 +23,7 @@
             <div class="w nav-container clearfix">
                 <!-- logo图 -->
                 <div class="logo clearfix">
-                    <img src="__HOME__/images/logo.png" alt="">
+                    <img src="/static/home/images/logo.png" alt="">
                     <h1>惠优税</h1>
                 </div>
                 <!-- nav部分 -->
@@ -33,7 +34,7 @@
                         <li><a href="#">行业解决方案</a></li>
                         <li><a href="#">客户案例</a></li>
                         <li><a href="#">新闻资讯</a></li>
-                        <li><a href="{:url('home/industry/index')}">行业资讯</a></li>
+                        <li><a href="<?php echo url('home/industry/index'); ?>">行业资讯</a></li>
                     </ul>
                 </div>
                 <!-- 登陆注册 -->
@@ -45,7 +46,7 @@
         </div> -->
                 <!-- 头像部分 -->
                 <div class="user-icon-box">
-                    <img class="user-icon" src="__HOME__/images/icon.png" alt="">
+                    <img class="user-icon" src="/static/home/images/icon.png" alt="">
                     <span class="phone">133****5674</span>
                     <div class="login-out">
                         <ul>
@@ -72,7 +73,7 @@
                 <div class="preferential-content clearfix">
                     <div class="preferential-content-item">
                         <div class="preferential-content-item-img">
-                            <img src="__HOME__/images/southeast@2x2.png" alt="">
+                            <img src="/static/home/images/southeast@2x2.png" alt="">
                         </div>
                         <div class="preferential-content-item-content">
                             <p>入驻型税筹产品</p>
@@ -83,7 +84,7 @@
                     </div>
                     <div class="preferential-content-item">
                         <div class="preferential-content-item-img">
-                            <img src="__HOME__/images/southeast@2x.png" alt="">
+                            <img src="/static/home/images/southeast@2x.png" alt="">
                         </div>
                         <div class="preferential-content-item-content">
                             <p>个人代报税产品</p>
@@ -98,25 +99,25 @@
 
         <!-- 税务问题 -->
         <div class="taxproblems-box clearfix">
-            <div class="taxproblems-left"><img src="__HOME__/images/southeast (3)@2x.png" alt=""></div>
+            <div class="taxproblems-left"><img src="/static/home/images/southeast (3)@2x.png" alt=""></div>
             <div class="taxproblems-right">
                 <div></div>
                 <div>您的企业是否存在以下税务问题
                 </div>
                 <div class="taxproblems-right-img">
-                    <img src="__HOME__/images/shuiwuwenti.png" alt="" class="active-img">
-                    <img src="__HOME__/images/shuiwuwenti2.png" alt=""></div>
+                    <img src="/static/home/images/shuiwuwenti.png" alt="" class="active-img">
+                    <img src="/static/home/images/shuiwuwenti2.png" alt=""></div>
                 <div class="taxproblems-right-page">
                     <ul class="clearfix">
                         <li class="leftBtn">
-                            <img src="__HOME__/images/left.png" alt="" class="active-img">
-                            <img src="__HOME__/images/left2.png" alt="">
+                            <img src="/static/home/images/left.png" alt="" class="active-img">
+                            <img src="/static/home/images/left2.png" alt="">
                         </li>
                         <li><span class="active-page">1</span></li>
                         <li><span>2</span></li>
                         <li class="rightBtn">
-                            <img src="__HOME__/images/right.png" alt="" class="active-img">
-                            <img src="__HOME__/images/right2.png" alt="">
+                            <img src="/static/home/images/right.png" alt="" class="active-img">
+                            <img src="/static/home/images/right2.png" alt="">
                         </li>
                     </ul>
                 </div>
@@ -240,12 +241,12 @@
                     <div class="preferential-taxadvantage-content-title">我们得到了上海、安徽、江西、湖北等各地政府的大力支持，在全国各地有个多个园区</div>
                     <div class="preferential-taxadvantage-content-imgs">
                         <ul class="clearfix">
-                            {volist name='chart' id='vo'}
-                            <li><img src="{$vo.imgs}" alt=""></li>
-                            {/volist}
+                            <?php if(is_array($chart) || $chart instanceof \think\Collection || $chart instanceof \think\Paginator): $i = 0; $__LIST__ = $chart;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+                            <li><img src="<?php echo $vo['imgs']; ?>" alt=""></li>
+                            <?php endforeach; endif; else: echo "" ;endif; ?>
                         </ul>
-                        <span class="fouse-left" title="1"><img src="__HOME__/images/focus-left.png" alt=""></span>
-                        <span class="fouse-right" title="0"><img src="__HOME__/images/focus-right.png" alt=""></span>
+                        <span class="fouse-left" title="1"><img src="/static/home/images/focus-left.png" alt=""></span>
+                        <span class="fouse-right" title="0"><img src="/static/home/images/focus-right.png" alt=""></span>
                     </div>
                 </div>
             </div>
@@ -259,9 +260,9 @@
                 <div>惠优税精选园区</div>
                 <div class="map-box">
                     <div class="map-box-left">
-                        <div><img src="__HOME__/images/jinxuanyuanqu1.png" alt=""></div>
-                        <div><img src="__HOME__/images/jingxuanyuanqu2.png" alt=""></div>
-                        <div><img src="__HOME__/images/jingxuanyuanqu3.png" alt=""></div>
+                        <div><img src="/static/home/images/jinxuanyuanqu1.png" alt=""></div>
+                        <div><img src="/static/home/images/jingxuanyuanqu2.png" alt=""></div>
+                        <div><img src="/static/home/images/jingxuanyuanqu3.png" alt=""></div>
                     </div>
                     <div class="map-box-center">
                         <div class="map-box-center-item active-map">
@@ -315,7 +316,7 @@
                 </div>
             </div>
             <div class="partner-img">
-                <img src="__HOME__/images/hezuohuoban2x.png" alt="">
+                <img src="/static/home/images/hezuohuoban2x.png" alt="">
             </div>
         </div>
     </div>
@@ -353,9 +354,9 @@
 
             </div>
             <div class='concat_icon clearfix'>
-                <div><img src="__HOME__/images/bo.png" alt=""></div>
-                <div><img src="__HOME__/images/wx.png" alt=""></div>
-                <div><img src="__HOME__/images/tie.png" alt=""></div>
+                <div><img src="/static/home/images/bo.png" alt=""></div>
+                <div><img src="/static/home/images/wx.png" alt=""></div>
+                <div><img src="/static/home/images/tie.png" alt=""></div>
             </div>
             <div class="fotter-line"></div>
             <div>© Copyright 2019 惠企动（湖北）科技有限公司 . All Rights Reserved</div>
@@ -367,7 +368,7 @@
     <!-- 侧边栏bottom资讯 -->
     <div class="bottom">
         <div>
-            <div class="bottom-title">立即预约咨询</div>
+            <div class="bottom-title">惠家族产品</div>
             <div class="bottom-item">
                 <ul>
                     <li><a href="#">惠优税</a></li>
@@ -383,7 +384,7 @@
             <div class="bottom-title">联系我们</div>
             <div class="bottom-item2">
                 <div>
-                    <p>立即预约咨询</p>
+                    <p>专家服务电话</p>
                     <p>181-8619-4461</p>
                 </div>
                 <div>
@@ -394,7 +395,7 @@
         </div>
         <!-- 返回顶部 -->
         <div class='goTop' id="goTop">
-            <div><img src="__HOME__/images/top@2x.png" alt=""></div>
+            <div><img src="/static/home/images/top@2x.png" alt=""></div>
             <div>顶部</div>
         </div>
     </div>

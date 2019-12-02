@@ -10,5 +10,9 @@ use think\Cookie;
 use think\Cache;
 class Programme extends BaseController
 {
+  
+     public function index (){
+         return $this->fetch();
+     }
 
 }
