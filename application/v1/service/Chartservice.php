@@ -119,7 +119,7 @@ class Chartservice
             return  false;
         }
 
-        $ret = Chart::instance()->where(['id'=>$id])->update(['status'=>-1]);
+        $ret = Chart::instance()->where(['id'=>$id])->update(['status'=>0]);
 
         if($ret){
             return true;

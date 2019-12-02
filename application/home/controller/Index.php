@@ -18,6 +18,7 @@ class Index extends BaseController
             $chart = Taxationservice::instance()->getOne();
             $this->assign('chart',$chart);
             $this->assign('userinfo',$this->userinfo);
+            $this->assign('title','惠优税');
             return $this->fetch();
         }
         return false;

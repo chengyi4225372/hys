@@ -28,12 +28,15 @@ $('.cancle').click(function(){
 
     var imgs = $('#Images').val();
 
+    //排序
+    var sort  = $('#sort').val();
+
     if(imgs == '' || imgs == undefined || imgs =='undefined'){
         layer.msg('请上传图片！');
         return false;
     }
 
-    $.post(urls,{'imgs':imgs},function(ret){
+    $.post(urls,{'imgs':imgs,'sort':sort},function(ret){
 
          if(ret.code == 200){
              layer.msg(ret.msg,function () {
@@ -46,7 +49,7 @@ $('.cancle').click(function(){
                   parent.location.reload();
              });
          }
-    },'json')
+    },'json');
 
  });
 
@@ -104,6 +107,7 @@ $('.edit_save').click(function(){
     var url  = $(this).attr('data-url');
     var id   = $(this).attr('data-id');
     var imgs = $('#Images').val();
+    var sort = $('#sort').val();
 
     if(url == '' || url == undefined){
         return false;
@@ -114,7 +118,7 @@ $('.edit_save').click(function(){
         return false;
     }
 
-    $.post(url,{'id':id,'imgs':imgs},function(ret){
+    $.post(url,{'id':id,'imgs':imgs,'sort':sort},function(ret){
          if(ret.code == 200){
             layer.msg(ret.msg,{icon:6},function () {
                 parent.location.reload();
@@ -127,7 +131,7 @@ $('.edit_save').click(function(){
              })
          }
 
-    },'json')
+    },'json');
 
 })
 
@@ -160,9 +164,17 @@ $('.edit_save').click(function(){
                    })
                }
 
-        },'json')
+        },'json');
     }, function(){
         parent.layer.closeAll();
     });
 
+}
+
+
+/**
+ *  修改状态
+ */
+function savesort(val,id){
+   var urls = 
 }

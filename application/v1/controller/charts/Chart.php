@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * 惠优税轮播图控制器
+ */
 namespace app\v1\controller\charts;
 
 use app\common\controller\AuthController;

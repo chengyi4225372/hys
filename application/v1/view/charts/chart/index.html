@@ -14,7 +14,7 @@
         <div class="box-body">
             <table class="table table-bordered table-hover table-striped">
                 <thead>
-
+                <th class="text-center">排序</th>
                 <th class="text-center">图片</th>
                 <th class="text-center">创建时间</th>
                 <th class="text-center">操作</th>
@@ -22,6 +22,9 @@
                 <tbody>
                   {volist name='list' id='vo'}
                 <tr>
+                    <td class="right">
+                        <input type="text" class="col-md-3" onblur="savesort('{$vo.sort}','{$vo.id}');" value="{$vo.sort|default='0'}" />
+                    </td>
                     <td class="text-center">
                         <a href="{$vo.imgs|default=''}">
                             <img src="{$vo.imgs|default=''}"  style="width: 150px;height:80px;">

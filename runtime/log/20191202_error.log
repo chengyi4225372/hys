@@ -55,3 +55,12 @@
 ---------------------------------------------------------------
 [ 2019-12-02T08:38:36+08:00 ] 127.0.0.1 GET /
 [ error ] [0]语法解析错误: syntax error, unexpected '<<' (T_SL)[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\View.php:171]
+---------------------------------------------------------------
+[ 2019-12-02T09:09:10+08:00 ] 127.0.0.1 GET /
+[ error ] [8]未定义变量: title[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\1096785cd2843b4338777353216959a0.php:10]
+---------------------------------------------------------------
+[ 2019-12-02T09:09:12+08:00 ] 127.0.0.1 GET /
+[ error ] [8]未定义变量: title[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\1096785cd2843b4338777353216959a0.php:10]
+---------------------------------------------------------------
+[ 2019-12-02T09:29:04+08:00 ] 127.0.0.1 GET /v1/charts/chart/index.html
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'huiqiyun.h_hys_chart' doesn't exist[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\db\Connection.php:390]

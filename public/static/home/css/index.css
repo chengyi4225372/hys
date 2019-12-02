@@ -3,6 +3,8 @@
 .w {
     width: 75rem;
     margin: 0 auto;
+    padding: 0 1.875rem;
+    box-sizing: border-box;
 }
 
 
@@ -117,57 +119,66 @@ a {
     padding-top: .875rem;
     height: 4.125rem;
     /* background-color: skyblue; */
+
 }
 
 .nav-container .logo {
     float: left;
-    margin-top: .3125rem;
-    width: 8.125rem;
-    height: 3rem;
+    margin-left: 0.95rem;
 }
 
 .nav-container .logo img {
-    width: 100%;
+    float: left;
+    width: 3.375rem;
+    height: 3.25rem;
+    /* vertical-align: middle; */
+}
+
+.nav-container h1 {
+    float: left;
+    font-size: 1.9375rem;
+    font-family: Source Han Sans CN;
+    font-weight: 500;
+    letter-spacing: .1875rem;
+    color: rgba(0, 0, 0, 1);
+    line-height: 2.125rem;
+    margin: .6875rem 0 .6875rem .75rem;
 }
 
 .nav-container .nav {
     float: left;
-    margin-left: 3.75rem;
+    margin-left: 10.375rem;
 }
 
 .nav-container .nav ul {
     list-style: none;
-    margin: 1.75rem 0 0 0;
+    margin: 1.55rem 0 0 0;
     padding: 0;
 }
 
 .nav-container .nav ul li {
+    position: relative;
     float: left;
-    margin-right: 3.875rem;
+    margin-right: 2.5rem;
+}
+
+.nav-container .nav ul li:last-child {
+    margin-right: 0;
 }
 
 .nav-container .nav ul li a {
     display: block;
     width: 100%;
     /* height: 100%; */
-    font-size: 1.125rem;
-    font-family: "PingFang SC", "Source Han Sans CN", "Microsoft YaHei", "微软雅黑";
-    font-weight: 500;
+    font-size: 1rem;
+    font-family: "SourceHanSansCN-Bold", "Source Han Sans CN", "Microsoft YaHei", "微软雅黑";
+    font-weight: 700;
     color: #333333;
 }
 
-.nav-active {
-    position: relative;
-    color: #FEA911;
-}
-
-.nav-active a {
-    color: #FEA911 !important;
-}
-
-.nav-active::after {
+.nav-container .nav ul li:hover::after {
     position: absolute;
-    bottom: -1.1625rem;
+    bottom: -0.5125rem;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -175,53 +186,64 @@ a {
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     content: '';
-    width: 4rem;
+    width: 140%;
     height: .25rem;
-    background-color: #FEA911;
+    border-radius: .125rem;
+    background-color: #E8341E;
+}
+
+.nav-active {
+    position: relative;
+}
+
+.nav-active::after {
+    position: absolute;
+    bottom: -0.5125rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    content: '';
+    width: 140%;
+    height: .25rem;
+    border-radius: .125rem;
+    background-color: #E8341E;
 }
 
 /* 登陆注册 */
 
 .nav-container .loging {
     float: right;
-    margin: .75rem 0 0 .625rem;
+    margin: 1.25rem 0 0 0;
 }
 
 .nav-container .loging div {
     float: left;
-    width: 5.375rem;
-    height: 2.375rem;
-    background: rgba(255, 255, 255, 0);
-    border: 1px solid #FEA911;
+    width: 3.5rem;
+    height: 1.625rem;
     text-align: center;
-    line-height: 2.375rem;
+    line-height: 1.625rem;
+    background: url('../images/login-bg.png') no-repeat;
+    background-size: 100% 100%;
 }
 
 .nav-container .loging div a {
     display: block;
     width: 100%;
-    height: 2.375rem;
+    height: 1.625rem;
     font-size: 1rem;
     font-family: 'Source Han Sans CN', "Microsoft YaHei", "微软雅黑";
     font-weight: 400;
-    color: #333333;
-    line-height: 2.5rem;
+    color: #E8341E;
+    line-height: 1.625rem;
 }
 
-.nav-container .loging div:nth-child(1) {
-    border-right: 0;
-    border-radius: .25rem 0px 0px .25rem;
-}
 
 .nav-container .loging div:nth-child(2) {
-    border-left: 0;
-    border-radius: 0 .25rem .25rem 0;
-    background-color: #FEA911;
-    color: #FFFFFF;
-}
-
-.nav-container .loging div:nth-child(2) a {
-    color: #FFFFFF;
+    margin-left: 1.25rem;
+    margin-right: 2.5625rem
 }
 
 /* 头像部分 */
@@ -229,13 +251,17 @@ a {
     position: relative;
     float: right;
     text-align: center;
-    height: 3.875rem;
-    margin-top: 1.25rem;
+    height: 3rem;
+    margin-top: 1.05rem;
     padding-left: 1.25rem;
+    /* margin-right: 2.5625rem; */
     cursor: pointer;
+    /* background-color: pink; */
 }
 
 .nav-container .user-icon-box .user-icon {
+    width: 2rem;
+    height: 2rem;
     vertical-align: bottom;
     border: 1px solid #ccc;
     border-radius: 50%;
@@ -251,7 +277,7 @@ a {
     display: none;
     position: absolute;
     width: 5.625rem;
-    bottom: -25px;
+    bottom: -38px;
     left: -0.425rem;
     text-align: center;
     box-sizing: border-box;
@@ -287,13 +313,12 @@ a {
 .login-out ul li a {
     font-size: .875rem;
     font-family: "PingFang SC", "Microsoft YaHei", "微软雅黑";
-    ;
     font-weight: 500;
     color: #fff;
 }
 
 .login-out ul li:hover {
-    background-color: #FEA911;
+    background-color: #FE0B0C;
 }
 
 /* .login-out ul li:hover .login-out::after {
@@ -320,827 +345,907 @@ a {
 
 /* 头部部分 */
 .header-box {
-    height: 40rem;
-    background: url('../images/headerimg.png') no-repeat center bottom;
-    background-size: 100%;
+    height: 45.9375rem;
+    background: url('../images/header-bg.png') no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
     margin-top: 5rem;
 }
 
-.header-box .header-container {
-    padding-left: 7.75rem;
+/* 惠优税产品 */
+
+
+.preferential-box .preferential-container {
+    padding-top: 1.875rem;
     box-sizing: border-box;
 }
 
-.header-box .header-container .header-icon {
-    padding-right: 7.75rem;
-    text-align: right;
-    padding-top: 8.8125rem;
-    margin-bottom: 7.3125rem;
-}
-
-.header-box .header-container .header-icon div:nth-child(1) {
-    padding-right: 2.9375rem;
-}
-
-.header-box .header-container .header-icon div:nth-child(2) span {
-    display: inline-block;
-    width: 9.6875rem;
-    height: .25rem;
-    background: rgba(254, 169, 17, 1);
-    margin: 1.9375rem 0 1.75rem 0;
-}
-
-.header-box .header-container .header-icon div:nth-child(3) {
-
-    font-size: 3.375rem;
-    font-family: "Source Han Sans CN", "Microsoft YaHei", "微软雅黑";
-    font-weight: 400;
-    color: rgba(0, 0, 0, 1);
-
-}
-
-.header-box .header-container .header-icon div:nth-child(3) span {
-    font-size: 3.375rem;
-    font-family: "Source Han Sans CN", "Microsoft YaHei", "微软雅黑";
-    font-weight: 700;
-    color: rgba(0, 0, 0, 1);
-}
-
-.header-box .header-container .header-search {
-    width: 59.25rem;
-    height: 3rem;
-    background: rgba(254, 254, 254, 1);
-    border-radius: .125rem;
-}
-
-.header-box .header-container .header-search input {
+.preferential-box .preferential-container .preferential-icon {
     float: left;
-    width: 50rem;
-    height: 3rem;
-    background: none;
-    outline: none;
-    border: none;
-    padding-left: 1.25rem;
-    border: 1px solid rgba(238, 238, 238, 1);
-    box-sizing: border-box;
-}
-
-.header-box .header-container .header-search div {
-    float: left;
-    width: 9.25rem;
-    height: 100%;
-    background: rgba(254, 169, 17, 1);
-    border-radius: 0px 2px 2px 0px;
-    font-size: 1.125rem;
-    font-family: "PingFang SC", "Microsoft YaHei", "微软雅黑";
-    font-weight: 500;
-    text-align: center;
-    line-height: 3rem;
-    color: rgba(255, 255, 255, 1);
-    cursor: pointer;
-}
-
-.header-box .header-container .focus-icon {
-    margin-top: 1.4375rem;
-    font-size: 1rem;
-    font-family: "PingFang SC", "Microsoft YaHei", "微软雅黑";
-    font-weight: 500;
-    color: rgba(255, 255, 255, 1);
-}
-
-.header-box .header-container .focus-icon a {
-    margin-right: 1.25rem;
-    font-size: 1rem;
-    color: rgba(255, 255, 255, 1);
-}
-
-.header-box .header-container .focus-icon a:nth-child(1) {
-    margin-left: .625rem;
-}
-
-.header-box .header-container .focus-icon a:hover {
-    color: #FEA911;
-}
-
-/* 高薪项目 */
-.high-salary-project-box {
-    margin-bottom: 4.8125rem;
-}
-
-.high-salary-project {
-    padding-top: 3.4375rem;
-}
-
-.high-salary-project .high-salary-project-title {
-    position: relative;
-    width: 15.125rem;
-    height: 2.3125rem;
-    margin-bottom: 2.5rem;
-    background: url('../images/industry2x.png') no-repeat center;
-    background-size: 100%;
-}
-
-.high-salary-project .high-salary-project-title-box {
-    position: absolute;
-    top: 1.4375rem;
-    left: 0;
-}
-
-.high-salary-project .high-salary-project-title-box span:nth-child(1) {
-    font-size: 1.875rem;
-    font-family: "PingFang SC", "Microsoft YaHei", "微软雅黑";
-    font-weight: 800;
-    color: rgba(0, 0, 0, 1);
-    line-height: 1.875rem;
-}
-
-.high-salary-project .high-salary-project-title-box span:nth-child(2) {
-    display: inline-block;
-    width: 1.125rem;
-    height: 1.375rem;
-    background: url('../images/hot.png') no-repeat;
-    margin-left: .625rem;
-}
-
-.high-salary-project .modified-line {
-    width: 3.75rem;
-    height: .25rem;
-    background: rgba(254, 169, 17, 1);
-    margin-bottom: .9375rem;
-}
-
-.high-salary-project .see-more {
-    text-align: right;
-    margin-bottom: .75rem;
-    font-size: .875rem;
-    font-family: "PingFang SC", "Microsoft YaHei", "微软雅黑";
-    font-weight: 500;
-    color: rgba(45, 46, 57, 1);
-    cursor: pointer;
-}
-
-.high-salary-project .high-salary-project-items ul {
-    width: 76.5rem;
-}
-
-.high-salary-project .high-salary-project-items li {
-    float: left;
-    width: 17.625rem;
-    height: 12rem;
-    background: rgba(255, 255, 255, 1);
-    margin-right: 1.5rem;
-    margin-bottom: 2rem;
-    padding: 1.4375rem 1.125rem 0 1.125rem;
-    /* background-color: pink; */
-    box-sizing: border-box;
-    border: 1px solid rgba(227, 227, 227, 1);
-}
-
-.high-salary-project .high-salary-project-items li .high-salary-project-item-img {
-    border-left: .125rem solid #D8D8D8;
-    padding-left: .5625rem;
-    font-size: .875rem;
-    font-family: "PingFang SC", "Microsoft YaHei", "微软雅黑";
-    font-weight: 500;
-    color: rgba(75, 75, 75, 1);
-    margin-bottom: 1.125rem;
-}
-
-.high-salary-project .high-salary-project-items li .title {
-    font-size: 1.125rem;
-    font-family: "PingFang SC", "Microsoft YaHei", "微软雅黑";
-    font-weight: bold;
-    color: rgba(49, 49, 49, 1);
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    margin-bottom: 1.25rem;
-}
-
-.high-salary-project .high-salary-project-items li .require {
-    height: 2.25rem;
-    font-size: .875rem;
-    font-family: "PingFang SC", "Microsoft YaHei", "微软雅黑";
-    font-weight: 500;
-    color: rgba(125, 125, 125, 1);
-    border-bottom: 1px solid rgba(243, 243, 243, 1);
-    margin-bottom: 1.125rem;
-}
-
-.high-salary-project .high-salary-project-items li .require span {
-    margin-right: .9375rem;
-}
-
-.high-salary-project .high-salary-project-items li .high-salary-project-item-title p:nth-child(1) {
-    float: left;
-    font-size: 1.5rem;
-    font-family: "PingFang SC", "Microsoft YaHei", "微软雅黑";
-    font-weight: 800;
-    color: rgba(234, 55, 0, 1);
-}
-
-.high-salary-project .high-salary-project-items li .high-salary-project-item-title p:nth-child(1) span {
-    font-size: .875rem;
-    margin-left: .625rem;
-}
-
-.high-salary-project .high-salary-project-items li .high-salary-project-item-title p:nth-child(2) {
-    float: right;
-    width: 2.625rem;
-    height: 1.125rem;
-    background: rgba(255, 255, 255, 1);
-    border: 1px solid rgba(242, 242, 242, 1);
-    border-radius: .125rem;
-    font-size: .75rem;
-    font-family: "PingFang SC", "Microsoft YaHei", "微软雅黑";
-    font-weight: 500;
-    color: rgba(112, 112, 112, 1);
-    text-align: center;
-    line-height: 1.125rem;
-    margin-top: .25rem;
-}
-
-.high-salary-project .high-salary-project-items>div {
-    text-align: center;
-    font-size: .875rem;
-    font-family: "PingFang SC", "Microsoft YaHei", "微软雅黑";
-    font-weight: 500;
-    color: rgba(45, 46, 57, 1);
-    line-height: .875rem;
-    cursor: pointer;
-}
-
-.high-salary-project .high-salary-project-items>div .icon {
-    margin-left: .5rem;
-    vertical-align: middle;
-}
-
-.high-salary-project .high-salary-project-items li:hover {
-    box-shadow: .25rem .25rem .8125rem 0px rgba(11, 32, 64, 0.07);
-}
-
-.high-salary-project .high-salary-project-items li:hover .title {
-    color: #ff9001;
-}
-
-/* 多种方式开始创收 */
-.create-income-box {
-    margin-bottom: 6.8125rem;
-}
-
-.create-income-title {
-    position: relative;
-    width: 12.5rem;
-    height: 2.25rem;
-    background: url('../images/Diverse2x.png') no-repeat center;
-    background-size: 100%;
-    margin-bottom: 2.5rem;
-}
-
-.create-income-title-box {
-    width: 15.625rem;
-    position: absolute;
-    top: 1.4375rem;
-    left: 0;
-}
-
-.create-income-title-box span {
-    font-size: 1.875rem;
-    font-family: "PingFang SC", "Microsoft YaHei", "微软雅黑";
-    font-weight: 800;
-    color: rgba(0, 0, 0, 1);
-    line-height: 1.875rem;
-}
-
-.create-income .modified-line {
-    width: 3.75rem;
-    height: .25rem;
-    background: rgba(254, 169, 17, 1);
-    margin-bottom: 1.625rem;
-}
-
-.create-income .create-income-content {
-    height: 40rem;
-}
-
-.create-income .create-income-left {
-    position: relative;
-    float: left;
-    /* background-color: pink; */
-    width: 25rem;
-    height: 25.625rem;
-    transition: all 0.5s;
-    background: url('../images/1-1.png') no-repeat center;
-    background-size: 100% 100%;
-}
-
-.create-income .create-income-right {
-    position: relative;
-    float: right;
-    background-color: skyblue;
-    width: 25rem;
-    height: 25.625rem;
-    transition: all 0.5s;
-    background: url('../images/2-1.png') no-repeat center;
-    background-size: 100% 100%;
-}
-
-.create-income .create-income-left .icon,
-.create-income .create-income-right .icon {
-    text-align: center;
-    padding-top: 13.125rem;
-    margin-bottom: 1.3125rem;
-}
-
-.create-income .create-income-left .create-income-content-box>.icon img,
-.create-income .create-income-right .create-income-content-box>.icon img {
-    width: 4.5rem;
-    height: 4.5rem;
-}
-
-.create-income .create-income-left .create-income-content-box>p:nth-child(2),
-.create-income .create-income-right .create-income-content-box>p:nth-child(2) {
-    position: relative;
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: "PingFang SC", "Microsoft YaHei", "微软雅黑";
-    font-weight: bold;
-    color: rgba(255, 255, 255, 1);
-    margin-bottom: 1.6875rem;
-}
-
-.create-income .create-income-left .create-income-content-box>p:nth-child(2)::after,
-.create-income .create-income-right .create-income-content-box>p:nth-child(2)::after {
-    position: absolute;
-    content: '';
-    bottom: -1rem;
-    left: 50%;
-    transform: translate(-50%);
-    width: 2.875rem;
-    height: .125rem;
-    background: rgba(254, 169, 17, 1);
-    opacity: 0.4;
-    z-index: 0;
-}
-
-.create-income .create-income-left .create-income-content-box>p:nth-child(3),
-.create-income .create-income-right .create-income-content-box>p:nth-child(3) {
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: "nansongshuju", "Microsoft YaHei", "微软雅黑";
-    font-weight: 400;
-    color: rgba(255, 255, 255, 1);
-}
-
-.create-income .create-income-left .create-income-content-box .content,
-.create-income .create-income-right .create-income-content-box .content {
-    display: none;
-    width: 33.25rem;
-}
-
-.create-income .create-income-left .create-income-content-box .content p,
-.create-income .create-income-right .create-income-content-box .content p {
-    font-size: 1rem;
-    font-family: "PingFang SC", "Microsoft YaHei", "微软雅黑";
-    font-weight: 500;
-    color: rgba(255, 255, 255, 1);
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-
-.create-income .create-income-left .create-income-content-box .content p:nth-child(2),
-.create-income .create-income-right .create-income-content-box .content p:nth-child(2) {
-    margin: .625rem 0;
-}
-
-.create-income .create-income-left .create-income-shade {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, .1);
-    /* z-index: -1; */
-}
-
-.create-income .create-income-right .create-income-shade {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, .1);
-    /* z-index: -1; */
-}
-
-/* 鼠标划入的样式 */
-
-.create-income .create-income-active {
-    width: 43.8125rem;
-    height: 40rem;
-    padding-left: 4.9375rem;
-    /* background-color: #000; */
-
-}
-
-.create-income .create-income-active.create-income-left .create-income-shade {
-    background-color: rgba(0, 0, 0, 0);
-}
-
-.create-income .create-income-active.create-income-right .create-income-shade {
-    background-color: rgba(0, 0, 0, 0);
-}
-
-.create-income .create-income-active .create-income-content-box .icon {
-    padding-top: 22.5rem;
-    text-align: left;
-    margin-bottom: 2.875rem;
-}
-
-.create-income .create-income-active .create-income-content-box>p:nth-child(2) {
-    margin-bottom: 1.125rem;
+    width: 28.425rem;
     text-align: left;
 }
 
-.create-income .create-income-active .create-income-content-box>p:nth-child(2)::after {
-    content: none;
-}
-
-.create-income .create-income-active .create-income-content-box>p:nth-child(3) {
-    display: none;
-}
-
-.create-income .create-income-active .create-income-content-box .content {
-    display: block;
-}
-
-
-/* 我们的服务 */
-
-.our-services-box {
-    margin-bottom: 6.9375rem;
-}
-
-.our-services-box .our-services {}
-
-.our-services-box .our-services .our-services-title {
-    position: relative;
-    width: 12.6875rem;
-    height: 2.3125rem;
-    background: url(../images/service2x.png) no-repeat center;
-    background-size: 100%;
-    margin-bottom: 2.5rem;
-}
-
-.our-services-box .our-services .our-services-title .our-services-title-box {
-    width: 15.625rem;
-    position: absolute;
-    top: 1.4375rem;
-    left: 0;
-}
-
-.our-services-box .our-services .our-services-title .our-services-title-box span {
-    font-size: 1.875rem;
-    font-family: "PingFang SC", "Microsoft YaHei", "微软雅黑";
-    font-weight: 800;
-    color: rgba(0, 0, 0, 1);
-    line-height: 1.875rem;
-}
-
-.our-services .modified-line {
-    width: 3.75rem;
+.preferential-box .preferential-container .preferential-icon>div:nth-child(1) {
+    display: inline-block;
+    width: 5rem;
     height: .25rem;
-    background: rgba(254, 169, 17, 1);
-    margin-bottom: 6.1875rem;
+    background: rgba(238, 68, 46, 1);
+    border-radius: 2px;
+    margin: 0 0 .5625rem 0;
 }
 
-.our-services .our-services-items {}
-
-.our-services .our-services-items ul li {
-    position: relative;
-    float: left;
-    width: 25%;
-    text-align: center;
-}
-
-.our-services .our-services-items ul li a>div:nth-child(1) {
-    width: 8.75rem;
-    height: 8.75rem;
-    margin: 0 auto;
-    padding-top: 2.375rem;
-    /* padding-left: 2.5625rem; */
-    box-sizing: border-box;
-    background: rgba(246, 246, 246, 1);
-    border-radius: 50%;
-    text-align: center;
-}
-
-.our-services .our-services-items ul li a>div:nth-child(1)>span {
-    display: inline-block;
-}
-
-/* .our-services .our-services-items ul li a>div:nth-child(1)  */
-.our-services .our-services-items ul li:nth-child(1) a div:nth-child(1)>span {
-    width: 4rem;
-    height: 4rem;
-}
-
-.our-services .our-services-items ul li:nth-child(2) a div:nth-child(1)>span {
-    width: 4rem;
-    height: 4rem;
-}
-
-.our-services .our-services-items ul li:nth-child(3) a div:nth-child(1)>span {
-    width: 4rem;
-    height: 4rem;
-}
-
-.our-services .our-services-items ul li:nth-child(4) a div:nth-child(1)>span {
-    width: 4rem;
-    height: 4rem;
-}
-
-.our-services .our-services-items ul li div:nth-child(1) img.our-services-active1 {
-    display: inline-block;
-}
-
-.our-services .our-services-items ul li div:nth-child(1) img.our-services-active2 {
-    display: none;
-}
-
-.our-services .our-services-items ul li:nth-child(1) a div:nth-child(1)>span img,
-.our-services .our-services-items ul li:nth-child(2) a div:nth-child(1)>span img,
-.our-services .our-services-items ul li:nth-child(3) a div:nth-child(1)>span img,
-.our-services .our-services-items ul li:nth-child(4) a div:nth-child(1)>span img {
-    width: 100%;
-}
-
-.our-services .our-services-items ul li div:nth-child(2) {
-    font-size: 1.5rem;
-    font-family: "PingFang SC", "Microsoft YaHei", "微软雅黑";
-    font-weight: bold;
-    color: rgba(0, 0, 0, 1);
-    line-height: 1.875rem;
-    opacity: 0.8;
-    margin-bottom: 1.875rem;
-    margin-top: 1.875rem;
-    padding: 0 20px;
-}
-
-.our-services .our-services-items ul li div:nth-child(3) {
-    font-size: 1rem;
-    font-family: "PingFang SC", "Microsoft YaHei", "微软雅黑";
+.preferential-box .preferential-container .preferential-icon>div:nth-child(2) {
+    font-size: 2.25rem;
+    font-family: "Source Han Sans CN", "Microsoft YaHei", "微软雅黑";
     font-weight: 500;
-    color: rgba(0, 0, 0, 1);
-    line-height: 2.25rem;
-    opacity: 0.8;
-    /* overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis; */
-    padding: 0 20px;
-}
-.our-services .our-services-items ul li div:nth-child(3)>p {
-    /* overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis; */
-    padding: 0 20px;
-}
-
-.our-services .our-services-item::after {
-    position: absolute;
-    content: '';
-    right: 0;
-    top: 1.5625rem;
-    width: 1px;
-    height: 14.375rem;
-    background: rgba(237, 237, 237, 1);
-}
-
-.our-services .our-services-item:nth-child(4)::after {
-    content: none;
-}
-
-.our-services .our-services-items ul li:hover div:nth-child(1) {
-    background-color: #FEA911;
-}
-
-.our-services .our-services-items ul li:hover div:nth-child(1) img.our-services-active1 {
-    display: none;
-}
-
-.our-services .our-services-items ul li:hover div:nth-child(1) img.our-services-active2 {
-    display: inline-block;
-}
-
-/* 覆盖行业 */
-.cover-industry-box {
-    margin-bottom: 3.875rem;
-}
-
-.cover-industry-box .cover-industry {}
-
-.cover-industry-box .cover-industry .cover-industry-title {
-    position: relative;
-    width: 15.125rem;
-    height: 2.3125rem;
-    background: url('../images/industry2x.png') no-repeat center;
-    background-size: 100%;
-    margin-bottom: 2.5rem;
-}
-
-.cover-industry-box .cover-industry .cover-industry-title .cover-industry-title-box {
-    position: absolute;
-    top: 1.4375rem;
-    left: 0;
-}
-
-.cover-industry-box .cover-industry .cover-industry-title .cover-industry-title-box span {
-    font-size: 1.875rem;
-    font-family: "PingFang SC", "Microsoft YaHei", "微软雅黑";
-    font-weight: 800;
-    color: rgba(0, 0, 0, 1);
-    line-height: 1.875rem;
-}
-
-.cover-industry-box .cover-industry .modified-line {
-    width: 3.75rem;
-    height: .25rem;
-    background: rgba(254, 169, 17, 1);
-    margin-bottom: 5rem;
-}
-
-.cover-industry-box .cover-industry .cover-industry-items ul {
-    width: 75.625rem;
-}
-
-.cover-industry-box .cover-industry .cover-industry-items ul li {
-    position: relative;
-    float: left;
-    width: 18.3125rem;
-    height: 15.875rem;
-    opacity: 0.9;
-    margin-right: .5625rem;
-    margin-bottom: .5625rem;
-    text-align: center;
-    background-color: pink;
-
-}
-
-.cover-industry-box .cover-industry .cover-industry-items ul li:nth-child(1) {
-    background: url('../images/3-1.png') no-repeat center;
-    background-size: 100%;
-}
-
-.cover-industry-box .cover-industry .cover-industry-items ul li:nth-child(2) {
-    background: url('../images/3-2.png') no-repeat center;
-    background-size: 100%;
-}
-
-.cover-industry-box .cover-industry .cover-industry-items ul li:nth-child(3) {
-    background: url('../images/3-3.png') no-repeat center;
-    background-size: 100%;
-}
-
-.cover-industry-box .cover-industry .cover-industry-items ul li:nth-child(4) {
-    background: url('../images/3-4.png') no-repeat center;
-    background-size: 100%;
-}
-
-.cover-industry-box .cover-industry .cover-industry-items ul li:nth-child(5) {
-    background: url('../images/3-5.png') no-repeat center;
-    background-size: 100%;
-}
-
-.cover-industry-box .cover-industry .cover-industry-items ul li:nth-child(6) {
-    background: url('../images/3-6.png') no-repeat center;
-    background-size: 100%;
-}
-
-.cover-industry-box .cover-industry .cover-industry-items ul li:nth-child(7) {
-    background: url('../images/3-7.png') no-repeat center;
-    background-size: 100%;
-}
-
-.cover-industry-box .cover-industry .cover-industry-items ul li:nth-child(8) {
-    background: url('../images/3-8.png') no-repeat center;
-    background-size: 100%;
-}
-
-.cover-industry-box .cover-industry .cover-industry-items ul li .cover-industry-item-content {
-    display: none;
-    width: 100%;
-    height: 100%;
-    padding-top: 5.9375rem;
-    box-sizing: border-box;
-}
-
-.cover-industry-box .cover-industry .cover-industry-items ul li:nth-child(1) .cover-industry-item-content {
-    padding-top: 5.9375rem;
-}
-
-.cover-industry-box .cover-industry .cover-industry-items ul li:nth-child(2) .cover-industry-item-content {
-    padding-top: 6.1875rem;
-}
-
-.cover-industry-box .cover-industry .cover-industry-items ul li:nth-child(3) .cover-industry-item-content {
-    padding-top: 5.9375rem;
-}
-
-.cover-industry-box .cover-industry .cover-industry-items ul li:nth-child(4) .cover-industry-item-content {
-    padding-top: 5.375rem;
-}
-
-.cover-industry-box .cover-industry .cover-industry-items ul li:nth-child(5) .cover-industry-item-content {
-    padding-top: 5.9375rem;
-}
-
-.cover-industry-box .cover-industry .cover-industry-items ul li:nth-child(6) .cover-industry-item-content {
-    padding-top: 5.9375rem;
-}
-
-.cover-industry-box .cover-industry .cover-industry-items ul li:nth-child(7) .cover-industry-item-content {
-    padding-top: 5.375rem;
-}
-
-.cover-industry-box .cover-industry .cover-industry-items ul li:nth-child(8) .cover-industry-item-content {
-    padding-top: 5.9375rem;
-}
-
-.cover-industry-box .cover-industry .cover-industry-items ul li .cover-industry-item-content div:nth-child(1) {
+    color: rgba(51, 51, 51, 1);
     margin-bottom: 1rem;
 }
 
-.cover-industry-box .cover-industry .cover-industry-items ul li .cover-industry-item-content div:nth-child(2) {
-    font-size: 1.25rem;
+.preferential-box .preferential-container .preferential-icon>div:nth-child(3) {
+    font-size: 1.5rem;
     font-family: "Source Han Sans CN", "Microsoft YaHei", "微软雅黑";
-    font-weight: 500;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.preferential-box .preferential-container .preferential-icon>div:nth-child(4) {
+    width: 12.5rem;
+    height: 3.125rem;
+    background: url('../images/huoqufangan.png') no-repeat;
+    background-size: 100% 100%;
+    font-size: 1.5rem;
+    font-family: "Source Han Sans CN", "Microsoft YaHei", "微软雅黑";
+    font-weight: 400;
     color: rgba(255, 255, 255, 1);
-    line-height: 1.875rem;
+    line-height: 3.125rem;
+    text-align: center;
+    cursor: pointer;
 }
 
-/* 遮罩层 */
-.cover-industry-box .cover-industry .cover-industry-items ul li .shade {
-    position: absolute;
-    left: 0;
-    top: 0;
+.preferential-box .preferential-container .preferential-content {
+    float: right;
+    margin-top: -16.5625rem;
+
+}
+
+.preferential-box .preferential-container .preferential-content>div {
+    float: right;
+    width: 18.75rem;
+    height: 30rem;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 8px 10px 0px rgba(194, 193, 193, 1);
+}
+
+.preferential-box .preferential-container .preferential-content>div:nth-child(1) {
+    margin-left: 1.875rem;
+}
+
+.preferential-box .preferential-content .preferential-content-item {
+    position: relative;
+    padding: .9375rem .9375rem 0 .9375rem;
+    box-sizing: border-box;
+}
+
+.preferential-box .preferential-content .preferential-content-item-img {
+    margin-bottom: 1.8rem
+}
+
+.preferential-box .preferential-content .preferential-content-item-img img {
     width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-.cover-industry-box .cover-industry .cover-industry-items ul li:hover .shade {
-    background-color: rgba(0, 0, 0, .6);
-}
-
-.cover-industry-box .cover-industry .cover-industry-items ul li:hover .cover-industry-item-content {
     display: block;
 }
 
-/* 广告位 */
-.advertising-box {
-    margin-bottom: 4.25rem;
+.preferential-box .preferential-content-item .preferential-content-item-content {
+    padding: 0 .375rem;
+    box-sizing: border-box;
 }
 
-.advertising-box .advertising img {
+.preferential-box .preferential-content-item .preferential-content-item-content>p:nth-child(1) {
+    font-size: 1.5rem;
+    font-family: Source Han Sans CN;
+    font-weight: 500;
+    color: rgba(255, 82, 58, 1);
+    margin-bottom: .9375rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.preferential-box .preferential-content-item .preferential-content-item-content>p:nth-child(2) {
+    font-size: 1rem;
+    font-family: Source Han Sans CN;
+    font-weight: 500;
+    color: rgba(252, 85, 58, 1);
+    margin-bottom: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.preferential-box .preferential-content-item .preferential-content-item-content>p:nth-child(3) {
+    font-size: 1.125rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: rgba(102, 102, 102, 1);
+    line-height: 2.0625rem;
+}
+
+.preferential-box .preferential-content-item .preferential-content-item-more {
+    position: absolute;
+    bottom: 1.875rem;
+    left: 1.25rem;
+
+}
+
+.preferential-box .preferential-content-item .preferential-content-item-more a {
+    font-size: 1rem;
+    font-family: Source Han Sans CN;
+    font-weight: 700;
+    color: rgba(0, 14, 41, 1);
+    cursor: pointer;
+}
+
+
+/* 税务问题 */
+.taxproblems-box {
+    margin-top: 4.5rem;
+    background-color: #F6F6F6;
+}
+
+.taxproblems-box .taxproblems-left {
+    width: 56.25rem;
+    height: 33.75rem;
+    float: left;
+    margin-right: 4.5625rem;
+}
+
+.taxproblems-box .taxproblems-left img {
     width: 100%;
 }
 
+.taxproblems-box .taxproblems-right {
+    float: left;
+    padding-top: .625rem;
+}
+
+.taxproblems-box .taxproblems-right>div:nth-child(1) {
+    width: 18.75rem;
+    height: 4px;
+    background: rgba(238, 68, 46, 1);
+    border-radius: 2px;
+    margin-bottom: .8125rem;
+}
+
+.taxproblems-box .taxproblems-right>div:nth-child(2) {
+    font-size: 2.25rem;
+    font-family: Source Han Sans CN;
+    font-weight: 500;
+    color: rgba(51, 51, 51, 1);
+    margin-bottom: 2rem;
+}
+
+.taxproblems-box .taxproblems-right>div:nth-child(3) {
+    width: 31.25rem;
+    height: 21.25rem;
+    overflow: hidden;
+    margin-bottom: 2.3125rem;
+}
+
+.taxproblems-box .taxproblems-right>div:nth-child(3) img {
+    width: 100%;
+    display: none;
+}
+
+.taxproblems-box .taxproblems-right>div:nth-child(3) img.active-img {
+    display: block !important;
+}
+
+.taxproblems-box .taxproblems-right>div:nth-child(4) ul {
+    margin-left: 11.125rem;
+}
+
+.taxproblems-box .taxproblems-right>div:nth-child(4) ul li {
+    float: left;
+    width: 1.625rem;
+    height: 1.625rem;
+    line-height: 1.625rem;
+    text-align: center;
+}
+
+.taxproblems-box .taxproblems-right>div:nth-child(4) ul li img {
+    width: 100%;
+    display: none;
+}
+
+.taxproblems-box .taxproblems-right>div:nth-child(4) img.active-img {
+    display: block !important;
+}
+
+.taxproblems-box .taxproblems-right>div:nth-child(4) ul li:first-child,
+.taxproblems-box .taxproblems-right>div:nth-child(4) ul li:last-child {
+    cursor: pointer;
+}
+
+.taxproblems-box .taxproblems-right>div:nth-child(4) ul li .active-page {
+    color: #FA5339;
+}
+
+/* 税务筹划解决方案 */
+.tax-planning-solutions-box {
+    margin-top: 4.375rem;
+}
+
+.tax-planning-solutions>div:nth-child(1) {
+    width: 180px;
+    height: 4px;
+    background: rgba(238, 68, 46, 1);
+    border-radius: 2px;
+    margin-bottom: .6875rem;
+}
+
+.tax-planning-solutions>div:nth-child(2) {
+    font-size: 2.25rem;
+    font-family: Source Han Sans CN;
+    font-weight: 500;
+    color: rgba(51, 51, 51, 1);
+    margin-bottom: 3.8125rem;
+}
+
+.tax-planning-solutions-content-one>div,
+.tax-planning-solutions-content-two>div {
+    position: relative;
+    float: left;
+    width: 18.75rem;
+    height: 22.5rem;
+    margin-right: 1.25rem;
+    transition: all 0.5s;
+    text-align: center;
+    height: 22.5rem;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 3px 7px 0px rgba(210, 210, 210, 1);
+}
+
+
+.tax-planning-solutions-content-one>div:last-child,
+.tax-planning-solutions-content-two>div:last-child {
+    float: right;
+}
+
+
+.tax-planning-solutions-content-one>div {
+    margin-bottom: 2rem;
+}
+
+.tax-planning-solutions-content-one>div:last-child,
+.tax-planning-solutions-content-two>div:last-child {
+    margin-right: 0;
+}
+
+.tax-planning-solutions-contents .content-active {
+    width: 31.25rem;
+    height: 22.5rem;
+}
+
+.tax-planning-solutions-content-one>div .plan-text,
+.tax-planning-solutions-content-two>div .plan-text {
+    position: absolute;
+    right: .625rem;
+    top: .625rem;
+    font-size: 1.125rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: rgba(20, 28, 44, 1);
+}
+
+.tax-planning-solutions-content-one>div .tax-planning-solutions-content-img,
+.tax-planning-solutions-content-two>div .tax-planning-solutions-content-img {
+    height: 16.25rem;
+    width: 100%;
+}
+
+.tax-planning-solutions-content-one>div:nth-child(1) .tax-planning-solutions-content-img {
+    background: url('../images/touzi.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.tax-planning-solutions-content-one>div:nth-child(1).content-active .tax-planning-solutions-content-img {
+    background: url('../images/touzi2.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.tax-planning-solutions-content-one>div:nth-child(2) .tax-planning-solutions-content-img {
+    background: url('../images/gongzishouru.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.tax-planning-solutions-content-one>div:nth-child(2).content-active .tax-planning-solutions-content-img {
+    background: url('../images/gongzishouru2.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.tax-planning-solutions-content-one>div:nth-child(3) .tax-planning-solutions-content-img {
+    background: url('../images/qiyelirun.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.tax-planning-solutions-content-one>div:nth-child(3).content-active .tax-planning-solutions-content-img {
+    background: url('../images/qiyelirun2.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.tax-planning-solutions-content-two>div:nth-child(1) .tax-planning-solutions-content-img {
+    background: url('../images/naowu.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.tax-planning-solutions-content-two>div:nth-child(1).content-active .tax-planning-solutions-content-img {
+    background: url('../images/naowu2.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.tax-planning-solutions-content-two>div:nth-child(2) .tax-planning-solutions-content-img {
+    background: url('../images/maoyicaigou.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.tax-planning-solutions-content-two>div:nth-child(2).content-active .tax-planning-solutions-content-img {
+    background: url('../images/maoyicaigou2.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.tax-planning-solutions-content-two>div:nth-child(3) .tax-planning-solutions-content-img {
+    background: url('../images/shuangruan1.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.tax-planning-solutions-content-two>div:nth-child(3).content-active .tax-planning-solutions-content-img {
+    height: 16.25rem;
+    background: url('../images/shuangruan1-2.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.tax-planning-solutions-content-one>div .tax-planning-solutions-content-img img,
+.tax-planning-solutions-content-two>div .tax-planning-solutions-content-img img {
+    width: 100%;
+}
+
+.tax-planning-solutions-content-one>div .tax-planning-solutions-content-text,
+.tax-planning-solutions-content-two>div .tax-planning-solutions-content-text {
+    padding: 1.625rem 1.875rem 0 1.875rem;
+    text-align: left;
+}
+
+.tax-planning-solutions-content-one>div .tax-planning-solutions-content-text p:nth-child(1),
+.tax-planning-solutions-content-two>div .tax-planning-solutions-content-text p:nth-child(1) {
+    font-size: 1.5rem;
+    font-family: Source Han Sans CN;
+    font-weight: 500;
+    color: rgba(51, 51, 51, 1);
+    margin-bottom: .875rem;
+}
+
+.tax-planning-solutions-content-one>div .tax-planning-solutions-content-text p:nth-child(2),
+.tax-planning-solutions-content-two>div .tax-planning-solutions-content-text p:nth-child(2) {
+    font-size: 1.125rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: rgba(153, 153, 153, 1);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tax-planning-solutions-content-one>div .tax-planning-solutions-content-btn,
+.tax-planning-solutions-content-two>div .tax-planning-solutions-content-btn {
+    position: absolute;
+    top: 14.8125rem;
+    left: 1.25rem;
+    width: 7.5rem;
+    height: 2.125rem;
+    text-align: center;
+    line-height: 2.125rem;
+    font-size: 1.125rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    border-radius: 4px;
+}
+
+.tax-planning-solutions-content-one .tax-planning-solutions-content-item:nth-child(1) .tax-planning-solutions-content-btn {
+    background-color: #EB3F2A
+}
+
+.tax-planning-solutions-content-one .tax-planning-solutions-content-item:nth-child(2) .tax-planning-solutions-content-btn {
+    background-color: #FE6016
+}
+
+.tax-planning-solutions-content-one .tax-planning-solutions-content-item:nth-child(3) .tax-planning-solutions-content-btn {
+    background-color: #234184
+}
+
+.tax-planning-solutions-content-two .tax-planning-solutions-content-item:nth-child(1) .tax-planning-solutions-content-btn {
+    background-color: #FE6016
+}
+
+.tax-planning-solutions-content-two .tax-planning-solutions-content-item:nth-child(2) .tax-planning-solutions-content-btn {
+    background-color: #234184
+}
+
+.tax-planning-solutions-content-two .tax-planning-solutions-content-item:nth-child(3) .tax-planning-solutions-content-btn {
+    background-color: #07C9DA
+}
+
+.tax-planning-solutions-content-one>div .tax-planning-solutions-content-btn2,
+.tax-planning-solutions-content-two>div .tax-planning-solutions-content-btn2 {
+    display: none;
+}
+
+
+/* 选中时盒子的样式 */
+
+.tax-planning-solutions-content-one>div.content-active .plan-text,
+.tax-planning-solutions-content-two>div.content-active .plan-text {
+    display: none;
+}
+
+.tax-planning-solutions-content-one>div.content-active .tax-planning-solutions-content-img,
+.tax-planning-solutions-content-two>div.content-active .tax-planning-solutions-content-img {
+    height: 100%;
+    width: 100%;
+    background-color: skyblue;
+}
+
+.tax-planning-solutions-content-one>div.content-active .tax-planning-solutions-content-img img,
+.tax-planning-solutions-content-two>div.content-active .tax-planning-solutions-content-img img {
+    width: 100%;
+}
+
+.tax-planning-solutions-content-one>div.content-active .tax-planning-solutions-content-text,
+.tax-planning-solutions-content-two>div.content-active .tax-planning-solutions-content-text {
+    position: absolute;
+    top: 6.3125rem;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+}
+
+.tax-planning-solutions-content-one>div.content-active .tax-planning-solutions-content-text p:nth-child(1),
+.tax-planning-solutions-content-two>div.content-active .tax-planning-solutions-content-text p:nth-child(1) {
+    font-size: 1.875rem;
+    font-family: Source Han Sans CN;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 2rem
+}
+
+.tax-planning-solutions-content-one>div.content-active .tax-planning-solutions-content-text p:nth-child(2),
+.tax-planning-solutions-content-two>div.content-active .tax-planning-solutions-content-text p:nth-child(2) {
+    font-size: 1.125rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+}
+
+.tax-planning-solutions-content-one>div.content-active .tax-planning-solutions-content-btn,
+.tax-planning-solutions-content-two>div.content-active .tax-planning-solutions-content-btn {
+    display: none;
+}
+
+.tax-planning-solutions-content-one>div.content-active .tax-planning-solutions-content-btn2,
+.tax-planning-solutions-content-two>div.content-active .tax-planning-solutions-content-btn2 {
+    display: block;
+    position: absolute;
+    top: 14.8125rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 17.5rem;
+    height: 3.75rem;
+    text-align: center;
+    line-height: 3.75rem;
+    font-size: 1.5rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    background: linear-gradient(0deg, rgba(232, 59, 39, 1), rgba(250, 83, 57, 1));
+    border-radius: 10px;
+}
+
+.tax-planning-solutions-content-one>div.content-active .tax-planning-solutions-content-btn2 a,
+.tax-planning-solutions-content-two>div.content-active .tax-planning-solutions-content-btn2 a {
+    font-size: 1.5rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    background: linear-gradient(0deg, rgba(232, 59, 39, 1), rgba(250, 83, 57, 1));
+    border-radius: 10px;
+}
+
+/* lastbox选中后的样式 */
+.tax-planning-solutions-content-two>div:last-child.content-active .plan-text {
+    display: block;
+}
+
+.tax-planning-solutions-content-two>div:last-child.content-active:hover .plan-text {
+    display: none;
+}
+
+.tax-planning-solutions-content-two>div:last-child.content-active .tax-planning-solutions-content-img {
+    height: 16.25rem;
+}
+
+.tax-planning-solutions-content-two>div:last-child.content-active:hover .tax-planning-solutions-content-img {
+    height: 22.5rem;
+    background: url('../images/shuangruan2.png') no-repeat;
+}
+
+.tax-planning-solutions-content-two>div:last-child.content-active .tax-planning-solutions-content-text {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    text-align: left;
+    padding: 1.625rem 1.875rem 0 1.875rem;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.tax-planning-solutions-content-two>div:last-child.content-active:hover .tax-planning-solutions-content-text {
+    position: absolute;
+    top: 6.3125rem;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+}
+
+.tax-planning-solutions-content-two>div:last-child.content-active .tax-planning-solutions-content-text p:nth-child(1) {
+    font-size: 1.5rem;
+    font-family: Source Han Sans CN;
+    font-weight: 500;
+    color: rgba(51, 51, 51, 1);
+    margin-bottom: .875rem;
+}
+
+.tax-planning-solutions-content-two>div:last-child.content-active:hover .tax-planning-solutions-content-text p:nth-child(1) {
+    font-size: 1.875rem;
+    font-family: Source Han Sans CN;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 2rem
+}
+
+.tax-planning-solutions-content-two>div:last-child.content-active .tax-planning-solutions-content-text p:nth-child(2) {
+    font-size: 1.125rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: rgba(153, 153, 153, 1);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tax-planning-solutions-content-two>div:last-child.content-active:hover .tax-planning-solutions-content-text p:nth-child(2) {
+    font-size: 1.125rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+}
+
+.tax-planning-solutions-content-two>div:last-child.content-active .tax-planning-solutions-content-btn2 {
+    display: none;
+}
+
+.tax-planning-solutions-content-two>div:last-child.content-active:hover .tax-planning-solutions-content-btn2 {
+    display: block;
+}
+
+.tax-planning-solutions-content-two>div:last-child.content-active .tax-planning-solutions-content-btn {
+    display: block;
+}
+
+.tax-planning-solutions-content-two>div:last-child.content-active:hover .tax-planning-solutions-content-btn {
+    display: none;
+}
+
+
+
+
+
+/* 惠优税优势 start */
+
+.preferential-taxadvantage-box {
+    width: 100%;
+    height: 48.75rem;
+    background-color: #FA5339;
+    margin-top: 3.875rem;
+
+}
+
+.preferential-taxadvantage {
+    padding-top: 3rem;
+}
+
+.preferential-taxadvantage>div:nth-child(1) {
+    width: 7.5rem;
+    height: .25rem;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 2px;
+    margin-bottom: .5rem;
+}
+
+.preferential-taxadvantage>div:nth-child(2) {
+    font-size: 2.25rem;
+    font-family: Source Han Sans CN;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 4.6875rem;
+}
+
+.preferential-taxadvantage-content-icon {
+    margin-bottom: 3.9375rem;
+}
+
+.preferential-taxadvantage-content-icon ul li {
+    float: left;
+    width: 20rem;
+    height: 12.5rem;
+    margin-right: 5.625rem;
+    cursor: pointer;
+}
+
+.preferential-taxadvantage-content-icon ul li:nth-child(1) {
+    background: url('../images/zhuanye.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.preferential-taxadvantage-content-icon ul li:nth-child(2) {
+    background: url('../images/gaoxiao.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.preferential-taxadvantage-content-icon ul li:nth-child(3) {
+    background: url('../images/anquan.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.preferential-taxadvantage-content-icon ul>li:nth-child(1).fousess {
+    background: url('../images/zhuanye2.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.preferential-taxadvantage-content-icon ul>li:nth-child(2).fousess {
+    background: url('../images/gaoxiao2.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.preferential-taxadvantage-content-icon ul>li:nth-child(3).fousess {
+    background: url('../images/anquan2.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.preferential-taxadvantage-content-icon ul li:last-child {
+    margin-right: 0;
+}
+
+
+.preferential-taxadvantage-content-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: Source Han Sans CN;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 2.8125rem;
+}
+
+.preferential-taxadvantage-content-imgs {
+    position: relative;
+    height: 34.125rem;
+    /* background-color: pink */
+}
+
+.preferential-taxadvantage-content-imgs {
+    position: relative;
+    overflow: hidden;
+}
+
+.preferential-taxadvantage-content-imgs ul {
+    position: absolute;
+    width: 400%;
+    /* transition: all 0.5s; */
+}
+
+.preferential-taxadvantage-content-imgs ul li {
+    float: left;
+    width: 71.25rem;
+    height: 34.125rem;
+    line-height: 34.125rem;
+    color: #FAFAFA;
+    text-align: center;
+    font-size: 100px;
+}
+
+.preferential-taxadvantage-content-imgs ul li:nth-child(1) {
+    background-color: pink
+}
+
+.preferential-taxadvantage-content-imgs ul li:nth-child(2) {
+    background-color: skyblue;
+}
+
+.preferential-taxadvantage-content-imgs ul li:nth-child(3) {
+    background-color: red
+}
+
+.preferential-taxadvantage-content-imgs ul li:nth-child(4) {
+    background-color: pink
+}
+
+.preferential-taxadvantage-content-imgs>span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4.25rem;
+    height: 4.25rem;
+    cursor: pointer;
+}
+
+.preferential-taxadvantage-content-imgs>span:nth-of-type(1) {
+    left: .625rem;
+}
+
+.preferential-taxadvantage-content-imgs>span:nth-of-type(2) {
+    right: .625rem;
+}
+
+.preferential-taxadvantage-content-imgs>span img {
+    width: 100%;
+}
+
+/* 惠优税优势 end */
+
+
+
+/* 精选园区 start */
+.selected-park-box {
+    padding-top: 21.25rem;
+    height: 78.5rem;
+    background: #FAFAFA;
+    box-sizing: border-box;
+    margin-bottom: 3.6875rem;
+}
+
+.selected-park>div:nth-child(1) {
+    width: 8.75rem;
+    height: 4px;
+    background: rgba(238, 68, 46, 1);
+    border-radius: 2px;
+    margin-bottom: .6875rem
+}
+
+.selected-park>div:nth-child(2) {
+    font-size: 2.25rem;
+    font-family: Source Han Sans CN;
+    font-weight: 500;
+    color: rgba(51, 51, 51, 1);
+    margin-bottom: 3.0625rem;
+}
+
+.selected-park>div.map-box {
+    height: 46.25rem;
+    background: url('../images/map.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.selected-park>div.map-box .map-box-left {
+    float: left;
+    padding-top: 1.125rem;
+}
+
+.selected-park>div.map-box .map-box-left div {
+    width: 21.4375rem;
+    height: 7.75rem;
+    margin-bottom: 3.125rem;
+}
+
+.selected-park>div.map-box .map-box-left div:last-child {
+    margin-bottom: 0;
+}
+
+.selected-park>div.map-box .map-box-left div img {
+    display: block;
+    width: 100%;
+}
+
+.selected-park>div.map-box .map-box-right {
+    float: right;
+    padding-top: .9375rem;
+}
+
+.selected-park>div.map-box .map-box-center .map-box-center-item,
+.selected-park>div.map-box .map-box-right .map-box-right-yuanqu-item {
+    display: none;
+}
+
+.selected-park>div.map-box .map-box-right .map-box-right-yuanqu-item div {
+    width: 15rem;
+    height: 5.1875rem;
+    margin-bottom: 2.875rem;
+    background: url('../images/chanyeyuanditu.png') no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 5.1875rem;
+    font-size: 1.5rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: rgba(255, 254, 254, 1);
+}
+
+.selected-park>div.map-box .map-box-right .map-box-right-yuanqu-item div:last-child {
+    margin-bottom: 0;
+}
+
+.selected-park>div.map-box .map-box-right-morebtn {
+    width: 5.375rem;
+    height: 2.375rem;
+    background: url('../images/huanyipibtn.png') no-repeat;
+    background-size: 100% 100%;
+    font-size: 18px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: rgba(239, 73, 51, 1);
+    line-height: 2.375rem;
+    text-align: center;
+    margin-left: 5.125rem;
+    margin-top: 2.25rem;
+    cursor: pointer;
+    moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.selected-park .active-map {
+    display: block !important;
+}
+
+/* 精选园区 end */
+
+
 /* 合作伙伴 */
 .partner-box {
-    margin-bottom: 4.25rem;
+    margin-bottom: 2.9375rem;
 }
 
 .partner-box .partner {}
 
 .partner-box .partner .partner-title {
-    position: relative;
-    width: 13.9375rem;
-    height: 2.1875rem;
-    background: url('../images/partner2x.png') no-repeat center;
-    background-size: 100%;
-    margin-bottom: 2.5rem;
-}
-
-.partner-box .partner .partner-title .partner-title-box {
-    position: absolute;
-    top: 1.4375rem;
-    left: 0;
+    margin-bottom: 1.8rem
 }
 
 .partner-box .partner .partner-title .partner-title-box span {
-    font-size: 1.875rem;
-    font-family: "PingFang SC", "Microsoft YaHei", "微软雅黑";
-    font-weight: 800;
-    color: rgba(0, 0, 0, 1);
-    line-height: 1.875rem;
+    font-size: 2.25rem;
+    font-family: Source Han Sans CN;
+    font-weight: 500;
+    color: rgba(51, 51, 51, 1);
 }
 
 .partner-box .partner .modified-line {
-    width: 3.75rem;
-    height: .25rem;
-    background: rgba(254, 169, 17, 1);
-    margin-bottom: 5.375rem;
+    margin-bottom: .6875rem;
+    width: 5rem;
+    height: 4px;
+    background: rgba(238, 68, 46, 1);
+    border-radius: 2px;
 }
 
 .partner-box .partner .partner-img {
@@ -1155,36 +1260,16 @@ a {
 /* 底部 */
 
 .fotter-box {
-    border-radius: 3.125rem 3.125rem 0px 0px;
-    background-color: #323C48;
+    /* border-radius: 3.125rem 3.125rem 0px 0px; */
+    background-color: #272939;
     padding-bottom: 2.375rem;
 }
 
 .fotter-box .fotter {}
 
-.partener_titile {
-    padding-top: 3.6875rem;
-    font-size: 3rem;
-    font-family: "PingFang SC", "Source Han Sans CN", "Microsoft YaHei", "微软雅黑";
-    font-weight: 400;
-    color: rgba(255, 255, 255, 1);
-    -webkit-text-stroke: 1px undefined;
-    text-stroke: 1px undefined;
-}
-
-.parterne_info {
-    margin: 3.75rem 0 0 0;
-    padding-bottom: 3.75rem;
-    border-bottom: 1px solid #ccc;
-    font-size: .875rem;
-    font-family: "Source Han Sans CN", "Microsoft YaHei", "微软雅黑";
-    font-weight: 300;
-    color: rgba(255, 255, 255, .7);
-    line-height: 1.4375rem;
-}
 
 .parter_catefories {
-    margin-top: 4.9375rem;
+    padding-top: 5rem;
     overflow: hidden;
     font-size: .6875rem;
     font-family: "Source Han Sans CN", "Microsoft YaHei", "微软雅黑";
@@ -1197,11 +1282,11 @@ a {
 }
 
 .parter_catefories>dl:nth-of-type(2) {
-    margin: 0 5.125rem 0 5.875rem;
+    margin: 0 8.125rem 0 9.375rem;
 }
 
 .parter_catefories>dl:nth-of-type(3) {
-    margin-right: 5.875rem;
+    margin-right: 8.375rem;
 }
 
 .parter_catefories>dl:nth-of-type(5) {
@@ -1210,6 +1295,7 @@ a {
 
 .parter_catefories dl dt {
     margin-bottom: 3.3125rem;
+
 }
 
 .parter_catefories dl dd {
@@ -1220,39 +1306,37 @@ a {
     font-size: 1.125rem;
     font-family: "Source Han Sans CN", "Microsoft YaHei", "微软雅黑";
     font-weight: 700;
-    color: rgba(220, 220, 220, 1);
+    color: #FFFFFF;
 }
 
 .parter_catefories dl dd>a {
     font-size: 1.125rem;
     font-family: "Source Han Sans CN", "Microsoft YaHei", "微软雅黑";
     font-weight: 400;
-    color: rgba(220, 220, 220, .7);
+    color: #DCDCDC;
 }
 
 .concat_icon {
+    text-align: right;
     margin-top: 1.75rem;
-    margin-right: 2.875rem;
+    margin-right: 4.875rem;
 }
 
 .concat_icon div {
-    float: right;
+    display: inline-block;
     width: 1.5rem;
     border: 1px solid #ccc;
     border-radius: 50%;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2.375rem;
+    height: 2.375rem;
     text-align: center;
-    line-height: 1.5rem;
     margin-left: 1.5rem;
+    padding: .5rem;
+    box-sizing: border-box;
 }
 
 .concat_icon img {
-    padding-top: 3px;
-    padding-left: 1px;
-    height: 60%;
-    width: 60%;
-    border-radius: 50%;
+    width: 100%;
 }
 
 .concat_icon div:nth-of-type(2) {
@@ -1263,36 +1347,170 @@ a {
     position: relative;
 }
 
+.fotter-line {
+    margin-top: 3.5625rem;
+    height: 1px;
+    background: rgba(122, 122, 122, 1);
+}
+
+.fotter div:nth-child(4) {
+    margin-top: 1.1875rem;
+    text-align: center;
+    font-size: .875rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: rgba(195, 195, 195, 1);
+}
+
+
+
+
+/* bottom资讯 */
+.bottom {
+    position: fixed;
+    right: 0;
+    bottom: 2.5rem;
+}
+
+.bottom>div:nth-child(1),
+.bottom>div:nth-child(2) {
+    position: relative;
+    width: 5rem;
+    height: 11.25rem;
+}
+
+.bottom>div:nth-child(1) {
+    background: linear-gradient(0deg, rgba(232, 59, 39, 1), rgba(250, 83, 57, 1));
+    margin-bottom: 10px;
+}
+
+.bottom>div:nth-child(2) {
+    background: #272939;
+}
+
+.bottom>div .bottom-title {
+    line-height: 5rem;
+    height: 100%;
+    text-align: center;
+    writing-mode: vertical-rl;
+    font-size: 1.5rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+}
+
+.bottom>div>.bottom-item,
+.bottom>div>.bottom-item2 {
+    position: absolute;
+    right: -12.5rem;
+    top: 0;
+    width: 12.5rem;
+    height: 11.25rem;
+    transition: all 0.5s;
+    z-index: -1;
+    box-sizing: border-box;
+}
+
+.bottom>div>.bottom-item {
+    padding-top: 2.2rem;
+    background-color: #F95238
+}
+
+.bottom>div>.bottom-item ul {
+    background-color: #F95238
+}
+
+.bottom .bottom-item ul {
+    height: 100%;
+}
+
+.bottom .bottom-item ul li {
+    float: left;
+    width: 3.375rem;
+    height: 1.6875rem;
+    line-height: 1.6875rem;
+    margin-left: 2rem;
+    margin-bottom: .875rem;
+    border-bottom: 1px solid #fff;
+}
+
+.bottom .bottom-item ul li a {
+    font-size: 1.125rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #fff;
+}
+
+.bottom>div>.bottom-item2 {
+    padding: 0 8px;
+    background-color: #000;
+}
+
+.bottom>div>.bottom-item2 div {
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.bottom>div>.bottom-item2 div:nth-child(2) {
+    padding: .875rem 0 0 1.875rem;
+}
+
+.bottom>div>.bottom-item2 div:nth-child(1) {
+    padding: 1.675rem 0 0 1.875rem;
+    border-bottom: 1px solid #fff;
+}
+
+.bottom>div>.bottom-item2 div p:nth-child(1) {
+    font-size: 1rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: .875rem;
+}
+
+.bottom>div>.bottom-item2 div p:nth-child(2) {
+    font-size: 1.125rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: .875rem;
+}
+
+.bottom>div:hover .bottom-item,
+.bottom>div:hover .bottom-item2 {
+    right: 5.3125rem;
+}
+
 /* 返回顶部 */
 
-.goTop {
-    position: fixed;
-    bottom: 1.25rem;
-    right: 8.4375rem;
-    width: 4.375rem;
-    height: 3.875rem;
+.bottom>div:nth-child(3).goTop {
+    width: 5rem;
+    height: 4.5625rem;
     text-align: center;
-    line-height: 1.875rem;
     z-index: 999;
-    background-color: #fff;
+    background-color: #272939;
     padding-top: .625rem;
     display: none;
-    cursor: pointer
+    cursor: pointer;
+    margin-top: .625rem;
+    padding-top: .625rem;
 }
 
-.goTop i {
-    overflow: hidden;
-    /* float: right; */
-    display: inline-block;
-    width: 1.4375rem;
-    height: 1.625rem;
-    background-size: contain;
-    background-image: url('../images/goback.png');
+.goTop div:nth-child(1) {
+    width: 2rem;
+    height: 2rem;
+    margin: 0 auto;
+    margin-bottom: .375rem;
 }
 
-.goTop div {
-    font-size: 0.5625rem;
-    font-family: "Source Han Sans CN", "Microsoft YaHei", "微软雅黑";
-    font-weight: 400;
-    color: rgba(50, 50, 50, 1);
+.goTop div:nth-child(1) img {
+    width: 100%;
+}
+
+.goTop div:nth-child(2) {
+    font-size: 1.125rem;
+    font-family: Source Han Sans CN;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
 }
