@@ -384,3 +384,6 @@
 ---------------------------------------------------------------
 [ 2019-12-02T21:14:25+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
 [ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'desciption' in 'where clause'[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\db\Connection.php:390]
+---------------------------------------------------------------
+[ 2019-12-02T21:33:01+08:00 ] 127.0.0.1 GET /home/industry/index.html
+[ error ] [2]call_user_func() expects parameter 1 to be a valid callback, class '\think\paginator\driver\Page' not found[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\db\Query.php:1434]
