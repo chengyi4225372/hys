@@ -387,3 +387,6 @@
 ---------------------------------------------------------------
 [ 2019-12-02T21:33:01+08:00 ] 127.0.0.1 GET /home/industry/index.html
 [ error ] [2]call_user_func() expects parameter 1 to be a valid callback, class '\think\paginator\driver\Page' not found[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\db\Query.php:1434]
+---------------------------------------------------------------
+[ 2019-12-02T21:38:52+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/del.html?id=2
+[ error ] [10501]SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'status' at row 1[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\db\Connection.php:463]

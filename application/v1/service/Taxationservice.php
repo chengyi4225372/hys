@@ -114,7 +114,7 @@ class Taxationservice
             return  false;
         }
 
-        $ret = Taxation::instance()->where(['id'=>$id])->update(['status'=>-1]);
+        $ret = Taxation::instance()->where(['id'=>$id])->update(['status'=>0]);
 
         if($ret){
             return true;

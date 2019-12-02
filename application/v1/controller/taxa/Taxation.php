@@ -110,9 +110,9 @@ class Taxation extends AuthController
             $ret = Taxationservice::instance()->updateStatus($id);
 
             if($ret !== false){
-                return  json(['code'=>200,'msg'=>'操作成功']);
+                return  json(['code'=>200,'msg'=>'删除成功']);
             }else{
-                return  json(['code'=>400,'msg'=>'操作失败']);
+                return  json(['code'=>400,'msg'=>'删除失败']);
             }
         }
     }

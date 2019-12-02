@@ -146,14 +146,44 @@ $('.edit_taxa').click(function(){
     },'json');
 })
 
-
-
 /**
  * 取消
  */
 $('.cancle').click(function(){
     parent.layer.closeAll();
 });
+
+/**
+ * 删除
+ */
+function dels(obj){
+    var id = $(obj).attr('data-id');
+    var urls = $(obj).attr('data-url');
+    if(id == '' || id== undefined || id <0){
+        return false;
+    }
+    layer.confirm('您确定要删除？', {
+        btn: ['确定','点错了'] //按钮
+    }, function(){
+        $.get(urls,{'id':id},function(ret){
+
+            if(ret.code == 200){
+                layer.msg(ret.msg,{icon:6},function(){
+                    parent.location.reload();
+                })
+            }
+
+            if(ret.code == 400){
+                layer.msg(ret.msg,{icon:5},function(){
+                    parent.location.reload();
+                })
+            }
+
+        },'json');
+    }, function(){
+        parent.layer.closeAll();
+    });
+}
 
 
 /**
