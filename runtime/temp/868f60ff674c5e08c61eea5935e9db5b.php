@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:7:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/v1\view\ban\banner\index.html";i:1575258113;s:96:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\layout\default.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\meta.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\header.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\left.html";i:1575258407;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\footer.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\script.html";i:1575250246;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:7:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/v1\view\ban\banner\index.html";i:1575271618;s:96:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\layout\default.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\meta.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\header.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\left.html";i:1575258407;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\footer.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\script.html";i:1575268832;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -294,7 +294,7 @@
         <div class="box-header with-border">
             <button type="button" class="btn btn-sm btn-refresh"><i class="fa fa-refresh"></i></button>
             <button type="button" class="btn bg-purple btn-sm btn-dialog"
-                    id="addusers" data-url="<?php echo url('/v1/ban/banner/add'); ?>">
+                    id="addbanner" data-url="<?php echo url('/v1/ban/banner/add'); ?>">
                 <i class="fa fa-plus-circle">添加banner图</i></button>
         </div>
         <div class="box-body">
@@ -306,23 +306,25 @@
                 <th class="text-center">banner图</th>
                 <th class="text-center">操作</th>
                 </thead>
+                <?php if(is_array($list) || $list instanceof \think\Collection || $list instanceof \think\Paginator): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
                 <tbody>
                 <tr>
                     <td class="td-align td-padding">
                         <input type="checkbox" name="box_checked" data-id="" class="data-check_box">
                     </td>
                     <td class="text-center">
-                        <a href="">
-                            <img src="" alt="">
+                        <a href="<?php echo $vo['imgs']; ?>">
+                            <img src="<?php echo $vo['imgs']; ?>" alt="" style="width:180px;height:120px;" />
                         </a>
                     </td>
 
                     <td class="text-center">
-                        <a href="javascript:void(0)" class="btn btn-info" data-url="" data-id="" onclick="">编辑</a>
+                        <a href="javascript:void(0)" class="btn btn-info" data-url="<?php echo url('/v1/ban/banner/edit'); ?>"
+                           data-id="<?php echo $vo['id']; ?>" onclick="editData($(this).attr('data-id'),$(this).attr('data-url'))">编辑</a>
                     </td>
                 </tr>
-            
                 </tbody>
+               <?php endforeach; endif; else: echo "" ;endif; ?>
             </table>
             <div class="pages"></div>
         </div>
@@ -386,6 +388,10 @@
 
 <!-- chart js-->
 <script src="/static/assets/dist/js/chart.js"></script>
+
+<!-- banner.js-->
+<script src="/static/assets/dist/js/banner.js"></script>
+
 <script>
     admin_module.changepas();
 </script>

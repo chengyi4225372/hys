@@ -115,3 +115,12 @@
 ---------------------------------------------------------------
 [ 2019-12-02T11:41:29+08:00 ] 127.0.0.1 GET /v1/ban/banner/index.html
 [ error ] [8]未定义变量: list[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\868f60ff674c5e08c61eea5935e9db5b.php:311]
+---------------------------------------------------------------
+[ 2019-12-02T11:51:40+08:00 ] 127.0.0.1 GET /home/industry/index.html
+[ error ] [8]未定义变量: biao[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\241ffa330a2da239713bd83ad5e01e47.php:228]
+---------------------------------------------------------------
+[ 2019-12-02T11:52:13+08:00 ] 127.0.0.1 GET /home/industry/index.html
+[ error ] [8]未定义变量: biao[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\241ffa330a2da239713bd83ad5e01e47.php:228]
+---------------------------------------------------------------
+[ 2019-12-02T11:52:13+08:00 ] 127.0.0.1 GET /home/industry/index.html
+[ error ] [8]未定义变量: biao[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\241ffa330a2da239713bd83ad5e01e47.php:228]
