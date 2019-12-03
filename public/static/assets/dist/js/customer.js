@@ -161,6 +161,7 @@ function custDel(obj){
     var urls = $(obj).attr('data-url');
     var id  = $(obj).attr('data-id');
 
+
     if(urls == '' || urls == undefined){
         return false;
     }

@@ -109,13 +109,13 @@ class Customerservice
       * 修改状态
       * @id
       */
-     public function savedel($id){
-         if(empty($id)|| !isset($id) == false ||is_null($id)){
+     public function save_status($id){
+         if(empty($id)||is_null($id) || isset($id) == false){
              return false;
          }
 
-        $ret = Customer::instance()->where(['id'=>$id])->data(['status'=>0])->update();
-
+        $arr = ['status'=>0];
+        $ret = Customer::instance()->where(['id'=>$id])->update($arr);
         if($ret !== false){
             return true;
         }else {

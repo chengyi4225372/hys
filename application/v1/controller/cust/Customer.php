@@ -100,11 +100,12 @@ class Customer extends AuthController
     public function dels(){
         if($this->request->isGet()){
             $id  = input('get.id','','int');
+
             if(empty($id) || is_null($id)|| $id <= 0){
                 return false;
             }
 
-            $ret = Customerservice::instance()->savedel($id);
+            $ret = Customerservice::instance()->save_status($id);
 
             if($ret !== false){
                 return json(['code'=>200,'msg'=>'删除成功']);
@@ -113,7 +114,6 @@ class Customer extends AuthController
             }
 
         }
-
         return false;
     }
 
