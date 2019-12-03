@@ -15,4 +15,12 @@ class Programme extends BaseController
          return $this->fetch();
      }
 
+     /**
+      * @author jason
+      * @name 产品服务
+      */
+     public function productservice()
+     {
+        return $this->fetch();
+     }
 }

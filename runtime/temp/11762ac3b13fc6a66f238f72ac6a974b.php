@@ -1,5 +1,5 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1575275381;}*/ ?>
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1575344728;}*/ ?>
+<!DOCTYPE>
 <html lang="en">
 
 <head>
@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/static/home/css/index.css">
     <script src="/static/home/js/clamp.js"></script>
     <script src='/static/home/js/index.js'></script>
+    <script src="/static/home/js/jquery.js"></script>
 </head>
 
 <body>
@@ -29,12 +30,12 @@
                 <!-- nav部分 -->
                 <div class="nav">
                     <ul class="clearfix">
-                        <li class="nav-active"><a href="#">首页</a></li>
+                        <li class="nav-active"><a href="/">首页</a></li>
                         <li><a href="#"> 产品服务</a></li>
-                        <li><a href="#">行业解决方案</a></li>
+                        <li><a href="<?php echo url('/home/programme/index'); ?>">行业解决方案</a></li>
                         <li><a href="#">客户案例</a></li>
-                        <li><a href="#">新闻资讯</a></li>
-                        <li><a href="<?php echo url('home/industry/index'); ?>">行业资讯</a></li>
+                        <li><a href="<?php echo url('home/industry/index'); ?>">行业新闻资讯</a></li>
+                        <li><a href="#">会员通道</a></li>
                     </ul>
                 </div>
                 <!-- 登陆注册 -->
@@ -45,7 +46,7 @@
           <div class="loging-btn"><a href="./register.html">注册</a></div>
         </div> -->
                 <!-- 头像部分 -->
-                <div class="user-icon-box">
+                <!-- <div class="user-icon-box">
                     <img class="user-icon" src="/static/home/images/icon.png" alt="">
                     <span class="phone">133****5674</span>
                     <div class="login-out">
@@ -53,7 +54,7 @@
                             <li><a href="">退出登录</a></li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
             </div>
 
         </div>
@@ -368,7 +369,7 @@
     <!-- 侧边栏bottom资讯 -->
     <div class="bottom">
         <div>
-            <div class="bottom-title">惠家族产品</div>
+            <div class="bottom-title">立即预约咨询</div>
             <div class="bottom-item">
                 <ul>
                     <li><a href="#">惠优税</a></li>
@@ -384,7 +385,7 @@
             <div class="bottom-title">联系我们</div>
             <div class="bottom-item2">
                 <div>
-                    <p>专家服务电话</p>
+                    <p>立即预约咨询</p>
                     <p>181-8619-4461</p>
                 </div>
                 <div>
@@ -404,5 +405,20 @@
     </div>
 
 </body>
+<script>
+    $(function () {
+        $('.nav ul li').on('click', function () {
+            $(this).addClass('nav-active chosenPage').siblings().removeClass('nav-active chosenPage')
+        })
+        $('.nav ul li').on('mouseenter', function () {
+            $(this).addClass('nav-active').siblings().removeClass('nav-active')
+        })
+        $('.nav').on('mouseleave', function () {
+            $('.nav ul li').removeClass('nav-active')
+            if ($('.chosenPage').length < 1) $('.nav ul li').eq(0).addClass('chosenPage')
+            $('.chosenPage').addClass('nav-active')
+        })
+    })
+</script>
 
 </html>
