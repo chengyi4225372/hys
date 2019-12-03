@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\industry\index.html";i:1575363153;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\industry\index.html";i:1575365622;}*/ ?>
 <!DOCTYPE>
 <html lang="en">
 
@@ -280,6 +280,21 @@
 
 
     </div>
+    <script>
+        $(function () {
+            $('.nav ul li').on('click', function () {
+                $(this).addClass('nav-active chosenPage').siblings().removeClass('nav-active chosenPage')
+            })
+            $('.nav ul li').on('mouseenter', function () {
+                $(this).addClass('nav-active').siblings().removeClass('nav-active')
+            })
+            $('.nav').on('mouseleave', function () {
+                $('.nav ul li').removeClass('nav-active')
+                if ($('.chosenPage').length < 1) $('.nav ul li').eq(4).addClass('chosenPage')
+                $('.chosenPage').addClass('nav-active')
+            })
+        })
+    </script>
 
 </body>
 
