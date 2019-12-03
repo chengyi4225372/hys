@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:107:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\customer\info.html";i:1575367562;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:107:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\customer\info.html";i:1575368906;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +10,7 @@
     <meta name="keyword" content="<?php echo $info['keywords']; ?>">
     <meta name="description" content="<?php echo $info['description']; ?>">
     <script src="/static/home/js/jquery.js"></script>
-    <script src="/static/home/js/programme.js"></script>
+<!--    <script src="/static/home/js/programme.js"></script>-->
     <script src="/static/home/js/customer.js"></script>
 </head>
 
