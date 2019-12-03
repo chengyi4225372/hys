@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:109:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\programme\index.html";i:1575293437;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:109:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\programme\index.html";i:1575345005;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,8 +28,8 @@
             <li><a href="#"> 产品服务</a></li>
             <li class="nav-active"><a href="<?php echo url('/home/programme/index'); ?>">行业解决方案</a></li>
             <li><a href="#">客户案例</a></li>
-            <li><a href="#">新闻资讯</a></li>
-            <li><a href="<?php echo url('home/industry/index'); ?>">行业资讯</a></li>
+            <li><a href="<?php echo url('home/industry/index'); ?>">行业新闻资讯</a></li>
+            <li><a href="#">会员通道</a></li>
           </ul>
         </div>
         <!-- 登陆注册 -->
@@ -40,7 +40,7 @@
                     <div class="loging-btn"><a href="./register.html">注册</a></div>
                   </div> -->
         <!-- 头像部分 -->
-        <div class="user-icon-box">
+        <!-- <div class="user-icon-box">
           <img class="user-icon" src="/static/home/images/icon.png" alt="">
           <span class="phone">133****5674</span>
           <div class="login-out">
@@ -48,7 +48,7 @@
               <li><a href="">退出登录</a></li>
             </ul>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
 
@@ -161,15 +161,30 @@
 
 </body>
 <script>
-
   $(function () {
 
+    /* 头部导航点击和hover效果 */
+    $('.nav ul li').on('click', function () {
+      $(this).addClass('nav-active chosenPage').siblings().removeClass('nav-active chosenPage')
+    })
+    $('.nav ul li').on('mouseenter', function () {
+      $(this).addClass('nav-active').siblings().removeClass('nav-active')
+    })
+    $('.nav').on('mouseleave', function () {
+      $('.nav ul li').removeClass('nav-active')
+      if ($('.chosenPage').length < 1) $('.nav ul li').eq(2).addClass('chosenPage')
+
+      $('.chosenPage').addClass('nav-active')
+    })
+
+    /* 选项卡切换 */
     $('.tab ul li').on('click', function () {
       $('.tabCon img').attr('src', `/static/home/images/${$(this).index()}case.png`)
       $('.tabTitle').html($(this).children().html())
       $(this).addClass('activeTab').siblings().removeClass('activeTab')
     })
   })
+
 </script>
 
 </html>
