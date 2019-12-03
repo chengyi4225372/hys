@@ -27,26 +27,14 @@ class Chartservice
         return self::$instance;
     }
 
-    /**
-     * 只显示一调数据 前台
-     *
-     * return array
-     */
-     public  function  getOne(){
-         $chart = Chart::instance()->order('create_time desc')->find();
-         return $chart;
-     }
-
-
-
 
    /**
     * 获取正常数据
     */
    public function getList(){
        $w = ['status'=>1]; //正常
-       $list = Chart::instance()->where($w)->order(['id'=>'desc'])->paginate(15);
-       return  $list;
+       $list = Chart::instance()->where($w)->order(['sort'=>'desc'])->select();
+       return  $list?$list:'';
    }
 
     /**
@@ -127,5 +115,26 @@ class Chartservice
             return false;
         }
     }
+
+
+    /**
+     * 排序方法
+     * @id
+     * @sort
+     */
+    public function getsavesort($id,$sort){
+        if(empty($id) || is_null($id)|| $id <=0){
+            return false;
+        }
+
+        $res = Chart::instance()->where(['id'=>$id])->data(['sort'=>$sort])->update();
+
+        if($res !== false){
+            return true;
+        }else {
+            return false;
+        }
+    }
+
 
 }

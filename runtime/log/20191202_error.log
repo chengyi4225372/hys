@@ -64,3 +64,329 @@
 ---------------------------------------------------------------
 [ 2019-12-02T09:29:04+08:00 ] 127.0.0.1 GET /v1/charts/chart/index.html
 [ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'huiqiyun.h_hys_chart' doesn't exist[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\db\Connection.php:390]
+---------------------------------------------------------------
+[ 2019-12-02T10:58:43+08:00 ] 127.0.0.1 GET /home/industry/index.html
+[ error ] [8]未定义变量: four[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\241ffa330a2da239713bd83ad5e01e47.php:154]
+---------------------------------------------------------------
+[ 2019-12-02T10:58:44+08:00 ] 127.0.0.1 GET /home/industry/index.html
+[ error ] [8]未定义变量: four[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\241ffa330a2da239713bd83ad5e01e47.php:154]
+---------------------------------------------------------------
+[ 2019-12-02T10:58:45+08:00 ] 127.0.0.1 GET /home/industry/index.html
+[ error ] [8]未定义变量: four[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\241ffa330a2da239713bd83ad5e01e47.php:154]
+---------------------------------------------------------------
+[ 2019-12-02T10:59:55+08:00 ] 127.0.0.1 GET /home/industry/index.html
+[ error ] [8]未定义变量: biao[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\241ffa330a2da239713bd83ad5e01e47.php:228]
+---------------------------------------------------------------
+[ 2019-12-02T10:59:56+08:00 ] 127.0.0.1 GET /home/industry/index.html
+[ error ] [8]未定义变量: biao[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\241ffa330a2da239713bd83ad5e01e47.php:228]
+---------------------------------------------------------------
+[ 2019-12-02T11:10:54+08:00 ] 127.0.0.1 GET /home/industry/index.html
+[ error ] [8]未定义变量: biao[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\241ffa330a2da239713bd83ad5e01e47.php:228]
+---------------------------------------------------------------
+[ 2019-12-02T11:17:36+08:00 ] 127.0.0.1 GET /v1/charts/chart/index.html
+[ error ] [0]语法解析错误: syntax error, unexpected ''): ?>active<?php endif; ?>">' (T_CONSTANT_ENCAPSED_STRING)[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\98cd08512ca8cba2c421b12f9e0a2b1f.php:260]
+---------------------------------------------------------------
+[ 2019-12-02T11:19:05+08:00 ] 127.0.0.1 GET /v1/charts/chart/index.html
+[ error ] [0]语法解析错误: syntax error, unexpected ''): ?>active<?php endif; ?>">' (T_CONSTANT_ENCAPSED_STRING)[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\98cd08512ca8cba2c421b12f9e0a2b1f.php:260]
+---------------------------------------------------------------
+[ 2019-12-02T11:19:48+08:00 ] 127.0.0.1 GET /v1/charts/chart/index.html
+[ error ] [0]语法解析错误: syntax error, unexpected ''): ?>active<?php endif; ?>">' (T_CONSTANT_ENCAPSED_STRING)[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\98cd08512ca8cba2c421b12f9e0a2b1f.php:249]
+---------------------------------------------------------------
+[ 2019-12-02T11:19:49+08:00 ] 127.0.0.1 GET /v1/charts/chart/index.html
+[ error ] [0]语法解析错误: syntax error, unexpected ''): ?>active<?php endif; ?>">' (T_CONSTANT_ENCAPSED_STRING)[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\98cd08512ca8cba2c421b12f9e0a2b1f.php:249]
+---------------------------------------------------------------
+<<<<<<< HEAD
+[ 2019-12-02T13:46:33+08:00 ] 127.0.0.1 GET /home/industry/index.html
+[ error ] [8]未定义变量: biao[C:\phpEnv\www\hys\runtime\temp\9e409fec6bdae0cb92de74a0ca3cc6fd.php:228]
+---------------------------------------------------------------
+[ 2019-12-02T13:49:41+08:00 ] 127.0.0.1 GET /home/Programme/index.html
+[ error ] [8]未定义变量: tgis[C:\phpEnv\www\hys\application\home\controller\Programme.php:15]
+---------------------------------------------------------------
+[ 2019-12-02T13:49:41+08:00 ] 127.0.0.1 GET /home/Programme/index.html
+[ error ] [8]未定义变量: tgis[C:\phpEnv\www\hys\application\home\controller\Programme.php:15]
+---------------------------------------------------------------
+[ 2019-12-02T13:49:42+08:00 ] 127.0.0.1 GET /home/Programme/index.html
+[ error ] [8]未定义变量: tgis[C:\phpEnv\www\hys\application\home\controller\Programme.php:15]
+---------------------------------------------------------------
+[ 2019-12-02T13:49:42+08:00 ] 127.0.0.1 GET /home/Programme/index.html
+[ error ] [8]未定义变量: tgis[C:\phpEnv\www\hys\application\home\controller\Programme.php:15]
+---------------------------------------------------------------
+[ 2019-12-02T13:49:42+08:00 ] 127.0.0.1 GET /home/Programme/index.html
+[ error ] [8]未定义变量: tgis[C:\phpEnv\www\hys\application\home\controller\Programme.php:15]
+---------------------------------------------------------------
+[ 2019-12-02T13:49:42+08:00 ] 127.0.0.1 GET /home/Programme/index.html
+[ error ] [8]未定义变量: tgis[C:\phpEnv\www\hys\application\home\controller\Programme.php:15]
+---------------------------------------------------------------
+[ 2019-12-02T13:49:42+08:00 ] 127.0.0.1 GET /home/Programme/index.html
+[ error ] [8]未定义变量: tgis[C:\phpEnv\www\hys\application\home\controller\Programme.php:15]
+---------------------------------------------------------------
+[ 2019-12-02T13:51:03+08:00 ] 127.0.0.1 GET /home/programme/index
+[ error ] [8]未定义变量: tgis[C:\phpEnv\www\hys\application\home\controller\Programme.php:15]
+---------------------------------------------------------------
+[ 2019-12-02T13:51:14+08:00 ] 127.0.0.1 GET /home/programme/index
+[ error ] [8]Undefined property: app\home\controller\Programme::$fetch（）[C:\phpEnv\www\hys\application\home\controller\Programme.php:15]
+---------------------------------------------------------------
+[ 2019-12-02T13:51:16+08:00 ] 127.0.0.1 GET /home/programme/index
+[ error ] [8]Undefined property: app\home\controller\Programme::$fetch（）[C:\phpEnv\www\hys\application\home\controller\Programme.php:15]
+---------------------------------------------------------------
+[ 2019-12-02T13:51:34+08:00 ] 127.0.0.1 GET /home/programme/index
+[ error ] [0]语法解析错误: syntax error, unexpected ';', expecting ',' or ')'[C:\phpEnv\www\hys\application\home\controller\Programme.php:15]
+---------------------------------------------------------------
+[ 2019-12-02T13:51:35+08:00 ] 127.0.0.1 GET /home/programme/index
+[ error ] [0]语法解析错误: syntax error, unexpected ';', expecting ',' or ')'[C:\phpEnv\www\hys\application\home\controller\Programme.php:15]
+---------------------------------------------------------------
+[ 2019-12-02T13:52:05+08:00 ] 127.0.0.1 GET /home/programme/index
+[ error ] [0]语法解析错误: syntax error, unexpected ';', expecting ',' or ')'[C:\phpEnv\www\hys\application\home\controller\Programme.php:15]
+---------------------------------------------------------------
+[ 2019-12-02T13:52:05+08:00 ] 127.0.0.1 GET /home/programme/index
+[ error ] [0]语法解析错误: syntax error, unexpected ';', expecting ',' or ')'[C:\phpEnv\www\hys\application\home\controller\Programme.php:15]
+---------------------------------------------------------------
+[ 2019-12-02T14:30:21+08:00 ] 127.0.0.1 GET /home/industry/index.html
+[ error ] [8]未定义变量: biao[C:\phpEnv\www\hys\runtime\temp\9e409fec6bdae0cb92de74a0ca3cc6fd.php:228]
+---------------------------------------------------------------
+[ 2019-12-02T16:01:43+08:00 ] 127.0.0.1 GET /home/industry/index.html
+[ error ] [8]未定义变量: biao[C:\phpEnv\www\hys\runtime\temp\9e409fec6bdae0cb92de74a0ca3cc6fd.php:228]
+=======
+[ 2019-12-02T11:41:03+08:00 ] 127.0.0.1 GET /v1/ban/banner/index.html
+[ error ] [8]未定义变量: list[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\868f60ff674c5e08c61eea5935e9db5b.php:311]
+---------------------------------------------------------------
+[ 2019-12-02T11:41:04+08:00 ] 127.0.0.1 GET /v1/ban/banner/index.html
+[ error ] [8]未定义变量: list[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\868f60ff674c5e08c61eea5935e9db5b.php:311]
+---------------------------------------------------------------
+[ 2019-12-02T11:41:27+08:00 ] 127.0.0.1 GET /v1/ban/banner/index.html
+[ error ] [8]未定义变量: list[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\868f60ff674c5e08c61eea5935e9db5b.php:311]
+---------------------------------------------------------------
+[ 2019-12-02T11:41:28+08:00 ] 127.0.0.1 GET /v1/ban/banner/index.html
+[ error ] [8]未定义变量: list[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\868f60ff674c5e08c61eea5935e9db5b.php:311]
+---------------------------------------------------------------
+[ 2019-12-02T11:41:28+08:00 ] 127.0.0.1 GET /v1/ban/banner/index.html
+[ error ] [8]未定义变量: list[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\868f60ff674c5e08c61eea5935e9db5b.php:311]
+---------------------------------------------------------------
+[ 2019-12-02T11:41:29+08:00 ] 127.0.0.1 GET /v1/ban/banner/index.html
+[ error ] [8]未定义变量: list[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\868f60ff674c5e08c61eea5935e9db5b.php:311]
+---------------------------------------------------------------
+[ 2019-12-02T11:41:29+08:00 ] 127.0.0.1 GET /v1/ban/banner/index.html
+[ error ] [8]未定义变量: list[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\868f60ff674c5e08c61eea5935e9db5b.php:311]
+---------------------------------------------------------------
+[ 2019-12-02T11:51:40+08:00 ] 127.0.0.1 GET /home/industry/index.html
+[ error ] [8]未定义变量: biao[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\241ffa330a2da239713bd83ad5e01e47.php:228]
+---------------------------------------------------------------
+[ 2019-12-02T11:52:13+08:00 ] 127.0.0.1 GET /home/industry/index.html
+[ error ] [8]未定义变量: biao[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\241ffa330a2da239713bd83ad5e01e47.php:228]
+---------------------------------------------------------------
+[ 2019-12-02T11:52:13+08:00 ] 127.0.0.1 GET /home/industry/index.html
+[ error ] [8]未定义变量: biao[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\241ffa330a2da239713bd83ad5e01e47.php:228]
+<<<<<<< HEAD
+---------------------------------------------------------------
+[ 2019-12-02T16:56:13+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [8]未定义变量: vo[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\0216938f3d01dba2b1fa0294d85abc05.php:322]
+---------------------------------------------------------------
+[ 2019-12-02T16:56:14+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [8]未定义变量: vo[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\0216938f3d01dba2b1fa0294d85abc05.php:322]
+---------------------------------------------------------------
+[ 2019-12-02T16:56:28+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [8]未定义变量: vo[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\0216938f3d01dba2b1fa0294d85abc05.php:324]
+---------------------------------------------------------------
+[ 2019-12-02T18:07:14+08:00 ] 127.0.0.1 POST /v1/taxa/taxation/uploadImgs
+[ error ] [0]致命错误: Call to a member function move() on null[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php:122]
+---------------------------------------------------------------
+[ 2019-12-02T18:08:51+08:00 ] 127.0.0.1 POST /v1/taxa/taxation/add.html
+[ error ] [0]variable type error：array[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\Request.php:1133]
+---------------------------------------------------------------
+[ 2019-12-02T18:08:52+08:00 ] 127.0.0.1 POST /v1/taxa/taxation/add.html
+[ error ] [0]variable type error：array[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\Request.php:1133]
+---------------------------------------------------------------
+[ 2019-12-02T18:09:04+08:00 ] 127.0.0.1 POST /v1/taxa/taxation/add.html
+[ error ] [0]variable type error：array[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\Request.php:1133]
+---------------------------------------------------------------
+[ 2019-12-02T18:09:53+08:00 ] 127.0.0.1 POST /v1/taxa/taxation/add.html
+[ error ] [0]variable type error：array[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\Request.php:1133]
+---------------------------------------------------------------
+[ 2019-12-02T18:10:23+08:00 ] 127.0.0.1 POST /v1/taxa/taxation/add.html
+[ error ] [0]variable type error：array[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\Request.php:1133]
+---------------------------------------------------------------
+[ 2019-12-02T18:14:45+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [8]Array to string conversion[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\0216938f3d01dba2b1fa0294d85abc05.php:339]
+---------------------------------------------------------------
+[ 2019-12-02T18:15:13+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [8]Array to string conversion[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\0216938f3d01dba2b1fa0294d85abc05.php:339]
+---------------------------------------------------------------
+[ 2019-12-02T18:15:14+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [8]Array to string conversion[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\0216938f3d01dba2b1fa0294d85abc05.php:339]
+---------------------------------------------------------------
+[ 2019-12-02T18:15:40+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [8]Array to string conversion[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\0216938f3d01dba2b1fa0294d85abc05.php:339]
+---------------------------------------------------------------
+[ 2019-12-02T18:15:42+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [8]Array to string conversion[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\0216938f3d01dba2b1fa0294d85abc05.php:339]
+---------------------------------------------------------------
+[ 2019-12-02T18:15:43+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [8]Array to string conversion[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\0216938f3d01dba2b1fa0294d85abc05.php:339]
+---------------------------------------------------------------
+[ 2019-12-02T18:25:03+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/edit.html?mid=2
+[ error ] [8]未定义变量: list[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\d3c6af3bc3b08c88bca3bcd575c115a1.php:78]
+---------------------------------------------------------------
+[ 2019-12-02T18:25:06+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/edit.html?mid=2
+[ error ] [8]未定义变量: list[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\d3c6af3bc3b08c88bca3bcd575c115a1.php:78]
+---------------------------------------------------------------
+[ 2019-12-02T18:25:41+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/edit.html?mid=2
+[ error ] [2]in_array() expects parameter 2 to be array, null given[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\d3c6af3bc3b08c88bca3bcd575c115a1.php:79]
+---------------------------------------------------------------
+[ 2019-12-02T18:26:45+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [8]Array to string conversion[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\0216938f3d01dba2b1fa0294d85abc05.php:339]
+---------------------------------------------------------------
+[ 2019-12-02T18:26:47+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [8]Array to string conversion[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\0216938f3d01dba2b1fa0294d85abc05.php:339]
+---------------------------------------------------------------
+[ 2019-12-02T18:26:47+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [8]Array to string conversion[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\0216938f3d01dba2b1fa0294d85abc05.php:339]
+---------------------------------------------------------------
+[ 2019-12-02T18:27:44+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [8]Array to string conversion[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\0216938f3d01dba2b1fa0294d85abc05.php:339]
+---------------------------------------------------------------
+[ 2019-12-02T18:27:45+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [8]Array to string conversion[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\0216938f3d01dba2b1fa0294d85abc05.php:339]
+---------------------------------------------------------------
+[ 2019-12-02T18:28:36+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [8]Array to string conversion[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\0216938f3d01dba2b1fa0294d85abc05.php:339]
+---------------------------------------------------------------
+[ 2019-12-02T18:29:31+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/edit.html?mid=2
+[ error ] [2]in_array() expects parameter 2 to be array, null given[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\d3c6af3bc3b08c88bca3bcd575c115a1.php:79]
+---------------------------------------------------------------
+[ 2019-12-02T18:41:44+08:00 ] 127.0.0.1 POST /v1/taxa/taxation/edit.html
+[ error ] [2]implode(): Invalid arguments passed[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php:82]
+---------------------------------------------------------------
+[ 2019-12-02T18:41:45+08:00 ] 127.0.0.1 POST /v1/taxa/taxation/edit.html
+[ error ] [2]implode(): Invalid arguments passed[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php:82]
+---------------------------------------------------------------
+[ 2019-12-02T18:41:46+08:00 ] 127.0.0.1 POST /v1/taxa/taxation/edit.html
+[ error ] [2]implode(): Invalid arguments passed[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php:82]
+---------------------------------------------------------------
+[ 2019-12-02T18:41:46+08:00 ] 127.0.0.1 POST /v1/taxa/taxation/edit.html
+[ error ] [2]implode(): Invalid arguments passed[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php:82]
+---------------------------------------------------------------
+[ 2019-12-02T18:41:47+08:00 ] 127.0.0.1 POST /v1/taxa/taxation/edit.html
+[ error ] [2]implode(): Invalid arguments passed[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php:82]
+---------------------------------------------------------------
+[ 2019-12-02T18:41:56+08:00 ] 127.0.0.1 POST /v1/taxa/taxation/edit.html
+[ error ] [2]implode(): Invalid arguments passed[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php:82]
+---------------------------------------------------------------
+[ 2019-12-02T18:42:44+08:00 ] 127.0.0.1 POST /v1/taxa/taxation/edit.html
+[ error ] [2]implode(): Invalid arguments passed[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php:82]
+---------------------------------------------------------------
+[ 2019-12-02T18:44:37+08:00 ] 127.0.0.1 POST /v1/taxa/taxation/edit.html
+[ error ] [2]implode(): Invalid arguments passed[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php:82]
+---------------------------------------------------------------
+[ 2019-12-02T18:45:21+08:00 ] 127.0.0.1 POST /v1/taxa/taxation/edit.html
+[ error ] [2]implode(): Invalid arguments passed[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php:82]
+---------------------------------------------------------------
+[ 2019-12-02T19:27:40+08:00 ] 127.0.0.1 POST /v1/taxa/taxation/edit.html
+[ error ] [2]implode(): Invalid arguments passed[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php:82]
+---------------------------------------------------------------
+[ 2019-12-02T19:27:46+08:00 ] 127.0.0.1 POST /v1/taxa/taxation/edit.html
+[ error ] [2]implode(): Invalid arguments passed[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php:82]
+---------------------------------------------------------------
+[ 2019-12-02T19:30:42+08:00 ] 127.0.0.1 POST /v1/taxa/taxation/edit.html
+[ error ] [2]implode(): Invalid arguments passed[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php:83]
+---------------------------------------------------------------
+[ 2019-12-02T19:32:36+08:00 ] 127.0.0.1 POST /v1/taxa/taxation/edit.html
+[ error ] [2]implode(): Invalid arguments passed[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php:83]
+---------------------------------------------------------------
+[ 2019-12-02T19:47:29+08:00 ] 127.0.0.1 POST /v1/taxa/taxation/edit.html
+[ error ] [2]implode(): Invalid arguments passed[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php:83]
+---------------------------------------------------------------
+[ 2019-12-02T19:47:31+08:00 ] 127.0.0.1 POST /v1/taxa/taxation/edit.html
+[ error ] [2]implode(): Invalid arguments passed[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php:83]
+---------------------------------------------------------------
+[ 2019-12-02T19:47:40+08:00 ] 127.0.0.1 POST /v1/taxa/taxation/edit.html
+[ error ] [2]implode(): Invalid arguments passed[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php:83]
+---------------------------------------------------------------
+[ 2019-12-02T19:48:36+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [0]语法解析错误: syntax error, unexpected ','[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php:79]
+---------------------------------------------------------------
+[ 2019-12-02T19:48:36+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [0]语法解析错误: syntax error, unexpected ','[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php:79]
+---------------------------------------------------------------
+[ 2019-12-02T19:48:36+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [0]语法解析错误: syntax error, unexpected ','[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php:79]
+---------------------------------------------------------------
+[ 2019-12-02T19:49:12+08:00 ] 127.0.0.1 POST /v1/taxa/taxation/edit.html
+[ error ] [2]implode(): Invalid arguments passed[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php:82]
+---------------------------------------------------------------
+[ 2019-12-02T19:50:54+08:00 ] 127.0.0.1 POST /v1/taxa/taxation/edit.html
+[ error ] [2]implode(): Invalid arguments passed[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php:82]
+---------------------------------------------------------------
+[ 2019-12-02T20:17:40+08:00 ] 127.0.0.1 GET /home/industry/index.html
+[ error ] [0]语法解析错误: syntax error, unexpected '{'[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\241ffa330a2da239713bd83ad5e01e47.php:179]
+---------------------------------------------------------------
+[ 2019-12-02T20:18:19+08:00 ] 127.0.0.1 GET /home/industry/index.html
+[ error ] [0]语法解析错误: syntax error, unexpected ';', expecting ',' or ')'[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\241ffa330a2da239713bd83ad5e01e47.php:179]
+---------------------------------------------------------------
+[ 2019-12-02T20:19:25+08:00 ] 127.0.0.1 GET /home/industry/index.html
+[ error ] [0]类的属性不存在:app\common\model\Keywords->description[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\Model.php:624]
+---------------------------------------------------------------
+[ 2019-12-02T20:42:10+08:00 ] 127.0.0.1 GET /home/industry/index.html
+[ error ] [8]未定义变量: banner[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\runtime\temp\241ffa330a2da239713bd83ad5e01e47.php:113]
+---------------------------------------------------------------
+[ 2019-12-02T20:42:22+08:00 ] 127.0.0.1 GET /home/industry/index.html
+[ error ] [8]未定义数组索引: imgs[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\Collection.php:366]
+---------------------------------------------------------------
+[ 2019-12-02T20:42:24+08:00 ] 127.0.0.1 GET /home/industry/index.html
+[ error ] [8]未定义数组索引: imgs[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\Collection.php:366]
+=======
+>>>>>>> 960da02c01b7bfe0c4d83d9a2defcb761ecb2a1b
+>>>>>>> 45194cf774920bdb9c64b83a1ef010bfe17343a2
+---------------------------------------------------------------
+[ 2019-12-02T21:11:45+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [2]Missing argument 1 for app\v1\service\Taxationservice::getList(), called in C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php on line 18 and defined[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\service\Taxationservice.php:35]
+---------------------------------------------------------------
+[ 2019-12-02T21:11:46+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [2]Missing argument 1 for app\v1\service\Taxationservice::getList(), called in C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php on line 18 and defined[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\service\Taxationservice.php:35]
+---------------------------------------------------------------
+[ 2019-12-02T21:11:47+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [2]Missing argument 1 for app\v1\service\Taxationservice::getList(), called in C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php on line 18 and defined[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\service\Taxationservice.php:35]
+---------------------------------------------------------------
+[ 2019-12-02T21:11:47+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [2]Missing argument 1 for app\v1\service\Taxationservice::getList(), called in C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php on line 18 and defined[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\service\Taxationservice.php:35]
+---------------------------------------------------------------
+[ 2019-12-02T21:11:48+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [2]Missing argument 1 for app\v1\service\Taxationservice::getList(), called in C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php on line 18 and defined[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\service\Taxationservice.php:35]
+---------------------------------------------------------------
+[ 2019-12-02T21:11:48+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [2]Missing argument 1 for app\v1\service\Taxationservice::getList(), called in C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php on line 18 and defined[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\service\Taxationservice.php:35]
+---------------------------------------------------------------
+[ 2019-12-02T21:12:34+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [2]Missing argument 1 for app\v1\service\Taxationservice::getList(), called in C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php on line 18 and defined[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\service\Taxationservice.php:35]
+---------------------------------------------------------------
+[ 2019-12-02T21:12:35+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [2]Missing argument 1 for app\v1\service\Taxationservice::getList(), called in C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php on line 18 and defined[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\service\Taxationservice.php:35]
+---------------------------------------------------------------
+[ 2019-12-02T21:12:35+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [2]Missing argument 1 for app\v1\service\Taxationservice::getList(), called in C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php on line 18 and defined[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\service\Taxationservice.php:35]
+---------------------------------------------------------------
+[ 2019-12-02T21:12:36+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [2]Missing argument 1 for app\v1\service\Taxationservice::getList(), called in C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php on line 18 and defined[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\service\Taxationservice.php:35]
+---------------------------------------------------------------
+[ 2019-12-02T21:12:41+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [2]Missing argument 1 for app\v1\service\Taxationservice::getList(), called in C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php on line 18 and defined[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\service\Taxationservice.php:35]
+---------------------------------------------------------------
+[ 2019-12-02T21:12:43+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [2]Missing argument 1 for app\v1\service\Taxationservice::getList(), called in C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php on line 18 and defined[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\service\Taxationservice.php:35]
+---------------------------------------------------------------
+[ 2019-12-02T21:12:54+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [2]Missing argument 1 for app\v1\service\Taxationservice::getList(), called in C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\controller\taxa\Taxation.php on line 18 and defined[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\service\Taxationservice.php:35]
+---------------------------------------------------------------
+[ 2019-12-02T21:14:14+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'keyword' in 'where clause'[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\db\Connection.php:390]
+---------------------------------------------------------------
+[ 2019-12-02T21:14:24+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'desciption' in 'where clause'[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\db\Connection.php:390]
+---------------------------------------------------------------
+[ 2019-12-02T21:14:25+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/index.html
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'desciption' in 'where clause'[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\db\Connection.php:390]
+---------------------------------------------------------------
+[ 2019-12-02T21:33:01+08:00 ] 127.0.0.1 GET /home/industry/index.html
+[ error ] [2]call_user_func() expects parameter 1 to be a valid callback, class '\think\paginator\driver\Page' not found[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\db\Query.php:1434]
+---------------------------------------------------------------
+[ 2019-12-02T21:38:52+08:00 ] 127.0.0.1 GET /v1/taxa/taxation/del.html?id=2
+[ error ] [10501]SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'status' at row 1[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\db\Connection.php:463]

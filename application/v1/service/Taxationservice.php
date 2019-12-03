@@ -27,24 +27,19 @@ class Taxationservice
         return self::$instance;
     }
 
-    /**
-     * 只显示一调数据 前台
-     *
-     * return array
-     */
-     public  function  getOne(){
-         $chart = Taxation::instance()->order('create_time desc')->find();
-         return $chart;
-     }
-
-
-
 
    /**
     * 获取正常数据
+    * $title
     */
-   public function getList(){
-       $w = ['status'=>1]; //正常
+   public function getList($title){
+       if(!empty($title) || isset($title)){
+           $w['status'] =1;
+           $w['title|keywords|description'] = ['like','%'.$title.'%'];
+       }else {
+           $w = ['status'=>1]; //正常
+       }
+
        $list = Taxation::instance()->where($w)->order(['id'=>'desc'])->paginate(15);
        return  $list;
    }
@@ -119,7 +114,7 @@ class Taxationservice
             return  false;
         }
 
-        $ret = Taxation::instance()->where(['id'=>$id])->update(['status'=>-1]);
+        $ret = Taxation::instance()->where(['id'=>$id])->update(['status'=>0]);
 
         if($ret){
             return true;

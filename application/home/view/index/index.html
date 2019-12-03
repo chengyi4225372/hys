@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html lang="en">
 
 <head>
@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="__HOME__/css/index.css">
   <script src="__HOME__/js/clamp.js"></script>
   <script src='__HOME__/js/index.js'></script>
+  <script src="__HOME__/js/jquery.js"></script>
 </head>
 
 <body>
@@ -28,12 +29,12 @@
         <!-- nav部分 -->
         <div class="nav">
           <ul class="clearfix">
-            <li class="nav-active"><a href="#">首页</a></li>
+            <li class="nav-active"><a href="/">首页</a></li>
             <li><a href="#"> 产品服务</a></li>
-            <li><a href="#">行业解决方案</a></li>
+            <li><a href="{:url('/home/programme/index')}">行业解决方案</a></li>
             <li><a href="#">客户案例</a></li>
-            <li><a href="#">新闻资讯</a></li>
-            <li><a href="{:url('home/industry/index')}">行业资讯</a></li>
+            <li><a href="{:url('home/industry/index')}">行业新闻资讯</a></li>
+            <li><a href="#">会员通道</a></li>
           </ul>
         </div>
         <!-- 登陆注册 -->
@@ -44,15 +45,15 @@
           <div class="loging-btn"><a href="./register.html">注册</a></div>
         </div> -->
         <!-- 头像部分 -->
-        <div class="user-icon-box">
-          <img class="user-icon" src="__HOME__/images/icon.png" alt="">
-          <span class="phone">133****5674</span>
-          <div class="login-out">
-            <ul>
-              <li><a href="">退出登录</a></li>
-            </ul>
-          </div>
-        </div>
+        <!-- <div class="user-icon-box">
+                    <img class="user-icon" src="__HOME__/images/icon.png" alt="">
+                    <span class="phone">133****5674</span>
+                    <div class="login-out">
+                        <ul>
+                            <li><a href="">退出登录</a></li>
+                        </ul>
+                    </div>
+                </div> -->
       </div>
 
     </div>
@@ -240,9 +241,9 @@
           <div class="preferential-taxadvantage-content-title">我们得到了上海、安徽、江西、湖北等各地政府的大力支持，在全国各地有个多个园区</div>
           <div class="preferential-taxadvantage-content-imgs">
             <ul class="clearfix">
-              <li><img src="__HOME__/images/fouse1.png" alt=""></li>
-              <li><img src="__HOME__/images/fouse2.png" alt=""></li>
-              <li><img src="__HOME__/images/fouse3.png" alt=""></li>
+              {volist name='chart' id='vo'}
+              <li><img src="{$vo.imgs}" alt=""></li>
+              {/volist}
             </ul>
             <span class="fouse-left" title="1"><img src="__HOME__/images/focus-left.png" alt=""></span>
             <span class="fouse-right" title="0"><img src="__HOME__/images/focus-right.png" alt=""></span>
@@ -316,113 +317,123 @@
             </div>
             <div class="map-box-right-morebtn">换一批</div>
           </div>
-
-        </div>
-
-      </div>
-
-    </div>
-  </div>
-  </div>
-
-
-  <!-- 合作伙伴 -->
-  <div class="partner-box">
-    <div class="w partner">
-      <div class="partner-title">
-        <div class="modified-line"></div>
-        <div class="partner-title-box">
-          <span>合作伙伴</span>
-        </div>
-      </div>
-      <div class="partner-img">
-        <img src="__HOME__/images/hezuohuoban2x.png" alt="">
-      </div>
-    </div>
-  </div>
-
-  <!-- 底部 -->
-  <div class="fotter-box">
-    <div class="w fotter">
-      <div class='parter_catefories'>
-        <dl>
-          <dt><a href="#">服务产品</a></dt>
-          <dd><a href="#">服务型税筹</a></dd>
-          <dd><a href="#">门户型税筹</a></dd>
-          <dd><a href="#">人力资源</a></dd>
-        </dl>
-        <dl>
-          <dt><a href="#">招商政策</a></dt>
-          <dd><a href="#">招商政策网</a></dd>
-        </dl>
-        <dl>
-          <dt><a href="#">合作</a></dt>
-          <dd><a href="#">代理合作</a></dd>
-        </dl>
-        <dl>
-          <dt><a href="#">公司信息</a></dt>
-          <dd><a href="#">瑟维斯有限公司</a></dd>
-          <dd><a href="#">惠创优产业联盟</a></dd>
-          <dd><a href="#">中兴瑞华有限公司</a></dd>
-        </dl>
-        <dl>
-          <dt><a href="#">联系我们</a></dt>
-          <dd><a href="#">400-150-9896</a></dd>
-          <dd><a href="#">hcylm008@dingtalk.com</a></dd>
-          <dd><a href="#">武汉市硚口区南国大武汉H座18楼</a></dd>
-        </dl>
-
-      </div>
-      <div class='concat_icon clearfix'>
-        <div><img src="__HOME__/images/bo.png" alt=""></div>
-        <div><img src="__HOME__/images/wx.png" alt=""></div>
-        <div><img src="__HOME__/images/tie.png" alt=""></div>
-      </div>
-      <div class="fotter-line"></div>
-      <div>© Copyright 2019 惠企动（湖北）科技有限公司 . All Rights Reserved</div>
-    </div>
-  </div>
-
-
-
-  <!-- 侧边栏bottom资讯 -->
-  <div class="bottom">
-    <div>
-      <div class="bottom-title">惠家族产品</div>
-      <div class="bottom-item">
-        <ul>
-          <li><a href="#">惠优税</a></li>
-          <li><a href="#">惠灵工</a></li>
-          <li><a href="#">惠多薪</a></li>
-          <li><a href="#">惠找事</a></li>
-          <li><a href="#">惠创业</a></li>
-          <li><a href="#">惠企动</a></li>
-        </ul>
-      </div>
-    </div>
-    <div>
-      <div class="bottom-title">联系我们</div>
-      <div class="bottom-item2">
-        <div>
-          <p>专家服务电话</p>
-          <p>181-8619-4461</p>
-        </div>
-        <div>
-          <p>获取税筹方案</p>
-          <p>400-150-9898</p>
         </div>
       </div>
     </div>
-    <!-- 返回顶部 -->
-    <div class='goTop' id="goTop">
-      <div><img src="__HOME__/images/top@2x.png" alt=""></div>
-      <div>顶部</div>
+
+
+    <!-- 合作伙伴 -->
+    <div class="partner-box">
+      <div class="w partner">
+        <div class="partner-title">
+          <div class="modified-line"></div>
+          <div class="partner-title-box">
+            <span>合作伙伴</span>
+          </div>
+        </div>
+        <div class="partner-img">
+          <img src="__HOME__/images/hezuohuoban2x.png" alt="">
+        </div>
+      </div>
     </div>
-  </div>
+
+    <!-- 底部 -->
+    <div class="fotter-box">
+      <div class="w fotter">
+        <div class='parter_catefories'>
+          <dl>
+            <dt><a href="#">服务产品</a></dt>
+            <dd><a href="#">服务型税筹</a></dd>
+            <dd><a href="#">门户型税筹</a></dd>
+            <dd><a href="#">人力资源</a></dd>
+          </dl>
+          <dl>
+            <dt><a href="#">招商政策</a></dt>
+            <dd><a href="#">招商政策网</a></dd>
+          </dl>
+          <dl>
+            <dt><a href="#">合作</a></dt>
+            <dd><a href="#">代理合作</a></dd>
+          </dl>
+          <dl>
+            <dt><a href="#">公司信息</a></dt>
+            <dd><a href="#">瑟维斯有限公司</a></dd>
+            <dd><a href="#">惠创优产业联盟</a></dd>
+            <dd><a href="#">中兴瑞华有限公司</a></dd>
+          </dl>
+          <dl>
+            <dt><a href="#">联系我们</a></dt>
+            <dd><a href="#">400-150-9896</a></dd>
+            <dd><a href="#">hcylm008@dingtalk.com</a></dd>
+            <dd><a href="#">武汉市硚口区南国大武汉H座18楼</a></dd>
+          </dl>
+
+        </div>
+        <div class='concat_icon clearfix'>
+          <div><img src="__HOME__/images/bo.png" alt=""></div>
+          <div><img src="__HOME__/images/wx.png" alt=""></div>
+          <div><img src="__HOME__/images/tie.png" alt=""></div>
+        </div>
+        <div class="fotter-line"></div>
+        <div>© Copyright 2019 惠企动（湖北）科技有限公司 . All Rights Reserved</div>
+      </div>
+    </div>
+
+
+
+    <!-- 侧边栏bottom资讯 -->
+    <div class="bottom">
+      <div>
+        <div class="bottom-title">立即预约咨询</div>
+        <div class="bottom-item">
+          <ul>
+            <li><a href="#">惠优税</a></li>
+            <li><a href="#">惠灵工</a></li>
+            <li><a href="#">惠多薪</a></li>
+            <li><a href="#">惠找事</a></li>
+            <li><a href="#">惠创业</a></li>
+            <li><a href="#">惠企动</a></li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="bottom-title">联系我们</div>
+        <div class="bottom-item2">
+          <div>
+            <p>立即预约咨询</p>
+            <p>181-8619-4461</p>
+          </div>
+          <div>
+            <p>获取税筹方案</p>
+            <p>400-150-9898</p>
+          </div>
+        </div>
+      </div>
+      <!-- 返回顶部 -->
+      <div class='goTop' id="goTop">
+        <div><img src="__HOME__/images/top@2x.png" alt=""></div>
+        <div>顶部</div>
+      </div>
+    </div>
 
 
   </div>
 
 </body>
+<script>
+  $(function () {
+    $('.nav ul li').on('click', function () {
+      $(this).addClass('nav-active chosenPage').siblings().removeClass('nav-active chosenPage')
+    })
+    $('.nav ul li').on('mouseenter', function () {
+      $(this).addClass('nav-active').siblings().removeClass('nav-active')
+    })
+    $('.nav').on('mouseleave', function () {
+      $('.nav ul li').removeClass('nav-active')
+      if ($('.chosenPage').length < 1) $('.nav ul li').eq(0).addClass('chosenPage')
+      $('.chosenPage').addClass('nav-active')
+    })
+  })
+</script>
 
 </html>

@@ -23,7 +23,7 @@
                   {volist name='list' id='vo'}
                 <tr>
                     <td class="right">
-                        <input type="text" class="col-md-3" onblur="savesort('{$vo.sort}','{$vo.id}');" value="{$vo.sort|default='0'}" />
+                        <input type="text" class="col-md-3" onblur="savesort($(this).val(),$(this).attr('data-id'),$(this).attr('data-url'));" data-id="{$vo.id}" data-url="{:url('/v1/charts/chart/savesort')}" value="{$vo.sort|default='0'}" />
                     </td>
                     <td class="text-center">
                         <a href="{$vo.imgs|default=''}">
