@@ -73,3 +73,9 @@
 ---------------------------------------------------------------
 [ 2019-12-03T15:44:57+08:00 ] 127.0.0.1 GET /home/customer/info.html
 [ error ] [8]未定义变量: info[D:\phpEnv\www\hys\runtime\temp\1334fe8f7f1ae1bea7de92917fb36592.php:59]
+---------------------------------------------------------------
+[ 2019-12-03T16:37:38+08:00 ] 127.0.0.1 GET /home/customer/index.html
+[ error ] [0]语法解析错误: syntax error, unexpected '<<' (T_SL)[D:\phpEnv\www\hys\application\home\controller\Customer.php:13]
+---------------------------------------------------------------
+[ 2019-12-03T16:38:54+08:00 ] 127.0.0.1 GET /home/customer/index.html
+[ error ] [0]语法解析错误: syntax error, unexpected '<<' (T_SL)[D:\phpEnv\www\hys\application\home\controller\Customer.php:13]
