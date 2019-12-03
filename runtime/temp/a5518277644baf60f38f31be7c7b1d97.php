@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\customer\index.html";i:1575365788;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:68:"C:\phpEnv\www\hys\public/../application/home\view\customer\info.html";i:1575366077;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,9 +6,11 @@
     <meta charset="UTF-8">
     <title><?php echo $title; ?></title>
     <link rel="stylesheet" href="/static/home/css/base.css">
-    <link rel="stylesheet" href="/static/home/css/customer.css">
+    <link rel="stylesheet" href="/static/home/css/info.css">
+    <meta name="keyword" content="<?php echo $info['keywords']; ?>">
+    <meta name="description" content="<?php echo $info['description']; ?>">
     <script src="/static/home/js/jquery.js"></script>
-    <!-- <script src="/static/home/js/programme.js"></script> -->
+    <script src="/static/home/js/programme.js"></script>
     <script src="/static/home/js/customer.js"></script>
 </head>
 
@@ -52,98 +54,37 @@
                 </div>
             </div> -->
             </div>
-            -->
         </div>
 
-        <!-- 头部 -->
-        <div class='header-box'></div>
-        <!-- 面包屑 -->
-        <div class="crumbs">
-            <div class="crumbs-box w">
-                <span><a onclick="go_work(this)" data-url="<?php echo url('/home/index/index'); ?>">惠优税></a></span>
-                <span> 客户案例</span>
+    <div class='main_content'>
+        <div class='content_middle'>
+            <div class='bread_title'>
+                <a onclick="go_work(this)" data-url="<?php echo url('/home/index/index'); ?>">惠优税</a> >
+                <a onclick="go_news(this)" data-url="<?php echo url('/home/customer/index'); ?>">资讯</a> > 新闻详情</div>
+            <div class='pic_total'>
+                <div class='pic_title'><?php echo $info['title']; ?></div>
+                <div class='time'><?php echo $info['create_time']; ?></div>
+                <div class='line'></div>
+                <div class='tuwen'>
+                    <div class='wenzi'>
+                        <?php echo $info['content']; ?>
+                    </div>
+
+                        <!-- <div class='page'>
+                      <?php if(empty($top) || (($top instanceof \think\Collection || $top instanceof \think\Paginator ) && $top->isEmpty())): ?>
+                      <div><span>上一篇:</span><a href="#">已经是第一篇了</a></div>
+                      <?php else: ?>
+                      <div><span>上一篇:</span><a href="<?php echo url('/home/index/detail',['mid'=>$top['id']]); ?>"><?php echo $top['title']; ?></a></div>
+                      <?php endif; if(empty($next) || (($next instanceof \think\Collection || $next instanceof \think\Paginator ) && $next->isEmpty())): ?>
+                      <div><span>下一篇:</span><a href="#">已经是最后一篇</a></div>
+                      <?php else: ?>
+                      <div><span>下一篇:</span><a href="<?php echo url('/home/index/detail',['mid'=>$next['id']]); ?>"><?php echo $next['title']; ?></a></div>
+                      <?php endif; ?>
+                    </div> -->
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- 客户案例 -->
-    <div class="bg_tab">
-        <div class="tabBox w">
-            <ul class="clearfix">
-                <li>
-                    <div class="item-img"><img src="/static/home/images/anli1.png" alt=""></div>
-                    <div class="item-content">
-                        <p>
-                            中科招商客户案例案例案例倒户案例案例案例…例案例案例…例案例案例…
-                        </p>
-                        <p>
-                            创新管理方法、人工智能、创新管理方法、人工智能、创新管理方法、人工智能、
-                        </p>
-                        <a href="<?php echo url('/home/customer/info'); ?>">查看案例>></a>
-                    </div>
-                </li>
-                <li>
-                    <div class="item-img"><img src="/static/home/images/anli2.png" alt=""></div>
-                    <div class="item-content">
-                        <p>
-                            中科招商客户案例案例案例倒户案例案例案例…例案例案例…例案例案例…
-                        </p>
-                        <p>
-                            创新管理方法、人工智能、
-                        </p>
-                        <a href="<?php echo url('/home/customer/info'); ?>">查看案例>></a>
-                    </div>
-                </li>
-                <li>
-                    <div class="item-img"><img src="/static/home/images/anli1.png" alt=""></div>
-                    <div class="item-content">
-                        <p>
-                            中科招商客户案例案例案例倒户案例案例案例…例案例案例…例案例案例…
-                        </p>
-                        <p>
-                            创新管理方法、人工智能、
-                        </p>
-                        <a href="<?php echo url('/home/customer/info'); ?>">查看案例>></a>
-                    </div>
-                </li>
-                <li>
-                    <div class="item-img"><img src="/static/home/images/anli2.png" alt=""></div>
-                    <div class="item-content">
-                        <p>
-                            中科招商客户案例案例案例倒户案例案例案例…例案例案例…例案例案例…
-                        </p>
-                        <p>
-                            创新管理方法、人工智能、
-                        </p>
-                        <a href="<?php echo url('/home/customer/info'); ?>">查看案例>></a>
-                    </div>
-                </li>
-                <li>
-                    <div class="item-img"><img src="/static/home/images/anli1.png" alt=""></div>
-                    <div class="item-content">
-                        <p>
-                            中科招商客户案例案例案例倒户案例案例案例…例案例案例…例案例案例…
-                        </p>
-                        <p>
-                            创新管理方法、人工智能、
-                        </p>
-                        <a href="<?php echo url('/home/customer/info'); ?>">查看案例>></a>
-                    </div>
-                </li>
-                <li>
-                    <div class="item-img"><img src="/static/home/images/anli2.png" alt=""></div>
-                    <div class="item-content">
-                        <p>
-                            中科招商客户案例案例案例倒户案例案例案例…例案例案例…例案例案例…
-                        </p>
-                        <p>
-                            创新管理方法、人工智能、
-                        </p>
-                        <a href="<?php echo url('/home/customer/info'); ?>">查看案例>></a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-
     </div>
 
 
