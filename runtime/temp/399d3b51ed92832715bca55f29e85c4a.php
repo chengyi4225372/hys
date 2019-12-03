@@ -1,10 +1,10 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:109:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\programme\index.html";i:1575345005;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:109:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\programme\index.html";i:1575364200;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <title><?php echo $title; ?></title>
   <link rel="stylesheet" href="/static/home/css/base.css">
   <link rel="stylesheet" href="/static/home/css/programme.css">
   <script src="/static/home/js/jquery.js"></script>
@@ -27,7 +27,7 @@
             <li><a href="/">首页</a></li>
             <li><a href="#"> 产品服务</a></li>
             <li class="nav-active"><a href="<?php echo url('/home/programme/index'); ?>">行业解决方案</a></li>
-            <li><a href="#">客户案例</a></li>
+            <li><a href="<?php echo url('/home/customer/index'); ?>">客户案例</a></li>
             <li><a href="<?php echo url('home/industry/index'); ?>">行业新闻资讯</a></li>
             <li><a href="#">会员通道</a></li>
           </ul>

@@ -10,17 +10,23 @@ class Customer extends BaseController{
      * 列表页
      */
     public  function index(){
-                       if($this->request->isGet()){
-                           return $this->fetch();
-                       }
-                       return false;
-                   }
+        if ($this->request->isGet()) {
+            $this->assign('title','客户案例');
+            return $this->fetch();
+        }
+        return false;
+    }
 
-                   public  function info(){
-                           if($this->request->isGet()){
-                               return $this->fetch();
-                           }
-                           return false;
-                       }
+    /**
+     * @return bool|mixed
+     * 详情页
+     */
+    public function info()
+    {
+        if ($this->request->isGet()) {
+            return $this->fetch();
+        }
+        return false;
+    }
 }
 
