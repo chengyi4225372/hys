@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:7:{s:111:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/v1\view\taxa\taxation\index.html";i:1575337854;s:96:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\layout\default.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\meta.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\header.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\left.html";i:1575343273;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\footer.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\script.html";i:1575277684;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:7:{s:111:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/v1\view\cust\customer\index.html";i:1575343410;s:96:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\layout\default.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\meta.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\header.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\left.html";i:1575343273;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\footer.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\script.html";i:1575277684;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -345,34 +345,32 @@
                 <thead>
                 <th class="text-center">新闻标题</th>
                 <th class="text-center">展示图</th>
-                <th class="text-center">所属关键字</th>
                 <th class="text-center">创建时间</th>
                 <th class="text-center">操作</th>
                 </thead>
-                <?php if(is_array($list) || $list instanceof \think\Collection || $list instanceof \think\Paginator): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+
                 <tbody>
                 <tr>
-                    <td class="text-center"><?php echo $vo['title']; ?></td>
+                    <td class="text-center">111</td>
                     <td class="text-center">
-                        <a href="<?php echo (isset($vo['imgs']) && ($vo['imgs'] !== '')?$vo['imgs']:'#'); ?>">
-                            <img src="<?php echo $vo['imgs']; ?>"  style="width: 150px;height:80px;">
+                        <a href="">
+                            <img src=""  style="width: 150px;height:80px;">
                         </a>
                     </td>
-                    <td class="text-center"><?php echo $vo['keywords']; ?></td>
-                    <td class="text-center"><?php echo $vo['create_time']; ?></td>
+                    <td class="text-center">2019-10-21</td>
 
                     <td class="text-center">
-                        <a href="javascript:void(0)" class="btn btn-info" data-id="<?php echo $vo['id']; ?>" data-url="<?php echo url('/v1/taxa/taxation/edit'); ?>"
-                           onclick="taxtedit($(this).attr('data-id'),$(this).attr('data-url'))">编辑</a>
+                        <a href="javascript:void(0)" class="btn btn-info" data-id="" data-url=""
+                           onclick="">编辑</a>
 
-                        <a href="javascript:void(0)" class="btn btn-danger" data-url="<?php echo url('/v1/taxa/taxation/del'); ?>" data-id="<?php echo $vo['id']; ?>" onclick="dels(this)">删除</a>
+                        <a href="javascript:void(0)" class="btn btn-danger" data-url="" data-id="" onclick="">删除</a>
 
                     </td>
                 </tr>
                 </tbody>
-                <?php endforeach; endif; else: echo "" ;endif; ?>
+
             </table>
-            <div class="pages"><?php echo $list->render(); ?></div>
+            <div class="pages"></div>
         </div>
     </div>
 
