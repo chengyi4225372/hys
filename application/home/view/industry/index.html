@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="__HOME__/css/news.css">
 <!--    <script src="__SPI__/js/clamp.js"></script>-->
     <script src="__PUBLIC__/assets/plugins/layui/layui.all.js"></script>
-    <script src='__HOME__/js/common.js'></script>
+    <script src='__PUBLIC__/common/js/common.js'></script>
     <script src='__PUBLIC__/common/js/public.js'></script>
     <script src='__HOME__/js/industry.js'></script>
 </head>
@@ -222,12 +222,13 @@
     </div>
     <!-- 分页 -->
     <div class="w pageNation">
-                <ul class="page">
-                    <li class="prev">上一页</li>
-                    <li class="currentPage">1</li>
-                    <li>2</li>
-                    <li class="next">下一页</li>
-                </ul>
+<!--                <ul class="page">-->
+<!--                    <li class="prev">上一页</li>-->
+<!--                    <li class="currentPage">1</li>-->
+<!--                    <li>2</li>-->
+<!--                    <li class="next">下一页</li>-->
+<!--                </ul>-->
+       {$list->render()}
     </div>
 
 
@@ -285,23 +286,5 @@
 
 </div>
 
-
 </body>
-
-<script>
-
-    /* 选择热词 */
-    $('.hotWord ul li').click(function (e) {
-        if ($(this).hasClass('chosen')) {
-            $(this).removeClass('chosen')
-        } else {
-            $(this).addClass('chosen')
-            $(this).siblings().removeClass('chosen')
-        }
-
-    })
-
-
-</script>
-
 </html>

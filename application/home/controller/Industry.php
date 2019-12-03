@@ -16,8 +16,7 @@ class Industry extends BaseController
        if($this->request->isGet()){
             $keyword  = input('get.keyword','','trim');
             $title    = input('get.title','','trim');
-
-            $titles = isset($keyword) ?$keyword:$title;
+            $titles   = isset($keyword) ?$keyword:$title;
            //获取关键字列表
            $keywords = Keywordservice::instance()->getlist();
            $this->assign('keywords',$keywords);

@@ -41,7 +41,7 @@ $('.add_taxa').click(function(){
     var title = $.trim($('#title').val());
     var imgs  = $('#Images').val();
     var description = $('#description').val();
-    var keywords    = $('#keywords option:selected').val();
+    var keywords    = $('#keywords').val();
     var content     = ue.getContent();
     var urls        =  $(this).attr('data-url');
 

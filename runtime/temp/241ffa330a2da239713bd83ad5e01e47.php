@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\industry\index.html";i:1575293413;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\industry\index.html";i:1575338563;}*/ ?>
 <!DOCTYPE>
 <html lang="en">
 
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="/static/home/css/news.css">
 <!--    <script src="__SPI__/js/clamp.js"></script>-->
     <script src="/static/assets/plugins/layui/layui.all.js"></script>
-    <script src='/static/home/js/common.js'></script>
+    <script src='/static/common/js/common.js'></script>
     <script src='/static/common/js/public.js'></script>
     <script src='/static/home/js/industry.js'></script>
 </head>
@@ -218,12 +218,13 @@
     </div>
     <!-- 分页 -->
     <div class="w pageNation">
-                <ul class="page">
-                    <li class="prev">上一页</li>
-                    <li class="currentPage">1</li>
-                    <li>2</li>
-                    <li class="next">下一页</li>
-                </ul>
+<!--                <ul class="page">-->
+<!--                    <li class="prev">上一页</li>-->
+<!--                    <li class="currentPage">1</li>-->
+<!--                    <li>2</li>-->
+<!--                    <li class="next">下一页</li>-->
+<!--                </ul>-->
+       <?php echo $list->render(); ?>
     </div>
 
 
@@ -281,23 +282,5 @@
 
 </div>
 
-
 </body>
-
-<script>
-
-    /* 选择热词 */
-    $('.hotWord ul li').click(function (e) {
-        if ($(this).hasClass('chosen')) {
-            $(this).removeClass('chosen')
-        } else {
-            $(this).addClass('chosen')
-            $(this).siblings().removeClass('chosen')
-        }
-
-    })
-
-
-</script>
-
 </html>

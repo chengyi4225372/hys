@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1873f386-1c3c-47c3-8e3a-2d8ea2b5d82c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/application/v1/controller/taxa/Taxation.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/v1/controller/taxa/Taxation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/v1/service/Taxationservice.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/v1/service/Taxationservice.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/home/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/home/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/home/controller/Industry.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/home/controller/Industry.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/home/view/industry/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/home/view/industry/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/v1/view/taxa/taxation/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/v1/view/taxa/taxation/add.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/v1/view/taxa/taxation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/v1/view/taxa/taxation/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/static/assets/dist/js/information.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/assets/dist/js/information.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/20191202_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/log/20191202_error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/home/js/industry.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/home/js/industry.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runtime/temp/0216938f3d01dba2b1fa0294d85abc05.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/0216938f3d01dba2b1fa0294d85abc05.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/241ffa330a2da239713bd83ad5e01e47.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/241ffa330a2da239713bd83ad5e01e47.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/38faf2e03e80d237d1adf1e6cc796aa1.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/38faf2e03e80d237d1adf1e6cc796aa1.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,48 +28,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/v1/controller/taxa/Taxation.php">
+        <entry file="file://$PROJECT_DIR$/thinkphp/library/think/paginator/driver/Page.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="109" column="53" lean-forward="true" selection-start-line="109" selection-start-column="53" selection-end-line="109" selection-end-column="53" />
-              <folding>
-                <element signature="e#42#83#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="964">
+              <caret line="206" selection-start-line="206" selection-end-line="206" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/v1/service/Taxationservice.php">
+        <entry file="file://$PROJECT_DIR$/public/static/home/js/industry.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="118" column="17" lean-forward="true" selection-start-line="118" selection-start-column="17" selection-end-line="118" selection-end-column="17" />
-              <folding>
-                <element signature="e#34#61#0#PHP" expanded="true" />
-                <element signature="e#342#513#0#PHP" />
-              </folding>
+            <state relative-caret-position="200">
+              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/static/assets/dist/js/information.js">
+        <entry file="file://$PROJECT_DIR$/application/home/view/industry/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="167" column="42" lean-forward="true" selection-start-line="167" selection-start-column="42" selection-end-line="167" selection-end-column="42" />
+            <state relative-caret-position="2750">
+              <caret line="235" column="28" lean-forward="true" selection-start-line="235" selection-start-column="28" selection-end-line="235" selection-end-column="28" />
               <folding>
-                <element signature="e#3740#3778#0" />
-                <element signature="n#!!block;n#uploads#0" />
+                <element signature="e#1292#3277#0" />
+                <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#span#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#b#0;n#p#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#3;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/v1/view/taxa/taxation/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="59" column="151" selection-start-line="59" selection-start-column="147" selection-end-line="59" selection-end-column="151" />
             </state>
           </provider>
         </entry>
@@ -116,7 +109,6 @@
         <option value="$PROJECT_DIR$/application/v1/view/ban/banner/add.html" />
         <option value="$PROJECT_DIR$/application/v1/view/ban/banner/edit.html" />
         <option value="$PROJECT_DIR$/application/common/model/Keywords.php" />
-        <option value="$PROJECT_DIR$/application/v1/service/Keywordservice.php" />
         <option value="$PROJECT_DIR$/application/v1/controller/keys/Keywords.php" />
         <option value="$PROJECT_DIR$/application/v1/view/keys/keywords/edit.html" />
         <option value="$PROJECT_DIR$/application/v1/view/keys/keywords/add.html" />
@@ -126,19 +118,21 @@
         <option value="$PROJECT_DIR$/public/static/assets/dist/js/keyword.js" />
         <option value="$PROJECT_DIR$/application/v1/view/common/script.html" />
         <option value="$PROJECT_DIR$/application/common/model/Taxation.php" />
-        <option value="$PROJECT_DIR$/application/v1/view/taxa/taxation/add.html" />
         <option value="$PROJECT_DIR$/application/v1/view/taxa/taxation/edit.html" />
         <option value="$PROJECT_DIR$/application/v1/service/Bannerservice.php" />
-        <option value="$PROJECT_DIR$/application/home/controller/Industry.php" />
-        <option value="$PROJECT_DIR$/public/static/home/js/industry.js" />
-        <option value="$PROJECT_DIR$/application/home/view/industry/index.html" />
         <option value="$PROJECT_DIR$/application/home/view/Programme/index.html" />
         <option value="$PROJECT_DIR$/application/home/view/index/index.html" />
-        <option value="$PROJECT_DIR$/application/home/config.php" />
-        <option value="$PROJECT_DIR$/application/v1/view/taxa/taxation/index.html" />
-        <option value="$PROJECT_DIR$/public/static/assets/dist/js/information.js" />
         <option value="$PROJECT_DIR$/application/v1/controller/taxa/Taxation.php" />
+        <option value="$PROJECT_DIR$/thinkphp/library/think/paginator/driver/Page.php" />
+        <option value="$PROJECT_DIR$/application/home/config.php" />
+        <option value="$PROJECT_DIR$/application/home/controller/Industry.php" />
+        <option value="$PROJECT_DIR$/application/v1/service/Keywordservice.php" />
+        <option value="$PROJECT_DIR$/application/v1/view/taxa/taxation/add.html" />
+        <option value="$PROJECT_DIR$/application/v1/view/taxa/taxation/index.html" />
         <option value="$PROJECT_DIR$/application/v1/service/Taxationservice.php" />
+        <option value="$PROJECT_DIR$/public/static/assets/dist/js/information.js" />
+        <option value="$PROJECT_DIR$/application/home/view/industry/index.html" />
+        <option value="$PROJECT_DIR$/public/static/home/js/industry.js" />
       </list>
     </option>
   </component>
@@ -169,31 +163,28 @@
               <item name="hys" type="b2602c69:ProjectViewProjectNode" />
               <item name="hys" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="v1" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hys" type="b2602c69:ProjectViewProjectNode" />
               <item name="hys" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="v1" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hys" type="b2602c69:ProjectViewProjectNode" />
               <item name="hys" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="v1" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="taxa" type="462c0819:PsiDirectoryNode" />
+              <item name="industry" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hys" type="b2602c69:ProjectViewProjectNode" />
               <item name="hys" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="v1" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="taxa" type="462c0819:PsiDirectoryNode" />
-              <item name="taxation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hys" type="b2602c69:ProjectViewProjectNode" />
@@ -211,24 +202,22 @@
               <item name="hys" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hys" type="b2602c69:ProjectViewProjectNode" />
               <item name="hys" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hys" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hys" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hys" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -268,12 +257,12 @@
       <option name="presentableId" value="Default" />
       <updated>1575008877310</updated>
       <workItem from="1575008878793" duration="8847000" />
-      <workItem from="1575246667534" duration="37138000" />
+      <workItem from="1575246667534" duration="39628000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45985000" />
+    <option name="totallyTimeSpent" value="48475000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -320,34 +309,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/common/controller/BaseController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/v1/view/index/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1450">
-          <caret line="58" column="14" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thinkphp/library/think/View.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="175" column="7" selection-start-line="175" selection-start-column="7" selection-end-line="175" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thinkphp/library/think/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="119" column="30" selection-start-line="119" selection-start-column="30" selection-end-line="119" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/common/model/Chart.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
@@ -500,23 +461,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/v1/service/Keywordservice.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1364">
-          <caret line="115" column="4" selection-start-line="115" selection-start-column="4" selection-end-line="115" selection-end-column="4" />
-          <folding>
-            <element signature="e#6#35#0#PHP" expanded="true" />
-            <element signature="e#63#90#0#PHP" expanded="true" />
-            <element signature="e#394#565#0#PHP" />
-            <element signature="e#598#752#0#PHP" />
-            <element signature="e#803#1055#0#PHP" />
-            <element signature="e#1103#1329#0#PHP" />
-            <element signature="e#1399#1808#0#PHP" />
-            <element signature="e#1886#1927#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/v1/view/ban/banner/add.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -654,13 +598,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/v1/view/taxa/taxation/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-325">
-          <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/v1/view/taxa/taxation/edit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="339">
@@ -691,50 +628,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/home/controller/Industry.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="27" column="52" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
-          <folding>
-            <element signature="e#38#79#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/home/js/industry.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/development/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="230" column="33" selection-start-line="230" selection-start-column="24" selection-end-line="230" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/home/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="33" lean-forward="true" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/home/view/industry/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="33" column="51" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
-          <folding>
-            <element signature="e#1273#3258#0" />
-            <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#span#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#b#0;n#p#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#3;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -758,13 +655,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/v1/view/taxa/taxation/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="59" column="151" selection-start-line="59" selection-start-column="147" selection-end-line="59" selection-end-column="151" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/static/assets/dist/js/chart.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
@@ -774,17 +664,6 @@
             <element signature="e#2955#2993#0" />
             <element signature="e#3048#3420#0" />
             <element signature="n#!!block;n#savesort#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/assets/dist/js/information.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="167" column="42" lean-forward="true" selection-start-line="167" selection-start-column="42" selection-end-line="167" selection-end-column="42" />
-          <folding>
-            <element signature="e#3740#3778#0" />
-            <element signature="n#!!block;n#uploads#0" />
           </folding>
         </state>
       </provider>
@@ -799,14 +678,110 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/v1/service/Keywordservice.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="35" column="89" selection-start-line="35" selection-start-column="89" selection-end-line="35" selection-end-column="89" />
+          <folding>
+            <element signature="e#6#35#0#PHP" expanded="true" />
+            <element signature="e#63#90#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/home/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/v1/service/Taxationservice.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="118" column="17" lean-forward="true" selection-start-line="118" selection-start-column="17" selection-end-line="118" selection-end-column="17" />
+        <state relative-caret-position="395">
+          <caret line="42" column="82" selection-start-line="42" selection-start-column="82" selection-end-line="42" selection-end-column="82" />
           <folding>
             <element signature="e#34#61#0#PHP" expanded="true" />
             <element signature="e#342#513#0#PHP" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/v1/view/taxa/taxation/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/home/controller/Industry.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="26" column="52" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
+          <folding>
+            <element signature="e#38#79#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/assets/dist/js/information.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="66" column="4" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="4" />
+          <folding>
+            <element signature="e#3740#3778#0" />
+            <element signature="n#!!block;n#uploads#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/v1/view/taxa/taxation/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="66" column="47" selection-start-line="66" selection-start-column="47" selection-end-line="66" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thinkphp/library/think/paginator/driver/Page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="964">
+          <caret line="206" selection-start-line="206" selection-end-line="206" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/common/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-186" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/common/js/public.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1411" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/common/js/jquerySession.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/home/view/industry/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2750">
+          <caret line="235" column="28" lean-forward="true" selection-start-line="235" selection-start-column="28" selection-end-line="235" selection-end-column="28" />
+          <folding>
+            <element signature="e#1292#3277#0" />
+            <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#span#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#b#0;n#p#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#3;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/home/js/industry.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
         </state>
       </provider>
     </entry>

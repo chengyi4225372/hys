@@ -1,4 +1,17 @@
 
+/* 选择热词 */
+$('.hotWord ul li').click(function (e) {
+    if ($(this).hasClass('chosen')) {
+        $(this).removeClass('chosen')
+    } else {
+        $(this).addClass('chosen')
+        $(this).siblings().removeClass('chosen')
+    }
+})
+
+
+
+
 /**
 *热门搜索
  * */
@@ -12,16 +25,21 @@ function hotsearch(obj){
 }
 
 /**
- * 搜索
+ * 搜索t
  */
-$('#serached').click(function(){
-    var keyword =  $.trim($('#keyword').val());
-    var urls  = $(this).attr('data-url');
-    if(keyword == '' || keyword== undefined || keyword =='undefined'){
-        layer.msg('请输入需要搜索的标题');
-        return false;
-    }
+$(function(){
+    $('#searched').click(function(){
+        var keyword =  $.trim($('#keyword').val());
+        var urls  = $(this).attr('data-url');
+        console.log(keyword);
+        if(keyword == '' || keyword== undefined || keyword =='undefined'){
+            layer.msg('请输入需要搜索的标题');
+            return false;
+        }
+        window.location.href = urls+'?keyword='+keyword;
+    });
+});
 
-    window.location.href = urls+'?keyword='+keyword;
-})
+
+
 
