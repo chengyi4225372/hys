@@ -1,12 +1,14 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:107:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\customer\info.html";i:1575364557;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:107:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\customer\info.html";i:1575365145;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title><?php echo $title; ?></title>
     <link rel="stylesheet" href="/static/home/css/base.css">
     <link rel="stylesheet" href="/static/home/css/info.css">
+    <meta name="keyword" content="<?php echo $info['keywords']; ?>">
+    <meta name="description" content="<?php echo $info['description']; ?>">
     <script src="/static/home/js/jquery.js"></script>
     <script src="/static/home/js/programme.js"></script>
     <script src="/static/home/js/customer.js"></script>
@@ -58,14 +60,15 @@
     <div class='main_content'>
         <div class='content_middle'>
             <div class='bread_title'>
-                <a onclick="go_work(this)" data-url="<?php echo url('/home/index/index'); ?>">惠优税</a> > <a onclick="go_news(this)" data-url="<?php echo url('/home/industry/index'); ?>">资讯</a> > 新闻详情</div>
+                <a onclick="go_work(this)" data-url="<?php echo url('/home/index/index'); ?>">惠优税</a> >
+                <a onclick="go_news(this)" data-url="<?php echo url('/home/customer/index'); ?>">资讯</a> > 新闻详情</div>
             <div class='pic_total'>
-                <div class='pic_title'>nsdisdnisd</div>
-                <div class='time'>2019-12-22</div>
+                <div class='pic_title'><?php echo $info['title']; ?></div>
+                <div class='time'><?php echo $info['create_time']; ?></div>
                 <div class='line'></div>
                 <div class='tuwen'>
                     <div class='wenzi'>
-                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda debitis ex laboriosam laborum maiores possimus quas, veniam voluptatibus! Delectus facere maxime nisi quam, quibusdam quos repudiandae sed voluptate. Illo, iusto?
+                        <?php echo $info['content']; ?>
                     </div>
 
                     <!-- <div class='page'>

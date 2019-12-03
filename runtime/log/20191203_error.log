@@ -166,3 +166,6 @@
 [ error ] [8]未定义变量: info[D:\phpEnv\www\hys\runtime\temp\1334fe8f7f1ae1bea7de92917fb36592.php:59]
 >>>>>>> 7ea55b79e1e2e52f052cc839f073fcc593f1deed
 >>>>>>> 10fd918be6f83fe3113a72847b2a268ea25835e1
+---------------------------------------------------------------
+[ 2019-12-03T17:22:00+08:00 ] 127.0.0.1 GET /home/customer/index.html
+[ error ] [0]语法解析错误: syntax error, unexpected 'return' (T_RETURN)[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\home\controller\Customer.php:30]

@@ -3,9 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>{$title}</title>
     <link rel="stylesheet" href="__HOME__/css/base.css">
     <link rel="stylesheet" href="__HOME__/css/info.css">
+    <meta name="keyword" content="{$info.keywords}">
+    <meta name="description" content="{$info.description}">
     <script src="__HOME__/js/jquery.js"></script>
     <script src="__HOME__/js/programme.js"></script>
     <script src="__HOME__/js/customer.js"></script>
@@ -57,14 +59,15 @@
     <div class='main_content'>
         <div class='content_middle'>
             <div class='bread_title'>
-                <a onclick="go_work(this)" data-url="{:url('/home/index/index')}">惠优税</a> > <a onclick="go_news(this)" data-url="{:url('/home/industry/index')}">资讯</a> > 新闻详情</div>
+                <a onclick="go_work(this)" data-url="{:url('/home/index/index')}">惠优税</a> >
+                <a onclick="go_news(this)" data-url="{:url('/home/customer/index')}">资讯</a> > 新闻详情</div>
             <div class='pic_total'>
-                <div class='pic_title'>nsdisdnisd</div>
-                <div class='time'>2019-12-22</div>
+                <div class='pic_title'>{$info.title}</div>
+                <div class='time'>{$info.create_time}</div>
                 <div class='line'></div>
                 <div class='tuwen'>
                     <div class='wenzi'>
-                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda debitis ex laboriosam laborum maiores possimus quas, veniam voluptatibus! Delectus facere maxime nisi quam, quibusdam quos repudiandae sed voluptate. Illo, iusto?
+                        {$info.content}
                     </div>
 
                     <!-- <div class='page'>
