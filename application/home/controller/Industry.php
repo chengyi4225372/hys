@@ -16,8 +16,7 @@ class Industry extends BaseController
        if($this->request->isGet()){
             $keyword  = input('get.keyword','','trim');
             $title    = input('get.title','','trim');
-
-            $titles = isset($keyword) ?$keyword:$title;
+            $titles   = isset($keyword) ?$keyword:$title;
            //获取关键字列表
            $keywords = Keywordservice::instance()->getlist();
            $this->assign('keywords',$keywords);
@@ -36,4 +35,13 @@ class Industry extends BaseController
 
     }
 
+    public function infos(){
+        if($this->request->isGet()){
+            $id = input('get.mid','','int');
+            $info = Taxationservice::instance()->Getidinfo($id);
+            $this->assign('info',$info);
+            $this->assign('title','行业新闻资讯详情');
+            return $this->fetch();
+        }
+    }
 }
