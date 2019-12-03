@@ -356,6 +356,9 @@ a {
     padding: 0;
     padding-bottom: 4.375rem;
 }
+.series{
+    position: relative;
+}
 .series img{
     display: block;
     width: 100%;
@@ -370,8 +373,30 @@ a {
     color: #EE442E;
     background: url('../images/bgbutton1.png') no-repeat;
     background-size: 100% 100%;
+    position: absolute;
+    cursor: pointer;
+    font-weight: bold;
 }
-
+.series .btn1{
+    left: 25.4375rem;
+    top: 24.625rem;
+}
+.series .btn2{
+    left: 25.4375rem;
+    top: 46.875rem;
+}
+.series .btn3{
+    width: 17.5625rem;
+    height: 3.9375rem;
+    bottom: 16.25rem;
+    right: 5.75rem;
+    background: #F34A34;
+    border-radius: 1.25rem;
+    color: #fff;
+    font-weight: normal;
+    font-size: 2.25rem;
+     box-shadow: .1875rem .3125rem .3125rem #ababab;
+}
 
 
 

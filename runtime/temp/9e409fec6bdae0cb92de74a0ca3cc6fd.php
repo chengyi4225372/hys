@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\industry\index.html";i:1575256547;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\industry\index.html";i:1575339180;}*/ ?>
 <!DOCTYPE>
 <html lang="en">
 
@@ -8,16 +8,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><?php echo $title; ?></title>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <!-- <script src='__SPI__/js/xlPaging.js'></script> -->
-    <link rel="stylesheet" href="__SPI__/css/base.css">
-    <!-- <link rel="stylesheet" href="__SPI__/css/layui.css"  media="all"> -->
-    <link rel="stylesheet" href="__SPI__/css/news.css">
-    <script src="__SPI__/js/clamp.js"></script>
-
-    <script src='__SPI__/js/Informationlist.js'></script>
+    <link rel="stylesheet" href="/static/home/css/base.css">
+    <link rel="stylesheet" href="/static/home/css/news.css">
+<!--    <script src="__SPI__/js/clamp.js"></script>-->
     <script src="/static/assets/plugins/layui/layui.all.js"></script>
-    <script src='/static/home/js/common.js'></script>
+    <script src='/static/common/js/common.js'></script>
     <script src='/static/common/js/public.js'></script>
+    <script src='/static/home/js/industry.js'></script>
 </head>
 
 <body>
@@ -35,7 +32,7 @@
                 <li><a href="<?php echo url('/home/optimal/index'); ?>">产品服务</a>
                 </li>
                 <li>
-                    <a href="javascript:;">行业解决方案</a>
+                    <a href="<?php echo url('/home/programme/index'); ?>">行业解决方案</a>
                     <!-- 二级菜单 -->
                     <!-- <div class="w secondary-menu" id="secondary-menu">
                         <div>
@@ -86,8 +83,8 @@
                         </div>
                     </div> -->
                 </li>
-                <li class='nav-active'><a href="javascript:;">客户 案例</a></li>
-                <li><a href="<?php echo url('/home/index/infoList'); ?>">行业新闻资讯</a></li>
+                <li ><a href="javascript:;">客户 案例</a></li>
+                <li class='nav-active'><a href="<?php echo url('/home/industry/index'); ?>">行业新闻资讯</a></li>
                 <li><a href="javascript:;">会员通道</a></li>
                 <!-- <li><a href="<?php echo url('/home/launch/index'); ?>">惠启动</a></li> -->
             </ul>
@@ -114,7 +111,7 @@
     <div class="bg_banner">
         <div class="w banner">
 
-            <img src="__SPI__/images/bg.png" alt="">
+            <img src="<?php echo $banner['imgs']; ?>" alt="">
         </div>
     </div>
 
@@ -123,7 +120,7 @@
         <div class="bread-crumbs">
             <span><a href="<?php echo url('/home/index/index'); ?>">首页</a></span> >
             <span><a class="current" style="color:#E8341E;" onclick="go_news(this)"
-                     data-url="<?php echo url('/home/index/infoList'); ?>">行业新闻资讯</a></span> <span></span>
+                     data-url="<?php echo url('/home/industry/index'); ?>">行业新闻资讯</a></span> <span></span>
         </div>
     </div>
 
@@ -140,21 +137,22 @@
                     <div class="govPolicy fl">行业资讯</div>
                     <div class="search-box fr">
                         <input type="text" id="keyword" value="<?php echo \think\Request::instance()->get('keyword'); ?>" placeholder="请输入关键字">
-                        <div id="searched" style="cursor:pointer;" data-url="<?php echo url('/home/index/infoBiao'); ?>">搜索</div>
+                        <div id="searched" style="cursor:pointer;" data-url="<?php echo url('/home/industry/index'); ?>">搜索</div>
                     </div>
                 </div>
 
                 <!-- 热搜 -->
                 <div class="m hotWord">
                     <ul>
-                        <li style="cursor:pointer;" data-url="<?php echo url('/home/index/infoBiao'); ?>"
+                        <li style="cursor:pointer;" data-url="<?php echo url('/home/industry/index'); ?>"
                             onclick="location.href=$(this).attr('data-url')">
                             <span>热门关键词</span>
                         </li>
-
-                        <li onclick="hotsearch(this);" data-title="" data-url="<?php echo url('/home/index/infoBiao'); ?>">
-                            <span>111111</span>
+                       <?php if(is_array($keywords) || $keywords instanceof \think\Collection || $keywords instanceof \think\Paginator): $i = 0; $__LIST__ = $keywords;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+                        <li onclick="hotsearch(this);" data-title="<?php echo $vo['title']; ?>" data-url="<?php echo url('/home/industry/index'); ?>">
+                            <span><?php echo $vo['title']; ?></span>
                         </li>
+                        <?php endforeach; endif; else: echo "" ;endif; ?>
 
                     </ul>
 
@@ -168,7 +166,7 @@
 
                 <div class="tabs-items show">
                     <ul id="shang">
-                        <?php if(empty($biao) || (($biao instanceof \think\Collection || $biao instanceof \think\Paginator ) && $biao->isEmpty())): ?>
+                        <?php if(empty($list) || (($list instanceof \think\Collection || $list instanceof \think\Paginator ) && $list->isEmpty())): ?>
                         <li>
                             <div class="tabs-items-content">
                                 <div class="tabs-items-content-text figcaption">
@@ -176,40 +174,41 @@
                                 </div>
                             </div>
                         </li>
-                        <?php else: if(is_array($biao) || $biao instanceof \think\Collection || $biao instanceof \think\Paginator): $i = 0; $__LIST__ = $biao;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$ww): $mod = ($i % 2 );++$i;?>
+                       <?php else: if(is_array($list) || $list instanceof \think\Collection || $list instanceof \think\Paginator): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$lo): $mod = ($i % 2 );++$i;?>
                         <li>
                             <a href="javascript:;"
-                               data-url="<?php echo url('/home/index/getInfo',['mid' => $ww['id']]); ?>"
+                               data-url="<?php echo url('/home/index/getInfo',['mid' =>$lo['id']]); ?>"
                                login_url="<?php echo $baseurl; ?>"
-                               loca_url="<?php echo config('curl.website'); ?>/home/index/getInfo?mid=<?php echo $ww['id']; ?>"
-                               mobile-phone="<?php echo $userinfo['mobile']; ?>" data-id="<?php echo $ww['id']; ?>"
+                               loca_url="<?php echo config('curl.website'); ?>/home/index/getInfo?mid=<?php echo $lo['id']; ?>"
+                               mobile-phone="<?php echo $userinfo['mobile']; ?>" data-id="<?php echo $lo['id']; ?>"
                                onclick="home_module.show_detail(this)">
                                 <div class="infoItem">
                                     <div class="infoLeft">
-                                        <img src="<?php echo !empty($ww['imgs'])?$ww['imgs']:'/static/home/images/infoItem.jpg';; ?>" alt="">
+                                        <img src="<?php echo !empty($lo['imgs'])?$lo['imgs']:'/static/home/images/infoItem.jpg'; ?>" alt="">
                                     </div>
 
                                     <div class="infoRight">
                                         <div class="rightTop">
-                                            <div class="itemTitle"><?php echo mb_substr($ww['title'],0,35,'utf-8'); ?></div>
+                                            <div class="itemTitle"><?php echo $lo['title']; ?></div>
                                             <span class="itemTime">
-                                                <img src="__SPI__/images/shijian2x.png" alt=""><span><?php echo $ww['release_time']; ?></span>
+                                                <img src="/static/home/images/shijian2x.png" alt=""><span><?php echo $lo['create_time']; ?></span>
                                             </span>
                                         </div>
                                         <p>
-                                            <?php echo $ww['describe']; ?>
+                                         <?php echo mb_substr($lo['description'],'0','45','utf-8'); ?>
                                         </p>
                                     </div>
 
                                 </div>
                             </a>
                             <ul class="tags">
-                                <?php if(empty($ww['keyword']) || (($ww['keyword'] instanceof \think\Collection || $ww['keyword'] instanceof \think\Paginator ) && $ww['keyword']->isEmpty())): else: if(is_array($ww['keyword']) || $ww['keyword'] instanceof \think\Collection || $ww['keyword'] instanceof \think\Paginator): if( count($ww['keyword'])==0 ) : echo "" ;else: foreach($ww['keyword'] as $k=>$key): ?>
-                                <li onclick="hotsearch(this);" data-title="<?php echo $key; ?>" data-url="<?php echo url('/home/index/infoBiao'); ?>" ><?php echo $key; ?></li>
+                                <?php if(empty($lo['keywords']) || (($lo['keywords'] instanceof \think\Collection || $lo['keywords'] instanceof \think\Paginator ) && $lo['keywords']->isEmpty())): else: if(is_array($lo['keywords']) || $lo['keywords'] instanceof \think\Collection || $lo['keywords'] instanceof \think\Paginator): if( count($lo['keywords'])==0 ) : echo "" ;else: foreach($lo['keywords'] as $k=>$key): ?>
+                                <li onclick="hotsearch(this)" data-title="<?php echo $key; ?>" data-url="<?php echo url('/home/industry/index'); ?>" ><?php echo $key; ?></li>
                                 <?php endforeach; endif; else: echo "" ;endif; endif; ?>
                             </ul>
                         </li>
                         <?php endforeach; endif; else: echo "" ;endif; endif; ?>
+
                     </ul>
                     <input type="hidden" id="sid" value="<?php echo \think\Request::instance()->get('keyword'); ?>">
                 </div>
@@ -219,13 +218,13 @@
     </div>
     <!-- 分页 -->
     <div class="w pageNation">
-        <!--        <ul class="page">-->
-        <!--            <li class="prev">上一页</li>-->
-        <!--            <li class="currentPage">1</li>-->
-        <!--            <li>2</li>-->
-        <!--            <li class="next">下一页</li>-->
-        <!--        </ul>-->
-        <?php echo $biao->render(); ?>
+<!--                <ul class="page">-->
+<!--                    <li class="prev">上一页</li>-->
+<!--                    <li class="currentPage">1</li>-->
+<!--                    <li>2</li>-->
+<!--                    <li class="next">下一页</li>-->
+<!--                </ul>-->
+       <?php echo $list->render(); ?>
     </div>
 
 
@@ -266,9 +265,9 @@
 
             </div>
             <div class='concat_icon clearfix'>
-                <div><img src="__SPI__/images/tie.png" alt=""></div>
-                <div><img src="__SPI__/images/wx.png" alt=""></div>
-                <div><img src="__SPI__/images/bo.png" alt=""></div>
+                <div><img src="/static/home/images/tie.png" alt=""></div>
+                <div><img src="/static/home/images/wx.png" alt=""></div>
+                <div><img src="/static/home/images/bo.png" alt=""></div>
             </div>
             <div class="partener_fotter">© Copyright 2019 惠企动（湖北）科技有限公司 . All Rights Reserved</div>
         </div>
@@ -283,23 +282,5 @@
 
 </div>
 
-
 </body>
-
-<script>
-
-    /* 选择热词 */
-    $('.hotWord ul li').click(function (e) {
-        if ($(this).hasClass('chosen')) {
-            $(this).removeClass('chosen')
-        } else {
-            $(this).addClass('chosen')
-            $(this).siblings().removeClass('chosen')
-        }
-
-    })
-
-
-</script>
-
 </html>
