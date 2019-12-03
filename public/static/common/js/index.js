@@ -1,3 +1,4 @@
+/*
 window.onload = function () {
   window.onscroll = function () {
     var top = document.body.scrollTop || document.documentElement.scrollTop;
@@ -92,6 +93,7 @@ window.onload = function () {
    //  }
    //})
 
+  /*
   let menuList = document.querySelectorAll('#headerContent ul li')
   let menuUl = document.querySelector('#headerContent ul')
   menuList.forEach((item, index) => {
@@ -101,6 +103,7 @@ window.onload = function () {
       item.classList.add('nav-active')
     }
   })
+
   menuUl.onmouseleave = function () {
     let li = document.getElementsByClassName('nav-active')[0]
     li.classList.remove('nav-active')
@@ -108,6 +111,10 @@ window.onload = function () {
   }
 
 };
+
+ */
+
+
 
 //招商政策详情,查看详情
 var home_module = (function () {
