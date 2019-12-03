@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\industry\index.html";i:1575339180;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\industry\index.html";i:1575344638;}*/ ?>
 <!DOCTYPE>
 <html lang="en">
 
@@ -83,7 +83,7 @@
                         </div>
                     </div> -->
                 </li>
-                <li ><a href="javascript:;">客户 案例</a></li>
+                <li ><a href="<?php echo url('/home/customer/index'); ?>">客户 案例</a></li>
                 <li class='nav-active'><a href="<?php echo url('/home/industry/index'); ?>">行业新闻资讯</a></li>
                 <li><a href="javascript:;">会员通道</a></li>
                 <!-- <li><a href="<?php echo url('/home/launch/index'); ?>">惠启动</a></li> -->

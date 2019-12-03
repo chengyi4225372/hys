@@ -906,7 +906,7 @@ a {
 
 }
 #shang li>.tags li{
-    padding: .15625rem .875rem;
+    /*padding: .15625rem .875rem;*/
     background: #f5f5f5;
     border-radius:0.25rem;
     color: #666;

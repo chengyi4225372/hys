@@ -1,5 +1,5 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1575343227;}*/ ?>
-<!DOCTYPE >
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1575344728;}*/ ?>
+<!DOCTYPE>
 <html lang="en">
 
 <head>
@@ -406,17 +406,19 @@
 
 </body>
 <script>
-    $('.nav ul li').on('click', function () {
-      $(this).addClass('nav-active chosenPage').siblings().removeClass('nav-active chosenPage')
-    })
-    $('.nav ul li').on('mouseenter', function () {
-      $(this).addClass('nav-active').siblings().removeClass('nav-active')
-    })
-    $('.nav').on('mouseleave', function () {
-      $('.nav ul li').removeClass('nav-active')
-      if ($('.chosenPage').length < 1) $('.nav ul li').eq(0).addClass('chosenPage')
-
-      $('.chosenPage').addClass('nav-active')
+    $(function () {
+        $('.nav ul li').on('click', function () {
+            $(this).addClass('nav-active chosenPage').siblings().removeClass('nav-active chosenPage')
+        })
+        $('.nav ul li').on('mouseenter', function () {
+            $(this).addClass('nav-active').siblings().removeClass('nav-active')
+        })
+        $('.nav').on('mouseleave', function () {
+            $('.nav ul li').removeClass('nav-active')
+            if ($('.chosenPage').length < 1) $('.nav ul li').eq(0).addClass('chosenPage')
+            $('.chosenPage').addClass('nav-active')
+        })
     })
 </script>
+
 </html>
