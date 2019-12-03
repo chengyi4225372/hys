@@ -95,6 +95,28 @@
 
             </li>
 
+            <li class="treeview {if $paths == '/v1/cust/customer/index'} active {/if} " >
+                <a href="#">
+                    <i class="glyphicon glyphicon-ok"></i> <span>客户案例</span>
+
+                    <span class="pull-right-container">
+                      <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+
+                <ul class="treeview-menu">
+                    <li class="{if $paths == '/v1/cust/customer/index'}active{/if}">
+                        <a href="{:url('/v1/cust/customer/index')}">
+                            <i class="glyphicon glyphicon-th"></i> <span>客户案例列表</span>
+                            <span class="pull-right-container">
+                              <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+
+            </li>
+
 
         </ul>
     </section>
