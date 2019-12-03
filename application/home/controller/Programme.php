@@ -12,7 +12,11 @@ class Programme extends BaseController
 {
   
      public function index (){
-         return $this->fetch();
+         if($this->request->isGet()){
+             $this->assign('title','行业解决方案');
+             return $this->fetch();
+         }
+        return false;
      }
 
      /**

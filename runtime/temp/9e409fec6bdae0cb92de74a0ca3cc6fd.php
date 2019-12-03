@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\industry\index.html";i:1575365622;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\industry\index.html";i:1575365713;}*/ ?>
 <!DOCTYPE>
 <html lang="en">
 
@@ -102,6 +102,9 @@
             </div>
 
         </div>
+
+    </div>
+
 
 
         <div class="bg_banner">
