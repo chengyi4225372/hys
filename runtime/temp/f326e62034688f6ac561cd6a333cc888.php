@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:7:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/v1\view\users\user\index.html";i:1575008787;s:96:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\layout\default.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\meta.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\header.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\left.html";i:1575250406;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\footer.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\script.html";i:1575250246;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:7:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/v1\view\users\user\index.html";i:1575008787;s:96:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\layout\default.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\meta.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\header.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\left.html";i:1575343273;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\footer.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\script.html";i:1575343518;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -198,8 +198,7 @@
 
             </li>
 
-
-            <li class="treeview <?php if($paths == '/v1/taxa/taxation/index' || $paths == '/v1/users/user/index' || $paths == '/v1/cate/cates/index' || $paths == '/v1/charts/chart/index'): ?> active <?php endif; ?> " >
+            <li class="treeview <?php if($paths == '/v1/users/user/index' || $paths == '/v1/cate/cates/index' || $paths == '/v1/charts/chart/index'): ?> active <?php endif; ?> " >
                 <a href="#">
                     <i class="fa fa-share"></i> <span>惠优税</span>
 
@@ -207,17 +206,6 @@
                       <i class="fa fa-angle-left pull-right"></i>
                     </span>
                 </a>
-
-                <ul class="treeview-menu">
-                    <li class="<?php if($paths == '/v1/taxa/taxation/index'): ?>active<?php endif; ?>">
-                        <a href="<?php echo url('/v1/taxa/taxation/index'); ?>">
-                            <i class="glyphicon glyphicon-user"></i> <span>行业资讯</span>
-                            <span class="pull-right-container">
-                              <i class="fa fa-angle-left pull-right"></i>
-                            </span>
-                        </a>
-                    </li>
-                </ul>
 
                 <ul class="treeview-menu">
                     <li class="<?php if($paths == '/v1/charts/chart/index'): ?>active<?php endif; ?>">
@@ -245,6 +233,73 @@
 
 
             </li>
+
+            <li class="treeview <?php if($paths == '/v1/taxa/taxation/index' || $paths == '/v1/ban/banner/index' || $paths == '/v1/keys/keywords/index'): ?> active <?php endif; ?> " >
+                <a href="#">
+                    <i class="fa fa-share"></i> <span>行业资讯</span>
+
+                    <span class="pull-right-container">
+                      <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+
+                <ul class="treeview-menu">
+                    <li class="<?php if($paths == '/v1/ban/banner/index'): ?>active<?php endif; ?>">
+                        <a href="<?php echo url('/v1/ban/banner/index'); ?>">
+                            <i class="glyphicon glyphicon-hdd"></i> <span>行业资讯顶部图</span>
+                            <span class="pull-right-container">
+                              <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="treeview-menu">
+                    <li class="<?php if($paths == '/v1/keys/keywords/index'): ?>active<?php endif; ?>">
+                        <a href="<?php echo url('/v1/keys/keywords/index'); ?>">
+                            <i class="glyphicon glyphicon-comment"></i> <span>行业资讯关键字列表</span>
+                            <span class="pull-right-container">
+                              <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="treeview-menu">
+                    <li class="<?php if($paths == '/v1/taxa/taxation/index'): ?>active<?php endif; ?>">
+                        <a href="<?php echo url('/v1/taxa/taxation/index'); ?>">
+                            <i class="glyphicon glyphicon-list"></i> <span>行业资讯列表</span>
+                            <span class="pull-right-container">
+                              <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+
+            </li>
+
+            <li class="treeview <?php if($paths == '/v1/cust/customer/index'): ?> active <?php endif; ?> " >
+                <a href="#">
+                    <i class="glyphicon glyphicon-ok"></i> <span>客户案例</span>
+
+                    <span class="pull-right-container">
+                      <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+
+                <ul class="treeview-menu">
+                    <li class="<?php if($paths == '/v1/cust/customer/index'): ?>active<?php endif; ?>">
+                        <a href="<?php echo url('/v1/cust/customer/index'); ?>">
+                            <i class="glyphicon glyphicon-th"></i> <span>客户案例列表</span>
+                            <span class="pull-right-container">
+                              <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+
+            </li>
+
 
         </ul>
     </section>
@@ -387,6 +442,15 @@
 
 <!-- chart js-->
 <script src="/static/assets/dist/js/chart.js"></script>
+<!-- banner.js-->
+<script src="/static/assets/dist/js/banner.js"></script>
+<!-- keyword-->
+<script src="/static/assets/dist/js/keyword.js"></script>
+<!-- information -->
+<script src="/static/assets/dist/js/information.js"></script>
+<!-- customer.js-->
+<script src="/static/assets/dist/js/customer.js"></script>
+
 <script>
     admin_module.changepas();
 </script>

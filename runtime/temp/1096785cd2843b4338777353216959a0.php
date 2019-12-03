@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:105:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\index\index.html";i:1575367461;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:105:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\index\index.html";i:1575372596;}*/ ?>
 <!DOCTYPE>
 <html lang="en">
 
@@ -387,12 +387,12 @@
         <div class="bottom-title">立即预约咨询</div>
         <div class="bottom-item">
           <ul>
-            <li><a href="#">惠优税</a></li>
-            <li><a href="#">惠灵工</a></li>
-            <li><a href="#">惠多薪</a></li>
-            <li><a href="#">惠找事</a></li>
-            <li><a href="#">惠创业</a></li>
-            <li><a href="#">惠企动</a></li>
+            <li><a href="/">惠优税</a></li>
+            <li><a href="<?php echo config('curl.hlg'); ?>">惠灵工</a></li>
+            <li><a href="<?php echo url('/home/many/index'); ?>">惠多薪</a></li>
+            <li><a href="<?php echo config('curl.hzs'); ?>">惠找事</a></li>
+            <li><a href="<?php echo url('/home/business/index'); ?>">惠创业</a></li>
+            <li><a href="<?php echo url('/home/launch/index'); ?>">惠企动</a></li>
           </ul>
         </div>
       </div>
