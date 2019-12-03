@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"D:\phpEnv\www\hys\public/../application/home\view\customer\index.html";i:1575361243;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"D:\phpEnv\www\hys\public/../application/home\view\customer\index.html";i:1575363939;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -73,6 +73,30 @@
                             中科招商客户案例案例案例倒户案例案例案例…例案例案例…例案例案例…
                         </p>
                         <p>
+                            创新管理方法、人工智能、创新管理方法、人工智能、创新管理方法、人工智能、
+                        </p>
+                        <a href="<?php echo url('/home/customer/info'); ?>">查看案例>></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-img"><img src="/static/home/images/anli2.png" alt=""></div>
+                    <div class="item-content">
+                        <p>
+                            中科招商客户案例案例案例倒户案例案例案例…例案例案例…例案例案例…
+                        </p>
+                        <p>
+                            创新管理方法、人工智能、
+                        </p>
+                        <a href="<?php echo url('/home/customer/info'); ?>">查看案例>></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-img"><img src="/static/home/images/anli1.png" alt=""></div>
+                    <div class="item-content">
+                        <p>
+                            中科招商客户案例案例案例倒户案例案例案例…例案例案例…例案例案例…
+                        </p>
+                        <p>
                             创新管理方法、人工智能、
                         </p>
                         <a href="<?php echo url('/home/customer/info'); ?>">查看案例>></a>
@@ -87,7 +111,7 @@
                         <p>
                             创新管理方法、人工智能、
                         </p>
-                        <a href="#">查看案例>></a>
+                        <a href="<?php echo url('/home/customer/info'); ?>">查看案例>></a>
                     </div>
                 </li>
                 <li>
@@ -99,7 +123,7 @@
                         <p>
                             创新管理方法、人工智能、
                         </p>
-                        <a href="#">查看案例>></a>
+                        <a href="<?php echo url('/home/customer/info'); ?>">查看案例>></a>
                     </div>
                 </li>
                 <li>
@@ -111,31 +135,7 @@
                         <p>
                             创新管理方法、人工智能、
                         </p>
-                        <a href="#">查看案例>></a>
-                    </div>
-                </li>
-                <li>
-                    <div class="item-img"><img src="/static/home/images/anli1.png" alt=""></div>
-                    <div class="item-content">
-                        <p>
-                            中科招商客户案例案例案例倒户案例案例案例…例案例案例…例案例案例…
-                        </p>
-                        <p>
-                            创新管理方法、人工智能、
-                        </p>
-                        <a href="#">查看案例>></a>
-                    </div>
-                </li>
-                <li>
-                    <div class="item-img"><img src="/static/home/images/anli2.png" alt=""></div>
-                    <div class="item-content">
-                        <p>
-                            中科招商客户案例案例案例倒户案例案例案例…例案例案例…例案例案例…
-                        </p>
-                        <p>
-                            创新管理方法、人工智能、
-                        </p>
-                        <a href="#">查看案例>></a>
+                        <a href="<?php echo url('/home/customer/info'); ?>">查看案例>></a>
                     </div>
                 </li>
             </ul>
