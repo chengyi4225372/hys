@@ -1,14 +1,15 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"D:\phpEnv\www\hys\public/../application/home\view\customer\index.html";i:1575361243;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="__HOME__/css/base.css">
-    <link rel="stylesheet" href="__HOME__/css/customer.css">
-    <script src="__HOME__/js/jquery.js"></script>
-    <script src="__HOME__/js/programme.js"></script>
-    <script src="__HOME__/js/customer.js"></script>
+    <link rel="stylesheet" href="/static/home/css/base.css">
+    <link rel="stylesheet" href="/static/home/css/customer.css">
+    <script src="/static/home/js/jquery.js"></script>
+    <script src="/static/home/js/programme.js"></script>
+    <script src="/static/home/js/customer.js"></script>
 </head>
 
 <body>
@@ -18,7 +19,7 @@
         <div class="w nav-container clearfix">
             <!-- logo图 -->
             <div class="logo clearfix">
-                <img src="__HOME__/images/logo.png" alt="">
+                <img src="/static/home/images/logo.png" alt="">
                 <h1>惠优税</h1>
             </div>
             <!-- nav部分 -->
@@ -26,10 +27,10 @@
                 <ul class="clearfix">
                     <li><a href="/">首页</a></li>
                     <li><a href="#"> 产品服务</a></li>
-                    <li><a href="{:url('/home/programme/index')}">行业解决方案</a></li>
-                    <li class="nav-active"><a href="{:url('/home/customer/index')}">客户案例</a></li>
+                    <li><a href="<?php echo url('/home/programme/index'); ?>">行业解决方案</a></li>
+                    <li class="nav-active"><a href="<?php echo url('/home/customer/index'); ?>">客户案例</a></li>
                     <li><a href="#">新闻资讯</a></li>
-                    <li><a href="{:url('home/industry/index')}">行业资讯</a></li>
+                    <li><a href="<?php echo url('home/industry/index'); ?>">行业资讯</a></li>
                 </ul>
             </div>
             <!-- 登陆注册 -->
@@ -41,7 +42,7 @@
                       </div> -->
             <!-- 头像部分 -->
             <div class="user-icon-box">
-                <img class="user-icon" src="__HOME__/images/icon.png" alt="">
+                <img class="user-icon" src="/static/home/images/icon.png" alt="">
                 <span class="phone">133****5674</span>
                 <div class="login-out">
                     <ul>
@@ -57,7 +58,7 @@
     <!-- 面包屑 -->
     <div class="crumbs">
         <div class="crumbs-box w">
-            <span><a onclick="go_work(this)" data-url="{:url('/home/index/index')}">惠优税></a></span>
+            <span><a onclick="go_work(this)" data-url="<?php echo url('/home/index/index'); ?>">惠优税></a></span>
             <span> 客户案例</span>
         </div>
     </div>
@@ -66,7 +67,7 @@
         <div class="tabBox w">
             <ul class="clearfix">
                 <li>
-                    <div class="item-img"><img src="__HOME__/images/anli1.png" alt=""></div>
+                    <div class="item-img"><img src="/static/home/images/anli1.png" alt=""></div>
                     <div class="item-content">
                         <p>
                             中科招商客户案例案例案例倒户案例案例案例…例案例案例…例案例案例…
@@ -74,23 +75,11 @@
                         <p>
                             创新管理方法、人工智能、
                         </p>
-                        <a href="{:url('/home/customer/info')}">查看案例>></a>
+                        <a href="<?php echo url('/home/customer/info'); ?>">查看案例>></a>
                     </div>
                 </li>
                 <li>
-                    <div class="item-img"><img src="__HOME__/images/anli2.png" alt=""></div>
-                    <div class="item-content">
-                        <p>
-                            中科招商客户案例案例案例倒户案例案例案例…例案例案例…例案例案例…
-                        </p>
-                        <p>
-                            创新管理方法、人工智能、
-                        </p>
-                        <a href="#">查看案例>></a>
-                    </div>
-                </li>
-                <li>
-                    <div class="item-img"><img src="__HOME__/images/anli1.png" alt=""></div>
+                    <div class="item-img"><img src="/static/home/images/anli2.png" alt=""></div>
                     <div class="item-content">
                         <p>
                             中科招商客户案例案例案例倒户案例案例案例…例案例案例…例案例案例…
@@ -102,7 +91,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="item-img"><img src="__HOME__/images/anli2.png" alt=""></div>
+                    <div class="item-img"><img src="/static/home/images/anli1.png" alt=""></div>
                     <div class="item-content">
                         <p>
                             中科招商客户案例案例案例倒户案例案例案例…例案例案例…例案例案例…
@@ -114,7 +103,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="item-img"><img src="__HOME__/images/anli1.png" alt=""></div>
+                    <div class="item-img"><img src="/static/home/images/anli2.png" alt=""></div>
                     <div class="item-content">
                         <p>
                             中科招商客户案例案例案例倒户案例案例案例…例案例案例…例案例案例…
@@ -126,7 +115,19 @@
                     </div>
                 </li>
                 <li>
-                    <div class="item-img"><img src="__HOME__/images/anli2.png" alt=""></div>
+                    <div class="item-img"><img src="/static/home/images/anli1.png" alt=""></div>
+                    <div class="item-content">
+                        <p>
+                            中科招商客户案例案例案例倒户案例案例案例…例案例案例…例案例案例…
+                        </p>
+                        <p>
+                            创新管理方法、人工智能、
+                        </p>
+                        <a href="#">查看案例>></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-img"><img src="/static/home/images/anli2.png" alt=""></div>
                     <div class="item-content">
                         <p>
                             中科招商客户案例案例案例倒户案例案例案例…例案例案例…例案例案例…
@@ -177,9 +178,9 @@
 
         </div>
         <div class='concat_icon clearfix'>
-            <div><img src="__HOME__/images/bo.png" alt=""></div>
-            <div><img src="__HOME__/images/wx.png" alt=""></div>
-            <div><img src="__HOME__/images/tie.png" alt=""></div>
+            <div><img src="/static/home/images/bo.png" alt=""></div>
+            <div><img src="/static/home/images/wx.png" alt=""></div>
+            <div><img src="/static/home/images/tie.png" alt=""></div>
         </div>
         <div class="fotter-line"></div>
         <div>© Copyright 2019 惠企动（湖北）科技有限公司 . All Rights Reserved</div>
@@ -216,7 +217,7 @@
     </div>
     &lt;!&ndash; 返回顶部 &ndash;&gt;
     <div class='goTop' id="goTop">
-        <div><img src="__HOME__/images/top@2x.png" alt=""></div>
+        <div><img src="/static/home/images/top@2x.png" alt=""></div>
         <div>顶部</div>
     </div>
 </div>-->
@@ -228,7 +229,7 @@
     $(function () {
 
         $('.tab ul li').on('click', function () {
-            $('.tabCon img').attr('src', `__HOME__/images/${$(this).index()}case.png`)
+            $('.tabCon img').attr('src', `/static/home/images/${$(this).index()}case.png`)
             $('.tabTitle').html($(this).children().html())
             $(this).addClass('activeTab').siblings().removeClass('activeTab')
         })
