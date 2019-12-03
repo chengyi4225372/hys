@@ -338,7 +338,7 @@ a {
 
 
 
-
+/* 选项卡 */
 .tabBox{
     margin: 0 auto;
     padding: 6.875rem 0 3.4375rem 0;
@@ -355,6 +355,8 @@ a {
     background: #F8634A;
     display: flex;
     flex-direction: column;
+    position: relative;
+    z-index: 1;
 }
 .tab ul li{
     font-size: 1.5rem;
@@ -378,7 +380,7 @@ a {
 }
 .tab ul li:hover a::after{
     position: absolute;
-    z-index: 999;
+    z-index: 1;
     bottom:-0.4375rem;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -397,6 +399,7 @@ a {
 .activeTab a::after{
     position: absolute;
     bottom:-0.4375rem;
+    z-index: 1;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -431,6 +434,7 @@ a {
     top: -4.125rem;
     line-height: 6.25rem;
     text-indent: 2em;
+    z-index: 2;
 }
 
 
