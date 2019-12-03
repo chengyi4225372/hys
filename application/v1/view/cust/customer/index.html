@@ -13,7 +13,7 @@
                         </div>
 
                         <div class="form-group" >
-                            <button class="btn btn-info"  id="btn_search_taxa" type="button"  data-url="{:url('/v1/taxa/taxation/index')}"><i class="glyphicon glyphicon-search" aria-hidden="true"></i>搜索</button>
+                            <button class="btn btn-info"  id="btn_search_customer" type="button"  data-url="{:url('/v1/cust/customer/index')}"><i class="glyphicon glyphicon-search" aria-hidden="true"></i>搜索</button>
                         </div>
                     </div>
                 </div>
@@ -29,7 +29,7 @@
         <div class="box-header with-border">
             <button type="button" class="btn btn-sm btn-refresh"><i class="fa fa-refresh"></i></button>
             <button type="button" class="btn bg-purple btn-sm btn-dialog"
-                    id="addtaxa" data-url="{:url('/v1/taxa/taxation/add')}">
+                    id="addcust" data-url="{:url('/v1/cust/customer/add')}">
                 <i class="fa fa-plus-circle">添加</i></button>
         </div>
         <div class="box-body">
@@ -37,29 +37,33 @@
                 <thead>
                 <th class="text-center">新闻标题</th>
                 <th class="text-center">展示图</th>
+                <th class="text-center">文章关键字</th>
                 <th class="text-center">创建时间</th>
                 <th class="text-center">操作</th>
                 </thead>
-
+                 {volist name='list' id='vo'}
                 <tbody>
                 <tr>
-                    <td class="text-center">111</td>
+                    <td class="text-center">{$vo.title}</td>
                     <td class="text-center">
-                        <a href="">
-                            <img src=""  style="width: 150px;height:80px;">
+                        <a href="{$vo.imgs}">
+                            <img src="{$vo.imgs}"  style="width: 150px;height:80px;">
                         </a>
                     </td>
-                    <td class="text-center">2019-10-21</td>
+                    <td class="text-center">{$vo.keywords}</td>
+                    <td class="text-center">{$vo.create_time}</td>
 
                     <td class="text-center">
-                        <a href="javascript:void(0)" class="btn btn-info" data-id="" data-url=""
-                           onclick="">编辑</a>
+                        <a href="javascript:void(0)" class="btn btn-info" data-id="{$vo.id}" data-url="{:url('/v1/cust/customer/edit')}"
+                           onclick="editCust(this)">编辑</a>
 
-                        <a href="javascript:void(0)" class="btn btn-danger" data-url="" data-id="" onclick="">删除</a>
+                        <a href="javascript:void(0)" class="btn btn-danger" data-url="{:url('/v1/cust/customer/dels')}" data-id="{$vo.id}"
+                           onclick="custDel(this)">删除</a>
 
                     </td>
                 </tr>
                 </tbody>
+                {/volist}
 
             </table>
             <div class="pages"></div>

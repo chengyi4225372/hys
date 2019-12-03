@@ -51,7 +51,7 @@ class Customerservice
      * @id
      */
     public function getidinfo($id){
-        if(empty($id) || is_null($id) || !isset($id)){
+        if(empty($id) || is_null($id) || isset($id) ==false){
             return false;
         }
 
@@ -66,7 +66,7 @@ class Customerservice
      * @data array
      */
      public  function savedata($data){
-         if(empty($data) || !isset($data)){
+         if(empty($data) || isset($data) == false){
              return false;
          }
 
@@ -86,7 +86,7 @@ class Customerservice
       * @data array
       */
      public function  getidsetdata($id,$data){
-         if(empty($id)|| !isset($id) ||is_null($id)){
+         if(empty($id)|| isset($id) == false ||is_null($id)){
              return false;
          }
 
@@ -110,7 +110,7 @@ class Customerservice
       * @id
       */
      public function savedel($id){
-         if(empty($id)|| !isset($id) ||is_null($id)){
+         if(empty($id)|| !isset($id) == false ||is_null($id)){
              return false;
          }
 
