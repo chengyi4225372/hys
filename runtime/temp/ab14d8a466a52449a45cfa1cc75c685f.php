@@ -1,16 +1,17 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\industry\infos.html";i:1575367585;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>{$title}</title>
-    <link rel="stylesheet" href="__HOME__/css/base.css">
-    <link rel="stylesheet" href="__HOME__/css/info.css">
-    <meta name="keyword" content="{$info.keywords}">
-    <meta name="description" content="{$info.description}">
-    <script src="__HOME__/js/jquery.js"></script>
-    <script src="__HOME__/js/programme.js"></script>
-    <script src="__HOME__/js/customer.js"></script>
+    <title><?php echo $title; ?></title>
+    <link rel="stylesheet" href="/static/home/css/base.css">
+    <link rel="stylesheet" href="/static/home/css/info.css">
+    <meta name="keyword" content="<?php echo $info['keywords']; ?>">
+    <meta name="description" content="<?php echo $info['description']; ?>">
+    <script src="/static/home/js/jquery.js"></script>
+    <script src="/static/home/js/programme.js"></script>
+    <script src="/static/home/js/customer.js"></script>
 </head>
 
 <body>
@@ -20,17 +21,17 @@
         <div class="w nav-container clearfix">
             <!-- logo图 -->
             <div class="logo clearfix">
-                <img src="__HOME__/images/logo.png" alt="">
+                <img src="/static/home/images/logo.png" alt="">
                 <h1>惠优税</h1>
             </div>
             <!-- nav部分 -->
             <div class="nav">
                 <ul class="clearfix">
-                    <li><a href="{:url('/home/index/index')}">首页</a></li>
-                    <li><a href="{:url('/home/programme/productservice')}"> 产品服务</a></li>
-                    <li><a href="{:url('/home/programme/index')}">行业解决方案</a></li>
-                    <li><a href="{:url('/home/customer/index')}">客户案例</a></li>
-                    <li class="nav-active"><a href="{:url('home/industry/index')}">行业新闻资讯</a></li>
+                    <li><a href="<?php echo url('/home/index/index'); ?>">首页</a></li>
+                    <li><a href="<?php echo url('/home/programme/productservice'); ?>"> 产品服务</a></li>
+                    <li><a href="<?php echo url('/home/programme/index'); ?>">行业解决方案</a></li>
+                    <li><a href="<?php echo url('/home/customer/index'); ?>">客户案例</a></li>
+                    <li class="nav-active"><a href="<?php echo url('home/industry/index'); ?>">行业新闻资讯</a></li>
                     <li><a href="#">会员通道</a></li>
                 </ul>
             </div>
@@ -44,7 +45,7 @@
             <!-- 头像部分 -->
             <!-- 注释掉
             <div class="user-icon-box">
-                <img class="user-icon" src="__HOME__/images/icon.png" alt="">
+                <img class="user-icon" src="/static/home/images/icon.png" alt="">
                 <span class="phone">133****5674</span>
                 <div class="login-out">
                     <ul>
@@ -59,28 +60,27 @@
     <div class='main_content'>
         <div class='content_middle'>
             <div class='bread_title'>
-                <a onclick="go_work(this)" data-url="{:url('/home/index/index')}">惠优税</a> >
-                <a onclick="go_news(this)" data-url="{:url('/home/industry/index')}">资讯</a> > 新闻详情</div>
+                <a onclick="go_work(this)" data-url="<?php echo url('/home/index/index'); ?>">惠优税</a> >
+                <a onclick="go_news(this)" data-url="<?php echo url('/home/industry/index'); ?>">资讯</a> > 新闻详情</div>
             <div class='pic_total'>
-                <div class='pic_title'>{$info.title}</div>
-                <div class='time'>{$info.create_time}</div>
+                <div class='pic_title'><?php echo $info['title']; ?></div>
+                <div class='time'><?php echo $info['create_time']; ?></div>
                 <div class='line'></div>
                 <div class='tuwen'>
                     <div class='wenzi'>
-                        {$info.content}
+                        <?php echo $info['content']; ?>
                     </div>
 
                     <!-- <div class='page'>
-                      {empty name='top'}
+                      <?php if(empty($top) || (($top instanceof \think\Collection || $top instanceof \think\Paginator ) && $top->isEmpty())): ?>
                       <div><span>上一篇:</span><a href="#">已经是第一篇了</a></div>
-                      {else /}
-                      <div><span>上一篇:</span><a href="{:url('/home/index/detail',['mid'=>$top.id])}">{$top.title}</a></div>
-                      {/empty}
-                      {empty name='next'}
+                      <?php else: ?>
+                      <div><span>上一篇:</span><a href="<?php echo url('/home/index/detail',['mid'=>$top['id']]); ?>"><?php echo $top['title']; ?></a></div>
+                      <?php endif; if(empty($next) || (($next instanceof \think\Collection || $next instanceof \think\Paginator ) && $next->isEmpty())): ?>
                       <div><span>下一篇:</span><a href="#">已经是最后一篇</a></div>
-                      {else /}
-                      <div><span>下一篇:</span><a href="{:url('/home/index/detail',['mid'=>$next.id])}">{$next.title}</a></div>
-                      {/empty}
+                      <?php else: ?>
+                      <div><span>下一篇:</span><a href="<?php echo url('/home/index/detail',['mid'=>$next['id']]); ?>"><?php echo $next['title']; ?></a></div>
+                      <?php endif; ?>
                     </div> -->
                 </div>
             </div>
@@ -122,9 +122,9 @@
 
         </div>
         <div class='concat_icon clearfix'>
-            <div><img src="__HOME__/images/bo.png" alt=""></div>
-            <div><img src="__HOME__/images/wx.png" alt=""></div>
-            <div><img src="__HOME__/images/tie.png" alt=""></div>
+            <div><img src="/static/home/images/bo.png" alt=""></div>
+            <div><img src="/static/home/images/wx.png" alt=""></div>
+            <div><img src="/static/home/images/tie.png" alt=""></div>
         </div>
         <div class="fotter-line"></div>
         <div>© Copyright 2019 惠企动（湖北）科技有限公司 . All Rights Reserved</div>
@@ -161,7 +161,7 @@
     </div>
     &lt;!&ndash; 返回顶部 &ndash;&gt;
     <div class='goTop' id="goTop">
-        <div><img src="__HOME__/images/top@2x.png" alt=""></div>
+        <div><img src="/static/home/images/top@2x.png" alt=""></div>
         <div>顶部</div>
     </div>
 </div>-->
@@ -173,7 +173,7 @@
     $(function () {
 
         $('.tab ul li').on('click', function () {
-            $('.tabCon img').attr('src', `__HOME__/images/${$(this).index()}case.png`)
+            $('.tabCon img').attr('src', `/static/home/images/${$(this).index()}case.png`)
             $('.tabTitle').html($(this).children().html())
             $(this).addClass('activeTab').siblings().removeClass('activeTab')
         })

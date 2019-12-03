@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\industry\index.html";i:1575363551;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\industry\index.html";i:1575367575;}*/ ?>
 <!DOCTYPE>
 <html lang="en">
 
@@ -13,6 +13,7 @@
     <!--    <script src="__SPI__/js/clamp.js"></script>-->
     <script src="/static/assets/plugins/layui/layui.all.js"></script>
     <script src='/static/common/js/common.js'></script>
+    <script src='/static/common/js/index.js'></script>
     <script src='/static/common/js/public.js'></script>
     <script src='/static/home/js/industry.js'></script>
 </head>
@@ -75,7 +76,7 @@
                 <div class="nav">
                     <ul class="clearfix">
                         <li><a href="<?php echo url('/home/index/index'); ?>">首页</a></li>
-                        <li><a href="<?php echo url('/home/optimal/index'); ?>"> 产品服务</a></li>
+                        <li><a href="<?php echo url('/home/programme/productservice'); ?>"> 产品服务</a></li>
                         <li><a href="<?php echo url('/home/programme/index'); ?>">行业解决方案</a></li>
                         <li><a href="<?php echo url('/home/customer/index'); ?>">客户案例</a></li>
                         <li class="nav-active"><a href="<?php echo url('home/industry/index'); ?>">行业新闻资讯</a></li>
@@ -177,7 +178,7 @@
                             </li>
                             <?php else: if(is_array($list) || $list instanceof \think\Collection || $list instanceof \think\Paginator): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$lo): $mod = ($i % 2 );++$i;?>
                             <li>
-                                <a href="javascript:;" data-url="<?php echo url('/home/index/getInfo',['mid' =>$lo['id']]); ?>"
+                                <a href="javascript:;" data-url="<?php echo url('/home/industry/infos',['mid' =>$lo['id']]); ?>"
                                     login_url="<?php echo $baseurl; ?>"
                                     loca_url="<?php echo config('curl.website'); ?>/home/index/getInfo?mid=<?php echo $lo['id']; ?>"
                                     mobile-phone="<?php echo $userinfo['mobile']; ?>" data-id="<?php echo $lo['id']; ?>"
@@ -283,6 +284,21 @@
 
 
     </div>
+    <script>
+        $(function () {
+            $('.nav ul li').on('click', function () {
+                $(this).addClass('nav-active chosenPage').siblings().removeClass('nav-active chosenPage')
+            })
+            $('.nav ul li').on('mouseenter', function () {
+                $(this).addClass('nav-active').siblings().removeClass('nav-active')
+            })
+            $('.nav').on('mouseleave', function () {
+                $('.nav ul li').removeClass('nav-active')
+                if ($('.chosenPage').length < 1) $('.nav ul li').eq(4).addClass('chosenPage')
+                $('.chosenPage').addClass('nav-active')
+            })
+        })
+    </script>
 
 </body>
 

@@ -12,6 +12,7 @@
     <!--    <script src="__SPI__/js/clamp.js"></script>-->
     <script src="__PUBLIC__/assets/plugins/layui/layui.all.js"></script>
     <script src='__PUBLIC__/common/js/common.js'></script>
+    <script src='__PUBLIC__/common/js/index.js'></script>
     <script src='__PUBLIC__/common/js/public.js'></script>
     <script src='__HOME__/js/industry.js'></script>
 </head>
@@ -74,7 +75,7 @@
                 <div class="nav">
                     <ul class="clearfix">
                         <li><a href="{:url('/home/index/index')}">首页</a></li>
-                        <li><a href="{:url('/home/optimal/index')}"> 产品服务</a></li>
+                        <li><a href="{:url('/home/programme/productservice')}"> 产品服务</a></li>
                         <li><a href="{:url('/home/programme/index')}">行业解决方案</a></li>
                         <li><a href="{:url('/home/customer/index')}">客户案例</a></li>
                         <li class="nav-active"><a href="{:url('home/industry/index')}">行业新闻资讯</a></li>
@@ -177,7 +178,7 @@
                             {else /}
                             {volist name='list' id='lo'}
                             <li>
-                                <a href="javascript:;" data-url="{:url('/home/index/getInfo',['mid' =>$lo.id])}"
+                                <a href="javascript:;" data-url="{:url('/home/industry/infos',['mid' =>$lo.id])}"
                                     login_url="{$baseurl}"
                                     loca_url="{:config('curl.website')}/home/index/getInfo?mid={$lo.id}"
                                     mobile-phone="{$userinfo['mobile']}" data-id="{$lo.id}"

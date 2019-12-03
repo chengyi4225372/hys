@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:109:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\programme\index.html";i:1575364200;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:109:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\programme\index.html";i:1575367433;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,7 +25,7 @@
         <div class="nav">
           <ul class="clearfix">
             <li><a href="/">首页</a></li>
-            <li><a href="#"> 产品服务</a></li>
+            <li><a href="<?php echo url('/home/programme/productservice'); ?>"> 产品服务</a></li>
             <li class="nav-active"><a href="<?php echo url('/home/programme/index'); ?>">行业解决方案</a></li>
             <li><a href="<?php echo url('/home/customer/index'); ?>">客户案例</a></li>
             <li><a href="<?php echo url('home/industry/index'); ?>">行业新闻资讯</a></li>
