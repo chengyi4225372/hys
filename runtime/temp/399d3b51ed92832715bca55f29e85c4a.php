@@ -1,13 +1,14 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:109:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\programme\index.html";i:1575293437;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
-  <link rel="stylesheet" href="__HOME__/css/base.css">
-  <link rel="stylesheet" href="__HOME__/css/programme.css">
-  <script src="__HOME__/js/jquery.js"></script>
-  <script src="__HOME__/js/programme.js"></script>
+  <link rel="stylesheet" href="/static/home/css/base.css">
+  <link rel="stylesheet" href="/static/home/css/programme.css">
+  <script src="/static/home/js/jquery.js"></script>
+  <script src="/static/home/js/programme.js"></script>
 </head>
 
 <body>
@@ -17,7 +18,7 @@
       <div class="w nav-container clearfix">
         <!-- logo图 -->
         <div class="logo clearfix">
-          <img src="__HOME__/images/logo.png" alt="">
+          <img src="/static/home/images/logo.png" alt="">
           <h1>惠优税</h1>
         </div>
         <!-- nav部分 -->
@@ -25,10 +26,10 @@
           <ul class="clearfix">
             <li><a href="/">首页</a></li>
             <li><a href="#"> 产品服务</a></li>
-            <li class="nav-active"><a href="{:url('/home/programme/index')}">行业解决方案</a></li>
+            <li class="nav-active"><a href="<?php echo url('/home/programme/index'); ?>">行业解决方案</a></li>
             <li><a href="#">客户案例</a></li>
             <li><a href="#">新闻资讯</a></li>
-            <li><a href="{:url('home/industry/index')}">行业资讯</a></li>
+            <li><a href="<?php echo url('home/industry/index'); ?>">行业资讯</a></li>
           </ul>
         </div>
         <!-- 登陆注册 -->
@@ -40,7 +41,7 @@
                   </div> -->
         <!-- 头像部分 -->
         <div class="user-icon-box">
-          <img class="user-icon" src="__HOME__/images/icon.png" alt="">
+          <img class="user-icon" src="/static/home/images/icon.png" alt="">
           <span class="phone">133****5674</span>
           <div class="login-out">
             <ul>
@@ -68,7 +69,7 @@
             <li><a href="javascript:;">贸易采集行业筹划方案</a></li>
           </ul>
           <div class="tabCon">
-            <img src="__HOME__/images/0case.png" alt="">
+            <img src="/static/home/images/0case.png" alt="">
           </div>
           <div class="tabTitle">
             O2O服务模式(共享经济)
@@ -113,9 +114,9 @@
 
       </div>
       <div class='concat_icon clearfix'>
-        <div><img src="__HOME__/images/bo.png" alt=""></div>
-        <div><img src="__HOME__/images/wx.png" alt=""></div>
-        <div><img src="__HOME__/images/tie.png" alt=""></div>
+        <div><img src="/static/home/images/bo.png" alt=""></div>
+        <div><img src="/static/home/images/wx.png" alt=""></div>
+        <div><img src="/static/home/images/tie.png" alt=""></div>
       </div>
       <div class="fotter-line"></div>
       <div>© Copyright 2019 惠企动（湖北）科技有限公司 . All Rights Reserved</div>
@@ -152,17 +153,22 @@
     </div>
     <!-- 返回顶部 -->
     <div class='goTop' id="goTop">
-      <div><img src="__HOME__/images/top@2x.png" alt=""></div>
+      <div><img src="/static/home/images/top@2x.png" alt=""></div>
       <div>顶部</div>
     </div>
   </div>
 
-  
+
 </body>
 <script>
-  $('.tab ul li').click(function(){
-    $('.tabCon img').attr('src',`__HOME__/images/${$(this).index()}case.png`)
-    $(this).addClass('activeTab').siblings().removeClass('activeTab')
+
+  $(function () {
+
+    $('.tab ul li').on('click', function () {
+      $('.tabCon img').attr('src', `/static/home/images/${$(this).index()}case.png`)
+      $('.tabTitle').html($(this).children().html())
+      $(this).addClass('activeTab').siblings().removeClass('activeTab')
+    })
   })
 </script>
 

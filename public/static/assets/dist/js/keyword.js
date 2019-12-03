@@ -115,3 +115,8 @@ function delkeys(urls,id){
     });
 
 }
+
+//取消
+$('.cancle').click(function(){
+    parent.layer.closeAll();
+});

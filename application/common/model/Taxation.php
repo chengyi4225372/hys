@@ -8,7 +8,7 @@ class Taxation extends  Model
     //静态对象
     protected static $readInstance = null;
     //表名
-    protected $table='h_chart';
+    protected $table='h_hys_information';
     /**
      * 单例
      * @author lamkakyun
