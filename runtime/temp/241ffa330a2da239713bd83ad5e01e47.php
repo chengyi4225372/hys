@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\industry\index.html";i:1575341645;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\industry\index.html";i:1575362994;}*/ ?>
 <!DOCTYPE>
 <html lang="en">
 
@@ -88,6 +88,7 @@
                 <li><a href="javascript:;">会员通道</a></li>
                 <!-- <li><a href="<?php echo url('/home/launch/index'); ?>">惠启动</a></li> -->
             </ul>
+            <!--
             <?php if(empty($userinfo['mobile'])): ?>
             <div class='register'>
                 <a href="javascript:void(0)" login_url="<?php echo $baseurl; ?>" loca_url="<?php echo config('curl.website'); ?>"
@@ -104,7 +105,9 @@
                 </div>
             </div>
             <?php endif; ?>
+            -->
         </div>
+
     </div>
 
 
