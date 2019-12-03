@@ -35,4 +35,13 @@ class Industry extends BaseController
 
     }
 
+    public function info(){
+        if($this->request->isGet()){
+            $id = input('get.id','','int');
+            $info = Taxationservice::instance()->Getidinfo($id);
+            $this->assign('info',$info);
+            $this->assign('title','行业新闻资讯详情');
+            return $this->fetch();
+        }
+    }
 }
