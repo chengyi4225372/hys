@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:70:"C:\phpEnv\www\hys\public/../application/home\view\programme\index.html";i:1575279871;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:70:"C:\phpEnv\www\hys\public/../application/home\view\programme\index.html";i:1575335022;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -158,12 +158,12 @@
     </div>
   </div>
 
-
+  
 </body>
 <script>
-
-  $(function () {
-
+  $('.tab ul li').click(function(){
+    $('.tabCon img').attr('src',`/static/home/images/${$(this).index()}case.png`)
+    $(this).addClass('activeTab').siblings().removeClass('activeTab')
   })
 </script>
 

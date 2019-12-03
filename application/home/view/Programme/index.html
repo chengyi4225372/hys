@@ -157,17 +157,12 @@
     </div>
   </div>
 
-
+  
 </body>
 <script>
-
-  $(function () {
-
-    $('.tab ul li').on('click', function () {
-      $('.tabCon img').attr('src', `__HOME__/images/${$(this).index()}case.png`)
-      $('.tabTitle').html($(this).children().html())
-      $(this).addClass('activeTab').siblings().removeClass('activeTab')
-    })
+  $('.tab ul li').click(function(){
+    $('.tabCon img').attr('src',`__HOME__/images/${$(this).index()}case.png`)
+    $(this).addClass('activeTab').siblings().removeClass('activeTab')
   })
 </script>
 

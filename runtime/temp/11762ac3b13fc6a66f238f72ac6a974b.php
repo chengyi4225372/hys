@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1575275381;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1575276644;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -368,7 +368,7 @@
     <!-- 侧边栏bottom资讯 -->
     <div class="bottom">
         <div>
-            <div class="bottom-title">惠家族产品</div>
+            <div class="bottom-title">立即预约咨询</div>
             <div class="bottom-item">
                 <ul>
                     <li><a href="#">惠优税</a></li>
@@ -384,7 +384,7 @@
             <div class="bottom-title">联系我们</div>
             <div class="bottom-item2">
                 <div>
-                    <p>专家服务电话</p>
+                    <p>立即预约咨询</p>
                     <p>181-8619-4461</p>
                 </div>
                 <div>
