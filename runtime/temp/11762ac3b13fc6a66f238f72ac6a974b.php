@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1575359235;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1575361989;}*/ ?>
 <!DOCTYPE>
 <html lang="en">
 
@@ -18,7 +18,6 @@
 <body>
 
   <div class='container'>
-
     <!-- 导航部分 -->
     <div class="nav-box">
       <div class="w nav-container clearfix">
