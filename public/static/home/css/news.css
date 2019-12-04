@@ -601,6 +601,7 @@ a {
     font-size: .875rem;
     color: #333;
     position: relative;
+    display: flex;
 }
 
 .hotWord ul li:first-child {
@@ -610,7 +611,16 @@ a {
     cursor: default;
 }
 
-
+.hotWord ul li .close{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: .3125rem;
+    transition: all .8s;
+}
+.hotWord ul li .close:hover{
+    transform: rotate(360deg);
+}
 
 .hotWord ul li:hover{
 
@@ -622,11 +632,8 @@ a {
     color: #fff;
 }
 
-.hotWord ul li:hover span::after{
-    content: '×';
-    color: #fff;
-    position: absolute;
-    right: .3125rem;
+.hotWord ul li:hover .close{
+    display: block!important;
 }
 
 

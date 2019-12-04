@@ -153,12 +153,14 @@
                             onclick="location.href=$(this).attr('data-url')">
                             <span>热门关键词</span>
                         </li>
-                        {volist name='keywords' id='vo'}
+                        <!-- {volist name='keywords' id='vo'}
                         <li onclick="hotsearch(this);" data-title="{$vo.title}"
                             data-url="{:url('/home/industry/index')}">
                             <span>{$vo.title}</span>
                         </li>
-                        {/volist}
+                        {/volist} -->
+                        <li><span>可以点叉叉哦</span><span class="close">✕</span></li>
+
 
                     </ul>
 
@@ -306,6 +308,7 @@
                 if ($('.chosenPage').length < 1) $('.nav ul li').eq(4).addClass('chosenPage')
                 $('.chosenPage').addClass('nav-active')
             })
+
         })
     </script>
 
