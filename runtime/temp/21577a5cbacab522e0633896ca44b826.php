@@ -1,13 +1,14 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:118:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\programme\productservice.html";i:1575367411;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>{$title}</title>
-    <link rel="stylesheet" href="__HOME__/css/base.css">
-    <link rel="stylesheet" href="__HOME__/css/productservice.css">
-    <script src="__HOME__/js/productservice.js"></script>
-    <script src="__HOME__/js/jquery.js"></script>
+    <title><?php echo $title; ?></title>
+    <link rel="stylesheet" href="/static/home/css/base.css">
+    <link rel="stylesheet" href="/static/home/css/productservice.css">
+    <script src="/static/home/js/productservice.js"></script>
+    <script src="/static/home/js/jquery.js"></script>
 
 </head>
 
@@ -18,17 +19,17 @@
             <div class="w nav-container clearfix">
                 <!-- logo图 -->
                 <div class="logo clearfix">
-                    <img src="__HOME__/images/logo.png" alt="">
+                    <img src="/static/home/images/logo.png" alt="">
                     <h1>惠优税</h1>
                 </div>
                 <!-- nav部分 -->
                 <div class="nav">
                     <ul class="clearfix">
                         <li><a href="/">首页</a></li>
-                        <li class="nav-active"><a href="{:url('/home/programme/productservice')}"> 产品服务</a></li>
-                        <li><a href="{:url('/home/programme/index')}">行业解决方案</a></li>
-                        <li ><a href="{:url('/home/customer/index')}">客户案例</a></li>
-                        <li><a href="{:url('home/industry/index')}">行业新闻资讯</a></li>
+                        <li class="nav-active"><a href="<?php echo url('/home/programme/productservice'); ?>"> 产品服务</a></li>
+                        <li><a href="<?php echo url('/home/programme/index'); ?>">行业解决方案</a></li>
+                        <li ><a href="<?php echo url('/home/customer/index'); ?>">客户案例</a></li>
+                        <li><a href="<?php echo url('home/industry/index'); ?>">行业新闻资讯</a></li>
                         <li><a href="#">会员通道</a></li>
                     </ul>
                 </div>
@@ -41,7 +42,7 @@
                   </div> -->
                 <!-- 头像部分 -->
                 <!-- <div class="user-icon-box">
-                    <img class="user-icon" src="__HOME__/images/icon.png" alt="">
+                    <img class="user-icon" src="/static/home/images/icon.png" alt="">
                     <span class="phone">133****5674</span>
                     <div class="login-out">
                         <ul>
@@ -65,14 +66,14 @@
         <!-- 内容区 -->
         <div class="w content">
             <div class="series">
-                <img src="__HOME__/images/series.png" alt="">
-                <img src="__HOME__/images/product.png" alt="">
-                <img src="__HOME__/images/caseA.png" alt="">
-                <img src="__HOME__/images/caseB.png" alt="">
-                <img src="__HOME__/images/step.png" alt="">
-                <img src="__HOME__/images/scene.png" alt="">
-                <img src="__HOME__/images/advantage.png" alt="">
-                <img src="__HOME__/images/afterSales.png" alt="">
+                <img src="/static/home/images/series.png" alt="">
+                <img src="/static/home/images/product.png" alt="">
+                <img src="/static/home/images/caseA.png" alt="">
+                <img src="/static/home/images/caseB.png" alt="">
+                <img src="/static/home/images/step.png" alt="">
+                <img src="/static/home/images/scene.png" alt="">
+                <img src="/static/home/images/advantage.png" alt="">
+                <img src="/static/home/images/afterSales.png" alt="">
                 <button class="btn1">立即咨询</button>
                 <button class="btn2">立即咨询</button>
                 <button class="btn3">在线咨询</button>
@@ -115,9 +116,9 @@
 
             </div>
             <div class='concat_icon clearfix'>
-                <div><img src="__HOME__/images/bo.png" alt=""></div>
-                <div><img src="__HOME__/images/wx.png" alt=""></div>
-                <div><img src="__HOME__/images/tie.png" alt=""></div>
+                <div><img src="/static/home/images/bo.png" alt=""></div>
+                <div><img src="/static/home/images/wx.png" alt=""></div>
+                <div><img src="/static/home/images/tie.png" alt=""></div>
             </div>
             <div class="fotter-line"></div>
             <div>© Copyright 2019 惠企动（湖北）科技有限公司 . All Rights Reserved</div>
@@ -154,7 +155,7 @@
         </div>
         <!-- 返回顶部 -->
         <div class='goTop' id="goTop">
-            <div><img src="__HOME__/images/top@2x.png" alt=""></div>
+            <div><img src="/static/home/images/top@2x.png" alt=""></div>
             <div>顶部</div>
         </div>
     </div>

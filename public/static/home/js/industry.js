@@ -33,7 +33,7 @@ $(function(){
         var urls  = $(this).attr('data-url');
         console.log(keyword);
         if(keyword == '' || keyword== undefined || keyword =='undefined'){
-            layer.msg('请输入需要搜索的标题');
+            layer.msg('请输入需要搜索的文字');
             return false;
         }
         window.location.href = urls+'?keyword='+keyword;

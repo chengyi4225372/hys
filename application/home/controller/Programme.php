@@ -25,6 +25,10 @@ class Programme extends BaseController
       */
      public function productservice()
      {
-        return $this->fetch();
+         if($this->request->isGet()){
+             $this->assign('title','产品服务');
+             return $this->fetch();
+         }
+         return false;
      }
 }
