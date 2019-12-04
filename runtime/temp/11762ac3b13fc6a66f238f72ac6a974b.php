@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1575363233;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1575421108;}*/ ?>
 <!DOCTYPE>
 <html lang="en">
 
@@ -30,7 +30,7 @@
         <div class="nav">
           <ul class="clearfix">
             <li class="nav-active"><a href="/">首页</a></li>
-            <li><a href="#"> 产品服务</a></li>
+            <li><a href="<?php echo url('/home/programme/productservice'); ?>"> 产品服务</a></li>
             <li><a href="<?php echo url('/home/programme/index'); ?>">行业解决方案</a></li>
             <li><a href="<?php echo url('/home/customer/index'); ?>">客户案例</a></li>
             <li><a href="<?php echo url('home/industry/index'); ?>">行业新闻资讯</a></li>
@@ -387,12 +387,12 @@
         <div class="bottom-title">立即预约咨询</div>
         <div class="bottom-item">
           <ul>
-            <li><a href="#">惠优税</a></li>
-            <li><a href="#">惠灵工</a></li>
-            <li><a href="#">惠多薪</a></li>
-            <li><a href="#">惠找事</a></li>
-            <li><a href="#">惠创业</a></li>
-            <li><a href="#">惠企动</a></li>
+            <li><a href="/">惠优税</a></li>
+            <li><a href="<?php echo config('curl.hlg'); ?>">惠灵工</a></li>
+            <li><a href="<?php echo config('curl.hdx'); ?>">惠多薪</a></li>
+            <li><a href="<?php echo config('curl.hzs'); ?>">惠找事</a></li>
+            <li><a href="<?php echo config('curl.hcy'); ?>">惠创业</a></li>
+            <li><a href="<?php echo config('curl.hqd'); ?>">惠企动</a></li>
           </ul>
         </div>
       </div>
