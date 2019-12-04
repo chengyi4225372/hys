@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:68:"C:\phpEnv\www\hys\public/../application/home\view\customer\info.html";i:1575366110;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:68:"C:\phpEnv\www\hys\public/../application/home\view\customer\info.html";i:1575423142;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +10,7 @@
     <meta name="keyword" content="<?php echo $info['keywords']; ?>">
     <meta name="description" content="<?php echo $info['description']; ?>">
     <script src="/static/home/js/jquery.js"></script>
-    <script src="/static/home/js/programme.js"></script>
+<!--    <script src="/static/home/js/programme.js"></script>-->
     <script src="/static/home/js/customer.js"></script>
 </head>
 
@@ -28,7 +28,7 @@
                 <div class="nav">
                     <ul class="clearfix">
                         <li><a href="/">首页</a></li>
-                        <li><a href="#"> 产品服务</a></li>
+                        <li><a href="<?php echo url('/home/programme/productservice'); ?>"> 产品服务</a></li>
                         <li><a href="<?php echo url('/home/programme/index'); ?>">行业解决方案</a></li>
                         <li class="nav-active"><a href="<?php echo url('/home/customer/index'); ?>">客户案例</a></li>
                         <li><a href="<?php echo url('home/industry/index'); ?>">行业新闻资讯</a></li>

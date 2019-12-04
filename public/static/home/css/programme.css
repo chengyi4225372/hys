@@ -418,6 +418,8 @@ a {
 .tabCon{
     width: 53.75rem;
     height: 54.875rem;
+    background: url('../images/bgCase.png');
+    background-size: 100% 100%;
 }
 .tabCon img{
     width: 100%;
