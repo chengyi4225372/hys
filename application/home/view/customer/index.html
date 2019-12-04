@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="__HOME__/css/customer.css">
   <script src="__HOME__/js/jquery.js"></script>
   <!-- <script src="__HOME__/js/programme.js"></script> -->
+  <script src="__PUBLIC__/assets/plugins/layui/layui.all.js"></script>
   <script src="__HOME__/js/customer.js"></script>
 </head>
 
@@ -68,15 +69,19 @@
     <div class="tabBox w">
       <ul class="clearfix">
         {volist name='list' id='vo'}
-        <li>
+        <li onclick="window.location.href=$(this).attr('data-url')" data-url="{:url('/home/customer/info')}?mid={$vo.id}">
           <div class="item-img">
             <img src="{$vo.imgs?$vo.imgs:''}" alt=""></div>
           <div class="item-content">
+             <p>
+              {$vo.title}
+            </p>
             <p>
               {$vo.description|mb_substr='0','300','utf-8'}
             </p>
             <a href="{:url('/home/customer/info')}?mid={$vo.id}">查看案例>></a>
           </div>
+
         </li>
         {/volist}
 

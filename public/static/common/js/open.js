@@ -1,3 +1,26 @@
+/*手机验证*/
+function checkPhone(phone) {
+    var tel_reg = /^1(3|4|5|6|7|8|9)\d{9}$/;
+    if (tel_reg.test(phone)) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+/**
+ * 检测是否纯数字或者英文字母
+ */
+function check_number(number){
+    var test_num = /^[A-Za-z0-9]+$/;
+    if (test_num.test(number)) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+
 /**
  * 弹窗 弹出
  */
@@ -12,9 +35,9 @@ function alert_open(){
 function hide_open(){
     $('#popbox').hide();
 }
-
-//接口 公海
+/*接口 公海*/
 var gurl = "http://172.26.3.8:8089";
+//var gurl = "http://172.26.2.11:8089"; //bo
 
 var urkl = gurl + "/api/wechatForeign/public/addGatewayPotentialCustomer";
 
@@ -22,14 +45,15 @@ var urkl = gurl + "/api/wechatForeign/public/addGatewayPotentialCustomer";
 * 提交表单
 */
 function form_btn(){
+    console.log(111);
     $('.form-btn').attr('disabled', "true");
     var datas = {};
 
-    datas.contactName = $.trim($("#Name").val());//联系姓名
-    datas.companyName = $.trim($("#cName").val()); //公司
-    datas.contactMobile = $.trim($("#Mobile").val());//手机
-    datas.source = $("#source").val(); //渠道
-    datas.identification = $("#identification").val();//标识
+    datas.contactName = $.trim($("#contactName").val());//联系姓名
+    datas.companyName = $.trim($("#companyName").val()); //公司
+    datas.contactMobile = $.trim($("#contactMobile").val());//手机
+    datas.source = $("#sources").val(); //渠道
+    datas.identification = $("#identifications").val();//标识
 
     if (datas.contactMobile == '' || datas.contactMobile == undefined) {
         layer.msg('请填写联系电话');
@@ -45,6 +69,11 @@ function form_btn(){
         layer.msg('请填写公司名称');
         return false;
     }
+
+    if(check_number(datas.companyName) == true){
+        layer.msg('公司名称不可以是纯数字或者纯英文');
+        return false;
+     }
 
     if (datas.contactName == '' || datas.contactName == undefined) {
         layer.msg('请填写您的姓名');

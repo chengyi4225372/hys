@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:105:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\index\index.html";i:1575430436;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:105:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\index\index.html";i:1575440322;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="/static/home/css/base.css">
   <link rel="stylesheet" href="/static/home/css/index.css">
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="/static/assets/plugins/layui/layui.all.js"></script>
   <script src="/static/home/js/clamp.js"></script>
   <script src='/static/home/js/index.js'></script>
   <script src="/static/common/js/open.js"></script>
@@ -429,9 +430,9 @@
             <input type="text" id="contactName" placeholder="请输您的姓名"></div>
           <div><span class="title">联系方式</span><input type="text" id="contactMobile" placeholder="请输入您的手机号"></div>
           <div><span class="title">公司名称</span><input type="text" id="companyName" placeholder="若无公司请填写自雇"></div>
-          <input type='hidden' id='sources' value='惠灵工'>
-          <input type='hidden' id='identifications' value='灵活用工'>
-          <div class="form-btn" onclick="open_btn()">获取方案</div>
+          <input type='hidden' id='sources' value='惠优税'>
+          <input type='hidden' id='identifications' value='企业税筹'>
+          <div class="form-btn" onclick="form_btn()">获取方案</div>
         </div>
         <!-- 提交成果后弹窗 -->
         <div class="mask-box">
