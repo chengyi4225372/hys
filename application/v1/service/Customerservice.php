@@ -30,6 +30,14 @@ class Customerservice
 
 
     /**
+     * 获取所有数量
+     */
+    public function getcount(){
+        $count = Customer::instance()->where(['status'=>1])->count();
+        return $count?$count:'';
+    }
+
+    /**
      * 获取列表
      * @title
      */

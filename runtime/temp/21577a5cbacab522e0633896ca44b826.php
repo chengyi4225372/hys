@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:118:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\programme\productservice.html";i:1575424571;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:118:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\programme\productservice.html";i:1575427472;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -172,7 +172,7 @@
         })
         $('.nav').on('mouseleave', function () {
             $('.nav ul li').removeClass('nav-active')
-            if ($('.chosenPage').length < 1) $('.nav ul li').eq(0).addClass('chosenPage')
+            if ($('.chosenPage').length < 1) $('.nav ul li').eq(1).addClass('chosenPage')
             $('.chosenPage').addClass('nav-active')
         })
     })
