@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\industry\index.html";i:1575424293;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\industry\index.html";i:1575446264;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,12 +10,14 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <link rel="stylesheet" href="/static/home/css/base.css">
     <link rel="stylesheet" href="/static/home/css/news.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900">
     <!--    <script src="__SPI__/js/clamp.js"></script>-->
     <script src="/static/assets/plugins/layui/layui.all.js"></script>
     <script src='/static/common/js/common.js'></script>
     <script src='/static/common/js/index.js'></script>
     <script src='/static/common/js/public.js'></script>
     <script src='/static/home/js/industry.js'></script>
+    <script src='/static/common/js/tool.js'></script>
 </head>
 
 <body>
@@ -108,12 +110,16 @@
 
 
 
-    <div class="bg_banner">
+    <!-- <div class="bg_banner">
         <div class="banner">
 
             <img src="<?php echo $banner['imgs']; ?>" alt="">
         </div>
-    </div>
+    </div> -->
+
+        <!-- 头部 -->
+        <div class='header-box'></div>
+
 
     <!-- 面包屑导航 -->
     <div class="w bg_breadCrumbs">
@@ -149,12 +155,14 @@
                             onclick="location.href=$(this).attr('data-url')">
                             <span>热门关键词</span>
                         </li>
-                        <?php if(is_array($keywords) || $keywords instanceof \think\Collection || $keywords instanceof \think\Paginator): $i = 0; $__LIST__ = $keywords;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+                        <!-- <?php if(is_array($keywords) || $keywords instanceof \think\Collection || $keywords instanceof \think\Paginator): $i = 0; $__LIST__ = $keywords;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
                         <li onclick="hotsearch(this);" data-title="<?php echo $vo['title']; ?>"
                             data-url="<?php echo url('/home/industry/index'); ?>">
                             <span><?php echo $vo['title']; ?></span>
                         </li>
-                        <?php endforeach; endif; else: echo "" ;endif; ?>
+                        <?php endforeach; endif; else: echo "" ;endif; ?> -->
+                        <li><span>可以点叉叉哦</span><span class="close">✕</span></li>
+
 
                     </ul>
 
@@ -297,6 +305,7 @@
                 if ($('.chosenPage').length < 1) $('.nav ul li').eq(4).addClass('chosenPage')
                 $('.chosenPage').addClass('nav-active')
             })
+
         })
     </script>
 

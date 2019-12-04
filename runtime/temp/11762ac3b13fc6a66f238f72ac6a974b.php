@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1575428442;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1575446264;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,9 +10,11 @@
   <title><?php echo $title; ?></title>
   <link rel="stylesheet" href="/static/home/css/base.css">
   <link rel="stylesheet" href="/static/home/css/index.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="/static/assets/plugins/layui/layui.all.js"></script>
   <script src="/static/home/js/clamp.js"></script>
   <script src='/static/home/js/index.js'></script>
-  <script src="/static/home/js/jquery.js"></script>
+  <script src="/static/common/js/open.js"></script>
 </head>
 
 <body>
@@ -68,7 +70,7 @@
           <div></div>
           <div>惠优税产品</div>
           <div>为您企税降成本 、薪税降税负 、 分红降扣率 、创业降个税。</div>
-          <div>获取解决方案</div>
+          <div onclick="alert_open()">获取解决方案</div>
         </div>
         <div class="preferential-content clearfix">
           <div class="preferential-content-item">
@@ -80,7 +82,7 @@
               <p>·核定征收型·查账征收型·股权转让型</p>
               <p>根据企业实际，为园区入驻的企业分别提供具体三大科学纳税产品...</p>
             </div>
-            <div class="preferential-content-item-more"><a href="#">了解具体方案</a></div>
+            <div class="preferential-content-item-more"><a href="<?php echo url('/home/programme/index'); ?>">了解具体方案</a></div>
           </div>
           <div class="preferential-content-item">
             <div class="preferential-content-item-img">
@@ -91,7 +93,7 @@
               <p>·专业服务个人</p>
               <p>服务企业产生业务的个人<br />可服务对象：包工头、个人设计师、私人承包人等...</p>
             </div>
-            <div class="preferential-content-item-more"><a href="#">了解具体方案</a></div>
+            <div class="preferential-content-item-more"><a href="<?php echo url('/home/programme/index'); ?>">了解具体方案</a></div>
           </div>
         </div>
       </div>
@@ -143,7 +145,7 @@
                 分红个税
               </div>
               <div class="tax-planning-solutions-content-btn2">
-                <a href="#">获取分红个税筹划方案</a>
+                <a href="javascript:;" onclick="alert_open()">获取分红个税筹划方案</a>
               </div>
             </div>
             <div class="tax-planning-solutions-content-item">
@@ -158,7 +160,7 @@
                 个人所得税
               </div>
               <div class="tax-planning-solutions-content-btn2">
-                <a href="#">获取个人所得税筹划方案</a>
+                <a href="javascript:;" onclick="alert_open()">获取个人所得税筹划方案</a>
               </div>
             </div>
             <div class="tax-planning-solutions-content-item">
@@ -173,7 +175,7 @@
                 企业所得税
               </div>
               <div class="tax-planning-solutions-content-btn2">
-                <a href="#">获取企业所得税筹划方案</a>
+                <a href="javascript:;" onclick="alert_open()">获取企业所得税筹划方案</a>
               </div>
             </div>
           </div>
@@ -189,7 +191,7 @@
                 个人所得税
               </div>
               <div class="tax-planning-solutions-content-btn2">
-                <a href="#">获取个人所得税筹划方案</a>
+                <a href="javascript:;" onclick="alert_open()">获取个人所得税筹划方案</a>
               </div>
             </div>
             <div class="tax-planning-solutions-content-item">
@@ -203,7 +205,7 @@
                 企业所得税
               </div>
               <div class="tax-planning-solutions-content-btn2">
-                <a href="#">获取企业所得税筹划方案</a>
+                <a href="javascript:;" onclick="alert_open()">获取企业所得税筹划方案</a>
               </div>
             </div>
             <div class="content-active tax-planning-solutions-content-item">
@@ -217,7 +219,7 @@
                 增值税
               </div>
               <div class="tax-planning-solutions-content-btn2">
-                <a href="#">获取增值税筹划方案</a>
+                <a href="javascript:;" onclick="alert_open()">获取增值税筹划方案</a>
               </div>
             </div>
           </div>
@@ -342,30 +344,30 @@
       <div class="w fotter">
         <div class='parter_catefories'>
           <dl>
-            <dt><a href="#">服务产品</a></dt>
-            <dd><a href="#">服务型税筹</a></dd>
-            <dd><a href="#">门户型税筹</a></dd>
-            <dd><a href="#">人力资源</a></dd>
+            <dt><a href="javascript:;">服务产品</a></dt>
+            <dd><a href="javascript:;">服务型税筹</a></dd>
+            <dd><a href="javascript:;">门户型税筹</a></dd>
+            <dd><a href="javascript:;">人力资源</a></dd>
           </dl>
           <dl>
-            <dt><a href="#">招商政策</a></dt>
-            <dd><a href="#">招商政策网</a></dd>
+            <dt><a href="javascript:;">招商政策</a></dt>
+            <dd><a href="javascript:;">招商政策网</a></dd>
           </dl>
           <dl>
-            <dt><a href="#">合作</a></dt>
-            <dd><a href="#">代理合作</a></dd>
+            <dt><a href="javascript:;">合作</a></dt>
+            <dd><a href="javascript:;">代理合作</a></dd>
           </dl>
           <dl>
-            <dt><a href="#">公司信息</a></dt>
-            <dd><a href="#">瑟维斯有限公司</a></dd>
-            <dd><a href="#">惠创优产业联盟</a></dd>
-            <dd><a href="#">中兴瑞华有限公司</a></dd>
+            <dt><a href="javascript:;">公司信息</a></dt>
+            <dd><a href="javascript:;">瑟维斯有限公司</a></dd>
+            <dd><a href="javascript:;">惠创优产业联盟</a></dd>
+            <dd><a href="javascript:;">中兴瑞华有限公司</a></dd>
           </dl>
           <dl>
-            <dt><a href="#">联系我们</a></dt>
-            <dd><a href="#">400-150-9896</a></dd>
-            <dd><a href="#">hcylm008@dingtalk.com</a></dd>
-            <dd><a href="#">武汉市硚口区南国大武汉H座18楼</a></dd>
+            <dt><a href="javascript:;">联系我们</a></dt>
+            <dd><a href="javascript:;">400-150-9896</a></dd>
+            <dd><a href="javascript:;">hcylm008@dingtalk.com</a></dd>
+            <dd><a href="javascript:;">武汉市硚口区南国大武汉H座18楼</a></dd>
           </dl>
 
         </div>
@@ -421,14 +423,15 @@
       <div class="form">
         <div class="form-titile">
           <p>方案咨询</p>
-          <span class="turnoff" onclick="turnoff()"></span>
+          <span class="turnoff" onclick="hide_open()"></span>
         </div>
         <div class="form-content">
-          <div><span class="title">您的姓名</span><input type="text" id="contactName" placeholder="请输您的姓名"></div>
+          <div><span class="title">您的姓名</span>
+            <input type="text" id="contactName" placeholder="请输您的姓名"></div>
           <div><span class="title">联系方式</span><input type="text" id="contactMobile" placeholder="请输入您的手机号"></div>
           <div><span class="title">公司名称</span><input type="text" id="companyName" placeholder="若无公司请填写自雇"></div>
-          <input type='hidden' id='sources' value='惠灵工'>
-          <input type='hidden' id='identifications' value='灵活用工'>
+          <input type='hidden' id='sources' value='惠优税'>
+          <input type='hidden' id='identifications' value='企业税筹'>
           <div class="form-btn" onclick="form_btn()">获取方案</div>
         </div>
         <!-- 提交成果后弹窗 -->

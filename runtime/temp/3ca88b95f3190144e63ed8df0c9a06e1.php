@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:79:"C:\phpEnv\www\hys\public/../application/home\view\programme\productservice.html";i:1575424293;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:79:"C:\phpEnv\www\hys\public/../application/home\view\programme\productservice.html";i:1575446264;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,10 +6,12 @@
     <meta charset="UTF-8">
     <title><?php echo $title; ?></title>
     <link rel="stylesheet" href="/static/home/css/base.css">
+    <link rel="stylesheet" href="/static/home/css/index.css">
     <link rel="stylesheet" href="/static/home/css/productservice.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="/static/assets/plugins/layui/layui.all.js"></script>
     <script src="/static/home/js/productservice.js"></script>
-    <script src="/static/home/js/jquery.js"></script>
-
+    <script src="/static/common/js/open.js"></script>
 </head>
 
 <body>
@@ -28,7 +30,7 @@
                         <li><a href="/">首页</a></li>
                         <li class="nav-active"><a href="<?php echo url('/home/programme/productservice'); ?>"> 产品服务</a></li>
                         <li><a href="<?php echo url('/home/programme/index'); ?>">行业解决方案</a></li>
-                        <li ><a href="<?php echo url('/home/customer/index'); ?>">客户案例</a></li>
+                        <li><a href="<?php echo url('/home/customer/index'); ?>">客户案例</a></li>
                         <li><a href="<?php echo url('home/industry/index'); ?>">行业新闻资讯</a></li>
                         <li><a href="#">会员通道</a></li>
                     </ul>
@@ -58,7 +60,7 @@
 
         <!-- 面包屑 -->
         <div class="w bread">
-            <a href="javascript">首页</a>
+            <a href="/">首页</a>
             <span>&gt;</span>
             <span class="current">产品服务</span>
         </div>
@@ -74,9 +76,9 @@
                 <img src="/static/home/images/scene.png" alt="">
                 <img src="/static/home/images/advantage.png" alt="">
                 <img src="/static/home/images/afterSales.png" alt="">
-                <button class="btn1">立即咨询</button>
-                <button class="btn2">立即咨询</button>
-                <button class="btn3">在线咨询</button>
+                <button class="btn1" onclick="alert_open()">立即咨询</button>
+                <button class="btn2" onclick="alert_open()">立即咨询</button>
+                <button class="btn3" onclick="alert_open()">在线咨询</button>
             </div>
         </div>
 
@@ -88,30 +90,30 @@
         <div class="w fotter">
             <div class='parter_catefories'>
                 <dl>
-                    <dt><a href="#">服务产品</a></dt>
-                    <dd><a href="#">服务型税筹</a></dd>
-                    <dd><a href="#">门户型税筹</a></dd>
-                    <dd><a href="#">人力资源</a></dd>
+                    <dt><a href="javascript:;">服务产品</a></dt>
+                    <dd><a href="javascript:;">服务型税筹</a></dd>
+                    <dd><a href="javascript:;">门户型税筹</a></dd>
+                    <dd><a href="javascript:;">人力资源</a></dd>
                 </dl>
                 <dl>
-                    <dt><a href="#">招商政策</a></dt>
-                    <dd><a href="#">招商政策网</a></dd>
+                    <dt><a href="javascript:;">招商政策</a></dt>
+                    <dd><a href="javascript:;">招商政策网</a></dd>
                 </dl>
                 <dl>
-                    <dt><a href="#">合作</a></dt>
-                    <dd><a href="#">代理合作</a></dd>
+                    <dt><a href="javascript:;">合作</a></dt>
+                    <dd><a href="javascript:;">代理合作</a></dd>
                 </dl>
                 <dl>
-                    <dt><a href="#">公司信息</a></dt>
-                    <dd><a href="#">瑟维斯有限公司</a></dd>
-                    <dd><a href="#">惠创优产业联盟</a></dd>
-                    <dd><a href="#">中兴瑞华有限公司</a></dd>
+                    <dt><a href="javascript:;">公司信息</a></dt>
+                    <dd><a href="javascript:;">瑟维斯有限公司</a></dd>
+                    <dd><a href="javascript:;">惠创优产业联盟</a></dd>
+                    <dd><a href="javascript:;">中兴瑞华有限公司</a></dd>
                 </dl>
                 <dl>
-                    <dt><a href="#">联系我们</a></dt>
-                    <dd><a href="#">400-150-9896</a></dd>
-                    <dd><a href="#">hcylm008@dingtalk.com</a></dd>
-                    <dd><a href="#">武汉市硚口区南国大武汉H座18楼</a></dd>
+                    <dt><a href="javascript:;">联系我们</a></dt>
+                    <dd><a href="javascript:;">400-150-9896</a></dd>
+                    <dd><a href="javascript:;">hcylm008@dingtalk.com</a></dd>
+                    <dd><a href="javascript:;">武汉市硚口区南国大武汉H座18楼</a></dd>
                 </dl>
 
             </div>
@@ -160,10 +162,37 @@
         </div>
     </div>
 
+    <!-- 弹框 -->
+    <div class="pop-up-box" id="popbox">
+        <div class="form">
+            <div class="form-titile">
+                <p>方案咨询</p>
+                <span class="turnoff" onclick="hide_open()"></span>
+            </div>
+            <div class="form-content">
+                <div><span class="title">您的姓名</span>
+                    <input type="text" id="contactName" placeholder="请输您的姓名"></div>
+                <div><span class="title">联系方式</span><input type="text" id="contactMobile" placeholder="请输入您的手机号"></div>
+                <div><span class="title">公司名称</span><input type="text" id="companyName" placeholder="若无公司请填写自雇"></div>
+                <input type='hidden' id='sources' value='惠优税'>
+                <input type='hidden' id='identifications' value='企业税筹'>
+                <div class="form-btn" onclick="form_btn()">获取方案</div>
+            </div>
+            <!-- 提交成果后弹窗 -->
+            <div class="mask-box">
+                <span></span>
+                <p class="mask-box-title">提交成功</p>
+                <p class="mask-box-content">我们会在一个工作日内联系您</p>
+            </div>
+        </div>
+
+    </div>
+
+
 
 </body>
 <script>
-   $(function () {
+    $(function () {
         $('.nav ul li').on('click', function () {
             $(this).addClass('nav-active chosenPage').siblings().removeClass('nav-active chosenPage')
         })
@@ -172,7 +201,7 @@
         })
         $('.nav').on('mouseleave', function () {
             $('.nav ul li').removeClass('nav-active')
-            if ($('.chosenPage').length < 1) $('.nav ul li').eq(0).addClass('chosenPage')
+            if ($('.chosenPage').length < 1) $('.nav ul li').eq(1).addClass('chosenPage')
             $('.chosenPage').addClass('nav-active')
         })
     })

@@ -13,6 +13,7 @@ return [
     'hys' => 'http://admin.hqyonline.com/',//惠优税
 
 
+
     'ge_login_url' => 'http://172.26.3.12:8009/#/logingr',
     'gr_register_url' => 'http://172.26.3.12:8009/#/registergr',
     'hou_tai_url' => 'http://172.26.3.12:8009/#',

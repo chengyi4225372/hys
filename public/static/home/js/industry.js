@@ -9,15 +9,12 @@ $('.hotWord ul li').click(function (e) {
     }
 })
 
-
-
-
 /**
 *热门搜索
  * */
 function hotsearch(obj){
-   var title = $(obj).attr('data-title');
-   var urls  = $(obj).attr('data-url');
+    var title = $(obj).attr('data-title');
+    var urls  = $(obj).attr('data-url');
    if(title == '' || title ==undefined || title == 'undefined'){
        return false;
    }
