@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:7:{s:111:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/v1\view\keys\keywords\index.html";i:1575276108;s:96:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\layout\default.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\meta.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\header.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\left.html";i:1575343273;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\footer.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\script.html";i:1575343518;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:7:{s:111:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/v1\view\keys\keywords\index.html";i:1575276108;s:96:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\layout\default.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\meta.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\header.html";i:1575426490;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\left.html";i:1575426683;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\footer.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\script.html";i:1575343518;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -59,9 +59,9 @@
     <!-- Logo -->
     <a href="index2.html" class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
-        <span class="logo-mini">HLG</span>
+        <span class="logo-mini">HYS</span>
         <!-- logo for regular state and mobile devices -->
-        <span class="logo-lg">HLG后台管理</span>
+        <span class="logo-lg">慧优税后台管理</span>
     </a>
 
     <!-- Header Navbar: style can be found in header.less -->
@@ -188,6 +188,7 @@
         <ul class="sidebar-menu">
             <li class="header">主导航</li>
 
+            <!-- 注释
             <li class="treeview <?php if($paths == '/v1/index/index'): ?>active<?php endif; ?> " >
                 <a href="<?php echo url('/v1/index/index'); ?>">
                     <i class="fa fa-share"></i> <span>首页</span>
@@ -195,12 +196,12 @@
                       <i class="fa fa-angle-left pull-right"></i>
                     </span>
                 </a>
-
             </li>
+             -->
 
             <li class="treeview <?php if($paths == '/v1/users/user/index' || $paths == '/v1/cate/cates/index' || $paths == '/v1/charts/chart/index'): ?> active <?php endif; ?> " >
                 <a href="#">
-                    <i class="fa fa-share"></i> <span>惠优税</span>
+                    <i class="glyphicon glyphicon-home"></i> <span>惠优税</span>
 
                     <span class="pull-right-container">
                       <i class="fa fa-angle-left pull-right"></i>
@@ -210,7 +211,7 @@
                 <ul class="treeview-menu">
                     <li class="<?php if($paths == '/v1/charts/chart/index'): ?>active<?php endif; ?>">
                         <a href="<?php echo url('/v1/charts/chart/index'); ?>">
-                            <i class="glyphicon glyphicon-user"></i> <span>首页轮播图</span>
+                            <i class="glyphicon glyphicon-film"></i> <span>首页轮播图</span>
                             <span class="pull-right-container">
                               <i class="fa fa-angle-left pull-right"></i>
                             </span>
@@ -236,7 +237,7 @@
 
             <li class="treeview <?php if($paths == '/v1/taxa/taxation/index' || $paths == '/v1/ban/banner/index' || $paths == '/v1/keys/keywords/index'): ?> active <?php endif; ?> " >
                 <a href="#">
-                    <i class="fa fa-share"></i> <span>行业资讯</span>
+                    <i class="glyphicon glyphicon-list-alt"></i> <span>行业资讯</span>
 
                     <span class="pull-right-container">
                       <i class="fa fa-angle-left pull-right"></i>
