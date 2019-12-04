@@ -1045,6 +1045,14 @@ a {
 }
 
 .concat_icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
     width: 75rem;
     padding-right: 5rem;
     padding-bottom: 3.5625rem;
