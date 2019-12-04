@@ -627,6 +627,12 @@ a {
     background: #F75236;
     color: #fff;
 }
+
+.hotwords{
+    background: #F75236 !important;
+    color: #fff !important;
+}
+
 .hotWord .chosen{
     background: #F75236;
     color: #fff;
@@ -883,7 +889,7 @@ a {
 
 }
 #shang li>.tags li{
-    padding: .1875rem .875rem;
+    /*padding: .1875rem .875rem;*/
     background: #f5f5f5;
     border-radius:0.25rem;
     color: #666;

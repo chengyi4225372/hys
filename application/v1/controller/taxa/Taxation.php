@@ -132,7 +132,7 @@ class Taxation extends AuthController
             mkdir($path,0755);
         }
 
-        $info = $file-> move($path,false,true);
+        $info = $file->move($path,false,true);
         if($info){
             $mes = $info->getSaveName();
             $mes = str_replace("\\",'/',$mes);

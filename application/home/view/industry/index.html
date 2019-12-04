@@ -16,7 +16,6 @@
     <script src='__PUBLIC__/common/js/index.js'></script>
     <script src='__PUBLIC__/common/js/public.js'></script>
     <script src='__HOME__/js/industry.js'></script>
-    <script src='__PUBLIC__/common/js/tool.js'></script>
 </head>
 
 <body>
@@ -160,8 +159,14 @@
                             <span>{$vo.title}</span>
                         </li>
                         {/volist} -->
-                        <li><span>可以点叉叉哦</span><span class="close">✕</span></li>
+                        {volist name='keywords' id='vo'}
+                        <li {eq name="$Think.get.title" value="$vo.title"} class="hotwords" {/eq}>
 
+                            <span onclick="hotsearch(this);" data-title="{$vo.title}"  data-url="{:url('/home/industry/index')}">{$vo.title}</span>
+
+                            <span class="close" onclick="window.location.href=$(this).attr('data-url')"  data-url="{:url('/home/industry/index')}">✕</span>
+                        </li>
+                        {/volist}
 
                     </ul>
 
