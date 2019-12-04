@@ -57,7 +57,7 @@
 
         <!-- 面包屑 -->
         <div class="w bread">
-            <a href="javascript">首页</a>
+            <a href="/">首页</a>
             <span>&gt;</span>
             <span class="current">产品服务</span>
         </div>
@@ -171,7 +171,7 @@
         })
         $('.nav').on('mouseleave', function () {
             $('.nav ul li').removeClass('nav-active')
-            if ($('.chosenPage').length < 1) $('.nav ul li').eq(0).addClass('chosenPage')
+            if ($('.chosenPage').length < 1) $('.nav ul li').eq(1).addClass('chosenPage')
             $('.chosenPage').addClass('nav-active')
         })
     })

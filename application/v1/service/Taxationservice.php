@@ -27,15 +27,24 @@ class Taxationservice
         return self::$instance;
     }
 
+    /**
+     * 获取数量
+     */
+    public function getcount(){
+        $count =  Taxation::instance()->where(['status'=>1])->count();
+        return $count?$count:'';
+    }
 
    /**
     * 获取正常数据
     * $title
     */
    public function getList($title){
-       if(!empty($title) || isset($title)){
-           $w['status'] =1;
-           $w['title|keywords|description'] = ['like','%'.$title.'%'];
+       if(!empty($title) || isset($title) == true){
+           $w =[
+               'status' =>1,
+               'title|keywords|description' => ['like','%'.$title.'%'],
+           ];
        }else {
            $w = ['status'=>1]; //正常
        }

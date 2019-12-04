@@ -117,8 +117,9 @@ a {
 
 .nav-container {
     padding-top: .875rem;
-    height: 4.125rem;
-    /* background-color: skyblue; */
+    /* height: 4.125rem; */
+    height: 100%;
+  
 }
 
 .nav-container .logo {
@@ -147,6 +148,7 @@ a {
 .nav-container .nav {
     float: left;
     margin-left: 10.375rem;
+    height: 100%;
 }
 
 .nav-container .nav ul {
@@ -375,10 +377,10 @@ a {
 .tab ul li:first-child{
     margin-top: 6.375rem;
 }
-.tab ul li:hover a{
+.tab ul li a:hover{
     color: #2F3340;
 }
-.tab ul li:hover a::after{
+.tab ul li a:hover::after{
     position: absolute;
     z-index: 1;
     bottom:-0.4375rem;
@@ -416,12 +418,10 @@ a {
 .tabCon{
     width: 53.75rem;
     height: 54.875rem;
-    background: skyblue;
 }
 .tabCon img{
     width: 100%;
     height: 100%;
-    /* object-fit: contain; */
 }
 .tabTitle{
     width: 31.25rem;
