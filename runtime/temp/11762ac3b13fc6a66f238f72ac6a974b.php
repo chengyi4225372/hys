@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1575344728;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1575357577;}*/ ?>
 <!DOCTYPE>
 <html lang="en">
 
@@ -407,6 +407,7 @@
 </body>
 <script>
     $(function () {
+        
         $('.nav ul li').on('click', function () {
             $(this).addClass('nav-active chosenPage').siblings().removeClass('nav-active chosenPage')
         })

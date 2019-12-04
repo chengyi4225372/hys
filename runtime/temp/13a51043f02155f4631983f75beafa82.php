@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:70:"C:\phpEnv\www\hys\public/../application/home\view\programme\index.html";i:1575344682;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:70:"C:\phpEnv\www\hys\public/../application/home\view\programme\index.html";i:1575357843;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -173,15 +173,14 @@
     $('.nav').on('mouseleave', function () {
       $('.nav ul li').removeClass('nav-active')
       if ($('.chosenPage').length < 1) $('.nav ul li').eq(2).addClass('chosenPage')
-
       $('.chosenPage').addClass('nav-active')
     })
 
     /* 选项卡切换 */
-    $('.tab ul li').on('click', function () {
-      $('.tabCon img').attr('src', `/static/home/images/${$(this).index()}case.png`)
-      $('.tabTitle').html($(this).children().html())
-      $(this).addClass('activeTab').siblings().removeClass('activeTab')
+    $('.tab ul li a').on('click', function () {      
+      $('.tabCon img').attr('src', `/static/home/images/${$(this).parent().index()}case.png`)
+      $('.tabTitle').html($(this).html())
+      $(this).parent().addClass('activeTab').siblings().removeClass('activeTab')
     })
   })
 

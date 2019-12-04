@@ -118,8 +118,9 @@ a {
 
 .nav-container {
     padding-top: .875rem;
-    height: 4.125rem;
+    /* height: 4.125rem; */
     /* background-color: skyblue; */
+    height: 100%;
 }
 
 .nav-container .logo {
@@ -148,6 +149,7 @@ a {
 .nav-container .nav {
     float: left;
     margin-left: 10.375rem;
+    height: 100%;
 }
 
 .nav-container .nav ul {
