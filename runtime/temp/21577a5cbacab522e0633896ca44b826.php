@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:118:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\programme\productservice.html";i:1575367411;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:118:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\programme\productservice.html";i:1575424571;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -58,7 +58,7 @@
 
         <!-- 面包屑 -->
         <div class="w bread">
-            <a href="javascript">首页</a>
+            <a href="/">首页</a>
             <span>&gt;</span>
             <span class="current">产品服务</span>
         </div>

@@ -1,5 +1,5 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\industry\index.html";i:1575425966;}*/ ?>
-<!DOCTYPE>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\industry\index.html";i:1575426261;}*/ ?>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>

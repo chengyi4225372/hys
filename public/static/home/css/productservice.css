@@ -349,6 +349,9 @@ a {
 .bread a {
     color: #999;
 }
+.bread a:hover{
+    color: #EE442E;
+}
 .bread .current{
     color: #EE442E;
 }
