@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:70:"C:\phpEnv\www\hys\public/../application/home\view\programme\index.html";i:1575429138;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:70:"C:\phpEnv\www\hys\public/../application/home\view\programme\index.html";i:1575440733;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -110,14 +110,19 @@
           <dd><a href="#">400-150-9896</a></dd>
           <dd><a href="#">hcylm008@dingtalk.com</a></dd>
           <dd><a href="#">武汉市硚口区南国大武汉H座18楼</a></dd>
+          <dd id="social">
+            <div><img src="/static/home/images/bo.png" alt=""></div>
+            <div><img src="/static/home/images/wx.png" alt=""></div>
+            <div><img src="/static/home/images/tie.png" alt=""></div>
+          </dd>
         </dl>
 
       </div>
-      <div class='concat_icon clearfix'>
+      <!-- <div class='concat_icon clearfix'>
         <div><img src="/static/home/images/bo.png" alt=""></div>
         <div><img src="/static/home/images/wx.png" alt=""></div>
         <div><img src="/static/home/images/tie.png" alt=""></div>
-      </div>
+      </div> -->
       <div class="fotter-line"></div>
       <div>© Copyright 2019 惠企动（湖北）科技有限公司 . All Rights Reserved</div>
     </div>
@@ -177,7 +182,7 @@
     })
 
     /* 选项卡切换 */
-    $('.tab ul li a').on('click', function () {      
+    $('.tab ul li a').on('click', function () {
       $('.tabCon img').attr('src', `/static/home/images/${$(this).parent().index()}case.png`)
       $('.tabTitle').html($(this).html())
       $(this).parent().addClass('activeTab').siblings().removeClass('activeTab')

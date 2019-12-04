@@ -527,7 +527,22 @@ a {
     color: #DCDCDC;
 }
 
-.concat_icon {
+#social{
+    display: flex;
+    justify-content: flex-start;
+}
+#social div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.375rem;
+    height: 2.375rem;
+    border: 1px solid #EAF2FF;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin-right: 2.375rem;
+}
+/* .concat_icon {
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -560,7 +575,7 @@ a {
 
 .concat_icon div:nth-of-type(2) {
     background-color: #67CE0B;
-}
+} */
 
 .partener_total {
     position: relative;

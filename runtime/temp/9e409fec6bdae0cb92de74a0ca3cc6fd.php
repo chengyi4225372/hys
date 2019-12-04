@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\industry\index.html";i:1575429138;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\industry\index.html";i:1575439719;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -109,12 +109,16 @@
 
 
 
-    <div class="bg_banner">
+    <!-- <div class="bg_banner">
         <div class="banner">
 
             <img src="<?php echo $banner['imgs']; ?>" alt="">
         </div>
-    </div>
+    </div> -->
+
+        <!-- 头部 -->
+        <div class='header-box'></div>
+
 
     <!-- 面包屑导航 -->
     <div class="w bg_breadCrumbs">

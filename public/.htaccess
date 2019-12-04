@@ -3,15 +3,7 @@
   RewriteEngine On
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{REQUEST_FILENAME} !-f
-<<<<<<< HEAD
-  RewriteRule ^(.*)$ index.php?/$1 [QSA,PT,L]
-=======
-<<<<<<< HEAD
-  RewriteRule ^(.*)$ index.php?/$1 [QSA,PT,L]
-=======
 
   RewriteRule ^(.*)$ index.php?/$1 [QSA,PT,L]
 
->>>>>>> 7040b4cd70ab2d77930c9af429c896b0fafd728f
->>>>>>> 716d6782bacc18837bc073c25b9ed285b51510ca
 </IfModule>
