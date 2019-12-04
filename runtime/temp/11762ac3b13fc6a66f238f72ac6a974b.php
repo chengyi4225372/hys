@@ -1,5 +1,5 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1575422902;}*/ ?>
-<!DOCTYPE>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1575428442;}*/ ?>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -414,6 +414,31 @@
         <div><img src="/static/home/images/top@2x.png" alt=""></div>
         <div>顶部</div>
       </div>
+    </div>
+
+    <!-- 弹框 -->
+    <div class="pop-up-box" id="popbox">
+      <div class="form">
+        <div class="form-titile">
+          <p>方案咨询</p>
+          <span class="turnoff" onclick="turnoff()"></span>
+        </div>
+        <div class="form-content">
+          <div><span class="title">您的姓名</span><input type="text" id="contactName" placeholder="请输您的姓名"></div>
+          <div><span class="title">联系方式</span><input type="text" id="contactMobile" placeholder="请输入您的手机号"></div>
+          <div><span class="title">公司名称</span><input type="text" id="companyName" placeholder="若无公司请填写自雇"></div>
+          <input type='hidden' id='sources' value='惠灵工'>
+          <input type='hidden' id='identifications' value='灵活用工'>
+          <div class="form-btn" onclick="form_btn()">获取方案</div>
+        </div>
+        <!-- 提交成果后弹窗 -->
+        <div class="mask-box">
+          <span></span>
+          <p class="mask-box-title">提交成功</p>
+          <p class="mask-box-content">我们会在一个工作日内联系您</p>
+        </div>
+      </div>
+
     </div>
 
 

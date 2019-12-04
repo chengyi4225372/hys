@@ -320,7 +320,7 @@ a {
 }
 
 .login-out ul li:hover {
-    background-color: #FE0B0C;
+    background-color: #e8341e;
 }
 
 .nav-container .user-icon-box:hover .login-out {
@@ -356,8 +356,11 @@ a {
 }
 
 .crumbs-box span a:hover {
-    color: #F95238;
+    color: #e8341e;
     cursor: pointer;
+}
+.crumbs-box span:last-child{
+    color: #e8341e;
 }
 
 /* 客户案例 */

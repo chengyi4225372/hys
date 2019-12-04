@@ -14,6 +14,8 @@ use app\common\model\Admin;
 use app\v1\service\Protuctservice;
 use app\v1\service\Infosservice;
 use app\v1\service\Userservice;
+use app\v1\service\Taxationservice;
+use app\v1\service\Customerservice;
 class Index extends AuthController
 {
     /**
@@ -26,15 +28,15 @@ class Index extends AuthController
         $userId = Cookie('userid');
         //用户信息
         $userInfo = Admin::where(['id' => $userId])->find()->toArray();
-        //惠享产品 统计
-        $pro_count = Protuctservice::instance()->getproductcount();
-        //招标信息统计
-        $info_count = Infosservice::instance()->getinfocount();
+        //客户案例
+        $cust_count = Customerservice::instance()->getcount();
+        //行业资讯
+        $taxt_count = Taxationservice::instance()->getcount();
         //用户信息统计
         $user_count = Userservice::instance()->usercount();
         $this->assign('user_count',!empty($user_count) ? $user_count : 0);
-        $this->assign('info_count',!empty($info_count) ? $info_count : 0);
-        $this->assign('pro_count',!empty($pro_count) ? $pro_count : 0);
+        $this->assign('cust_count',!empty($cust_count) ? $cust_count : 0);
+        $this->assign('taxt_count',!empty($taxt_count) ? $taxt_count : 0);
 
 
         $this->assign('title','首页');
