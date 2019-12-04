@@ -1,0 +1,730 @@
+/* 版心 */
+
+.w {
+    width: 75rem;
+    margin: 0 auto;
+    padding: 0 1.875rem;
+    box-sizing: border-box;
+}
+
+
+/* 浮动 */
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+
+/* 清除浮动 */
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/* 分成120等分 */
+
+html {
+    font-size: 16px;
+}
+
+@media screen and (min-width: 1280px) {
+    html {
+        font-size: 10.666px;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    html {
+        font-size: 11.38333333333333px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    html {
+        font-size: 13.3333333333px;
+    }
+}
+
+@media screen and (min-width: 1680px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+    margin: 0
+}
+
+ul,
+li,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    min-width: 75rem;
+}
+
+.nav-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    background: #FFFFFF;
+    z-index: 999;
+    /* background-color: pink; */
+    box-shadow: 0px 1px 7px 0px rgba(199, 199, 199, 0.66);
+}
+
+.nav-container {
+    padding-top: .875rem;
+    height: 4.125rem;
+    /* background-color: skyblue; */
+}
+
+.nav-container .logo {
+    float: left;
+    margin-left: 0.95rem;
+}
+
+.nav-container .logo img {
+    float: left;
+    width: 3.375rem;
+    height: 3.25rem;
+    /* vertical-align: middle; */
+}
+
+.nav-container h1 {
+    float: left;
+    font-size: 1.9375rem;
+    font-family: Source Han Sans CN;
+    font-weight: 500;
+    letter-spacing: .1875rem;
+    color: rgba(0, 0, 0, 1);
+    line-height: 2.125rem;
+    margin: .6875rem 0 .6875rem .75rem;
+}
+
+.nav-container .nav {
+    float: left;
+    margin-left: 10.375rem;
+}
+
+.nav-container .nav ul {
+    list-style: none;
+    margin: 1.55rem 0 0 0;
+    padding: 0;
+}
+
+.nav-container .nav ul li {
+    position: relative;
+    float: left;
+    margin-right: 2.5rem;
+}
+
+.nav-container .nav ul li:last-child {
+    margin-right: 0;
+}
+
+.nav-container .nav ul li a {
+    display: block;
+    width: 100%;
+    /* height: 100%; */
+    font-size: 1rem;
+    font-family: "SourceHanSansCN-Bold", "Source Han Sans CN", "Microsoft YaHei", "微软雅黑";
+    font-weight: 700;
+    color: #333333;
+}
+
+.nav-container .nav ul li:hover::after {
+    position: absolute;
+    bottom: -0.5125rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    content: '';
+    width: 140%;
+    height: .25rem;
+    border-radius: .125rem;
+    background-color: #E8341E;
+}
+
+.nav-active {
+    position: relative;
+}
+
+.nav-active::after {
+    position: absolute;
+    bottom: -0.5125rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    content: '';
+    width: 140%;
+    height: .25rem;
+    border-radius: .125rem;
+    background-color: #E8341E;
+}
+
+
+/* 登陆注册 */
+
+.nav-container .loging {
+    float: right;
+    margin: 1.25rem 0 0 0;
+}
+
+.nav-container .loging div {
+    float: left;
+    width: 3.5rem;
+    height: 1.625rem;
+    text-align: center;
+    line-height: 1.625rem;
+    background: url('../images/login-bg.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.nav-container .loging div a {
+    display: block;
+    width: 100%;
+    height: 1.625rem;
+    font-size: 1rem;
+    font-family: 'Source Han Sans CN', "Microsoft YaHei", "微软雅黑";
+    font-weight: 400;
+    color: #E8341E;
+    line-height: 1.625rem;
+}
+
+.nav-container .loging div:nth-child(2) {
+    margin-left: 1.25rem;
+    margin-right: 2.5625rem
+}
+
+
+/* 头像部分 */
+
+.nav-container .user-icon-box {
+    position: relative;
+    float: right;
+    text-align: center;
+    height: 3rem;
+    margin-top: 1.05rem;
+    padding-left: 1.25rem;
+    /* margin-right: 2.5625rem; */
+    cursor: pointer;
+    /* background-color: pink; */
+}
+
+.nav-container .user-icon-box .user-icon {
+    width: 2rem;
+    height: 2rem;
+    vertical-align: bottom;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+
+.nav-container .user-icon-box .phone {
+    height: 1.4375rem;
+    display: inline-block;
+}
+
+
+/* 登陆退出 */
+
+.login-out {
+    display: none;
+    position: absolute;
+    width: 5.625rem;
+    bottom: -38px;
+    left: -0.425rem;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: .125rem;
+}
+
+.login-out::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -1.25rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border-top: .625rem solid transparent;
+    border-right: .625rem solid transparent;
+    border-bottom: .625rem solid #333;
+    border-left: .625rem solid transparent;
+}
+
+.login-out ul {}
+
+.login-out ul li {
+    height: 2.5rem;
+    line-height: 2.5rem;
+    background-color: #333;
+}
+
+.login-out ul li a {
+    font-size: .875rem;
+    font-family: "PingFang SC", "Microsoft YaHei", "微软雅黑";
+    font-weight: 500;
+    color: #fff;
+}
+
+.login-out ul li:hover {
+    background-color: #e8341e;
+}
+
+.nav-container .user-icon-box:hover .login-out {
+    display: block;
+}
+
+/* 头部部分 */
+.header-box {
+    height: 28.625rem;
+    background: url('../images/caseBanner.png') no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    margin-top: 5rem;
+}
+
+/* 面包屑 */
+
+.crumbs {
+    background-color: #FAFAFA;
+    height: 4.5rem;
+    line-height: 4.5rem;
+}
+
+.crumbs-box {
+    font-size: 1rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: rgba(153, 153, 153, 1);
+}
+
+.crumbs-box span a {
+    color: rgba(153, 153, 153, 1);
+}
+
+.crumbs-box span a:hover {
+    color: #e8341e;
+    cursor: pointer;
+}
+.crumbs-box span:last-child{
+    color: #e8341e;
+}
+
+/* 客户案例 */
+
+.bg_tab {
+    background-color: #FAFAFA;
+}
+
+.bg_tab ul {
+    width: 77.5rem;
+}
+
+.bg_tab ul li {
+    float: left;
+    width: 36.25rem;
+    height: 14.5rem;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 4px;
+    margin-right: 2.375rem;
+    margin-bottom: 3rem;
+    padding: 1.125rem;
+    box-sizing: border-box;
+
+}
+
+.bg_tab ul li:hover {
+    box-shadow: 0px 3px 7px 0px rgba(210, 210, 210, 1);
+}
+
+.tabBox .item-img {
+    float: left;
+    width: 15.25rem;
+    height: 12.25rem;
+    margin-right: 2.6875rem;
+}
+
+.tabBox .item-img img {
+    width: 100%;
+}
+
+.tabBox .item-content {
+    float: left;
+    width: 15rem;
+    padding-top: 1.25rem;
+    box-sizing: border-box;
+    moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.tabBox .item-content p:nth-of-type(1) {
+    width: 100%;
+    height: 3.75rem;
+    font-size: 1.125rem;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 1);
+    line-height: 1.875rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.tabBox .item-content p:nth-of-type(2) {
+    height: 2.5rem;
+    font-size: .875rem;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 1.75rem;
+    line-height: 1.25rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.tabBox .item-content a:nth-of-type(1) {
+    font-size: .75rem;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #000;
+}
+
+.tabBox .item-content a:nth-of-type(1):hover {
+    color: rgba(248, 99, 74, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 底部 */
+
+.fotter-box {
+    /* border-radius: 3.125rem 3.125rem 0px 0px; */
+    background-color: #272939;
+    padding-bottom: 2.375rem;
+}
+
+.fotter-box .fotter {}
+
+
+.parter_catefories {
+    padding-top: 5rem;
+    overflow: hidden;
+    font-size: .6875rem;
+    font-family: "Source Han Sans CN", "Microsoft YaHei", "微软雅黑";
+    font-weight: 300;
+    color: rgba(220, 220, 220, 1);
+}
+
+.parter_catefories>dl {
+    float: left;
+}
+
+.parter_catefories>dl:nth-of-type(2) {
+    margin: 0 8.125rem 0 9.375rem;
+}
+
+.parter_catefories>dl:nth-of-type(3) {
+    margin-right: 8.375rem;
+}
+
+.parter_catefories>dl:nth-of-type(5) {
+    float: right;
+}
+
+.parter_catefories dl dt {
+    margin-bottom: 3.3125rem;
+
+}
+
+.parter_catefories dl dd {
+    margin-top: 1.8125rem;
+}
+
+.parter_catefories dl dt>a {
+    font-size: 1.125rem;
+    font-family: "Source Han Sans CN", "Microsoft YaHei", "微软雅黑";
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.parter_catefories dl dd>a {
+    font-size: 1.125rem;
+    font-family: "Source Han Sans CN", "Microsoft YaHei", "微软雅黑";
+    font-weight: 400;
+    color: #DCDCDC;
+}
+
+.concat_icon {
+    text-align: right;
+    margin-top: 1.75rem;
+    margin-right: 4.875rem;
+}
+
+.concat_icon div {
+    display: inline-block;
+    width: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 2.375rem;
+    height: 2.375rem;
+    text-align: center;
+    margin-left: 1.5rem;
+    padding: .5rem;
+    box-sizing: border-box;
+}
+
+.concat_icon img {
+    width: 100%;
+}
+
+.concat_icon div:nth-of-type(2) {
+    background-color: #67CE0B;
+}
+
+.partener_total {
+    position: relative;
+}
+
+.fotter-line {
+    margin-top: 3.5625rem;
+    height: 1px;
+    background: rgba(122, 122, 122, 1);
+}
+
+.fotter div:nth-child(4) {
+    margin-top: 1.1875rem;
+    text-align: center;
+    font-size: .875rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: rgba(195, 195, 195, 1);
+}
+
+
+
+
+/* bottom资讯 */
+.bottom {
+    position: fixed;
+    right: 0;
+    bottom: 2.5rem;
+}
+
+.bottom>div:nth-child(1),
+.bottom>div:nth-child(2) {
+    position: relative;
+    width: 5rem;
+    height: 11.25rem;
+}
+
+.bottom>div:nth-child(1) {
+    background: linear-gradient(0deg, rgba(232, 59, 39, 1), rgba(250, 83, 57, 1));
+    margin-bottom: 10px;
+}
+
+.bottom>div:nth-child(2) {
+    background: #272939;
+}
+
+.bottom>div .bottom-title {
+    line-height: 5rem;
+    height: 100%;
+    text-align: center;
+    writing-mode: vertical-rl;
+    font-size: 1.5rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+}
+
+.bottom>div>.bottom-item,
+.bottom>div>.bottom-item2 {
+    position: absolute;
+    right: -12.5rem;
+    top: 0;
+    width: 12.5rem;
+    height: 11.25rem;
+    transition: all 0.5s;
+    z-index: -1;
+    box-sizing: border-box;
+}
+
+.bottom>div>.bottom-item {
+    padding-top: 2.2rem;
+
+}
+
+
+
+.bottom>div>.bottom-item2 {
+    padding: 0 8px;
+
+}
+
+.bottom>div>.bottom-item2 div {
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.bottom>div>.bottom-item2 div:nth-child(2) {
+    padding: .875rem 0 0 1.875rem;
+}
+
+.bottom>div>.bottom-item2 div:nth-child(1) {
+    padding: 1.675rem 0 0 1.875rem;
+    border-bottom: 1px solid #fff;
+}
+
+.bottom>div>.bottom-item2 div p:nth-child(1) {
+    font-size: 1rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: .875rem;
+}
+
+.bottom>div>.bottom-item2 div p:nth-child(2) {
+    font-size: 1.125rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: .875rem;
+}
+
+.bottom>div:hover .bottom-item2 {
+    right: 5.3125rem;
+}
+.bottom-item2{
+    background: url('../images/consultation.png') no-repeat;
+    background-size: 100% 100%
+}
+.order{
+    background: url('../images/appointment.png') no-repeat;
+
+}
+
+/* 返回顶部 */
+
+.bottom>div:nth-child(3).goTop {
+    width: 5rem;
+    height: 4.5625rem;
+    text-align: center;
+    z-index: 999;
+    background-color: #272939;
+    padding-top: .625rem;
+    display: none;
+    cursor: pointer;
+    margin-top: .625rem;
+    padding-top: .625rem;
+}
+
+.goTop div:nth-child(1) {
+    width: 2rem;
+    height: 2rem;
+    margin: 0 auto;
+    margin-bottom: .375rem;
+}
+
+.goTop div:nth-child(1) img {
+    width: 100%;
+}
+
+.goTop div:nth-child(2) {
+    font-size: 1.125rem;
+    font-family: Source Han Sans CN;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+}

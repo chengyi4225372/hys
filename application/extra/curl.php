@@ -9,4 +9,7 @@ return [
     'ge_login_url' => 'http://172.26.3.12:8009/#/logingr',
     'gr_register_url' => 'http://172.26.3.12:8009/#/registergr',
     'hou_tai_url' => 'http://172.26.3.12:8009/#',
+    'hdx' =>'/index.php/home/many/index',//会找事
+    'hcy' =>'/index.php/home/business/index',//惠创业
+    'hqd' =>'/index.php/home/launch/index', //惠企动
 ];

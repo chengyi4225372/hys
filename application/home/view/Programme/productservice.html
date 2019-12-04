@@ -3,10 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>{$title}</title>
     <link rel="stylesheet" href="__HOME__/css/base.css">
     <link rel="stylesheet" href="__HOME__/css/productservice.css">
-
     <script src="__HOME__/js/productservice.js"></script>
     <script src="__HOME__/js/jquery.js"></script>
 
@@ -26,9 +25,9 @@
                 <div class="nav">
                     <ul class="clearfix">
                         <li><a href="/">首页</a></li>
-                        <li class="nav-active"><a href="#"> 产品服务</a></li>
+                        <li class="nav-active"><a href="{:url('/home/programme/productservice')}"> 产品服务</a></li>
                         <li><a href="{:url('/home/programme/index')}">行业解决方案</a></li>
-                        <li><a href="#">客户案例</a></li>
+                        <li ><a href="{:url('/home/customer/index')}">客户案例</a></li>
                         <li><a href="{:url('home/industry/index')}">行业新闻资讯</a></li>
                         <li><a href="#">会员通道</a></li>
                     </ul>
@@ -172,7 +171,7 @@
         })
         $('.nav').on('mouseleave', function () {
             $('.nav ul li').removeClass('nav-active')
-            if ($('.chosenPage').length < 1) $('.nav ul li').eq(0).addClass('chosenPage')
+            if ($('.chosenPage').length < 1) $('.nav ul li').eq(1).addClass('chosenPage')
             $('.chosenPage').addClass('nav-active')
         })
     })

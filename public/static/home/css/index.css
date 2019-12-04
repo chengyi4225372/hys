@@ -270,7 +270,7 @@ a {
 }
 
 .nav-container .user-icon-box .phone {
-    height: 23px;
+    height: 1.4375rem;
     display: inline-block;
 }
 
@@ -1141,14 +1141,18 @@ a {
 }
 
 .selected-park>div.map-box {
+    position: relative;
     height: 46.25rem;
     background: url('../images/map.png') no-repeat;
     background-size: 100% 100%;
 }
 
 .selected-park>div.map-box .map-box-left {
-    float: left;
+    position: absolute;
+    left: 0;
+    top: 0;
     padding-top: 1.125rem;
+    z-index: 2;
 }
 
 .selected-park>div.map-box .map-box-left div {
@@ -1167,13 +1171,35 @@ a {
 }
 
 .selected-park>div.map-box .map-box-right {
-    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
     padding-top: .9375rem;
+    z-index: 2;
 }
 
 .selected-park>div.map-box .map-box-center .map-box-center-item,
 .selected-park>div.map-box .map-box-right .map-box-right-yuanqu-item {
     display: none;
+}
+
+.selected-park>div.map-box .map-box-center {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.selected-park>div.map-box .map-box-center .map-box-center-item {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+.selected-park>div.map-box .map-box-center .map-box-center-item img {
+    width: 100%;
+    height: 100%;
 }
 
 .selected-park>div.map-box .map-box-right .map-box-right-yuanqu-item div {
