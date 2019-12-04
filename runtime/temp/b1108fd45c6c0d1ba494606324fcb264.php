@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\customer\index.html";i:1575423009;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\customer\index.html";i:1575423132;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,35 +13,35 @@
 </head>
 
 <body>
-<div class="container">
-    <!-- 导航部分 -->
-    <div class="nav-box">
-        <div class="w nav-container clearfix">
-            <!-- logo图 -->
-            <div class="logo clearfix">
-                <img src="/static/home/images/logo.png" alt="">
-                <h1>惠优税</h1>
-            </div>
-            <!-- nav部分 -->
-            <div class="nav">
-                <ul class="clearfix">
-                    <li><a href="/">首页</a></li>
-                    <li><a href="<?php echo url('/home/programme/productservice'); ?>"> 产品服务</a></li>
-                    <li><a href="<?php echo url('/home/programme/index'); ?>">行业解决方案</a></li>
-                    <li class="nav-active"><a href="<?php echo url('/home/customer/index'); ?>">客户案例</a></li>
-                    <li><a href="<?php echo url('home/industry/index'); ?>">行业新闻资讯</a></li>
-                    <li><a href="#">会员通道</a></li>
-                </ul>
-            </div>
-            <!-- 登陆注册 -->
-            <!-- <div class="loging clearfix">
+    <div class="container">
+        <!-- 导航部分 -->
+        <div class="nav-box">
+            <div class="w nav-container clearfix">
+                <!-- logo图 -->
+                <div class="logo clearfix">
+                    <img src="/static/home/images/logo.png" alt="">
+                    <h1>惠优税</h1>
+                </div>
+                <!-- nav部分 -->
+                <div class="nav">
+                    <ul class="clearfix">
+                        <li><a href="/">首页</a></li>
+                        <li><a href="<?php echo url('/home/programme/productservice'); ?>"> 产品服务</a></li>
+                        <li><a href="<?php echo url('/home/programme/index'); ?>">行业解决方案</a></li>
+                        <li class="nav-active"><a href="<?php echo url('/home/customer/index'); ?>">客户案例</a></li>
+                        <li><a href="<?php echo url('home/industry/index'); ?>">行业新闻资讯</a></li>
+                        <li><a href="#">会员通道</a></li>
+                    </ul>
+                </div>
+                <!-- 登陆注册 -->
+                <!-- <div class="loging clearfix">
                         <div class="register-btn"><a href="./login.html">
                             登陆
                           </a></div>
                         <div class="loging-btn"><a href="./register.html">注册</a></div>
                       </div> -->
-            <!-- 头像部分 -->
-            <!-- 注释掉
+                <!-- 头像部分 -->
+                <!-- 注释掉
             <div class="user-icon-box">
                 <img class="user-icon" src="/static/home/images/icon.png" alt="">
                 <span class="phone">133****5674</span>
