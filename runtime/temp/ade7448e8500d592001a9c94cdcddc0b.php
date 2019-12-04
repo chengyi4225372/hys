@@ -1,14 +1,15 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\customer\index.html";i:1575424331;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <title>{$title}</title>
-  <link rel="stylesheet" href="__HOME__/css/base.css">
-  <link rel="stylesheet" href="__HOME__/css/customer.css">
-  <script src="__HOME__/js/jquery.js"></script>
-  <!-- <script src="__HOME__/js/programme.js"></script> -->
-  <script src="__HOME__/js/customer.js"></script>
+  <title><?php echo $title; ?></title>
+  <link rel="stylesheet" href="/static/home/css/base.css">
+  <link rel="stylesheet" href="/static/home/css/customer.css">
+  <script src="/static/home/js/jquery.js"></script>
+  <!-- <script src="/static/home/js/programme.js"></script> -->
+  <script src="/static/home/js/customer.js"></script>
 </head>
 
 <body>
@@ -18,17 +19,17 @@
       <div class="w nav-container clearfix">
         <!-- logo图 -->
         <div class="logo clearfix">
-          <img src="__HOME__/images/logo.png" alt="">
+          <img src="/static/home/images/logo.png" alt="">
           <h1>惠优税</h1>
         </div>
         <!-- nav部分 -->
         <div class="nav">
           <ul class="clearfix">
             <li><a href="/">首页</a></li>
-            <li><a href="{:url('/home/programme/productservice')}"> 产品服务</a></li>
-            <li><a href="{:url('/home/programme/index')}">行业解决方案</a></li>
-            <li class="nav-active"><a href="{:url('/home/customer/index')}">客户案例</a></li>
-            <li><a href="{:url('home/industry/index')}">行业新闻资讯</a></li>
+            <li><a href="<?php echo url('/home/programme/productservice'); ?>"> 产品服务</a></li>
+            <li><a href="<?php echo url('/home/programme/index'); ?>">行业解决方案</a></li>
+            <li class="nav-active"><a href="<?php echo url('/home/customer/index'); ?>">客户案例</a></li>
+            <li><a href="<?php echo url('home/industry/index'); ?>">行业新闻资讯</a></li>
             <li><a href="#">会员通道</a></li>
           </ul>
         </div>
@@ -42,7 +43,7 @@
         <!-- 头像部分 -->
         <!-- 注释掉
             <div class="user-icon-box">
-                <img class="user-icon" src="__HOME__/images/icon.png" alt="">
+                <img class="user-icon" src="/static/home/images/icon.png" alt="">
                 <span class="phone">133****5674</span>
                 <div class="login-out">
                     <ul>
@@ -58,7 +59,7 @@
     <!-- 面包屑 -->
     <div class="crumbs">
       <div class="crumbs-box w">
-        <span><a onclick="go_work(this)" data-url="{:url('/home/index/index')}">惠优税></a></span>
+        <span><a onclick="go_work(this)" data-url="<?php echo url('/home/index/index'); ?>">惠优税></a></span>
         <span> 客户案例</span>
       </div>
     </div>
@@ -67,18 +68,18 @@
   <div class="bg_tab">
     <div class="tabBox w">
       <ul class="clearfix">
-        {volist name='list' id='vo'}
+        <?php if(is_array($list) || $list instanceof \think\Collection || $list instanceof \think\Paginator): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
         <li>
           <div class="item-img">
-            <img src="{$vo.imgs?$vo.imgs:''}" alt=""></div>
+            <img src="<?php echo !empty($vo['imgs'])?$vo['imgs']:''; ?>" alt=""></div>
           <div class="item-content">
             <p>
-              {$vo.description|mb_substr='0','300','utf-8'}
+              <?php echo mb_substr($vo['description'],'0','300','utf-8'); ?>
             </p>
-            <a href="{:url('/home/customer/info')}?mid={$vo.id}">查看案例>></a>
+            <a href="<?php echo url('/home/customer/info'); ?>?mid=<?php echo $vo['id']; ?>">查看案例>></a>
           </div>
         </li>
-        {/volist}
+        <?php endforeach; endif; else: echo "" ;endif; ?>
 
       </ul>
     </div>
@@ -119,9 +120,9 @@
 
       </div>
       <div class='concat_icon clearfix'>
-        <div><img src="__HOME__/images/bo.png" alt=""></div>
-        <div><img src="__HOME__/images/wx.png" alt=""></div>
-        <div><img src="__HOME__/images/tie.png" alt=""></div>
+        <div><img src="/static/home/images/bo.png" alt=""></div>
+        <div><img src="/static/home/images/wx.png" alt=""></div>
+        <div><img src="/static/home/images/tie.png" alt=""></div>
       </div>
       <div class="fotter-line"></div>
       <div>© Copyright 2019 惠企动（湖北）科技有限公司 . All Rights Reserved</div>
@@ -158,7 +159,7 @@
     </div>
     &lt;!&ndash; 返回顶部 &ndash;&gt;
     <div class='goTop' id="goTop">
-        <div><img src="__HOME__/images/top@2x.png" alt=""></div>
+        <div><img src="/static/home/images/top@2x.png" alt=""></div>
         <div>顶部</div>
     </div>
 </div>-->
