@@ -418,6 +418,8 @@ a {
 .tabCon{
     width: 53.75rem;
     height: 54.875rem;
+    background: url('../images/bgCase.png');
+    background-size: 100% 100%;
 }
 .tabCon img{
     width: 100%;
@@ -525,6 +527,24 @@ a {
     color: #DCDCDC;
 }
 
+/* #social{
+    display: flex;
+    justify-content: flex-start;
+}
+#social div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.375rem;
+    height: 2.375rem;
+    border: 1px solid #EAF2FF;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin-right: 2.375rem;
+}
+#social div:nth-child(2){
+    background: #67CE0B;
+} */
 .concat_icon {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -570,7 +590,7 @@ a {
     background: rgba(122, 122, 122, 1);
 }
 
-.fotter div:nth-child(4) {
+.fotter .copyRight{
     margin-top: 1.1875rem;
     text-align: center;
     font-size: .875rem;
@@ -578,6 +598,7 @@ a {
     font-weight: 400;
     color: rgba(195, 195, 195, 1);
 }
+
 
 
 
