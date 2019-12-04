@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\customer\index.html";i:1575367385;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\customer\index.html";i:1575423009;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -52,7 +52,6 @@
                 </div>
             </div> -->
             </div>
-            -->
         </div>
 
         <!-- 头部 -->
