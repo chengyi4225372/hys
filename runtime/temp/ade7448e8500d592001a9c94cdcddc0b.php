@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\customer\index.html";i:1575440421;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\customer\index.html";i:1575446264;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="/static/home/css/customer.css">
   <script src="/static/home/js/jquery.js"></script>
   <!-- <script src="/static/home/js/programme.js"></script> -->
+  <script src="/static/assets/plugins/layui/layui.all.js"></script>
   <script src="/static/home/js/customer.js"></script>
 </head>
 
@@ -69,15 +70,19 @@
     <div class="tabBox w">
       <ul class="clearfix">
         <?php if(is_array($list) || $list instanceof \think\Collection || $list instanceof \think\Paginator): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-        <li>
+        <li onclick="window.location.href=$(this).attr('data-url')" data-url="<?php echo url('/home/customer/info'); ?>?mid=<?php echo $vo['id']; ?>">
           <div class="item-img">
             <img src="<?php echo !empty($vo['imgs'])?$vo['imgs']:''; ?>" alt=""></div>
           <div class="item-content">
+             <p>
+              <?php echo $vo['title']; ?>
+            </p>
             <p>
               <?php echo mb_substr($vo['description'],'0','300','utf-8'); ?>
             </p>
             <a href="<?php echo url('/home/customer/info'); ?>?mid=<?php echo $vo['id']; ?>">查看案例>></a>
           </div>
+
         </li>
         <?php endforeach; endif; else: echo "" ;endif; ?>
 
@@ -92,30 +97,30 @@
     <div class="w fotter">
       <div class='parter_catefories'>
         <dl>
-          <dt><a href="#">服务产品</a></dt>
-          <dd><a href="#">服务型税筹</a></dd>
-          <dd><a href="#">门户型税筹</a></dd>
-          <dd><a href="#">人力资源</a></dd>
+          <dt><a href="javascript:;">服务产品</a></dt>
+          <dd><a href="javascript:;">服务型税筹</a></dd>
+          <dd><a href="javascript:;">门户型税筹</a></dd>
+          <dd><a href="javascript:;">人力资源</a></dd>
         </dl>
         <dl>
-          <dt><a href="#">招商政策</a></dt>
-          <dd><a href="#">招商政策网</a></dd>
+          <dt><a href="javascript:;">招商政策</a></dt>
+          <dd><a href="javascript:;">招商政策网</a></dd>
         </dl>
         <dl>
-          <dt><a href="#">合作</a></dt>
-          <dd><a href="#">代理合作</a></dd>
+          <dt><a href="javascript:;">合作</a></dt>
+          <dd><a href="javascript:;">代理合作</a></dd>
         </dl>
         <dl>
-          <dt><a href="#">公司信息</a></dt>
-          <dd><a href="#">瑟维斯有限公司</a></dd>
-          <dd><a href="#">惠创优产业联盟</a></dd>
-          <dd><a href="#">中兴瑞华有限公司</a></dd>
+          <dt><a href="javascript:;">公司信息</a></dt>
+          <dd><a href="javascript:;">瑟维斯有限公司</a></dd>
+          <dd><a href="javascript:;">惠创优产业联盟</a></dd>
+          <dd><a href="javascript:;">中兴瑞华有限公司</a></dd>
         </dl>
         <dl>
-          <dt><a href="#">联系我们</a></dt>
-          <dd><a href="#">400-150-9896</a></dd>
-          <dd><a href="#">hcylm008@dingtalk.com</a></dd>
-          <dd><a href="#">武汉市硚口区南国大武汉H座18楼</a></dd>
+          <dt><a href="javascript:;">联系我们</a></dt>
+          <dd><a href="javascript:;">400-150-9896</a></dd>
+          <dd><a href="javascript:;">hcylm008@dingtalk.com</a></dd>
+          <dd><a href="javascript:;">武汉市硚口区南国大武汉H座18楼</a></dd>
         </dl>
 
       </div>

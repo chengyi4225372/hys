@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\industry\index.html";i:1575446196;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\industry\index.html";i:1575446264;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,6 +17,7 @@
     <script src='/static/common/js/index.js'></script>
     <script src='/static/common/js/public.js'></script>
     <script src='/static/home/js/industry.js'></script>
+    <script src='/static/common/js/tool.js'></script>
 </head>
 
 <body>
@@ -304,9 +305,7 @@
                 if ($('.chosenPage').length < 1) $('.nav ul li').eq(4).addClass('chosenPage')
                 $('.chosenPage').addClass('nav-active')
             })
-            $('.close').click(function(){
-                alert(111)
-            })
+
         })
     </script>
 
