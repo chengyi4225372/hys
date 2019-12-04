@@ -172,15 +172,14 @@
     $('.nav').on('mouseleave', function () {
       $('.nav ul li').removeClass('nav-active')
       if ($('.chosenPage').length < 1) $('.nav ul li').eq(2).addClass('chosenPage')
-
       $('.chosenPage').addClass('nav-active')
     })
 
     /* 选项卡切换 */
-    $('.tab ul li').on('click', function () {
-      $('.tabCon img').attr('src', `__HOME__/images/${$(this).index()}case.png`)
-      $('.tabTitle').html($(this).children().html())
-      $(this).addClass('activeTab').siblings().removeClass('activeTab')
+    $('.tab ul li a').on('click', function () {      
+      $('.tabCon img').attr('src', `__HOME__/images/${$(this).parent().index()}case.png`)
+      $('.tabTitle').html($(this).html())
+      $(this).parent().addClass('activeTab').siblings().removeClass('activeTab')
     })
   })
 

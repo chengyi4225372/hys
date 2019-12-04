@@ -442,7 +442,7 @@ a {
 }
 
 .current {
-    color: #3E92FF;
+    color: #E8341E;
 }
 
 .bread-crumbs {
@@ -452,7 +452,7 @@ a {
     color: #999;
 }
 .bread-crumbs >span >a:hover{
-    color: #3E92FF;
+    color: #E8341E;
 }
 
 
@@ -511,6 +511,7 @@ a {
 } */
 
 .govPolicy {
+    font-family: "Noto Sans SC";
     padding-left: .625rem;
     border-left: 2px solid #000;
     box-sizing: border-box;
@@ -518,7 +519,7 @@ a {
     font-size: 1.125rem;
     line-height: 1.3125rem;
     margin-bottom: 2.0625rem;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .search-box {
@@ -533,18 +534,18 @@ a {
     padding-left: 1.5rem;
     background: rgba(246, 246, 246, 1);
     border-radius: .1875rem 0px 0px .1875rem;
+    box-sizing: border-box;
 }
 
-.search-box>div::after {
+/* .search-box>div::after {
     content: '';
     position: absolute;
     left: -1.25rem;
     top: .625rem;
     width: .875rem;
     height: .875rem;
-    /* background: url('../images/guanbi.png') no-repeat 100% 100%; */
     cursor: pointer;
-}
+} */
 
 
 
@@ -560,6 +561,9 @@ a {
     border-radius: 0px 0.1875rem 0.1875rem 0px;
     line-height: 2rem;
     text-align: center;
+    box-sizing: border-box;
+
+    
 }
 
 /* 热搜 */

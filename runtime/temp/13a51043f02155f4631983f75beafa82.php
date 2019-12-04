@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:70:"C:\phpEnv\www\hys\public/../application/home\view\programme\index.html";i:1575421108;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:70:"C:\phpEnv\www\hys\public/../application/home\view\programme\index.html";i:1575426261;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,7 +28,7 @@
             <li><a href="<?php echo url('/home/programme/productservice'); ?>"> 产品服务</a></li>
             <li class="nav-active"><a href="<?php echo url('/home/programme/index'); ?>">行业解决方案</a></li>
             <li><a href="<?php echo url('/home/customer/index'); ?>">客户案例</a></li>
-            <li><a href="<?php echo url('home/industry/index'); ?>">行业新闻资讯</a></li>
+            <li><a href="<?php echo url('/home/industry/index'); ?>">行业新闻资讯</a></li>
             <li><a href="#">会员通道</a></li>
           </ul>
         </div>
@@ -173,15 +173,14 @@
     $('.nav').on('mouseleave', function () {
       $('.nav ul li').removeClass('nav-active')
       if ($('.chosenPage').length < 1) $('.nav ul li').eq(2).addClass('chosenPage')
-
       $('.chosenPage').addClass('nav-active')
     })
 
     /* 选项卡切换 */
-    $('.tab ul li').on('click', function () {
-      $('.tabCon img').attr('src', `/static/home/images/${$(this).index()}case.png`)
-      $('.tabTitle').html($(this).children().html())
-      $(this).addClass('activeTab').siblings().removeClass('activeTab')
+    $('.tab ul li a').on('click', function () {      
+      $('.tabCon img').attr('src', `/static/home/images/${$(this).parent().index()}case.png`)
+      $('.tabTitle').html($(this).html())
+      $(this).parent().addClass('activeTab').siblings().removeClass('activeTab')
     })
   })
 
