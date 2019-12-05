@@ -92,7 +92,7 @@ class Chart extends AuthController
     public function del(){
         if($this->request->isGet()){
             $id  = input('get.id','','int');
-            $ret = Chartservice::instance()->updateStatus($id);
+            $ret = Chartservice::instance()->updatestatus($id);
 
             if($ret !== false){
                 return  json(['code'=>200,'msg'=>'操作成功']);
