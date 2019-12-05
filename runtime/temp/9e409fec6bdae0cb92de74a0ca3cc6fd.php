@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\industry\index.html";i:1575439719;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\industry\index.html";i:1575446264;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,6 +17,7 @@
     <script src='/static/common/js/index.js'></script>
     <script src='/static/common/js/public.js'></script>
     <script src='/static/home/js/industry.js'></script>
+    <script src='/static/common/js/tool.js'></script>
 </head>
 
 <body>
@@ -154,12 +155,14 @@
                             onclick="location.href=$(this).attr('data-url')">
                             <span>热门关键词</span>
                         </li>
-                        <?php if(is_array($keywords) || $keywords instanceof \think\Collection || $keywords instanceof \think\Paginator): $i = 0; $__LIST__ = $keywords;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+                        <!-- <?php if(is_array($keywords) || $keywords instanceof \think\Collection || $keywords instanceof \think\Paginator): $i = 0; $__LIST__ = $keywords;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
                         <li onclick="hotsearch(this);" data-title="<?php echo $vo['title']; ?>"
                             data-url="<?php echo url('/home/industry/index'); ?>">
                             <span><?php echo $vo['title']; ?></span>
                         </li>
-                        <?php endforeach; endif; else: echo "" ;endif; ?>
+                        <?php endforeach; endif; else: echo "" ;endif; ?> -->
+                        <li><span>可以点叉叉哦</span><span class="close">✕</span></li>
+
 
                     </ul>
 
@@ -302,6 +305,7 @@
                 if ($('.chosenPage').length < 1) $('.nav ul li').eq(4).addClass('chosenPage')
                 $('.chosenPage').addClass('nav-active')
             })
+
         })
     </script>
 

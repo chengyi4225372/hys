@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:107:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\customer\info.html";i:1575442507;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:107:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\customer\info.html";i:1575446473;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -60,7 +60,7 @@
             <div class='content_middle'>
                 <div class='bread_title'>
                     <a onclick="go_work(this)" data-url="<?php echo url('/home/index/index'); ?>">惠优税</a> >
-                    <a onclick="go_news(this)" data-url="<?php echo url('/home/customer/index'); ?>">资讯</a> > 新闻详情</div>
+                    <a onclick="go_news(this)" data-url="<?php echo url('/home/customer/index'); ?>">客户案例</a> > 案例详情</div>
                 <div class='pic_total'>
                     <div class='pic_title'><?php echo $info['title']; ?></div>
                     <div class='time'><?php echo $info['create_time']; ?></div>

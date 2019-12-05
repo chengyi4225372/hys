@@ -1,0 +1,9 @@
+---------------------------------------------------------------
+[ 2019-12-04T16:48:13+08:00 ] 127.0.0.1 GET /home/industry/index.html?title=%E5%A2%9E%E5%80%BC%E7%A8%8E%E7%A8%8E%E7%AD%B9%E6%96%B9%E6%A1%88
+[ error ] [0]模板标签错误:compare[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\template\TagLib.php:275]
+---------------------------------------------------------------
+[ 2019-12-04T16:48:27+08:00 ] 127.0.0.1 GET /home/industry/index.html?title=%E5%A2%9E%E5%80%BC%E7%A8%8E%E7%A8%8E%E7%AD%B9%E6%96%B9%E6%A1%88
+[ error ] [0]模板标签错误:compare[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\template\TagLib.php:275]
+---------------------------------------------------------------
+[ 2019-12-04T16:48:29+08:00 ] 127.0.0.1 GET /home/industry/index.html?title=%E5%A2%9E%E5%80%BC%E7%A8%8E%E7%A8%8E%E7%AD%B9%E6%96%B9%E6%A1%88
+[ error ] [0]模板标签错误:compare[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\template\TagLib.php:275]

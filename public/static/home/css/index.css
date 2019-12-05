@@ -1528,6 +1528,10 @@ a {
 .bottom>div:hover .bottom-item2 {
     right: 5.3125rem;
 }
+.bottom-item2{
+    background: url('../images/consultation.png') no-repeat;
+    background-size: 100% 100%
+}
 
 /* 返回顶部 */
 

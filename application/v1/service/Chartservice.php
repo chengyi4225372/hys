@@ -102,7 +102,7 @@ class Chartservice
     * id  string |int
     * return bool
     */
-   public function  updateStatus($id){
+   public function  updatestatus($id){
         if(empty($id) || $id <= 0 || is_null($id) || !isset($id)){
             return  false;
         }
