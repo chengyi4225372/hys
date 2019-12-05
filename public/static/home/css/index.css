@@ -1061,8 +1061,11 @@ a {
 
 .preferential-taxadvantage-content-imgs ul {
     position: absolute;
-    width: 400%;
-    /* transition: all 0.5s; */
+    width: 500%;
+}
+
+.transi {
+    transition: 500ms;
 }
 
 .preferential-taxadvantage-content-imgs ul li {
@@ -1075,7 +1078,13 @@ a {
     font-size: 100px;
 }
 
-.preferential-taxadvantage-content-imgs ul li:nth-child(1) {
+.preferential-taxadvantage-content-imgs ul li img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* .preferential-taxadvantage-content-imgs ul li:nth-child(1) {
     background-color: pink
 }
 
@@ -1089,7 +1098,7 @@ a {
 
 .preferential-taxadvantage-content-imgs ul li:nth-child(4) {
     background-color: pink
-}
+} */
 
 .preferential-taxadvantage-content-imgs>span {
     position: absolute;
