@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\industry\index.html";i:1575449660;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\industry\index.html";i:1575453741;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,7 +17,6 @@
     <script src='/static/common/js/index.js'></script>
     <script src='/static/common/js/public.js'></script>
     <script src='/static/home/js/industry.js'></script>
-    <script src='/static/common/js/tool.js'></script>
 </head>
 
 <body>
