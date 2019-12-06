@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1575446264;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1575532935;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -82,7 +82,7 @@
               <p>·核定征收型·查账征收型·股权转让型</p>
               <p>根据企业实际，为园区入驻的企业分别提供具体三大科学纳税产品...</p>
             </div>
-            <div class="preferential-content-item-more"><a href="<?php echo url('/home/programme/index'); ?>">了解具体方案</a></div>
+            <div class="preferential-content-item-more"><a href="<?php echo url('/home/programme/productservice'); ?>">了解具体方案</a></div>
           </div>
           <div class="preferential-content-item">
             <div class="preferential-content-item-img">
@@ -93,7 +93,7 @@
               <p>·专业服务个人</p>
               <p>服务企业产生业务的个人<br />可服务对象：包工头、个人设计师、私人承包人等...</p>
             </div>
-            <div class="preferential-content-item-more"><a href="<?php echo url('/home/programme/index'); ?>">了解具体方案</a></div>
+            <div class="preferential-content-item-more"><a href="<?php echo url('/home/programme/productservice'); ?>">了解具体方案</a></div>
           </div>
         </div>
       </div>
@@ -393,7 +393,7 @@
             <li><a href="/">惠优税</a></li>
             <li><a href="<?php echo config('curl.hlg'); ?>">惠灵工</a></li>
             <li><a href="<?php echo config('curl.hdx'); ?>">惠多薪</a></li>
-            <li><a href="<?php echo config('curl.hzs'); ?>">惠找事</a></li>
+            <li><a href="<?php echo url('/home/searches/index'); ?>">惠找事</a></li>
             <li><a href="<?php echo config('curl.hcy'); ?>">惠创业</a></li>
             <li><a href="<?php echo config('curl.hqd'); ?>">惠企动</a></li>
           </ul>
