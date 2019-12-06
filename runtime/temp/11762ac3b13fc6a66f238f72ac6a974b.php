@@ -1,15 +1,18 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1575446264;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1575613197;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="renderer" content="webkit" />
+  <meta name="force-rendering" content="webkit" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <script>/*@cc_on document.write('\x3Cscript id="_iealwn_js" src="https://support.dmeng.net/ie-alert-warning/latest.js">\x3C/script>'); @*/</script>
   <title><?php echo $title; ?></title>
   <link rel="stylesheet" href="/static/home/css/base.css">
   <link rel="stylesheet" href="/static/home/css/index.css">
+  <script>/*@cc_on document.write('\x3Cscript id="_iealwn_js" src="https://support.dmeng.net/ie-alert-warning/latest.js">\x3C/script>'); @*/</script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="/static/assets/plugins/layui/layui.all.js"></script>
   <script src="/static/home/js/clamp.js"></script>
@@ -82,7 +85,8 @@
               <p>·核定征收型·查账征收型·股权转让型</p>
               <p>根据企业实际，为园区入驻的企业分别提供具体三大科学纳税产品...</p>
             </div>
-            <div class="preferential-content-item-more"><a href="<?php echo url('/home/programme/index'); ?>">了解具体方案</a></div>
+            <div class="preferential-content-item-more"><a href="<?php echo url('/home/programme/productservice'); ?>">了解具体方案</a>
+            </div>
           </div>
           <div class="preferential-content-item">
             <div class="preferential-content-item-img">
@@ -93,7 +97,8 @@
               <p>·专业服务个人</p>
               <p>服务企业产生业务的个人<br />可服务对象：包工头、个人设计师、私人承包人等...</p>
             </div>
-            <div class="preferential-content-item-more"><a href="<?php echo url('/home/programme/index'); ?>">了解具体方案</a></div>
+            <div class="preferential-content-item-more"><a href="<?php echo url('/home/programme/productservice'); ?>">了解具体方案</a>
+            </div>
           </div>
         </div>
       </div>
@@ -392,14 +397,14 @@
             <li><a href="/">惠优税</a></li>
             <li><a href="<?php echo config('curl.hlg'); ?>">惠灵工</a></li>
             <li><a href="<?php echo config('curl.hdx'); ?>">惠多薪</a></li>
-            <li><a href="<?php echo config('curl.hzs'); ?>">惠找事</a></li>
+            <li><a href="<?php echo url('/home/searches/index'); ?>">惠找事</a></li>
             <li><a href="<?php echo config('curl.hcy'); ?>">惠创业</a></li>
             <li><a href="<?php echo config('curl.hqd'); ?>">惠企动</a></li>
           </ul>
         </div>
       </div>
       <div>
-        <div class="bottom-title">联系我们</div>
+        <div class="bottom-title2">联系我们</div>
         <div class="bottom-item2">
           <div>
             <p>立即预约咨询</p>

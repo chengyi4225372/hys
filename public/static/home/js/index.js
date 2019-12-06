@@ -1,41 +1,41 @@
 window.onload = function () {
 
     // 税务问题盒子切换
-    let imgList = document.querySelectorAll('.taxproblems-right .taxproblems-right-img img')
-    let imgList2 = document.querySelectorAll('.taxproblems-right .taxproblems-right-page img')
-    let pageList = document.querySelectorAll('.taxproblems-right .taxproblems-right-page span')
-    let leftBtn = document.querySelector('.taxproblems-right .taxproblems-right-page .leftBtn')
-    let righttBtn = document.querySelector('.taxproblems-right .taxproblems-right-page .rightBtn')
+    let imgList = document.querySelectorAll('.taxproblems-right .taxproblems-right-img img');
+    let imgList2 = document.querySelectorAll('.taxproblems-right .taxproblems-right-page img');
+    let pageList = document.querySelectorAll('.taxproblems-right .taxproblems-right-page span');
+    let leftBtn = document.querySelector('.taxproblems-right .taxproblems-right-page .leftBtn');
+    let righttBtn = document.querySelector('.taxproblems-right .taxproblems-right-page .rightBtn');
 
     // console.log(imgList, pageList, leftBtn, righttBtn)
     leftBtn.onclick = function () {
-        imgList[1].classList.remove('active-img')
-        imgList2[0].classList.remove('active-img')
-        imgList2[2].classList.remove('active-img')
-        pageList[1].classList.remove('active-page')
+        imgList[1].classList.remove('active-img');
+        imgList2[0].classList.remove('active-img');
+        imgList2[2].classList.remove('active-img');
+        pageList[1].classList.remove('active-page');
 
-        imgList[0].classList.add('active-img')
-        imgList2[1].classList.add('active-img')
-        imgList2[3].classList.add('active-img')
-        pageList[0].classList.add('active-page')
-    }
+        imgList[0].classList.add('active-img');
+        imgList2[1].classList.add('active-img');
+        imgList2[3].classList.add('active-img');
+        pageList[0].classList.add('active-page');
+    };
     righttBtn.onclick = function () {
-        imgList[0].classList.remove('active-img')
-        imgList2[1].classList.remove('active-img')
-        imgList2[3].classList.remove('active-img')
-        pageList[0].classList.remove('active-page')
+        imgList[0].classList.remove('active-img');
+        imgList2[1].classList.remove('active-img');
+        imgList2[3].classList.remove('active-img');
+        pageList[0].classList.remove('active-page');
 
-        imgList[1].classList.add('active-img')
-        imgList2[0].classList.add('active-img')
-        imgList2[2].classList.add('active-img')
-        pageList[1].classList.add('active-page')
-    }
+        imgList[1].classList.add('active-img');
+        imgList2[0].classList.add('active-img');
+        imgList2[2].classList.add('active-img');
+        pageList[1].classList.add('active-page');
+    };
 
 
     // 税务筹划解决方案盒子切换
-    let oneDivList = document.querySelectorAll('.tax-planning-solutions-content-one .tax-planning-solutions-content-item')
-    let twoDivList = document.querySelectorAll('.tax-planning-solutions-content-two .tax-planning-solutions-content-item')
-    console.log(oneDivList, twoDivList)
+    let oneDivList = document.querySelectorAll('.tax-planning-solutions-content-one .tax-planning-solutions-content-item');
+    let twoDivList = document.querySelectorAll('.tax-planning-solutions-content-two .tax-planning-solutions-content-item');
+    console.log(oneDivList, twoDivList);
 
     // for(let i=0;i<oneDivList.length;i++){
     //     oneDivList[i].onmouseover = function(){
@@ -59,29 +59,29 @@ window.onload = function () {
         item.onmouseover = function () {
             oneDivList.forEach(item => {
                 item.classList.remove('content-active')
-            })
-            this.classList.add('content-active')
+            });
+            this.classList.add('content-active');
         }
-    })
+    });
 
     twoDivList.forEach(item => {
         item.onmouseover = function () {
             twoDivList.forEach(item => {
                 item.classList.remove('content-active')
-            })
-            this.classList.add('content-active')
+            });
+            this.classList.add('content-active');
 
-        }
-    })
+        };
+    });
 
     // 惠优税优势轮播图
 
-    let box = document.querySelector('.preferential-taxadvantage-content-imgs')
-    let dots = document.querySelectorAll('.preferential-taxadvantage-content-icon ul li')
-    let focus = document.querySelector('.preferential-taxadvantage-content-imgs ul')
-    let lis = document.querySelectorAll('.preferential-taxadvantage-content-imgs ul li')
-    let left = document.querySelector('.preferential-taxadvantage-content-imgs .fouse-left')
-    let right = document.querySelector('.preferential-taxadvantage-content-imgs .fouse-right')
+    let box = document.querySelector('.preferential-taxadvantage-content-imgs');
+    let dots = document.querySelectorAll('.preferential-taxadvantage-content-icon ul li');
+    let focus = document.querySelector('.preferential-taxadvantage-content-imgs ul');
+    let lis = document.querySelectorAll('.preferential-taxadvantage-content-imgs ul li');
+    let left = document.querySelector('.preferential-taxadvantage-content-imgs .fouse-left');
+    let right = document.querySelector('.preferential-taxadvantage-content-imgs .fouse-right');
 
 
     // 动画函数
@@ -96,8 +96,8 @@ window.onload = function () {
                 callback && callback();
             }
             obj.style.left = obj.offsetLeft + step + 'px';
-        }, time)
-    }
+        }, time);
+    };
 
 
     box.onmouseover=function () {
@@ -107,7 +107,7 @@ window.onload = function () {
     box.onmouseout=function () {
         timer = setInterval(function () {
             right.click();
-        }, 2000)
+        }, 2000);
     }
 
     // 点击icon可以切换图片
@@ -120,14 +120,14 @@ window.onload = function () {
             this.className = "fousess";
 
             var focusWidth = lis[0].offsetWidth; //
-            var index = this.getAttribute('data-index')
-            animate(focus, 15, -index * focusWidth)
+            var index = this.getAttribute('data-index');
+            animate(focus, 15, -index * focusWidth);
             num = curcor = index;
         }
     }
 
     var lili = lis[0].cloneNode(true);
-    focus.appendChild(lili)
+    focus.appendChild(lili);
 
     var num = 0;
     var curcor = 0;
@@ -138,11 +138,11 @@ window.onload = function () {
             if (num == lis.length) {
                 focus.style.left = 0;
                 num = 0;
-            }
+            };
             num++
             animate(focus, 15, -num * lis[0].offsetWidth, function () {
                 flag = true;
-            })
+            });
 
             curcor++
             for (var i = 0; i < dots.length; i++) {
@@ -150,7 +150,7 @@ window.onload = function () {
             }
             if (curcor == dots.length) {
                 curcor = 0;
-            }
+            };
             dots[curcor].className = "fousess";
         }
     }
@@ -161,7 +161,7 @@ window.onload = function () {
             if (num == 0) {
                 num = lis.length;
                 focus.style.left = -num * lis[0].offsetWidth + 'px';
-            }
+            };
             num--
             animate(focus, 15, -num * lis[0].offsetWidth, function () {
                 flag = true;
@@ -172,11 +172,11 @@ window.onload = function () {
             }
             if (curcor < 0) {
                 curcor = dots.length - 1;
-            }
+            };
             dots[curcor].className = "fousess";
 
-        }
-    }
+        };
+    };
 
 
     var timer = setInterval(function () {
@@ -188,13 +188,13 @@ window.onload = function () {
     // 返回顶部
     window.onscroll = function () {
         var top = document.body.scrollTop || document.documentElement.scrollTop;
-        console.log(top)
+        console.log(top);
         console.log(document.body.scrollTop);
         console.log(document.documentElement.scrollTop);
 
         if (top >= 1080) {
-            let goTop = document.getElementById('goTop')
-            goTop.style.display = "block"
+            let goTop = document.getElementById('goTop');
+            goTop.style.display = "block";
 
             // console.log(goTop);
             var timer = null;
@@ -212,34 +212,34 @@ window.onload = function () {
                     timer = requestAnimationFrame(func);
                     if (t == d) {
                         cancelAnimationFrame(timer);
-                    }
+                    };
                 });
             }
         } else if (top < 1080) {
 
             // 返回顶部样式
-            let goTop = document.getElementById('goTop')
-            goTop.style.display = "none"
+            let goTop = document.getElementById('goTop');
+            goTop.style.display = "none";
 
         }
     }
 
     // 产业园区切换
-    let divListLeft = document.querySelectorAll(".map-box-center-item")
-    let divListRight = document.querySelectorAll(".map-box-right-yuanqu-item")
-    let last = document.querySelector('.map-box-right-morebtn')
+    let divListLeft = document.querySelectorAll(".map-box-center-item");
+    let divListRight = document.querySelectorAll(".map-box-right-yuanqu-item");
+    let last = document.querySelector('.map-box-right-morebtn');
     let i = 1;
     last.onclick = function () {
         // console.log(i, divListLeft.length - 1);
         if (i == divListLeft.length) {
-            i = 0
-        }
-        let actvieDivLeft = document.querySelectorAll('.map-box-center .active-map')[0]
-        let actvieDivRight = document.querySelectorAll('.map-box-right .active-map')[0]
-        actvieDivLeft.classList.remove('active-map')
-        actvieDivRight.classList.remove('active-map')
-        divListLeft[i].classList.add('active-map')
-        divListRight[i].classList.add('active-map')
-        i++
-    }
-}
+            i = 0;
+        };
+        let actvieDivLeft = document.querySelectorAll('.map-box-center .active-map')[0];
+        let actvieDivRight = document.querySelectorAll('.map-box-right .active-map')[0];
+        actvieDivLeft.classList.remove('active-map');
+        actvieDivRight.classList.remove('active-map');
+        divListLeft[i].classList.add('active-map');
+        divListRight[i].classList.add('active-map');
+        i++;
+    };
+};
