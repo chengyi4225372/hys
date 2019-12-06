@@ -1,7 +1,6 @@
 /**
  * chart.js
  */
-
 $('#addchart').click(function () {
     var url = $(this).attr('data-url');
     layer.open({
@@ -12,11 +11,6 @@ $('#addchart').click(function () {
         area: ['40%', '50%'],
         content: url, //iframe的url
     });
-});
-
-//取消
-$('.cancle').click(function(){
-     parent.layer.closeAll();
 });
 
 /**
@@ -53,43 +47,13 @@ $('.cancle').click(function(){
 
  });
 
-//上传图片
-function uploadFiles() {
-    var formData =new FormData();
-    formData.append("file",$("#file")[0].files[0]);
-
-    var urls = "uploadImgs";
-
-    $.ajax({
-        url: urls,
-        type: "post",
-        data: formData,
-        async:false,
-        dataType: 'json',
-        cache: false,
-        processData : false,
-        contentType : false,
-        success: function (ret) {
-            if (ret.code == 200) {
-                $("#imgs").attr('src', ret.path);
-                $("#Images").val(ret.path);
-                layer.msg(ret.msg,{icon:6});
-            } else {
-                layer.msg(ret.msg);
-            }
-        },
-
-    });
-    return false;
-}
-
 
 /**
  * 编辑框
  */
 $('.edits').click(function(){
 
-    var url = $(this).attr('data-url');
+    var urls = $(this).attr('data-url');
 
     layer.open({
         type: 2,
@@ -97,7 +61,7 @@ $('.edits').click(function(){
         shadeClose: true,
         shade: 0.8,
         area: ['40%', '50%'],
-        content: url, //iframe的url
+        content: urls, //iframe的url
     });
 });
 
@@ -119,21 +83,50 @@ $('.edit_save').click(function(){
     }
 
     $.post(url,{'id':id,'imgs':imgs,'sort':sort},function(ret){
-         if(ret.code == 200){
+        if(ret.code == 200){
             layer.msg(ret.msg,{icon:6},function () {
                 parent.location.reload();
             })
-         }
+        }
 
-         if(ret.code == 400){
-             layer.msg(ret.msg,{icon:6},function () {
-                 parent.location.reload();
-             })
-         }
+        if(ret.code == 400){
+            layer.msg(ret.msg,{icon:6},function () {
+                parent.location.reload();
+            })
+        }
 
     },'json');
 
 })
+
+
+/**
+ *  修改状态
+ */
+function savesort(val,id,urls){
+
+    if(id == '' || id== undefined || id== 'undefined'){
+        return false;
+    }
+
+    if(urls == '' || urls == undefined){
+        return false;
+    }
+
+    $.post(urls,{'sort':val,'id':id},function(ret){
+        if(ret.code == 200){
+            layer.msg(ret.msg,{icon:6},function(){
+                parent.location.reload();
+            });
+        }
+
+        if(ret.code == 400){
+            layer.msg(ret.msg,{icon:5},function(){
+                parent.location.reload();
+            });
+        }
+    },'json');
+}
 
 
 /**
@@ -172,30 +165,40 @@ $('.edit_save').click(function(){
 }
 
 
-/**
- *  修改状态
- */
-function savesort(val,id,urls){
+//取消
+$('.cancle').click(function(){
+    var index1 = parent.layer.getFrameIndex(window.name);
+    parent.layer.close(index1);
+});
 
-   if(id == '' || id== undefined || id== 'undefined'){
-       return false;
-   }
 
-   if(urls == '' || urls == undefined){
-       return false;
-   }
 
-   $.post(urls,{'sort':val,'id':id},function(ret){
-       if(ret.code == 200){
-           layer.msg(ret.msg,{icon:6},function(){
-               parent.location.reload();
-           });
-       }
+//上传图片
+function uploadFiles() {
+    var formData =new FormData();
+    formData.append("file",$("#file")[0].files[0]);
 
-       if(ret.code == 400){
-           layer.msg(ret.msg,{icon:5},function(){
-               parent.location.reload();
-           });
-       }
-   },'json');
+    var urls = "uploadImgs";
+
+    $.ajax({
+        url: urls,
+        type: "post",
+        data: formData,
+        async:false,
+        dataType: 'json',
+        cache: false,
+        processData : false,
+        contentType : false,
+        success: function (ret) {
+            if (ret.code == 200) {
+                $("#imgs").attr('src', ret.path);
+                $("#Images").val(ret.path);
+                layer.msg(ret.msg,{icon:6});
+            } else {
+                layer.msg(ret.msg);
+            }
+        },
+
+    });
+    return false;
 }

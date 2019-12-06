@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1575613197;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1575613696;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -240,9 +240,9 @@
         <div class="preferential-taxadvantage-content">
           <div class="preferential-taxadvantage-content-icon">
             <ul class="clearfix">
-              <li class="fousess"></li>
-              <li></li>
-              <li></li>
+              <li id="1" class="fousess"></li>
+              <li id="2"></li>
+              <li id="3"></li>
             </ul>
           </div>
           <div class="preferential-taxadvantage-content-title">我们得到了上海、安徽、江西、湖北等各地政府的大力支持，在全国各地有个多个园区</div>
@@ -251,6 +251,7 @@
               <?php if(is_array($chart) || $chart instanceof \think\Collection || $chart instanceof \think\Paginator): $i = 0; $__LIST__ = $chart;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
               <li><img src="<?php echo $vo['imgs']; ?>" alt=""></li>
               <?php endforeach; endif; else: echo "" ;endif; ?>
+
             </ul>
             <span class="fouse-left" title="1"><img src="/static/home/images/focus-left.png" alt=""></span>
             <span class="fouse-right" title="0"><img src="/static/home/images/focus-right.png" alt=""></span>

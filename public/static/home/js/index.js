@@ -76,6 +76,7 @@ window.onload = function () {
 
     // 惠优税优势轮播图
 
+<<<<<<< HEAD
     let box = document.querySelector('.preferential-taxadvantage-content-imgs');
     let dots = document.querySelectorAll('.preferential-taxadvantage-content-icon ul li');
     let focus = document.querySelector('.preferential-taxadvantage-content-imgs ul');
@@ -108,17 +109,37 @@ window.onload = function () {
         timer = setInterval(function () {
             right.click();
         }, 2000);
+=======
+    // let swiper = document.querySelector('.preferential-taxadvantage-content-imgs')
+    let item = document.querySelectorAll('.preferential-taxadvantage-content-icon ul li')
+    let ul = document.querySelector('.preferential-taxadvantage-content-imgs ul')
+    let ali = document.querySelectorAll('.preferential-taxadvantage-content-imgs ul li')
+    let pre = document.querySelector('.preferential-taxadvantage-content-imgs .fouse-left')
+    let next = document.querySelector('.preferential-taxadvantage-content-imgs .fouse-right')
+    let imgW = ali[0].offsetWidth//需要window.onload
+    let index = 1//计算滚动到哪张图片
+    let isTransitioned = true//判断动画是否已完成
+
+
+    //克隆第一张图片，添加到图片队列的最后面
+    let cloneLi = ali[0].cloneNode(true);
+    ul.appendChild(cloneLi);
+    //克隆最后一张图片，添加到图片队列的最前面
+    let cloneLastLi = ali[ali.length - 1].cloneNode(true);
+    ul.prepend(cloneLastLi);
+
+    //点击右边按钮
+    next.onclick = function () {
+        if (isTransitioned) {
+            index++;//先++再设置
+            move();
+            fenyeq(index);
+        }
+>>>>>>> a83f390dfe25e54b90034aa635a8f3754b6dcc67
     }
 
-    // 点击icon可以切换图片
-    for (let i = 0; i < dots.length; i++) {
-        dots[i].setAttribute('data-index', i)
-        dots[i].onclick=function () {
-            for (var i = 0; i < dots.length; i++) {
-                dots[i].className = "";
-            }
-            this.className = "fousess";
 
+<<<<<<< HEAD
             var focusWidth = lis[0].offsetWidth; //
             var index = this.getAttribute('data-index');
             animate(focus, 15, -index * focusWidth);
@@ -177,13 +198,72 @@ window.onload = function () {
 
         };
     };
+=======
+    //初始化图片队列：
+    ul.style.transform = "translateX(" + (-imgW * index) + "px)";
+    //点击左边按钮
+    pre.onclick = function () {
+        if (isTransitioned) {
+            index--;
+            move();
+            fenyeq(index);
+        }
+    }
 
+    setInterval(function () {
+        if (isTransitioned) {
+            index++;
+            move();
+            fenyeq(index);
+        }
+    }, 4000)
 
-    var timer = setInterval(function () {
-        right.click();
-    }, 2000)
+    //监听动画结束
+    ul.addEventListener("transitionend", () => {
+        if (index == ali.length + 1) {
+            index = 1;
+            ul.classList.toggle("transi");
+            ul.style.transform = "translateX(" + (-imgW * index) + "px)";
+        }
+        if (index == 0) {
+            index = ali.length;
+            ul.classList.toggle("transi");
+            ul.style.transform = "translateX(" + (-imgW * index) + "px)";
+        }
+        isTransitioned = true;//每次动画结束都判断
+    })
 
+    //第一个小圆点添加样式
+    item[0].classList.add('fousess');
+    //给分页器添加点击事件
+    for (let j = 0; j < item.length; j++) {
+        item[j].onclick = function () {
+            for (let q = 0; q < item.length; q++) {
+                item[q].classList.remove('fousess');
+            }
+            item[j].classList.add('fousess');
+            index = j + 1;
+            ul.classList.add('transi');
+            ul.style.transform = "translateX(" + (-imgW * index) + "px)";
+        }
+    }
+    //点击左右按钮分页器跟随
+    function fenyeq(index) {
+        for (let k = 0; k < item.length; k++) {
+            item[k].classList.remove('fousess');
+        }
+        index = index - 1;
+        index = index == item.length ? 0 : index;//左按钮边界
+        index = index < 0 ? item.length - 1 : index;//右按钮边界
+        item[index].classList.add('fousess');
+    }
+>>>>>>> a83f390dfe25e54b90034aa635a8f3754b6dcc67
 
+    function move() {
+        ul.classList.add("transi");
+        ul.style.transform = "translateX(" + (-imgW * index) + "px)";
+        isTransitioned = false;
+    }
 
     // 返回顶部
     window.onscroll = function () {

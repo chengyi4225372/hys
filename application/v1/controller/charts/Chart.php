@@ -92,7 +92,7 @@ class Chart extends AuthController
     public function del(){
         if($this->request->isGet()){
             $id  = input('get.id','','int');
-            $ret = Chartservice::instance()->updateStatus($id);
+            $ret = Chartservice::instance()->updatestatus($id);
 
             if($ret !== false){
                 return  json(['code'=>200,'msg'=>'操作成功']);
@@ -135,7 +135,7 @@ class Chart extends AuthController
         // 获取上传文件
         $file =$this->request->file('file');
         // 验证图片,并移动图片到框架目录下。
-        $path = ROOT_PATH.'public/uploads/imgs/partner/';
+        $path = ROOT_PATH.'public/uploads/imgs/charts/';
 
         if(!is_dir($path)){
             mkdir($path,0755);
@@ -145,7 +145,7 @@ class Chart extends AuthController
         if($info){
             $mes = $info->getSaveName();
             $mes = str_replace("\\",'/',$mes);
-            return json(['code'=>'200','msg'=>'上传成功','path'=>'/uploads/imgs/partner/'.$mes]);
+            return json(['code'=>'200','msg'=>'上传成功','path'=>'/uploads/imgs/charts/'.$mes]);
         }else{
             // 文件上传失败后的错误信息
             $mes = $file->getError();
