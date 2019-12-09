@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\industry\infos.html";i:1575423142;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\industry\infos.html";i:1575614378;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -94,30 +94,30 @@
     <div class="w fotter">
         <div class='parter_catefories'>
             <dl>
-                <dt><a href="#">服务产品</a></dt>
-                <dd><a href="#">服务型税筹</a></dd>
-                <dd><a href="#">门户型税筹</a></dd>
-                <dd><a href="#">人力资源</a></dd>
+                <dt><a href="javascript:;">服务产品</a></dt>
+                <dd><a href="javascript:;">服务型税筹</a></dd>
+                <dd><a href="javascript:;">门户型税筹</a></dd>
+                <dd><a href="javascript:;">人力资源</a></dd>
             </dl>
             <dl>
-                <dt><a href="#">招商政策</a></dt>
-                <dd><a href="#">招商政策网</a></dd>
+                <dt><a href="javascript:;">招商政策</a></dt>
+                <dd><a href="javascript:;">招商政策网</a></dd>
             </dl>
             <dl>
-                <dt><a href="#">合作</a></dt>
-                <dd><a href="#">代理合作</a></dd>
+                <dt><a href="javascript:;">合作</a></dt>
+                <dd><a href="javascript:;">代理合作</a></dd>
             </dl>
             <dl>
-                <dt><a href="#">公司信息</a></dt>
-                <dd><a href="#">瑟维斯有限公司</a></dd>
-                <dd><a href="#">惠创优产业联盟</a></dd>
-                <dd><a href="#">中兴瑞华有限公司</a></dd>
+                <dt><a href="javascript:;">公司信息</a></dt>
+                <dd><a href="javascript:;">瑟维斯有限公司</a></dd>
+                <dd><a href="javascript:;">惠创优产业联盟</a></dd>
+                <dd><a href="javascript:;">中兴瑞华有限公司</a></dd>
             </dl>
             <dl>
-                <dt><a href="#">联系我们</a></dt>
-                <dd><a href="#">400-150-9896</a></dd>
-                <dd><a href="#">hcylm008@dingtalk.com</a></dd>
-                <dd><a href="#">武汉市硚口区南国大武汉H座18楼</a></dd>
+                <dt><a href="javascript:;">联系我们</a></dt>
+                <dd><a href="javascript:;">400-150-9896</a></dd>
+                <dd><a href="javascript:;">hcylm008@dingtalk.com</a></dd>
+                <dd><a href="javascript:;">武汉市硚口区南国大武汉H座18楼</a></dd>
             </dl>
 
         </div>
@@ -170,14 +170,20 @@
 </body>
 <script>
 
-    $(function () {
+$(function () {
+            $('.nav ul li').on('click', function () {
+                $(this).addClass('nav-active chosenPage').siblings().removeClass('nav-active chosenPage')
+            })
+            $('.nav ul li').on('mouseenter', function () {
+                $(this).addClass('nav-active').siblings().removeClass('nav-active')
+            })
+            $('.nav').on('mouseleave', function () {
+                $('.nav ul li').removeClass('nav-active')
+                if ($('.chosenPage').length < 1) $('.nav ul li').eq(4).addClass('chosenPage')
+                $('.chosenPage').addClass('nav-active')
+            })
 
-        $('.tab ul li').on('click', function () {
-            $('.tabCon img').attr('src', `/static/home/images/${$(this).index()}case.png`)
-            $('.tabTitle').html($(this).children().html())
-            $(this).addClass('activeTab').siblings().removeClass('activeTab')
         })
-    })
 </script>
 
 </html>

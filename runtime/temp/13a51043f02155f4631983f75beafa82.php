@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:70:"C:\phpEnv\www\hys\public/../application/home\view\programme\index.html";i:1575446264;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:70:"C:\phpEnv\www\hys\public/../application/home\view\programme\index.html";i:1575614378;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -139,7 +139,7 @@
       </div>
     </div>
     <div>
-      <div class="bottom-title">联系我们</div>
+      <div class="bottom-title2">联系我们</div>
       <div class="bottom-item2">
         <div>
           <p>专家服务电话</p>
@@ -178,7 +178,7 @@
 
     /* 选项卡切换 */
     $('.tab ul li a').on('click', function () {
-      $('.tabCon img').attr('src', `/static/home/images/${$(this).parent().index()}case.png`)
+      $('.tabCon img').attr('src', '/static/home/images/'+$(this).parent().index()+'case.png')
       $('.tabTitle').html($(this).html())
       $(this).parent().addClass('activeTab').siblings().removeClass('activeTab')
     })

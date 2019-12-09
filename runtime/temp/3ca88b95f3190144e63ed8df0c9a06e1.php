@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:79:"C:\phpEnv\www\hys\public/../application/home\view\programme\productservice.html";i:1575446264;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:79:"C:\phpEnv\www\hys\public/../application/home\view\programme\productservice.html";i:1575614378;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -143,7 +143,7 @@
             </div> -->
         </div>
         <div>
-            <div class="bottom-title">联系我们</div>
+            <div class="bottom-title2">联系我们</div>
             <div class="bottom-item2">
                 <div>
                     <p>专家服务电话</p>

@@ -37,10 +37,24 @@
 html {
     font-size: 16px;
 }
-
+@media screen and (min-width: 800px) {
+    html {
+        font-size: 6.66666666666667px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    html {
+        font-size: 8.53333333333333px;
+    }
+}
+@media screen and (min-width: 1152px) {
+    html {
+        font-size: 9.58333333333333px;
+    }
+}
 @media screen and (min-width: 1280px) {
     html {
-        font-size: 10.666px;
+        font-size: 10.6666666666667px;
     }
 }
 
@@ -178,7 +192,7 @@ a {
     color: #333333;
 }
 
-.nav-container .nav ul li:hover::after {
+/* .nav-container .nav ul li:hover::after {
     position: absolute;
     bottom: -0.5125rem;
     left: 50%;
@@ -188,11 +202,11 @@ a {
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     content: '';
-    width: 140%;
+    width: 120%;
     height: .25rem;
     border-radius: .125rem;
     background-color: #E8341E;
-}
+} */
 
 .nav-active {
     position: relative;
@@ -208,7 +222,7 @@ a {
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     content: '';
-    width: 140%;
+    width: 120%;
     height: .25rem;
     border-radius: .125rem;
     background-color: #E8341E;
@@ -597,10 +611,16 @@ a {
     margin-bottom: 3.8125rem;
 }
 
+.tax-planning-solutions-content-one,
+.tax-planning-solutions-content-two {
+    display: flex;
+    justify-content: space-between;
+}
+
 .tax-planning-solutions-content-one>div,
 .tax-planning-solutions-content-two>div {
     position: relative;
-    float: left;
+    /* float: left; */
     width: 18.75rem;
     height: 22.5rem;
     margin-right: 1.25rem;
@@ -615,7 +635,7 @@ a {
 
 .tax-planning-solutions-content-one>div:last-child,
 .tax-planning-solutions-content-two>div:last-child {
-    float: right;
+    /* float: right; */
 }
 
 
@@ -1209,6 +1229,7 @@ a {
 }
 
 .selected-park>div.map-box .map-box-center .map-box-center-item img {
+    display: block;
     width: 100%;
     height: 100%;
 }
@@ -1427,7 +1448,7 @@ a {
 }
 
 .bottom>div:nth-child(1) {
-    background: linear-gradient(0deg, rgba(232, 59, 39, 1), rgba(250, 83, 57, 1));
+    background: #F95238;
     margin-bottom: 10px;
 }
 
@@ -1435,16 +1456,32 @@ a {
     background: #272939;
 }
 
-.bottom>div .bottom-title {
-    line-height: 5rem;
-    height: 100%;
-    text-align: center;
+.bottom>div .bottom-title,
+.bottom>div .bottom-title2 {
+    /* line-height: 5rem; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: #F95238;
+    width: 5rem;
+    height: 11.25rem;
     writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
     font-size: 1.5rem;
     font-family: Source Han Sans CN;
     font-weight: 400;
-    color: rgba(255, 255, 255, 1);
+    color: #fff;
     cursor: pointer;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom>div .bottom-title2 {
+    background: #272939;
 }
 
 .bottom>div>.bottom-item,
@@ -1455,17 +1492,17 @@ a {
     width: 12.5rem;
     height: 11.25rem;
     transition: all 0.5s;
-    z-index: -1;
+    z-index: 1;
     box-sizing: border-box;
 }
 
 .bottom>div>.bottom-item {
     padding-top: 2.2rem;
-    background-color: #F95238
+    background-color: #F95238;
 }
 
 .bottom>div>.bottom-item ul {
-    background-color: #F95238
+    background-color: #F95238;
 }
 
 .bottom .bottom-item ul {
@@ -1528,7 +1565,8 @@ a {
 .bottom>div:hover .bottom-item2 {
     right: 5.3125rem;
 }
-.bottom-item2{
+
+.bottom-item2 {
     background: url('../images/consultation.png') no-repeat;
     background-size: 100% 100%
 }
@@ -1596,6 +1634,7 @@ a {
     position: relative;
     height: 7.5rem;
     background: url('../images/tanchuang2x.png') no-repeat;
+    background-size: 100% 100%;
 }
 
 .turnoff {
@@ -1635,14 +1674,19 @@ a {
 }
 
 .form-content {
-    padding: 6.1875rem 6.1875rem 0 6.1875rem;
+    padding: 5.1875rem 6.1875rem 0 6.1875rem;
     background: rgba(245, 247, 254, 1);
     border-radius: 0px 0px 4px 4px;
     height: 28.125rem;
     box-sizing: border-box;
 }
 
-.form-content div {
+.form-content .form-content-box {
+    width: 25rem;
+    margin: 0 auto;
+}
+
+.form-content .form-content-box div {
     height: 2.5rem;
     display: -webkit-box;
     /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
@@ -1662,11 +1706,11 @@ a {
     line-height: 2.75rem;
 }
 
-.form-content div:nth-child(3) {
+.form-content .form-content-box div:nth-child(3) {
     margin-bottom: 3.875rem;
 }
 
-.form-content div .title {
+.form-content .form-content-box div .title {
     display: inline-block;
     width: 6.25rem;
     height: 2.5rem;
@@ -1678,7 +1722,7 @@ a {
     line-height: 2.875rem;
 }
 
-.form-content div input {
+.form-content .form-content-box div input {
     width: 25rem;
     padding-left: 1.875rem;
     height: 100%;
@@ -1688,7 +1732,7 @@ a {
     border-radius: 2px;
 }
 
-.form-content .form-btn {
+.form-content .form-content-box .form-btn {
     width: 20rem;
     height: 3.5rem;
     margin: 0 auto;

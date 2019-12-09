@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\industry\index.html";i:1575446264;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\industry\index.html";i:1575532776;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,13 +11,12 @@
     <link rel="stylesheet" href="/static/home/css/base.css">
     <link rel="stylesheet" href="/static/home/css/news.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900">
-    <!--    <script src="__SPI__/js/clamp.js"></script>-->
+    <!--    <script src="/static/spirit/js/clamp.js"></script>-->
     <script src="/static/assets/plugins/layui/layui.all.js"></script>
     <script src='/static/common/js/common.js'></script>
     <script src='/static/common/js/index.js'></script>
     <script src='/static/common/js/public.js'></script>
     <script src='/static/home/js/industry.js'></script>
-    <script src='/static/common/js/tool.js'></script>
 </head>
 
 <body>
@@ -161,8 +160,14 @@
                             <span><?php echo $vo['title']; ?></span>
                         </li>
                         <?php endforeach; endif; else: echo "" ;endif; ?> -->
-                        <li><span>可以点叉叉哦</span><span class="close">✕</span></li>
+                        <?php if(is_array($keywords) || $keywords instanceof \think\Collection || $keywords instanceof \think\Paginator): $i = 0; $__LIST__ = $keywords;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+                        <li <?php if(\think\Request::instance()->get('title') == $vo['title']): ?> class="hotwords" <?php endif; ?>>
 
+                            <span onclick="hotsearch(this);" data-title="<?php echo $vo['title']; ?>"  data-url="<?php echo url('/home/industry/index'); ?>"><?php echo $vo['title']; ?></span>
+
+                            <span class="close" onclick="window.location.href=$(this).attr('data-url')"  data-url="<?php echo url('/home/industry/index'); ?>">✕</span>
+                        </li>
+                        <?php endforeach; endif; else: echo "" ;endif; ?>
 
                     </ul>
 
