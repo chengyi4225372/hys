@@ -76,40 +76,6 @@ window.onload = function () {
 
     // 惠优税优势轮播图
 
-<<<<<<< HEAD
-    let box = document.querySelector('.preferential-taxadvantage-content-imgs');
-    let dots = document.querySelectorAll('.preferential-taxadvantage-content-icon ul li');
-    let focus = document.querySelector('.preferential-taxadvantage-content-imgs ul');
-    let lis = document.querySelectorAll('.preferential-taxadvantage-content-imgs ul li');
-    let left = document.querySelector('.preferential-taxadvantage-content-imgs .fouse-left');
-    let right = document.querySelector('.preferential-taxadvantage-content-imgs .fouse-right');
-
-
-    // 动画函数
-
-    function animate(obj, time, target, callback) {
-        clearInterval(obj.timer);
-        obj.timer = setInterval(function () {
-            var step = (target - obj.offsetLeft) / 10;
-            step = step > 0 ? Math.ceil(step) : Math.floor(step);
-            if (obj.offsetLeft == target) {
-                clearInterval(obj.timer);
-                callback && callback();
-            }
-            obj.style.left = obj.offsetLeft + step + 'px';
-        }, time);
-    };
-
-
-    box.onmouseover=function () {
-        clearInterval(timer);
-        timer = null;
-    }
-    box.onmouseout=function () {
-        timer = setInterval(function () {
-            right.click();
-        }, 2000);
-=======
     // let swiper = document.querySelector('.preferential-taxadvantage-content-imgs')
     let item = document.querySelectorAll('.preferential-taxadvantage-content-icon ul li')
     let ul = document.querySelector('.preferential-taxadvantage-content-imgs ul')
@@ -135,70 +101,9 @@ window.onload = function () {
             move();
             fenyeq(index);
         }
->>>>>>> a83f390dfe25e54b90034aa635a8f3754b6dcc67
     }
 
 
-<<<<<<< HEAD
-            var focusWidth = lis[0].offsetWidth; //
-            var index = this.getAttribute('data-index');
-            animate(focus, 15, -index * focusWidth);
-            num = curcor = index;
-        }
-    }
-
-    var lili = lis[0].cloneNode(true);
-    focus.appendChild(lili);
-
-    var num = 0;
-    var curcor = 0;
-    var flag = true;
-    right.onclick=function () {
-        if (flag) {
-            flag = false;
-            if (num == lis.length) {
-                focus.style.left = 0;
-                num = 0;
-            };
-            num++
-            animate(focus, 15, -num * lis[0].offsetWidth, function () {
-                flag = true;
-            });
-
-            curcor++
-            for (var i = 0; i < dots.length; i++) {
-                dots[i].className = "";
-            }
-            if (curcor == dots.length) {
-                curcor = 0;
-            };
-            dots[curcor].className = "fousess";
-        }
-    }
-
-    left.onclick=function () {
-        if (flag) {
-            flag = false;
-            if (num == 0) {
-                num = lis.length;
-                focus.style.left = -num * lis[0].offsetWidth + 'px';
-            };
-            num--
-            animate(focus, 15, -num * lis[0].offsetWidth, function () {
-                flag = true;
-            })
-            curcor--
-            for (var i = 0; i < dots.length; i++) {
-                dots[i].className = "";
-            }
-            if (curcor < 0) {
-                curcor = dots.length - 1;
-            };
-            dots[curcor].className = "fousess";
-
-        };
-    };
-=======
     //初始化图片队列：
     ul.style.transform = "translateX(" + (-imgW * index) + "px)";
     //点击左边按钮
@@ -257,7 +162,6 @@ window.onload = function () {
         index = index < 0 ? item.length - 1 : index;//右按钮边界
         item[index].classList.add('fousess');
     }
->>>>>>> a83f390dfe25e54b90034aa635a8f3754b6dcc67
 
     function move() {
         ul.classList.add("transi");
