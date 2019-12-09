@@ -39,21 +39,25 @@
 html {
     font-size: 16px;
 }
+
 @media screen and (min-width: 800px) {
     html {
         font-size: 6.66666666666667px;
     }
 }
+
 @media screen and (min-width: 1024px) {
     html {
         font-size: 8.53333333333333px;
     }
 }
+
 @media screen and (min-width: 1152px) {
     html {
         font-size: 9.58333333333333px;
     }
 }
+
 @media screen and (min-width: 1280px) {
     html {
         font-size: 10.6666666666667px;
@@ -373,7 +377,8 @@ a {
     color: #e8341e;
     cursor: pointer;
 }
-.crumbs-box span:last-child{
+
+.crumbs-box span:last-child {
     color: #e8341e;
 }
 
@@ -561,9 +566,10 @@ a {
 }
 
 .concat_icon {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
@@ -709,11 +715,13 @@ a {
 .bottom>div:hover .bottom-item2 {
     right: 5.3125rem;
 }
-.bottom-item2{
+
+.bottom-item2 {
     background: url('../images/consultation.png') no-repeat;
     background-size: 100% 100%
 }
-.order{
+
+.order {
     background: url('../images/appointment.png') no-repeat;
 
 }

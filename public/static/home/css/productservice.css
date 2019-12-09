@@ -1,4 +1,3 @@
-
 /* 版心 */
 
 .w {
@@ -46,16 +45,19 @@ html {
         font-size: 6.66666666666667px;
     }
 }
+
 @media screen and (min-width: 1024px) {
     html {
         font-size: 8.53333333333333px;
     }
 }
+
 @media screen and (min-width: 1152px) {
     html {
         font-size: 9.58333333333333px;
     }
 }
+
 @media screen and (min-width: 1280px) {
     html {
         font-size: 10.6666666666667px;
@@ -357,33 +359,39 @@ a {
 
 /* 面包屑 */
 
-.bread{
+.bread {
     padding: 1.25rem 0;
     color: #999;
 }
+
 .bread a {
     color: #999;
 }
-.bread a:hover{
+
+.bread a:hover {
     color: #EE442E;
 }
-.bread .current{
+
+.bread .current {
     color: #EE442E;
 }
 
 /* 内容区 */
-.content{
+.content {
     padding: 0;
     padding-bottom: 4.375rem;
 }
-.series{
+
+.series {
     position: relative;
 }
-.series img{
+
+.series img {
     display: block;
     width: 100%;
 }
-.series button{
+
+.series button {
     width: 11.25rem;
     height: 2.625rem;
     border: none;
@@ -397,15 +405,18 @@ a {
     cursor: pointer;
     font-weight: bold;
 }
-.series .btn1{
+
+.series .btn1 {
     left: 25.4375rem;
     top: 24.625rem;
 }
-.series .btn2{
+
+.series .btn2 {
     left: 25.4375rem;
     top: 46.875rem;
 }
-.series .btn3{
+
+.series .btn3 {
     width: 17.5625rem;
     height: 3.9375rem;
     bottom: 16.25rem;
@@ -415,7 +426,7 @@ a {
     color: #fff;
     font-weight: normal;
     font-size: 2.25rem;
-     box-shadow: .1875rem .3125rem .3125rem #ababab;
+    box-shadow: .1875rem .3125rem .3125rem #ababab;
 }
 
 
@@ -506,9 +517,10 @@ a {
 }
 
 .concat_icon {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
@@ -585,7 +597,8 @@ a {
     background: #272939;
 }
 
-.bottom>div .bottom-title, .bottom>div .bottom-title2{
+.bottom>div .bottom-title,
+.bottom>div .bottom-title2 {
     /* line-height: 5rem; */
     position: absolute;
     top: 0;
@@ -601,14 +614,24 @@ a {
     font-weight: 400;
     color: #fff;
     cursor: pointer;
-    display: -ms-flexbox;
     display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
     justify-content: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
     align-items: center;
 }
 
-.bottom>div .bottom-title2{
+.bottom>div .bottom-title2 {
     background: #272939;
 }
 
@@ -693,15 +716,16 @@ a {
 .bottom>div:hover .bottom-item2 {
     right: 5.3125rem;
 }
-.bottom-item2{
+
+.bottom-item2 {
     background: url('../images/consultation.png') no-repeat;
     background-size: 100% 100%
 }
 
 
-.order{
+.order {
     background: url('../images/appointment.png') no-repeat;
-    
+
 }
 
 /* 返回顶部 */
@@ -815,14 +839,10 @@ a {
 
 .form-content div {
     height: 2.5rem;
-    display: -webkit-box;
-    /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
-    display: -moz-box;
-    /* 老版本语法: Firefox (buggy) */
-    display: -ms-flexbox;
-    /* 混合版本语法: IE 10 */
     display: -webkit-flex;
-    /* 新版本语法: Chrome 21+ */
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-justify-content: space-between;
     -moz-justify-content: space-between;
@@ -873,8 +893,20 @@ a {
     /* line-height: 3.75rem;
     padding-left: 7.375rem; */
     box-sizing: border-box;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
     justify-content: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
     align-items: center;
     cursor: pointer;
 }

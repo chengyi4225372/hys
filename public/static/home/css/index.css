@@ -617,7 +617,15 @@ a {
 
 .tax-planning-solutions-content-one,
 .tax-planning-solutions-content-two {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
     justify-content: space-between;
 }
 
@@ -1385,9 +1393,10 @@ a {
 }
 
 .concat_icon {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
@@ -1481,10 +1490,20 @@ a {
     font-weight: 400;
     color: #fff;
     cursor: pointer;
-    display: -ms-flexbox;
     display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
     justify-content: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
     align-items: center;
 }
 
@@ -1750,8 +1769,20 @@ a {
     /* line-height: 3.75rem;
     padding-left: 7.375rem; */
     box-sizing: border-box;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
     justify-content: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
     align-items: center;
     cursor: pointer;
 }
@@ -1838,13 +1869,9 @@ a {
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     /*display: -webkit-box;*/
-    /*!* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. *!*/
     /*display: -moz-box;*/
-    /*!* 老版本语法: Firefox (buggy) *!*/
     /*display: -ms-flexbox;*/
-    /*!* 混合版本语法: IE 10 *!*/
     /*display: -webkit-flex;*/
-    /*!* 新版本语法: Chrome 21+ *!*/
     /*display: flex;*/
     /*-webkit-flex-direction: column;*/
     /*-moz-flex-direction: column;*/
