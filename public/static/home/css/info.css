@@ -4,6 +4,10 @@
     width: 75rem;
     margin: 0 auto;
     padding: 0 1.875rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -301,6 +305,10 @@ a {
     bottom: -38px;
     left: -0.425rem;
     text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
     box-sizing: border-box;
     border-radius: .125rem;
 }
@@ -409,6 +417,10 @@ a {
     /* height: 1780px; */
     background: rgba(255, 255, 255, 1);
     padding: 2rem 5.25rem 0 3.375rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -551,6 +563,10 @@ a {
     text-align: center;
     margin-left: 1.5rem;
     padding: .5rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -628,6 +644,10 @@ a {
     height: 11.25rem;
     transition: all 0.5s;
     z-index: -1;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -645,6 +665,10 @@ a {
 
 .bottom>div>.bottom-item2 div {
     color: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
     box-sizing: border-box;
 }
 

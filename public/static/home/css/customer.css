@@ -4,6 +4,10 @@
     width: 75rem;
     margin: 0 auto;
     padding: 0 1.875rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -301,6 +305,10 @@ a {
     bottom: -38px;
     left: -0.425rem;
     text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
     box-sizing: border-box;
     border-radius: .125rem;
 }
@@ -401,6 +409,10 @@ a {
     margin-right: 2.375rem;
     margin-bottom: 3rem;
     padding: 1.125rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
     box-sizing: border-box;
 
 }
@@ -424,6 +436,10 @@ a {
     float: left;
     width: 15rem;
     padding-top: 1.25rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
     box-sizing: border-box;
     moz-user-select: -moz-none;
     -moz-user-select: none;
@@ -590,6 +606,10 @@ a {
     text-align: center;
     margin-left: 1.5rem;
     padding: .5rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -667,6 +687,10 @@ a {
     height: 11.25rem;
     transition: all 0.5s;
     z-index: -1;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -684,6 +708,10 @@ a {
 
 .bottom>div>.bottom-item2 div {
     color: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
     box-sizing: border-box;
 }
 
