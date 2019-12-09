@@ -206,7 +206,7 @@ a {
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     content: '';
-    width: 120%;
+    width: 110%;
     height: .25rem;
     border-radius: .125rem;
     background-color: #E8341E;
@@ -226,7 +226,7 @@ a {
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     content: '';
-    width: 120%;
+    width: 110%;
     height: .25rem;
     border-radius: .125rem;
     background-color: #E8341E;
@@ -1697,13 +1697,9 @@ a {
 .form-content .form-content-box div {
     height: 2.5rem;
     display: -webkit-box;
-    /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
     display: -moz-box;
-    /* 老版本语法: Firefox (buggy) */
     display: -ms-flexbox;
-    /* 混合版本语法: IE 10 */
     display: -webkit-flex;
-    /* 新版本语法: Chrome 21+ */
     display: flex;
     -webkit-justify-content: space-between;
     -moz-justify-content: space-between;
