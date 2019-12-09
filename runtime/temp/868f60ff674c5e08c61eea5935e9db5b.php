@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:7:{s:111:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/v1\view\cust\customer\index.html";i:1575357099;s:96:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\layout\default.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\meta.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\header.html";i:1575426490;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\left.html";i:1575426769;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\footer.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\script.html";i:1575517385;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:7:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/v1\view\ban\banner\index.html";i:1575276124;s:96:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\layout\default.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\meta.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\header.html";i:1575426490;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\left.html";i:1575426769;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\footer.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\script.html";i:1575517385;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -308,28 +308,7 @@
     <!-- Full Width Column -->
     <div class="content-wrapper">
         
-<div class="content" style="margin-bottom:0px;min-height:0px;">
-    <div class="row">
-        <div class="col-md-12">
-            <form class="form-inline"  id="form">
-
-                <div class="panel panel-default panel-btn">
-                    <div class="panel-heading">
-
-                        <div class="form-group">
-                            <input type="text"  class="form-control" id="keyword" value="<?php echo \think\Request::instance()->get('title'); ?>" placeholder="请输入新闻或者关键字...">
-                        </div>
-
-                        <div class="form-group" >
-                            <button class="btn btn-info"  id="btn_search_customer" type="button"  data-url="<?php echo url('/v1/cust/customer/index'); ?>"><i class="glyphicon glyphicon-search" aria-hidden="true"></i>搜索</button>
-                        </div>
-                    </div>
-                </div>
-                <br>
-            </form>
-        </div>
-    </div>
-</div>
+<div class="content" style="margin-bottom:0px;min-height:0px;"></div>
 
 <!-- Main content -->
 <section class="content">
@@ -337,44 +316,39 @@
         <div class="box-header with-border">
             <button type="button" class="btn btn-sm btn-refresh"><i class="fa fa-refresh"></i></button>
             <button type="button" class="btn bg-purple btn-sm btn-dialog"
-                    id="addcust" data-url="<?php echo url('/v1/cust/customer/add'); ?>">
-                <i class="fa fa-plus-circle">添加</i></button>
+                    id="addbanner" data-url="<?php echo url('/v1/ban/banner/add'); ?>">
+                <i class="fa fa-plus-circle">添加banner图</i></button>
         </div>
         <div class="box-body">
             <table class="table table-bordered table-hover table-striped">
                 <thead>
-                <th class="text-center">新闻标题</th>
-                <th class="text-center">展示图</th>
-                <th class="text-center">文章关键字</th>
-                <th class="text-center">创建时间</th>
+                <th class="td-align td-width-40px">
+                    <input class="data-check_box_total"  type="checkbox"/>
+                </th>
+                <th class="text-center">banner图</th>
                 <th class="text-center">操作</th>
                 </thead>
-                 <?php if(is_array($list) || $list instanceof \think\Collection || $list instanceof \think\Paginator): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+                <?php if(is_array($list) || $list instanceof \think\Collection || $list instanceof \think\Paginator): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
                 <tbody>
                 <tr>
-                    <td class="text-center"><?php echo $vo['title']; ?></td>
+                    <td class="td-align td-padding">
+                        <input type="checkbox" name="box_checked" data-id="" class="data-check_box">
+                    </td>
                     <td class="text-center">
                         <a href="<?php echo $vo['imgs']; ?>">
-                            <img src="<?php echo $vo['imgs']; ?>"  style="width: 150px;height:80px;">
+                            <img src="<?php echo $vo['imgs']; ?>" alt="" style="width:180px;height:120px;" />
                         </a>
                     </td>
-                    <td class="text-center"><?php echo $vo['keywords']; ?></td>
-                    <td class="text-center"><?php echo $vo['create_time']; ?></td>
 
                     <td class="text-center">
-                        <a href="javascript:void(0)" class="btn btn-info" data-id="<?php echo $vo['id']; ?>" data-url="<?php echo url('/v1/cust/customer/edit'); ?>"
-                           onclick="editCust(this)">编辑</a>
-
-                        <a href="javascript:void(0)" class="btn btn-danger" data-url="<?php echo url('/v1/cust/customer/dels'); ?>" data-id="<?php echo $vo['id']; ?>"
-                           onclick="custDel(this)">删除</a>
-
+                        <a href="javascript:void(0)" class="btn btn-info" data-url="<?php echo url('/v1/ban/banner/edit'); ?>"
+                           data-id="<?php echo $vo['id']; ?>" onclick="editData($(this).attr('data-id'),$(this).attr('data-url'))">编辑</a>
                     </td>
                 </tr>
                 </tbody>
-                <?php endforeach; endif; else: echo "" ;endif; ?>
-
+               <?php endforeach; endif; else: echo "" ;endif; ?>
             </table>
-            <div class="pages"></div>
+            <div class="pages"><?php echo $list->render(); ?></div>
         </div>
     </div>
 
