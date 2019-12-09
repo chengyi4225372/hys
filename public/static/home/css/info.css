@@ -4,6 +4,10 @@
     width: 75rem;
     margin: 0 auto;
     padding: 0 1.875rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -39,21 +43,25 @@
 html {
     font-size: 16px;
 }
+
 @media screen and (min-width: 800px) {
     html {
         font-size: 6.66666666666667px;
     }
 }
+
 @media screen and (min-width: 1024px) {
     html {
         font-size: 8.53333333333333px;
     }
 }
+
 @media screen and (min-width: 1152px) {
     html {
         font-size: 9.58333333333333px;
     }
 }
+
 @media screen and (min-width: 1280px) {
     html {
         font-size: 10.6666666666667px;
@@ -189,7 +197,7 @@ a {
     color: #333333;
 }
 
-.nav-container .nav ul li:hover::after {
+/* .nav-container .nav ul li:hover::after {
     position: absolute;
     bottom: -0.5125rem;
     left: 50%;
@@ -199,11 +207,11 @@ a {
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     content: '';
-    width: 140%;
+    width: 110%;
     height: .25rem;
     border-radius: .125rem;
     background-color: #E8341E;
-}
+} */
 
 .nav-active {
     position: relative;
@@ -219,7 +227,7 @@ a {
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     content: '';
-    width: 140%;
+    width: 110%;
     height: .25rem;
     border-radius: .125rem;
     background-color: #E8341E;
@@ -297,6 +305,10 @@ a {
     bottom: -38px;
     left: -0.425rem;
     text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
     box-sizing: border-box;
     border-radius: .125rem;
 }
@@ -405,6 +417,10 @@ a {
     /* height: 1780px; */
     background: rgba(255, 255, 255, 1);
     padding: 2rem 5.25rem 0 3.375rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -523,9 +539,10 @@ a {
 }
 
 .concat_icon {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
@@ -546,6 +563,10 @@ a {
     text-align: center;
     margin-left: 1.5rem;
     padding: .5rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -623,6 +644,10 @@ a {
     height: 11.25rem;
     transition: all 0.5s;
     z-index: -1;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -640,6 +665,10 @@ a {
 
 .bottom>div>.bottom-item2 div {
     color: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
     box-sizing: border-box;
 }
 

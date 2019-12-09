@@ -4,6 +4,10 @@
     width: 75rem;
     margin: 0 auto;
     padding: 0 1.875rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -39,21 +43,25 @@
 html {
     font-size: 16px;
 }
+
 @media screen and (min-width: 800px) {
     html {
         font-size: 6.66666666666667px;
     }
 }
+
 @media screen and (min-width: 1024px) {
     html {
         font-size: 8.53333333333333px;
     }
 }
+
 @media screen and (min-width: 1152px) {
     html {
         font-size: 9.58333333333333px;
     }
 }
+
 @media screen and (min-width: 1280px) {
     html {
         font-size: 10.6666666666667px;
@@ -189,7 +197,7 @@ a {
     color: #333333;
 }
 
-.nav-container .nav ul li:hover::after {
+/* .nav-container .nav ul li:hover::after {
     position: absolute;
     bottom: -0.5125rem;
     left: 50%;
@@ -199,11 +207,11 @@ a {
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     content: '';
-    width: 140%;
+    width: 110%;
     height: .25rem;
     border-radius: .125rem;
     background-color: #E8341E;
-}
+} */
 
 .nav-active {
     position: relative;
@@ -219,7 +227,7 @@ a {
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     content: '';
-    width: 140%;
+    width: 110%;
     height: .25rem;
     border-radius: .125rem;
     background-color: #E8341E;
@@ -297,6 +305,10 @@ a {
     bottom: -38px;
     left: -0.425rem;
     text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
     box-sizing: border-box;
     border-radius: .125rem;
 }
@@ -373,7 +385,8 @@ a {
     color: #e8341e;
     cursor: pointer;
 }
-.crumbs-box span:last-child{
+
+.crumbs-box span:last-child {
     color: #e8341e;
 }
 
@@ -396,6 +409,10 @@ a {
     margin-right: 2.375rem;
     margin-bottom: 3rem;
     padding: 1.125rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
     box-sizing: border-box;
 
 }
@@ -419,6 +436,10 @@ a {
     float: left;
     width: 15rem;
     padding-top: 1.25rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
     box-sizing: border-box;
     moz-user-select: -moz-none;
     -moz-user-select: none;
@@ -561,9 +582,10 @@ a {
 }
 
 .concat_icon {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
@@ -584,6 +606,10 @@ a {
     text-align: center;
     margin-left: 1.5rem;
     padding: .5rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -661,6 +687,10 @@ a {
     height: 11.25rem;
     transition: all 0.5s;
     z-index: -1;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -678,6 +708,10 @@ a {
 
 .bottom>div>.bottom-item2 div {
     color: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -709,11 +743,13 @@ a {
 .bottom>div:hover .bottom-item2 {
     right: 5.3125rem;
 }
-.bottom-item2{
+
+.bottom-item2 {
     background: url('../images/consultation.png') no-repeat;
     background-size: 100% 100%
 }
-.order{
+
+.order {
     background: url('../images/appointment.png') no-repeat;
 
 }
