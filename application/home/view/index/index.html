@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="renderer" content="webkit" />
   <meta name="force-rendering" content="webkit" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -239,9 +240,9 @@
         <div class="preferential-taxadvantage-content">
           <div class="preferential-taxadvantage-content-icon">
             <ul class="clearfix">
-              <li id="1" class="fousess"></li>
+              <li id="0" class="fousess"></li>
+              <li id="1"></li>
               <li id="2"></li>
-              <li id="3"></li>
             </ul>
           </div>
           <div class="preferential-taxadvantage-content-title">我们得到了上海、安徽、江西、湖北等各地政府的大力支持，在全国各地有个多个园区</div>
@@ -431,13 +432,15 @@
           <span class="turnoff" onclick="hide_open()"></span>
         </div>
         <div class="form-content">
-          <div><span class="title">您的姓名</span>
-            <input type="text" id="contactName" placeholder="请输您的姓名"></div>
-          <div><span class="title">联系方式</span><input type="text" id="contactMobile" placeholder="请输入您的手机号"></div>
-          <div><span class="title">公司名称</span><input type="text" id="companyName" placeholder="若无公司请填写自雇"></div>
-          <input type='hidden' id='sources' value='惠优税'>
-          <input type='hidden' id='identifications' value='企业税筹'>
-          <div class="form-btn" onclick="form_btn()">获取方案</div>
+          <div class="form-content-box">
+            <div><span class="title">您的姓名</span>
+              <input type="text" id="contactName" placeholder="请输您的姓名"></div>
+            <div><span class="title">联系方式</span><input type="text" id="contactMobile" placeholder="请输入您的手机号"></div>
+            <div><span class="title">公司名称</span><input type="text" id="companyName" placeholder="若无公司请填写自雇"></div>
+            <input type='hidden' id='sources' value='惠优税'>
+            <input type='hidden' id='identifications' value='企业税筹'>
+            <div class="form-btn" onclick="form_btn()">获取方案</div>
+          </div>
         </div>
         <!-- 提交成果后弹窗 -->
         <div class="mask-box">

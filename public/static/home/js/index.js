@@ -1,98 +1,78 @@
 window.onload = function () {
 
     // 税务问题盒子切换
-    let imgList = document.querySelectorAll('.taxproblems-right .taxproblems-right-img img');
-    let imgList2 = document.querySelectorAll('.taxproblems-right .taxproblems-right-page img');
-    let pageList = document.querySelectorAll('.taxproblems-right .taxproblems-right-page span');
-    let leftBtn = document.querySelector('.taxproblems-right .taxproblems-right-page .leftBtn');
-    let righttBtn = document.querySelector('.taxproblems-right .taxproblems-right-page .rightBtn');
+    var imgList = document.querySelectorAll('.taxproblems-right .taxproblems-right-img img');
+    var imgList2 = document.querySelectorAll('.taxproblems-right .taxproblems-right-page img');
+    var pageList = document.querySelectorAll('.taxproblems-right .taxproblems-right-page span');
+    var leftBtn = document.querySelector('.taxproblems-right .taxproblems-right-page .leftBtn');
+    var righttBtn = document.querySelector('.taxproblems-right .taxproblems-right-page .rightBtn');
 
     // console.log(imgList, pageList, leftBtn, righttBtn)
     leftBtn.onclick = function () {
         imgList[1].classList.remove('active-img');
-        imgList2[0].classList.remove('active-img');
-        imgList2[2].classList.remove('active-img');
+        imgList2[1].classList.remove('active-img');
+        imgList2[3].classList.remove('active-img');
         pageList[1].classList.remove('active-page');
 
         imgList[0].classList.add('active-img');
-        imgList2[1].classList.add('active-img');
-        imgList2[3].classList.add('active-img');
+        imgList2[0].classList.add('active-img');
+        imgList2[2].classList.add('active-img');
         pageList[0].classList.add('active-page');
     };
     righttBtn.onclick = function () {
         imgList[0].classList.remove('active-img');
-        imgList2[1].classList.remove('active-img');
-        imgList2[3].classList.remove('active-img');
+        imgList2[0].classList.remove('active-img');
+        imgList2[2].classList.remove('active-img');
         pageList[0].classList.remove('active-page');
 
         imgList[1].classList.add('active-img');
-        imgList2[0].classList.add('active-img');
-        imgList2[2].classList.add('active-img');
+        imgList2[1].classList.add('active-img');
+        imgList2[3].classList.add('active-img');
         pageList[1].classList.add('active-page');
     };
 
 
     // 税务筹划解决方案盒子切换
-    let oneDivList = document.querySelectorAll('.tax-planning-solutions-content-one .tax-planning-solutions-content-item');
-    let twoDivList = document.querySelectorAll('.tax-planning-solutions-content-two .tax-planning-solutions-content-item');
+    var oneDivList = document.querySelectorAll('.tax-planning-solutions-content-one .tax-planning-solutions-content-item');
+    var twoDivList = document.querySelectorAll('.tax-planning-solutions-content-two .tax-planning-solutions-content-item');
     console.log(oneDivList, twoDivList);
 
-    // for(let i=0;i<oneDivList.length;i++){
-    //     oneDivList[i].onmouseover = function(){
-    //         for(let i=0;i<oneDivList.length;i++){
-    //             oneDivList[i].classList.remove('content-active')
-    //         }
-    //         this.classList.add('content-active')
-    //     }
-    // }
-
-    // for(let i=0;i<twoDivList.length;i++){
-    //     twoDivList[i].onmouseover = function(){
-    //         for(let i=0;i<twoDivList.length;i++){
-    //             twoDivList[i].classList.remove('content-active')
-    //         }
-    //         this.classList.add('content-active')
-    //     }
-    // }
-
-    oneDivList.forEach(item => {
-        item.onmouseover = function () {
-            oneDivList.forEach(item => {
-                item.classList.remove('content-active')
-            });
+    for (var i = 0; i < oneDivList.length; i++) {
+        oneDivList[i].onmouseover = function () {
+            for (var j = 0; j < oneDivList.length; j++) {
+                oneDivList[j].classList.remove('content-active')
+            }
             this.classList.add('content-active');
         }
-    });
-
-    twoDivList.forEach(item => {
-        item.onmouseover = function () {
-            twoDivList.forEach(item => {
-                item.classList.remove('content-active')
-            });
+    }
+    for (var i = 0; i < twoDivList.length; i++) {
+        twoDivList[i].onmouseover = function () {
+            for (var j = 0; j < twoDivList.length; j++) {
+                twoDivList[j].classList.remove('content-active')
+            }
             this.classList.add('content-active');
-
-        };
-    });
+        }
+    }
 
     // 惠优税优势轮播图
 
-    // let swiper = document.querySelector('.preferential-taxadvantage-content-imgs')
-    let item = document.querySelectorAll('.preferential-taxadvantage-content-icon ul li')
-    let ul = document.querySelector('.preferential-taxadvantage-content-imgs ul')
-    let ali = document.querySelectorAll('.preferential-taxadvantage-content-imgs ul li')
-    let pre = document.querySelector('.preferential-taxadvantage-content-imgs .fouse-left')
-    let next = document.querySelector('.preferential-taxadvantage-content-imgs .fouse-right')
-    let imgW = ali[0].offsetWidth//需要window.onload
-    let index = 1//计算滚动到哪张图片
-    let isTransitioned = true//判断动画是否已完成
+    // var swiper = document.querySelector('.preferential-taxadvantage-content-imgs')
+    var item = document.querySelectorAll('.preferential-taxadvantage-content-icon ul li')
+    var ul = document.querySelector('.preferential-taxadvantage-content-imgs ul')
+    var ali = document.querySelectorAll('.preferential-taxadvantage-content-imgs ul li')
+    var pre = document.querySelector('.preferential-taxadvantage-content-imgs .fouse-left')
+    var next = document.querySelector('.preferential-taxadvantage-content-imgs .fouse-right')
+    var imgW = ali[0].offsetWidth//需要window.onload
+    var index = 1//计算滚动到哪张图片
+    var isTransitioned = true//判断动画是否已完成
 
 
     //克隆第一张图片，添加到图片队列的最后面
-    let cloneLi = ali[0].cloneNode(true);
+    var cloneLi = ali[0].cloneNode(true);
     ul.appendChild(cloneLi);
     //克隆最后一张图片，添加到图片队列的最前面
-    let cloneLastLi = ali[ali.length - 1].cloneNode(true);
-    ul.prepend(cloneLastLi);
+    var cloneLastLi = ali[ali.length - 1].cloneNode(true);
+    ul.insertBefore(cloneLastLi, ali[0]);
 
     //点击右边按钮
     next.onclick = function () {
@@ -124,7 +104,7 @@ window.onload = function () {
     }, 4000)
 
     //监听动画结束
-    ul.addEventListener("transitionend", () => {
+    ul.addEventListener("transitionend", function () {
         if (index == ali.length + 1) {
             index = 1;
             ul.classList.toggle("transi");
@@ -142,19 +122,22 @@ window.onload = function () {
     item[0].classList.add('fousess');
     //给分页器添加点击事件
     for (let j = 0; j < item.length; j++) {
-        item[j].onclick = function () {
-            for (let q = 0; q < item.length; q++) {
+        item[j].onclick = function (e) {
+            for (var q = 0; q < item.length; q++) {
                 item[q].classList.remove('fousess');
             }
-            item[j].classList.add('fousess');
-            index = j + 1;
+            e.target.classList.add('fousess');
+            console.log(j );
+            // index = j + 1;
+            index = Number(e.target.id) + 1;
+            console.log(index, 222);
             ul.classList.add('transi');
             ul.style.transform = "translateX(" + (-imgW * index) + "px)";
         }
     }
     //点击左右按钮分页器跟随
     function fenyeq(index) {
-        for (let k = 0; k < item.length; k++) {
+        for (var k = 0; k < item.length; k++) {
             item[k].classList.remove('fousess');
         }
         index = index - 1;
@@ -172,12 +155,12 @@ window.onload = function () {
     // 返回顶部
     window.onscroll = function () {
         var top = document.body.scrollTop || document.documentElement.scrollTop;
-        console.log(top);
-        console.log(document.body.scrollTop);
-        console.log(document.documentElement.scrollTop);
+        // console.log(top);
+        // console.log(document.body.scrollTop);
+        // console.log(document.documentElement.scrollTop);
 
         if (top >= 1080) {
-            let goTop = document.getElementById('goTop');
+            var goTop = document.getElementById('goTop');
             goTop.style.display = "block";
 
             // console.log(goTop);
@@ -202,24 +185,24 @@ window.onload = function () {
         } else if (top < 1080) {
 
             // 返回顶部样式
-            let goTop = document.getElementById('goTop');
+            var goTop = document.getElementById('goTop');
             goTop.style.display = "none";
 
         }
     }
 
     // 产业园区切换
-    let divListLeft = document.querySelectorAll(".map-box-center-item");
-    let divListRight = document.querySelectorAll(".map-box-right-yuanqu-item");
-    let last = document.querySelector('.map-box-right-morebtn');
-    let i = 1;
+    var divListLeft = document.querySelectorAll(".map-box-center-item");
+    var divListRight = document.querySelectorAll(".map-box-right-yuanqu-item");
+    var last = document.querySelector('.map-box-right-morebtn');
+    var i = 1;
     last.onclick = function () {
         // console.log(i, divListLeft.length - 1);
         if (i == divListLeft.length) {
             i = 0;
         };
-        let actvieDivLeft = document.querySelectorAll('.map-box-center .active-map')[0];
-        let actvieDivRight = document.querySelectorAll('.map-box-right .active-map')[0];
+        var actvieDivLeft = document.querySelectorAll('.map-box-center .active-map')[0];
+        var actvieDivRight = document.querySelectorAll('.map-box-right .active-map')[0];
         actvieDivLeft.classList.remove('active-map');
         actvieDivRight.classList.remove('active-map');
         divListLeft[i].classList.add('active-map');
