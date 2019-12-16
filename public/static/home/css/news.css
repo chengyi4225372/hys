@@ -148,7 +148,12 @@ a {
 .nav-container .logo {
   float: left;
   margin-left: 0.95rem;
+  width: 8.8125rem;
+  height: 3rem;
   margin-top: .5rem; }
+  .nav-container .logo img {
+    width: 100%;
+    height: 100%; }
 
 .nav-container .nav {
   float: left;
@@ -340,9 +345,9 @@ a {
 .header-box {
   height: 17.5rem;
   background: url("../images/inforBanner.png") no-repeat;
-  -webkit-background-size: 100% 100%;
+  /* -webkit-background-size: 100% 100%;
           background-size: 100% 100%;
-  background-position: center center;
+  background-position: center center; */
   margin-top: 3.75rem; }
 
 /* .bg_banner {

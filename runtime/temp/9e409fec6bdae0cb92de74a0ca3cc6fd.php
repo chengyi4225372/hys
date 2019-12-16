@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\industry\index.html";i:1576494087;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\industry\index.html";i:1576494928;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +11,8 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title><?php echo $title; ?></title>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script> -->
+    <script src="https://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
     <link rel="stylesheet" href="/static/home/css/base.css">
     <link rel="stylesheet" href="/static/home/css/news.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900">
