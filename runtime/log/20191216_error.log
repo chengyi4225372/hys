@@ -1,0 +1,69 @@
+---------------------------------------------------------------
+[ 2019-12-16T18:08:43+08:00 ] 127.0.0.1 GET /home/customer/index.html
+[ error ] [8]未定义变量: banner[C:\phpEnv\www\hys\runtime\temp\ade7448e8500d592001a9c94cdcddc0b.php:118]
+---------------------------------------------------------------
+[ 2019-12-16T18:08:43+08:00 ] 127.0.0.1 GET /home/customer/index.html
+[ error ] [8]未定义变量: banner[C:\phpEnv\www\hys\runtime\temp\ade7448e8500d592001a9c94cdcddc0b.php:118]
+---------------------------------------------------------------
+[ 2019-12-16T18:08:49+08:00 ] 127.0.0.1 GET /home/customer/index.html
+[ error ] [8]未定义变量: banner[C:\phpEnv\www\hys\runtime\temp\ade7448e8500d592001a9c94cdcddc0b.php:118]
+---------------------------------------------------------------
+[ 2019-12-16T18:12:11+08:00 ] 127.0.0.1 GET /home/customer/index.html
+[ error ] [8]未定义变量: banner[C:\phpEnv\www\hys\runtime\temp\ade7448e8500d592001a9c94cdcddc0b.php:118]
+---------------------------------------------------------------
+[ 2019-12-16T18:21:14+08:00 ] 127.0.0.1 GET /home/customer/index.html
+[ error ] [8]未定义变量: banner[C:\phpEnv\www\hys\runtime\temp\ade7448e8500d592001a9c94cdcddc0b.php:118]
+---------------------------------------------------------------
+[ 2019-12-16T18:24:21+08:00 ] 127.0.0.1 GET /home/customer/index.html
+[ error ] [8]未定义变量: banner[C:\phpEnv\www\hys\runtime\temp\ade7448e8500d592001a9c94cdcddc0b.php:118]
+---------------------------------------------------------------
+[ 2019-12-16T18:24:41+08:00 ] 127.0.0.1 GET /home/customer/index.html
+[ error ] [8]未定义变量: banner[C:\phpEnv\www\hys\runtime\temp\ade7448e8500d592001a9c94cdcddc0b.php:118]
+---------------------------------------------------------------
+[ 2019-12-16T18:24:53+08:00 ] 127.0.0.1 GET /home/customer/index.html
+[ error ] [8]未定义变量: banner[C:\phpEnv\www\hys\runtime\temp\ade7448e8500d592001a9c94cdcddc0b.php:118]
+---------------------------------------------------------------
+[ 2019-12-16T18:25:29+08:00 ] 127.0.0.1 GET /home/customer/index.html
+[ error ] [8]未定义变量: banner[C:\phpEnv\www\hys\runtime\temp\ade7448e8500d592001a9c94cdcddc0b.php:118]
+---------------------------------------------------------------
+[ 2019-12-16T18:27:11+08:00 ] 127.0.0.1 GET /home/customer/index.html
+[ error ] [8]未定义变量: banner[C:\phpEnv\www\hys\runtime\temp\ade7448e8500d592001a9c94cdcddc0b.php:118]
+---------------------------------------------------------------
+[ 2019-12-16T18:28:50+08:00 ] 127.0.0.1 GET /home/customer/index.html
+[ error ] [8]未定义变量: banner[C:\phpEnv\www\hys\runtime\temp\ade7448e8500d592001a9c94cdcddc0b.php:118]
+---------------------------------------------------------------
+[ 2019-12-16T18:29:23+08:00 ] 127.0.0.1 GET /home/customer/index.html
+[ error ] [8]未定义变量: banner[C:\phpEnv\www\hys\runtime\temp\ade7448e8500d592001a9c94cdcddc0b.php:118]
+---------------------------------------------------------------
+[ 2019-12-16T18:29:40+08:00 ] 127.0.0.1 GET /home/customer/index.html
+[ error ] [8]未定义变量: banner[C:\phpEnv\www\hys\runtime\temp\ade7448e8500d592001a9c94cdcddc0b.php:118]
+---------------------------------------------------------------
+[ 2019-12-16T18:29:49+08:00 ] 127.0.0.1 GET /home/customer/index.html
+[ error ] [8]未定义变量: banner[C:\phpEnv\www\hys\runtime\temp\ade7448e8500d592001a9c94cdcddc0b.php:118]
+---------------------------------------------------------------
+[ 2019-12-16T18:32:13+08:00 ] 127.0.0.1 GET /home/customer/index.html
+[ error ] [8]未定义变量: banner[C:\phpEnv\www\hys\runtime\temp\ade7448e8500d592001a9c94cdcddc0b.php:118]
+---------------------------------------------------------------
+[ 2019-12-16T18:32:32+08:00 ] 127.0.0.1 GET /home/customer/index.html
+[ error ] [8]未定义变量: banner[C:\phpEnv\www\hys\runtime\temp\ade7448e8500d592001a9c94cdcddc0b.php:118]
+---------------------------------------------------------------
+[ 2019-12-16T18:37:20+08:00 ] 127.0.0.1 GET /home/customer/index.html
+[ error ] [8]未定义变量: banner[C:\phpEnv\www\hys\runtime\temp\ade7448e8500d592001a9c94cdcddc0b.php:118]
+---------------------------------------------------------------
+[ 2019-12-16T18:37:39+08:00 ] 127.0.0.1 GET /home/customer/index.html
+[ error ] [8]未定义变量: banner[C:\phpEnv\www\hys\runtime\temp\ade7448e8500d592001a9c94cdcddc0b.php:118]
+---------------------------------------------------------------
+[ 2019-12-16T18:49:47+08:00 ] 127.0.0.1 GET /home/customer/index.html
+[ error ] [8]未定义变量: banner[C:\phpEnv\www\hys\runtime\temp\ade7448e8500d592001a9c94cdcddc0b.php:118]
+---------------------------------------------------------------
+[ 2019-12-16T19:00:42+08:00 ] 127.0.0.1 GET /home/customer/index.html
+[ error ] [8]未定义变量: banner[C:\phpEnv\www\hys\runtime\temp\ade7448e8500d592001a9c94cdcddc0b.php:118]
+---------------------------------------------------------------
+[ 2019-12-16T19:01:24+08:00 ] 127.0.0.1 GET /home/customer/index.html
+[ error ] [8]未定义变量: banner[C:\phpEnv\www\hys\runtime\temp\ade7448e8500d592001a9c94cdcddc0b.php:118]
+---------------------------------------------------------------
+[ 2019-12-16T19:01:28+08:00 ] 127.0.0.1 GET /home/customer/index.html
+[ error ] [8]未定义变量: banner[C:\phpEnv\www\hys\runtime\temp\ade7448e8500d592001a9c94cdcddc0b.php:118]
+---------------------------------------------------------------
+[ 2019-12-16T19:08:22+08:00 ] 127.0.0.1 GET /home/customer/index.html
+[ error ] [8]未定义变量: banner[C:\phpEnv\www\hys\runtime\temp\ade7448e8500d592001a9c94cdcddc0b.php:118]

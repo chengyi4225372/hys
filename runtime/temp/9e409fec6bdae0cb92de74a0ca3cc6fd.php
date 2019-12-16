@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\industry\index.html";i:1576457668;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\industry\index.html";i:1576494087;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,18 +8,23 @@
     <meta name="force-rendering" content="webkit" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <script>/*@cc_on document.write('\x3Cscript id="_iealwn_js" src="https://support.dmeng.net/ie-alert-warning/latest.js">\x3C/script>'); @*/</script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title><?php echo $title; ?></title>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <link rel="stylesheet" href="/static/home/css/base.css">
     <link rel="stylesheet" href="/static/home/css/news.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900">
+    <link rel="stylesheet" href="/static/home/css/footer.css">
+
     <!--    <script src="/static/spirit/js/clamp.js"></script>-->
     <script src="/static/assets/plugins/layui/layui.all.js"></script>
     <script src='/static/common/js/common.js'></script>
     <script src='/static/common/js/index.js'></script>
     <script src='/static/common/js/public.js'></script>
     <script src='/static/home/js/industry.js'></script>
+    <script src='/static/home/js/footer.js'></script>
+
 </head>
 
 <body>
@@ -73,8 +78,8 @@
             <div class="w nav-container clearfix">
                 <!-- logo图 -->
                 <div class="logo clearfix">
-                    <img src="/static/home/images/logo.png" alt="">
-                    <h1>惠优税</h1>
+                    <img src="/static/home/images/logo2.png" alt="">
+
                 </div>
                 <!-- nav部分 -->
                 <div class="nav">
@@ -119,13 +124,13 @@
         </div>
     </div> -->
 
-        <!-- 头部 -->
-        <div class='header-box'></div>
+    <!-- 头部 -->
+    <div class='header-box'></div>
 
 
     <!-- 面包屑导航 -->
-    <div class="w bg_breadCrumbs">
-        <div class="bread-crumbs">
+    <div class="bg_breadCrumbs">
+        <div class="w bread-crumbs">
             <span><a href="<?php echo url('/home/index/index'); ?>">首页</a></span> >
             <span><a class="current" style="color:#E8341E;" onclick="go_news(this)"
                     data-url="<?php echo url('/home/industry/index'); ?>">行业新闻资讯</a></span> <span></span>
@@ -143,26 +148,39 @@
                       <li>招标信息</li>
                     </ul> -->
                     <div class="govPolicy fl">行业资讯</div>
-                    <div class="search-box fr">
-                        <input type="text" id="keyword" value="<?php echo \think\Request::instance()->get('keyword'); ?>" placeholder="请输入关键字">
-                        <div id="searched" style="cursor:pointer;" data-url="<?php echo url('/home/industry/index'); ?>">搜索
-                        </div>
-                    </div>
+
                 </div>
 
                 <!-- 热搜 -->
-                <div class="m hotWord">
-                    <ul>
+                <div class="hotWord">
+                    <div class="bgHot">
+                        <span>热门关键词</span>
+                        <ul>
+                           
+                            <li>
+                                <span>周杰伦新歌</span>
+                                <span class="close">✕</span>
+                            </li>
+                            <li>
+                                <span>周杰伦新歌</span>
+                                <span class="close">✕</span>
+                            </li>
+                            <li>
+                                <span>周杰伦新歌</span>
+                                <span class="close">✕</span>
+                            </li>
+                            <li>
+                                <span>周杰伦新歌</span>
+                                <span class="close">✕</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- <ul>
                         <li style="cursor:pointer;" data-url="<?php echo url('/home/industry/index'); ?>"
                             onclick="location.href=$(this).attr('data-url')">
                             <span>热门关键词</span>
                         </li>
-                        <!-- <?php if(is_array($keywords) || $keywords instanceof \think\Collection || $keywords instanceof \think\Paginator): $i = 0; $__LIST__ = $keywords;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-                        <li onclick="hotsearch(this);" data-title="<?php echo $vo['title']; ?>"
-                            data-url="<?php echo url('/home/industry/index'); ?>">
-                            <span><?php echo $vo['title']; ?></span>
-                        </li>
-                        <?php endforeach; endif; else: echo "" ;endif; ?> -->
+                       
                         <?php if(is_array($keywords) || $keywords instanceof \think\Collection || $keywords instanceof \think\Paginator): $i = 0; $__LIST__ = $keywords;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
                         <li <?php if(\think\Request::instance()->get('title') == $vo['title']): ?> class="hotwords" <?php endif; ?>>
 
@@ -172,7 +190,12 @@
                         </li>
                         <?php endforeach; endif; else: echo "" ;endif; ?>
 
-                    </ul>
+                    </ul> -->
+                    <div class="search-box">
+                        <input type="text" id="keyword" value="<?php echo \think\Request::instance()->get('keyword'); ?>" placeholder="请输入关键字">
+                        <div id="searched" style="cursor:pointer;" data-url="<?php echo url('/home/industry/index'); ?>">搜索
+                        </div>
+                    </div>
 
                 </div>
 
@@ -243,12 +266,12 @@
         <!--                    <li>2</li>-->
         <!--                    <li class="next">下一页</li>-->
         <!--                </ul>-->
-        <?php echo $list->render(); ?>   
+        <?php echo $list->render(); ?>
     </div>
 
 
     <!-- 底部 -->
- 
+<div id="footer"></div>
 
     <!-- 返回顶部 -->
     <div class='goTop' id="goTop">

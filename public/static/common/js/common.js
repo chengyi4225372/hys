@@ -22,3 +22,29 @@ var index_module = (function (){
         user_logout:user_logout,
     }
 })();
+
+$(function(){
+    $('.bgHot ul li').click(function () {
+        $(this).addClass('chosen')
+        $(this).children().css({ 'display': 'block' });
+    })
+    $('.close').click(function(e){
+        e.stopPropagation()
+        $(this).css({'display': 'none'})
+        $(this).parent().removeClass('chosen')
+    })
+    $('.bgHot ul li').mouseenter(function(){
+        if($(this).hasClass('chosen')){
+            return false
+        }
+        $(this).css({
+            'background':'#FBE1DC',
+            'color':'#F75236'
+        })
+    }).mouseleave(function(){
+        $(this).css({
+            'background':'#F6F6F6',
+            'color':'#333'
+        })
+    })
+})

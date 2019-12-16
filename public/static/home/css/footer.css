@@ -19,7 +19,7 @@
     font-size: 1.5rem;
     line-height: 1.5rem;
     color: #fff;
-    font-family: Source Han Sans CN;
+    font-family: "Noto Sans SC";
     font-weight: 500;
   }
   
@@ -84,6 +84,7 @@
   }
   
   .bottomBox .bottom .navBottom .navList dl dd a {
+    font-family: "Noto Sans SC";
     display: block;
     color: #dcdcdc;
     font-size: 1.125rem;
