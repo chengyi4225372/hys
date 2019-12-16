@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1576480792;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1576485676;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,7 +36,7 @@
         <!-- logo图 -->
         <div class="logo clearfix">
           <img src="/static/home/images/logo.png" alt="">
-          <h1>惠优税</h1>
+         
         </div>
         <!-- nav部分 -->
         <div class="nav">

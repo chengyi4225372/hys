@@ -104,7 +104,7 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  height: 5rem;
+  height: 3.75rem;
   background: #ffffff;
   z-index: 999;
   /* background-color: pink; */
@@ -112,30 +112,20 @@ a {
           box-shadow: 0px 1px 7px 0px rgba(199, 199, 199, 0.66); }
 
 .nav-container {
-  padding-top: 0.875rem;
+  padding-top: 0 !important;
   /* height: 4.125rem; */
   /* background-color: skyblue; */
   height: 100%; }
 
 .nav-container .logo {
   float: left;
-  margin-left: 0.95rem; }
-
-.nav-container .logo img {
-  float: left;
-  width: 3.375rem;
-  height: 3.25rem;
-  /* vertical-align: middle; */ }
-
-.nav-container h1 {
-  float: left;
-  font-size: 1.9375rem;
-  font-family: "Noto Sans SC";
-  font-weight: 500;
-  letter-spacing: 0.1875rem;
-  color: black;
-  line-height: 2.125rem;
-  margin: 0.6875rem 0 0.6875rem 0.75rem; }
+  margin-left: 0.95rem;
+  width: 8.8125rem;
+  height: 3rem;
+  margin-top: .5rem; }
+  .nav-container .logo img {
+    width: 100%;
+    height: 100%; }
 
 .nav-container .nav {
   float: left;
@@ -305,7 +295,7 @@ a {
   -webkit-background-size: 100% 100%;
           background-size: 100% 100%;
   background-position: center center;
-  margin-top: 5rem; }
+  margin-top: 3.75rem; }
 
 /* 面包屑 */
 .bread {

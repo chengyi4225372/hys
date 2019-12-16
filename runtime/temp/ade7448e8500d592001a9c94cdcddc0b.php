@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\customer\index.html";i:1576231466;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\customer\index.html";i:1576490234;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,10 +12,14 @@
   <title><?php echo $title; ?></title>
   <link rel="stylesheet" href="/static/home/css/base.css">
   <link rel="stylesheet" href="/static/home/css/customer.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900">
+  <link rel="stylesheet" href="/static/home/css/footer.css">
   <script src="/static/home/js/jquery.js"></script>
   <!-- <script src="/static/home/js/programme.js"></script> -->
   <script src="/static/assets/plugins/layui/layui.all.js"></script>
   <script src="/static/home/js/customer.js"></script>
+  <script src='/static/home/js/footer.js'></script>
+
 </head>
 
 <body>
@@ -25,8 +29,8 @@
       <div class="w nav-container clearfix">
         <!-- logo图 -->
         <div class="logo clearfix">
-          <img src="/static/home/images/logo.png" alt="">
-          <h1>惠优税</h1>
+          <img src="/static/home/images/logo2.png" alt="">
+    
         </div>
         <!-- nav部分 -->
         <div class="nav">
@@ -71,7 +75,7 @@
     </div>
   </div>
   <!-- 客户案例 -->
-  <div class="bg_tab">
+  <!-- <div class="bg_tab">
     <div class="tabBox w">
       <ul class="clearfix">
         <?php if(is_array($list) || $list instanceof \think\Collection || $list instanceof \think\Paginator): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
@@ -94,56 +98,60 @@
       </ul>
     </div>
 
+  </div> -->
+
+ 
+
+  <div class="bg_case">
+    <div class="w caseTitle">
+      <span>客户案例</span>
+    </div>
+    <ul class="w caseWrap">
+      <li class="caseItem">
+        <div class="bg_img"><img src="" alt=""></div>
+        <div class="itemTitle">节税和逃税区别在哪？</div>
+        <p>合理合法的进行纳税筹划是正常有效税筹划是正常有效税筹划有效税筹划是正常有效税筹划有效税筹划是正常有效税筹划是正常有效的税收筹划，一般而言税收筹划是经营者可以理当获得相关经济活动所得到的收入。在整体规划管理资和...</p>
+        <div class="bgBtn">
+          <button>查看详情</button>
+        </div>
+      </li>
+      <li class="caseItem">
+        <div class="bg_img"><img src="" alt=""></div>
+        <div class="itemTitle">节税和逃税区别在哪？</div>
+        <p>合理合法的进行纳税筹划是正常有效税筹划是正常有效税筹划有效税筹划是正常有效税筹划有效税筹划是正常有效税筹划是正常有效的税收筹划，一般而言税收筹划是经营者可以理当获得相关经济活动所得到的收入。在整体规划管理资和...</p>
+        <div class="bgBtn">
+          <button>查看详情</button>
+        </div>
+      </li>
+      <li class="caseItem">
+        <div class="bg_img"><img src="" alt=""></div>
+        <div class="itemTitle">节税和逃税区别在哪？</div>
+        <p>合理合法的进行纳税筹划是正常有效税筹划是正常有效税筹划有效税筹划是正常有效税筹划有效税筹划是正常有效税筹划是正常有效的税收筹划，一般而言税收筹划是经营者可以理当获得相关经济活动所得到的收入。在整体规划管理资和...</p>
+        <div class="bgBtn">
+          <button>查看详情</button>
+        </div>
+      </li>
+      <li class="caseItem">
+        <div class="bg_img"><img src="" alt=""></div>
+        <div class="itemTitle">节税和逃税区别在哪？</div>
+        <p>合理合法的进行纳税筹划是正常有效税筹划是正常有效税筹划有效税筹划是正常有效税筹划有效税筹划是正常有效税筹划是正常有效的税收筹划，一般而言税收筹划是经营者可以理当获得相关经济活动所得到的收入。在整体规划管理资和...</p>
+        <div class="bgBtn">
+          <button>查看详情</button>
+        </div>
+      </li>
+    </ul>
   </div>
 
 
   <!-- 底部 -->
-  <div class="fotter-box">
-    <div class="w fotter">
-      <div class='parter_catefories'>
-        <dl>
-          <dt><a href="javascript:;">服务产品</a></dt>
-          <dd><a href="javascript:;">服务型税筹</a></dd>
-          <dd><a href="javascript:;">门户型税筹</a></dd>
-          <dd><a href="javascript:;">人力资源</a></dd>
-        </dl>
-        <dl>
-          <dt><a href="javascript:;">招商政策</a></dt>
-          <dd><a href="javascript:;">招商政策网</a></dd>
-        </dl>
-        <dl>
-          <dt><a href="javascript:;">合作</a></dt>
-          <dd><a href="javascript:;">代理合作</a></dd>
-        </dl>
-        <dl>
-          <dt><a href="javascript:;">公司信息</a></dt>
-          <dd><a href="javascript:;">瑟维斯有限公司</a></dd>
-          <dd><a href="javascript:;">惠创优产业联盟</a></dd>
-          <dd><a href="javascript:;">中兴瑞华有限公司</a></dd>
-        </dl>
-        <dl>
-          <dt><a href="javascript:;">联系我们</a></dt>
-          <dd><a href="javascript:;">400-150-9896</a></dd>
-          <dd><a href="javascript:;">hcylm008@dingtalk.com</a></dd>
-          <dd><a href="javascript:;">武汉市硚口区南国大武汉H座18楼</a></dd>
-        </dl>
+  <div id="footer"></div>
 
-      </div>
-      <div class='concat_icon clearfix'>
-        <div><img src="/static/home/images/bo.png" alt=""></div>
-        <div><img src="/static/home/images/wx.png" alt=""></div>
-        <div><img src="/static/home/images/tie.png" alt=""></div>
-      </div>
-      <div class="fotter-line"></div>
-      <div>© Copyright 2019 惠企动（湖北）科技有限公司 . All Rights Reserved</div>
-    </div>
-  </div>
 
-  <!-- 侧边栏bottom资讯 -->
-  <!--<div class="bottom">
+  <!-- 侧边栏consultation资讯 -->
+  <!--<div class="consultation">
     <div>
-        <div class="bottom-title">立即预约咨询</div>
-        <div class="bottom-item2 order">
+        <div class="consultation-title">立即预约咨询</div>
+        <div class="consultation-item2 order">
             <div>
                 <p>专家服务电话</p>
                 <p>181-8619-4461</p>
@@ -155,8 +163,8 @@
         </div>
     </div>
     <div>
-        <div class="bottom-title">联系我们</div>
-        <div class="bottom-item2">
+        <div class="consultation-title">联系我们</div>
+        <div class="consultation-item2">
             <div>
                 <p>专家服务电话</p>
                 <p>181-8619-4461</p>
