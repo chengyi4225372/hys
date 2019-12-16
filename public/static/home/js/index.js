@@ -210,3 +210,16 @@ window.onload = function () {
         i++;
     };
 };
+
+$(function(){
+    /* 标题上方横线和标题一样宽 */
+    $('.preferential-icon div').eq(0).width($('.hysTitle').width())
+    $('.tax-planning-solutions div').eq(0).width($('.caseTitle').width())
+    $('.preferential-taxadvantage div').eq(0).width($('.advanTitle').width())
+    $('.selected-park div').eq(0).width($('.partTitle').width())
+    $('.partner-title div').eq(0).width($('.coTitle').width())
+    $('.taxproblems-right').eq(0).width($('.taxIssues').width())
+
+    
+
+})

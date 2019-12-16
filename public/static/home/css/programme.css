@@ -4,6 +4,10 @@
     width: 75rem;
     margin: 0 auto;
     padding: 0 1.875rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -45,16 +49,19 @@ html {
         font-size: 6.66666666666667px;
     }
 }
+
 @media screen and (min-width: 1024px) {
     html {
         font-size: 8.53333333333333px;
     }
 }
+
 @media screen and (min-width: 1152px) {
     html {
         font-size: 9.58333333333333px;
     }
 }
+
 @media screen and (min-width: 1280px) {
     html {
         font-size: 10.6666666666667px;
@@ -134,7 +141,7 @@ a {
     padding-top: .875rem;
     /* height: 4.125rem; */
     height: 100%;
-  
+
 }
 
 .nav-container .logo {
@@ -192,7 +199,7 @@ a {
     color: #333333;
 }
 
-.nav-container .nav ul li:hover::after {
+/* .nav-container .nav ul li:hover::after {
     position: absolute;
     bottom: -0.5125rem;
     left: 50%;
@@ -202,11 +209,11 @@ a {
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     content: '';
-    width: 140%;
+    width: 110%;
     height: .25rem;
     border-radius: .125rem;
     background-color: #E8341E;
-}
+} */
 
 .nav-active {
     position: relative;
@@ -222,7 +229,7 @@ a {
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     content: '';
-    width: 140%;
+    width: 110%;
     height: .25rem;
     border-radius: .125rem;
     background-color: #E8341E;
@@ -300,6 +307,10 @@ a {
     bottom: -38px;
     left: -0.425rem;
     text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
     box-sizing: border-box;
     border-radius: .125rem;
 }
@@ -356,49 +367,67 @@ a {
 
 
 /* 选项卡 */
-.tabBox{
+.tabBox {
     margin: 0 auto;
     padding: 6.875rem 0 3.4375rem 0;
 }
 
-.tab{
+.tab {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
 
 }
-.tab ul{
+
+.tab ul {
     width: 17.5rem;
     height: 54.875rem;
     background: #F8634A;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
     flex-direction: column;
     position: relative;
     z-index: 1;
 }
-.tab ul li{
+
+.tab ul li {
     font-size: 1.5rem;
     line-height: 1.5rem;
     padding-left: .75rem;
     text-align: left;
     padding-bottom: 3.75rem;
-  
-    
+
+
 }
-.tab ul li a{
+
+.tab ul li a {
     color: #fff;
     position: relative;
     font-family: SourceHanSansCN-Regular;
 }
-.tab ul li:first-child{
+
+.tab ul li:first-child {
     margin-top: 6.375rem;
 }
-.tab ul li a:hover{
+
+.tab ul li a:hover {
     color: #2F3340;
 }
-.tab ul li a:hover::after{
+
+.tab ul li a:hover::after {
     position: absolute;
     z-index: 1;
-    bottom:-0.4375rem;
+    bottom: -0.4375rem;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -410,12 +439,14 @@ a {
     height: .0625rem;
     background-color: #2F3340;
 }
-.activeTab a{
-    color: #2F3340!important;
+
+.activeTab a {
+    color: #2F3340 !important;
 }
-.activeTab a::after{
+
+.activeTab a::after {
     position: absolute;
-    bottom:-0.4375rem;
+    bottom: -0.4375rem;
     z-index: 1;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -430,17 +461,19 @@ a {
     background-color: #2F3340;
 }
 
-.tabCon{
+.tabCon {
     width: 53.75rem;
     height: 54.875rem;
     background: url('../images/bgCase.png');
     background-size: 100% 100%;
 }
-.tabCon img{
+
+.tabCon img {
     width: 100%;
     height: 100%;
 }
-.tabTitle{
+
+.tabTitle {
     width: 31.25rem;
     height: 6.25rem;
     background: #F75236;
@@ -553,7 +586,7 @@ a {
     width: 2.375rem;
     height: 2.375rem;
     border: 1px solid #EAF2FF;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;     -moz-box-sizing: border-box;     -ms-box-sizing: border-box;     -o-box-sizing: border-box;     box-sizing: border-box;
     border-radius: 50%;
     margin-right: 2.375rem;
 }
@@ -561,9 +594,10 @@ a {
     background: #67CE0B;
 } */
 .concat_icon {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
@@ -584,6 +618,10 @@ a {
     text-align: center;
     margin-left: 1.5rem;
     padding: .5rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -605,7 +643,7 @@ a {
     background: rgba(122, 122, 122, 1);
 }
 
-.fotter .copyRight{
+.fotter .copyRight {
     margin-top: 1.1875rem;
     text-align: center;
     font-size: .875rem;
@@ -641,7 +679,8 @@ a {
     background: #272939;
 }
 
-.bottom>div .bottom-title, .bottom>div .bottom-title2{
+.bottom>div .bottom-title,
+.bottom>div .bottom-title2 {
     /* line-height: 5rem; */
     position: absolute;
     top: 0;
@@ -657,14 +696,24 @@ a {
     font-weight: 400;
     color: #fff;
     cursor: pointer;
-    display: -ms-flexbox;
     display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
     justify-content: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
     align-items: center;
 }
 
-.bottom>div .bottom-title2{
+.bottom>div .bottom-title2 {
     background: #272939;
 }
 
@@ -677,6 +726,10 @@ a {
     height: 11.25rem;
     transition: all 0.5s;
     z-index: 1;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -717,6 +770,10 @@ a {
 
 .bottom>div>.bottom-item2 div {
     color: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -749,15 +806,16 @@ a {
 .bottom>div:hover .bottom-item2 {
     right: 5.3125rem;
 }
-.bottom-item2{
+
+.bottom-item2 {
     background: url('../images/consultation.png') no-repeat;
     background-size: 100% 100%
 }
 
 
-.order{
+.order {
     background: url('../images/appointment.png') no-repeat;
-    
+
 }
 
 /* 返回顶部 */

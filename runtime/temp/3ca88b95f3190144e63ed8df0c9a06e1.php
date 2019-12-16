@@ -1,17 +1,26 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:79:"C:\phpEnv\www\hys\public/../application/home\view\programme\productservice.html";i:1575612824;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:79:"C:\phpEnv\www\hys\public/../application/home\view\programme\productservice.html";i:1576484972;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <script>/*@cc_on document.write('\x3Cscript id="_iealwn_js" src="https://support.dmeng.net/ie-alert-warning/latest.js">\x3C/script>'); @*/</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title><?php echo $title; ?></title>
     <link rel="stylesheet" href="/static/home/css/base.css">
     <link rel="stylesheet" href="/static/home/css/index.css">
     <link rel="stylesheet" href="/static/home/css/productservice.css">
+    <link rel="stylesheet" href="/static/home/css/footer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="/static/assets/plugins/layui/layui.all.js"></script>
     <script src="/static/home/js/productservice.js"></script>
     <script src="/static/common/js/open.js"></script>
+    <script src='/static/home/js/footer.js'></script>
+
 </head>
 
 <body>
@@ -66,19 +75,17 @@
         </div>
 
         <!-- 内容区 -->
-        <div class="w content">
+        <div class="m content">
             <div class="series">
-                <img src="/static/home/images/series.png" alt="">
-                <img src="/static/home/images/product.png" alt="">
-                <img src="/static/home/images/caseA.png" alt="">
-                <img src="/static/home/images/caseB.png" alt="">
+                <img src="/static/home/images/series1.png" alt="">
+                <img src="/static/home/images/series2.png" alt="">
+                <img src="/static/home/images/service.png" alt="">
+                <img src="/static/home/images/case.png" alt="">
                 <img src="/static/home/images/step.png" alt="">
-                <img src="/static/home/images/scene.png" alt="">
-                <img src="/static/home/images/advantage.png" alt="">
                 <img src="/static/home/images/afterSales.png" alt="">
                 <button class="btn1" onclick="alert_open()">立即咨询</button>
                 <button class="btn2" onclick="alert_open()">立即咨询</button>
-                <button class="btn3" onclick="alert_open()">在线咨询</button>
+                <input type="button"  class="btn3" onclick="alert_open()" />
             </div>
         </div>
 
@@ -86,82 +93,42 @@
 
 
     <!-- 底部 -->
-    <div class="fotter-box">
-        <div class="w fotter">
-            <div class='parter_catefories'>
-                <dl>
-                    <dt><a href="javascript:;">服务产品</a></dt>
-                    <dd><a href="javascript:;">服务型税筹</a></dd>
-                    <dd><a href="javascript:;">门户型税筹</a></dd>
-                    <dd><a href="javascript:;">人力资源</a></dd>
-                </dl>
-                <dl>
-                    <dt><a href="javascript:;">招商政策</a></dt>
-                    <dd><a href="javascript:;">招商政策网</a></dd>
-                </dl>
-                <dl>
-                    <dt><a href="javascript:;">合作</a></dt>
-                    <dd><a href="javascript:;">代理合作</a></dd>
-                </dl>
-                <dl>
-                    <dt><a href="javascript:;">公司信息</a></dt>
-                    <dd><a href="javascript:;">瑟维斯有限公司</a></dd>
-                    <dd><a href="javascript:;">惠创优产业联盟</a></dd>
-                    <dd><a href="javascript:;">中兴瑞华有限公司</a></dd>
-                </dl>
-                <dl>
-                    <dt><a href="javascript:;">联系我们</a></dt>
-                    <dd><a href="javascript:;">400-150-9896</a></dd>
-                    <dd><a href="javascript:;">hcylm008@dingtalk.com</a></dd>
-                    <dd><a href="javascript:;">武汉市硚口区南国大武汉H座18楼</a></dd>
-                </dl>
-
-            </div>
-            <div class='concat_icon clearfix'>
-                <div><img src="/static/home/images/bo.png" alt=""></div>
-                <div><img src="/static/home/images/wx.png" alt=""></div>
-                <div><img src="/static/home/images/tie.png" alt=""></div>
-            </div>
-            <div class="fotter-line"></div>
-            <div>© Copyright 2019 惠企动（湖北）科技有限公司 . All Rights Reserved</div>
-        </div>
-    </div>
-
-    <!-- 侧边栏bottom资讯 -->
-    <div class="bottom">
+    <div id="footer"></div>
+ 
+      <!-- 侧边栏consultation资讯 -->
+      <div class="consultation">
         <div>
-            <div class="bottom-title">回到首页</div>
-            <!-- <div class="bottom-item2 order">
-                <div>
-                    <p>专家服务电话</p>
-                    <p>181-8619-4461</p>
-                </div>
-                <div>
-                    <p>获取税筹方案</p>
-                    <p>400-150-9898</p>
-                </div>
-            </div> -->
+          <div class="consultation-title">惠家族产品</div>
+          <div class="consultation-item">
+            <ul>
+              <li><a href="/">惠优税</a></li>
+              <li><a href="<?php echo config('curl.hlg'); ?>">惠灵工</a></li>
+              <li><a href="<?php echo config('curl.hdx'); ?>">惠多薪</a></li>
+              <li><a href="<?php echo url('/home/searches/index'); ?>">惠找事</a></li>
+              <li><a href="<?php echo config('curl.hcy'); ?>">惠创业</a></li>
+              <li><a href="<?php echo config('curl.hqd'); ?>">惠企动</a></li>
+            </ul>
+          </div>
         </div>
         <div>
-            <div class="bottom-title2">联系我们</div>
-            <div class="bottom-item2">
-                <div>
-                    <p>专家服务电话</p>
-                    <p>181-8619-4461</p>
-                </div>
-                <div>
-                    <p>获取税筹方案</p>
-                    <p>400-150-9898</p>
-                </div>
+          <div class="consultation-title2">联系我们</div>
+          <div class="consultation-item2">
+            <div>
+              <p>立即预约咨询</p>
+              <p>181-8619-4461</p>
             </div>
+            <div>
+              <p>获取税筹方案</p>
+              <p>400-150-9898</p>
+            </div>
+          </div>
         </div>
-        <!-- 返回顶部 -->
+        <!-- 返回顶部  -->
         <div class='goTop' id="goTop">
-            <div><img src="/static/home/images/top@2x.png" alt=""></div>
-            <div>顶部</div>
+          <div><img src="/static/home/images/top@2x.png" alt=""></div>
+          <div>顶部</div>
         </div>
-    </div>
-
+      </div>
     <!-- 弹框 -->
     <div class="pop-up-box" id="popbox">
         <div class="form">
