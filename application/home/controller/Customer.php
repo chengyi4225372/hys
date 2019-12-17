@@ -12,8 +12,8 @@ class Customer extends BaseController{
      */
     public  function index(){
         if ($this->request->isGet()) {
-            $list = Customerservice::instance()->getlist('');
-            $this->assign('list',$list);
+            //$list = Customerservice::instance()->getlist('');
+            //$this->assign('list',$list);
             $this->assign('title','客户案例');
             return $this->fetch();
         }
