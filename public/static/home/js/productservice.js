@@ -42,3 +42,10 @@ window.onload = function(){
 
 } 
     
+$(function(){
+    $('.btn3').mousedown(function(){
+       $(this).addClass('active')
+    }).mouseup(function(){
+        $(this).removeClass('active')
+    })
+})

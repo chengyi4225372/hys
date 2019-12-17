@@ -119,3 +119,19 @@ function form_btn(){
 
     });
 }
+
+
+$(function(){
+    $('.form-btn').mouseover(function(){
+        $(this).addClass('activePop')
+    }).mouseleave(function(){
+        $(this).removeClass('activePop')
+
+    })
+    $('.form-btn').mousedown(function(){
+        $(this).addClass('activePop')
+    }).mouseup(function(){
+        $(this).removeClass('activePop')
+
+    })
+})

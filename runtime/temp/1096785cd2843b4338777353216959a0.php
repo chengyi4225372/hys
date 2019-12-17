@@ -1,12 +1,13 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:105:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\index\index.html";i:1575450056;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:105:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\index\index.html";i:1575860596;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="renderer" content="webkit" />
+  <meta name="force-rendering" content="webkit" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <script>/*@cc_on document.write('\x3Cscript id="_iealwn_js" src="https://support.dmeng.net/ie-alert-warning/latest.js">\x3C/script>'); @*/</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title><?php echo $title; ?></title>
   <link rel="stylesheet" href="/static/home/css/base.css">
   <link rel="stylesheet" href="/static/home/css/index.css">
@@ -82,7 +83,8 @@
               <p>·核定征收型·查账征收型·股权转让型</p>
               <p>根据企业实际，为园区入驻的企业分别提供具体三大科学纳税产品...</p>
             </div>
-            <div class="preferential-content-item-more"><a href="<?php echo url('/home/programme/productservice'); ?>">了解具体方案</a></div>
+            <div class="preferential-content-item-more"><a href="<?php echo url('/home/programme/productservice'); ?>">了解具体方案</a>
+            </div>
           </div>
           <div class="preferential-content-item">
             <div class="preferential-content-item-img">
@@ -93,7 +95,8 @@
               <p>·专业服务个人</p>
               <p>服务企业产生业务的个人<br />可服务对象：包工头、个人设计师、私人承包人等...</p>
             </div>
-            <div class="preferential-content-item-more"><a href="<?php echo url('/home/programme/productservice'); ?>">了解具体方案</a></div>
+            <div class="preferential-content-item-more"><a href="<?php echo url('/home/programme/productservice'); ?>">了解具体方案</a>
+            </div>
           </div>
         </div>
       </div>
@@ -235,9 +238,9 @@
         <div class="preferential-taxadvantage-content">
           <div class="preferential-taxadvantage-content-icon">
             <ul class="clearfix">
-              <li class="fousess"></li>
-              <li></li>
-              <li></li>
+              <li id="0" class="fousess"></li>
+              <li id="1"></li>
+              <li id="2"></li>
             </ul>
           </div>
           <div class="preferential-taxadvantage-content-title">我们得到了上海、安徽、江西、湖北等各地政府的大力支持，在全国各地有个多个园区</div>
@@ -246,6 +249,7 @@
               <?php if(is_array($chart) || $chart instanceof \think\Collection || $chart instanceof \think\Paginator): $i = 0; $__LIST__ = $chart;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
               <li><img src="<?php echo $vo['imgs']; ?>" alt=""></li>
               <?php endforeach; endif; else: echo "" ;endif; ?>
+
             </ul>
             <span class="fouse-left" title="1"><img src="/static/home/images/focus-left.png" alt=""></span>
             <span class="fouse-right" title="0"><img src="/static/home/images/focus-right.png" alt=""></span>
@@ -399,7 +403,7 @@
         </div>
       </div>
       <div>
-        <div class="bottom-title">联系我们</div>
+        <div class="bottom-title2">联系我们</div>
         <div class="bottom-item2">
           <div>
             <p>立即预约咨询</p>
@@ -426,13 +430,15 @@
           <span class="turnoff" onclick="hide_open()"></span>
         </div>
         <div class="form-content">
-          <div><span class="title">您的姓名</span>
-            <input type="text" id="contactName" placeholder="请输您的姓名"></div>
-          <div><span class="title">联系方式</span><input type="text" id="contactMobile" placeholder="请输入您的手机号"></div>
-          <div><span class="title">公司名称</span><input type="text" id="companyName" placeholder="若无公司请填写自雇"></div>
-          <input type='hidden' id='sources' value='惠优税'>
-          <input type='hidden' id='identifications' value='企业税筹'>
-          <div class="form-btn" onclick="form_btn()">获取方案</div>
+          <div class="form-content-box">
+            <div><span class="title">您的姓名</span>
+              <input type="text" id="contactName" placeholder="请输您的姓名"></div>
+            <div><span class="title">联系方式</span><input type="text" id="contactMobile" placeholder="请输入您的手机号"></div>
+            <div><span class="title">公司名称</span><input type="text" id="companyName" placeholder="若无公司请填写自雇"></div>
+            <input type='hidden' id='sources' value='惠优税'>
+            <input type='hidden' id='identifications' value='企业税筹'>
+            <div class="form-btn" onclick="form_btn()">获取方案</div>
+          </div>
         </div>
         <!-- 提交成果后弹窗 -->
         <div class="mask-box">

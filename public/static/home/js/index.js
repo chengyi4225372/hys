@@ -39,18 +39,27 @@ window.onload = function () {
 
     for (var i = 0; i < oneDivList.length; i++) {
         oneDivList[i].onmouseover = function () {
+            var activeShade = document.querySelectorAll('.content-active-shade')[0]
             for (var j = 0; j < oneDivList.length; j++) {
                 oneDivList[j].classList.remove('content-active')
+                // oneDivList[j].classList.remove('content-active-shade')
             }
+            activeShade.classList.remove('content-active-shade')
             this.classList.add('content-active');
+            this.classList.add('content-active-shade');
+
         }
     }
     for (var i = 0; i < twoDivList.length; i++) {
         twoDivList[i].onmouseover = function () {
+            var activeShade = document.querySelectorAll('.content-active-shade')[0]
             for (var j = 0; j < twoDivList.length; j++) {
                 twoDivList[j].classList.remove('content-active')
+                // twoDivList[j].classList.remove('content-active-shade')
             }
+            activeShade.classList.remove('content-active-shade')
             this.classList.add('content-active');
+            this.classList.add('content-active-shade');
         }
     }
 
@@ -95,13 +104,14 @@ window.onload = function () {
         }
     }
 
-    setInterval(function () {
-        if (isTransitioned) {
-            index++;
-            move();
-            fenyeq(index);
-        }
-    }, 4000)
+    // 自动播放
+    // setInterval(function () {
+    //     if (isTransitioned) {
+    //         index++;
+    //         move();
+    //         fenyeq(index);
+    //     }
+    // }, 4000)
 
     //监听动画结束
     ul.addEventListener("transitionend", function () {
@@ -127,7 +137,7 @@ window.onload = function () {
                 item[q].classList.remove('fousess');
             }
             e.target.classList.add('fousess');
-            console.log(j );
+            console.log(j);
             // index = j + 1;
             index = Number(e.target.id) + 1;
             console.log(index, 222);
@@ -210,3 +220,16 @@ window.onload = function () {
         i++;
     };
 };
+
+$(function () {
+    /* 标题上方横线和标题一样宽 */
+    $('.preferential-icon div').eq(0).width($('.hysTitle').width())
+    $('.tax-planning-solutions div').eq(0).width($('.caseTitle').width())
+    $('.preferential-taxadvantage div').eq(0).width($('.advanTitle').width())
+    $('.selected-park div').eq(0).width($('.partTitle').width())
+    $('.partner-title div').eq(0).width($('.coTitle').width())
+    $('.taxproblems-right').eq(0).width($('.taxIssues').width())
+
+
+
+})

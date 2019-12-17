@@ -1,24 +1,30 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1575858650;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1576577018;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="renderer" content="webkit" />
   <meta name="force-rendering" content="webkit" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <script>/*@cc_on document.write('\x3Cscript id="_iealwn_js" src="https://support.dmeng.net/ie-alert-warning/latest.js">\x3C/script>'); @*/</script>
+  <script>
+    /*@cc_on document.write('\x3Cscript id="_iealwn_js" src="https://support.dmeng.net/ie-alert-warning/latest.js">\x3C/script>'); @*/
+  </script>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title><?php echo $title; ?></title>
   <link rel="stylesheet" href="/static/home/css/base.css">
+  <link rel="stylesheet" href="/static/home/css/footer.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900">
+  <link rel="stylesheet" href="/static/assets/plugins/layui/css/layui.css">
   <link rel="stylesheet" href="/static/home/css/index.css">
-  <script>/*@cc_on document.write('\x3Cscript id="_iealwn_js" src="https://support.dmeng.net/ie-alert-warning/latest.js">\x3C/script>'); @*/</script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-  <script src="/static/assets/plugins/layui/layui.all.js"></script>
+  <script src="/static/assets/plugins/layui/layui.js"></script>
   <script src="/static/home/js/clamp.js"></script>
   <script src='/static/home/js/index.js'></script>
   <script src="/static/common/js/open.js"></script>
+  <script src='/static/home/js/footer.js'></script>
+
 </head>
 
 <body>
@@ -30,7 +36,7 @@
         <!-- logo图 -->
         <div class="logo clearfix">
           <img src="/static/home/images/logo.png" alt="">
-          <h1>惠优税</h1>
+         
         </div>
         <!-- nav部分 -->
         <div class="nav">
@@ -39,7 +45,7 @@
             <li><a href="<?php echo url('/home/programme/productservice'); ?>"> 产品服务</a></li>
             <li><a href="<?php echo url('/home/programme/index'); ?>">行业解决方案</a></li>
             <li><a href="<?php echo url('/home/customer/index'); ?>">客户案例</a></li>
-            <li><a href="<?php echo url('home/industry/index'); ?>">行业新闻资讯</a></li>
+            <li><a href="<?php echo url('home/industry/index'); ?>">新闻资讯</a></li>
             <li><a href="#">会员通道</a></li>
           </ul>
         </div>
@@ -64,16 +70,26 @@
 
     </div>
 
-    <!-- 头部 -->
-    <div class='header-box'></div>
+    <!-- 轮播图 -->
+    
+    <div class="layui-carousel" id="test1">
+      <div carousel-item>
+        <div><img style="width: 100%;" src="/static/home/images/homeBanner1.png" alt=""></div>
+        <div><img style="width: 100%;" src="/static/home/images/homeBanner2.png" alt=""></div>
+        <div><img style="width: 100%;" src="/static/home/images/homeBanner3.png" alt=""></div>
+        <div><img style="width: 100%;" src="/static/home/images/homeBanner4.png" alt=""></div>
+      </div>
+    </div>
+
+
 
     <!-- 惠优税产品 -->
     <div class="preferential-box">
       <div class="w preferential-container clearfix">
         <div class="preferential-icon">
           <div></div>
-          <div>惠优税产品</div>
-          <div>为您企税降成本 、薪税降税负 、 分红降扣率 、创业降个税。</div>
+          <div><span class="hysTitle">惠优税产品</span></div>
+          <div>利用全国各地税收优惠政策，打造低税率洼地。金牌财税顾问团队，量身定制税筹方案！</div>
           <div onclick="alert_open()">获取解决方案</div>
         </div>
         <div class="preferential-content clearfix">
@@ -83,8 +99,8 @@
             </div>
             <div class="preferential-content-item-content">
               <p>入驻型税筹产品</p>
-              <p>·核定征收型·查账征收型·股权转让型</p>
-              <p>根据企业实际，为园区入驻的企业分别提供具体三大科学纳税产品...</p>
+              <p>·核定征收型·查账征收型·股权个人代报税</p>
+              <p>为园区入驻的企业分别提供核定征收型、查账征收型、股权转让型三类科学纳税产品......</p>
             </div>
             <div class="preferential-content-item-more"><a href="<?php echo url('/home/programme/productservice'); ?>">了解具体方案</a>
             </div>
@@ -96,7 +112,7 @@
             <div class="preferential-content-item-content">
               <p>个人代报税产品</p>
               <p>·专业服务个人</p>
-              <p>服务企业产生业务的个人<br />可服务对象：包工头、个人设计师、私人承包人等...</p>
+              <p>适用与企业产生业务的个人(例：包工头、个人设计师、私人承包者等)，惠优税资深财税专家团......</p>
             </div>
             <div class="preferential-content-item-more"><a href="<?php echo url('/home/programme/productservice'); ?>">了解具体方案</a>
             </div>
@@ -110,7 +126,11 @@
       <div class="taxproblems-left"><img src="/static/home/images/southeast (3)@2x.png" alt=""></div>
       <div class="taxproblems-right">
         <div></div>
-        <div>您的企业是否存在以下税务问题
+        <div>
+          <span class="taxIssues">
+
+            您的企业是否存在以下税务问题
+          </span>
         </div>
         <div class="taxproblems-right-img">
           <img src="/static/home/images/shuiwuwenti.png" alt="" class="active-img">
@@ -137,10 +157,12 @@
     <div class="tax-planning-solutions-box">
       <div class="w tax-planning-solutions">
         <div></div>
-        <div>税务筹划解决方案</div>
+        <div><span class="caseTitle">税务筹划解决方案</span>
+        </div>
         <div class="tax-planning-solutions-contents">
           <div class="tax-planning-solutions-content-one clearfix">
-            <div class="content-active tax-planning-solutions-content-item">
+
+            <div class="content-active content-active-shade tax-planning-solutions-content-item">
               <div class="plan-text">筹划方案</div>
               <div class="tax-planning-solutions-content-img"></div>
               <div class="tax-planning-solutions-content-text">
@@ -154,6 +176,7 @@
                 <a href="javascript:;" onclick="alert_open()">获取分红个税筹划方案</a>
               </div>
             </div>
+            
             <div class="tax-planning-solutions-content-item">
               <div class="plan-text">筹划方案</div>
 
@@ -237,7 +260,9 @@
     <div class="preferential-taxadvantage-box">
       <div class="w preferential-taxadvantage">
         <div></div>
-        <div>惠优税优势</div>
+        <div>
+          <span class="advanTitle">惠优税优势</span>
+        </div>
         <div class="preferential-taxadvantage-content">
           <div class="preferential-taxadvantage-content-icon">
             <ul class="clearfix">
@@ -246,7 +271,7 @@
               <li id="2"></li>
             </ul>
           </div>
-          <div class="preferential-taxadvantage-content-title">我们得到了上海、安徽、江西、湖北等各地政府的大力支持，在全国各地有个多个园区</div>
+          <div class="preferential-taxadvantage-content-title">我们已得到了北京、上海、江苏、湖北、江西、河南、青海等各地政府的大力支持，在全国范围内设立多个园区</div>
           <div class="preferential-taxadvantage-content-imgs">
             <ul class="clearfix">
               <?php if(is_array($chart) || $chart instanceof \think\Collection || $chart instanceof \think\Paginator): $i = 0; $__LIST__ = $chart;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
@@ -266,12 +291,15 @@
     <div class="selected-park-box">
       <div class="w selected-park">
         <div></div>
-        <div>惠优税精选园区</div>
+        <div>
+          <span class="partTitle">惠优税精选园区</span>
+          
+        </div>
         <div class="map-box">
           <div class="map-box-left">
             <div><img src="/static/home/images/jinxuanyuanqu1.png" alt=""></div>
-            <div><img src="/static/home/images/jingxuanyuanqu2.png" alt=""></div>
-            <div><img src="/static/home/images/jingxuanyuanqu3.png" alt=""></div>
+            <div><img src="/static/home/images/jinxuanyuanqu2.png" alt=""></div>
+            <div><img src="/static/home/images/jinxuanyuanqu3.png" alt=""></div>
           </div>
           <div class="map-box-center">
             <div class="map-box-center-item active-map">
@@ -337,7 +365,7 @@
         <div class="partner-title">
           <div class="modified-line"></div>
           <div class="partner-title-box">
-            <span>合作伙伴</span>
+            <span class="coTitle">合作伙伴</span>
           </div>
         </div>
         <div class="partner-img">
@@ -346,70 +374,36 @@
       </div>
     </div>
 
+
     <!-- 底部 -->
-    <div class="fotter-box">
-      <div class="w fotter">
-        <div class='parter_catefories'>
-          <dl>
-            <dt><a href="javascript:;">服务产品</a></dt>
-            <dd><a href="javascript:;">服务型税筹</a></dd>
-            <dd><a href="javascript:;">门户型税筹</a></dd>
-            <dd><a href="javascript:;">人力资源</a></dd>
-          </dl>
-          <dl>
-            <dt><a href="javascript:;">招商政策</a></dt>
-            <dd><a href="javascript:;">招商政策网</a></dd>
-          </dl>
-          <dl>
-            <dt><a href="javascript:;">合作</a></dt>
-            <dd><a href="javascript:;">代理合作</a></dd>
-          </dl>
-          <dl>
-            <dt><a href="javascript:;">公司信息</a></dt>
-            <dd><a href="javascript:;">瑟维斯有限公司</a></dd>
-            <dd><a href="javascript:;">惠创优产业联盟</a></dd>
-            <dd><a href="javascript:;">中兴瑞华有限公司</a></dd>
-          </dl>
-          <dl>
-            <dt><a href="javascript:;">联系我们</a></dt>
-            <dd><a href="javascript:;">400-150-9896</a></dd>
-            <dd><a href="javascript:;">hcylm008@dingtalk.com</a></dd>
-            <dd><a href="javascript:;">武汉市硚口区南国大武汉H座18楼</a></dd>
-          </dl>
-
-        </div>
-        <div class='concat_icon clearfix'>
-          <div><img src="/static/home/images/bo.png" alt=""></div>
-          <div><img src="/static/home/images/wx.png" alt=""></div>
-          <div><img src="/static/home/images/tie.png" alt=""></div>
-        </div>
-        <div class="fotter-line"></div>
-        <div>© Copyright 2019 惠企动（湖北）科技有限公司 . All Rights Reserved</div>
-      </div>
-    </div>
+    <div id="footer"></div>
 
 
 
-    <!-- 侧边栏bottom资讯 -->
-    <div class="bottom">
+    <!-- 侧边栏consultation资讯 -->
+    <div class="consultation">
       <div>
-        <div class="bottom-title">惠家族产品</div>
-        <div class="bottom-item">
+        <div class="consultation-title">惠家族产品</div>
+        <div class="consultation-item">
           <ul>
-            <li><a href="/">惠优税</a></li>
+            <!-- <li><a href="/">惠优税</a></li>
             <li><a href="<?php echo config('curl.hlg'); ?>">惠灵工</a></li>
             <li><a href="<?php echo config('curl.hdx'); ?>">惠多薪</a></li>
             <li><a href="<?php echo url('/home/searches/index'); ?>">惠找事</a></li>
             <li><a href="<?php echo config('curl.hcy'); ?>">惠创业</a></li>
-            <li><a href="<?php echo config('curl.hqd'); ?>">惠企动</a></li>
+            <li><a href="<?php echo config('curl.hqd'); ?>">惠企动</a></li> -->
+            <li><span>惠企云</span><span></span></li>
+            <li><span>惠优税</span><span>惠灵工</span></li>
+            <li><span>惠多薪</span><span>惠找事</span></li>
+            <li><span>惠创业</span><span>惠启动</span></li>
           </ul>
         </div>
       </div>
       <div>
-        <div class="bottom-title2">联系我们</div>
-        <div class="bottom-item2">
+        <div class="consultation-title2">联系我们</div>
+        <div class="consultation-item2">
           <div>
-            <p>立即预约咨询</p>
+            <p>专家服务电话</p>
             <p>181-8619-4461</p>
           </div>
           <div>
@@ -418,7 +412,7 @@
           </div>
         </div>
       </div>
-      <!-- 返回顶部 -->
+      <!-- 返回顶部  -->
       <div class='goTop' id="goTop">
         <div><img src="/static/home/images/top@2x.png" alt=""></div>
         <div>顶部</div>
@@ -428,36 +422,34 @@
     <!-- 弹框 -->
     <div class="pop-up-box" id="popbox">
       <div class="form">
-        <div class="form-titile">
-          <p>方案咨询</p>
-          <span class="turnoff" onclick="hide_open()"></span>
-        </div>
-        <div class="form-content">
-          <div class="form-content-box">
-            <div><span class="title">您的姓名</span>
-              <input type="text" id="contactName" placeholder="请输您的姓名"></div>
-            <div><span class="title">联系方式</span><input type="text" id="contactMobile" placeholder="请输入您的手机号"></div>
-            <div><span class="title">公司名称</span><input type="text" id="companyName" placeholder="若无公司请填写自雇"></div>
-            <input type='hidden' id='sources' value='惠优税'>
-            <input type='hidden' id='identifications' value='企业税筹'>
-            <div class="form-btn" onclick="form_btn()">获取方案</div>
+          <div class="form-titile">
+              <p>方案咨询</p>
+              <span class="turnoff" onclick="hide_open()"></span>
           </div>
-        </div>
-        <!-- 提交成果后弹窗 -->
-        <div class="mask-box">
-          <span></span>
-          <p class="mask-box-title">提交成功</p>
-          <p class="mask-box-content">我们会在一个工作日内联系您</p>
-        </div>
+          <div class="form-content">
+              <div><span class="title">您的姓名</span><input type="text" id="contactName" placeholder="请输您的姓名"></div>
+              <div><span class="title">联系方式</span><input type="text" id="contactMobile" placeholder="请输入您的手机号"></div>
+              <div><span class="title">公司名称</span><input type="text" id="companyName" placeholder="若无公司请填写自雇"></div>
+              <input type='hidden' id='sources' value='惠优税'>
+              <input type='hidden' id='identifications' value='企业税筹'>
+              <div class="form-btn" onclick="form_btn()">获取方案</div>
+          </div>
+          <!-- 提交成果后弹窗 -->
+          <div class="mask-box">
+              <span></span>
+              <p class="mask-box-title">提交成功</p>
+              <p class="mask-box-content">我们会在一个工作日内联系您</p>
+          </div>
       </div>
 
-    </div>
+  </div>
 
 
   </div>
 
 </body>
 <script>
+  /* 头部导航切换 */
   $(function () {
     $('.nav ul li').on('click', function () {
       $(this).addClass('nav-active chosenPage').siblings().removeClass('nav-active chosenPage')
@@ -470,6 +462,23 @@
       if ($('.chosenPage').length < 1) $('.nav ul li').eq(0).addClass('chosenPage')
       $('.chosenPage').addClass('nav-active')
     })
+
+/* 轮播图 */
+layui.use('carousel', function(){
+        var carousel = layui.carousel;
+        //建造实例
+        carousel.render({
+          elem: '#test1',
+          width: '100%', //设置容器宽度
+          arrow: 'hover', //始终显示箭头
+          height:'46rem',
+          trigger:'hover',
+          interval:2000,
+          autoplay:false
+          //,anim: 'updown' //切换动画方式
+        });
+      });
+
   })
 </script>
 

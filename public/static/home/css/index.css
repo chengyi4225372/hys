@@ -1,100 +1,106 @@
-/* 版心 */
+@charset "UTF-8";
 
+/* 版心 */
 .w {
-    width: 75rem;
-    margin: 0 auto;
-    padding: 0 1.875rem;
-    box-sizing: border-box;
+  width: 75rem;
+  margin: 0 auto;
+  /* padding: 0 1.875rem; */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-
 /* 浮动 */
-
 .fl {
-    float: left;
+  float: left;
 }
 
 .fr {
-    float: right;
+  float: right;
 }
 
-
 /* 清除浮动 */
-
 .clearfix:after {
-    content: "";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
 }
 
 .clearfix {
-    *zoom: 1;
+  *zoom: 1;
 }
 
 /* 分成120等分 */
 html {
-    font-size: 16px;
+  font-size: 16px;
 }
+
 @media screen and (min-width: 800px) {
-    html {
-        font-size: 6.66666666666667px;
-    }
+  html {
+    font-size: 6.66666666666667px;
+  }
 }
+
 @media screen and (min-width: 1024px) {
-    html {
-        font-size: 8.53333333333333px;
-    }
+  html {
+    font-size: 8.53333333333333px;
+  }
 }
+
 @media screen and (min-width: 1152px) {
-    html {
-        font-size: 9.58333333333333px;
-    }
+  html {
+    font-size: 9.58333333333333px;
+  }
 }
+
 @media screen and (min-width: 1280px) {
-    html {
-        font-size: 10.6666666666667px;
-    }
+  html {
+    font-size: 10.6666666666667px;
+  }
 }
 
 @media screen and (min-width: 1366px) {
-    html {
-        font-size: 11.38333333333333px;
-    }
+  html {
+    font-size: 11.38333333333333px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
-    html {
-        font-size: 12px;
-    }
+  html {
+    font-size: 12px;
+  }
 }
 
 @media screen and (min-width: 1600px) {
-    html {
-        font-size: 13.3333333333px;
-    }
+  html {
+    font-size: 13.3333333333px;
+  }
 }
 
 @media screen and (min-width: 1680px) {
-    html {
-        font-size: 14px;
-    }
+  html {
+    font-size: 14px;
+  }
 }
 
 @media screen and (min-width: 1920px) {
-    html {
-        font-size: 16px;
-    }
+  html {
+    font-size: 16px;
+  }
 }
 
 body {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Noto Sans SC" !important;
 }
 
 p {
-    margin: 0
+  margin: 0;
 }
 
 ul,
@@ -102,94 +108,95 @@ li,
 dl,
 dt,
 dd {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* nav部分 */
-
 .container {
-    min-width: 75rem;
+  min-width: 75rem;
 }
 
 .nav-box {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 5rem;
-    background: #FFFFFF;
-    z-index: 999;
-    /* background-color: pink; */
-    box-shadow: 0px 1px 7px 0px rgba(199, 199, 199, 0.66);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  background: #ffffff;
+  z-index: 999;
+  /* background-color: pink; */
+  -webkit-box-shadow: 0px 1px 7px 0px rgba(199, 199, 199, 0.66);
+  box-shadow: 0px 1px 7px 0px rgba(199, 199, 199, 0.66);
 }
 
 .nav-container {
-    padding-top: .875rem;
-    /* height: 4.125rem; */
-    /* background-color: skyblue; */
-    height: 100%;
-
+  padding-top: 0.875rem;
+  /* height: 4.125rem; */
+  /* background-color: skyblue; */
+  height: 100%;
 }
 
 .nav-container .logo {
-    float: left;
-    margin-left: 0.95rem;
+  float: left;
+  margin-left: 0.95rem;
+  width: 9.875rem;
+  height: 3.25rem;
 }
 
 .nav-container .logo img {
-    float: left;
-    width: 3.375rem;
-    height: 3.25rem;
-    /* vertical-align: middle; */
+  width: 100%;
+  height: 100%;
+
 }
 
-.nav-container h1 {
-    float: left;
-    font-size: 1.9375rem;
-    font-family: Source Han Sans CN;
-    font-weight: 500;
-    letter-spacing: .1875rem;
-    color: rgba(0, 0, 0, 1);
-    line-height: 2.125rem;
-    margin: .6875rem 0 .6875rem .75rem;
-}
+/* .nav-container h1 {
+  float: left;
+  font-size: 1.9375rem;
+  font-family: "Noto Sans SC";
+  font-weight: 500;
+  letter-spacing: 0.1875rem;
+  color: black;
+  line-height: 2.125rem;
+  margin: 0.6875rem 0 0.6875rem 0.75rem;
+} */
 
 .nav-container .nav {
-    float: left;
-    margin-left: 10.375rem;
-    height: 100%;
+  float: left;
+  margin-left: 10.375rem;
+  height: 100%;
 }
 
 .nav-container .nav ul {
-    list-style: none;
-    margin: 1.55rem 0 0 0;
-    padding: 0;
+  list-style: none;
+  margin: 1.55rem 0 0 0;
+  padding: 0;
 }
 
 .nav-container .nav ul li {
-    position: relative;
-    float: left;
-    margin-right: 2.5rem;
+  position: relative;
+  float: left;
+  margin-right: 2.5rem;
 }
 
 .nav-container .nav ul li:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .nav-container .nav ul li a {
-    display: block;
-    width: 100%;
-    /* height: 100%; */
-    font-size: 1rem;
-    font-family: "SourceHanSansCN-Bold", "Source Han Sans CN", "Microsoft YaHei", "微软雅黑";
-    font-weight: 700;
-    color: #333333;
+  display: block;
+  width: 100%;
+  /* height: 100%; */
+  font-size: 1rem;
+  font-family: "Noto Sans SC", "SourceHanSansCN-Bold", "Source Han Sans CN",
+    "Microsoft YaHei", "微软雅黑";
+  font-weight: 700;
+  color: #333333;
 }
 
 /* .nav-container .nav ul li:hover::after {
@@ -202,139 +209,139 @@ a {
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     content: '';
-    width: 120%;
+    width: 110%;
     height: .25rem;
     border-radius: .125rem;
     background-color: #E8341E;
 } */
-
 .nav-active {
-    position: relative;
+  position: relative;
 }
 
 .nav-active::after {
-    position: absolute;
-    bottom: -0.5125rem;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    content: '';
-    width: 120%;
-    height: .25rem;
-    border-radius: .125rem;
-    background-color: #E8341E;
+  position: absolute;
+  bottom: -0.5125rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  content: "";
+  width: 110%;
+  height: 0.25rem;
+  -webkit-border-radius: 0.125rem;
+  border-radius: 0.125rem;
+  background-color: #f85236;
 }
 
 /* 登陆注册 */
-
 .nav-container .loging {
-    float: right;
-    margin: 1.25rem 0 0 0;
+  float: right;
+  margin: 1.25rem 0 0 0;
 }
 
 .nav-container .loging div {
-    float: left;
-    width: 3.5rem;
-    height: 1.625rem;
-    text-align: center;
-    line-height: 1.625rem;
-    background: url('../images/login-bg.png') no-repeat;
-    background-size: 100% 100%;
+  float: left;
+  width: 3.5rem;
+  height: 1.625rem;
+  text-align: center;
+  line-height: 1.625rem;
+  background: url("../images/login-bg.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
 }
 
 .nav-container .loging div a {
-    display: block;
-    width: 100%;
-    height: 1.625rem;
-    font-size: 1rem;
-    font-family: 'Source Han Sans CN', "Microsoft YaHei", "微软雅黑";
-    font-weight: 400;
-    color: #E8341E;
-    line-height: 1.625rem;
+  display: block;
+  width: 100%;
+  height: 1.625rem;
+  font-size: 1rem;
+  font-family: "Noto Sans SC", "Microsoft YaHei", "微软雅黑";
+  font-weight: 400;
+  color: #e8341e;
+  line-height: 1.625rem;
 }
 
-
 .nav-container .loging div:nth-child(2) {
-    margin-left: 1.25rem;
-    margin-right: 2.5625rem
+  margin-left: 1.25rem;
+  margin-right: 2.5625rem;
 }
 
 /* 头像部分 */
 .nav-container .user-icon-box {
-    position: relative;
-    float: right;
-    text-align: center;
-    height: 3rem;
-    margin-top: 1.05rem;
-    padding-left: 1.25rem;
-    /* margin-right: 2.5625rem; */
-    cursor: pointer;
-    /* background-color: pink; */
+  position: relative;
+  float: right;
+  text-align: center;
+  height: 3rem;
+  margin-top: 1.05rem;
+  padding-left: 1.25rem;
+  /* margin-right: 2.5625rem; */
+  cursor: pointer;
+  /* background-color: pink; */
 }
 
 .nav-container .user-icon-box .user-icon {
-    width: 2rem;
-    height: 2rem;
-    vertical-align: bottom;
-    border: 1px solid #ccc;
-    border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  vertical-align: bottom;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
 }
 
 .nav-container .user-icon-box .phone {
-    height: 1.4375rem;
-    display: inline-block;
+  height: 1.4375rem;
+  display: inline-block;
 }
 
 /* 登陆退出 */
 .login-out {
-    display: none;
-    position: absolute;
-    width: 5.625rem;
-    bottom: -38px;
-    left: -0.425rem;
-    text-align: center;
-    box-sizing: border-box;
-    border-radius: .125rem;
+  display: none;
+  position: absolute;
+  width: 5.625rem;
+  bottom: -38px;
+  left: -0.425rem;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 0.125rem;
+  border-radius: 0.125rem;
 }
 
 .login-out::after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: -1.25rem;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    border-top: .625rem solid transparent;
-    border-right: .625rem solid transparent;
-    border-bottom: .625rem solid #333;
-    border-left: .625rem solid transparent;
+  content: "";
+  display: block;
+  position: absolute;
+  top: -1.25rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-top: 0.625rem solid transparent;
+  border-right: 0.625rem solid transparent;
+  border-bottom: 0.625rem solid #333;
+  border-left: 0.625rem solid transparent;
 }
 
-.login-out ul {}
-
 .login-out ul li {
-    height: 2.5rem;
-    line-height: 2.5rem;
-    background-color: #333;
-
+  height: 2.5rem;
+  line-height: 2.5rem;
+  background-color: #333;
 }
 
 .login-out ul li a {
-    font-size: .875rem;
-    font-family: "PingFang SC", "Microsoft YaHei", "微软雅黑";
-    font-weight: 500;
-    color: #fff;
+  font-size: 0.875rem;
+  font-family: "PingFang SC", "Microsoft YaHei", "微软雅黑";
+  font-weight: 500;
+  color: #fff;
 }
 
 .login-out ul li:hover {
-    background-color: #FE0B0C;
+  background-color: #fe0b0c;
 }
 
 /* .login-out ul li:hover .login-out::after {
@@ -353,755 +360,808 @@ a {
     border-bottom: .625rem solid #FEA911!important;
     border-left: .625rem solid transparent;
 } */
-
 .nav-container .user-icon-box:hover .login-out {
-    display: block;
+  display: block;
 }
 
-
 /* 头部部分 */
-.header-box {
-    height: 45.9375rem;
-    background: url('../images/header-bg.png') no-repeat;
-    background-size: 100% 100%;
-    background-position: center center;
-    margin-top: 5rem;
+/* 轮播图 */
+#test1 {
+  padding-top: 5rem;
+}
+
+.layui-carousel-ind {
+  position: static;
+}
+
+.layui-carousel-ind ul {
+  position: absolute;
+  right: 22.8125rem;
+  top: 21.0625rem;
+  background: none;
+}
+
+.layui-carousel-ind li {
+  width: 1rem;
+  height: 1rem;
+  display: block;
+  margin-bottom: 19px;
+}
+
+.layui-carousel-ind li:last-child {
+  margin-bottom: 0;
+}
+
+.layui-carousel-ind .layui-this {
+  width: 0.875rem;
+  height: 3.3125rem;
+  -webkit-border-radius: 0.4375rem;
+  border-radius: 0.4375rem;
+  background: rgba(255, 255, 255, 0.5) !important;
 }
 
 /* 惠优税产品 */
-
-
 .preferential-box .preferential-container {
-    padding-top: 1.875rem;
-    box-sizing: border-box;
+  padding-top: 1.875rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .preferential-box .preferential-container .preferential-icon {
-    float: left;
-    width: 28.425rem;
-    text-align: left;
+  float: left;
+  width: 28.425rem;
+  text-align: left;
+}
+
+.preferential-box .preferential-container .preferential-icon .hysTitle {
+  font-size: 1.875rem;
 }
 
 .preferential-box .preferential-container .preferential-icon>div:nth-child(1) {
-    display: inline-block;
-    width: 5rem;
-    height: .25rem;
-    background: rgba(238, 68, 46, 1);
-    border-radius: 2px;
-    margin: 0 0 .5625rem 0;
+  display: inline-block;
+  height: 0.25rem;
+  background: #ee442e;
+  -webkit-border-radius: 0.125rem;
+  border-radius: 0.125rem;
+  margin-bottom: 0.625rem;
 }
 
 .preferential-box .preferential-container .preferential-icon>div:nth-child(2) {
-    font-size: 2.25rem;
-    font-family: "Source Han Sans CN", "Microsoft YaHei", "微软雅黑";
-    font-weight: 500;
-    color: rgba(51, 51, 51, 1);
-    margin-bottom: 1rem;
+  font-family: "Noto Sans SC", "Microsoft YaHei", "微软雅黑";
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 1rem;
 }
 
 .preferential-box .preferential-container .preferential-icon>div:nth-child(3) {
-    font-size: 1.5rem;
-    font-family: "Source Han Sans CN", "Microsoft YaHei", "微软雅黑";
-    font-weight: 400;
-    color: rgba(51, 51, 51, 1);
-    line-height: 2.5rem;
-    margin-bottom: 1rem;
+  font-size: 1.125rem;
+  font-family: "Noto Sans SC", "Microsoft YaHei", "微软雅黑";
+  font-weight: 400;
+  color: #333333;
+  line-height: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .preferential-box .preferential-container .preferential-icon>div:nth-child(4) {
-    width: 12.5rem;
-    height: 3.125rem;
-    background: url('../images/huoqufangan.png') no-repeat;
-    background-size: 100% 100%;
-    font-size: 1.5rem;
-    font-family: "Source Han Sans CN", "Microsoft YaHei", "微软雅黑";
-    font-weight: 400;
-    color: rgba(255, 255, 255, 1);
-    line-height: 3.125rem;
-    text-align: center;
-    cursor: pointer;
+  width: 12.5rem;
+  height: 3.125rem;
+  background: url("../images/huoqufangan.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  font-size: 1.5rem;
+  font-family: "Noto Sans SC", "Microsoft YaHei", "微软雅黑";
+  font-weight: 400;
+  color: white;
+  line-height: 3.125rem;
+  text-align: center;
+  cursor: pointer;
 }
 
 .preferential-box .preferential-container .preferential-content {
-    float: right;
-    margin-top: -16.5625rem;
-
+  float: right;
+  margin-top: -16.5625rem;
 }
 
 .preferential-box .preferential-container .preferential-content>div {
-    float: right;
-    width: 18.75rem;
-    height: 30rem;
-    background: rgba(255, 255, 255, 1);
-    box-shadow: 0px 8px 10px 0px rgba(194, 193, 193, 1);
+  float: right;
+  width: 18.75rem;
+  height: 30rem;
+  background: white;
+  -webkit-box-shadow: 0px 8px 10px 0px #c2c1c1;
+  box-shadow: 0px 8px 10px 0px #c2c1c1;
 }
 
 .preferential-box .preferential-container .preferential-content>div:nth-child(1) {
-    margin-left: 1.875rem;
+  margin-left: 1.875rem;
 }
 
 .preferential-box .preferential-content .preferential-content-item {
-    position: relative;
-    padding: .9375rem .9375rem 0 .9375rem;
-    box-sizing: border-box;
+  position: relative;
+  padding: 0.9375rem 0.9375rem 0 0.9375rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .preferential-box .preferential-content .preferential-content-item-img {
-    margin-bottom: 1.8rem
+  margin-bottom: 1.8rem;
 }
 
 .preferential-box .preferential-content .preferential-content-item-img img {
-    width: 100%;
-    display: block;
+  width: 100%;
+  display: block;
 }
 
 .preferential-box .preferential-content-item .preferential-content-item-content {
-    padding: 0 .375rem;
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .preferential-box .preferential-content-item .preferential-content-item-content>p:nth-child(1) {
-    font-size: 1.5rem;
-    font-family: Source Han Sans CN;
-    font-weight: 500;
-    color: rgba(255, 82, 58, 1);
-    margin-bottom: .9375rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  font-size: 1.5rem;
+  font-family: "Noto Sans SC";
+  font-weight: 500;
+  color: #ff523a;
+  margin-bottom: 0.9375rem;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
 }
 
 .preferential-box .preferential-content-item .preferential-content-item-content>p:nth-child(2) {
-    font-size: 1rem;
-    font-family: Source Han Sans CN;
-    font-weight: 500;
-    color: rgba(252, 85, 58, 1);
-    margin-bottom: 1rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  font-size: 1rem;
+  font-family: "Noto Sans SC";
+  font-weight: 500;
+  color: #fc553a;
+  margin-bottom: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  letter-spacing: -0.09375rem;
 }
 
 .preferential-box .preferential-content-item .preferential-content-item-content>p:nth-child(3) {
-    font-size: 1.125rem;
-    font-family: Source Han Sans CN;
-    font-weight: 400;
-    color: rgba(102, 102, 102, 1);
-    line-height: 2.0625rem;
+  font-size: 1.125rem;
+  font-family: "Noto Sans SC";
+  font-weight: 400;
+  color: #666666;
+  line-height: 2.0625rem;
 }
 
 .preferential-box .preferential-content-item .preferential-content-item-more {
-    position: absolute;
-    bottom: 1.875rem;
-    left: 1.25rem;
-
+  position: absolute;
+  bottom: 1.875rem;
+  left: 1.25rem;
 }
 
 .preferential-box .preferential-content-item .preferential-content-item-more a {
-    font-size: 1rem;
-    font-family: Source Han Sans CN;
-    font-weight: 700;
-    color: rgba(0, 14, 41, 1);
-    cursor: pointer;
+  font-size: 1rem;
+  font-family: "Noto Sans SC";
+  font-weight: 700;
+  color: #000e29;
+  cursor: pointer;
 }
-
 
 /* 税务问题 */
 .taxproblems-box {
-    margin-top: 4.5rem;
-    background-color: #F6F6F6;
+  margin-top: 4.5rem;
+  background-color: #f6f6f6;
 }
 
 .taxproblems-box .taxproblems-left {
-    width: 56.25rem;
-    height: 33.75rem;
-    float: left;
-    margin-right: 4.5625rem;
+  width: 56.25rem;
+  height: 33.75rem;
+  float: left;
+  margin-right: 4.5625rem;
 }
 
 .taxproblems-box .taxproblems-left img {
-    width: 100%;
+  width: 100%;
 }
 
 .taxproblems-box .taxproblems-right {
-    float: left;
-    padding-top: .625rem;
+  float: left;
+  padding-top: 0.625rem;
 }
 
 .taxproblems-box .taxproblems-right>div:nth-child(1) {
-    width: 18.75rem;
-    height: 4px;
-    background: rgba(238, 68, 46, 1);
-    border-radius: 2px;
-    margin-bottom: .8125rem;
+  height: 4px;
+  background: #ee442e;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  margin-bottom: 0.8125rem;
 }
 
 .taxproblems-box .taxproblems-right>div:nth-child(2) {
-    font-size: 2.25rem;
-    font-family: Source Han Sans CN;
-    font-weight: 500;
-    color: rgba(51, 51, 51, 1);
-    margin-bottom: 2rem;
+  font-size: 1.875rem;
+  font-family: "Noto Sans SC";
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 2rem;
 }
 
 .taxproblems-box .taxproblems-right>div:nth-child(3) {
-    width: 31.25rem;
-    height: 21.25rem;
-    overflow: hidden;
-    margin-bottom: 2.3125rem;
+  width: 31.25rem;
+  height: 21.25rem;
+  overflow: hidden;
+  margin-bottom: 2.3125rem;
 }
 
 .taxproblems-box .taxproblems-right>div:nth-child(3) img {
-    width: 100%;
-    display: none;
+  width: 100%;
+  display: none;
 }
 
 .taxproblems-box .taxproblems-right>div:nth-child(3) img.active-img {
-    display: block !important;
+  display: block !important;
 }
 
 .taxproblems-box .taxproblems-right>div:nth-child(4) ul {
-    margin-left: 11.125rem;
+  margin-left: 11.125rem;
 }
 
 .taxproblems-box .taxproblems-right>div:nth-child(4) ul li {
-    float: left;
-    width: 1.625rem;
-    height: 1.625rem;
-    line-height: 1.625rem;
-    text-align: center;
+  float: left;
+  width: 1.625rem;
+  height: 1.625rem;
+  line-height: 1.625rem;
+  text-align: center;
 }
 
 .taxproblems-box .taxproblems-right>div:nth-child(4) ul li img {
-    width: 100%;
-    display: none;
+  width: 100%;
+  display: none;
 }
 
 .taxproblems-box .taxproblems-right>div:nth-child(4) img.active-img {
-    display: block !important;
+  display: block !important;
 }
 
 .taxproblems-box .taxproblems-right>div:nth-child(4) ul li:first-child,
 .taxproblems-box .taxproblems-right>div:nth-child(4) ul li:last-child {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .taxproblems-box .taxproblems-right>div:nth-child(4) ul li .active-page {
-    color: #FA5339;
+  color: #fa5339;
 }
 
 /* 税务筹划解决方案 */
 .tax-planning-solutions-box {
-    margin-top: 4.375rem;
+  margin-top: 4.375rem;
 }
 
 .tax-planning-solutions>div:nth-child(1) {
-    width: 180px;
-    height: 4px;
-    background: rgba(238, 68, 46, 1);
-    border-radius: 2px;
-    margin-bottom: .6875rem;
+  width: 180px;
+  height: 4px;
+  background: #ee442e;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  margin-bottom: 0.6875rem;
 }
 
 .tax-planning-solutions>div:nth-child(2) {
-    font-size: 2.25rem;
-    font-family: Source Han Sans CN;
-    font-weight: 500;
-    color: rgba(51, 51, 51, 1);
-    margin-bottom: 3.8125rem;
+  font-size: 1.875rem;
+  font-family: "Noto Sans SC";
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 3.8125rem;
 }
 
 .tax-planning-solutions-content-one,
 .tax-planning-solutions-content-two {
-    display: flex;
-    justify-content: space-between;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .tax-planning-solutions-content-one>div,
 .tax-planning-solutions-content-two>div {
-    position: relative;
-    /* float: left; */
-    width: 18.75rem;
-    height: 22.5rem;
-    margin-right: 1.25rem;
-    transition: all 0.5s;
-    text-align: center;
-    height: 22.5rem;
-    cursor: pointer;
-    background: rgba(255, 255, 255, 1);
-    box-shadow: 0px 3px 7px 0px rgba(210, 210, 210, 1);
+  position: relative;
+  /* float: left; */
+  width: 18.75rem;
+  height: 22.5rem;
+  margin-right: 1.25rem;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  text-align: center;
+  height: 22.5rem;
+  cursor: pointer;
+  background: white;
+  -webkit-box-shadow: 0px 3px 7px 0px #d2d2d2;
+  box-shadow: 0px 3px 7px 0px #d2d2d2;
 }
-
 
 .tax-planning-solutions-content-one>div:last-child,
 .tax-planning-solutions-content-two>div:last-child {
-    /* float: right; */
+  /* float: right; */
 }
-
 
 .tax-planning-solutions-content-one>div {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .tax-planning-solutions-content-one>div:last-child,
 .tax-planning-solutions-content-two>div:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .tax-planning-solutions-contents .content-active {
-    width: 31.25rem;
-    height: 22.5rem;
+  width: 31.25rem;
+  height: 22.5rem;
 }
 
 .tax-planning-solutions-content-one>div .plan-text,
 .tax-planning-solutions-content-two>div .plan-text {
-    position: absolute;
-    right: .625rem;
-    top: .625rem;
-    font-size: 1.125rem;
-    font-family: Source Han Sans CN;
-    font-weight: 400;
-    color: rgba(20, 28, 44, 1);
+  position: absolute;
+  right: 0.625rem;
+  top: 0.625rem;
+  font-size: 1.125rem;
+  font-family: "Noto Sans SC";
+  font-weight: 400;
+  color: #141c2c;
 }
 
 .tax-planning-solutions-content-one>div .tax-planning-solutions-content-img,
 .tax-planning-solutions-content-two>div .tax-planning-solutions-content-img {
-    height: 16.25rem;
-    width: 100%;
+  height: 16.25rem;
+  width: 100%;
 }
 
 .tax-planning-solutions-content-one>div:nth-child(1) .tax-planning-solutions-content-img {
-    background: url('../images/touzi.png') no-repeat;
-    background-size: 100% 100%;
-}
-
-.tax-planning-solutions-content-one>div:nth-child(1).content-active .tax-planning-solutions-content-img {
-    background: url('../images/touzi2.png') no-repeat;
-    background-size: 100% 100%;
+  background: url("../images/chjjfa-touzi.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
 }
 
 .tax-planning-solutions-content-one>div:nth-child(2) .tax-planning-solutions-content-img {
-    background: url('../images/gongzishouru.png') no-repeat;
-    background-size: 100% 100%;
-}
-
-.tax-planning-solutions-content-one>div:nth-child(2).content-active .tax-planning-solutions-content-img {
-    background: url('../images/gongzishouru2.png') no-repeat;
-    background-size: 100% 100%;
+  background: url("../images/chjjfa-gongzi.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
 }
 
 .tax-planning-solutions-content-one>div:nth-child(3) .tax-planning-solutions-content-img {
-    background: url('../images/qiyelirun.png') no-repeat;
-    background-size: 100% 100%;
+  background: url("../images/chjjfa-qiye.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+
+.tax-planning-solutions-content-one>div:nth-child(1).content-active .tax-planning-solutions-content-img {
+  background: url("../images/chjjfa-touzi1.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+
+.tax-planning-solutions-content-one>div:nth-child(2).content-active .tax-planning-solutions-content-img {
+  background: url("../images/chjjfa-gongzi1.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
 }
 
 .tax-planning-solutions-content-one>div:nth-child(3).content-active .tax-planning-solutions-content-img {
-    background: url('../images/qiyelirun2.png') no-repeat;
-    background-size: 100% 100%;
+  background: url("../images/chjjfa-qiye1.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
 }
+
 
 .tax-planning-solutions-content-two>div:nth-child(1) .tax-planning-solutions-content-img {
-    background: url('../images/naowu.png') no-repeat;
-    background-size: 100% 100%;
-}
-
-.tax-planning-solutions-content-two>div:nth-child(1).content-active .tax-planning-solutions-content-img {
-    background: url('../images/naowu2.png') no-repeat;
-    background-size: 100% 100%;
+  background: url("../images/chjjfa-naowu.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
 }
 
 .tax-planning-solutions-content-two>div:nth-child(2) .tax-planning-solutions-content-img {
-    background: url('../images/maoyicaigou.png') no-repeat;
-    background-size: 100% 100%;
-}
-
-.tax-planning-solutions-content-two>div:nth-child(2).content-active .tax-planning-solutions-content-img {
-    background: url('../images/maoyicaigou2.png') no-repeat;
-    background-size: 100% 100%;
+  background: url("../images/chjjfa-maoyi.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
 }
 
 .tax-planning-solutions-content-two>div:nth-child(3) .tax-planning-solutions-content-img {
-    background: url('../images/shuangruan1.png') no-repeat;
-    background-size: 100% 100%;
+  background: url("../images/chjjfa-shuangruan.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+
+.tax-planning-solutions-content-two>div:nth-child(1).content-active .tax-planning-solutions-content-img {
+  background: url("../images/chjjfa-naowu1.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+
+.tax-planning-solutions-content-two>div:nth-child(2).content-active .tax-planning-solutions-content-img {
+  background: url("../images/chjjfa-maoyi1.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
 }
 
 .tax-planning-solutions-content-two>div:nth-child(3).content-active .tax-planning-solutions-content-img {
-    height: 16.25rem;
-    background: url('../images/shuangruan1-2.png') no-repeat;
-    background-size: 100% 100%;
+  /* height: 16.25rem; */
+  background: url("../images/chjjfa-shuangruan1.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
 }
 
 
 .tax-planning-solutions-content-one>div .tax-planning-solutions-content-img img,
 .tax-planning-solutions-content-two>div .tax-planning-solutions-content-img img {
-    width: 100%;
+  width: 100%;
 }
 
 .tax-planning-solutions-content-one>div .tax-planning-solutions-content-text,
 .tax-planning-solutions-content-two>div .tax-planning-solutions-content-text {
-    padding: 1.625rem 1.875rem 0 1.875rem;
-    text-align: left;
+  padding: 1.5rem 1.875rem 0 1.875rem;
+  text-align: left;
 }
 
 .tax-planning-solutions-content-one>div .tax-planning-solutions-content-text p:nth-child(1),
 .tax-planning-solutions-content-two>div .tax-planning-solutions-content-text p:nth-child(1) {
-    font-size: 1.5rem;
-    font-family: Source Han Sans CN;
-    font-weight: 500;
-    color: rgba(51, 51, 51, 1);
-    margin-bottom: .875rem;
+  font-size: 1.5rem;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  color: #333333;
+  /* margin-bottom: 0.875rem; */
+  height: 2.125rem;
+  line-height: 2.125rem;
 }
 
 .tax-planning-solutions-content-one>div .tax-planning-solutions-content-text p:nth-child(2),
 .tax-planning-solutions-content-two>div .tax-planning-solutions-content-text p:nth-child(2) {
-    font-size: 1.125rem;
-    font-family: Source Han Sans CN;
-    font-weight: 400;
-    color: rgba(153, 153, 153, 1);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  font-size: 1.125rem;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #999999;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  height: 2rem;
+  line-height: 2rem;
 }
 
 .tax-planning-solutions-content-one>div .tax-planning-solutions-content-btn,
 .tax-planning-solutions-content-two>div .tax-planning-solutions-content-btn {
-    position: absolute;
-    top: 14.8125rem;
-    left: 1.25rem;
-    width: 7.5rem;
-    height: 2.125rem;
-    text-align: center;
-    line-height: 2.125rem;
-    font-size: 1.125rem;
-    font-family: Source Han Sans CN;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 1);
-    border-radius: 4px;
+  position: absolute;
+  top: 14.8125rem;
+  left: 1.25rem;
+  width: 7.5rem;
+  height: 2.125rem;
+  text-align: center;
+  line-height: 2.125rem;
+  font-size: 1.125rem;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: white;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
 }
 
-.tax-planning-solutions-content-one .tax-planning-solutions-content-item:nth-child(1) .tax-planning-solutions-content-btn {
-    background-color: #EB3F2A
+.tax-planning-solutions-content-one>div:nth-child(1) .tax-planning-solutions-content-btn {
+  background: #FA5339;
 }
 
-.tax-planning-solutions-content-one .tax-planning-solutions-content-item:nth-child(2) .tax-planning-solutions-content-btn {
-    background-color: #FE6016
+.tax-planning-solutions-content-one>div:nth-child(2) .tax-planning-solutions-content-btn {
+  background: #FE6016;
 }
 
-.tax-planning-solutions-content-one .tax-planning-solutions-content-item:nth-child(3) .tax-planning-solutions-content-btn {
-    background-color: #234184
+.tax-planning-solutions-content-one>div:nth-child(3) .tax-planning-solutions-content-btn {
+  background: #234184;
 }
 
-.tax-planning-solutions-content-two .tax-planning-solutions-content-item:nth-child(1) .tax-planning-solutions-content-btn {
-    background-color: #FE6016
+.tax-planning-solutions-content-two>div:nth-child(1) .tax-planning-solutions-content-btn {
+  background: #FE6016;
 }
 
-.tax-planning-solutions-content-two .tax-planning-solutions-content-item:nth-child(2) .tax-planning-solutions-content-btn {
-    background-color: #234184
+.tax-planning-solutions-content-two>div:nth-child(2) .tax-planning-solutions-content-btn {
+  background: #234184;
 }
 
-.tax-planning-solutions-content-two .tax-planning-solutions-content-item:nth-child(3) .tax-planning-solutions-content-btn {
-    background-color: #07C9DA
+.tax-planning-solutions-content-two>div:nth-child(3) .tax-planning-solutions-content-btn {
+  background: #07C9DA;
 }
 
 .tax-planning-solutions-content-one>div .tax-planning-solutions-content-btn2,
 .tax-planning-solutions-content-two>div .tax-planning-solutions-content-btn2 {
-    display: none;
+  display: none;
 }
+
 
 
 /* 选中时盒子的样式 */
-
-.tax-planning-solutions-content-one>div.content-active .plan-text,
-.tax-planning-solutions-content-two>div.content-active .plan-text {
-    display: none;
+.tax-planning-solutions-content-one>div.content-active-shade .plan-text,
+.tax-planning-solutions-content-two>div.content-active-shade .plan-text {
+  display: none;
 }
 
-.tax-planning-solutions-content-one>div.content-active .tax-planning-solutions-content-img,
-.tax-planning-solutions-content-two>div.content-active .tax-planning-solutions-content-img {
-    height: 100%;
-    width: 100%;
-    background-color: skyblue;
+.tax-planning-solutions-content-one>div.content-active-shade .tax-planning-solutions-content-img,
+.tax-planning-solutions-content-two>div.content-active-shade .tax-planning-solutions-content-img {
+  height: 100%;
+  width: 100%;
 }
 
-.tax-planning-solutions-content-one>div.content-active .tax-planning-solutions-content-img img,
-.tax-planning-solutions-content-two>div.content-active .tax-planning-solutions-content-img img {
-    width: 100%;
+.tax-planning-solutions-content-one>div:nth-child(1).content-active-shade .tax-planning-solutions-content-img {
+  background: url("../images/chjjfa-touzi2.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
 }
 
-.tax-planning-solutions-content-one>div.content-active .tax-planning-solutions-content-text,
-.tax-planning-solutions-content-two>div.content-active .tax-planning-solutions-content-text {
-    position: absolute;
-    top: 6.3125rem;
-    left: 0;
-    width: 100%;
-    padding: 0;
-    text-align: center;
+.tax-planning-solutions-content-one>div:nth-child(2).content-active-shade .tax-planning-solutions-content-img {
+  background: url("../images/chjjfa-gongzi2.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
 }
 
-.tax-planning-solutions-content-one>div.content-active .tax-planning-solutions-content-text p:nth-child(1),
-.tax-planning-solutions-content-two>div.content-active .tax-planning-solutions-content-text p:nth-child(1) {
-    font-size: 1.875rem;
-    font-family: Source Han Sans CN;
-    font-weight: 500;
-    color: rgba(255, 255, 255, 1);
-    margin-bottom: 2rem
+.tax-planning-solutions-content-one>div:nth-child(3).content-active-shade .tax-planning-solutions-content-img {
+  background: url("../images/chjjfa-qiye2.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
 }
 
-.tax-planning-solutions-content-one>div.content-active .tax-planning-solutions-content-text p:nth-child(2),
-.tax-planning-solutions-content-two>div.content-active .tax-planning-solutions-content-text p:nth-child(2) {
-    font-size: 1.125rem;
-    font-family: Source Han Sans CN;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 1);
+.tax-planning-solutions-content-two>div:nth-child(1).content-active-shade .tax-planning-solutions-content-img {
+  background: url("../images/chjjfa-naowu2.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
 }
 
-.tax-planning-solutions-content-one>div.content-active .tax-planning-solutions-content-btn,
-.tax-planning-solutions-content-two>div.content-active .tax-planning-solutions-content-btn {
-    display: none;
+.tax-planning-solutions-content-two>div:nth-child(2).content-active-shade .tax-planning-solutions-content-img {
+  background: url("../images/chjjfa-maoyi2.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
 }
 
-.tax-planning-solutions-content-one>div.content-active .tax-planning-solutions-content-btn2,
-.tax-planning-solutions-content-two>div.content-active .tax-planning-solutions-content-btn2 {
-    display: block;
-    position: absolute;
-    top: 14.8125rem;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 17.5rem;
-    height: 3.75rem;
-    text-align: center;
-    line-height: 3.75rem;
-    font-size: 1.5rem;
-    font-family: Source Han Sans CN;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 1);
-    background: linear-gradient(0deg, rgba(232, 59, 39, 1), rgba(250, 83, 57, 1));
-    border-radius: 10px;
-    padding: 0 .625rem;
-}
-
-.tax-planning-solutions-content-one>div.content-active .tax-planning-solutions-content-btn2 a,
-.tax-planning-solutions-content-two>div.content-active .tax-planning-solutions-content-btn2 a {
-    font-size: 1.375rem;
-    font-family: Source Han Sans CN;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 1);
-    background: linear-gradient(0deg, rgba(232, 59, 39, 1), rgba(250, 83, 57, 1));
-    border-radius: 10px;
-}
-
-/* lastbox选中后的样式 */
-.tax-planning-solutions-content-two>div:last-child.content-active .plan-text {
-    display: block;
-}
-
-.tax-planning-solutions-content-two>div:last-child.content-active:hover .plan-text {
-    display: none;
-}
-
-.tax-planning-solutions-content-two>div:last-child.content-active .tax-planning-solutions-content-img {
-    height: 16.25rem;
-}
-
-.tax-planning-solutions-content-two>div:last-child.content-active:hover .tax-planning-solutions-content-img {
-    height: 22.5rem;
-    background: url('../images/shuangruan2.png') no-repeat;
-}
-
-.tax-planning-solutions-content-two>div:last-child.content-active .tax-planning-solutions-content-text {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 0;
-    text-align: left;
-    padding: 1.625rem 1.875rem 0 1.875rem;
-    text-align: left;
-    box-sizing: border-box;
-}
-
-.tax-planning-solutions-content-two>div:last-child.content-active:hover .tax-planning-solutions-content-text {
-    position: absolute;
-    top: 6.3125rem;
-    left: 0;
-    width: 100%;
-    padding: 0;
-    text-align: center;
-}
-
-.tax-planning-solutions-content-two>div:last-child.content-active .tax-planning-solutions-content-text p:nth-child(1) {
-    font-size: 1.5rem;
-    font-family: Source Han Sans CN;
-    font-weight: 500;
-    color: rgba(51, 51, 51, 1);
-    margin-bottom: .875rem;
-}
-
-.tax-planning-solutions-content-two>div:last-child.content-active:hover .tax-planning-solutions-content-text p:nth-child(1) {
-    font-size: 1.875rem;
-    font-family: Source Han Sans CN;
-    font-weight: 500;
-    color: rgba(255, 255, 255, 1);
-    margin-bottom: 2rem
-}
-
-.tax-planning-solutions-content-two>div:last-child.content-active .tax-planning-solutions-content-text p:nth-child(2) {
-    font-size: 1.125rem;
-    font-family: Source Han Sans CN;
-    font-weight: 400;
-    color: rgba(153, 153, 153, 1);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.tax-planning-solutions-content-two>div:last-child.content-active:hover .tax-planning-solutions-content-text p:nth-child(2) {
-    font-size: 1.125rem;
-    font-family: Source Han Sans CN;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 1);
-}
-
-.tax-planning-solutions-content-two>div:last-child.content-active .tax-planning-solutions-content-btn2 {
-    display: none;
-}
-
-.tax-planning-solutions-content-two>div:last-child.content-active:hover .tax-planning-solutions-content-btn2 {
-    display: block;
-}
-
-.tax-planning-solutions-content-two>div:last-child.content-active .tax-planning-solutions-content-btn {
-    display: block;
-}
-
-.tax-planning-solutions-content-two>div:last-child.content-active:hover .tax-planning-solutions-content-btn {
-    display: none;
+.tax-planning-solutions-content-two>div:nth-child(3).content-active-shade .tax-planning-solutions-content-img {
+  /* height: 16.25rem; */
+  background: url("../images/chjjfa-shuangruan2.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
 }
 
 
+/* .tax-planning-solutions-content-one>div.content-active-shade .tax-planning-solutions-content-img img,
+.tax-planning-solutions-content-two>div.content-active-shade .tax-planning-solutions-content-img img {
+  width: 100%;
+} */
 
+.tax-planning-solutions-content-one>div.content-active-shade .tax-planning-solutions-content-text,
+.tax-planning-solutions-content-two>div.content-active-shade .tax-planning-solutions-content-text {
+  position: absolute;
+  top: 6.3125rem;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  text-align: center;
+}
+
+.tax-planning-solutions-content-one>div.content-active-shade .tax-planning-solutions-content-text p:nth-child(1),
+.tax-planning-solutions-content-two>div.content-active-shade .tax-planning-solutions-content-text p:nth-child(1) {
+  font-size: 1.875rem;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.tax-planning-solutions-content-one>div.content-active-shade .tax-planning-solutions-content-text p:nth-child(2),
+.tax-planning-solutions-content-two>div.content-active-shade .tax-planning-solutions-content-text p:nth-child(2) {
+  font-size: 1.125rem;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: white;
+}
+
+.tax-planning-solutions-content-one>div.content-active-shade .tax-planning-solutions-content-btn,
+.tax-planning-solutions-content-two>div.content-active-shade .tax-planning-solutions-content-btn {
+  display: none;
+}
+
+.tax-planning-solutions-content-one>div.content-active-shade .tax-planning-solutions-content-btn2,
+.tax-planning-solutions-content-two>div.content-active-shade .tax-planning-solutions-content-btn2 {
+  display: block;
+  position: absolute;
+  top: 14.8125rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 17.5rem;
+  height: 3.75rem;
+  text-align: center;
+  line-height: 3.75rem;
+  font-size: 1.5rem;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: white;
+  background: -ms-linear-gradient(bottom, #e83b27, #fa5339);
+  background: -moz-linear-gradient(bottom, #e83b27, #fa5339);
+  background: -webkit-linear-gradient(bottom, #e83b27, #fa5339);
+  background: -o-linear-gradient(bottom, #e83b27, #fa5339);
+  background: linear-gradient(0deg, #e83b27, #fa5339);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  padding: 0 0.625rem;
+}
+
+.tax-planning-solutions-content-one>div.content-active-shade .tax-planning-solutions-content-btn2 a,
+.tax-planning-solutions-content-two>div.content-active-shade .tax-planning-solutions-content-btn2 a {
+  font-size: 1.375rem;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: white;
+  /* background: -webkit-gradient(linear,
+      left bottom,
+      left top,
+      from(#e83b27),
+      to(#fa5339));
+  background: -webkit-linear-gradient(bottom, #e83b27, #fa5339);
+  background: -o-linear-gradient(bottom, #e83b27, #fa5339);
+  background: linear-gradient(0deg, #e83b27, #fa5339);
+  -webkit-border-radius: 10px;
+  border-radius: 10px; */
+}
+
+.tax-planning-solutions-content-one>div.content-active-shade .tax-planning-solutions-content-btn2:hover,
+.tax-planning-solutions-content-two>div.content-active-shade .tax-planning-solutions-content-btn2:hover {
+  background: -webkit-gradient(linear,
+      left top,
+      left bottom,
+      from(#e44c34),
+      to(#d43623));
+
+}
 
 
 /* 惠优税优势 start */
-
 .preferential-taxadvantage-box {
-    width: 100%;
-    height: 48.75rem;
-    background-color: #FA5339;
-    margin-top: 3.875rem;
-
+  width: 100%;
+  height: 48.75rem;
+  background-color: #f85236;
+  margin-top: 3.875rem;
 }
 
 .preferential-taxadvantage {
-    padding-top: 3rem;
+  padding-top: 3rem;
 }
 
 .preferential-taxadvantage>div:nth-child(1) {
-    width: 7.5rem;
-    height: .25rem;
-    background: rgba(255, 255, 255, 1);
-    border-radius: 2px;
-    margin-bottom: .5rem;
+  width: 7.5rem;
+  height: 0.25rem;
+  background: white;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  margin-bottom: 0.5rem;
 }
 
 .preferential-taxadvantage>div:nth-child(2) {
-    font-size: 2.25rem;
-    font-family: Source Han Sans CN;
-    font-weight: 500;
-    color: rgba(255, 255, 255, 1);
-    margin-bottom: 4.6875rem;
+  font-size: 1.875rem;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 4.6875rem;
 }
 
 .preferential-taxadvantage-content-icon {
-    margin-bottom: 3.9375rem;
+  margin-bottom: 3.9375rem;
+}
+
+.preferential-taxadvantage-content-icon ul {
+  width: 75.625rem;
 }
 
 .preferential-taxadvantage-content-icon ul li {
-    float: left;
-    width: 20rem;
-    height: 12.5rem;
-    margin-right: 5.625rem;
-    cursor: pointer;
+  float: left;
+  width: 20rem;
+  height: 12.5rem;
+  margin-right: 5.625rem;
+  cursor: pointer;
 }
 
 .preferential-taxadvantage-content-icon ul li:nth-child(1) {
-    background: url('../images/zhuanye.png') no-repeat;
-    background-size: 100% 100%;
+  background: url("../images/zhuanye.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
 }
 
 .preferential-taxadvantage-content-icon ul li:nth-child(2) {
-    background: url('../images/gaoxiao.png') no-repeat;
-    background-size: 100% 100%;
+  background: url("../images/gaoxiao.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
 }
 
 .preferential-taxadvantage-content-icon ul li:nth-child(3) {
-    background: url('../images/anquan.png') no-repeat;
-    background-size: 100% 100%;
+  background: url("../images/anquan.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
 }
 
 .preferential-taxadvantage-content-icon ul>li:nth-child(1).fousess {
-    background: url('../images/zhuanye2.png') no-repeat;
-    background-size: 100% 100%;
+  background: url("../images/zhuanye2.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
 }
 
 .preferential-taxadvantage-content-icon ul>li:nth-child(2).fousess {
-    background: url('../images/gaoxiao2.png') no-repeat;
-    background-size: 100% 100%;
+  background: url("../images/gaoxiao2.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
 }
 
 .preferential-taxadvantage-content-icon ul>li:nth-child(3).fousess {
-    background: url('../images/anquan2.png') no-repeat;
-    background-size: 100% 100%;
+  background: url("../images/anquan2.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
 }
 
 .preferential-taxadvantage-content-icon ul li:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
-
 
 .preferential-taxadvantage-content-title {
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: Source Han Sans CN;
-    font-weight: 500;
-    color: rgba(255, 255, 255, 1);
-    margin-bottom: 2.8125rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 2.8125rem;
 }
 
 .preferential-taxadvantage-content-imgs {
-    position: relative;
-    height: 34.125rem;
-    /* background-color: pink */
+  position: relative;
+  height: 34.125rem;
+  /* background-color: pink */
 }
 
 .preferential-taxadvantage-content-imgs {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .preferential-taxadvantage-content-imgs ul {
-    position: absolute;
-    width: 500%;
+  position: absolute;
+  width: 500%;
 }
 
 .transi {
-    transition: 500ms;
+  -webkit-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
 }
 
 .preferential-taxadvantage-content-imgs ul li {
-    float: left;
-    width: 71.25rem;
-    height: 34.125rem;
-    line-height: 34.125rem;
-    color: #FAFAFA;
-    text-align: center;
-    font-size: 100px;
+  float: left;
+  width: 75rem;
+  height: 34.125rem;
+  line-height: 34.125rem;
+  color: #fafafa;
+  text-align: center;
+  font-size: 100px;
 }
 
 .preferential-taxadvantage-content-imgs ul li img {
-    display: block;
-    width: 100%;
-    height: 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 /* .preferential-taxadvantage-content-imgs ul li:nth-child(1) {
@@ -1119,774 +1179,757 @@ a {
 .preferential-taxadvantage-content-imgs ul li:nth-child(4) {
     background-color: pink
 } */
-
 .preferential-taxadvantage-content-imgs>span {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 4.25rem;
-    height: 4.25rem;
-    cursor: pointer;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 4.25rem;
+  height: 4.25rem;
+  cursor: pointer;
 }
 
 .preferential-taxadvantage-content-imgs>span:nth-of-type(1) {
-    left: .625rem;
+  left: 0.625rem;
 }
 
 .preferential-taxadvantage-content-imgs>span:nth-of-type(2) {
-    right: .625rem;
+  right: 0.625rem;
 }
 
 .preferential-taxadvantage-content-imgs>span img {
-    width: 100%;
+  width: 100%;
 }
 
 /* 惠优税优势 end */
-
-
-
 /* 精选园区 start */
 .selected-park-box {
-    padding-top: 21.25rem;
-    height: 78.5rem;
-    background: #FAFAFA;
-    box-sizing: border-box;
-    margin-bottom: 3.6875rem;
+  padding-top: 21.25rem;
+  height: 78.5rem;
+  background: #f8f8f8;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 3.6875rem;
 }
 
 .selected-park>div:nth-child(1) {
-    width: 8.75rem;
-    height: 4px;
-    background: rgba(238, 68, 46, 1);
-    border-radius: 2px;
-    margin-bottom: .6875rem
+  width: 8.75rem;
+  height: 4px;
+  background: #ee442e;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  margin-bottom: 0.6875rem;
 }
 
 .selected-park>div:nth-child(2) {
-    font-size: 2.25rem;
-    font-family: Source Han Sans CN;
-    font-weight: 500;
-    color: rgba(51, 51, 51, 1);
-    margin-bottom: 3.0625rem;
+  font-size: 1.875rem;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 3.0625rem;
 }
 
 .selected-park>div.map-box {
-    position: relative;
-    height: 46.25rem;
-    background: url('../images/map.png') no-repeat;
-    background-size: 100% 100%;
+  position: relative;
+  height: 46.25rem;
+  background: url("../images/map.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
 }
 
 .selected-park>div.map-box .map-box-left {
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding-top: 1.125rem;
-    z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 1.125rem;
+  z-index: 2;
 }
 
 .selected-park>div.map-box .map-box-left div {
-    width: 21.4375rem;
-    height: 7.75rem;
-    margin-bottom: 3.125rem;
+  width: 21.4375rem;
+  height: 7.75rem;
+  margin-bottom: 3.125rem;
 }
 
 .selected-park>div.map-box .map-box-left div:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .selected-park>div.map-box .map-box-left div img {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
 
 .selected-park>div.map-box .map-box-right {
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding-top: .9375rem;
-    z-index: 2;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding-top: 0.9375rem;
+  z-index: 2;
 }
 
 .selected-park>div.map-box .map-box-center .map-box-center-item,
 .selected-park>div.map-box .map-box-right .map-box-right-yuanqu-item {
-    display: none;
+  display: none;
 }
 
 .selected-park>div.map-box .map-box-center {
-    position: relative;
-    width: 100%;
-    height: 100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .selected-park>div.map-box .map-box-center .map-box-center-item {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 1;
-    height: 100%;
-    width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
 }
 
 .selected-park>div.map-box .map-box-center .map-box-center-item img {
-    display: block;
-    width: 100%;
-    height: 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .selected-park>div.map-box .map-box-right .map-box-right-yuanqu-item div {
-    width: 15rem;
-    height: 5.1875rem;
-    margin-bottom: 2.875rem;
-    background: url('../images/chanyeyuanditu.png') no-repeat;
-    background-size: 100% 100%;
-    text-align: center;
-    line-height: 5.1875rem;
-    font-size: 1.5rem;
-    font-family: Source Han Sans CN;
-    font-weight: 400;
-    color: rgba(255, 254, 254, 1);
+  width: 15rem;
+  height: 5.1875rem;
+  margin-bottom: 2.875rem;
+  background: url("../images/chanyeyuanditu.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  text-align: center;
+  line-height: 5.5rem;
+  font-size: 1.25rem;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #fffefe;
 }
 
 .selected-park>div.map-box .map-box-right .map-box-right-yuanqu-item div:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .selected-park>div.map-box .map-box-right-morebtn {
-    width: 5.375rem;
-    height: 2.375rem;
-    background: url('../images/huanyipibtn.png') no-repeat;
-    background-size: 100% 100%;
-    font-size: 18px;
-    font-family: Source Han Sans CN;
-    font-weight: 400;
-    color: rgba(239, 73, 51, 1);
-    line-height: 2.375rem;
-    text-align: center;
-    margin-left: 5.125rem;
-    margin-top: 2.25rem;
-    cursor: pointer;
-    moz-user-select: -moz-none;
-    -moz-user-select: none;
-    -o-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  width: 5.375rem;
+  height: 2.375rem;
+  background: url("../images/huanyipibtn.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  font-size: 1.125rem;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #ef4933;
+  line-height: 2.375rem;
+  text-align: center;
+  margin-left: 5.125rem;
+  margin-top: 2.25rem;
+  cursor: pointer;
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .selected-park .active-map {
-    display: block !important;
+  display: block !important;
 }
 
 /* 精选园区 end */
-
-
 /* 合作伙伴 */
 .partner-box {
-    margin-bottom: 2.9375rem;
+  margin-bottom: 0.875rem;
 }
 
-.partner-box .partner {}
-
 .partner-box .partner .partner-title {
-    margin-bottom: 1.8rem
+  margin-bottom: 1.8rem;
 }
 
 .partner-box .partner .partner-title .partner-title-box span {
-    font-size: 2.25rem;
-    font-family: Source Han Sans CN;
-    font-weight: 500;
-    color: rgba(51, 51, 51, 1);
+  font-size: 1.875rem;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  color: #333333;
 }
 
 .partner-box .partner .modified-line {
-    margin-bottom: .6875rem;
-    width: 5rem;
-    height: 4px;
-    background: rgba(238, 68, 46, 1);
-    border-radius: 2px;
+  margin-bottom: 0.6875rem;
+  width: 5rem;
+  height: 4px;
+  background: #ee442e;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
 }
 
 .partner-box .partner .partner-img {
-    width: 100%;
+  width: 100%;
 }
 
 .partner-box .partner .partner-img img {
-    width: 100%;
+  width: 100%;
+}
+
+/* consultation资讯 */
+.consultation {
+  position: fixed;
+  right: 0;
+  bottom: 2.5rem;
+  z-index: 1000;
+}
+
+.consultation>div:nth-child(1),
+.consultation>div:nth-child(2) {
+  position: relative;
+  width: 5rem;
+  height: 11.25rem;
+}
+
+.consultation>div:nth-child(1) {
+  background: #f95238;
+  margin-bottom: 10px;
+}
+
+.consultation>div:nth-child(2) {
+  background: #272939;
+}
+
+.consultation>div .consultation-title,
+.consultation>div .consultation-title2 {
+  line-height: 5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: #f95238;
+  width: 5rem;
+  height: 11.25rem;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  font-size: 1.5rem;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #fff;
+  cursor: pointer;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.consultation>div .consultation-title2 {
+  background: #272939;
+}
+
+.consultation>div>.consultation-item,
+.consultation>div>.consultation-item2 {
+  position: absolute;
+  right: -12.5rem;
+  top: 0;
+  width: 12.5rem;
+  height: 11.25rem;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: 1;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.consultation>div>.consultation-item {
+  /* padding-top: 2.2rem; */
+  background:linear-gradient(0deg,rgba(232,59,39,1),rgba(250,83,57,1));
+
+
+  /* right: 5.3125rem; */
+}
+
+.consultation>div>.consultation-item ul {
+  background-color: #f95238;
+}
+
+.consultation .consultation-item ul {
+  box-sizing: border-box;
+  padding-left: 2rem;
+  padding-top: 1.0625rem;
+  height: 100%;
+}
+
+.consultation .consultation-item ul li {
+  /* float: left;
+  width: 3.375rem;
+  height: 1.6875rem;
+  line-height: 1.6875rem;
+  margin-left: 2rem;
+  margin-bottom: 0.875rem;
+  border-bottom: 1px solid #fff; */
+  margin-bottom: 1.0625rem;
+  
+  
+
+}
+.consultation .consultation-item ul li span{
+  font-size: 1rem;
+  line-height: 1rem;
+  padding-bottom: .5rem;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.consultation .consultation-item ul li:nth-child(3) span,
+.consultation .consultation-item ul li:nth-child(4) span{
+color: #DCDCDC;
+border-bottom: 1px solid #DCDCDC;
+cursor: default;
+}
+.consultation .consultation-item ul li span:first-child{
+  margin-right: 2.25rem;
 }
 
 
-/* 底部 */
+/* .consultation .consultation-item ul li a {
+  font-size: 1.125rem;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #fff;
+} */
 
-.fotter-box {
-    /* border-radius: 3.125rem 3.125rem 0px 0px; */
-    background-color: #272939;
-    padding-bottom: 2.375rem;
+.consultation>div>.consultation-item2 {
+  padding: 0 8px;
+  background-color: #000;
+
+  
 }
 
-.fotter-box .fotter {}
-
-
-.parter_catefories {
-    padding-top: 5rem;
-    overflow: hidden;
-    font-size: .6875rem;
-    font-family: "Source Han Sans CN", "Microsoft YaHei", "微软雅黑";
-    font-weight: 300;
-    color: rgba(220, 220, 220, 1);
+.consultation>div>.consultation-item2 div {
+  color: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.parter_catefories>dl {
-    float: left;
+.consultation>div>.consultation-item2 div:nth-child(2) {
+  padding: 0.875rem 0 0 1.875rem;
 }
 
-.parter_catefories>dl:nth-of-type(2) {
-    margin: 0 8.125rem 0 9.375rem;
+.consultation>div>.consultation-item2 div:nth-child(1) {
+  padding: 1.675rem 0 0 1.875rem;
+  border-bottom: 1px solid #fff;
 }
 
-.parter_catefories>dl:nth-of-type(3) {
-    margin-right: 8.375rem;
+.consultation>div>.consultation-item2 div p:nth-child(1) {
+  font-size: 1rem;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 0.875rem;
 }
 
-.parter_catefories>dl:nth-of-type(5) {
-    float: right;
+.consultation>div>.consultation-item2 div p:nth-child(2) {
+  font-size: 1.125rem;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 0.875rem;
 }
 
-.parter_catefories dl dt {
-    margin-bottom: 3.3125rem;
-
+.consultation>div:hover .consultation-item,
+.consultation>div:hover .consultation-item2 {
+  right: 5.3125rem;
+ 
 }
 
-.parter_catefories dl dd {
-    margin-top: 1.8125rem;
+.consultation-item2 {
+  background: url("../images/consultation.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
 }
 
-.parter_catefories dl dt>a {
-    font-size: 1.125rem;
-    font-family: "Source Han Sans CN", "Microsoft YaHei", "微软雅黑";
-    font-weight: 700;
-    color: #FFFFFF;
-}
-
-.parter_catefories dl dd>a {
-    font-size: 1.125rem;
-    font-family: "Source Han Sans CN", "Microsoft YaHei", "微软雅黑";
-    font-weight: 400;
-    color: #DCDCDC;
-}
-
-.concat_icon {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    -webkit-justify-content: flex-end;
-    justify-content: flex-end;
-    text-align: right;
-    margin-top: 1.75rem;
-    margin-right: 4.875rem;
-}
-
-.concat_icon div {
-    display: inline-block;
-    width: 1.5rem;
-    border: 1px solid #ccc;
-    border-radius: 50%;
-    width: 2.375rem;
-    height: 2.375rem;
-    text-align: center;
-    margin-left: 1.5rem;
-    padding: .5rem;
-    box-sizing: border-box;
-}
-
-.concat_icon img {
-    width: 100%;
-}
-
-.concat_icon div:nth-of-type(2) {
-    background-color: #67CE0B;
-}
-
-.partener_total {
-    position: relative;
-}
-
-.fotter-line {
-    margin-top: 3.5625rem;
-    height: 1px;
-    background: rgba(122, 122, 122, 1);
-}
-
-.fotter div:nth-child(4) {
-    margin-top: 1.1875rem;
-    text-align: center;
-    font-size: .875rem;
-    font-family: Source Han Sans CN;
-    font-weight: 400;
-    color: rgba(195, 195, 195, 1);
-}
-
-
-
-
-/* bottom资讯 */
-.bottom {
-    position: fixed;
-    right: 0;
-    bottom: 2.5rem;
-}
-
-.bottom>div:nth-child(1),
-.bottom>div:nth-child(2) {
-    position: relative;
-    width: 5rem;
-    height: 11.25rem;
-}
-
-.bottom>div:nth-child(1) {
-    background: #F95238;
-    margin-bottom: 10px;
-}
-
-.bottom>div:nth-child(2) {
-    background: #272939;
-}
-
-.bottom>div .bottom-title,
-.bottom>div .bottom-title2 {
-    /* line-height: 5rem; */
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    background: #F95238;
-    width: 5rem;
-    height: 11.25rem;
-    writing-mode: vertical-rl;
-    -ms-writing-mode: tb-rl;
-    font-size: 1.5rem;
-    font-family: Source Han Sans CN;
-    font-weight: 400;
-    color: #fff;
-    cursor: pointer;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.bottom>div .bottom-title2 {
-    background: #272939;
-}
-
-.bottom>div>.bottom-item,
-.bottom>div>.bottom-item2 {
-    position: absolute;
-    right: -12.5rem;
-    top: 0;
-    width: 12.5rem;
-    height: 11.25rem;
-    transition: all 0.5s;
-    z-index: 1;
-    box-sizing: border-box;
-}
-
-.bottom>div>.bottom-item {
-    padding-top: 2.2rem;
-    background-color: #F95238;
-}
-
-.bottom>div>.bottom-item ul {
-    background-color: #F95238;
-}
-
-.bottom .bottom-item ul {
-    height: 100%;
-}
-
-.bottom .bottom-item ul li {
-    float: left;
-    width: 3.375rem;
-    height: 1.6875rem;
-    line-height: 1.6875rem;
-    margin-left: 2rem;
-    margin-bottom: .875rem;
-    border-bottom: 1px solid #fff;
-}
-
-.bottom .bottom-item ul li a {
-    font-size: 1.125rem;
-    font-family: Source Han Sans CN;
-    font-weight: 400;
-    color: #fff;
-}
-
-.bottom>div>.bottom-item2 {
-    padding: 0 8px;
-    background-color: #000;
-}
-
-.bottom>div>.bottom-item2 div {
-    color: #fff;
-    box-sizing: border-box;
-}
-
-.bottom>div>.bottom-item2 div:nth-child(2) {
-    padding: .875rem 0 0 1.875rem;
-}
-
-.bottom>div>.bottom-item2 div:nth-child(1) {
-    padding: 1.675rem 0 0 1.875rem;
-    border-bottom: 1px solid #fff;
-}
-
-.bottom>div>.bottom-item2 div p:nth-child(1) {
-    font-size: 1rem;
-    font-family: Source Han Sans CN;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 1);
-    margin-bottom: .875rem;
-}
-
-.bottom>div>.bottom-item2 div p:nth-child(2) {
-    font-size: 1.125rem;
-    font-family: Source Han Sans CN;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 1);
-    margin-bottom: .875rem;
-}
-
-.bottom>div:hover .bottom-item,
-.bottom>div:hover .bottom-item2 {
-    right: 5.3125rem;
-}
-
-.bottom-item2 {
-    background: url('../images/consultation.png') no-repeat;
-    background-size: 100% 100%
-}
-
-/* 返回顶部 */
-
-.bottom>div:nth-child(3).goTop {
-    width: 5rem;
-    height: 4.5625rem;
-    text-align: center;
-    z-index: 999;
-    background-color: #272939;
-    padding-top: .625rem;
-    display: none;
-    cursor: pointer;
-    margin-top: .625rem;
-    padding-top: .625rem;
+/* 返回顶部  */
+.consultation>div:nth-child(3).goTop {
+  width: 5rem;
+  height: 4.5625rem;
+  text-align: center;
+  z-index: 999;
+  background-color: #272939;
+  padding-top: 0.625rem;
+  display: none;
+  cursor: pointer;
+  margin-top: 0.625rem;
+  padding-top: 0.625rem;
 }
 
 .goTop div:nth-child(1) {
-    width: 2rem;
-    height: 2rem;
-    margin: 0 auto;
-    margin-bottom: .375rem;
+  width: 2rem;
+  height: 2rem;
+  margin: 0 auto;
+  margin-bottom: 0.375rem;
 }
 
 .goTop div:nth-child(1) img {
-    width: 100%;
+  width: 100%;
 }
 
 .goTop div:nth-child(2) {
-    font-size: 1.125rem;
-    font-family: Source Han Sans CN;
-    font-weight: 500;
-    color: rgba(255, 255, 255, 1);
+  font-size: 1.125rem;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  color: white;
 }
 
 /* 弹出框 */
-
 .pop-up-box {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, .3);
-    display: none;
-    z-index: 9999;
-}
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 9999; }
 
 .pop-up-box .form {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    width: 37.5rem;
-    height: 35.625rem;
-}
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 37.5rem;
+  height: 35.625rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 .form-titile {
-    position: relative;
-    height: 7.5rem;
-    background: url('../images/tanchuang2x.png') no-repeat;
-    background-size: 100% 100%;
-}
+  height: 7.5rem;
+  background: url("../images/tanchuang2x.png") no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain; }
 
 .turnoff {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    width: 1.25rem;
-    height: 1.25rem;
-    background: url('../images/guanbi2x.png') no-repeat;
-    background-size: 100% 100%;
-    cursor: pointer;
-}
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  background: url("../images/guanbi2x.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  cursor: pointer; }
 
 .form-titile p {
-    position: relative;
-    text-align: center;
-    font-size: 1.875rem;
-    font-family: Source Han Sans CN;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 1);
-    line-height: 6.25rem;
-}
-
-.form-titile p::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    bottom: 1.25rem;
-    width: 3.375rem;
-    height: 0.25rem;
-    background: rgba(255, 255, 255, 1);
-}
+  font-size: 1.875rem;
+  font-family: "Noto Sans SC";
+  font-weight: 400;
+  color: white;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%; }
 
 .form-content {
-    padding: 5.1875rem 6.1875rem 0 6.1875rem;
-    background: rgba(245, 247, 254, 1);
-    border-radius: 0px 0px 4px 4px;
-    height: 28.125rem;
-    box-sizing: border-box;
-}
+  background: #f5f7fe;
+  -webkit-border-radius: 0px 0px 4px 4px;
+          border-radius: 0px 0px 4px 4px;
+  height: 28.125rem;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
 
-.form-content .form-content-box {
-    width: 25rem;
-    margin: 0 auto;
-}
+.form-content div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.875rem; }
+  .form-content div:first-child {
+    margin-top: 6rem; }
+  .form-content div span {
+    white-space: normal; }
 
-.form-content .form-content-box div {
-    height: 2.5rem;
-    display: -webkit-box;
-    /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
-    display: -moz-box;
-    /* 老版本语法: Firefox (buggy) */
-    display: -ms-flexbox;
-    /* 混合版本语法: IE 10 */
-    display: -webkit-flex;
-    /* 新版本语法: Chrome 21+ */
-    display: flex;
-    -webkit-justify-content: space-between;
-    -moz-justify-content: space-between;
-    -ms-justify-content: space-between;
-    -o-justify-content: space-between;
-    justify-content: space-between;
-    margin-bottom: 2.5625rem;
-    line-height: 2.75rem;
-}
+.form-content div:nth-child(3) {
+  margin-bottom: 3.625rem; }
 
-.form-content .form-content-box div:nth-child(3) {
-    margin-bottom: 3.875rem;
-}
+.form-content div .title {
+  width: 6.25rem;
+  height: 2.5rem;
+  font-size: 1.125rem;
+  font-family: "Noto Sans SC",  "Microsoft YaHei";
+  font-weight: 400;
+  color: black;
+  line-height: 2.875rem; }
 
-.form-content .form-content-box div .title {
-    display: inline-block;
-    width: 6.25rem;
-    height: 2.5rem;
-    margin-right: 1.25rem;
-    font-size: .875rem;
-    font-family: "Source Han Sans CN", "Microsoft YaHei", "微软雅黑";
-    font-weight: 400;
-    color: rgba(0, 0, 0, 1);
-    line-height: 2.875rem;
-}
+.form-content div input {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 20rem;
+  padding-left: 1.875rem;
+  height: 2.5rem;
+  outline: none;
+  background: white;
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 2px;
+  border-radius: 2px; }
 
-.form-content .form-content-box div input {
-    width: 25rem;
-    padding-left: 1.875rem;
-    height: 100%;
-    outline: none;
-    background: rgba(255, 255, 255, 1);
-    border: 1px solid rgba(229, 229, 229, 1);
-    border-radius: 2px;
-}
+.form-content .form-btn {
+  width: 20rem;
+  height: 3.5rem;
+  margin: 0 auto;
+  background: -webkit-gradient(linear, left bottom, left top, from(#fa5339), to(#e83b27));
+  background: -webkit-linear-gradient(bottom, #fa5339, #e83b27);
+  background: -o-linear-gradient(bottom, #fa5339, #e83b27);
+  background: linear-gradient(0deg, #fa5339, #e83b27);
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  font-family: "Noto Sans SC", "Source Han Sans CN", "Microsoft YaHei",
+ "微软雅黑";
+  font-weight: 400;
+  /* text-align: center; */
+  color: white;
+  /* line-height: 3.75rem;
+      padding-left: 7.375rem; */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer; }
 
-.form-content .form-content-box .form-btn {
-    width: 20rem;
-    height: 3.5rem;
-    margin: 0 auto;
-    background: #F75236;
-    border-radius: 4px;
-    font-size: 1.5rem;
-    font-family: "Source Han Sans CN", "Microsoft YaHei", "微软雅黑";
-    font-weight: 400;
-    /* text-align: center; */
-    color: rgba(255, 255, 255, 1);
-    /* line-height: 3.75rem;
-    padding-left: 7.375rem; */
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
+.form-content .activePop {
+  background: -webkit-gradient(linear, left bottom, left top, from(#e44c34), to(#d43623)) !important;
+  background: -webkit-linear-gradient(bottom, #e44c34, #d43623) !important;
+  background: -o-linear-gradient(bottom, #e44c34, #d43623) !important;
+  background: linear-gradient(0deg, #e44c34, #d43623) !important; }
 
+#contactName,
+#contactMobile,
+#companyName {
+  font-size: 1.125rem; }
 
 /* 用户信息 */
-
 .u_info {
-    position: relative;
-    float: right;
-    margin-top: .625rem;
-    padding-left: 1.25rem;
-    height: 5rem;
-    cursor: pointer;
+  position: relative;
+  float: right;
+  margin-top: 0.625rem;
+  padding-left: 1.25rem;
+  height: 5rem;
+  cursor: pointer;
 }
 
 .u_info_content {
-    display: none;
-    width: 5.625rem;
-    height: 2.6875rem;
-    position: absolute;
-    bottom: -12px;
-    left: -0.5625rem;
-    background-color: pink;
-    text-align: center;
-    box-sizing: border-box;
-    font-size: .875rem;
-    font-family: "PingFang SC", "Microsoft YaHei", "微软雅黑";
-    font-weight: 500;
-    color: rgba(51, 51, 51, 1);
-    background: rgba(255, 255, 255, 1);
-    box-shadow: 0px 0px 10px 0px rgba(11, 32, 64, 0.1);
-    border-radius: 2px;
+  display: none;
+  width: 5.625rem;
+  height: 2.6875rem;
+  position: absolute;
+  bottom: -12px;
+  left: -0.5625rem;
+  background-color: pink;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 0.875rem;
+  font-family: "PingFang SC", "Microsoft YaHei", "微软雅黑";
+  font-weight: 500;
+  color: #333333;
+  background: white;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(11, 32, 64, 0.1);
+  box-shadow: 0px 0px 10px 0px rgba(11, 32, 64, 0.1);
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
 }
 
 .u_info_content .u_out {
-    font-size: .875rem;
-    font-family: "PingFang SC", "Microsoft YaHei", "微软雅黑";
-    color: #333;
-    display: block;
-    width: 100%;
-    height: 100%;
-    /*padding: 1.0625rem .875rem;*/
-    box-sizing: border-box;
-    line-height: 2.75rem;
+  font-size: 0.875rem;
+  font-family: "PingFang SC", "Microsoft YaHei", "微软雅黑";
+  color: #333;
+  display: block;
+  width: 100%;
+  height: 100%;
+  /*padding: 1.0625rem .875rem;*/
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 2.75rem;
 }
 
 .u_info_content .u_out:hover {
-    background: #f0f7fe;
-    cursor: pointer;
+  background: #f0f7fe;
+  cursor: pointer;
 }
 
 .u_info_content::after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: -1.25rem;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    border-top: .625rem solid transparent;
-    border-right: .625rem solid transparent;
-    border-bottom: .625rem solid #fffF;
-    border-left: .625rem solid transparent;
+  content: "";
+  display: block;
+  position: absolute;
+  top: -1.25rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-top: 0.625rem solid transparent;
+  border-right: 0.625rem solid transparent;
+  border-bottom: 0.625rem solid #ffff;
+  border-left: 0.625rem solid transparent;
 }
 
 .u_info:hover .u_info_content {
-    display: block
+  display: block;
 }
 
-
 /* 提交成果弹出框 */
-
 .mask-box {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    /*display: -webkit-box;*/
-    /*!* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. *!*/
-    /*display: -moz-box;*/
-    /*!* 老版本语法: Firefox (buggy) *!*/
-    /*display: -ms-flexbox;*/
-    /*!* 混合版本语法: IE 10 *!*/
-    /*display: -webkit-flex;*/
-    /*!* 新版本语法: Chrome 21+ *!*/
-    /*display: flex;*/
-    /*-webkit-flex-direction: column;*/
-    /*-moz-flex-direction: column;*/
-    /*-ms-flex-direction: column;*/
-    /*-o-flex-direction: column;*/
-    /*flex-direction: column;*/
-    /*-webkit-justify-content: center;*/
-    /*-moz-justify-content: center;*/
-    /*-ms-justify-content: center;*/
-    /*-o-justify-content: center;*/
-    /*justify-content: center;*/
-    /*-webkit-align-items: center;*/
-    /*-moz-align-items: center;*/
-    /*-ms-align-items: center;*/
-    /*-o-align-items: center;*/
-    /*align-items: center;*/
-    width: 16.25rem;
-    height: 10rem;
-    background: rgba(0, 0, 0, .7);
-    /* opacity: 0.7; */
-    border-radius: .75rem;
-    display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 16.25rem;
+  height: 10rem;
+  background: rgba(0, 0, 0, 0.7);
+
+  -webkit-border-radius: 0.75rem;
+  border-radius: 0.75rem;
+  display: none;
 }
 
 .mask-box span {
-    display: block;
-    width: 2.625rem;
-    height: 2.625rem;
-    background: url('../images/success2x.png') no-repeat;
-    background-size: 100% 100%;
-    margin: 1.125rem auto;
+  display: block;
+  width: 2.625rem;
+  height: 2.625rem;
+  background: url("../images/success2x.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  margin: 1.125rem auto;
 }
 
 .mask-box .mask-box-title {
-    text-align: center;
-    font-size: 1.125rem;
-    font-family: PingFang SC;
-    font-weight: bold;
-    color: rgba(255, 255, 255, 1);
-    margin: 0 0 1.25rem 0;
+  text-align: center;
+  font-size: 1.125rem;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: white;
+  margin: 0 0 1.25rem 0;
 }
 
 .mask-box .mask-box-content {
-    text-align: center;
-    font-size: .875rem;
-    font-family: PingFang SC;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 1);
+  text-align: center;
+  font-size: 0.875rem;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: white;
 }
