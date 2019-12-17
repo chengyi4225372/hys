@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1576485676;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1576550554;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -161,7 +161,8 @@
         </div>
         <div class="tax-planning-solutions-contents">
           <div class="tax-planning-solutions-content-one clearfix">
-            <div class="content-active tax-planning-solutions-content-item">
+
+            <div class="content-active content-active-shade tax-planning-solutions-content-item">
               <div class="plan-text">筹划方案</div>
               <div class="tax-planning-solutions-content-img"></div>
               <div class="tax-planning-solutions-content-text">
@@ -175,6 +176,7 @@
                 <a href="javascript:;" onclick="alert_open()">获取分红个税筹划方案</a>
               </div>
             </div>
+            
             <div class="tax-planning-solutions-content-item">
               <div class="plan-text">筹划方案</div>
 
