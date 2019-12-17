@@ -138,7 +138,6 @@ a {
   font-weight: 700;
   color: #333333; }
 
-<<<<<<< HEAD
 /* .nav-container .nav ul li:hover::after {
     position: absolute;
     bottom: -0.5125rem;
@@ -153,22 +152,6 @@ a {
     height: .25rem;
     border-radius: .125rem;
     background-color: #E8341E;
-=======
-/* .nav-container .nav ul li:hover::after {
-    position: absolute;
-    bottom: -0.5125rem;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    content: '';
-    width: 110%;
-    height: .25rem;
-    border-radius: .125rem;
-    background-color: #E8341E;
->>>>>>> 1aaa76494820aa67e3c4946c38cc461b6f4e41da
 } */
 .nav-active {
   position: relative; }
@@ -321,7 +304,7 @@ a {
   height: 17.5rem;
   background: #f5f5f5;
   margin-top: 3.75rem;
-  background: url("../images/inforBanner.png") no-repeat; }
+  background: url("../images/customerBanner.png") no-repeat; }
 
 /**/
 .main_content {
@@ -383,7 +366,8 @@ a {
   line-height: 1.5rem;
   padding: 2.625rem .625rem 3.4375rem .625rem;
   color: #333333;
-  border-bottom: 1px solid #ccc; }
+  /* border-bottom: 1px solid #ccc;  */
+}
 
 .tuwen img:nth-of-type(1) {
   display: inline-block;
@@ -505,134 +489,7 @@ a {
     font-size: .875rem;
     color: #666; }
 
-/* consultation资讯 */
-.consultation {
-  position: fixed;
-  right: 0;
-  bottom: 2.5rem; }
-
-.consultation > div:nth-child(1),
-.consultation > div:nth-child(2) {
-  position: relative;
-  width: 5rem;
-  height: 11.25rem; }
-
-.consultation > div:nth-child(1) {
-  background: -webkit-gradient(linear, left bottom, left top, from(#e83b27), to(#fa5339));
-  background: -webkit-linear-gradient(bottom, #e83b27, #fa5339);
-  background: -o-linear-gradient(bottom, #e83b27, #fa5339);
-  background: linear-gradient(0deg, #e83b27, #fa5339);
-  margin-bottom: 10px; }
-
-.consultation > div:nth-child(2) {
-  background: #272939; }
-
-.consultation > div .consultation-title {
-  line-height: 5rem;
-  height: 100%;
-  text-align: center;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-  font-size: 1.5rem;
-  font-family: "Noto Sans SC";
-  font-weight: 400;
-  color: white;
-  cursor: pointer; }
-
-.consultation > div > .consultation-item,
-.consultation > div > .consultation-item2 {
-  position: absolute;
-  right: -12.5rem;
-  top: 0;
-  width: 12.5rem;
-  height: 11.25rem;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-  z-index: -1;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box; }
-
-.consultation > div > .consultation-item {
-  padding-top: 2.2rem; }
-
-.consultation > div > .consultation-item2 {
-  padding: 0 8px; }
-
-.consultation > div > .consultation-item2 div {
-  color: #fff;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box; }
-
-.consultation > div > .consultation-item2 div:nth-child(2) {
-  padding: .875rem 0 0 1.875rem; }
-
-.consultation > div > .consultation-item2 div:nth-child(1) {
-  padding: 1.675rem 0 0 1.875rem;
-  border-bottom: 1px solid #fff; }
-
-.consultation > div > .consultation-item2 div p:nth-child(1) {
-  font-size: 1rem;
-  font-family: "Noto Sans SC";
-  font-weight: 400;
-  color: white;
-  margin-bottom: .875rem; }
-
-.consultation > div > .consultation-item2 div p:nth-child(2) {
-  font-size: 1.125rem;
-  font-family: "Noto Sans SC";
-  font-weight: 400;
-  color: white;
-  margin-bottom: .875rem; }
-
-.consultation > div:hover .consultation-item2 {
-  right: 5.3125rem; }
-
-.consultation-item2 {
-  background: url("../images/consultation.png") no-repeat;
-  -webkit-background-size: 100% 100%;
-          background-size: 100% 100%; }
-
-.order {
-  background: url("../images/appointment.png") no-repeat; }
-
-/* 返回顶部 */
-.consultation > div:nth-child(3).goTop {
-  width: 5rem;
-  height: 4.5625rem;
-  text-align: center;
-  z-index: 999;
-  background-color: #272939;
-  padding-top: .625rem;
-  display: none;
-  cursor: pointer;
-  margin-top: .625rem;
-  padding-top: .625rem; }
-
-.goTop div:nth-child(1) {
-  width: 2rem;
-  height: 2rem;
-  margin: 0 auto;
-  margin-bottom: .375rem; }
-
-.goTop div:nth-child(1) img {
-  width: 100%; }
-
-.goTop div:nth-child(2) {
-  font-size: 1.125rem;
-  font-family: "Noto Sans SC";
-  font-weight: 500;
-  color: white; }
-<<<<<<< HEAD
-
-  /* 弹出框 */
+/* 弹出框 */
 .pop-up-box {
   position: fixed;
   top: 0;
@@ -1050,5 +907,3 @@ a {
   font-family: "Noto Sans SC";
   font-weight: 500;
   color: white; }
-=======
->>>>>>> 1aaa76494820aa67e3c4946c38cc461b6f4e41da

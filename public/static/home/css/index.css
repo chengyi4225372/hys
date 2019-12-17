@@ -886,8 +886,6 @@ a {
   display: none;
 }
 
-
-
 /* 选中时盒子的样式 */
 .tax-planning-solutions-content-one>div.content-active-shade .plan-text,
 .tax-planning-solutions-content-two>div.content-active-shade .plan-text {
@@ -1073,12 +1071,12 @@ a {
   float: left;
   width: 20rem;
   height: 12.5rem;
-  margin-right: 5.625rem;
+  margin-right: 7.5rem;
   cursor: pointer;
 }
 
 .preferential-taxadvantage-content-icon ul li:nth-child(1) {
-  background: url("../images/zhuanye.png") no-repeat;
+  background: url("../images/zhuanye2.png") no-repeat;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
 }
@@ -1090,13 +1088,13 @@ a {
 }
 
 .preferential-taxadvantage-content-icon ul li:nth-child(3) {
-  background: url("../images/anquan.png") no-repeat;
+  background: url("../images/anquan2.png") no-repeat;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
 }
 
 .preferential-taxadvantage-content-icon ul>li:nth-child(1).fousess {
-  background: url("../images/zhuanye2.png") no-repeat;
+  background: url("../images/zhuanye.png") no-repeat;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
 }
@@ -1108,7 +1106,7 @@ a {
 }
 
 .preferential-taxadvantage-content-icon ul>li:nth-child(3).fousess {
-  background: url("../images/anquan2.png") no-repeat;
+  background: url("../images/anquan.png") no-repeat;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
 }

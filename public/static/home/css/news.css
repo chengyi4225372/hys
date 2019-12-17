@@ -453,7 +453,7 @@ a {
   font-size: 1.5rem;
   line-height: 1.5rem;
   margin-bottom: 2.375rem;
-  font-weight: normal; }
+  font-weight: 500; }
 
 .search-box {
   display: -webkit-flex;
@@ -1104,6 +1104,7 @@ a {
     background: #074483;
     color: #fff;
 } */
+<<<<<<< HEAD
 
 /* 弹出框 */
 .pop-up-box {
@@ -1523,3 +1524,5 @@ a {
   font-family: "Noto Sans SC";
   font-weight: 500;
   color: white; }
+=======
+>>>>>>> 1aaa76494820aa67e3c4946c38cc461b6f4e41da
