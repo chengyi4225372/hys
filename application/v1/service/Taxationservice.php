@@ -132,4 +132,88 @@ class Taxationservice
         }
     }
 
+   /**
+    * 获取新闻资讯接口数据
+    * @title 关键字
+    * @page 当前页
+    * @size 每页显示条数
+    * return json
+    */
+   public function getnewsjson($title,$page,$size){
+       $array = [];
+       if (empty($title)) {
+           $array['status'] = 1;
+       } else {
+           $new_title = explode(',',$title);
+
+           $arr_title = array_filter($new_title,function ($params){
+               return !empty($params);
+           });
+
+           $arr_w = array_map(function ($pa){
+               return '%'.$pa.'%';
+           },$arr_title);
+
+           $array['status'] = 1;
+           $array['keywords'] = ['like',$arr_w,'OR'];
+       }
+
+       if($page == ''|| $page == 1){
+           $page = 0;
+       }
+
+       $arr = Taxation::instance()->where($array)->order('sort desc,create_time desc')->limit($page,$size)->select();
+       return $arr?$arr:'';
+   }
+
+   /**
+    * 新闻资讯接口数据的条数
+    * @title
+    * return string |int
+    */
+   public function getnewscount(){
+       $array = [];
+       if (empty($title)) {
+           $array['status'] = 1;
+       } else {
+           $new_title = explode(',',$title);
+
+           $arr_title = array_filter($new_title,function ($params){
+               return !empty($params);
+           });
+
+           $arr_w = array_map(function ($pa){
+               return '%'.$pa.'%';
+           },$arr_title);
+
+           $array['status'] = 1;
+           $array['keywords'] = ['like',$arr_w,'OR'];
+       }
+
+       $arr = Taxation::instance()->where($array)->order('sort desc,create_time desc')->count();
+       return $arr?$arr:'';
+   }
+
+   /**
+    * 排序设置
+    * @id
+    * @sort
+    * return bool
+    */
+    public  function setthissort($id,$sort){
+        if(empty($id) || !isset($id) || is_null($id) || $id <= 0){
+            return false;
+        }
+
+        $data = ['sort'=>$sort];
+
+        $res =  Taxation::instance()->where(['id'=>$id])->data($data)->update();
+
+        if($res !== false){
+            return true;
+        }else {
+            return false;
+        }
+
+    }
 }

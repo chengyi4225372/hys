@@ -43,6 +43,7 @@ class Taxation extends AuthController
             $data['content']  = input('post.content','','trim');
             $data['keywords'] = implode(',',json_decode(input('post.keyword', '', 'trim')));
             $data['create_time'] = time();
+            $data['sort'] = input('post.sort','','int');
 
 
             $ret = Taxationservice::instance()->addData($data);
@@ -81,7 +82,7 @@ class Taxation extends AuthController
             $data['description'] = input('post.description','','trim');
             $data['content']  = input('post.content','','trim');
             $data['keywords'] = implode(',',json_decode(input('post.keyword', '', 'trim')));
-
+            $data['sort'] = input('post.sort','','int');
 
           if(empty($id) || is_null($id) || !isset($id) || $id <= 0){
               return false;
@@ -117,6 +118,32 @@ class Taxation extends AuthController
         }
     }
 
+
+    /**
+     * 排序
+     * @sort 排序
+     * @id id
+     */
+    public function  setsort(){
+        if($this->request->isPost()){
+            $id = input('post.id','','int');
+            $sort = input('post.sort','','int');
+
+            if(empty($id) || !isset($id) || is_null($id) || $id <= 0){
+                return false;
+            }
+
+            $ret = Taxationservice::instance()->setthissort($id,$sort);
+
+            if($ret !== false){
+                return json(['code'=>200,'msg'=>'排序成功']);
+            }else {
+                return json(['code'=>400,'msg'=>'排序失败']);
+            }
+
+        }
+        return false;
+    }
 
     /**
      * 上传图片

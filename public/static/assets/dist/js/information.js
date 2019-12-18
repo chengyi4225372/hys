@@ -42,6 +42,7 @@ $('.add_taxa').click(function(){
     var imgs  = $('#Images').val();
     var description = $('#description').val();
     var keywords    = $('#keywords').val();
+    var sort        = $('#sort').val();
     var content     = ue.getContent();
     var urls        =  $(this).attr('data-url');
 
@@ -65,7 +66,7 @@ $('.add_taxa').click(function(){
         return false;
     }
 
-    $.post(urls,{'title':title,'keyword':JSON.stringify(keywords),'imgs':imgs,'description':description,'content':content},function(ret){
+    $.post(urls,{'title':title,'keyword':JSON.stringify(keywords),'imgs':imgs,'description':description,'content':content,'sort':sort},function(ret){
             if(ret.code == 200){
                 layer.msg(ret.msg,{icon:6},function(){
                     parent.location.reload();
@@ -105,6 +106,7 @@ $('.edit_taxa').click(function(){
     var imgs  = $('#Images').val();
     var description = $('#description').val();
     var keywords    = $("#keywords").val();
+    var sort        = $("#sort").val();
     var content     = ue.getContent();
     var urls        =  $(this).attr('data-url');
     var mid         = $('#mid').val();
@@ -130,7 +132,7 @@ $('.edit_taxa').click(function(){
     }
 
 
-    $.post(urls,{'title':title,'mid':mid,'keyword':JSON.stringify(keywords),'imgs':imgs,'description':description,'content':content},function(ret){
+    $.post(urls,{'title':title,'mid':mid,'keyword':JSON.stringify(keywords),'imgs':imgs,'description':description,'content':content,'sort':sort},function(ret){
 
          if(ret.code == 200){
             layer.msg(ret.msg,{icon:6},function(){
@@ -217,4 +219,33 @@ function uploads() {
 
     });
     return false;
+}
+
+/*** 排序 **/
+function setsort(obj){
+    var sort = $(obj).val();
+    var id   = $(obj).attr('data-id');
+    var urls = $(obj).attr('data-url');
+
+    if(id =='' || id== undefined || id== 'undefined'){
+        return false;
+    }
+
+    if(urls == '' || urls == undefined){
+        return false;
+    }
+
+    $.post(urls,{'id':id,'sort':sort},function(ret){
+         if(ret.code == 200){
+             layer.msg(ret.msg,{icon:6},function(){
+                 parent.location.reload();
+             });
+         }
+
+         if(ret.code == 400){
+             layer.msg(ret.msg,{icon:5},function(){
+                 parent.location.reload();
+             });
+         }
+    },'json')
 }

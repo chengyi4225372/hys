@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900">
     <link rel="stylesheet" href="__HOME__/css/footer.css">
 
-    <!--    <script src="__SPI__/js/clamp.js"></script>-->
     <script src="__PUBLIC__/assets/plugins/layui/layui.all.js"></script>
     <script src='__PUBLIC__/common/js/common.js'></script>
     <script src='__PUBLIC__/common/js/index.js'></script>
@@ -25,7 +24,6 @@
     <script src='__HOME__/js/industry.js'></script>
     <script src='__HOME__/js/footer.js'></script>
     <script src="__PUBLIC__/common/js/open.js"></script>
-
 </head>
 
 <body>
@@ -158,9 +156,12 @@
                         <span>热门关键词</span>
                         <ul>
                             {volist name='keywords' id='vo'}
-                            <li>
+                            <li onclick="hotsearch(this);" data-title="{$vo.title}"
+                                data-url="{:url('/home/industry/newsapi')}"
+                                data-href="{:url('/home/industry/infos')}">
                                 <span>{$vo.title}</span>
-                                <span class="close">✕</span>
+                                <span class="close" onclick="nullhot(this);"
+                                 data-url="{:url('/home/industry/newsapi')}">✕</span>
                             </li>
                             {/volist}
                         </ul>
@@ -222,8 +223,7 @@
                                 {empty name='$lo.keywords'}
                                 {else /}
                                 {foreach name="$lo.keywords" item="key" key="k" }
-                                <li onclick="hotsearch(this)" data-title="{$key}"
-                                    data-url="{:url('/home/industry/index')}">{$key}</li>
+                                <li>{$key}</li>
                                 {/foreach}
                                 {/empty}
                             </ul>
