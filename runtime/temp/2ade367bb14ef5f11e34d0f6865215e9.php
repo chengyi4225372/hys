@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:7:{s:111:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/v1\view\cust\customer\index.html";i:1575357099;s:96:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\layout\default.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\meta.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\header.html";i:1575426490;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\left.html";i:1575426769;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\footer.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\script.html";i:1575517385;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:7:{s:111:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/v1\view\cust\customer\index.html";i:1576635436;s:96:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\layout\default.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\meta.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\header.html";i:1575426490;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\left.html";i:1575426769;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\footer.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\script.html";i:1575517385;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -343,6 +343,7 @@
         <div class="box-body">
             <table class="table table-bordered table-hover table-striped">
                 <thead>
+                <th class="text-center" style="width:10%;">排序</th>
                 <th class="text-center">新闻标题</th>
                 <th class="text-center">展示图</th>
                 <th class="text-center">文章关键字</th>
@@ -352,9 +353,12 @@
                  <?php if(is_array($list) || $list instanceof \think\Collection || $list instanceof \think\Paginator): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
                 <tbody>
                 <tr>
+                    <td class="text-center">
+                        <input class="form-control form-control-sm" type="number" value=""  onblur="" data-url="" data="<?php echo $vo['id']; ?>">
+                    </td>
                     <td class="text-center"><?php echo $vo['title']; ?></td>
                     <td class="text-center">
-                        <a href="<?php echo $vo['imgs']; ?>">
+                        <a href="<?php echo $vo['imgs']; ?>" target="_blank">
                             <img src="<?php echo $vo['imgs']; ?>"  style="width: 150px;height:80px;">
                         </a>
                     </td>
