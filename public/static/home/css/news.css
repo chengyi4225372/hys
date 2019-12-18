@@ -523,6 +523,7 @@ a {
       -ms-flex-align: flex-start;
           align-items: flex-start; }
   .hotWord .bgHot {
+    padding-top: .3125rem;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -539,6 +540,7 @@ a {
         -ms-flex-align: flex-start;
             align-items: flex-start; }
     .hotWord .bgHot > span {
+      padding-top: .3125rem;
       white-space: nowrap;
       margin-right: 1.25rem;
       color: #D61313;

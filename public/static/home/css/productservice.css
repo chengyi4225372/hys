@@ -325,8 +325,8 @@ width: 100%;}
 
 .series {
   position: relative; 
-max-width: 120rem;
-margin: 0 auto;
+/* max-width: 120rem;
+margin: 0 auto; */
 }
 
 

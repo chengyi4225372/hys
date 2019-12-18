@@ -420,6 +420,7 @@ a {
 
 .preferential-box .preferential-container .preferential-icon .hysTitle {
   font-size: 1.875rem;
+  line-height: 1.875rem;
 }
 
 .preferential-box .preferential-container .preferential-icon>div:nth-child(1) {
@@ -428,7 +429,7 @@ a {
   background: #ee442e;
   -webkit-border-radius: 0.125rem;
   border-radius: 0.125rem;
-  margin-bottom: 0.625rem;
+  margin-bottom: .375rem;
 }
 
 .preferential-box .preferential-container .preferential-icon>div:nth-child(2) {
@@ -443,16 +444,18 @@ a {
   font-family: "Noto Sans SC", "Microsoft YaHei", "微软雅黑";
   font-weight: 400;
   color: #333333;
-  line-height: 2.5rem;
+  line-height: 1.5625rem;
   margin-bottom: 1rem;
 }
 
 .preferential-box .preferential-container .preferential-icon>div:nth-child(4) {
   width: 12.5rem;
   height: 3.125rem;
-  background: url("../images/huoqufangan.png") no-repeat;
-  -webkit-background-size: 100% 100%;
-  background-size: 100% 100%;
+  /* background: url("../images/huoqufangan.png") no-repeat; */
+  /* -webkit-background-size: 100% 100%;
+  background-size: 100% 100%; */
+  background:linear-gradient(0deg,rgba(232,59,39,1),rgba(250,83,57,1));
+border-radius: 0.7rem;
   font-size: 1.5rem;
   font-family: "Noto Sans SC", "Microsoft YaHei", "微软雅黑";
   font-weight: 400;
@@ -460,6 +463,9 @@ a {
   line-height: 3.125rem;
   text-align: center;
   cursor: pointer;
+}
+.activeGet{
+  background:linear-gradient(0deg,#d43623,#e44c34)!important;
 }
 
 .preferential-box .preferential-container .preferential-content {
@@ -575,17 +581,20 @@ a {
   float: left;
   padding-top: 0.625rem;
 }
-
+.taxIssues{
+  white-space: nowrap;
+}
 .taxproblems-box .taxproblems-right>div:nth-child(1) {
   height: 4px;
   background: #ee442e;
   -webkit-border-radius: 2px;
   border-radius: 2px;
-  margin-bottom: 0.8125rem;
+  margin-bottom: .5625rem;
 }
 
 .taxproblems-box .taxproblems-right>div:nth-child(2) {
   font-size: 1.875rem;
+  line-height: 1.875rem;
   font-family: "Noto Sans SC";
   font-weight: 500;
   color: #333333;
@@ -647,7 +656,6 @@ a {
   width: 180px;
   height: 4px;
   background: #ee442e;
-  background: none;
   -webkit-border-radius: 2px;
   border-radius: 2px;
   margin-bottom: 0.6875rem;
@@ -655,6 +663,7 @@ a {
 
 .tax-planning-solutions>div:nth-child(2) {
   font-size: 1.875rem;
+  line-height: 1.875rem;
   font-family: "Noto Sans SC";
   font-weight: 500;
   color: #333333;
@@ -1040,6 +1049,7 @@ a {
   width: 100%;
   height: 48.75rem;
   background-color: #f85236;
+ 
   margin-top: 3.875rem;
 }
 
@@ -1058,6 +1068,7 @@ a {
 
 .preferential-taxadvantage>div:nth-child(2) {
   font-size: 1.875rem;
+  line-height: 1.875rem;
   font-family: "Noto Sans SC";
   font-weight: 500;
   color: white;
@@ -1121,12 +1132,16 @@ a {
 }
 
 .preferential-taxadvantage-content-title {
+  display: none;
   text-align: center;
   font-size: 1.5rem;
   font-family: "Noto Sans SC";
   font-weight: 500;
   color: white;
   margin-bottom: 2.8125rem;
+}
+.ptct-active {
+  display: block;
 }
 
 .preferential-taxadvantage-content-imgs {
@@ -1226,11 +1241,12 @@ a {
   background: #ee442e;
   -webkit-border-radius: 2px;
   border-radius: 2px;
-  margin-bottom: 0.6875rem;
+  margin-bottom: .5625rem;
 }
 
 .selected-park>div:nth-child(2) {
   font-size: 1.875rem;
+  line-height: 1.875rem;
   font-family: "Noto Sans SC";
   font-weight: 500;
   color: #333333;
@@ -1360,13 +1376,14 @@ a {
 
 .partner-box .partner .partner-title .partner-title-box span {
   font-size: 1.875rem;
+  line-height: 1.875rem;
   font-family: "Noto Sans SC";
   font-weight: 500;
   color: #333333;
 }
 
 .partner-box .partner .modified-line {
-  margin-bottom: 0.6875rem;
+  margin-bottom: .5625rem;
   width: 5rem;
   height: 4px;
   background: #ee442e;

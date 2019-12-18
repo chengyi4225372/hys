@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:68:"C:\phpEnv\www\hys\public/../application/home\view\common\footer.html";i:1576661110;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:68:"C:\phpEnv\www\hys\public/../application/home\view\common\footer.html";i:1576682860;}*/ ?>
 <div class="bgBottom">
     <div class="bottomBox">
         <div class="w bottom">
@@ -23,7 +23,7 @@
                         <dd><a href="javascript:;">行业解决方案</a></dd>
                         <dd><a href="javascript:;">产品服务</a></dd>
                         <dd><a href="javascript:;">客户案例</a></dd>
-                        <dd><a href="javascript:;">招商合作</a></dd>
+                        <dd><a href="javascript:;" style="cursor: default;color:rgba(220, 220, 220, 0.3);">招商合作</a></dd>
                     </dl>
                     <dl>
                         <dt>客服热线</dt>
