@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\industry\index.html";i:1576640378;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\industry\index.html";i:1576650560;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900">
     <link rel="stylesheet" href="/static/home/css/footer.css">
 
-    <!--    <script src="/static/spirit/js/clamp.js"></script>-->
     <script src="/static/assets/plugins/layui/layui.all.js"></script>
     <script src='/static/common/js/common.js'></script>
     <script src='/static/common/js/index.js'></script>
@@ -26,7 +25,6 @@
     <script src='/static/home/js/industry.js'></script>
     <script src='/static/home/js/footer.js'></script>
     <script src="/static/common/js/open.js"></script>
-
 </head>
 
 <body>
@@ -159,9 +157,12 @@
                         <span>热门关键词</span>
                         <ul>
                             <?php if(is_array($keywords) || $keywords instanceof \think\Collection || $keywords instanceof \think\Paginator): $i = 0; $__LIST__ = $keywords;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-                            <li>
+                            <li onclick="hotsearch(this);" data-title="<?php echo $vo['title']; ?>"
+                                data-url="<?php echo url('/home/industry/newsapi'); ?>"
+                                data-href="<?php echo url('/home/industry/infos'); ?>">
                                 <span><?php echo $vo['title']; ?></span>
-                                <span class="close">✕</span>
+                                <span class="close" onclick="nullhot(this);"
+                                 data-url="<?php echo url('/home/industry/newsapi'); ?>">✕</span>
                             </li>
                             <?php endforeach; endif; else: echo "" ;endif; ?>
                         </ul>
@@ -235,8 +236,7 @@
                             </a>
                             <ul class="tags">
                                 <?php if(empty($lo['keywords']) || (($lo['keywords'] instanceof \think\Collection || $lo['keywords'] instanceof \think\Paginator ) && $lo['keywords']->isEmpty())): else: if(is_array($lo['keywords']) || $lo['keywords'] instanceof \think\Collection || $lo['keywords'] instanceof \think\Paginator): if( count($lo['keywords'])==0 ) : echo "" ;else: foreach($lo['keywords'] as $k=>$key): ?>
-                                <li onclick="hotsearch(this)" data-title="<?php echo $key; ?>"
-                                    data-url="<?php echo url('/home/industry/index'); ?>"><?php echo $key; ?></li>
+                                <li><?php echo $key; ?></li>
                                 <?php endforeach; endif; else: echo "" ;endif; endif; ?>
                             </ul>
                         </li>
