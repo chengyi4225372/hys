@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\industry\index.html";i:1576658969;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\industry\index.html";i:1576672211;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -88,7 +88,7 @@
                         <li><a href="<?php echo url('/home/programme/productservice'); ?>"> 产品服务</a></li>
                         <li><a href="<?php echo url('/home/programme/index'); ?>">行业解决方案</a></li>
                         <li><a href="<?php echo url('/home/customer/index'); ?>">客户案例</a></li>
-                        <li class="nav-active"><a href="<?php echo url('home/industry/index'); ?>">行业新闻资讯</a></li>
+                        <li class="nav-active"><a href="<?php echo url('home/industry/index'); ?>">新闻资讯</a></li>
                         <!-- <li><a href="#">会员通道</a></li> -->
                     </ul>
                 </div>
@@ -133,7 +133,7 @@
         <div class="w bread-crumbs">
             <span><a href="<?php echo url('/home/index/index'); ?>">首页</a></span> >
             <span><a class="current" style="color:#E8341E;" onclick="go_news(this)"
-                    data-url="<?php echo url('/home/industry/index'); ?>">行业新闻资讯</a></span> <span></span>
+                    data-url="<?php echo url('/home/industry/index'); ?>">新闻资讯</a></span> <span></span>
         </div>
     </div>
 
@@ -147,7 +147,7 @@
                       <li class="li-active">招商政策</li>
                       <li>招标信息</li>
                     </ul> -->
-                    <div class="govPolicy fl">行业资讯</div>
+                    <div class="govPolicy fl">新闻资讯</div>
 
                 </div>
 

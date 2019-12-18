@@ -33,7 +33,7 @@ class Industry extends BaseController
                $list[$key]['keywords'] = explode(',', $list[$key]['keywords']);
            }
            $this->assign('list',$list);
-           $this->assign('title','行业资讯');
+           $this->assign('title','新闻资讯');
            return $this->fetch();
        }
        return false;
@@ -78,7 +78,7 @@ class Industry extends BaseController
             $id = input('get.mid','','int');
             $info = Taxationservice::instance()->Getidinfo($id);
             $this->assign('info',$info);
-            $this->assign('title','行业新闻资讯详情');
+            $this->assign('title','新闻资讯详情');
             return $this->fetch();
         }
         return false;
