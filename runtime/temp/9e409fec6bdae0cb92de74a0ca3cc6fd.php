@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\industry\index.html";i:1576636106;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\industry\index.html";i:1576640594;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -158,23 +158,12 @@
                     <div class="bgHot">
                         <span>热门关键词</span>
                         <ul>
-                           
+                            <?php if(is_array($keywords) || $keywords instanceof \think\Collection || $keywords instanceof \think\Paginator): $i = 0; $__LIST__ = $keywords;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
                             <li>
-                                <span>周杰伦新歌</span>
+                                <span><?php echo $vo['title']; ?></span>
                                 <span class="close">✕</span>
                             </li>
-                            <li>
-                                <span>周杰伦新歌</span>
-                                <span class="close">✕</span>
-                            </li>
-                            <li>
-                                <span>周杰伦新歌</span>
-                                <span class="close">✕</span>
-                            </li>
-                            <li>
-                                <span>周杰伦新歌</span>
-                                <span class="close">✕</span>
-                            </li>
+                            <?php endforeach; endif; else: echo "" ;endif; ?>
                         </ul>
                     </div>
                     <!-- <ul>

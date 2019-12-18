@@ -539,6 +539,7 @@ a {
         -ms-flex-align: center;
             align-items: center; }
     .hotWord .bgHot > span {
+      white-space: nowrap;
       margin-right: 1.25rem;
       color: #D61313;
       font-size: .875rem; }
@@ -556,6 +557,7 @@ a {
           justify-content: flex-start; }
 
 .hotWord ul li {
+  white-space: nowrap;
   height: 1.625rem;
   font-size: .875rem;
   padding: 0 1.3125rem;
