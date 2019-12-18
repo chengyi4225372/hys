@@ -216,4 +216,41 @@ class Taxationservice
         }
 
     }
+
+    /**
+     * 上一页
+     * @id
+     */
+    public function gettop($id){
+        if(empty($id) || !isset($id) || is_null($id) || $id <= 0){
+            return false;
+        }
+
+        $w = [
+            'id'=>['LT',$id],
+            'status'=>1,
+        ];
+
+        $top = Taxation::instance()->where($w)->field('id,title')->order('sort asc ,create_time desc')->find();
+
+        return $top?$top:'';
+    }
+
+    /**
+     * 下一页
+     * @id
+     */
+    public function getnext($id){
+        if(empty($id) || !isset($id) || is_null($id) || $id <= 0){
+            return false;
+        }
+        $w = [
+            'id'=>['GT',$id],
+            'status'=>1,
+        ];
+
+        $next = Taxation::instance()->where($w)->field('id,title')->order('sort desc ,create_time desc')->find();
+
+        return $next?$next:'';
+    }
 }

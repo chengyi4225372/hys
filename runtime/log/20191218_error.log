@@ -67,3 +67,15 @@
 ---------------------------------------------------------------
 [ 2019-12-18T16:48:24+08:00 ] 127.0.0.1 GET /home/industry/newsapi.html?title=%E4%B8%AA%E4%BA%BA%E4%BB%A3%E6%8A%A5%E7%A8%8E%E5%9E%8B%E7%A8%8E%E7%AD%B9
 [ error ] [0]variable type error： boolean[C:\phpEnv\www\hys\thinkphp\library\think\Response.php:316]
+---------------------------------------------------------------
+[ 2019-12-18T20:31:54+08:00 ] 127.0.0.1 GET /home/industry/infos.html?mid=9
+[ error ] [0]method not exist:think\db\Query->filed[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\db\Query.php:96]
+---------------------------------------------------------------
+[ 2019-12-18T21:00:57+08:00 ] 127.0.0.1 GET /home/industry/index.html
+[ error ] [0]语法解析错误: syntax error, unexpected '<<' (T_SL)[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\home\controller\Industry.php:81]
+---------------------------------------------------------------
+[ 2019-12-18T21:01:39+08:00 ] 127.0.0.1 GET /home/industry/index.html
+[ error ] [0]语法解析错误: syntax error, unexpected '<<' (T_SL)[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\home\controller\Industry.php:81]
+---------------------------------------------------------------
+[ 2019-12-18T21:01:40+08:00 ] 127.0.0.1 GET /home/industry/index.html
+[ error ] [0]语法解析错误: syntax error, unexpected '<<' (T_SL)[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\home\controller\Industry.php:81]

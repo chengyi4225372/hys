@@ -1,23 +1,15 @@
 <?php
 return [
 //    'hlg' => 'http://172.26.3.13:8009/index.php',//惠灵工
-    'hlg' => 'http://www.i35tax.com',//惠灵工
+    'hlg' => 'http://hui0g.hui7y.com',//惠灵工
 
 //    'website' => 'http://172.26.3.13:8008/index.php',//官网
-    'website' => 'http://www.hqyonline.com/',//官网
+    'website' => 'https://www.hui7y.com',//官网
 
 //    'hzs' => 'http://172.26.3.13:8010/index.php',//会找事
-    'hzs' => 'http://www.35serve.com',//会找事
+    'hzs' => 'http://job.hui7y.com',//会找事
 
 //    'hys' => 'http://172.26.3.13:8011/index.php',//惠优税
-    'hys' => 'http://admin.hqyonline.com/',//惠优税
+    'hys' => 'http://hui3y.hui7y.com',//惠优税
 
-
-
-    'ge_login_url' => 'http://172.26.3.12:8009/#/logingr',
-    'gr_register_url' => 'http://172.26.3.12:8009/#/registergr',
-    'hou_tai_url' => 'http://172.26.3.12:8009/#',
-    'hdx' =>'/index.php/home/many/index',//会找事
-    'hcy' =>'/index.php/home/business/index',//惠创业
-    'hqd' =>'/index.php/home/launch/index', //惠企动
 ];
