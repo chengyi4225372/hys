@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\customer\index.html";i:1576636180;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\customer\index.html";i:1576640594;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -115,11 +115,7 @@
     </div>
   </div>
 
-    </script>
 
-
-  <!-- 底部 -->
-  <div id="footer"></div>
 
   <!-- 返回顶部 -->
   <!-- <div class='goTop' id="goTop">

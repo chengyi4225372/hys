@@ -529,7 +529,7 @@ a {
   transform: translateX(-50%);
   width: 8.75rem;
   height: 2.5rem;
-  background:linear-gradient(0deg,rgba(232,59,39,1),rgba(250,83,57,1));
+  background:linear-gradient(0deg,#fa5339,#e83b27);
   border-radius: 1.25rem;
   font-size: 1rem;
   font-family: PingFang SC;
@@ -537,6 +537,10 @@ a {
   color: rgba(255, 255, 255, 1);
   line-height: 2.5rem;
   text-align: center;
+}
+.activeMore{
+  background:linear-gradient(0deg,#e44c34,#d43623)!important;
+
 }
 
 .tabBox .item-content::after {

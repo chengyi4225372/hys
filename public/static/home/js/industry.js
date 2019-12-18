@@ -35,6 +35,20 @@ $(function(){
         }
         window.location.href = urls+'?keyword='+keyword;
     });
+
+
+
+    /* 客户案例按钮效果 */
+    $('.item-comtent-more').mouseover(function(){
+        $(this).addClass('activeMore')
+    }).mouseleave(function(){
+        $(this).removeClass('activeMore')
+    })
+    $('.item-comtent-more').mousedown(function(){
+        $(this).addClass('activeMore')
+    }).mouseup(function(){
+        $(this).removeClass('activeMore')
+    })
 });
 
 

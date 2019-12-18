@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:68:"C:\phpEnv\www\hys\public/../application/home\view\customer\info.html";i:1576636178;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:68:"C:\phpEnv\www\hys\public/../application/home\view\customer\info.html";i:1576641030;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -78,7 +78,7 @@
 
                 <div class='pic_total'>
                     <div class='pic_title'><?php echo $info['title']; ?></div>
-                    <div class='time'><?php echo $info['create_time']; ?></div>
+                    <!-- <div class='time'><?php echo $info['create_time']; ?></div> -->
                     <div class='line'></div>
                     <div class='tuwen'>
                         <div class='wenzi'>
