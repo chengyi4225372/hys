@@ -78,7 +78,6 @@ class Industry extends BaseController
             $id = input('get.mid','','int');
             $info = Taxationservice::instance()->Getidinfo($id);
             $this->assign('info',$info);
-<<<<<<< HEAD
             //上一篇
             $top  = Taxationservice::instance()->gettop($id);
             //下一篇
@@ -86,9 +85,6 @@ class Industry extends BaseController
             $this->assign('top',$top);
             $this->assign('next',$next);
             $this->assign('title','行业新闻资讯详情');
-=======
-            $this->assign('title','新闻资讯详情');
->>>>>>> f7f1c200cbd9675ad90ffae547ee19c680be0aeb
             return $this->fetch();
         }
         return false;
