@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\industry\infos.html";i:1576650851;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\industry\infos.html";i:1576672393;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,6 +18,7 @@
     <meta name="keyword" content="<?php echo $info['keywords']; ?>">
     <meta name="description" content="<?php echo $info['description']; ?>">
     <script src="/static/home/js/jquery.js"></script>
+    <script src="/static/assets/plugins/layui/layui.all.js"></script>
     <script src="/static/home/js/customer.js"></script>
     <script src="/static/common/js/open.js"></script>
     <script src='/static/home/js/footer.js'></script>
@@ -41,7 +42,7 @@
                     <li><a href="<?php echo url('/home/programme/productservice'); ?>"> 产品服务</a></li>
                     <li><a href="<?php echo url('/home/programme/index'); ?>">行业解决方案</a></li>
                     <li><a href="<?php echo url('/home/customer/index'); ?>">客户案例</a></li>
-                    <li class="nav-active"><a href="<?php echo url('home/industry/index'); ?>">行业新闻资讯</a></li>
+                    <li class="nav-active"><a href="<?php echo url('home/industry/index'); ?>">新闻资讯</a></li>
                     <!-- <li><a href="#">会员通道</a></li> -->
                 </ul>
             </div>
@@ -76,7 +77,7 @@
        
         <div class='w bread_title'>
             <a onclick="go_work(this)" data-url="<?php echo url('/home/index/index'); ?>">惠优税</a> >
-            <a onclick="go_news(this)" data-url="<?php echo url('/home/industry/index'); ?>">行业新闻资讯</a> > <span style="color: #E8341E;">详情</span></div>
+            <a onclick="go_news(this)" data-url="<?php echo url('/home/industry/index'); ?>">新闻资讯</a> > <span style="color: #E8341E;">详情</span></div>
         </div>
         <div class='content_middle'>
             

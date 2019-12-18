@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:68:"C:\phpEnv\www\hys\public/../application/home\view\common\footer.html";i:1576475680;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:68:"C:\phpEnv\www\hys\public/../application/home\view\common\footer.html";i:1576661110;}*/ ?>
 <div class="bgBottom">
     <div class="bottomBox">
         <div class="w bottom">
@@ -45,7 +45,7 @@
                             <img src="/static/home/images/weixincode.png" alt="">
                         </div>
                         <span><img src="/static/home/images/weixinicon.png" alt="">微信扫码关注</span>
-                        <i>及时获一手财税信息</i>
+                        <i>及时获知一手财税信息</i>
                     </li>
                     <li>
                         <div class="pic">

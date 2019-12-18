@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1576635831;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1576666546;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="/static/assets/plugins/layui/css/layui.css">
   <link rel="stylesheet" href="/static/home/css/index.css">
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-  <script src="/static/assets/plugins/layui/layui.js"></script>
+  <script src="/static/assets/plugins/layui/layui.all.js"></script>
   <script src="/static/home/js/clamp.js"></script>
   <script src='/static/home/js/index.js'></script>
   <script src="/static/common/js/open.js"></script>
@@ -392,10 +392,10 @@
             <li><a href="<?php echo url('/home/searches/index'); ?>">惠找事</a></li>
             <li><a href="<?php echo config('curl.hcy'); ?>">惠创业</a></li>
             <li><a href="<?php echo config('curl.hqd'); ?>">惠企动</a></li> -->
-            <li><span>惠企云</span><span></span></li>
-            <li><span>惠优税</span><span>惠灵工</span></li>
-            <li><span>惠多薪</span><span>惠找事</span></li>
-            <li><span>惠创业</span><span>惠启动</span></li>
+            <li><a>惠企云</a><a></a></li>
+            <li><a href="/">惠优税</a><a href="<?php echo config('curl.hlg'); ?>">惠灵工</a></li>
+            <li><a href="javascript:;">惠多薪</a><a href="javascript:;">惠找事</a></li>
+            <li><a href="javascript:;">惠创业</a><a href="javascript:;">惠启动</a></li>
           </ul>
         </div>
       </div>

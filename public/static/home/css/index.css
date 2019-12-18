@@ -1509,7 +1509,7 @@ a {
   margin-bottom: 0;
 }
 
-.consultation .consultation-item ul li span{
+.consultation .consultation-item ul li a{
   display: block;
   font-size: 1rem;
   line-height: 1rem;
@@ -1519,13 +1519,13 @@ a {
   cursor: pointer;
 }
 
-.consultation .consultation-item ul li:nth-child(3) span,
-.consultation .consultation-item ul li:nth-child(4) span{
+.consultation .consultation-item ul li:nth-child(3) a,
+.consultation .consultation-item ul li:nth-child(4) a{
  color:rgba(255,255,255,0.5);
 border-bottom: 1px solid rgba(255,255,255,0.5);
 cursor: default;
 }
-.consultation .consultation-item ul li span:first-child{
+.consultation .consultation-item ul li a:first-child{
   margin-right: 2.25rem;
 }
 
