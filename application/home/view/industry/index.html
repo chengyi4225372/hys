@@ -165,26 +165,10 @@
                             {/volist}
                         </ul>
                     </div>
-                    <!-- <ul>
-                        <li style="cursor:pointer;" data-url="{:url('/home/industry/index')}"
-                            onclick="location.href=$(this).attr('data-url')">
-                            <span>热门关键词</span>
-                        </li>
-                       
-                        {volist name='keywords' id='vo'}
-                        <li {eq name="$Think.get.title" value="$vo.title"} class="hotwords" {/eq}>
 
-                            <span onclick="hotsearch(this);" data-title="{$vo.title}"  data-url="{:url('/home/industry/index')}">{$vo.title}</span>
-
-                            <span class="close" onclick="window.location.href=$(this).attr('data-url')"  data-url="{:url('/home/industry/index')}">✕</span>
-                        </li>
-                        {/volist}
-
-                    </ul> -->
                     <div class="search-box">
                         <input type="text" id="keyword" value="{$Think.get.keyword}" placeholder="请输入关键字">
-                        <div id="searched" style="cursor:pointer;" data-url="{:url('/home/industry/index')}">搜索
-                        </div>
+                        <div id="searched" style="cursor:pointer;" data-url="{:url('/home/industry/index')}">搜索</div>
                     </div>
 
                 </div>
@@ -227,7 +211,8 @@
                                             </span>
                                         </div>
                                         <p>
-                                            {$lo.description|mb_substr='0','45','utf-8'}
+                                            枯井可啦啦棒地机车厂枯井可啦啦棒地机车厂枯井可啦啦棒地机车厂枯井可啦啦棒地机车厂枯井可啦啦棒地机车厂枯井可啦啦棒地机车厂枯井可啦啦棒地机车厂枯井可啦啦棒地机车厂枯井可啦啦棒地机车厂枯井可啦啦棒地机车厂枯井可啦啦棒地机车厂枯井可啦啦棒地机车厂枯井可啦啦棒地机车厂枯井可啦啦棒地机车厂
+                                            <!-- {$lo.description|mb_substr='0','45','utf-8'} -->
                                         </p>
                                     </div>
 

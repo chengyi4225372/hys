@@ -1,9 +1,9 @@
 
-$(function(){
-    $.ajax({
-      url: `${location.origin}/home/common/footer.html`,
-      success: res => {
-        $('#footer').html(res)
-      }
-    })
+$(function () {
+  $.ajax({
+    url: location.origin + '/home/common/footer.html',
+    success: function (res) {
+      $('#footer').html(res)
+    }
+  })
 })
