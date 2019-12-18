@@ -157,23 +157,12 @@
                     <div class="bgHot">
                         <span>热门关键词</span>
                         <ul>
-                           
+                            {volist name='keywords' id='vo'}
                             <li>
-                                <span>周杰伦新歌</span>
+                                <span>{$vo.title}</span>
                                 <span class="close">✕</span>
                             </li>
-                            <li>
-                                <span>周杰伦新歌</span>
-                                <span class="close">✕</span>
-                            </li>
-                            <li>
-                                <span>周杰伦新歌</span>
-                                <span class="close">✕</span>
-                            </li>
-                            <li>
-                                <span>周杰伦新歌</span>
-                                <span class="close">✕</span>
-                            </li>
+                            {/volist}
                         </ul>
                     </div>
                     <!-- <ul>

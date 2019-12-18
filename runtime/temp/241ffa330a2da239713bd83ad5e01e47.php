@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\industry\index.html";i:1576634408;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\industry\index.html";i:1576640378;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -91,7 +91,7 @@
                         <li><a href="<?php echo url('/home/programme/index'); ?>">行业解决方案</a></li>
                         <li><a href="<?php echo url('/home/customer/index'); ?>">客户案例</a></li>
                         <li class="nav-active"><a href="<?php echo url('home/industry/index'); ?>">行业新闻资讯</a></li>
-                        <li><a href="#">会员通道</a></li>
+                        <!-- <li><a href="#">会员通道</a></li> -->
                     </ul>
                 </div>
                 <!-- 登陆注册 -->
@@ -158,23 +158,12 @@
                     <div class="bgHot">
                         <span>热门关键词</span>
                         <ul>
-                           
+                            <?php if(is_array($keywords) || $keywords instanceof \think\Collection || $keywords instanceof \think\Paginator): $i = 0; $__LIST__ = $keywords;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
                             <li>
-                                <span>周杰伦新歌</span>
+                                <span><?php echo $vo['title']; ?></span>
                                 <span class="close">✕</span>
                             </li>
-                            <li>
-                                <span>周杰伦新歌</span>
-                                <span class="close">✕</span>
-                            </li>
-                            <li>
-                                <span>周杰伦新歌</span>
-                                <span class="close">✕</span>
-                            </li>
-                            <li>
-                                <span>周杰伦新歌</span>
-                                <span class="close">✕</span>
-                            </li>
+                            <?php endforeach; endif; else: echo "" ;endif; ?>
                         </ul>
                     </div>
                     <!-- <ul>
