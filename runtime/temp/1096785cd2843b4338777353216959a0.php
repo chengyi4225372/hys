@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:105:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\index\index.html";i:1576657548;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:105:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\index\index.html";i:1576676908;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -392,10 +392,10 @@
             <li><a href="<?php echo url('/home/searches/index'); ?>">惠找事</a></li>
             <li><a href="<?php echo config('curl.hcy'); ?>">惠创业</a></li>
             <li><a href="<?php echo config('curl.hqd'); ?>">惠企动</a></li> -->
-            <li><span>惠企云</span><span></span></li>
-            <li><span>惠优税</span><span>惠灵工</span></li>
-            <li><span>惠多薪</span><span>惠找事</span></li>
-            <li><span>惠创业</span><span>惠启动</span></li>
+            <li><a href="<?php echo config('curl.hqy'); ?>">惠企云</a></li>
+            <li><a href="/">惠优税</a><a href="<?php echo config('curl.hlg'); ?>">惠灵工</a></li>
+            <li><a href="<?php echo url('/home/many/index'); ?>">惠多薪</a><a href="<?php echo url('/home/searches/index'); ?>">惠找事</a></li>
+            <li><a href="<?php echo url('/home/business/index'); ?>">惠创业</a><a href="<?php echo url('/home/launch/index'); ?>">惠启动</a></li>
           </ul>
         </div>
       </div>

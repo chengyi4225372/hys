@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:107:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\common\footer.html";i:1576660798;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:107:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\common\footer.html";i:1576675769;}*/ ?>
 <div class="bgBottom">
     <div class="bottomBox">
         <div class="w bottom">
@@ -12,8 +12,8 @@
                 <div class="navList">
                     <dl>
                         <dt>惠企云旗下产品</dt>
-                        <dd><a href="javascript:;">惠灵工</a></dd>
-                        <dd><a href="javascript:;">惠优税</a></dd>
+                        <dd><a href="<?php echo config('curl.hlg'); ?>">惠灵工</a></dd>
+                        <dd><a href="/">惠优税</a></dd>
                         <dd><a href="javascript:;">惠多薪</a></dd>
                         <dd><a href="javascript:;">惠创业</a></dd>
                         <dd><a href="javascript:;">惠找事</a></dd>
