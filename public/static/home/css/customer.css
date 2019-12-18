@@ -445,12 +445,14 @@ a {
   /* width: 105px;
   height: 28px; */
   font-size: 1.5rem;
+  line-height: 1.5rem;
   font-family: Source Han Sans CN;
   font-weight: 700;
   color: rgba(0, 0, 0, 1);
-  border-left: 2px solid #000;
+  border-left: .1875rem solid #000;
   padding-left: .625rem;
   margin-bottom: 1.75rem;
+  padding-bottom: .25rem;
   /* line-height: 1.6875rem; */
 }
 
@@ -488,7 +490,7 @@ a {
   height: 4.125rem;
   font-size: 1.5rem;
   font-family: Microsoft YaHei;
-  font-weight: bold;
+  font-weight: 400;
   color: rgba(0, 0, 0, 1);
   line-height: 1.4;
   margin-bottom: 1rem;
@@ -527,7 +529,7 @@ a {
   transform: translateX(-50%);
   width: 8.75rem;
   height: 2.5rem;
-  background: linear-gradient(90deg, #E83B27, #FA5339);
+  background:linear-gradient(0deg,rgba(232,59,39,1),rgba(250,83,57,1));
   border-radius: 1.25rem;
   font-size: 1rem;
   font-family: PingFang SC;

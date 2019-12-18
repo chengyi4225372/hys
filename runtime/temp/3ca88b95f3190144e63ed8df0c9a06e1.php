@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:79:"C:\phpEnv\www\hys\public/../application/home\view\programme\productservice.html";i:1576585326;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:79:"C:\phpEnv\www\hys\public/../application/home\view\programme\productservice.html";i:1576635889;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,7 +41,7 @@
                         <li><a href="<?php echo url('/home/programme/index'); ?>">行业解决方案</a></li>
                         <li><a href="<?php echo url('/home/customer/index'); ?>">客户案例</a></li>
                         <li><a href="<?php echo url('home/industry/index'); ?>">行业新闻资讯</a></li>
-                        <li><a href="#">会员通道</a></li>
+                        <!-- <li><a href="#">会员通道</a></li> -->
                     </ul>
                 </div>
                 <!-- 登陆注册 -->

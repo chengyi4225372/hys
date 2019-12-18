@@ -399,7 +399,9 @@ a {
   border-radius: 0.4375rem;
   background: rgba(255, 255, 255, 0.5) !important;
 }
-
+.layui-carousel-arrow:hover, .layui-carousel-ind ul:hover{
+  background: none!important;
+}
 /* 惠优税产品 */
 .preferential-box .preferential-container {
   padding-top: 1.875rem;
@@ -645,6 +647,7 @@ a {
   width: 180px;
   height: 4px;
   background: #ee442e;
+  background: none;
   -webkit-border-radius: 2px;
   border-radius: 2px;
   margin-bottom: 0.6875rem;
@@ -657,6 +660,8 @@ a {
   color: #333333;
   margin-bottom: 3.8125rem;
 }
+
+
 
 .tax-planning-solutions-content-one,
 .tax-planning-solutions-content-two {
@@ -818,7 +823,7 @@ a {
 .tax-planning-solutions-content-one>div .tax-planning-solutions-content-text p:nth-child(1),
 .tax-planning-solutions-content-two>div .tax-planning-solutions-content-text p:nth-child(1) {
   font-size: 1.5rem;
-  font-family: Source Han Sans CN;
+  font-family: "Noto Sans SC";
   font-weight: 500;
   color: #333333;
   /* margin-bottom: 0.875rem; */
@@ -829,7 +834,7 @@ a {
 .tax-planning-solutions-content-one>div .tax-planning-solutions-content-text p:nth-child(2),
 .tax-planning-solutions-content-two>div .tax-planning-solutions-content-text p:nth-child(2) {
   font-size: 1.125rem;
-  font-family: Source Han Sans CN;
+  font-family: "Noto Sans SC";
   font-weight: 400;
   color: #999999;
   white-space: nowrap;
@@ -850,7 +855,7 @@ a {
   text-align: center;
   line-height: 2.125rem;
   font-size: 1.125rem;
-  font-family: Source Han Sans CN;
+  font-family: "Noto Sans SC";
   font-weight: 400;
   color: white;
   -webkit-border-radius: 4px;
@@ -954,7 +959,7 @@ a {
 .tax-planning-solutions-content-one>div.content-active-shade .tax-planning-solutions-content-text p:nth-child(1),
 .tax-planning-solutions-content-two>div.content-active-shade .tax-planning-solutions-content-text p:nth-child(1) {
   font-size: 1.875rem;
-  font-family: Source Han Sans CN;
+  font-family: "Noto Sans SC";
   font-weight: 500;
   color: white;
   margin-bottom: 2rem;
@@ -963,7 +968,7 @@ a {
 .tax-planning-solutions-content-one>div.content-active-shade .tax-planning-solutions-content-text p:nth-child(2),
 .tax-planning-solutions-content-two>div.content-active-shade .tax-planning-solutions-content-text p:nth-child(2) {
   font-size: 1.125rem;
-  font-family: Source Han Sans CN;
+  font-family: "Noto Sans SC";
   font-weight: 400;
   color: white;
 }
@@ -988,7 +993,7 @@ a {
   text-align: center;
   line-height: 3.75rem;
   font-size: 1.5rem;
-  font-family: Source Han Sans CN;
+  font-family: "Noto Sans SC";
   font-weight: 400;
   color: white;
   background: -ms-linear-gradient(bottom, #e83b27, #fa5339);
@@ -1004,7 +1009,7 @@ a {
 .tax-planning-solutions-content-one>div.content-active-shade .tax-planning-solutions-content-btn2 a,
 .tax-planning-solutions-content-two>div.content-active-shade .tax-planning-solutions-content-btn2 a {
   font-size: 1.375rem;
-  font-family: Source Han Sans CN;
+  font-family: "Noto Sans SC";
   font-weight: 400;
   color: white;
   /* background: -webkit-gradient(linear,
@@ -1053,7 +1058,7 @@ a {
 
 .preferential-taxadvantage>div:nth-child(2) {
   font-size: 1.875rem;
-  font-family: Source Han Sans CN;
+  font-family: "Noto Sans SC";
   font-weight: 500;
   color: white;
   margin-bottom: 4.6875rem;
@@ -1118,7 +1123,7 @@ a {
 .preferential-taxadvantage-content-title {
   text-align: center;
   font-size: 1.5rem;
-  font-family: Source Han Sans CN;
+  font-family: "Noto Sans SC";
   font-weight: 500;
   color: white;
   margin-bottom: 2.8125rem;
@@ -1226,7 +1231,7 @@ a {
 
 .selected-park>div:nth-child(2) {
   font-size: 1.875rem;
-  font-family: Source Han Sans CN;
+  font-family: "Noto Sans SC";
   font-weight: 500;
   color: #333333;
   margin-bottom: 3.0625rem;
@@ -1307,7 +1312,7 @@ a {
   text-align: center;
   line-height: 5.5rem;
   font-size: 1.25rem;
-  font-family: Source Han Sans CN;
+  font-family: "Noto Sans SC";
   font-weight: 400;
   color: #fffefe;
 }
@@ -1323,7 +1328,7 @@ a {
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
   font-size: 1.125rem;
-  font-family: Source Han Sans CN;
+  font-family: "Noto Sans SC";
   font-weight: 400;
   color: #ef4933;
   line-height: 2.375rem;
@@ -1355,7 +1360,7 @@ a {
 
 .partner-box .partner .partner-title .partner-title-box span {
   font-size: 1.875rem;
-  font-family: Source Han Sans CN;
+  font-family: "Noto Sans SC";
   font-weight: 500;
   color: #333333;
 }
@@ -1408,14 +1413,14 @@ a {
   top: 0;
   left: 0;
   z-index: 2;
-  background: #f95238;
+  background:linear-gradient(0deg,rgba(232,59,39,1),rgba(250,83,57,1));
   width: 5rem;
   height: 11.25rem;
   -webkit-writing-mode: vertical-rl;
   writing-mode: vertical-rl;
   -ms-writing-mode: tb-rl;
   font-size: 1.5rem;
-  font-family: Source Han Sans CN;
+  font-family: "Noto Sans SC";
   font-weight: 400;
   color: #fff;
   cursor: pointer;
@@ -1466,7 +1471,7 @@ a {
 
 .consultation>div>.consultation-item {
   /* padding-top: 2.2rem; */
-  background:linear-gradient(0deg,rgba(232,59,39,1),rgba(250,83,57,1));
+  background:#f95238;
 
 
   /* right: 5.3125rem; */
@@ -1478,8 +1483,11 @@ a {
 
 .consultation .consultation-item ul {
   box-sizing: border-box;
-  padding-left: 2rem;
-  padding-top: 1.0625rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 2rem;
+  padding-top: 1rem;
   height: 100%;
 }
 
@@ -1491,12 +1499,18 @@ a {
   margin-left: 2rem;
   margin-bottom: 0.875rem;
   border-bottom: 1px solid #fff; */
-  margin-bottom: 1.0625rem;
-  
-  
+  margin-bottom: 1rem;
+  display: flex;
+  box-sizing: border-box;
+  font-family: "Noto Sans SC";
 
 }
+.consultation .consultation-item ul li:last-child{
+  margin-bottom: 0;
+}
+
 .consultation .consultation-item ul li span{
+  display: block;
   font-size: 1rem;
   line-height: 1rem;
   padding-bottom: .5rem;
@@ -1507,8 +1521,8 @@ a {
 
 .consultation .consultation-item ul li:nth-child(3) span,
 .consultation .consultation-item ul li:nth-child(4) span{
-color: #DCDCDC;
-border-bottom: 1px solid #DCDCDC;
+ color:rgba(255,255,255,0.5);
+border-bottom: 1px solid rgba(255,255,255,0.5);
 cursor: default;
 }
 .consultation .consultation-item ul li span:first-child{
@@ -1550,7 +1564,8 @@ cursor: default;
 
 .consultation>div>.consultation-item2 div p:nth-child(1) {
   font-size: 1rem;
-  font-family: Source Han Sans CN;
+  line-height: 1rem;
+  font-family: "Noto Sans SC";
   font-weight: 400;
   color: white;
   margin-bottom: 0.875rem;
@@ -1558,7 +1573,8 @@ cursor: default;
 
 .consultation>div>.consultation-item2 div p:nth-child(2) {
   font-size: 1.125rem;
-  font-family: Source Han Sans CN;
+  line-height: 1.125rem;
+  font-family: "Noto Sans SC";
   font-weight: 400;
   color: white;
   margin-bottom: 0.875rem;
@@ -1603,7 +1619,7 @@ cursor: default;
 
 .goTop div:nth-child(2) {
   font-size: 1.125rem;
-  font-family: Source Han Sans CN;
+  font-family: "Noto Sans SC";
   font-weight: 500;
   color: white;
 }
@@ -1765,7 +1781,7 @@ cursor: default;
   -webkit-border-radius: 4px;
   border-radius: 4px;
   font-size: 1.5rem;
-  font-family: "Noto Sans SC", "Source Han Sans CN", "Microsoft YaHei",
+  font-family: "Noto Sans SC", "Microsoft YaHei",
  "微软雅黑";
   font-weight: 400;
   /* text-align: center; */
