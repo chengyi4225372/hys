@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:109:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\programme\index.html";i:1575860596;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:109:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\programme\index.html";i:1576589166;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,12 +8,20 @@
   <meta name="force-rendering" content="webkit" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <script>/*@cc_on document.write('\x3Cscript id="_iealwn_js" src="https://support.dmeng.net/ie-alert-warning/latest.js">\x3C/script>'); @*/</script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title><?php echo $title; ?></title>
   <link rel="stylesheet" href="/static/home/css/base.css">
   <link rel="stylesheet" href="/static/home/css/programme.css">
+  <link rel="stylesheet" href="/static/home/css/footer.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900">
   <script src="/static/home/js/jquery.js"></script>
+  <script src="/static/assets/plugins/layui/layui.all.js"></script>
+
   <script src="/static/home/js/programme.js"></script>
+  <script src="/static/common/js/open.js"></script>
+  <script src='/static/home/js/footer.js'></script>
+
 </head>
 
 <body>
@@ -23,8 +31,7 @@
       <div class="w nav-container clearfix">
         <!-- logo图 -->
         <div class="logo clearfix">
-          <img src="/static/home/images/logo.png" alt="">
-          <h1>惠优税</h1>
+          <img src="/static/home/images/logo2.png" alt="">
         </div>
         <!-- nav部分 -->
         <div class="nav">
@@ -57,95 +64,118 @@
       </div>
     </div>
 
-    <!-- 头部 -->
+    <!-- banner -->
     <div class='header-box'></div>
 
-    <!-- 选项卡 -->
-    <div class="w bg_tab">
-      <div class="tabBox">
-        <div class="tab">
-          <ul>
-            <li class="activeTab"><a href="javascript:;">O2O服务模式(共享经济)</a></li>
-            <li><a href="javascript:;">律师行业税务筹划方案</a></li>
-            <li><a href="javascript:;">股权投资行业筹划方案</a></li>
-            <li><a href="javascript:;">医药行业筹划方案</a></li>
-            <li><a href="javascript:;">网红主播筹划方案</a></li>
-            <li><a href="javascript:;">科技服务行业筹划方案</a></li>
-            <li><a href="javascript:;">贸易采集行业筹划方案</a></li>
-          </ul>
-          <div class="tabCon">
-            <img src="/static/home/images/0case.png" alt="">
-          </div>
-          <div class="tabTitle">
-            O2O服务模式(共享经济)
-          </div>
-        </div>
+    <!-- 面包屑导航 -->
+    <div class="bg_breadCrumbs">
+      <div class="w bread-crumbs">
+        <span><a href="<?php echo url('/home/index/index'); ?>">首页</a></span> >
+        <span><a class="current" style="color:#E8341E;" onclick="go_news(this)"
+            data-url="<?php echo url('/home/Programme/index'); ?>">行业解决方案</a></span> <span></span>
       </div>
     </div>
 
+    <!-- 选项卡 -->
+
+    <div class="bgTab">
+      <div class="tab">
+       
+
+        
+        <ul class="tabBtn">
+          <li class="activeTabBtn">科技服务行业</li>   
+          <li>建筑行业</li>
+          <li>贸易行业</li>
+          <li>企业服务行业</li>
+        </ul>
+
+ 
+
+        <ul class="tabCon">
+          <li class="activTabCon">
+            <img src="/static/home/images/tabImgA1.png" alt="">
+            <img src="/static/home/images/tabImgA2.png" alt="">
+            <img src="/static/home/images/tabImgA3.png" alt="">
+            <img src="/static/home/images/tabImgA4.png" alt="">
+          </li>
+          <li>
+            <img src="/static/home/images/tabImgB1.png" alt="">
+            <img src="/static/home/images/tabImgB2.png" alt="">
+            <img src="/static/home/images/tabImgB3.png" alt="">
+            <img src="/static/home/images/tabImgB4.png" alt="">
+          </li>
+          <li>
+            <img src="/static/home/images/tabImgC1.png" alt="">
+            <img src="/static/home/images/tabImgC2.png" alt="">
+            <img src="/static/home/images/tabImgC3.png" alt="">
+            <img src="/static/home/images/tabImgC4.png" alt="">
+          </li>
+          <li>
+            <img src="/static/home/images/tabImgD1.png" alt="">
+            <img src="/static/home/images/tabImgD2.png" alt="">
+            <img src="/static/home/images/tabImgD3.png" alt="">
+         
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   </div>
+
+
+      <!-- 弹框 -->
+      <div class="pop-up-box" id="popbox">
+        <div class="form">
+            <div class="form-titile">
+                <p>方案咨询</p>
+                <span class="turnoff" onclick="hide_open()"></span>
+            </div>
+            <div class="form-content">
+                <div><span class="title">您的姓名</span><input type="text" id="contactName" placeholder="请输您的姓名"></div>
+                <div><span class="title">联系方式</span><input type="text" id="contactMobile" placeholder="请输入您的手机号"></div>
+                <div><span class="title">公司名称</span><input type="text" id="companyName" placeholder="若无公司请填写自雇"></div>
+                <input type='hidden' id='sources' value='惠优税'>
+                <input type='hidden' id='identifications' value='企业税筹'>
+                <div class="form-btn" onclick="form_btn()">获取方案</div>
+            </div>
+            <!-- 提交成果后弹窗 -->
+            <div class="mask-box">
+                <span></span>
+                <p class="mask-box-title">提交成功</p>
+                <p class="mask-box-content">我们会在一个工作日内联系您</p>
+            </div>
+        </div>
+
+    </div>
+
 
 
   <!-- 底部 -->
-  <div class="fotter-box">
-    <div class="w fotter">
-      <div class='parter_catefories'>
-        <dl>
-          <dt><a href="javascript:;">服务产品</a></dt>
-          <dd><a href="javascript:;">服务型税筹</a></dd>
-          <dd><a href="javascript:;">门户型税筹</a></dd>
-          <dd><a href="javascript:;">人力资源</a></dd>
-        </dl>
-        <dl>
-          <dt><a href="javascript:;">招商政策</a></dt>
-          <dd><a href="javascript:;">招商政策网</a></dd>
-        </dl>
-        <dl>
-          <dt><a href="javascript:;">合作</a></dt>
-          <dd><a href="javascript:;">代理合作</a></dd>
-        </dl>
-        <dl>
-          <dt><a href="javascript:;">公司信息</a></dt>
-          <dd><a href="javascript:;">瑟维斯有限公司</a></dd>
-          <dd><a href="javascript:;">惠创优产业联盟</a></dd>
-          <dd><a href="javascript:;">中兴瑞华有限公司</a></dd>
-        </dl>
-        <dl>
-          <dt><a href="javascript:;">联系我们</a></dt>
-          <dd><a href="javascript:;">400-150-9896</a></dd>
-          <dd><a href="javascript:;">hcylm008@dingtalk.com</a></dd>
-          <dd><a href="javascript:;">武汉市硚口区南国大武汉H座18楼</a></dd>
-        </dl>
+  <div id="footer"></div>
 
-      </div>
-      <div class='concat_icon clearfix'>
-        <div><img src="/static/home/images/bo.png" alt=""></div>
-        <div><img src="/static/home/images/wx.png" alt=""></div>
-        <div><img src="/static/home/images/tie.png" alt=""></div>
-      </div>
-      <div class="fotter-line"></div>
-      <div class="copyRight">© Copyright 2019 惠企动（湖北）科技有限公司 . All Rights Reserved</div>
-    </div>
-  </div>
-
-  <!-- 侧边栏bottom资讯 -->
-  <div class="bottom">
+  <!-- 侧边栏consultation资讯 -->
+  <div class="consultation">
     <div>
-      <div class="bottom-title">立即预约咨询</div>
-      <div class="bottom-item2 order">
-        <div>
-          <p>专家服务电话</p>
-          <p>181-8619-4461</p>
-        </div>
-        <div>
-          <p>获取税筹方案</p>
-          <p>400-150-9898</p>
-        </div>
-      </div>
+      <div class="consultation-title" onclick="alert_open()">咨询方案</div>
     </div>
     <div>
-      <div class="bottom-title2">联系我们</div>
-      <div class="bottom-item2">
+      <div class="consultation-title2">联系我们</div>
+      <div class="consultation-item2">
         <div>
           <p>专家服务电话</p>
           <p>181-8619-4461</p>
@@ -182,11 +212,20 @@
     })
 
     /* 选项卡切换 */
-    $('.tab ul li a').on('click', function () {
-      $('.tabCon img').attr('src', '/static/home/images/'+$(this).parent().index()+'case.png')
-      $('.tabTitle').html($(this).html())
-      $(this).parent().addClass('activeTab').siblings().removeClass('activeTab')
+    // $('.tab ul li a').on('click', function () {
+    //   $('.tabCon img').attr('src', '/static/home/images/' + $(this).parent().index() + 'case.png')
+    //   $('.tabTitle').html($(this).html())
+    //   $(this).parent().addClass('activeTab').siblings().removeClass('activeTab')
+    // })
+
+  /* 新项卡切换 */
+    $('.tabBtn li').on('click',function(){
+      $(this).addClass('activeTabBtn').siblings().removeClass('activeTabBtn')
+      console.log($(this).index())
+
+      $('.tabCon li').eq($(this).index()).addClass('activTabCon').siblings().removeClass('activTabCon')
     })
+
   })
 
 </script>

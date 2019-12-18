@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\industry\index.html";i:1575860596;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\industry\index.html";i:1576634408;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,18 +8,25 @@
     <meta name="force-rendering" content="webkit" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <script>/*@cc_on document.write('\x3Cscript id="_iealwn_js" src="https://support.dmeng.net/ie-alert-warning/latest.js">\x3C/script>'); @*/</script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title><?php echo $title; ?></title>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script> -->
+    <script src="https://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
     <link rel="stylesheet" href="/static/home/css/base.css">
     <link rel="stylesheet" href="/static/home/css/news.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900">
+    <link rel="stylesheet" href="/static/home/css/footer.css">
+
     <!--    <script src="/static/spirit/js/clamp.js"></script>-->
     <script src="/static/assets/plugins/layui/layui.all.js"></script>
     <script src='/static/common/js/common.js'></script>
     <script src='/static/common/js/index.js'></script>
     <script src='/static/common/js/public.js'></script>
     <script src='/static/home/js/industry.js'></script>
+    <script src='/static/home/js/footer.js'></script>
+    <script src="/static/common/js/open.js"></script>
+
 </head>
 
 <body>
@@ -73,8 +80,8 @@
             <div class="w nav-container clearfix">
                 <!-- logo图 -->
                 <div class="logo clearfix">
-                    <img src="/static/home/images/logo.png" alt="">
-                    <h1>惠优税</h1>
+                    <img src="/static/home/images/logo2.png" alt="">
+
                 </div>
                 <!-- nav部分 -->
                 <div class="nav">
@@ -119,13 +126,13 @@
         </div>
     </div> -->
 
-        <!-- 头部 -->
-        <div class='header-box'></div>
+    <!-- 头部 -->
+    <div class='header-box'></div>
 
 
     <!-- 面包屑导航 -->
-    <div class="w bg_breadCrumbs">
-        <div class="bread-crumbs">
+    <div class="bg_breadCrumbs">
+        <div class="w bread-crumbs">
             <span><a href="<?php echo url('/home/index/index'); ?>">首页</a></span> >
             <span><a class="current" style="color:#E8341E;" onclick="go_news(this)"
                     data-url="<?php echo url('/home/industry/index'); ?>">行业新闻资讯</a></span> <span></span>
@@ -143,26 +150,39 @@
                       <li>招标信息</li>
                     </ul> -->
                     <div class="govPolicy fl">行业资讯</div>
-                    <div class="search-box fr">
-                        <input type="text" id="keyword" value="<?php echo \think\Request::instance()->get('keyword'); ?>" placeholder="请输入关键字">
-                        <div id="searched" style="cursor:pointer;" data-url="<?php echo url('/home/industry/index'); ?>">搜索
-                        </div>
-                    </div>
+
                 </div>
 
                 <!-- 热搜 -->
-                <div class="m hotWord">
-                    <ul>
+                <div class="hotWord">
+                    <div class="bgHot">
+                        <span>热门关键词</span>
+                        <ul>
+                           
+                            <li>
+                                <span>周杰伦新歌</span>
+                                <span class="close">✕</span>
+                            </li>
+                            <li>
+                                <span>周杰伦新歌</span>
+                                <span class="close">✕</span>
+                            </li>
+                            <li>
+                                <span>周杰伦新歌</span>
+                                <span class="close">✕</span>
+                            </li>
+                            <li>
+                                <span>周杰伦新歌</span>
+                                <span class="close">✕</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- <ul>
                         <li style="cursor:pointer;" data-url="<?php echo url('/home/industry/index'); ?>"
                             onclick="location.href=$(this).attr('data-url')">
                             <span>热门关键词</span>
                         </li>
-                        <!-- <?php if(is_array($keywords) || $keywords instanceof \think\Collection || $keywords instanceof \think\Paginator): $i = 0; $__LIST__ = $keywords;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-                        <li onclick="hotsearch(this);" data-title="<?php echo $vo['title']; ?>"
-                            data-url="<?php echo url('/home/industry/index'); ?>">
-                            <span><?php echo $vo['title']; ?></span>
-                        </li>
-                        <?php endforeach; endif; else: echo "" ;endif; ?> -->
+                       
                         <?php if(is_array($keywords) || $keywords instanceof \think\Collection || $keywords instanceof \think\Paginator): $i = 0; $__LIST__ = $keywords;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
                         <li <?php if(\think\Request::instance()->get('title') == $vo['title']): ?> class="hotwords" <?php endif; ?>>
 
@@ -172,7 +192,12 @@
                         </li>
                         <?php endforeach; endif; else: echo "" ;endif; ?>
 
-                    </ul>
+                    </ul> -->
+                    <div class="search-box">
+                        <input type="text" id="keyword" value="<?php echo \think\Request::instance()->get('keyword'); ?>" placeholder="请输入关键字">
+                        <div id="searched" style="cursor:pointer;" data-url="<?php echo url('/home/industry/index'); ?>">搜索
+                        </div>
+                    </div>
 
                 </div>
 
@@ -243,61 +268,72 @@
         <!--                    <li>2</li>-->
         <!--                    <li class="next">下一页</li>-->
         <!--                </ul>-->
-        <?php echo $list->render(); ?>   
+        <?php echo $list->render(); ?>
     </div>
 
 
     <!-- 底部 -->
-    <div class="fotter-box">
-        <div class="w fotter">
-            <!-- <div class='partener_titile'>用智“慧”创造优“惠”</div>
-            <div class='parterne_info'>
-              深耕税筹行业多年，合作企业多达几千家。专业为个人和企业解决税务难题。为您提供一站式金融、税务和人力外包服务，以及专业的税筹划分析，最安全、高效、合理的节税措施。我们有最成熟的专家团队和各行业实操经验！作为国内领先的标准化税筹服务互联网平台，我们得到了上海、安徽、江西、湖北等各地政府的大力支持，为企业节税保驾护航！
-            </div> -->
-            <div class='parter_catefories'>
-                <dl>
-                    <dt><a href="javascript:;">服务产品</a></dt>
-                    <dd><a href="javascript:;">服务型税筹</a></dd>
-                    <dd><a href="javascript:;">门户型税筹</a></dd>
-                    <dd><a href="javascript:;">人力资源</a></dd>
-                </dl>
-                <dl>
-                    <dt><a href="javascript:;">招商政策</a></dt>
-                    <dd><a href="javascript:;">招商政策网</a></dd>
-                </dl>
-                <dl>
-                    <dt><a href="javascript:;">合作</a></dt>
-                    <dd><a href="javascript:;">代理合作</a></dd>
-                </dl>
-                <dl>
-                    <dt><a href="javascript:;">公司信息</a></dt>
-                    <dd><a href="javascript:;">瑟维斯有限公司</a></dd>
-                    <dd><a href="javascript:;">惠创优产业联盟</a></dd>
-                    <dd><a href="javascript:;">中兴瑞华有限公司</a></dd>
-                </dl>
-                <dl>
-                    <dt><a href="javascript:;">联系我们</a></dt>
-                    <dd><a href="javascript:;">400-150-9896</a></dd>
-                    <dd><a href="javascript:;">hcylm008@dingtalk.com</a></dd>
-                    <dd><a href="javascript:;">武汉市硚口区南国大武汉H座18楼</a></dd>
-                </dl>
+<div id="footer"></div>
 
-            </div>
-            <div class='concat_icon clearfix'>
-                <div><img src="/static/home/images/tie.png" alt=""></div>
-                <div><img src="/static/home/images/wx.png" alt=""></div>
-                <div><img src="/static/home/images/bo.png" alt=""></div>
-            </div>
-            <div class="partener_fotter">© Copyright 2019 惠企动（湖北）科技有限公司 . All Rights Reserved</div>
+      <!-- 侧边栏consultation资讯 -->
+      <div class="consultation">
+        <div>
+          <div class="consultation-title" onclick="alert_open()">咨询方案</div>
+          <!-- <div class="consultation-item">
+            <ul>
+              <li><a href="/">惠优税</a></li>
+              <li><a href="<?php echo config('curl.hlg'); ?>">惠灵工</a></li>
+              <li><a href="<?php echo config('curl.hdx'); ?>">惠多薪</a></li>
+              <li><a href="<?php echo url('/home/searches/index'); ?>">惠找事</a></li>
+              <li><a href="<?php echo config('curl.hcy'); ?>">惠创业</a></li>
+              <li><a href="<?php echo config('curl.hqd'); ?>">惠企动</a></li>
+            </ul>
+          </div> -->
         </div>
-    </div>
+        <div>
+          <div class="consultation-title2">联系我们</div>
+          <div class="consultation-item2">
+            <div>
+              <p>专家服务电话</p>
+              <p>181-8619-4461</p>
+            </div>
+            <div>
+              <p>获取税筹方案</p>
+              <p>400-150-9898</p>
+            </div>
+          </div>
+        </div>
+        <!-- 返回顶部  -->
+        <div class='goTop' id="goTop">
+          <div><img src="/static/home/images/top@2x.png" alt=""></div>
+          <div>顶部</div>
+        </div>
+      </div>
 
-    <!-- 返回顶部 -->
-    <div class='goTop' id="goTop">
-        <i></i>
-        <div>返回顶部</div>
-    </div>
+     <!-- 弹框 -->
+     <div class="pop-up-box" id="popbox">
+        <div class="form">
+            <div class="form-titile">
+                <p>方案咨询</p>
+                <span class="turnoff" onclick="hide_open()"></span>
+            </div>
+            <div class="form-content">
+                <div><span class="title">您的姓名</span><input type="text" id="contactName" placeholder="请输您的姓名"></div>
+                <div><span class="title">联系方式</span><input type="text" id="contactMobile" placeholder="请输入您的手机号"></div>
+                <div><span class="title">公司名称</span><input type="text" id="companyName" placeholder="若无公司请填写自雇"></div>
+                <input type='hidden' id='sources' value='惠优税'>
+                <input type='hidden' id='identifications' value='企业税筹'>
+                <div class="form-btn" onclick="form_btn()">获取方案</div>
+            </div>
+            <!-- 提交成果后弹窗 -->
+            <div class="mask-box">
+                <span></span>
+                <p class="mask-box-title">提交成功</p>
+                <p class="mask-box-content">我们会在一个工作日内联系您</p>
+            </div>
+        </div>
 
+    </div>
 
     </div>
     <script>

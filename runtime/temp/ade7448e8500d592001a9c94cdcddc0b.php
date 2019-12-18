@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\customer\index.html";i:1576588246;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\customer\index.html";i:1576636180;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -47,7 +47,7 @@
                     <li><a href="<?php echo url('/home/programme/index'); ?>">行业解决方案</a></li>
                     <li class="nav-active"><a href="<?php echo url('/home/customer/index'); ?>">客户案例</a></li>
                     <li><a href="<?php echo url('home/industry/index'); ?>">行业新闻资讯</a></li>
-                    <li><a href="#">会员通道</a></li>
+                    <!-- <li><a href="#">会员通道</a></li> -->
                 </ul>
             </div>
             <!-- 登陆注册 -->
@@ -94,160 +94,22 @@
           客户案例
         </div>
         <ul class="clearfix">
+          <?php if(is_array($list) || $list instanceof \think\Collection || $list instanceof \think\Paginator): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
           <li>
-            <a href="<?php echo url('/home/customer/info'); ?>">
+            <a href="<?php echo url('/home/customer/info',['mid'=>$vo['id']]); ?>">
               <div class="item-img">
-                <img src="/static/home/images/clientcaseitem1.png" alt="">
+                <img src="<?php echo !empty($vo['imgs'])?$vo['imgs']:''; ?>" alt="">
               </div>
               <div class="item-content">
                 <p>
-                    节税和逃税的区别在哪？
+                    <?php echo $vo['title']; ?>
                 </p>
-                <p>
-                    合理合法的进行纳税筹划是正常有效的税收筹划，一般而言税收筹划是经营者可以理当获得相关经济活动所得到的的收入。在整体规划管理资和...
-                </p>
+                <p><?php echo mb_substr($vo['description'],'0','300','utf-8'); ?></p>
               </div>
               <div class="item-comtent-more">查看详情</div>
             </a>
           </li>
-          <li>
-            <a href="">
-              <div class="item-img">
-                <img src="/static/home/images/clientcaseitem2.png" alt="">
-              </div>
-              <div class="item-content">
-                <p>
-                    合理避税案例-药厂
-                </p>
-                <p>
-                    公司吸收合并与公司并购相同，都是公司产权年限转型、重大资产重组的关键方式。公司吸收合并能够保持资产和个人所得在2个或好几个缴...
-                </p>
-
-              </div>
-              <div class="item-comtent-more">查看详情</div>
-
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <div class="item-img">
-                <img src="/static/home/images/clientcaseitem3.png" alt="">
-              </div>
-              <div class="item-content">
-                <p>
-                    个税纳税筹划有哪些方法
-                </p>
-                <p>
-                    每到个税本年度税务申报的那时候，本人纳税筹划便会遭受前所未有的关心。很多的人刚开始思索：本人纳税筹划到底应当怎样做？针本年备时...
-                </p>
-              </div>
-              <div class="item-comtent-more">查看详情</div>
-
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <div class="item-img">
-                <img src="/static/home/images/clientcaseitem4.png" alt="">
-              </div>
-              <div class="item-content">
-                <p>
-                  揭秘网红一哥李佳琦千万收入的合理避税方案
-                </p>
-                <p>
-                  公开数据显示，双11全天，淘宝直播带来的成交接近200亿，超过10个直播间引导成交过亿。随着李佳琦和薇娅的走红。
-                </p>
-              </div>
-              <div class="item-comtent-more">查看详情</div>
-
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <div class="item-img">
-                <img src="/static/home/images/clientcaseitem5.png" alt="">
-              </div>
-              <div class="item-content">
-                <p>
-                  灵活用工市场潜力爆发,惠灵工让青年白领用工更加高效
-                </p>
-                <p>
-                  最新调查发现，企业招聘的灵活用工人才大多为中高层管理人员，有时甚至是领导层人员。向着白领、金领以及一些高端技术岗位蔓延。
-                </p>
-              </div>
-              <div class="item-comtent-more">查看详情</div>
-
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <div class="item-img">
-                <img src="/static/home/images/clientcaseitem6.png" alt="">
-              </div>
-              <div class="item-content">
-                <p>
-                  直销类企业如何避免税务合规风险，提升企业劳动力效能？
-                </p>
-                <p>
-                  随着中国经济进入新常态，国内经济结构发生变化，在互联网与科技发展之下，众多如服务、新零售、互联网等行业开始倾向多元化用工方式。
-                </p>
-              </div>
-              <div class="item-comtent-more">查看详情</div>
-
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <div class="item-img">
-                <img src="/static/home/images/clientcaseitem7.png" alt="">
-              </div>
-              <div class="item-content">
-                <p>
-                  揭秘网红一哥李佳琦千万收入的合理避税方案
-                </p>
-                <p>
-                  公开数据显示，双11全天，淘宝直播带来的成交接近200亿，超过10个直播间引导成交过亿。随着李佳琦和薇娅的走红。
-                </p>
-              </div>
-              <div class="item-comtent-more">查看详情</div>
-
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <div class="item-img">
-                <img src="/static/home/images/clientcaseitem8.png" alt="">
-              </div>
-              <div class="item-content">
-                <p>
-                  灵活用工市场潜力爆发,惠灵工让青年白领用工更加高效
-                </p>
-                <p>
-                  最新调查发现，企业招聘的灵活用工人才大多为中高层管理人员，有时甚至是领导层人员。向着白领、金领以及一些高端技术岗位蔓延。
-                </p>
-              </div>
-              <div class="item-comtent-more">查看详情</div>
-
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <div class="item-img">
-                <img src="/static/home/images/clientcaseitem9.png" alt="">
-              </div>
-              <div class="item-content">
-                <p>
-                  灵活用工市场潜力爆发,惠灵工让青年白领用工更加高效
-                </p>
-                <p>
-                  最新调查发现，企业招聘的灵活用工人才大多为中高层管理人员，有时甚至是领导层人员。向着白领、金领以及一些高端技术岗位蔓延。
-                </p>
-              </div>
-              <div class="item-comtent-more">查看详情</div>
-
-            </a>
-          </li>
-
+           <?php endforeach; endif; else: echo "" ;endif; ?>
         </ul>
       </div>
     </div>
