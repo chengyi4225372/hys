@@ -46,8 +46,8 @@
                 <tbody>
                 <tr>
                     <td class="text-center">
-                        <input type="number" id="sort" min="0" onblur="setsort(this)"
-                          data-id="{$vo.id}" data-url="{:url('/v1/taxa/taxation/setsort')}"
+                        <input type="number" id="sort" class="form-control form-control-sm"
+                               min="0" onblur="setsort(this)" data-id="{$vo.id}" data-url="{:url('/v1/taxa/taxation/setsort')}"
                                value="{$vo.sort|default='0'}"  />
                     </td>
 

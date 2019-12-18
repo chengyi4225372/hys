@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:7:{s:110:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/v1\view\charts\chart\index.html";i:1575254788;s:96:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\layout\default.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\meta.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\header.html";i:1575426490;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\left.html";i:1575426769;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\footer.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\script.html";i:1575517385;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:7:{s:110:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/v1\view\charts\chart\index.html";i:1576660435;s:96:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\layout\default.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\meta.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\header.html";i:1575426490;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\left.html";i:1576660302;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\footer.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\script.html";i:1575517385;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -244,6 +244,7 @@
                 </a>
 
                 <ul class="treeview-menu">
+                    <!--
                     <li class="<?php if($paths == '/v1/ban/banner/index'): ?>active<?php endif; ?>">
                         <a href="<?php echo url('/v1/ban/banner/index'); ?>">
                             <i class="glyphicon glyphicon-hdd"></i> <span>行业资讯顶部图</span>
@@ -252,6 +253,7 @@
                             </span>
                         </a>
                     </li>
+                    -->
                 </ul>
 
                 <ul class="treeview-menu">
@@ -322,7 +324,7 @@
         <div class="box-body">
             <table class="table table-bordered table-hover table-striped">
                 <thead>
-                <th class="text-center">排序</th>
+                <th class="text-center width:4%">排序</th>
                 <th class="text-center">图片</th>
                 <th class="text-center">创建时间</th>
                 <th class="text-center">操作</th>
@@ -330,8 +332,8 @@
                 <tbody>
                   <?php if(is_array($list) || $list instanceof \think\Collection || $list instanceof \think\Paginator): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
                 <tr>
-                    <td class="right">
-                        <input type="text" class="col-md-3" onblur="savesort($(this).val(),$(this).attr('data-id'),$(this).attr('data-url'));" data-id="<?php echo $vo['id']; ?>" data-url="<?php echo url('/v1/charts/chart/savesort'); ?>" value="<?php echo (isset($vo['sort']) && ($vo['sort'] !== '')?$vo['sort']:'0'); ?>" />
+                    <td class="text-center">
+                        <input type="number" min="0" class="form-control form-control-sm" onblur="savesort($(this).val(),$(this).attr('data-id'),$(this).attr('data-url'));" data-id="<?php echo $vo['id']; ?>" data-url="<?php echo url('/v1/charts/chart/savesort'); ?>" value="<?php echo (isset($vo['sort']) && ($vo['sort'] !== '')?$vo['sort']:'0'); ?>" />
                     </td>
                     <td class="text-center">
                         <a href="<?php echo (isset($vo['imgs']) && ($vo['imgs'] !== '')?$vo['imgs']:''); ?>">

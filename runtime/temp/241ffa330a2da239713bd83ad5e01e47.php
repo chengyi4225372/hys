@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\industry\index.html";i:1576650560;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\industry\index.html";i:1576660169;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -167,26 +167,10 @@
                             <?php endforeach; endif; else: echo "" ;endif; ?>
                         </ul>
                     </div>
-                    <!-- <ul>
-                        <li style="cursor:pointer;" data-url="<?php echo url('/home/industry/index'); ?>"
-                            onclick="location.href=$(this).attr('data-url')">
-                            <span>热门关键词</span>
-                        </li>
-                       
-                        <?php if(is_array($keywords) || $keywords instanceof \think\Collection || $keywords instanceof \think\Paginator): $i = 0; $__LIST__ = $keywords;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-                        <li <?php if(\think\Request::instance()->get('title') == $vo['title']): ?> class="hotwords" <?php endif; ?>>
 
-                            <span onclick="hotsearch(this);" data-title="<?php echo $vo['title']; ?>"  data-url="<?php echo url('/home/industry/index'); ?>"><?php echo $vo['title']; ?></span>
-
-                            <span class="close" onclick="window.location.href=$(this).attr('data-url')"  data-url="<?php echo url('/home/industry/index'); ?>">✕</span>
-                        </li>
-                        <?php endforeach; endif; else: echo "" ;endif; ?>
-
-                    </ul> -->
                     <div class="search-box">
                         <input type="text" id="keyword" value="<?php echo \think\Request::instance()->get('keyword'); ?>" placeholder="请输入关键字">
-                        <div id="searched" style="cursor:pointer;" data-url="<?php echo url('/home/industry/index'); ?>">搜索
-                        </div>
+                        <div id="searched" style="cursor:pointer;" data-url="<?php echo url('/home/industry/index'); ?>">搜索</div>
                     </div>
 
                 </div>
