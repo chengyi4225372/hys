@@ -46,7 +46,7 @@
                 <tbody>
                 <tr>
                     <td class="text-center">
-                        <input class="form-control form-control-sm" type="number" value=""  onblur="" data-url="" data="{$vo.id}">
+                        <input class="form-control form-control-sm" type="number" value="{$vo.sort|default='0'}" min="0" onblur="changesort(this)" data-url="{:url('/v1/cust/customer/setsort')}" data-id="{$vo.id}">
                     </td>
                     <td class="text-center">{$vo.title}</td>
                     <td class="text-center">

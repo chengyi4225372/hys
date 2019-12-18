@@ -42,6 +42,7 @@ class Customer extends AuthController
             $data['description'] = input('post.description','','trim');
             $data['content'] = input('post.content','','trim');
             $data['keywords'] = input('post.keywords','','trim');
+            $data['sort'] = input('post.sort','','int');
             $data['create_time'] = time();
 
             $ret = Customerservice::instance()->savedata($data);
@@ -53,6 +54,8 @@ class Customer extends AuthController
             }
 
         }
+
+        return false;
     }
 
     /**
@@ -75,6 +78,7 @@ class Customer extends AuthController
             $data['description'] = input('post.description','','trim');
             $data['content'] = input('post.content','','trim');
             $data['keywords'] = input('post.keywords','','trim');
+            $data['sort'] = input('post.sort','','int');
 
             if(empty($id) || is_null($id) || isset($id) == false){
                 return false;
@@ -117,6 +121,29 @@ class Customer extends AuthController
         return false;
     }
 
+    /**
+     * 排序
+     */
+     public function setsort(){
+         if($this->request->isAjax()|| $this->request->isPost()){
+              $id   = input('post.id','','int');
+              $sort = input('post.sort','','int');
+
+              if(empty($id)|| $id <= 0 || is_null($id) || !isset($id)){
+                  return false;
+              }
+
+              $ret = Customerservice::instance()->setthissort($id,$sort);
+
+              if($ret !== false){
+                  return json(['code'=>200,'msg'=>'排序成功']);
+              }else{
+                  return json(['code'=>400,'msg'=>'排序失败']);
+              }
+
+          }
+         return false;
+     }
 
     /**
      * 上传图片

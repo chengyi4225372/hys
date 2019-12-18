@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:109:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/v1\view\cust\customer\add.html";i:1575357363;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\layout\dialog.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\meta.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\script.html";i:1575517385;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:109:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/v1\view\cust\customer\add.html";i:1576635937;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\layout\dialog.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\meta.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\script.html";i:1575517385;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
 <head>
@@ -65,6 +65,14 @@
                         <span class="red-color">*</span>新闻标题：</label>
                     <div class="col-sm-9">
                         <input type="text" class="form-control form-control-sm" id="title"  value="" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="sort" class="col-sm-3 control-label">
+                        <span class="red-color">*</span>新闻排序：</label>
+                    <div class="col-sm-9">
+                        <input type="number" class="form-control form-control-sm" id="sort" placeholder="请输入数字，越大排序靠前" />
                     </div>
                 </div>
 

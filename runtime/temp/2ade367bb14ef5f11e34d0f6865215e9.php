@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:7:{s:111:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/v1\view\cust\customer\index.html";i:1576635436;s:96:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\layout\default.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\meta.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\header.html";i:1575426490;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\left.html";i:1575426769;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\footer.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\script.html";i:1575517385;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:7:{s:111:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/v1\view\cust\customer\index.html";i:1576637732;s:96:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\layout\default.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\meta.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\header.html";i:1575426490;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\left.html";i:1575426769;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\footer.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\script.html";i:1575517385;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -354,7 +354,7 @@
                 <tbody>
                 <tr>
                     <td class="text-center">
-                        <input class="form-control form-control-sm" type="number" value=""  onblur="" data-url="" data="<?php echo $vo['id']; ?>">
+                        <input class="form-control form-control-sm" type="number" value="<?php echo (isset($vo['sort']) && ($vo['sort'] !== '')?$vo['sort']:'0'); ?>" min="0" onblur="changesort(this)" data-url="<?php echo url('/v1/cust/customer/setsort'); ?>" data-id="<?php echo $vo['id']; ?>">
                     </td>
                     <td class="text-center"><?php echo $vo['title']; ?></td>
                     <td class="text-center">

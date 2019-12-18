@@ -40,6 +40,7 @@ $('.add_cust').click(function(){
      var title = $.trim($('#title').val());
      var imgs  = $('#Images').val();
      var keywords  = $('#keywords').val();
+     var sort   = $('#sort').val();
      var description = $.trim($('#description').val());
      var content = ue.getContent();//取得html文本
      var urls = $(this).attr('data-url');
@@ -64,7 +65,7 @@ $('.add_cust').click(function(){
          return false;
      }
 
-     $.post(urls,{'title':title,'imgs':imgs,'description':description,'content':content,'keywords':keywords},function(ret){
+     $.post(urls,{'title':title,'imgs':imgs,'description':description,'content':content,'keywords':keywords,'sort':sort},function(ret){
             if(ret.code == 200){
                 layer.msg(ret.msg,{icon:6},function(){
                     parent.location.reload();
@@ -108,6 +109,7 @@ $('.edit_cust').click(function(){
     var title = $.trim($('#title').val());
     var imgs  = $('#Images').val();
     var keywords  = $('#keywords').val();
+    var sort   = $('#sort').val();
     var description = $.trim($('#description').val());
     var content = ue.getContent();//取得html文本
     var urls = $(this).attr('data-url');
@@ -137,7 +139,7 @@ $('.edit_cust').click(function(){
         return false;
     }
 
-    $.post(urls,{'title':title,'imgs':imgs,'description':description,'content':content,'keywords':keywords,'id':id},function(ret){
+    $.post(urls,{'title':title,'imgs':imgs,'description':description,'content':content,'keywords':keywords,'id':id,'sort':sort},function(ret){
         if(ret.code == 200){
             layer.msg(ret.msg,{icon:6},function(){
                 parent.location.reload();
@@ -201,6 +203,37 @@ $('.cancle').click(function(){
     parent.layer.closeAll();
 });
 
+
+/***
+ * 排序
+ */
+function changesort(obj){
+    var id = $(obj).attr('data-id');
+    var urls  =  $(obj).attr('data-url');
+    var sort  = $(obj).val();
+
+    if(id =='' || id== undefined || id== 'undefined' || id< 0){
+        return false;
+    }
+
+    if(urls == '' || urls == undefined || urls == 'undefined'){
+        return false;
+    }
+
+    $.post(urls,{'id':id,'sort':sort},function(ret){
+        if(ret.code  == 200){
+            layer.msg(ret.msg,{icon:6},function(){
+                parent.location.reload();
+            });
+        }
+
+        if(ret.code  == 400){
+            layer.msg(ret.msg,{icon:5},function(){
+                parent.location.reload();
+            });
+        }
+    },'json')
+}
 
 /**
  * 上传图片

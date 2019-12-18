@@ -48,11 +48,10 @@ class Customerservice
                'title|description'=>['like','%'.$title.'%'],
            ];
        }
-       $list = Customer::instance()->where($w)->order('create_time desc')->paginate(15);
+       $list = Customer::instance()->where($w)->order('sort desc, create_time desc')->paginate(15);
 
        return $list?$list:'';
     }
-
 
     /**
      * 获取详情
@@ -67,7 +66,6 @@ class Customerservice
 
         return $info?$info:'';
     }
-
 
     /**
      * 添加
@@ -86,7 +84,6 @@ class Customerservice
              return false;
          }
      }
-
 
      /**
       * 编辑
@@ -111,7 +108,6 @@ class Customerservice
          }
      }
 
-
      /**
       * 删除
       * 修改状态
@@ -131,4 +127,24 @@ class Customerservice
         }
      }
 
+     /**
+      * 排序
+      * @id
+      * @sort
+      */
+      public function setthissort($id,$sort){
+           if(empty($id)|| !isset($id) || is_null($id)|| $id <= 0){
+               return false;
+           }
+
+           $data = ['sort'=>$sort];
+
+           $res = Customer::instance()->where(['id'=>$id])->data($data)->update();
+
+           if($res !==  false){
+               return true;
+           }else {
+               return false;
+           }
+      }
 }
