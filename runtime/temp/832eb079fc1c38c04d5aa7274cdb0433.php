@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\industry\infos.html";i:1576650851;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\industry\infos.html";i:1576661110;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,6 +18,7 @@
     <meta name="keyword" content="<?php echo $info['keywords']; ?>">
     <meta name="description" content="<?php echo $info['description']; ?>">
     <script src="/static/home/js/jquery.js"></script>
+    <script src="/static/assets/plugins/layui/layui.all.js"></script>
     <script src="/static/home/js/customer.js"></script>
     <script src="/static/common/js/open.js"></script>
     <script src='/static/home/js/footer.js'></script>

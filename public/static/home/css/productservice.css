@@ -379,7 +379,8 @@ margin: 0 auto;
   width: 18.0625rem;
   height: 3.625rem;
   bottom: 4rem;
-  left: 50.9375rem;
+  left: 50%;
+  transform: translate(-50%);
   background: url("../images/onlineChat1.png") no-repeat;
   -webkit-background-size: 100% 100%;
           background-size: 100% 100%; }

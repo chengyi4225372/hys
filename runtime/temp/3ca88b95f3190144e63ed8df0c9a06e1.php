@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:79:"C:\phpEnv\www\hys\public/../application/home\view\programme\productservice.html";i:1576635889;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:79:"C:\phpEnv\www\hys\public/../application/home\view\programme\productservice.html";i:1576670276;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -86,6 +86,7 @@
                 <img src="/static/home/images/service.png" alt="">
                 <img src="/static/home/images/case.png" alt="">
                 <img src="/static/home/images/step.png" alt="">
+                <img src="/static/home/images/advantage.png" alt="">
                 <img src="/static/home/images/afterSales.png" alt="">
                 <button class="btn1" onclick="alert_open()"></button>
                 <button class="btn2" onclick="alert_open()"></button>
