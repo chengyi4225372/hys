@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:105:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\index\index.html";i:1576589166;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:105:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\index\index.html";i:1576657548;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="/static/assets/plugins/layui/css/layui.css">
   <link rel="stylesheet" href="/static/home/css/index.css">
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-  <script src="/static/assets/plugins/layui/layui.js"></script>
+  <script src="/static/assets/plugins/layui/layui.all.js"></script>
   <script src="/static/home/js/clamp.js"></script>
   <script src='/static/home/js/index.js'></script>
   <script src="/static/common/js/open.js"></script>
@@ -46,7 +46,7 @@
             <li><a href="<?php echo url('/home/programme/index'); ?>">行业解决方案</a></li>
             <li><a href="<?php echo url('/home/customer/index'); ?>">客户案例</a></li>
             <li><a href="<?php echo url('home/industry/index'); ?>">新闻资讯</a></li>
-            <li><a href="#">会员通道</a></li>
+            <!-- <li><a href="#">会员通道</a></li> -->
           </ul>
         </div>
         <!-- 登陆注册 -->

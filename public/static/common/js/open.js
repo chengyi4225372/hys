@@ -45,7 +45,6 @@ var urkl = gurl + "/api/wechatForeign/public/addGatewayPotentialCustomer";
 * 提交表单
 */
 function form_btn(){
-    console.log(111);
     $('.form-btn').attr('disabled', "true");
     var datas = {};
 
@@ -113,6 +112,7 @@ function form_btn(){
                 });
             }
         },
+
         error: function (ret) {
             console.log(ret);
         }
