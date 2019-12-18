@@ -1376,7 +1376,7 @@ a {
   top: 0;
   left: 0;
   z-index: 2;
-  background: #f95238;
+  background:linear-gradient(0deg,rgba(232,59,39,1),rgba(250,83,57,1));
   width: 5rem;
   height: 11.25rem;
   -webkit-writing-mode: vertical-rl;
