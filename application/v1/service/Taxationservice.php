@@ -157,6 +157,7 @@ class Taxationservice
            $array['status'] = 1;
            $array['keywords'] = ['like',$arr_w,'OR'];
        }
+
        if($page == ''|| $page == 1){
            $page = 0;
        }
@@ -192,4 +193,27 @@ class Taxationservice
        $arr = Taxation::instance()->where($array)->order('sort desc,create_time desc')->count();
        return $arr?$arr:'';
    }
+
+   /**
+    * 排序设置
+    * @id
+    * @sort
+    * return bool
+    */
+    public  function setthissort($id,$sort){
+        if(empty($id) || !isset($id) || is_null($id) || $id <= 0){
+            return false;
+        }
+
+        $data = ['sort'=>$sort];
+
+        $res =  Taxation::instance()->where(['id'=>$id])->data($data)->update();
+
+        if($res !== false){
+            return true;
+        }else {
+            return false;
+        }
+
+    }
 }

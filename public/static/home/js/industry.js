@@ -88,12 +88,12 @@ function hotsearch(obj) {
                 $.each(ret.data,function(item,index){
                     var content = '';
 
-                    key = index.keyword.split(',');//分割关键字
+                    key = index.keywords.split(',');//分割关键字
 
                     content+= "<li><a href="+hrefs+"?mid="+index.id+">";
                     content+= "<div class='infoItem'><div class='infoLeft'>";
                     //默认图片
-                    if(index.img == '' || index.imgs == undefined){
+                    if(index.imgs == '' || index.imgs == undefined){
                         content+= "<img src='/static/home/images/infoItem.jpg'></div>";
                     }else{
                         content+="<img src="+index.imgs+"></div>";
@@ -101,9 +101,9 @@ function hotsearch(obj) {
                     content+= "<div class='infoRight'><div class='rightTop'>";
                     content+= "<div class='itemTitle'>"+index.title+"</div>";
                     content+= "<span class='itemTime'><img src='/static/spirit/images/shijian2x.png'>";
-                    content+= "<span>"+index.release_time+"</span>";
+                    content+= "<span>"+index.create_time+"</span>";
                     content+= "</span></div>";
-                    content+= "<p>"+index.describe+"</p>";
+                    content+= "<p>"+index.description+"</p>";
                     content+= "</div></div></a>";
                     content+= "<ul class='tags'>";
                     for(var i in key){
@@ -181,12 +181,12 @@ function nullhot(obj){
                 $.each(ret.data,function(item,index){
                     var content = '';
 
-                    key = index.keyword.split(',');//分割关键字
+                    key = index.keywords.split(',');//分割关键字
 
                     content+= "<li><a href="+hrefs+"?mid="+index.id+">";
                     content+= "<div class='infoItem'><div class='infoLeft'>";
                     //默认图片
-                    if(index.img == '' || index.imgs == undefined){
+                    if(index.imgs == '' || index.imgs == undefined){
                         content+= "<img src='/static/home/images/infoItem.jpg'></div>";
                     }else{
                         content+="<img src="+index.imgs+"></div>";
@@ -194,9 +194,9 @@ function nullhot(obj){
                     content+= "<div class='infoRight'><div class='rightTop'>";
                     content+= "<div class='itemTitle'>"+index.title+"</div>";
                     content+= "<span class='itemTime'><img src='/static/spirit/images/shijian2x.png'>";
-                    content+= "<span>"+index.release_time+"</span>";
+                    content+= "<span>"+index.create_time+"</span>";
                     content+= "</span></div>";
-                    content+= "<p>"+index.describe+"</p>";
+                    content+= "<p>"+index.description+"</p>";
                     content+= "</div></div></a>";
                     content+= "<ul class='tags'>";
                     for(var i in key){
@@ -293,11 +293,11 @@ function pagehrefs(purls,i,titles,pages,count){
                 //数据列表
                 $.each(ret.data,function(item,index){
                     var content = '';
-                    key = index.keyword.split(',');//分割关键字
+                    key = index.keywords.split(',');//分割关键字
                     content+= "<li><a href="+hrefs+"?mid="+index.id+">";
                     content+= "<div class='infoItem'><div class='infoLeft'>";
                     //默认图片
-                    if(index.img == '' || index.imgs == undefined){
+                    if(index.imgs == '' || index.imgs == undefined){
                         content+= "<img src='/static/home/images/infoItem.jpg'></div>";
                     }else{
                         content+="<img src="+index.imgs+"></div>";
@@ -305,9 +305,9 @@ function pagehrefs(purls,i,titles,pages,count){
                     content+= "<div class='infoRight'><div class='rightTop'>";
                     content+= "<div class='itemTitle'>"+index.title+"</div>";
                     content+= "<span class='itemTime'><img src='/static/spirit/images/shijian2x.png'>";
-                    content+= "<span>"+index.release_time+"</span>";
+                    content+= "<span>"+index.create_time+"</span>";
                     content+= "</span></div>";
-                    content+= "<p>"+index.describe+"</p>";
+                    content+= "<p>"+index.description+"</p>";
                     content+= "</div></div></a>";
                     content+= "<ul class='tags'>";
                     for(var i in key){
