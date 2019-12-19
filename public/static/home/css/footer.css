@@ -64,6 +64,10 @@
   .bottomBox .bottom .navBottom .navList dl:nth-child(2) {
     margin-right: 6rem;
   }
+.bottomBox .bottom .navBottom .navList dl:nth-child(2) dd:last-child a{
+  color: rgba(220, 220, 220, 0.3);
+  cursor: default;
+}
   .bottomBox .bottom .navBottom .navList dl:nth-child(3) {
     margin-right: 5.5rem;
   }
