@@ -71,7 +71,7 @@ window.onload = function () {
     var ali = document.querySelectorAll('.preferential-taxadvantage-content-imgs ul li')
     var pre = document.querySelector('.preferential-taxadvantage-content-imgs .fouse-left')
     var next = document.querySelector('.preferential-taxadvantage-content-imgs .fouse-right')
-    var ptcts = document.querySelectorAll('.preferential-taxadvantage-content-title')
+    // var ptcts = document.querySelectorAll('.preferential-taxadvantage-content-title')
     var imgW = ali[0].offsetWidth//需要window.onload
     var index = 1//计算滚动到哪张图片
     var isTransitioned = true//判断动画是否已完成
@@ -140,10 +140,10 @@ window.onload = function () {
             e.target.classList.add('fousess');
             // console.log(j);
             // index = j + 1;
-            for (let h = 0; h < ptcts.length; h++) {
-                ptcts[h].classList.remove('ptct-active')
-            }
-            ptcts[Number(e.target.id)].classList.add('ptct-active')
+            // for (let h = 0; h < ptcts.length; h++) {
+            //     ptcts[h].classList.remove('ptct-active')
+            // }
+            // ptcts[Number(e.target.id)].classList.add('ptct-active')
             index = Number(e.target.id) + 1;
             // console.log(index, 222);
             ul.classList.add('transi');
