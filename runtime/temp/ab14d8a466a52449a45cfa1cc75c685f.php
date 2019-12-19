@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\industry\infos.html";i:1576672173;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\industry\infos.html";i:1576734819;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,7 +42,7 @@
                     <li><a href="<?php echo url('/home/programme/productservice'); ?>"> 产品服务</a></li>
                     <li><a href="<?php echo url('/home/programme/index'); ?>">行业解决方案</a></li>
                     <li><a href="<?php echo url('/home/customer/index'); ?>">客户案例</a></li>
-                    <li class="nav-active"><a href="<?php echo url('home/industry/index'); ?>">行业新闻资讯</a></li>
+                    <li class="nav-active"><a href="<?php echo url('home/industry/index'); ?>">新闻资讯</a></li>
                     <!-- <li><a href="#">会员通道</a></li> -->
                 </ul>
             </div>
@@ -77,7 +77,7 @@
        
         <div class='w bread_title'>
             <a onclick="go_work(this)" data-url="<?php echo url('/home/index/index'); ?>">惠优税</a> >
-            <a onclick="go_news(this)" data-url="<?php echo url('/home/industry/index'); ?>">行业新闻资讯</a> > <span style="color: #E8341E;">详情</span></div>
+            <a onclick="go_news(this)" data-url="<?php echo url('/home/industry/index'); ?>">新闻资讯</a> > <span style="color: #E8341E;">详情</span></div>
         </div>
         <div class='content_middle'>
             
@@ -114,7 +114,7 @@
         <?php else: ?>
         <p><span>上一篇：</span><a href="<?php echo url('/home/industry/infos',['mid'=>$top['id']]); ?>"><?php echo $top['title']; ?></a></p>
         <?php endif; if(empty($next) || (($next instanceof \think\Collection || $next instanceof \think\Paginator ) && $next->isEmpty())): ?>
-        <p><span>下一篇：</span><a href="javascript:;">已经是第一篇了</a></p>
+        <p><span>下一篇：</span><a href="javascript:;">最后第一篇</a></p>
         <?php else: ?>
         <p><span>下一篇：</span><a href="<?php echo url('/home/industry/infos',['mid'=>$next['id']]); ?>"><?php echo $next['title']; ?></a></p>
         <?php endif; ?>

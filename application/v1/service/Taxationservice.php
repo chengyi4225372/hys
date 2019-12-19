@@ -49,7 +49,7 @@ class Taxationservice
            $w = ['status'=>1]; //正常
        }
 
-       $list = Taxation::instance()->where($w)->order(['id'=>'desc'])->paginate(15);
+       $list = Taxation::instance()->where($w)->order(['sort'=>'desc'])->paginate(15);
        return  $list;
    }
 
@@ -160,6 +160,8 @@ class Taxationservice
 
        if($page == ''|| $page == 1){
            $page = 0;
+       }else{
+           $page = ($page -1) * $size;
        }
 
        $arr = Taxation::instance()->where($array)->order('sort desc,create_time desc')->limit($page,$size)->select();
@@ -226,12 +228,14 @@ class Taxationservice
             return false;
         }
 
-        $w = [
-            'id'=>['LT',$id],
+        $w = Taxation::instance()->where(['status'=>1,'id'=>$id])->field('sort')->find();
+
+        $where = [
+            'sort'=>['GT',$w['sort']],
             'status'=>1,
         ];
 
-        $top = Taxation::instance()->where($w)->field('id,title')->order('sort asc ,create_time desc')->find();
+        $top = Taxation::instance()->where($where)->field('id,title')->order('sort asc,create_time desc')->find();
 
         return $top?$top:'';
     }
@@ -244,12 +248,15 @@ class Taxationservice
         if(empty($id) || !isset($id) || is_null($id) || $id <= 0){
             return false;
         }
-        $w = [
-            'id'=>['GT',$id],
+
+        $w = Taxation::instance()->where(['status'=>1,'id'=>$id])->field('sort')->find();
+
+        $where = [
+            'sort'=>['LT',$w['sort']],
             'status'=>1,
         ];
 
-        $next = Taxation::instance()->where($w)->field('id,title')->order('sort desc ,create_time desc')->find();
+        $next = Taxation::instance()->field('id,title')->where($where)->order('sort desc ,create_time desc')->find();
 
         return $next?$next:'';
     }
