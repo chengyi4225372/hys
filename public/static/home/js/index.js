@@ -71,6 +71,7 @@ window.onload = function () {
     var ali = document.querySelectorAll('.preferential-taxadvantage-content-imgs ul li')
     var pre = document.querySelector('.preferential-taxadvantage-content-imgs .fouse-left')
     var next = document.querySelector('.preferential-taxadvantage-content-imgs .fouse-right')
+    var ptcts = document.querySelectorAll('.preferential-taxadvantage-content-title')
     var imgW = ali[0].offsetWidth//需要window.onload
     var index = 1//计算滚动到哪张图片
     var isTransitioned = true//判断动画是否已完成
@@ -137,10 +138,14 @@ window.onload = function () {
                 item[q].classList.remove('fousess');
             }
             e.target.classList.add('fousess');
-            console.log(j);
+            // console.log(j);
             // index = j + 1;
+            for (let h = 0; h < ptcts.length; h++) {
+                ptcts[h].classList.remove('ptct-active')
+            }
+            ptcts[Number(e.target.id)].classList.add('ptct-active')
             index = Number(e.target.id) + 1;
-            console.log(index, 222);
+            // console.log(index, 222);
             ul.classList.add('transi');
             ul.style.transform = "translateX(" + (-imgW * index) + "px)";
         }
@@ -230,6 +235,28 @@ $(function () {
     $('.partner-title div').eq(0).width($('.coTitle').width())
     $('.taxproblems-right').eq(0).width($('.taxIssues').width())
 
+    $(window).resize(function() {
+        $('.preferential-icon div').eq(0).width($('.hysTitle').width())
+    $('.tax-planning-solutions div').eq(0).width($('.caseTitle').width())
+    $('.preferential-taxadvantage div').eq(0).width($('.advanTitle').width())
+    $('.selected-park div').eq(0).width($('.partTitle').width())
+    $('.partner-title div').eq(0).width($('.coTitle').width())
+    $('.taxproblems-right').eq(0).width($('.taxIssues').width())
+      });
 
+
+
+         /* 客户案例按钮效果 */
+    $('.getCase').mouseover(function(){
+        // alert(111)
+        $(this).addClass('activeGet')
+    }).mouseleave(function(){
+        $(this).removeClass('activeGet')
+    })
+    $('.getCase').mousedown(function(){
+        $(this).addClass('activeGet')
+    }).mouseup(function(){
+        $(this).removeClass('activeGet')
+    })
 
 })

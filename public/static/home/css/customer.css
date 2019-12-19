@@ -503,7 +503,7 @@ a {
 }
 
 .tabBox .item-content p:nth-of-type(2) {
-  height: 4.5rem;
+  /* height: 4.5rem; */
   font-size: .875rem;
   font-family: Microsoft YaHei;
   font-weight: 400;
@@ -529,7 +529,8 @@ a {
   transform: translateX(-50%);
   width: 8.75rem;
   height: 2.5rem;
-  background:linear-gradient(0deg,#fa5339,#e83b27);
+  /* background:linear-gradient(0deg,#fa5339,#e83b27); */
+  background:linear-gradient(0deg,rgba(232,59,39,1),rgba(250,83,57,1));
   border-radius: 1.25rem;
   font-size: 1rem;
   font-family: PingFang SC;
@@ -539,11 +540,11 @@ a {
   text-align: center;
 }
 .activeMore{
-  background:linear-gradient(0deg,#e44c34,#d43623)!important;
+  background:linear-gradient(0deg,#d43623,#e44c34)!important;
 
 }
 
-.tabBox .item-content::after {
+/* .tabBox .item-content::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -571,7 +572,7 @@ a {
 
 .tabBox li:hover .item-img::after {
   display: block;
-}
+} */
 
 /* 弹出框 */
 .pop-up-box {

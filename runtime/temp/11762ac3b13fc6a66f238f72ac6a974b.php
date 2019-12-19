@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1576666546;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1576715882;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -90,7 +90,7 @@
           <div></div>
           <div><span class="hysTitle">惠优税产品</span></div>
           <div>利用全国各地税收优惠政策，打造低税率洼地。金牌财税顾问团队，量身定制税筹方案！</div>
-          <div onclick="alert_open()">获取解决方案</div>
+          <div onclick="alert_open()" class="getCase">获取解决方案</div>
         </div>
         <div class="preferential-content clearfix">
           <div class="preferential-content-item">
@@ -271,6 +271,8 @@
               <li id="2"></li>
             </ul>
           </div>
+          <div class="preferential-taxadvantage-content-title ptct-active">我们已得到了北京、上海、江苏、湖北、江西、河南、青海等各地政府的大力支持，在全国范围内设立多个园区</div>
+          <div class="preferential-taxadvantage-content-title">我们已得到了北京、上海、江苏、湖北、江西、河南、青海等各地政府的大力支持，在全国范围内设立多个园区</div>
           <div class="preferential-taxadvantage-content-title">我们已得到了北京、上海、江苏、湖北、江西、河南、青海等各地政府的大力支持，在全国范围内设立多个园区</div>
           <div class="preferential-taxadvantage-content-imgs">
             <ul class="clearfix">
@@ -392,10 +394,10 @@
             <li><a href="<?php echo url('/home/searches/index'); ?>">惠找事</a></li>
             <li><a href="<?php echo config('curl.hcy'); ?>">惠创业</a></li>
             <li><a href="<?php echo config('curl.hqd'); ?>">惠企动</a></li> -->
-            <li><a>惠企云</a><a></a></li>
+            <li><a href="<?php echo config('curl.website'); ?>">惠企云</a></li>
             <li><a href="/">惠优税</a><a href="<?php echo config('curl.hlg'); ?>">惠灵工</a></li>
-            <li><a href="javascript:;">惠多薪</a><a href="javascript:;">惠找事</a></li>
-            <li><a href="javascript:;">惠创业</a><a href="javascript:;">惠启动</a></li>
+            <li><a href="<?php echo url('/home/many/index'); ?>">惠多薪</a><a href="<?php echo url('/home/searches/index'); ?>">惠找事</a></li>
+            <li><a href="<?php echo url('/home/business/index'); ?>">惠创业</a><a href="<?php echo url('/home/launch/index'); ?>">惠启动</a></li>
           </ul>
         </div>
       </div>
@@ -473,8 +475,8 @@ layui.use('carousel', function(){
           arrow: 'hover', //始终显示箭头
           height:'46rem',
           trigger:'hover',
-          interval:2000,
-          autoplay:false
+          interval:3000,
+          autoplay:true
           //,anim: 'updown' //切换动画方式
         });
       });

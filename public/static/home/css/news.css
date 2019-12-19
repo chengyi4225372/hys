@@ -523,6 +523,7 @@ a {
       -ms-flex-align: flex-start;
           align-items: flex-start; }
   .hotWord .bgHot {
+    padding-top: .3125rem;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -539,6 +540,7 @@ a {
         -ms-flex-align: flex-start;
             align-items: flex-start; }
     .hotWord .bgHot > span {
+      padding-top: .3125rem;
       white-space: nowrap;
       margin-right: 1.25rem;
       color: #D61313;
@@ -592,15 +594,16 @@ a {
   color: #fff;
   top: 0;
   right: .375rem;
-  -webkit-transition: all .8s;
+  /* -webkit-transition: all .8s;
   -o-transition: all .8s;
-  transition: all .8s; }
+  transition: all .8s;  */
+}
 
-.hotWord ul li .close:hover {
+/* .hotWord ul li .close:hover {
   -webkit-transform: rotate(360deg);
       -ms-transform: rotate(360deg);
        -o-transform: rotate(360deg);
-          transform: rotate(360deg); }
+          transform: rotate(360deg); } */
 
 .chosen {
   background: #F75236 !important;

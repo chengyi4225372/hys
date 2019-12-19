@@ -43,9 +43,40 @@ window.onload = function(){
 } 
     
 $(function(){
+    
     $('.btn3').mousedown(function(){
        $(this).addClass('active')
     }).mouseup(function(){
         $(this).removeClass('active')
     })
+    $('.btn3').mouseover(function(){
+       $(this).addClass('active')
+    }).mouseleave(function(){
+        $(this).removeClass('active')
+    })
+
+
+    $('.btn1').mouseover(function(){
+       $(this).addClass('actLittleBtn')
+    }).mouseleave(function(){
+        $(this).removeClass('actLittleBtn')
+    })
+    $('.btn2').mouseover(function(){
+       $(this).addClass('actLittleBtn')
+    }).mouseleave(function(){
+        $(this).removeClass('actLittleBtn')
+    })
+
+    $('.btn1').mousedown(function(){
+       $(this).addClass('actLittleBtn')
+    }).mouseup(function(){
+        $(this).removeClass('actLittleBtn')
+    })
+    $('.btn2').mousedown(function(){
+       $(this).addClass('actLittleBtn')
+    }).mouseup(function(){
+        $(this).removeClass('actLittleBtn')
+    })
+    
+    
 })
