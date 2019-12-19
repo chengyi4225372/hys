@@ -351,12 +351,20 @@ margin: 0 auto; */
    }
 
 .series .btn1 {
-  right: 43.9375rem;
-  top: 39.3125rem; }
+  /* right: 43.9375rem;
+  top: 39.3125rem;  */
+  left: 54.2%;
+  bottom: 10.8%;
+
+}
 
 .series .btn2 {
-  left: 31.625rem;
-  top: 73.5625rem; }
+  /* left: 31.625rem;
+  top: 73.5625rem;  */
+  left: 26%;
+  top: 18.8%;
+
+}
 
   .series .btn1,
   .series .btn2{
