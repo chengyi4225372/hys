@@ -594,15 +594,16 @@ a {
   color: #fff;
   top: 0;
   right: .375rem;
-  -webkit-transition: all .8s;
+  /* -webkit-transition: all .8s;
   -o-transition: all .8s;
-  transition: all .8s; }
+  transition: all .8s;  */
+}
 
-.hotWord ul li .close:hover {
+/* .hotWord ul li .close:hover {
   -webkit-transform: rotate(360deg);
       -ms-transform: rotate(360deg);
        -o-transform: rotate(360deg);
-          transform: rotate(360deg); }
+          transform: rotate(360deg); } */
 
 .chosen {
   background: #F75236 !important;

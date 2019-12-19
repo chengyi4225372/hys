@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1576682099;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1576715882;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -271,9 +271,9 @@
               <li id="2"></li>
             </ul>
           </div>
-          <div class="preferential-taxadvantage-content-title ptct-active">我们已得到了北京、上海、江苏、湖北、江西、河南、青海等各地政府的大力支持，在全国范围内设立多个园区1</div>
-          <div class="preferential-taxadvantage-content-title">我们已得到了北京、上海、江苏、湖北、江西、河南、青海等各地政府的大力支持，在全国范围内设立多个园区2</div>
-          <div class="preferential-taxadvantage-content-title">我们已得到了北京、上海、江苏、湖北、江西、河南、青海等各地政府的大力支持，在全国范围内设立多个园区3</div>
+          <div class="preferential-taxadvantage-content-title ptct-active">我们已得到了北京、上海、江苏、湖北、江西、河南、青海等各地政府的大力支持，在全国范围内设立多个园区</div>
+          <div class="preferential-taxadvantage-content-title">我们已得到了北京、上海、江苏、湖北、江西、河南、青海等各地政府的大力支持，在全国范围内设立多个园区</div>
+          <div class="preferential-taxadvantage-content-title">我们已得到了北京、上海、江苏、湖北、江西、河南、青海等各地政府的大力支持，在全国范围内设立多个园区</div>
           <div class="preferential-taxadvantage-content-imgs">
             <ul class="clearfix">
               <?php if(is_array($chart) || $chart instanceof \think\Collection || $chart instanceof \think\Paginator): $i = 0; $__LIST__ = $chart;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
@@ -394,10 +394,10 @@
             <li><a href="<?php echo url('/home/searches/index'); ?>">惠找事</a></li>
             <li><a href="<?php echo config('curl.hcy'); ?>">惠创业</a></li>
             <li><a href="<?php echo config('curl.hqd'); ?>">惠企动</a></li> -->
-            <li><a>惠企云</a><a></a></li>
+            <li><a href="<?php echo config('curl.website'); ?>">惠企云</a></li>
             <li><a href="/">惠优税</a><a href="<?php echo config('curl.hlg'); ?>">惠灵工</a></li>
-            <li><a href="javascript:;">惠多薪</a><a href="javascript:;">惠找事</a></li>
-            <li><a href="javascript:;">惠创业</a><a href="javascript:;">惠启动</a></li>
+            <li><a href="<?php echo url('/home/many/index'); ?>">惠多薪</a><a href="<?php echo url('/home/searches/index'); ?>">惠找事</a></li>
+            <li><a href="<?php echo url('/home/business/index'); ?>">惠创业</a><a href="<?php echo url('/home/launch/index'); ?>">惠启动</a></li>
           </ul>
         </div>
       </div>
@@ -476,7 +476,7 @@ layui.use('carousel', function(){
           height:'46rem',
           trigger:'hover',
           interval:3000,
-          autoplay:false
+          autoplay:true
           //,anim: 'updown' //切换动画方式
         });
       });

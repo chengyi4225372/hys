@@ -455,7 +455,7 @@ a {
   /* -webkit-background-size: 100% 100%;
   background-size: 100% 100%; */
   background:linear-gradient(0deg,rgba(232,59,39,1),rgba(250,83,57,1));
-border-radius: 0.7rem;
+border-radius: .625rem;
   font-size: 1.5rem;
   font-family: "Noto Sans SC", "Microsoft YaHei", "微软雅黑";
   font-weight: 400;
@@ -1048,7 +1048,9 @@ border-radius: 0.7rem;
 .preferential-taxadvantage-box {
   width: 100%;
   height: 48.75rem;
-  background-color: #f85236;
+  /* background-color: #f85236; */
+  background-image: url('../images/bgMap.png');
+  background-size: 100% 100%;
  
   margin-top: 3.875rem;
 }
