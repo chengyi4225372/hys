@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\industry\infos.html";i:1576674021;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\industry\infos.html";i:1576734819;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -114,7 +114,7 @@
         <?php else: ?>
         <p><span>上一篇：</span><a href="<?php echo url('/home/industry/infos',['mid'=>$top['id']]); ?>"><?php echo $top['title']; ?></a></p>
         <?php endif; if(empty($next) || (($next instanceof \think\Collection || $next instanceof \think\Paginator ) && $next->isEmpty())): ?>
-        <p><span>下一篇：</span><a href="javascript:;">已经是第一篇了</a></p>
+        <p><span>下一篇：</span><a href="javascript:;">最后第一篇</a></p>
         <?php else: ?>
         <p><span>下一篇：</span><a href="<?php echo url('/home/industry/infos',['mid'=>$next['id']]); ?>"><?php echo $next['title']; ?></a></p>
         <?php endif; ?>
