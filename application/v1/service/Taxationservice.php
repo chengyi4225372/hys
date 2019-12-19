@@ -160,6 +160,8 @@ class Taxationservice
 
        if($page == ''|| $page == 1){
            $page = 0;
+       }else{
+           $page = ($page -1) * $size;
        }
 
        $arr = Taxation::instance()->where($array)->order('sort desc,create_time desc')->limit($page,$size)->select();
