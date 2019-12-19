@@ -227,11 +227,10 @@ class Taxationservice
         }
 
         $w = [
-            'id'=>['LT',$id],
             'status'=>1,
         ];
 
-        $top = Taxation::instance()->where($w)->field('id,title')->order('sort desc ,create_time desc')->find();
+        $top = Taxation::instance()->where($w)->field('id,title')->order('sort desc,create_time desc')->find();
 
         return $top?$top:'';
     }
@@ -245,11 +244,10 @@ class Taxationservice
             return false;
         }
         $w = [
-            'id'=>['GT',$id],
             'status'=>1,
         ];
 
-        $next = Taxation::instance()->where($w)->field('id,title')->order('sort desc, create_time desc')->find();
+        $next = Taxation::instance()->where($w)->field('id,title')->order('sort asc, create_time desc')->find();
 
         return $next?$next:'';
     }

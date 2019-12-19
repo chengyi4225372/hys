@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:105:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\index\index.html";i:1576677628;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:105:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\index\index.html";i:1576723483;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -90,7 +90,7 @@
           <div></div>
           <div><span class="hysTitle">惠优税产品</span></div>
           <div>利用全国各地税收优惠政策，打造低税率洼地。金牌财税顾问团队，量身定制税筹方案！</div>
-          <div onclick="alert_open()">获取解决方案</div>
+          <div onclick="alert_open()" class="getCase">获取解决方案</div>
         </div>
         <div class="preferential-content clearfix">
           <div class="preferential-content-item">
@@ -271,6 +271,8 @@
               <li id="2"></li>
             </ul>
           </div>
+          <div class="preferential-taxadvantage-content-title ptct-active">我们已得到了北京、上海、江苏、湖北、江西、河南、青海等各地政府的大力支持，在全国范围内设立多个园区</div>
+          <div class="preferential-taxadvantage-content-title">我们已得到了北京、上海、江苏、湖北、江西、河南、青海等各地政府的大力支持，在全国范围内设立多个园区</div>
           <div class="preferential-taxadvantage-content-title">我们已得到了北京、上海、江苏、湖北、江西、河南、青海等各地政府的大力支持，在全国范围内设立多个园区</div>
           <div class="preferential-taxadvantage-content-imgs">
             <ul class="clearfix">
@@ -473,8 +475,8 @@ layui.use('carousel', function(){
           arrow: 'hover', //始终显示箭头
           height:'46rem',
           trigger:'hover',
-          interval:2000,
-          autoplay:false
+          interval:3000,
+          autoplay:true
           //,anim: 'updown' //切换动画方式
         });
       });
