@@ -49,7 +49,7 @@ class Taxationservice
            $w = ['status'=>1]; //正常
        }
 
-       $list = Taxation::instance()->where($w)->order(['id'=>'desc'])->paginate(15);
+       $list = Taxation::instance()->where($w)->order(['sort'=>'desc'])->paginate(15);
        return  $list;
    }
 
@@ -231,7 +231,7 @@ class Taxationservice
             'status'=>1,
         ];
 
-        $top = Taxation::instance()->where($w)->field('id,title')->order('sort asc ,create_time desc')->find();
+        $top = Taxation::instance()->where($w)->field('id,title')->order('sort desc ,create_time desc')->find();
 
         return $top?$top:'';
     }
@@ -249,7 +249,7 @@ class Taxationservice
             'status'=>1,
         ];
 
-        $next = Taxation::instance()->where($w)->field('id,title')->order('sort desc ,create_time desc')->find();
+        $next = Taxation::instance()->where($w)->field('id,title')->order('sort desc, create_time desc')->find();
 
         return $next?$next:'';
     }
