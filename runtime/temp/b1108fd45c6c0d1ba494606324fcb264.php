@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\customer\index.html";i:1576674021;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\customer\index.html";i:1576754891;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -104,7 +104,7 @@
                 <p>
                     <?php echo $vo['title']; ?>
                 </p>
-                <p><?php echo mb_substr($vo['description'],'0','300','utf-8'); ?></p>
+                <p><?php echo mb_substr($vo['description'],0,60,'utf-8'); ?></p>
               </div>
               <div class="item-comtent-more">查看详情</div>
             </a>
