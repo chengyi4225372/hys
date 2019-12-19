@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:107:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\common\footer.html";i:1576723483;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:107:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\common\footer.html";i:1576736013;}*/ ?>
 <div class="bgBottom">
     <div class="bottomBox">
         <div class="w bottom">
@@ -20,17 +20,11 @@
                     </dl>
                     <dl>
                         <dt>惠优税</dt>
-<<<<<<< HEAD
                         <dd><a href="<?php echo url('/home/programme/index'); ?>">行业解决方案</a></dd>
                         <dd><a href="<?php echo url('/home/programme/productservice'); ?>">产品服务</a></dd>
                         <dd><a href="<?php echo url('/home/customer/index'); ?>">客户案例</a></dd>
                         <dd><a href="<?php echo url('/home/optimal/index'); ?>">招商合作</a></dd>
-=======
-                        <dd><a href="javascript:;">行业解决方案</a></dd>
-                        <dd><a href="javascript:;">产品服务</a></dd>
-                        <dd><a href="javascript:;">客户案例</a></dd>
-                        <dd><a href="javascript:;" style="cursor: default;color:rgba(220, 220, 220, 0.3);">招商合作</a></dd>
->>>>>>> 5d5a6c94904d4d4be86dfc0a0ef1057987d3788e
+
                     </dl>
                     <dl>
                         <dt>客服热线</dt>
