@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1576743352;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1576806945;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -99,7 +99,7 @@
             </div>
             <div class="preferential-content-item-content">
               <p>入驻型税筹产品</p>
-              <p>·核定征收型·查账征收型·股权个人代报税</p>
+              <p>·核定征收型·查账征收型·股权转让型</p>
               <p>为园区入驻的企业分别提供核定征收型、查账征收型、股权转让型三类科学纳税产品......</p>
             </div>
             <div class="preferential-content-item-more"><a href="<?php echo url('/home/programme/productservice'); ?>">了解具体方案</a>
@@ -214,7 +214,7 @@
               <div class="tax-planning-solutions-content-img"></div>
               <div class="tax-planning-solutions-content-text">
                 <p>劳务收入型</p>
-                <p>个人所得税太高,员工工资低...</p>
+                <p>自由职业者，劳务个税太高，如何平衡？</p>
               </div>
               <div class="tax-planning-solutions-content-btn">
                 个人所得税
@@ -394,8 +394,8 @@
             <li><a href="<?php echo config('curl.hqd'); ?>">惠企动</a></li> -->
             <li><a href="<?php echo config('curl.website'); ?>">惠企云</a></li>
             <li><a href="/">惠优税</a><a href="<?php echo config('curl.hlg'); ?>">惠灵工</a></li>
-            <li><a href="<?php echo url('/home/many/index'); ?>">惠多薪</a><a href="<?php echo url('/home/searches/index'); ?>">惠找事</a></li>
-            <li><a href="<?php echo url('/home/business/index'); ?>">惠创业</a><a href="<?php echo url('/home/launch/index'); ?>">惠启动</a></li>
+            <li><a href="javascript:;">惠多薪</a><a href="javascript:;">惠找事</a></li>
+            <li><a href="javascript:;">惠创业</a><a href="javascript:;">惠启动</a></li>
           </ul>
         </div>
       </div>

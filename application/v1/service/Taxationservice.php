@@ -158,9 +158,11 @@ class Taxationservice
            $array['keywords'] = ['like',$arr_w,'OR'];
        }
 
-       if($page == ''|| $page == 1){
+       if($page == ''|| $page == 1 || is_null($page)){
            $page = 0;
-       }else{
+       }
+
+       if($page >1){
            $page = ($page -1) * $size;
        }
 

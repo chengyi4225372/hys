@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:107:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\common\footer.html";i:1576736013;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:107:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\common\footer.html";i:1576745873;}*/ ?>
 <div class="bgBottom">
     <div class="bottomBox">
         <div class="w bottom">
@@ -14,16 +14,16 @@
                         <dt>惠企云旗下产品</dt>
                         <dd><a href="<?php echo config('curl.hlg'); ?>">惠灵工</a></dd>
                         <dd><a href="/">惠优税</a></dd>
-                        <dd><a href="<?php echo url('/home/many/index'); ?>">惠多薪</a></dd>
-                        <dd><a href="<?php echo url('/home/business/index'); ?>">惠创业</a></dd>
-                        <dd><a href="<?php echo url('/home/searches/index'); ?>">惠找事</a></dd>
+                        <dd><a href="javascript:;">惠多薪</a></dd>
+                        <dd><a href="javascript:;">惠创业</a></dd>
+                        <dd><a href="javascript:;">惠找事</a></dd>
                     </dl>
                     <dl>
                         <dt>惠优税</dt>
                         <dd><a href="<?php echo url('/home/programme/index'); ?>">行业解决方案</a></dd>
                         <dd><a href="<?php echo url('/home/programme/productservice'); ?>">产品服务</a></dd>
                         <dd><a href="<?php echo url('/home/customer/index'); ?>">客户案例</a></dd>
-                        <dd><a href="<?php echo url('/home/optimal/index'); ?>">招商合作</a></dd>
+                        <dd><a href="javascript:;">招商合作</a></dd>
 
                     </dl>
                     <dl>
