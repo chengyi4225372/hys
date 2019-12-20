@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\customer\index.html";i:1576754778;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\customer\index.html";i:1576828515;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -193,9 +193,7 @@
       })
 
       $('.limit').each(function(){
-        console.log($(this).text().length);
         if($(this).text().length >62 ){
-
         $(this).text($(this).text().slice(0,63)+'...');
         }
       })

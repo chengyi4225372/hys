@@ -75,7 +75,7 @@ body {
   background: #f5f9ff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Noto Sans SC"; }
+  font-family: "Noto Sans SC","Microsoft YaHei"; }
 
 p {
   margin: 0; }
@@ -104,28 +104,28 @@ a {
 ::-webkit-input-placeholder {
   /* WebKit browsers */
   font-size: 1rem;
-  font-family: Microsoft YaHei;
+  font-family: "Noto Sans SC","Microsoft YaHei";
   font-weight: 400;
   color: #e0e0e0; }
 
 :-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
   font-size: 1rem;
-  font-family: Microsoft YaHei;
+  font-family: "Noto Sans SC","Microsoft YaHei";
   font-weight: 400;
   color: #e0e0e0; }
 
 ::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   font-size: 1rem;
-  font-family: Microsoft YaHei;
+  font-family: "Noto Sans SC","Microsoft YaHei";
   font-weight: 400;
   color: #e0e0e0; }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10+ */
   font-size: 1rem;
-  font-family: Microsoft YaHei;
+  font-family: "Noto Sans SC","Microsoft YaHei";
   font-weight: 400;
   color: #e0e0e0 !important; }
 
@@ -177,7 +177,7 @@ a {
   width: 100%;
   /* height: 100%; */
   font-size: 1rem;
-  font-family: "Noto Sans SC","SourceHanSansCN-Bold", "Source Han Sans CN", "Microsoft YaHei", "微软雅黑";
+  font-family: "Noto Sans SC","Microsoft YaHei";
   font-weight: 700;
   color: #333333; }
 
@@ -234,7 +234,7 @@ a {
   width: 100%;
   height: 1.625rem;
   font-size: 1rem;
-  font-family: "Noto Sans SC", 'Source Han Sans CN', "Microsoft YaHei", "微软雅黑";
+  font-family: "Noto Sans SC","Microsoft YaHei";
   font-weight: 400;
   color: #E8341E;
   line-height: 1.625rem; }
@@ -305,7 +305,7 @@ a {
 
 .login-out ul li a {
   font-size: .875rem;
-  font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", "微软雅黑";
+  font-family: "Noto Sans SC","Microsoft YaHei";
   font-weight: 500;
   color: #fff; }
 
@@ -441,7 +441,7 @@ a {
 
 } */
 .govPolicy {
-  font-family: "Noto Sans SC";
+  font-family: "Noto Sans SC","Microsoft YaHei";
   padding-left: .625rem;
   border-left: .1875rem solid #000;
   -webkit-box-sizing: border-box;
@@ -492,7 +492,7 @@ a {
   background: -o-linear-gradient(bottom, #e83b27, #fa5339);
   background: linear-gradient(0deg, #e83b27, #fa5339);
   font-size: 1rem;
-  font-family: "Noto Sans SC";
+  font-family: "Noto Sans SC","Microsoft YaHei";
   font-weight: 400;
   color: #f5f9ff;
   -webkit-border-radius: 0px 0.1875rem 0.1875rem 0px;
@@ -695,7 +695,7 @@ a {
 .tabs-items-content-title {
   height: 1.125rem;
   font-size: 1.125rem;
-  font-family: "Noto Sans SC";
+  font-family: "Noto Sans SC","Microsoft YaHei";
   font-weight: 400;
   color: #19263c;
   padding-top: .8125rem;
@@ -774,7 +774,7 @@ a {
 
 .tabs-items-content-time span:nth-child(2) {
   font-size: .75rem;
-  font-family: Microsoft YaHei;
+  font-family: "Noto Sans SC","Microsoft YaHei";
   font-weight: 400;
   color: #999999; }
 
@@ -787,7 +787,7 @@ a {
           border-radius: .1875rem;
   margin: 0 auto;
   font-size: 1rem;
-  font-family: "Noto Sans SC";
+  font-family: "Noto Sans SC","Microsoft YaHei";
   font-weight: 400;
   color: #4091ff;
   text-align: center;
@@ -1080,7 +1080,7 @@ a {
 
 .goTop div {
   font-size: 0.5625rem;
-  font-family: "Noto Sans SC";
+  font-family: "Noto Sans SC","Microsoft YaHei";
   font-weight: 400;
   color: #323232; }
 
@@ -1109,7 +1109,7 @@ a {
 
 .register a {
   font-size: 1rem;
-  font-family: "Noto Sans SC","Source Han Sans CN", "Microsoft YaHei", "微软雅黑";
+  font-family: "Noto Sans SC","Microsoft YaHei";
   font-weight: 400;
   color: white; }
 
@@ -1171,7 +1171,7 @@ a {
 
 .form-titile p {
   font-size: 1.875rem;
-  font-family: "Noto Sans SC";
+  font-family: "Noto Sans SC","Microsoft YaHei";
   font-weight: 400;
   color: white;
   display: -webkit-box;
@@ -1246,7 +1246,7 @@ a {
   width: 6.25rem;
   height: 2.5rem;
   font-size: 1.125rem;
-  font-family: "Noto Sans SC",  "Microsoft YaHei";
+  font-family: "Noto Sans SC","Microsoft YaHei";
   font-weight: 400;
   color: black;
   line-height: 2.875rem; }
@@ -1275,8 +1275,7 @@ a {
   -webkit-border-radius: 4px;
   border-radius: 4px;
   font-size: 1.5rem;
-  font-family: "Noto Sans SC", "Source Han Sans CN", "Microsoft YaHei",
- "微软雅黑";
+  font-family: "Noto Sans SC","Microsoft YaHei";
   font-weight: 400;
   /* text-align: center; */
   color: white;
@@ -1348,7 +1347,7 @@ a {
 .mask-box .mask-box-title {
   text-align: center;
   font-size: 1.125rem;
-  font-family: "Noto Sans SC";
+  font-family: "Noto Sans SC","Microsoft YaHei";
   font-weight: bold;
   color: white;
   margin: 0 0 1.25rem 0; }
@@ -1356,7 +1355,7 @@ a {
 .mask-box .mask-box-content {
   text-align: center;
   font-size: 0.875rem;
-  font-family: "Noto Sans SC";
+  font-family: "Noto Sans SC","Microsoft YaHei";
   font-weight: 400;
   color: white; }
 
@@ -1393,7 +1392,7 @@ a {
           writing-mode: vertical-rl;
   -ms-writing-mode: tb-rl;
   font-size: 1.5rem;
-  font-family: "Noto Sans SC";
+  font-family: "Noto Sans SC","Microsoft YaHei";
   font-weight: 400;
   color: #fff;
   cursor: pointer;
@@ -1460,7 +1459,7 @@ a {
 
 .consultation .consultation-item ul li a {
   font-size: 1.125rem;
-  font-family: "Noto Sans SC";
+  font-family: "Noto Sans SC","Microsoft YaHei";
   font-weight: 400;
   color: #fff; }
 
@@ -1485,14 +1484,14 @@ a {
 
 .consultation > div > .consultation-item2 div p:nth-child(1) {
   font-size: 1rem;
-  font-family: "Noto Sans SC";
+  font-family: "Noto Sans SC","Microsoft YaHei";
   font-weight: 400;
   color: white;
   margin-bottom: 0.875rem; }
 
 .consultation > div > .consultation-item2 div p:nth-child(2) {
   font-size: 1.125rem;
-  font-family: "Noto Sans SC";
+  font-family: "Noto Sans SC","Microsoft YaHei";
   font-weight: 400;
   color: white;
   margin-bottom: 0.875rem; }
@@ -1533,6 +1532,6 @@ a {
 
 .goTop div:nth-child(2) {
   font-size: 1.125rem;
-  font-family: "Noto Sans SC";
+  font-family: "Noto Sans SC","Microsoft YaHei";
   font-weight: 500;
   color: white; }

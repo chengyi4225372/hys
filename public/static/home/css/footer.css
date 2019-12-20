@@ -6,6 +6,8 @@
   }
   
   .bottomBox .bottom {
+    font-family: "Noto Sans SC","Microsoft YaHei";
+
     color: #dcdcdc;
   }
   
@@ -19,7 +21,7 @@
     font-size: 1.5rem;
     line-height: 1.5rem;
     color: #fff;
-    font-family: "Noto Sans SC";
+    font-family: "Noto Sans SC","Microsoft YaHei";
     font-weight: 500;
   }
   
@@ -78,7 +80,7 @@
     font-weight: 500;
     font-size: 1.125rem;
     line-height: 1.125rem;
-    font-family: "Noto Sans SC";
+    font-family: "Noto Sans SC","Microsoft YaHei";
     margin-bottom: 3.25rem;
   }
   
@@ -88,7 +90,7 @@
   }
   
   .bottomBox .bottom .navBottom .navList dl dd a {
-    font-family: "Noto Sans SC";
+    font-family: "Noto Sans SC","Microsoft YaHei";
     display: block;
     color: #dcdcdc;
     font-size: 1.125rem;

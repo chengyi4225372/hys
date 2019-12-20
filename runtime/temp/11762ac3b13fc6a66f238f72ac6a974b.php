@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1576806945;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1576829772;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900">
   <link rel="stylesheet" href="/static/assets/plugins/layui/css/layui.css">
   <link rel="stylesheet" href="/static/home/css/index.css">
+  <!-- <link rel="stylesheet" href="/static/home/font/SourceHanSansCN-Normal.css"> -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="/static/assets/plugins/layui/layui.all.js"></script>
   <script src="/static/home/js/clamp.js"></script>
@@ -36,7 +37,7 @@
         <!-- logo图 -->
         <div class="logo clearfix">
           <img src="/static/home/images/logo.png" alt="">
-         
+
         </div>
         <!-- nav部分 -->
         <div class="nav">
@@ -71,7 +72,7 @@
     </div>
 
     <!-- 轮播图 -->
-    
+
     <div class="layui-carousel" id="test1">
       <div carousel-item>
         <div><img style="width: 100%;" src="/static/home/images/homeBanner1.png" alt=""></div>
@@ -172,11 +173,11 @@
               <div class="tax-planning-solutions-content-btn">
                 分红个税
               </div>
-              <div class="tax-planning-solutions-content-btn2">
-                <a href="javascript:;" onclick="alert_open()">获取分红个税筹划方案</a>
+              <div class="tax-planning-solutions-content-btn2" onclick="alert_open()">
+                <a href="javascript:;">获取分红个税筹划方案</a>
               </div>
             </div>
-            
+
             <div class="tax-planning-solutions-content-item">
               <div class="plan-text">筹划方案</div>
 
@@ -188,8 +189,8 @@
               <div class="tax-planning-solutions-content-btn">
                 个人所得税
               </div>
-              <div class="tax-planning-solutions-content-btn2">
-                <a href="javascript:;" onclick="alert_open()">获取个人所得税筹划方案</a>
+              <div class="tax-planning-solutions-content-btn2" onclick="alert_open()">
+                <a href="javascript:;">获取个人所得税筹划方案</a>
               </div>
             </div>
             <div class="tax-planning-solutions-content-item">
@@ -203,8 +204,8 @@
               <div class="tax-planning-solutions-content-btn">
                 企业所得税
               </div>
-              <div class="tax-planning-solutions-content-btn2">
-                <a href="javascript:;" onclick="alert_open()">获取企业所得税筹划方案</a>
+              <div class="tax-planning-solutions-content-btn2" onclick="alert_open()">
+                <a href="javascript:;">获取企业所得税筹划方案</a>
               </div>
             </div>
           </div>
@@ -219,8 +220,8 @@
               <div class="tax-planning-solutions-content-btn">
                 个人所得税
               </div>
-              <div class="tax-planning-solutions-content-btn2">
-                <a href="javascript:;" onclick="alert_open()">获取个人所得税筹划方案</a>
+              <div class="tax-planning-solutions-content-btn2" onclick="alert_open()">
+                <a href="javascript:;">获取个人所得税筹划方案</a>
               </div>
             </div>
             <div class="tax-planning-solutions-content-item">
@@ -233,8 +234,8 @@
               <div class="tax-planning-solutions-content-btn">
                 企业所得税
               </div>
-              <div class="tax-planning-solutions-content-btn2">
-                <a href="javascript:;" onclick="alert_open()">获取企业所得税筹划方案</a>
+              <div class="tax-planning-solutions-content-btn2" onclick="alert_open()">
+                <a href="javascript:;">获取企业所得税筹划方案</a>
               </div>
             </div>
             <div class="content-active tax-planning-solutions-content-item">
@@ -247,8 +248,8 @@
               <div class="tax-planning-solutions-content-btn">
                 增值税
               </div>
-              <div class="tax-planning-solutions-content-btn2">
-                <a href="javascript:;" onclick="alert_open()">获取增值税筹划方案</a>
+              <div class="tax-planning-solutions-content-btn2" onclick="alert_open()">
+                <a href="javascript:;">获取增值税筹划方案</a>
               </div>
             </div>
           </div>
@@ -271,7 +272,8 @@
               <li id="2"></li>
             </ul>
           </div>
-          <div class="preferential-taxadvantage-content-title ptct-active">我们已得到了北京、上海、江苏、湖北、江西、河南、青海等各地政府的大力支持，在全国范围内设立多个园区</div>
+          <div class="preferential-taxadvantage-content-title ptct-active">
+            我们已得到了北京、上海、江苏、湖北、江西、河南、青海等各地政府的大力支持，在全国范围内设立多个园区</div>
           <div class="preferential-taxadvantage-content-imgs">
             <ul class="clearfix">
               <?php if(is_array($chart) || $chart instanceof \think\Collection || $chart instanceof \think\Paginator): $i = 0; $__LIST__ = $chart;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
@@ -293,7 +295,7 @@
         <div></div>
         <div>
           <span class="partTitle">惠优税精选园区</span>
-          
+
         </div>
         <div class="map-box">
           <div class="map-box-left">
@@ -422,27 +424,27 @@
     <!-- 弹框 -->
     <div class="pop-up-box" id="popbox">
       <div class="form">
-          <div class="form-titile">
-              <p>方案咨询</p>
-              <span class="turnoff" onclick="hide_open()"></span>
-          </div>
-          <div class="form-content">
-              <div><span class="title">您的姓名</span><input type="text" id="contactName" placeholder="请输您的姓名"></div>
-              <div><span class="title">联系方式</span><input type="text" id="contactMobile" placeholder="请输入您的手机号"></div>
-              <div><span class="title">公司名称</span><input type="text" id="companyName" placeholder="若无公司请填写自雇"></div>
-              <input type='hidden' id='sources' value='惠优税'>
-              <input type='hidden' id='identifications' value='企业税筹'>
-              <div class="form-btn" onclick="form_btn()">获取方案</div>
-          </div>
-          <!-- 提交成果后弹窗 -->
-          <div class="mask-box">
-              <span></span>
-              <p class="mask-box-title">提交成功</p>
-              <p class="mask-box-content">我们会在一个工作日内联系您</p>
-          </div>
+        <div class="form-titile">
+          <p>方案咨询</p>
+          <span class="turnoff" onclick="hide_open()"></span>
+        </div>
+        <div class="form-content">
+          <div><span class="title">您的姓名</span><input type="text" id="contactName" placeholder="请输您的姓名"></div>
+          <div><span class="title">联系方式</span><input type="text" id="contactMobile" placeholder="请输入您的手机号"></div>
+          <div><span class="title">公司名称</span><input type="text" id="companyName" placeholder="若无公司请填写自雇"></div>
+          <input type='hidden' id='sources' value='惠优税'>
+          <input type='hidden' id='identifications' value='企业税筹'>
+          <div class="form-btn" onclick="form_btn()">获取方案</div>
+        </div>
+        <!-- 提交成果后弹窗 -->
+        <div class="mask-box">
+          <span></span>
+          <p class="mask-box-title">提交成功</p>
+          <p class="mask-box-content">我们会在一个工作日内联系您</p>
+        </div>
       </div>
 
-  </div>
+    </div>
 
 
   </div>
@@ -463,21 +465,21 @@
       $('.chosenPage').addClass('nav-active')
     })
 
-/* 轮播图 */
-layui.use('carousel', function(){
-        var carousel = layui.carousel;
-        //建造实例
-        carousel.render({
-          elem: '#test1',
-          width: '100%', //设置容器宽度
-          arrow: 'hover', //始终显示箭头
-          height:'46rem',
-          trigger:'hover',
-          interval:3000,
-          autoplay:true
-          //,anim: 'updown' //切换动画方式
-        });
+    /* 轮播图 */
+    layui.use('carousel', function () {
+      var carousel = layui.carousel;
+      //建造实例
+      carousel.render({
+        elem: '#test1',
+        width: '100%', //设置容器宽度
+        arrow: 'hover', //始终显示箭头
+        height: '46rem',
+        trigger: 'hover',
+        interval: 3000,
+        autoplay: true
+        //,anim: 'updown' //切换动画方式
       });
+    });
 
   })
 </script>

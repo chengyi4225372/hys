@@ -234,7 +234,6 @@ $(function () {
     $('.selected-park div').eq(0).width($('.partTitle').width())
     $('.partner-title div').eq(0).width($('.coTitle').width())
     $('.taxproblems-right').eq(0).width($('.taxIssues').width())
-
     $(window).resize(function() {
         $('.preferential-icon div').eq(0).width($('.hysTitle').width())
     $('.tax-planning-solutions div').eq(0).width($('.caseTitle').width())
@@ -257,6 +256,18 @@ $(function () {
         $(this).addClass('activeGet')
     }).mouseup(function(){
         $(this).removeClass('activeGet')
+    })
+    /* 税筹解决方案按钮效果 */
+     $('.tax-planning-solutions-content-btn2').mouseover(function(){
+        // alert(111)
+        $(this).addClass('activeTaxSolution')
+    }).mouseleave(function(){
+        $(this).removeClass('activeTaxSolution')
+    })
+    $('.tax-planning-solutions-content-btn2').mousedown(function(){
+        $(this).addClass('activeTaxSolution')
+    }).mouseup(function(){
+        $(this).removeClass('activeTaxSolution')
     })
 
 })
