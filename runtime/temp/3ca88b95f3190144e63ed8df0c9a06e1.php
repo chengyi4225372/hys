@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:79:"C:\phpEnv\www\hys\public/../application/home\view\programme\productservice.html";i:1576808199;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:79:"C:\phpEnv\www\hys\public/../application/home\view\programme\productservice.html";i:1576837170;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="/static/home/css/productservice.css">
     <link rel="stylesheet" href="/static/home/css/footer.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900">
+    <link rel="stylesheet" href="/static/home/font/syht.css">
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="/static/assets/plugins/layui/layui.all.js"></script>
     <script src="/static/home/js/productservice.js"></script>

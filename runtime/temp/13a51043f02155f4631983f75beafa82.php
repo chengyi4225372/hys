@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:70:"C:\phpEnv\www\hys\public/../application/home\view\programme\index.html";i:1576672313;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:70:"C:\phpEnv\www\hys\public/../application/home\view\programme\index.html";i:1576837163;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="/static/home/css/programme.css">
   <link rel="stylesheet" href="/static/home/css/footer.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900">
+  <link rel="stylesheet" href="/static/home/font/syht.css">
+
   <script src="/static/home/js/jquery.js"></script>
   <script src="/static/assets/plugins/layui/layui.all.js"></script>
 

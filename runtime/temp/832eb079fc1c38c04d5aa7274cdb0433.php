@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\industry\infos.html";i:1576739399;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\industry\infos.html";i:1576837109;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="/static/home/css/info.css">
     <link rel="stylesheet" href="/static/home/css/footer.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900">
+    <link rel="stylesheet" href="/static/home/font/syht.css">
 
     <meta name="keyword" content="<?php echo $info['keywords']; ?>">
     <meta name="description" content="<?php echo $info['description']; ?>">
