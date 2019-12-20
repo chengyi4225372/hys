@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:109:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\programme\index.html";i:1576674021;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:109:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\programme\index.html";i:1576857279;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="/static/home/css/programme.css">
   <link rel="stylesheet" href="/static/home/css/footer.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900">
+  <link rel="stylesheet" href="/static/home/font/syht.css">
+
   <script src="/static/home/js/jquery.js"></script>
   <script src="/static/assets/plugins/layui/layui.all.js"></script>
 
@@ -31,7 +33,9 @@
       <div class="w nav-container clearfix">
         <!-- logo图 -->
         <div class="logo clearfix">
-          <img src="/static/home/images/logo2.png" alt="">
+          <a href="/">
+            <img src="/static/home/images/logo2.png" alt="">
+          </a>
         </div>
         <!-- nav部分 -->
         <div class="nav">

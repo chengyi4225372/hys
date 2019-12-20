@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:118:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\programme\productservice.html";i:1576745724;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:118:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\programme\productservice.html";i:1576857286;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="/static/home/css/productservice.css">
     <link rel="stylesheet" href="/static/home/css/footer.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900">
+    <link rel="stylesheet" href="/static/home/font/syht.css">
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="/static/assets/plugins/layui/layui.all.js"></script>
     <script src="/static/home/js/productservice.js"></script>
@@ -30,7 +32,9 @@
             <div class="w nav-container clearfix">
                 <!-- logo图 -->
                 <div class="logo clearfix">
-                    <img src="/static/home/images/logo2.png" alt="">
+                    <a href="/">
+                        <img src="/static/home/images/logo2.png" alt="">
+                    </a>
                     
                 </div>
                 <!-- nav部分 -->
@@ -91,7 +95,7 @@
                 <img src="/static/home/images/service.png" alt="">
                 <img src="/static/home/images/case.png" alt="">
                 <img src="/static/home/images/step.png" alt="">
-                <img src="/static/home/images/advantage.png" alt="">
+                <img src="/static/home/images/advantage2.png" alt="">
                 <img src="/static/home/images/afterSales.png" alt="">
                 <button class="btn2" onclick="alert_open()"></button>
                 <input type="button"  class="btn3" onclick="alert_open()" />

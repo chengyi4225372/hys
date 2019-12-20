@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\customer\index.html";i:1576754891;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\customer\index.html";i:1576857197;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="/static/home/css/customer.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900">
   <link rel="stylesheet" href="/static/home/css/footer.css">
+  <link rel="stylesheet" href="/static/home/font/syht.css">
+
   <!--    <script src="/static/spirit/js/clamp.js"></script>-->
   <script src="/static/assets/plugins/layui/layui.all.js"></script>
   <script src='/static/common/js/common.js'></script>
@@ -36,7 +38,9 @@
         <div class="w nav-container clearfix">
             <!-- logo图 -->
             <div class="logo clearfix">
-                <img src="/static/home/images/logo2.png" alt="">
+                <a href="/">
+                    <img src="/static/home/images/logo2.png" alt="">
+                </a>
 
             </div>
             <!-- nav部分 -->
@@ -104,7 +108,7 @@
                 <p>
                     <?php echo $vo['title']; ?>
                 </p>
-                <p><?php echo mb_substr($vo['description'],0,60,'utf-8'); ?></p>
+                <p class="limit"><?php echo mb_substr($vo['description'],'0','300','utf-8'); ?></p>
               </div>
               <div class="item-comtent-more">查看详情</div>
             </a>
@@ -192,6 +196,11 @@
         $('.chosenPage').addClass('nav-active')
       })
 
+      $('.limit').each(function(){
+        if($(this).text().length >62 ){
+        $(this).text($(this).text().slice(0,63)+'...');
+        }
+      })
     })
   </script>
 
