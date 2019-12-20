@@ -103,7 +103,7 @@
                 <p>
                     {$vo.title}
                 </p>
-                <p>{:mb_substr($vo.description,'0','300','utf-8')}</p>
+                <p class="limit">{:mb_substr($vo.description,'0','300','utf-8')}</p>
               </div>
               <div class="item-comtent-more">查看详情</div>
             </a>
@@ -191,6 +191,11 @@
         $('.chosenPage').addClass('nav-active')
       })
 
+      // $('.limit').each(function(){
+      //   if($(this).text().length >62 ){
+      //   $(this).text($(this).text().slice(0,63)+'...');
+      //   }
+      // })
     })
   </script>
 

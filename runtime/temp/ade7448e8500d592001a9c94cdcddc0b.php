@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\customer\index.html";i:1576672333;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\customer\index.html";i:1576754778;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -104,7 +104,7 @@
                 <p>
                     <?php echo $vo['title']; ?>
                 </p>
-                <p><?php echo mb_substr($vo['description'],'0','300','utf-8'); ?></p>
+                <p class="limit"><?php echo mb_substr($vo['description'],'0','300','utf-8'); ?></p>
               </div>
               <div class="item-comtent-more">查看详情</div>
             </a>
@@ -192,6 +192,13 @@
         $('.chosenPage').addClass('nav-active')
       })
 
+      $('.limit').each(function(){
+        console.log($(this).text().length);
+        if($(this).text().length >62 ){
+
+        $(this).text($(this).text().slice(0,63)+'...');
+        }
+      })
     })
   </script>
 

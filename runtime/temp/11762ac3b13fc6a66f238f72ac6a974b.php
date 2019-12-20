@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1576715882;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1576743352;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -272,8 +272,6 @@
             </ul>
           </div>
           <div class="preferential-taxadvantage-content-title ptct-active">我们已得到了北京、上海、江苏、湖北、江西、河南、青海等各地政府的大力支持，在全国范围内设立多个园区</div>
-          <div class="preferential-taxadvantage-content-title">我们已得到了北京、上海、江苏、湖北、江西、河南、青海等各地政府的大力支持，在全国范围内设立多个园区</div>
-          <div class="preferential-taxadvantage-content-title">我们已得到了北京、上海、江苏、湖北、江西、河南、青海等各地政府的大力支持，在全国范围内设立多个园区</div>
           <div class="preferential-taxadvantage-content-imgs">
             <ul class="clearfix">
               <?php if(is_array($chart) || $chart instanceof \think\Collection || $chart instanceof \think\Paginator): $i = 0; $__LIST__ = $chart;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
