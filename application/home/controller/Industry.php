@@ -84,7 +84,7 @@ class Industry extends BaseController
             $next = Taxationservice::instance()->getnext($id);
             $this->assign('top',$top);
             $this->assign('next',$next);
-            $this->assign('title','行业新闻资讯详情');
+            $this->assign('title','新闻资讯详情');
             return $this->fetch();
         }
         return false;

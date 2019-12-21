@@ -160,11 +160,10 @@
                         <ul>
                             {volist name='keywords' id='vo'}
                             <li onclick="hotsearch(this);" data-title="{$vo.title}"
-                                data-url="{:url('/home/industry/newsapi')}"
-                                data-href="{:url('/home/industry/infos')}">
+                                data-url="{:url('/home/industry/newsapi')}" data-href="{:url('/home/industry/infos')}">
                                 <span>{$vo.title}</span>
                                 <span class="close" onclick="nullhot(this);"
-                                 data-url="{:url('/home/industry/newsapi')}">✕</span>
+                                    data-url="{:url('/home/industry/newsapi')}">✕</span>
                             </li>
                             {/volist}
                         </ul>
@@ -253,10 +252,10 @@
 
 
     <!-- 底部 -->
-<div id="footer"></div>
+    <div id="footer"></div>
 
-      <!-- 侧边栏consultation资讯 -->
-      <div class="consultation">
+    <!-- 侧边栏consultation资讯 -->
+    <div class="consultation">
         <div>
           <div class="consultation-title" onclick="alert_open()">咨询方案</div>
           <!-- <div class="consultation-item">
@@ -290,8 +289,8 @@
         </div>
       </div>
 
-     <!-- 弹框 -->
-     <div class="pop-up-box" id="popbox">
+    <!-- 弹框 -->
+    <div class="pop-up-box" id="popbox">
         <div class="form">
             <div class="form-titile">
                 <p>方案咨询</p>

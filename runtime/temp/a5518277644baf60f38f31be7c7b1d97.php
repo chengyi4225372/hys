@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:68:"C:\phpEnv\www\hys\public/../application/home\view\customer\info.html";i:1576672341;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:68:"C:\phpEnv\www\hys\public/../application/home\view\customer\info.html";i:1576907485;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="/static/home/css/infos.css">
     <link rel="stylesheet" href="/static/home/css/footer.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900">
+    <link rel="stylesheet" href="/static/home/font/syht.css">
+
     <meta name="keyword" content="<?php echo $info['keywords']; ?>">
     <meta name="description" content="<?php echo $info['description']; ?>">
     <script src="/static/home/js/jquery.js"></script>
@@ -32,7 +34,9 @@
             <div class="w nav-container clearfix">
                 <!-- logo图 -->
                 <div class="logo clearfix">
-                    <img src="/static/home/images/logo2.png" alt="">
+                    <a href="/">
+                        <img src="/static/home/images/logo2.png" alt="">
+                    </a>
 
                 </div>
                 <!-- nav部分 -->

@@ -483,10 +483,17 @@ a {
   padding: 3.125rem 0 5.8125rem 0; }
   .piece p span {
     font-size: .875rem;
-    color: #333; }
+    color: #999; }
   .piece p a {
     font-size: .875rem;
-    color: #666; }
+    color: #999; }
+    .piece p:hover a{
+      color: #666;
+    }
+
+    .piece p:hover span{
+      color: #333;
+    }
 
 /* consultation资讯 */
 .consultation {

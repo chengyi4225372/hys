@@ -1054,70 +1054,6 @@ a {
   background: none;
   color: #4091FF; }
 
-/* 返回顶部 */
-.goTop {
-  position: fixed;
-  bottom: 1.25rem;
-  right: 8.4375rem;
-  /* width: 3.125rem; */
-  height: 2.8125rem;
-  text-align: center;
-  z-index: 999;
-  background-color: #fff;
-  padding-top: 0.3125rem;
-  display: none;
-  cursor: pointer; }
-
-.goTop i {
-  overflow: hidden;
-  /* float: right; */
-  display: inline-block;
-  width: 1.4375rem;
-  height: 1.625rem;
-  -webkit-background-size: contain;
-          background-size: contain;
-  background-image: url("../images/goback.png"); }
-
-.goTop div {
-  font-size: 0.5625rem;
-  font-family: "Noto Sans SC","syht";
-  font-weight: 400;
-  color: #323232; }
-
-.register > a {
-  text-decoration: none;
-  display: inline-block;
-  color: #fff;
-  width: 5.375rem;
-  height: 2.125rem;
-  line-height: 2.125rem;
-  text-align: center;
-  background: -webkit-gradient(linear, left bottom, left top, from(#c8bfbf), to(white));
-  background: -webkit-linear-gradient(bottom, #c8bfbf, white);
-  background: -o-linear-gradient(bottom, #c8bfbf, white);
-  background: linear-gradient(0deg, #c8bfbf, white);
-  border: 1px solid #969595;
-  -webkit-border-radius: 6px;
-          border-radius: 6px; }
-
-.register > span {
-  height: 2.125rem;
-  width: 1px;
-  background-color: #ccc;
-  position: absolute;
-  right: 5.5rem; }
-
-.register a {
-  font-size: 1rem;
-  font-family: "Noto Sans SC","syht";
-  font-weight: 400;
-  color: white; }
-
-/* .register a:hover{
-    background: #074483;
-    color: #fff;
-} */
-
 /* 弹出框 */
 .pop-up-box {
   position: fixed;
@@ -1171,7 +1107,7 @@ a {
 
 .form-titile p {
   font-size: 1.875rem;
-  font-family: "Noto Sans SC","syht";
+  font-family:"Noto Sans SC","syht";
   font-weight: 400;
   color: white;
   display: -webkit-box;

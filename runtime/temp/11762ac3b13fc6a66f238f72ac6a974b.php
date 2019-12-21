@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1576835839;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1576907485;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,8 +37,9 @@
       <div class="w nav-container clearfix">
         <!-- logo图 -->
         <div class="logo clearfix">
+          <a href="/">
           <img src="/static/home/images/logo.png" alt="">
-
+          </a>
         </div>
         <!-- nav部分 -->
         <div class="nav">
