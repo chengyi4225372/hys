@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:68:"C:\phpEnv\www\hys\public/../application/home\view\common\footer.html";i:1576806682;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:68:"C:\phpEnv\www\hys\public/../application/home\view\common\footer.html";i:1577070037;}*/ ?>
 <div class="bgBottom">
     <div class="bottomBox">
         <div class="w bottom">
