@@ -35,7 +35,7 @@ window.onload = function () {
     // 税务筹划解决方案盒子切换
     var oneDivList = document.querySelectorAll('.tax-planning-solutions-content-one .tax-planning-solutions-content-item');
     var twoDivList = document.querySelectorAll('.tax-planning-solutions-content-two .tax-planning-solutions-content-item');
-    console.log(oneDivList, twoDivList);
+    // console.log(oneDivList, twoDivList);
 
     for (var i = 0; i < oneDivList.length; i++) {
         oneDivList[i].onmouseover = function () {
