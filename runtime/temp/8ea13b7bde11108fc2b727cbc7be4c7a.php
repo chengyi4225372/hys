@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:107:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\common\footer.html";i:1576745873;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:107:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\common\footer.html";i:1577263984;}*/ ?>
 <div class="bgBottom">
     <div class="bottomBox">
         <div class="w bottom">
@@ -29,7 +29,7 @@
                     <dl>
                         <dt>客服热线</dt>
                         <dd><a href="javascript:;">400-150-9896</a></dd>
-                        <dd><a href="javascript:;">18186194461</a></dd>
+                        <dd><a href="javascript:;">181-8619-4461</a></dd>
                     </dl>
                     <dl>
                         <dt>办公地址</dt>

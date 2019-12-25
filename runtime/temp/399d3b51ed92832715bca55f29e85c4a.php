@@ -1,6 +1,6 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:109:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\programme\index.html";i:1576857279;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:109:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\programme\index.html";i:1577265860;s:97:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\home\view\common\footer.html";i:1577263984;}*/ ?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
   <meta charset="UTF-8">
@@ -23,50 +23,14 @@
   <script src="/static/home/js/programme.js"></script>
   <script src="/static/common/js/open.js"></script>
   <script src='/static/home/js/footer.js'></script>
+  <script src='/static/home/js/header.js'></script>
 
 </head>
 
 <body>
   <div class="container">
-    <!-- 导航部分 -->
-    <div class="nav-box">
-      <div class="w nav-container clearfix">
-        <!-- logo图 -->
-        <div class="logo clearfix">
-          <a href="/">
-            <img src="/static/home/images/logo2.png" alt="">
-          </a>
-        </div>
-        <!-- nav部分 -->
-        <div class="nav">
-          <ul class="clearfix">
-            <li><a href="/">首页</a></li>
-            <li><a href="<?php echo url('/home/programme/productservice'); ?>"> 产品服务</a></li>
-            <li class="nav-active"><a href="<?php echo url('/home/programme/index'); ?>">行业解决方案</a></li>
-            <li><a href="<?php echo url('/home/customer/index'); ?>">客户案例</a></li>
-            <li><a href="<?php echo url('/home/industry/index'); ?>">新闻资讯</a></li>
-            <!-- <li><a href="#">会员通道</a></li> -->
-          </ul>
-        </div>
-        <!-- 登陆注册 -->
-        <!-- <div class="loging clearfix">
-                    <div class="register-btn"><a href="./login.html">
-                        登陆
-                      </a></div>
-                    <div class="loging-btn"><a href="./register.html">注册</a></div>
-                  </div> -->
-        <!-- 头像部分 -->
-        <!-- <div class="user-icon-box">
-          <img class="user-icon" src="/static/home/images/icon.png" alt="">
-          <span class="phone">133****5674</span>
-          <div class="login-out">
-            <ul>
-              <li><a href="">退出登录</a></li>
-            </ul>
-          </div>
-        </div> -->
-      </div>
-    </div>
+ <!-- 头部导航 -->
+ <div id="header" data-pageId="2"></div>
 
     <!-- banner -->
     <div class='header-box'></div>
@@ -170,7 +134,71 @@
 
 
   <!-- 底部 -->
-  <div id="footer"></div>
+<div class="bgBottom">
+    <div class="bottomBox">
+        <div class="w bottom">
+            <div class="aboutUs">
+                <span>关于我们</span>
+                <p>
+                    惠企云旗下【惠优税】，利用最安全、高效、合理的节税措施解决税务难题，打造全国地方政府园区联盟式星级服务新典范和园企共同发展大平台！
+                </p>
+            </div>
+            <div class="navBottom">
+                <div class="navList">
+                    <dl>
+                        <dt>惠企云旗下产品</dt>
+                        <dd><a href="<?php echo config('curl.hlg'); ?>">惠灵工</a></dd>
+                        <dd><a href="/">惠优税</a></dd>
+                        <dd><a href="javascript:;">惠多薪</a></dd>
+                        <dd><a href="javascript:;">惠创业</a></dd>
+                        <dd><a href="javascript:;">惠找事</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>惠优税</dt>
+                        <dd><a href="<?php echo url('/home/programme/index'); ?>">行业解决方案</a></dd>
+                        <dd><a href="<?php echo url('/home/programme/productservice'); ?>">产品服务</a></dd>
+                        <dd><a href="<?php echo url('/home/customer/index'); ?>">客户案例</a></dd>
+                        <dd><a href="javascript:;">招商合作</a></dd>
+
+                    </dl>
+                    <dl>
+                        <dt>客服热线</dt>
+                        <dd><a href="javascript:;">400-150-9896</a></dd>
+                        <dd><a href="javascript:;">181-8619-4461</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>办公地址</dt>
+
+                        <dd><a href="javascript:;"></a>武汉市硚口区南国大武汉H座</a></dd>
+                        <dd><a href="javascript:;"></a>深圳市福田区第一世界广场A座</a></dd>
+                        <dd><a href="javascript:;"></a>北京市西城区贵都国际中心B座</a></dd>
+                    </dl>
+                </div>
+
+                <ul class="qrCode">
+                    <li>
+                        <div class="pic">
+                            <img src="/static/home/images/weixincode.png" alt="">
+                        </div>
+                        <span><img src="/static/home/images/weixinicon.png" alt="">微信扫码关注</span>
+                        <i>及时获知一手财税信息</i>
+                    </li>
+                    <li>
+                        <div class="pic">
+                            <img src="/static/home/images/weibocode.png" alt="">
+                        </div>
+                        <span><img src="/static/home/images/weiboicon.png" alt="">惠企云微博</span>
+                        <!-- <i>及时获一手财税信息</i> -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="w copyRight">©&nbsp;Copyright&nbsp;2019&nbsp;惠企动（湖北）科技有限公司&nbsp;.&nbsp;All Rights
+            Reserved&nbsp;ICP证 : 鄂ICP备16008680号-3
+        </div>
+
+    </div>
+</div>
 
   <!-- 侧边栏consultation资讯 -->
   <div class="consultation">
@@ -186,7 +214,7 @@
         </div>
         <div>
           <p>获取税筹方案</p>
-          <p>400-150-9898</p>
+          <p>400-150-9896</p>
         </div>
       </div>
     </div>
