@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\industry\index.html";i:1576907622;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\industry\index.html";i:1577070037;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -267,16 +267,16 @@
         </div>
         <div>
           <div class="consultation-title2">联系我们</div>
-          <div class="consultation-item2">
-            <div>
-              <p>专家服务电话</p>
-              <p>181-8619-4461</p>
+            <div class="consultation-item2">
+                <div>
+                    <p>专家服务电话</p>
+                    <p>181-8619-4461</p>
+                </div>
+                <div>
+                    <p>获取税筹方案</p>
+                    <p>400-150-9896</p>
+                </div>
             </div>
-            <div>
-              <p>获取税筹方案</p>
-              <p>400-150-9898</p>
-            </div>
-          </div>
         </div>
         <!-- 返回顶部  -->
         <div class='goTop' id="goTop">
