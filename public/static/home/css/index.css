@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 /* 版心 */
 .w {
   width: 75rem;
@@ -96,7 +95,7 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Noto Sans SC","syht"!important;
+  font-family: "Noto Sans SC", "syht" !important;
 }
 
 p {
@@ -120,8 +119,11 @@ a {
 /* nav部分 */
 .container {
   min-width: 75rem;
+  padding-top: 5rem;
 }
 
+/* 头部 */
+/* 
 .nav-box {
   position: fixed;
   top: 0;
@@ -130,15 +132,12 @@ a {
   height: 5rem;
   background: #ffffff;
   z-index: 999;
-  /* background-color: pink; */
   -webkit-box-shadow: 0px 1px 7px 0px rgba(199, 199, 199, 0.66);
   box-shadow: 0px 1px 7px 0px rgba(199, 199, 199, 0.66);
 }
 
 .nav-container {
   padding-top: 0.875rem;
-  /* height: 4.125rem; */
-  /* background-color: skyblue; */
   height: 100%;
 }
 
@@ -155,16 +154,6 @@ a {
 
 }
 
-/* .nav-container h1 {
-  float: left;
-  font-size: 1.9375rem;
-  font-family: "Noto Sans SC","syht";
-  font-weight: 500;
-  letter-spacing: 0.1875rem;
-  color: black;
-  line-height: 2.125rem;
-  margin: 0.6875rem 0 0.6875rem 0.75rem;
-} */
 
 .nav-container .nav {
   float: left;
@@ -191,13 +180,11 @@ a {
 .nav-container .nav ul li a {
   display: block;
   width: 100%;
-  /* height: 100%; */
   font-size: 1rem;
   font-family: "Noto Sans SC","syht";
   font-weight: 700;
   color: #333333;
-}
-
+} */
 /* .nav-container .nav ul li:hover::after {
     position: absolute;
     bottom: -0.5125rem;
@@ -213,7 +200,7 @@ a {
     border-radius: .125rem;
     background-color: #E8341E;
 } */
-.nav-active {
+/* .nav-active {
   position: relative;
 }
 
@@ -231,10 +218,9 @@ a {
   -webkit-border-radius: 0.125rem;
   border-radius: 0.125rem;
   background-color: #f85236;
-}
-
+} */
 /* 登陆注册 */
-.nav-container .loging {
+/* .nav-container .loging {
   float: right;
   margin: 1.25rem 0 0 0;
 }
@@ -264,19 +250,16 @@ a {
 .nav-container .loging div:nth-child(2) {
   margin-left: 1.25rem;
   margin-right: 2.5625rem;
-}
-
+} */
 /* 头像部分 */
-.nav-container .user-icon-box {
+/* .nav-container .user-icon-box {
   position: relative;
   float: right;
   text-align: center;
   height: 3rem;
   margin-top: 1.05rem;
   padding-left: 1.25rem;
-  /* margin-right: 2.5625rem; */
   cursor: pointer;
-  /* background-color: pink; */
 }
 
 .nav-container .user-icon-box .user-icon {
@@ -291,10 +274,9 @@ a {
 .nav-container .user-icon-box .phone {
   height: 1.4375rem;
   display: inline-block;
-}
-
+} */
 /* 登陆退出 */
-.login-out {
+/* .login-out {
   display: none;
   position: absolute;
   width: 5.625rem;
@@ -341,8 +323,7 @@ a {
 
 .login-out ul li:hover {
   background-color: #fe0b0c;
-}
-
+} */
 /* .login-out ul li:hover .login-out::after {
     content: '';
     display: block;
@@ -359,16 +340,13 @@ a {
     border-bottom: .625rem solid #FEA911!important;
     border-left: .625rem solid transparent;
 } */
-.nav-container .user-icon-box:hover .login-out {
+/* .nav-container .user-icon-box:hover .login-out {
   display: block;
-}
+} */
+/* 头部 */
 
-/* 头部部分 */
+
 /* 轮播图 */
-#test1 {
-  padding-top: 5rem;
-}
-
 .layui-carousel-ind {
   position: static;
 }
@@ -376,7 +354,7 @@ a {
 .layui-carousel-ind ul {
   position: absolute;
   right: 22.8125rem;
-  top: 21.0625rem;
+  top: 16.0625rem;
   background: none;
 }
 
@@ -398,9 +376,12 @@ a {
   border-radius: 0.4375rem;
   background: rgba(255, 255, 255, 0.5) !important;
 }
-.layui-carousel-arrow:hover, .layui-carousel-ind ul:hover{
-  background: none!important;
+
+.layui-carousel-arrow:hover,
+.layui-carousel-ind ul:hover {
+  background: none !important;
 }
+
 /* 惠优税产品 */
 .preferential-box .preferential-container {
   padding-top: 1.875rem;
@@ -422,49 +403,81 @@ a {
   line-height: 1.875rem;
 }
 
-.preferential-box .preferential-container .preferential-icon>div:nth-child(1) {
+.preferential-box
+  .preferential-container
+  .preferential-icon
+  > div:nth-child(1) {
   display: inline-block;
   height: 0.25rem;
   background: #ee442e;
   -webkit-border-radius: 0.125rem;
   border-radius: 0.125rem;
-  margin-bottom: .375rem;
+  margin-bottom: 0.375rem;
 }
 
-.preferential-box .preferential-container .preferential-icon>div:nth-child(2) {
-  font-family: "Noto Sans SC","syht";
+.preferential-box
+  .preferential-container
+  .preferential-icon
+  > div:nth-child(2) {
+  font-family: "Noto Sans SC", "syht";
   font-weight: 500;
   color: #333333;
   margin-bottom: 1rem;
 }
 
-.preferential-box .preferential-container .preferential-icon>div:nth-child(3) {
+.preferential-box
+  .preferential-container
+  .preferential-icon
+  > div:nth-child(3) {
   font-size: 1.125rem;
-  font-family: "Noto Sans SC","syht";
+  font-family: "Noto Sans SC", "syht";
   font-weight: 400;
   color: #333333;
   line-height: 1.5625rem;
   margin-bottom: 1rem;
 }
 
-.preferential-box .preferential-container .preferential-icon>div:nth-child(4) {
+.preferential-box
+  .preferential-container
+  .preferential-icon
+  > div:nth-child(4) {
   width: 12.5rem;
   height: 3.125rem;
   /* background: url("../images/huoqufangan.png") no-repeat; */
   /* -webkit-background-size: 100% 100%;
   background-size: 100% 100%; */
-  background:linear-gradient(0deg,rgba(232,59,39,1),rgba(250,83,57,1));
-border-radius: .625rem;
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#e83b27),
+    to(#fa5339)
+  );
+  background: -webkit-linear-gradient(bottom, #e83b27, #fa5339);
+  background: -o-linear-gradient(bottom, #e83b27, #fa5339);
+  background: linear-gradient(0deg, #e83b27, #fa5339);
+  -webkit-border-radius: 0.625rem;
+  border-radius: 0.625rem;
   font-size: 1.5rem;
-  font-family: "Noto Sans SC","syht";
+  font-family: "Noto Sans SC", "syht";
   font-weight: 400;
   color: white;
   line-height: 3.125rem;
   text-align: center;
   cursor: pointer;
 }
-.activeGet{
-  background:linear-gradient(0deg,#d43623,#e44c34)!important;
+
+.activeGet {
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#d43623),
+    to(#e44c34)
+  ) !important;
+  background: -webkit-linear-gradient(bottom, #d43623, #e44c34) !important;
+  background: -o-linear-gradient(bottom, #d43623, #e44c34) !important;
+  background: linear-gradient(0deg, #d43623, #e44c34) !important;
 }
 
 .preferential-box .preferential-container .preferential-content {
@@ -472,7 +485,7 @@ border-radius: .625rem;
   margin-top: -16.5625rem;
 }
 
-.preferential-box .preferential-container .preferential-content>div {
+.preferential-box .preferential-container .preferential-content > div {
   float: right;
   width: 18.75rem;
   height: 30rem;
@@ -481,7 +494,10 @@ border-radius: .625rem;
   box-shadow: 0px 8px 10px 0px #c2c1c1;
 }
 
-.preferential-box .preferential-container .preferential-content>div:nth-child(1) {
+.preferential-box
+  .preferential-container
+  .preferential-content
+  > div:nth-child(1) {
   margin-left: 1.875rem;
 }
 
@@ -504,7 +520,9 @@ border-radius: .625rem;
   display: block;
 }
 
-.preferential-box .preferential-content-item .preferential-content-item-content {
+.preferential-box
+  .preferential-content-item
+  .preferential-content-item-content {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -512,9 +530,12 @@ border-radius: .625rem;
   box-sizing: border-box;
 }
 
-.preferential-box .preferential-content-item .preferential-content-item-content>p:nth-child(1) {
+.preferential-box
+  .preferential-content-item
+  .preferential-content-item-content
+  > p:nth-child(1) {
   font-size: 1.5rem;
-  font-family: "Noto Sans SC","syht";
+  font-family: "Noto Sans SC", "syht";
   font-weight: 500;
   color: #ff523a;
   margin-bottom: 0.9375rem;
@@ -524,9 +545,12 @@ border-radius: .625rem;
   text-overflow: ellipsis;
 }
 
-.preferential-box .preferential-content-item .preferential-content-item-content>p:nth-child(2) {
+.preferential-box
+  .preferential-content-item
+  .preferential-content-item-content
+  > p:nth-child(2) {
   font-size: 1rem;
-  font-family: "Noto Sans SC","syht";
+  font-family: "Noto Sans SC", "syht";
   font-weight: 500;
   color: #fc553a;
   margin-bottom: 1rem;
@@ -537,12 +561,16 @@ border-radius: .625rem;
   letter-spacing: -0.09375rem;
 }
 
-.preferential-box .preferential-content-item .preferential-content-item-content>p:nth-child(3) {
+.preferential-box
+  .preferential-content-item
+  .preferential-content-item-content
+  > p:nth-child(3) {
   font-size: 1.125rem;
-  font-family: "Noto Sans SC","syht";
+  font-family: "Noto Sans SC", "syht";
   font-weight: 400;
   color: #666666;
   line-height: 2.0625rem;
+  letter-spacing: -1px;
 }
 
 .preferential-box .preferential-content-item .preferential-content-item-more {
@@ -553,7 +581,7 @@ border-radius: .625rem;
 
 .preferential-box .preferential-content-item .preferential-content-item-more a {
   font-size: 1rem;
-  font-family: "Noto Sans SC","syht";
+  font-family: "Noto Sans SC", "syht";
   font-weight: 700;
   color: #000e29;
   cursor: pointer;
@@ -580,47 +608,49 @@ border-radius: .625rem;
   float: left;
   padding-top: 0.625rem;
 }
-.taxIssues{
+
+.taxIssues {
   white-space: nowrap;
 }
-.taxproblems-box .taxproblems-right>div:nth-child(1) {
+
+.taxproblems-box .taxproblems-right > div:nth-child(1) {
   height: 4px;
   background: #ee442e;
   -webkit-border-radius: 2px;
   border-radius: 2px;
-  margin-bottom: .5625rem;
+  margin-bottom: 0.5625rem;
 }
 
-.taxproblems-box .taxproblems-right>div:nth-child(2) {
+.taxproblems-box .taxproblems-right > div:nth-child(2) {
   font-size: 1.875rem;
   line-height: 1.875rem;
-  font-family: "Noto Sans SC","syht";
+  font-family: "Noto Sans SC", "syht";
   font-weight: 500;
   color: #333333;
   margin-bottom: 2rem;
 }
 
-.taxproblems-box .taxproblems-right>div:nth-child(3) {
+.taxproblems-box .taxproblems-right > div:nth-child(3) {
   width: 31.25rem;
   height: 21.25rem;
   overflow: hidden;
   margin-bottom: 2.3125rem;
 }
 
-.taxproblems-box .taxproblems-right>div:nth-child(3) img {
+.taxproblems-box .taxproblems-right > div:nth-child(3) img {
   width: 100%;
   display: none;
 }
 
-.taxproblems-box .taxproblems-right>div:nth-child(3) img.active-img {
+.taxproblems-box .taxproblems-right > div:nth-child(3) img.active-img {
   display: block !important;
 }
 
-.taxproblems-box .taxproblems-right>div:nth-child(4) ul {
+.taxproblems-box .taxproblems-right > div:nth-child(4) ul {
   margin-left: 11.125rem;
 }
 
-.taxproblems-box .taxproblems-right>div:nth-child(4) ul li {
+.taxproblems-box .taxproblems-right > div:nth-child(4) ul li {
   float: left;
   width: 1.625rem;
   height: 1.625rem;
@@ -628,21 +658,21 @@ border-radius: .625rem;
   text-align: center;
 }
 
-.taxproblems-box .taxproblems-right>div:nth-child(4) ul li img {
+.taxproblems-box .taxproblems-right > div:nth-child(4) ul li img {
   width: 100%;
   display: none;
 }
 
-.taxproblems-box .taxproblems-right>div:nth-child(4) img.active-img {
+.taxproblems-box .taxproblems-right > div:nth-child(4) img.active-img {
   display: block !important;
 }
 
-.taxproblems-box .taxproblems-right>div:nth-child(4) ul li:first-child,
-.taxproblems-box .taxproblems-right>div:nth-child(4) ul li:last-child {
+.taxproblems-box .taxproblems-right > div:nth-child(4) ul li:first-child,
+.taxproblems-box .taxproblems-right > div:nth-child(4) ul li:last-child {
   cursor: pointer;
 }
 
-.taxproblems-box .taxproblems-right>div:nth-child(4) ul li .active-page {
+.taxproblems-box .taxproblems-right > div:nth-child(4) ul li .active-page {
   color: #fa5339;
 }
 
@@ -651,7 +681,7 @@ border-radius: .625rem;
   margin-top: 4.375rem;
 }
 
-.tax-planning-solutions>div:nth-child(1) {
+.tax-planning-solutions > div:nth-child(1) {
   width: 180px;
   height: 4px;
   background: #ee442e;
@@ -660,16 +690,14 @@ border-radius: .625rem;
   margin-bottom: 0.6875rem;
 }
 
-.tax-planning-solutions>div:nth-child(2) {
+.tax-planning-solutions > div:nth-child(2) {
   font-size: 1.875rem;
   line-height: 1.875rem;
-  font-family: "Noto Sans SC","syht";
+  font-family: "Noto Sans SC", "syht";
   font-weight: 500;
   color: #333333;
   margin-bottom: 3.8125rem;
 }
-
-
 
 .tax-planning-solutions-content-one,
 .tax-planning-solutions-content-two {
@@ -688,8 +716,8 @@ border-radius: .625rem;
   justify-content: space-between;
 }
 
-.tax-planning-solutions-content-one>div,
-.tax-planning-solutions-content-two>div {
+.tax-planning-solutions-content-one > div,
+.tax-planning-solutions-content-two > div {
   position: relative;
   /* float: left; */
   width: 18.75rem;
@@ -706,17 +734,17 @@ border-radius: .625rem;
   box-shadow: 0px 3px 7px 0px #d2d2d2;
 }
 
-.tax-planning-solutions-content-one>div:last-child,
-.tax-planning-solutions-content-two>div:last-child {
+.tax-planning-solutions-content-one > div:last-child,
+.tax-planning-solutions-content-two > div:last-child {
   /* float: right; */
 }
 
-.tax-planning-solutions-content-one>div {
+.tax-planning-solutions-content-one > div {
   margin-bottom: 2rem;
 }
 
-.tax-planning-solutions-content-one>div:last-child,
-.tax-planning-solutions-content-two>div:last-child {
+.tax-planning-solutions-content-one > div:last-child,
+.tax-planning-solutions-content-two > div:last-child {
   margin-right: 0;
 }
 
@@ -725,113 +753,147 @@ border-radius: .625rem;
   height: 22.5rem;
 }
 
-.tax-planning-solutions-content-one>div .plan-text,
-.tax-planning-solutions-content-two>div .plan-text {
+.tax-planning-solutions-content-one > div .plan-text,
+.tax-planning-solutions-content-two > div .plan-text {
   position: absolute;
   right: 0.625rem;
   top: 0.625rem;
   font-size: 1.125rem;
-  font-family: "Noto Sans SC","syht";
+  font-family: "Noto Sans SC", "syht";
   font-weight: 400;
   color: #141c2c;
 }
 
-.tax-planning-solutions-content-one>div .tax-planning-solutions-content-img,
-.tax-planning-solutions-content-two>div .tax-planning-solutions-content-img {
+.tax-planning-solutions-content-one > div .tax-planning-solutions-content-img,
+.tax-planning-solutions-content-two > div .tax-planning-solutions-content-img {
   height: 16.25rem;
   width: 100%;
 }
 
-.tax-planning-solutions-content-one>div:nth-child(1) .tax-planning-solutions-content-img {
+.tax-planning-solutions-content-one
+  > div:nth-child(1)
+  .tax-planning-solutions-content-img {
   background: url("../images/chjjfa-touzi.png") no-repeat;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
 }
 
-.tax-planning-solutions-content-one>div:nth-child(2) .tax-planning-solutions-content-img {
+.tax-planning-solutions-content-one
+  > div:nth-child(2)
+  .tax-planning-solutions-content-img {
   background: url("../images/chjjfa-gongzi.png") no-repeat;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
 }
 
-.tax-planning-solutions-content-one>div:nth-child(3) .tax-planning-solutions-content-img {
+.tax-planning-solutions-content-one
+  > div:nth-child(3)
+  .tax-planning-solutions-content-img {
   background: url("../images/chjjfa-qiye.png") no-repeat;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
 }
 
-.tax-planning-solutions-content-one>div:nth-child(1).content-active .tax-planning-solutions-content-img {
+.tax-planning-solutions-content-one
+  > div:nth-child(1).content-active
+  .tax-planning-solutions-content-img {
   background: url("../images/chjjfa-touzi1.png") no-repeat;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
 }
 
-.tax-planning-solutions-content-one>div:nth-child(2).content-active .tax-planning-solutions-content-img {
+.tax-planning-solutions-content-one
+  > div:nth-child(2).content-active
+  .tax-planning-solutions-content-img {
   background: url("../images/chjjfa-gongzi1.png") no-repeat;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
 }
 
-.tax-planning-solutions-content-one>div:nth-child(3).content-active .tax-planning-solutions-content-img {
+.tax-planning-solutions-content-one
+  > div:nth-child(3).content-active
+  .tax-planning-solutions-content-img {
   background: url("../images/chjjfa-qiye1.png") no-repeat;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
 }
 
-
-.tax-planning-solutions-content-two>div:nth-child(1) .tax-planning-solutions-content-img {
+.tax-planning-solutions-content-two
+  > div:nth-child(1)
+  .tax-planning-solutions-content-img {
   background: url("../images/chjjfa-naowu.png") no-repeat;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
 }
 
-.tax-planning-solutions-content-two>div:nth-child(2) .tax-planning-solutions-content-img {
+.tax-planning-solutions-content-two
+  > div:nth-child(2)
+  .tax-planning-solutions-content-img {
   background: url("../images/chjjfa-maoyi.png") no-repeat;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
 }
 
-.tax-planning-solutions-content-two>div:nth-child(3) .tax-planning-solutions-content-img {
+.tax-planning-solutions-content-two
+  > div:nth-child(3)
+  .tax-planning-solutions-content-img {
   background: url("../images/chjjfa-shuangruan.png") no-repeat;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
 }
 
-.tax-planning-solutions-content-two>div:nth-child(1).content-active .tax-planning-solutions-content-img {
+.tax-planning-solutions-content-two
+  > div:nth-child(1).content-active
+  .tax-planning-solutions-content-img {
   background: url("../images/chjjfa-naowu1.png") no-repeat;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
 }
 
-.tax-planning-solutions-content-two>div:nth-child(2).content-active .tax-planning-solutions-content-img {
+.tax-planning-solutions-content-two
+  > div:nth-child(2).content-active
+  .tax-planning-solutions-content-img {
   background: url("../images/chjjfa-maoyi1.png") no-repeat;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
 }
 
-.tax-planning-solutions-content-two>div:nth-child(3).content-active .tax-planning-solutions-content-img {
+.tax-planning-solutions-content-two
+  > div:nth-child(3).content-active
+  .tax-planning-solutions-content-img {
   /* height: 16.25rem; */
   background: url("../images/chjjfa-shuangruan1.png") no-repeat;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
 }
 
-
-.tax-planning-solutions-content-one>div .tax-planning-solutions-content-img img,
-.tax-planning-solutions-content-two>div .tax-planning-solutions-content-img img {
+.tax-planning-solutions-content-one
+  > div
+  .tax-planning-solutions-content-img
+  img,
+.tax-planning-solutions-content-two
+  > div
+  .tax-planning-solutions-content-img
+  img {
   width: 100%;
 }
 
-.tax-planning-solutions-content-one>div .tax-planning-solutions-content-text,
-.tax-planning-solutions-content-two>div .tax-planning-solutions-content-text {
+.tax-planning-solutions-content-one > div .tax-planning-solutions-content-text,
+.tax-planning-solutions-content-two > div .tax-planning-solutions-content-text {
   padding: 1.5rem 1.875rem 0 1.875rem;
   text-align: left;
 }
 
-.tax-planning-solutions-content-one>div .tax-planning-solutions-content-text p:nth-child(1),
-.tax-planning-solutions-content-two>div .tax-planning-solutions-content-text p:nth-child(1) {
+.tax-planning-solutions-content-one
+  > div
+  .tax-planning-solutions-content-text
+  p:nth-child(1),
+.tax-planning-solutions-content-two
+  > div
+  .tax-planning-solutions-content-text
+  p:nth-child(1) {
   font-size: 1.5rem;
-  font-family: "Noto Sans SC","syht";
+  font-family: "Noto Sans SC", "syht";
   font-weight: 500;
   color: #333333;
   /* margin-bottom: 0.875rem; */
@@ -839,10 +901,16 @@ border-radius: .625rem;
   line-height: 2.125rem;
 }
 
-.tax-planning-solutions-content-one>div .tax-planning-solutions-content-text p:nth-child(2),
-.tax-planning-solutions-content-two>div .tax-planning-solutions-content-text p:nth-child(2) {
+.tax-planning-solutions-content-one
+  > div
+  .tax-planning-solutions-content-text
+  p:nth-child(2),
+.tax-planning-solutions-content-two
+  > div
+  .tax-planning-solutions-content-text
+  p:nth-child(2) {
   font-size: 1.125rem;
-  font-family: "Noto Sans SC","syht";
+  font-family: "Noto Sans SC", "syht";
   font-weight: 400;
   color: #999999;
   white-space: nowrap;
@@ -853,8 +921,8 @@ border-radius: .625rem;
   line-height: 2rem;
 }
 
-.tax-planning-solutions-content-one>div .tax-planning-solutions-content-btn,
-.tax-planning-solutions-content-two>div .tax-planning-solutions-content-btn {
+.tax-planning-solutions-content-one > div .tax-planning-solutions-content-btn,
+.tax-planning-solutions-content-two > div .tax-planning-solutions-content-btn {
   position: absolute;
   top: 14.8125rem;
   left: 1.25rem;
@@ -863,100 +931,142 @@ border-radius: .625rem;
   text-align: center;
   line-height: 2.125rem;
   font-size: 1.125rem;
-  font-family: "Noto Sans SC","syht";
+  font-family: "Noto Sans SC", "syht";
   font-weight: 400;
   color: white;
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
 
-.tax-planning-solutions-content-one>div:nth-child(1) .tax-planning-solutions-content-btn {
-  background: #FA5339;
+.tax-planning-solutions-content-one
+  > div:nth-child(1)
+  .tax-planning-solutions-content-btn {
+  background: #fa5339;
 }
 
-.tax-planning-solutions-content-one>div:nth-child(2) .tax-planning-solutions-content-btn {
-  background: #FE6016;
+.tax-planning-solutions-content-one
+  > div:nth-child(2)
+  .tax-planning-solutions-content-btn {
+  background: #fe6016;
 }
 
-.tax-planning-solutions-content-one>div:nth-child(3) .tax-planning-solutions-content-btn {
+.tax-planning-solutions-content-one
+  > div:nth-child(3)
+  .tax-planning-solutions-content-btn {
   background: #234184;
 }
 
-.tax-planning-solutions-content-two>div:nth-child(1) .tax-planning-solutions-content-btn {
-  background: #FE6016;
+.tax-planning-solutions-content-two
+  > div:nth-child(1)
+  .tax-planning-solutions-content-btn {
+  background: #fe6016;
 }
 
-.tax-planning-solutions-content-two>div:nth-child(2) .tax-planning-solutions-content-btn {
+.tax-planning-solutions-content-two
+  > div:nth-child(2)
+  .tax-planning-solutions-content-btn {
   background: #234184;
 }
 
-.tax-planning-solutions-content-two>div:nth-child(3) .tax-planning-solutions-content-btn {
-  background: #07C9DA;
+.tax-planning-solutions-content-two
+  > div:nth-child(3)
+  .tax-planning-solutions-content-btn {
+  background: #07c9da;
 }
 
-.tax-planning-solutions-content-one>div .tax-planning-solutions-content-btn2,
-.tax-planning-solutions-content-two>div .tax-planning-solutions-content-btn2 {
+.tax-planning-solutions-content-one > div .tax-planning-solutions-content-btn2,
+.tax-planning-solutions-content-two > div .tax-planning-solutions-content-btn2 {
   display: none;
 }
-.activeTaxSolution{
-  background:linear-gradient(0deg,#d43623,#e44c34)!important;}
+
+.activeTaxSolution {
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#d43623),
+    to(#e44c34)
+  ) !important;
+  background: -webkit-linear-gradient(bottom, #d43623, #e44c34) !important;
+  background: -o-linear-gradient(bottom, #d43623, #e44c34) !important;
+  background: linear-gradient(0deg, #d43623, #e44c34) !important;
+}
+
 /* 选中时盒子的样式 */
-.tax-planning-solutions-content-one>div.content-active-shade .plan-text,
-.tax-planning-solutions-content-two>div.content-active-shade .plan-text {
+.tax-planning-solutions-content-one > div.content-active-shade .plan-text,
+.tax-planning-solutions-content-two > div.content-active-shade .plan-text {
   display: none;
 }
 
-.tax-planning-solutions-content-one>div.content-active-shade .tax-planning-solutions-content-img,
-.tax-planning-solutions-content-two>div.content-active-shade .tax-planning-solutions-content-img {
+.tax-planning-solutions-content-one
+  > div.content-active-shade
+  .tax-planning-solutions-content-img,
+.tax-planning-solutions-content-two
+  > div.content-active-shade
+  .tax-planning-solutions-content-img {
   height: 100%;
   width: 100%;
 }
 
-.tax-planning-solutions-content-one>div:nth-child(1).content-active-shade .tax-planning-solutions-content-img {
+.tax-planning-solutions-content-one
+  > div:nth-child(1).content-active-shade
+  .tax-planning-solutions-content-img {
   background: url("../images/chjjfa-touzi2.png") no-repeat;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
 }
 
-.tax-planning-solutions-content-one>div:nth-child(2).content-active-shade .tax-planning-solutions-content-img {
+.tax-planning-solutions-content-one
+  > div:nth-child(2).content-active-shade
+  .tax-planning-solutions-content-img {
   background: url("../images/chjjfa-gongzi2.png") no-repeat;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
 }
 
-.tax-planning-solutions-content-one>div:nth-child(3).content-active-shade .tax-planning-solutions-content-img {
+.tax-planning-solutions-content-one
+  > div:nth-child(3).content-active-shade
+  .tax-planning-solutions-content-img {
   background: url("../images/chjjfa-qiye2.png") no-repeat;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
 }
 
-.tax-planning-solutions-content-two>div:nth-child(1).content-active-shade .tax-planning-solutions-content-img {
+.tax-planning-solutions-content-two
+  > div:nth-child(1).content-active-shade
+  .tax-planning-solutions-content-img {
   background: url("../images/chjjfa-naowu2.png") no-repeat;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
 }
 
-.tax-planning-solutions-content-two>div:nth-child(2).content-active-shade .tax-planning-solutions-content-img {
+.tax-planning-solutions-content-two
+  > div:nth-child(2).content-active-shade
+  .tax-planning-solutions-content-img {
   background: url("../images/chjjfa-maoyi2.png") no-repeat;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
 }
 
-.tax-planning-solutions-content-two>div:nth-child(3).content-active-shade .tax-planning-solutions-content-img {
+.tax-planning-solutions-content-two
+  > div:nth-child(3).content-active-shade
+  .tax-planning-solutions-content-img {
   /* height: 16.25rem; */
   background: url("../images/chjjfa-shuangruan2.png") no-repeat;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
 }
 
-
 /* .tax-planning-solutions-content-one>div.content-active-shade .tax-planning-solutions-content-img img,
 .tax-planning-solutions-content-two>div.content-active-shade .tax-planning-solutions-content-img img {
   width: 100%;
 } */
-
-.tax-planning-solutions-content-one>div.content-active-shade .tax-planning-solutions-content-text,
-.tax-planning-solutions-content-two>div.content-active-shade .tax-planning-solutions-content-text {
+.tax-planning-solutions-content-one
+  > div.content-active-shade
+  .tax-planning-solutions-content-text,
+.tax-planning-solutions-content-two
+  > div.content-active-shade
+  .tax-planning-solutions-content-text {
   position: absolute;
   top: 6.3125rem;
   left: 0;
@@ -965,30 +1075,50 @@ border-radius: .625rem;
   text-align: center;
 }
 
-.tax-planning-solutions-content-one>div.content-active-shade .tax-planning-solutions-content-text p:nth-child(1),
-.tax-planning-solutions-content-two>div.content-active-shade .tax-planning-solutions-content-text p:nth-child(1) {
+.tax-planning-solutions-content-one
+  > div.content-active-shade
+  .tax-planning-solutions-content-text
+  p:nth-child(1),
+.tax-planning-solutions-content-two
+  > div.content-active-shade
+  .tax-planning-solutions-content-text
+  p:nth-child(1) {
   font-size: 1.875rem;
-  font-family: "Noto Sans SC","syht";
+  font-family: "Noto Sans SC", "syht";
   font-weight: 500;
   color: white;
   margin-bottom: 2rem;
 }
 
-.tax-planning-solutions-content-one>div.content-active-shade .tax-planning-solutions-content-text p:nth-child(2),
-.tax-planning-solutions-content-two>div.content-active-shade .tax-planning-solutions-content-text p:nth-child(2) {
+.tax-planning-solutions-content-one
+  > div.content-active-shade
+  .tax-planning-solutions-content-text
+  p:nth-child(2),
+.tax-planning-solutions-content-two
+  > div.content-active-shade
+  .tax-planning-solutions-content-text
+  p:nth-child(2) {
   font-size: 1.125rem;
-  font-family: "Noto Sans SC","syht";
+  font-family: "Noto Sans SC", "syht";
   font-weight: 400;
   color: white;
 }
 
-.tax-planning-solutions-content-one>div.content-active-shade .tax-planning-solutions-content-btn,
-.tax-planning-solutions-content-two>div.content-active-shade .tax-planning-solutions-content-btn {
+.tax-planning-solutions-content-one
+  > div.content-active-shade
+  .tax-planning-solutions-content-btn,
+.tax-planning-solutions-content-two
+  > div.content-active-shade
+  .tax-planning-solutions-content-btn {
   display: none;
 }
 
-.tax-planning-solutions-content-one>div.content-active-shade .tax-planning-solutions-content-btn2,
-.tax-planning-solutions-content-two>div.content-active-shade .tax-planning-solutions-content-btn2 {
+.tax-planning-solutions-content-one
+  > div.content-active-shade
+  .tax-planning-solutions-content-btn2,
+.tax-planning-solutions-content-two
+  > div.content-active-shade
+  .tax-planning-solutions-content-btn2 {
   display: block;
   position: absolute;
   top: 14.8125rem;
@@ -1002,12 +1132,17 @@ border-radius: .625rem;
   text-align: center;
   line-height: 3.75rem;
   font-size: 1.5rem;
-  font-family: "Noto Sans SC","syht";
+  font-family: "Noto Sans SC", "syht";
   font-weight: 400;
   color: white;
-  background:linear-gradient(0deg,rgba(232,59,39,1),rgba(250,83,57,1));
-  background: -ms-linear-gradient(bottom, #e83b27, #fa5339);
-  background: -moz-linear-gradient(bottom, #e83b27, #fa5339);
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#e83b27),
+    to(#fa5339)
+  );
+  background: linear-gradient(0deg, #e83b27, #fa5339);
   background: -webkit-linear-gradient(bottom, #e83b27, #fa5339);
   background: -o-linear-gradient(bottom, #e83b27, #fa5339);
   -webkit-border-radius: 10px;
@@ -1015,10 +1150,16 @@ border-radius: .625rem;
   padding: 0 0.625rem;
 }
 
-.tax-planning-solutions-content-one>div.content-active-shade .tax-planning-solutions-content-btn2 a,
-.tax-planning-solutions-content-two>div.content-active-shade .tax-planning-solutions-content-btn2 a {
+.tax-planning-solutions-content-one
+  > div.content-active-shade
+  .tax-planning-solutions-content-btn2
+  a,
+.tax-planning-solutions-content-two
+  > div.content-active-shade
+  .tax-planning-solutions-content-btn2
+  a {
   font-size: 1.375rem;
-  font-family: "Noto Sans SC","syht";
+  font-family: "Noto Sans SC", "syht";
   font-weight: 400;
   color: white;
   /* background: -webkit-gradient(linear,
@@ -1033,25 +1174,29 @@ border-radius: .625rem;
   border-radius: 10px; */
 }
 
-.tax-planning-solutions-content-one>div.content-active-shade .tax-planning-solutions-content-btn2:hover,
-.tax-planning-solutions-content-two>div.content-active-shade .tax-planning-solutions-content-btn2:hover {
-  background: -webkit-gradient(linear,
-      left top,
-      left bottom,
-      from(#e44c34),
-      to(#d43623));
-
+.tax-planning-solutions-content-one
+  > div.content-active-shade
+  .tax-planning-solutions-content-btn2:hover,
+.tax-planning-solutions-content-two
+  > div.content-active-shade
+  .tax-planning-solutions-content-btn2:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#e44c34),
+    to(#d43623)
+  );
 }
-
 
 /* 惠优税优势 start */
 .preferential-taxadvantage-box {
   width: 100%;
   height: 48.75rem;
   /* background-color: #f85236; */
-  background-image: url('../images/bgMap.png');
+  background-image: url("../images/bgMap.png");
+  -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
- 
   margin-top: 3.875rem;
 }
 
@@ -1059,7 +1204,7 @@ border-radius: .625rem;
   padding-top: 3rem;
 }
 
-.preferential-taxadvantage>div:nth-child(1) {
+.preferential-taxadvantage > div:nth-child(1) {
   width: 7.5rem;
   height: 0.25rem;
   background: white;
@@ -1068,10 +1213,10 @@ border-radius: .625rem;
   margin-bottom: 0.5rem;
 }
 
-.preferential-taxadvantage>div:nth-child(2) {
+.preferential-taxadvantage > div:nth-child(2) {
   font-size: 1.875rem;
   line-height: 1.875rem;
-  font-family: "Noto Sans SC","syht";
+  font-family: "Noto Sans SC", "syht";
   font-weight: 500;
   color: white;
   margin-bottom: 4.6875rem;
@@ -1111,19 +1256,19 @@ border-radius: .625rem;
   background-size: 100% 100%;
 }
 
-.preferential-taxadvantage-content-icon ul>li:nth-child(1).fousess {
+.preferential-taxadvantage-content-icon ul > li:nth-child(1).fousess {
   background: url("../images/zhuanye.png") no-repeat;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
 }
 
-.preferential-taxadvantage-content-icon ul>li:nth-child(2).fousess {
+.preferential-taxadvantage-content-icon ul > li:nth-child(2).fousess {
   background: url("../images/gaoxiao2.png") no-repeat;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
 }
 
-.preferential-taxadvantage-content-icon ul>li:nth-child(3).fousess {
+.preferential-taxadvantage-content-icon ul > li:nth-child(3).fousess {
   background: url("../images/anquan.png") no-repeat;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
@@ -1137,11 +1282,12 @@ border-radius: .625rem;
   display: none;
   text-align: center;
   font-size: 1.5rem;
-  font-family: "Noto Sans SC","syht";
+  font-family: "Noto Sans SC", "syht";
   font-weight: 500;
   color: white;
   margin-bottom: 2.8125rem;
 }
+
 .ptct-active {
   display: block;
 }
@@ -1199,7 +1345,7 @@ border-radius: .625rem;
 .preferential-taxadvantage-content-imgs ul li:nth-child(4) {
     background-color: pink
 } */
-.preferential-taxadvantage-content-imgs>span {
+.preferential-taxadvantage-content-imgs > span {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -1211,15 +1357,15 @@ border-radius: .625rem;
   cursor: pointer;
 }
 
-.preferential-taxadvantage-content-imgs>span:nth-of-type(1) {
+.preferential-taxadvantage-content-imgs > span:nth-of-type(1) {
   left: 0.625rem;
 }
 
-.preferential-taxadvantage-content-imgs>span:nth-of-type(2) {
+.preferential-taxadvantage-content-imgs > span:nth-of-type(2) {
   right: 0.625rem;
 }
 
-.preferential-taxadvantage-content-imgs>span img {
+.preferential-taxadvantage-content-imgs > span img {
   width: 100%;
 }
 
@@ -1237,25 +1383,25 @@ border-radius: .625rem;
   margin-bottom: 3.6875rem;
 }
 
-.selected-park>div:nth-child(1) {
+.selected-park > div:nth-child(1) {
   width: 8.75rem;
   height: 4px;
   background: #ee442e;
   -webkit-border-radius: 2px;
   border-radius: 2px;
-  margin-bottom: .5625rem;
+  margin-bottom: 0.5625rem;
 }
 
-.selected-park>div:nth-child(2) {
+.selected-park > div:nth-child(2) {
   font-size: 1.875rem;
   line-height: 1.875rem;
-  font-family: "Noto Sans SC","syht";
+  font-family: "Noto Sans SC", "syht";
   font-weight: 500;
   color: #333333;
   margin-bottom: 3.0625rem;
 }
 
-.selected-park>div.map-box {
+.selected-park > div.map-box {
   position: relative;
   height: 46.25rem;
   background: url("../images/map.png") no-repeat;
@@ -1263,7 +1409,7 @@ border-radius: .625rem;
   background-size: 100% 100%;
 }
 
-.selected-park>div.map-box .map-box-left {
+.selected-park > div.map-box .map-box-left {
   position: absolute;
   left: 0;
   top: 0;
@@ -1271,22 +1417,22 @@ border-radius: .625rem;
   z-index: 2;
 }
 
-.selected-park>div.map-box .map-box-left div {
+.selected-park > div.map-box .map-box-left div {
   width: 21.4375rem;
   height: 7.75rem;
   margin-bottom: 3.125rem;
 }
 
-.selected-park>div.map-box .map-box-left div:last-child {
+.selected-park > div.map-box .map-box-left div:last-child {
   margin-bottom: 0;
 }
 
-.selected-park>div.map-box .map-box-left div img {
+.selected-park > div.map-box .map-box-left div img {
   display: block;
   width: 100%;
 }
 
-.selected-park>div.map-box .map-box-right {
+.selected-park > div.map-box .map-box-right {
   position: absolute;
   right: 0;
   top: 0;
@@ -1294,18 +1440,18 @@ border-radius: .625rem;
   z-index: 2;
 }
 
-.selected-park>div.map-box .map-box-center .map-box-center-item,
-.selected-park>div.map-box .map-box-right .map-box-right-yuanqu-item {
+.selected-park > div.map-box .map-box-center .map-box-center-item,
+.selected-park > div.map-box .map-box-right .map-box-right-yuanqu-item {
   display: none;
 }
 
-.selected-park>div.map-box .map-box-center {
+.selected-park > div.map-box .map-box-center {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.selected-park>div.map-box .map-box-center .map-box-center-item {
+.selected-park > div.map-box .map-box-center .map-box-center-item {
   position: absolute;
   left: 0;
   top: 0;
@@ -1314,13 +1460,13 @@ border-radius: .625rem;
   width: 100%;
 }
 
-.selected-park>div.map-box .map-box-center .map-box-center-item img {
+.selected-park > div.map-box .map-box-center .map-box-center-item img {
   display: block;
   width: 100%;
   height: 100%;
 }
 
-.selected-park>div.map-box .map-box-right .map-box-right-yuanqu-item div {
+.selected-park > div.map-box .map-box-right .map-box-right-yuanqu-item div {
   width: 15rem;
   height: 5.1875rem;
   margin-bottom: 2.875rem;
@@ -1330,23 +1476,27 @@ border-radius: .625rem;
   text-align: center;
   line-height: 5.5rem;
   font-size: 1.25rem;
-  font-family: "Noto Sans SC","syht";
+  font-family: "Noto Sans SC", "syht";
   font-weight: 400;
   color: #fffefe;
 }
 
-.selected-park>div.map-box .map-box-right .map-box-right-yuanqu-item div:last-child {
+.selected-park
+  > div.map-box
+  .map-box-right
+  .map-box-right-yuanqu-item
+  div:last-child {
   margin-bottom: 0;
 }
 
-.selected-park>div.map-box .map-box-right-morebtn {
+.selected-park > div.map-box .map-box-right-morebtn {
   width: 5.375rem;
   height: 2.375rem;
   background: url("../images/huanyipibtn.png") no-repeat;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
   font-size: 1.125rem;
-  font-family: "Noto Sans SC","syht";
+  font-family: "Noto Sans SC", "syht";
   font-weight: 400;
   color: #ef4933;
   line-height: 2.375rem;
@@ -1379,13 +1529,13 @@ border-radius: .625rem;
 .partner-box .partner .partner-title .partner-title-box span {
   font-size: 1.875rem;
   line-height: 1.875rem;
-  font-family: "Noto Sans SC","syht";
+  font-family: "Noto Sans SC", "syht";
   font-weight: 500;
   color: #333333;
 }
 
 .partner-box .partner .modified-line {
-  margin-bottom: .5625rem;
+  margin-bottom: 0.5625rem;
   width: 5rem;
   height: 4px;
   background: #ee442e;
@@ -1409,37 +1559,46 @@ border-radius: .625rem;
   z-index: 1000;
 }
 
-.consultation>div:nth-child(1),
-.consultation>div:nth-child(2) {
+.consultation > div:nth-child(1),
+.consultation > div:nth-child(2) {
   position: relative;
   width: 5rem;
   height: 11.25rem;
 }
 
-.consultation>div:nth-child(1) {
+.consultation > div:nth-child(1) {
   background: #f95238;
   margin-bottom: 10px;
 }
 
-.consultation>div:nth-child(2) {
+.consultation > div:nth-child(2) {
   background: #272939;
 }
 
-.consultation>div .consultation-title,
-.consultation>div .consultation-title2 {
+.consultation > div .consultation-title,
+.consultation > div .consultation-title2 {
   line-height: 5rem;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 2;
-  background:linear-gradient(0deg,rgba(232,59,39,1),rgba(250,83,57,1));
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#e83b27),
+    to(#fa5339)
+  );
+  background: -webkit-linear-gradient(bottom, #e83b27, #fa5339);
+  background: -o-linear-gradient(bottom, #e83b27, #fa5339);
+  background: linear-gradient(0deg, #e83b27, #fa5339);
   width: 5rem;
   height: 11.25rem;
   -webkit-writing-mode: vertical-rl;
   writing-mode: vertical-rl;
   -ms-writing-mode: tb-rl;
   font-size: 1.5rem;
-  font-family: "Noto Sans SC","syht";
+  font-family: "Noto Sans SC", "syht";
   font-weight: 400;
   color: #fff;
   cursor: pointer;
@@ -1466,12 +1625,12 @@ border-radius: .625rem;
   align-items: center;
 }
 
-.consultation>div .consultation-title2 {
+.consultation > div .consultation-title2 {
   background: #272939;
 }
 
-.consultation>div>.consultation-item,
-.consultation>div>.consultation-item2 {
+.consultation > div > .consultation-item,
+.consultation > div > .consultation-item2 {
   position: absolute;
   right: -12.5rem;
   top: 0;
@@ -1488,22 +1647,36 @@ border-radius: .625rem;
   box-sizing: border-box;
 }
 
-.consultation>div>.consultation-item {
+.consultation > div > .consultation-item {
   /* padding-top: 2.2rem; */
-  background:#f95238;
-
-
+  background: #f95238;
   /* right: 5.3125rem; */
 }
 
-.consultation>div>.consultation-item ul {
+.consultation > div > .consultation-item ul {
   background-color: #f95238;
 }
 
 .consultation .consultation-item ul {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -moz-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
   margin-left: 2rem;
   padding-top: 1rem;
@@ -1519,35 +1692,41 @@ border-radius: .625rem;
   margin-bottom: 0.875rem;
   border-bottom: 1px solid #fff; */
   margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: "Noto Sans SC","syht";
-
+  font-family: "Noto Sans SC", "syht";
 }
-.consultation .consultation-item ul li:last-child{
+
+.consultation .consultation-item ul li:last-child {
   margin-bottom: 0;
 }
 
-.consultation .consultation-item ul li a{
+.consultation .consultation-item ul li a {
   display: block;
   font-size: 1rem;
   line-height: 1rem;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
   border-bottom: 1px solid #fff;
   color: #fff;
   cursor: pointer;
 }
 
 .consultation .consultation-item ul li:nth-child(3) a,
-.consultation .consultation-item ul li:nth-child(4) a{
- color:rgba(255,255,255,0.5);
-border-bottom: 1px solid rgba(255,255,255,0.5);
-cursor: default;
-}
-.consultation .consultation-item ul li a:first-child{
-  margin-right: 2.25rem;
+.consultation .consultation-item ul li:nth-child(4) a {
+  color: rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  cursor: default;
 }
 
+.consultation .consultation-item ul li a:first-child {
+  margin-right: 2.25rem;
+}
 
 /* .consultation .consultation-item ul li a {
   font-size: 1.125rem;
@@ -1555,15 +1734,12 @@ cursor: default;
   font-weight: 400;
   color: #fff;
 } */
-
-.consultation>div>.consultation-item2 {
+.consultation > div > .consultation-item2 {
   padding: 0 8px;
   background-color: #000;
-
-  
 }
 
-.consultation>div>.consultation-item2 div {
+.consultation > div > .consultation-item2 div {
   color: #fff;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1572,37 +1748,36 @@ cursor: default;
   box-sizing: border-box;
 }
 
-.consultation>div>.consultation-item2 div:nth-child(2) {
+.consultation > div > .consultation-item2 div:nth-child(2) {
   padding: 0.875rem 0 0 1.875rem;
 }
 
-.consultation>div>.consultation-item2 div:nth-child(1) {
+.consultation > div > .consultation-item2 div:nth-child(1) {
   padding: 1.675rem 0 0 1.875rem;
   border-bottom: 1px solid #fff;
 }
 
-.consultation>div>.consultation-item2 div p:nth-child(1) {
+.consultation > div > .consultation-item2 div p:nth-child(1) {
   font-size: 1rem;
   line-height: 1rem;
-  font-family: "Noto Sans SC","syht";
+  font-family: "Noto Sans SC", "syht";
   font-weight: 400;
   color: white;
   margin-bottom: 0.875rem;
 }
 
-.consultation>div>.consultation-item2 div p:nth-child(2) {
+.consultation > div > .consultation-item2 div p:nth-child(2) {
   font-size: 1.125rem;
   line-height: 1.125rem;
-  font-family: "Noto Sans SC","syht";
+  font-family: "Noto Sans SC", "syht";
   font-weight: 400;
   color: white;
   margin-bottom: 0.875rem;
 }
 
-.consultation>div:hover .consultation-item,
-.consultation>div:hover .consultation-item2 {
+.consultation > div:hover .consultation-item,
+.consultation > div:hover .consultation-item2 {
   right: 5.3125rem;
- 
 }
 
 .consultation-item2 {
@@ -1612,7 +1787,7 @@ cursor: default;
 }
 
 /* 返回顶部  */
-.consultation>div:nth-child(3).goTop {
+.consultation > div:nth-child(3).goTop {
   width: 5rem;
   height: 4.5625rem;
   text-align: center;
@@ -1638,7 +1813,7 @@ cursor: default;
 
 .goTop div:nth-child(2) {
   font-size: 1.125rem;
-  font-family: "Noto Sans SC","syht";
+  font-family: "Noto Sans SC", "syht";
   font-weight: 500;
   color: white;
 }
@@ -1652,7 +1827,8 @@ cursor: default;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
-  z-index: 9999; }
+  z-index: 9999;
+}
 
 .pop-up-box .form {
   position: absolute;
@@ -1672,16 +1848,18 @@ cursor: default;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
-     -moz-box-orient: vertical;
-     -moz-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
 
 .form-titile {
   height: 7.5rem;
   background: url("../images/tanchuang2x.png") no-repeat;
   -webkit-background-size: contain;
-          background-size: contain; }
+  background-size: contain;
+}
 
 .turnoff {
   position: absolute;
@@ -1692,11 +1870,12 @@ cursor: default;
   background: url("../images/guanbi2x.png") no-repeat;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .form-titile p {
   font-size: 1.875rem;
-  font-family: "Noto Sans SC","syht";
+  font-family: "Noto Sans SC", "syht";
   font-weight: 400;
   color: white;
   display: -webkit-box;
@@ -1706,24 +1885,25 @@ cursor: default;
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
-     -moz-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
-     -moz-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 100%; }
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100%;
+}
 
 .form-content {
   background: #f5f7fe;
   -webkit-border-radius: 0px 0px 4px 4px;
-          border-radius: 0px 0px 4px 4px;
+  border-radius: 0px 0px 4px 4px;
   height: 28.125rem;
   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -1732,20 +1912,21 @@ cursor: default;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
-     -moz-box-orient: vertical;
-     -moz-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
   -webkit-align-items: center;
-     -moz-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
-     -moz-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start; }
+  -moz-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
 
 .form-content div {
   display: -webkit-box;
@@ -1755,31 +1936,38 @@ cursor: default;
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
-     -moz-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 1.875rem; }
-  .form-content div:first-child {
-    margin-top: 6rem; }
-  .form-content div span {
-    white-space: normal; }
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 1.875rem;
+}
+
+.form-content div:first-child {
+  margin-top: 6rem;
+}
+
+.form-content div span {
+  white-space: normal;
+}
 
 .form-content div:nth-child(3) {
-  margin-bottom: 3.625rem; }
+  margin-bottom: 3.625rem;
+}
 
 .form-content div .title {
   width: 6.25rem;
   height: 2.5rem;
   font-size: 1.125rem;
-  font-family: "Noto Sans SC","syht";
+  font-family: "Noto Sans SC", "syht";
   font-weight: 400;
   color: black;
-  line-height: 2.875rem; }
+  line-height: 2.875rem;
+}
 
 .form-content div input {
   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   width: 20rem;
   padding-left: 1.875rem;
   height: 2.5rem;
@@ -1787,21 +1975,27 @@ cursor: default;
   background: white;
   border: 1px solid #e5e5e5;
   -webkit-border-radius: 2px;
-  border-radius: 2px; }
+  border-radius: 2px;
+}
 
 .form-content .form-btn {
   width: 20rem;
   height: 3.5rem;
   margin: 0 auto;
-  background: -webkit-gradient(linear, left bottom, left top, from(#fa5339), to(#e83b27));
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#fa5339),
+    to(#e83b27)
+  );
   background: -webkit-linear-gradient(bottom, #fa5339, #e83b27);
   background: -o-linear-gradient(bottom, #fa5339, #e83b27);
   background: linear-gradient(0deg, #fa5339, #e83b27);
   -webkit-border-radius: 4px;
   border-radius: 4px;
   font-size: 1.5rem;
-  font-family: "Noto Sans SC","syht",
- "微软雅黑";
+  font-family: "Noto Sans SC", "syht", "微软雅黑";
   font-weight: 400;
   /* text-align: center; */
   color: white;
@@ -1833,18 +2027,27 @@ cursor: default;
   -moz-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .form-content .activePop {
-  background: -webkit-gradient(linear, left bottom, left top, from(#e44c34), to(#d43623)) !important;
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#e44c34),
+    to(#d43623)
+  ) !important;
   background: -webkit-linear-gradient(bottom, #e44c34, #d43623) !important;
   background: -o-linear-gradient(bottom, #e44c34, #d43623) !important;
-  background: linear-gradient(0deg, #e44c34, #d43623) !important; }
+  background: linear-gradient(0deg, #e44c34, #d43623) !important;
+}
 
 #contactName,
 #contactMobile,
 #companyName {
-  font-size: 1.125rem; }
+  font-size: 1.125rem;
+}
 
 /* 用户信息 */
 .u_info {
@@ -1871,7 +2074,7 @@ cursor: default;
   -o-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 0.875rem;
-  font-family: "Noto Sans SC","syht";
+  font-family: "Noto Sans SC", "syht";
   font-weight: 500;
   color: #333333;
   background: white;
@@ -1883,7 +2086,7 @@ cursor: default;
 
 .u_info_content .u_out {
   font-size: 0.875rem;
-  font-family: "Noto Sans SC","syht";
+  font-family: "Noto Sans SC", "syht";
   color: #333;
   display: block;
   width: 100%;
@@ -1934,7 +2137,6 @@ cursor: default;
   width: 16.25rem;
   height: 10rem;
   background: rgba(0, 0, 0, 0.7);
-
   -webkit-border-radius: 0.75rem;
   border-radius: 0.75rem;
   display: none;
@@ -1953,7 +2155,7 @@ cursor: default;
 .mask-box .mask-box-title {
   text-align: center;
   font-size: 1.125rem;
-  font-family: "Noto Sans SC","syht";
+  font-family: "Noto Sans SC", "syht";
   font-weight: bold;
   color: white;
   margin: 0 0 1.25rem 0;
@@ -1962,7 +2164,7 @@ cursor: default;
 .mask-box .mask-box-content {
   text-align: center;
   font-size: 0.875rem;
-  font-family: "Noto Sans SC","syht";
+  font-family: "Noto Sans SC", "syht";
   font-weight: 400;
   color: white;
 }

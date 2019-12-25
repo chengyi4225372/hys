@@ -24,4 +24,7 @@ class Common extends BaseController
     public function footer(){
         return $this->fetch();
     }
+    public function header(){
+        return $this->fetch();
+    }
 }

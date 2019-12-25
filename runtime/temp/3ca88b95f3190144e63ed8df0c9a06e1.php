@@ -1,6 +1,6 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:79:"C:\phpEnv\www\hys\public/../application/home\view\programme\productservice.html";i:1576907485;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:79:"C:\phpEnv\www\hys\public/../application/home\view\programme\productservice.html";i:1577258527;}*/ ?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -16,57 +16,19 @@
     <link rel="stylesheet" href="/static/home/css/footer.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900">
     <link rel="stylesheet" href="/static/home/font/syht.css">
-
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="/static/assets/plugins/layui/layui.all.js"></script>
     <script src="/static/home/js/productservice.js"></script>
     <script src="/static/common/js/open.js"></script>
     <script src='/static/home/js/footer.js'></script>
+    <script src='/static/home/js/header.js'></script>
 
 </head>
 
 <body>
     <div class="container">
-        <!-- 导航部分 -->
-        <div class="nav-box">
-            <div class="w nav-container clearfix">
-                <!-- logo图 -->
-                <div class="logo clearfix">
-                    <a href="/">
-                        <img src="/static/home/images/logo2.png" alt="">
-                    </a>
-                    
-                </div>
-                <!-- nav部分 -->
-                <div class="nav">
-                    <ul class="clearfix">
-                        <li><a href="/">首页</a></li>
-                        <li class="nav-active"><a href="<?php echo url('/home/programme/productservice'); ?>"> 产品服务</a></li>
-                        <li><a href="<?php echo url('/home/programme/index'); ?>">行业解决方案</a></li>
-                        <li><a href="<?php echo url('/home/customer/index'); ?>">客户案例</a></li>
-                        <li><a href="<?php echo url('home/industry/index'); ?>">新闻资讯</a></li>
-                        <!-- <li><a href="#">会员通道</a></li> -->
-                    </ul>
-                </div>
-                <!-- 登陆注册 -->
-                <!-- <div class="loging clearfix">
-                    <div class="register-btn"><a href="./login.html">
-                        登陆
-                      </a></div>
-                    <div class="loging-btn"><a href="./register.html">注册</a></div>
-                  </div> -->
-                <!-- 头像部分 -->
-                <!-- <div class="user-icon-box">
-                    <img class="user-icon" src="/static/home/images/icon.png" alt="">
-                    <span class="phone">133****5674</span>
-                    <div class="login-out">
-                        <ul>
-                            <li><a href="">退出登录</a></li>
-                        </ul>
-                    </div>
-                </div> -->
-            </div>
-        </div>
+        <!-- 头部导航 -->
+        <div id="header" data-pageId="1"></div>
 
         <!-- banner图 -->
         <div class='header-box'></div>
@@ -122,7 +84,7 @@
             </div>
             <div>
               <p>获取税筹方案</p>
-              <p>400-150-9898</p>
+              <p>400-150-9896</p>
             </div>
           </div>
         </div>

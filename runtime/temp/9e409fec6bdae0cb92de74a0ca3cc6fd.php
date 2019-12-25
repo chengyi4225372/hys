@@ -1,6 +1,6 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\industry\index.html";i:1576907622;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\industry\index.html";i:1577258378;}*/ ?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -18,104 +18,21 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900">
     <link rel="stylesheet" href="/static/home/css/footer.css">
     <link rel="stylesheet" href="/static/home/font/syht.css">
-
     <script src="/static/assets/plugins/layui/layui.all.js"></script>
     <script src='/static/common/js/common.js'></script>
     <script src='/static/common/js/index.js'></script>
     <script src='/static/common/js/public.js'></script>
     <script src='/static/home/js/industry.js'></script>
     <script src='/static/home/js/footer.js'></script>
+    <script src='/static/home/js/header.js'></script>
     <script src="/static/common/js/open.js"></script>
 </head>
 
 <body>
 
     <div class='container'>
-
-        <!-- 导航部分 -->
-        <!-- <div class='header'>
-            <div class=header_content>
-                <div class='logo'>
-                    <a href="<?php echo url('/home/index/index'); ?>">
-                        <img src="/static/home/images/logo.png" alt="">
-                        <h1>惠优税</h1>
-                    </a>
-                </div>
-                <ul class='titile'>
-                    <li><a href="<?php echo url('/home/index/index'); ?>">首页</a></li>
-                    <li><a href="<?php echo url('/home/optimal/index'); ?>">产品服务</a>
-                    </li>
-                    <li>
-                        <a href="<?php echo url('/home/programme/index'); ?>">行业解决方案</a>
-                    </li>
-                    <li><a href="<?php echo url('/home/customer/index'); ?>">客户 案例</a></li>
-                    <li class='nav-active'><a href="<?php echo url('/home/industry/index'); ?>">行业新闻资讯</a></li>
-                    <li><a href="javascript:;">会员通道</a></li> -->
-        <!-- <li><a href="<?php echo url('/home/launch/index'); ?>">惠启动</a></li> -->
-        <!-- </ul>
-                <?php if(empty($userinfo['mobile'])): ?>
-                <div class='register'>
-                    <a href="javascript:void(0)" login_url="<?php echo $baseurl; ?>" loca_url="<?php echo config('curl.website'); ?>"
-                        onclick="login_btn(this)">登录</a>
-                    <a href="<?php echo url('/home/login/register'); ?>">注册</a>
-                </div>
-                <?php else: ?>
-                <div class="u_info">
-                    <img src="/static/home/images/user_img.png" style="width:30px;height:30px; vertical-align: middle;">
-                    <p style="display:inline-block;color:#fff;" id="mobile_phone"><?php echo $userinfo['mobile']; ?></p>
-
-                    <div class="u_info_content" id="u_info_content">
-                        <a class="u_out" href="javascript:void(0)" data-token="<?php echo $userinfo['token']; ?>"
-                            onclick="user_logout(this)" location_url="<?php echo url('/home/index/index'); ?>"
-                            data-url="<?php echo url('/home/login/logout'); ?>">退出账号</a>
-                    </div>
-                </div>
-                <?php endif; ?>
-            </div>
-        </div> -->
-
-        <!-- 导航部分 -->
-        <div class="nav-box">
-            <div class="w nav-container clearfix">
-                <!-- logo图 -->
-                <div class="logo clearfix">
-                    <a href="/">
-                        <img src="/static/home/images/logo2.png" alt="">
-                    </a>
-
-                </div>
-                <!-- nav部分 -->
-                <div class="nav">
-                    <ul class="clearfix">
-                        <li><a href="<?php echo url('/home/index/index'); ?>">首页</a></li>
-                        <li><a href="<?php echo url('/home/programme/productservice'); ?>"> 产品服务</a></li>
-                        <li><a href="<?php echo url('/home/programme/index'); ?>">行业解决方案</a></li>
-                        <li><a href="<?php echo url('/home/customer/index'); ?>">客户案例</a></li>
-                        <li class="nav-active"><a href="<?php echo url('home/industry/index'); ?>">新闻资讯</a></li>
-                        <!-- <li><a href="#">会员通道</a></li> -->
-                    </ul>
-                </div>
-                <!-- 登陆注册 -->
-                <!-- <div class="loging clearfix">
-            <div class="register-btn"><a href="./login.html">
-                登陆
-              </a></div>
-            <div class="loging-btn"><a href="./register.html">注册</a></div>
-          </div> -->
-                <!-- 头像部分 -->
-                <!-- <div class="user-icon-box">
-                      <img class="user-icon" src="/static/home/images/icon.png" alt="">
-                      <span class="phone">133****5674</span>
-                      <div class="login-out">
-                          <ul>
-                              <li><a href="">退出登录</a></li>
-                          </ul>
-                      </div>
-                  </div> -->
-            </div>
-
-        </div>
-
+        <!-- 头部导航 -->
+        <div id="header" data-pageId="4"></div>
     </div>
 
 
@@ -267,16 +184,16 @@
         </div>
         <div>
           <div class="consultation-title2">联系我们</div>
-          <div class="consultation-item2">
-            <div>
-              <p>专家服务电话</p>
-              <p>181-8619-4461</p>
+            <div class="consultation-item2">
+                <div>
+                    <p>专家服务电话</p>
+                    <p>181-8619-4461</p>
+                </div>
+                <div>
+                    <p>获取税筹方案</p>
+                    <p>400-150-9896</p>
+                </div>
             </div>
-            <div>
-              <p>获取税筹方案</p>
-              <p>400-150-9898</p>
-            </div>
-          </div>
         </div>
         <!-- 返回顶部  -->
         <div class='goTop' id="goTop">
