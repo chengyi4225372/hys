@@ -59,7 +59,7 @@ class Keywords extends AuthController
 
         if($this->request->isPost()){
             $id =  input('post.mid','','int');
-            $data['title'] =  input('post.title','','int');
+            $data['title'] =  input('post.title','','trim');
             if(empty($id) || is_null($id) || $id <= 0){
                 return false;
             }

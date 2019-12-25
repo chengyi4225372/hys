@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\industry\index.html";i:1576857237;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\industry\index.html";i:1576908351;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -161,11 +161,10 @@
                         <ul>
                             <?php if(is_array($keywords) || $keywords instanceof \think\Collection || $keywords instanceof \think\Paginator): $i = 0; $__LIST__ = $keywords;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
                             <li onclick="hotsearch(this);" data-title="<?php echo $vo['title']; ?>"
-                                data-url="<?php echo url('/home/industry/newsapi'); ?>"
-                                data-href="<?php echo url('/home/industry/infos'); ?>">
+                                data-url="<?php echo url('/home/industry/newsapi'); ?>" data-href="<?php echo url('/home/industry/infos'); ?>">
                                 <span><?php echo $vo['title']; ?></span>
                                 <span class="close" onclick="nullhot(this);"
-                                 data-url="<?php echo url('/home/industry/newsapi'); ?>">✕</span>
+                                    data-url="<?php echo url('/home/industry/newsapi'); ?>">✕</span>
                             </li>
                             <?php endforeach; endif; else: echo "" ;endif; ?>
                         </ul>
@@ -249,10 +248,10 @@
 
 
     <!-- 底部 -->
-<div id="footer"></div>
+    <div id="footer"></div>
 
-      <!-- 侧边栏consultation资讯 -->
-      <div class="consultation">
+    <!-- 侧边栏consultation资讯 -->
+    <div class="consultation">
         <div>
           <div class="consultation-title" onclick="alert_open()">咨询方案</div>
           <!-- <div class="consultation-item">
@@ -286,8 +285,8 @@
         </div>
       </div>
 
-     <!-- 弹框 -->
-     <div class="pop-up-box" id="popbox">
+    <!-- 弹框 -->
+    <div class="pop-up-box" id="popbox">
         <div class="form">
             <div class="form-titile">
                 <p>方案咨询</p>
