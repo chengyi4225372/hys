@@ -1,0 +1,6 @@
+---------------------------------------------------------------
+[ 2019-12-30T10:43:12+08:00 ] 127.0.0.1 GET /home/customer/info.html?mid=12
+[ error ] [0]类的属性不存在:app\common\model\Customer->keyword[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\Model.php:624]
+---------------------------------------------------------------
+[ 2019-12-30T10:43:15+08:00 ] 127.0.0.1 GET /home/customer/info.html?mid=5
+[ error ] [0]类的属性不存在:app\common\model\Customer->keyword[C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\thinkphp\library\think\Model.php:624]

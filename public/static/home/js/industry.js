@@ -40,7 +40,7 @@ $(function(){
 });
 
 function trims(str){
-    return str.replace(/\s/g,'');  //去除字符算中的空格
+    return str.replace(/\s/g,'%20');  //去除字符算中的空格
 }
 
 
@@ -193,7 +193,7 @@ function nullhot(obj){
                     if(index.imgs == '' || index.imgs == undefined){
                         content+= "<img src='/static/home/images/infoItem.jpg'></div>";
                     }else{
-                        content+="<img src="+index.imgs+"></div>";
+                        content+="<img src="+trims(index.imgs)+"></div>";
                     }
                     content+= "<div class='infoRight'><div class='rightTop'>";
                     content+= "<div class='itemTitle'>"+index.title+"</div>";
@@ -304,7 +304,7 @@ function pagehrefs(purls,i,titles,pages,count){
                     if(index.imgs == '' || index.imgs == undefined){
                         content+= "<img src='/static/home/images/infoItem.jpg'></div>";
                     }else{
-                        content+="<img src="+index.imgs+"></div>";
+                        content+="<img src="+trims(index.imgs)+"></div>";
                     }
                     content+= "<div class='infoRight'><div class='rightTop'>";
                     content+= "<div class='itemTitle'>"+index.title+"</div>";
