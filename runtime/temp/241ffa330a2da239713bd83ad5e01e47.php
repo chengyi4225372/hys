@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\industry\index.html";i:1577265406;s:97:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\home\view\common\header.html";i:1577263984;s:97:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\home\view\common\footer.html";i:1577263984;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\industry\index.html";i:1578033692;s:97:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\home\view\common\header.html";i:1577263984;s:97:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\home\view\common\footer.html";i:1578033521;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -23,29 +23,24 @@
     <script src='/static/common/js/index.js'></script>
     <script src='/static/common/js/public.js'></script>
     <script src='/static/home/js/industry.js'></script>
-    <script src='/static/home/js/footer.js'></script>
-    <script src='/static/home/js/header.js'></script>
     <script src="/static/common/js/open.js"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?59bb232bf1ab5a4ee5ca776143a9d145";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
 </head>
 
 <body>
 
     <div class='container'>
         <!-- 头部导航 -->
-        <div id="header" data-pageId="4"></div>
-    </div>
-
-
-
-    <!-- <div class="bg_banner">
-        <div class="banner">
-
-            <img src="<?php echo $banner['imgs']; ?>" alt="">
-        </div>
-    </div> -->
-
-    <!-- 头部 -->
-    <style>
+        <div id="header" data-pageId="4">
+            <style>
   #header {
     width: 100%;
     background: #fff;
@@ -311,6 +306,20 @@
     })
   })
 </script>
+        </div>
+    </div>
+
+
+
+    <!-- <div class="bg_banner">
+        <div class="banner">
+
+            <img src="<?php echo $banner['imgs']; ?>" alt="">
+        </div>
+    </div> -->
+
+    <!-- 头部 -->
+    <div class='header-box'></div>
 
 
     <!-- 面包屑导航 -->
