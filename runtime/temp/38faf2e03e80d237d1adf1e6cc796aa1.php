@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:109:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/v1\view\taxa\taxation\add.html";i:1576654453;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\layout\dialog.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\meta.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\script.html";i:1575517385;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:109:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/v1\view\taxa\taxation\add.html";i:1578292488;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\layout\dialog.html";i:1575008787;s:93:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\meta.html";i:1575008787;s:95:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\v1\view\common\script.html";i:1575517385;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
 <head>
@@ -101,10 +101,17 @@
                         <input type="hidden" id="Images" value="">
                     </div>
                 </div>
+                <div class="form-group">
+                    <label for="description" class="col-sm-3 control-label">
+                        <span class="red-color">*</span>新闻seo关键字：</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control form-control-sm"   id="skeyword" value="">
+                    </div>
+                </div>
 
                 <div class="form-group">
                     <label for="description" class="col-sm-3 control-label">
-                        <span class="red-color">*</span>新闻重点描述：</label>
+                        <span class="red-color">*</span>新闻seo描述：</label>
                     <div class="col-sm-9">
                         <textarea  id="description" class="form-control form-control-sm"  rows="5"></textarea>
                     </div>

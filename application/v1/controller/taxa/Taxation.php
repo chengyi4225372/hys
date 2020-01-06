@@ -44,6 +44,7 @@ class Taxation extends AuthController
             $data['keywords'] = implode(',',json_decode(input('post.keyword', '', 'trim')));
             $data['create_time'] = time();
             $data['sort'] = input('post.sort','','int');
+            $data['skeyword'] = input('post.skeyword','','trim');
 
 
             $ret = Taxationservice::instance()->addData($data);
@@ -83,6 +84,7 @@ class Taxation extends AuthController
             $data['content']  = input('post.content','','trim');
             $data['keywords'] = implode(',',json_decode(input('post.keyword', '', 'trim')));
             $data['sort'] = input('post.sort','','int');
+            $data['skeyword'] = input('post.skeyword','','trim');
 
           if(empty($id) || is_null($id) || !isset($id) || $id <= 0){
               return false;
