@@ -91,7 +91,7 @@
                                 data-url="{:url('/home/industry/newsapi')}" data-href="{:url('/home/industry/infos')}">
                                 <span>{$vo.title}</span>
                                 <span class="close" onclick="nullhot(this);"
-                                    data-url="{:url('/home/industry/newsapi')}">✕</span>
+                                      data-title="{$vo.title}"   data-url="{:url('/home/industry/newsapi')}">✕</span>
                             </li>
                             {/volist}
                         </ul>

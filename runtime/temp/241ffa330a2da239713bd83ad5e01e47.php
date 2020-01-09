@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\industry\index.html";i:1578294662;s:97:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\home\view\common\header.html";i:1577263984;s:97:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\home\view\common\footer.html";i:1578033521;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\industry\index.html";i:1578549740;s:97:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\home\view\common\header.html";i:1577263984;s:97:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\home\view\common\footer.html";i:1578033521;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -357,7 +357,7 @@
                                 data-url="<?php echo url('/home/industry/newsapi'); ?>" data-href="<?php echo url('/home/industry/infos'); ?>">
                                 <span><?php echo $vo['title']; ?></span>
                                 <span class="close" onclick="nullhot(this);"
-                                    data-url="<?php echo url('/home/industry/newsapi'); ?>">✕</span>
+                                      data-title="<?php echo $vo['title']; ?>"   data-url="<?php echo url('/home/industry/newsapi'); ?>">✕</span>
                             </li>
                             <?php endforeach; endif; else: echo "" ;endif; ?>
                         </ul>
