@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\industry\index.html";i:1577266282;s:58:"C:\phpEnv\www\hys\application\home\view\common\header.html";i:1577262947;s:58:"C:\phpEnv\www\hys\application\home\view\common\footer.html";i:1577087737;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:69:"C:\phpEnv\www\hys\public/../application/home\view\industry\index.html";i:1578887085;s:58:"C:\phpEnv\www\hys\application\home\view\common\header.html";i:1577262947;s:58:"C:\phpEnv\www\hys\application\home\view\common\footer.html";i:1577087737;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -18,13 +18,23 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900">
     <link rel="stylesheet" href="/static/home/css/footer.css">
     <link rel="stylesheet" href="/static/home/font/syht.css">
+    <meta name="keyword" content="惠优税">
+    <meta name="description" content="惠优税">
     <script src="/static/assets/plugins/layui/layui.all.js"></script>
     <script src='/static/common/js/common.js'></script>
     <script src='/static/common/js/index.js'></script>
     <script src='/static/common/js/public.js'></script>
     <script src='/static/home/js/industry.js'></script>
- 
     <script src="/static/common/js/open.js"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?59bb232bf1ab5a4ee5ca776143a9d145";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
 </head>
 
 <body>
@@ -347,7 +357,7 @@
                                 data-url="<?php echo url('/home/industry/newsapi'); ?>" data-href="<?php echo url('/home/industry/infos'); ?>">
                                 <span><?php echo $vo['title']; ?></span>
                                 <span class="close" onclick="nullhot(this);"
-                                    data-url="<?php echo url('/home/industry/newsapi'); ?>">✕</span>
+                                      data-title="<?php echo $vo['title']; ?>"   data-url="<?php echo url('/home/industry/newsapi'); ?>">✕</span>
                             </li>
                             <?php endforeach; endif; else: echo "" ;endif; ?>
                         </ul>

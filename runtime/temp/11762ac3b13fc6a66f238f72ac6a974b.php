@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1577266214;s:58:"C:\phpEnv\www\hys\application\home\view\common\header.html";i:1577262947;s:58:"C:\phpEnv\www\hys\application\home\view\common\footer.html";i:1577087737;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:66:"C:\phpEnv\www\hys\public/../application/home\view\index\index.html";i:1578887085;s:58:"C:\phpEnv\www\hys\application\home\view\common\header.html";i:1577262947;s:58:"C:\phpEnv\www\hys\application\home\view\common\footer.html";i:1577087737;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -19,13 +19,23 @@
   <link rel="stylesheet" href="/static/assets/plugins/layui/css/layui.css">
   <link rel="stylesheet" href="/static/home/css/index.css">
   <link rel="stylesheet" href="/static/home/font/syht.css">
+  <meta name="keyword" content="企业税收筹划,纳税筹划,园区税务筹划,政府园区税务筹划,个人避税,合理节税,节税筹划,合理避税,股权转让避税,惠优税">
+  <meta name="description" content="惠优税利用最安全、高效、合理的节税措施解决税务难题，打造全国地方政府园区联盟式星级服务新典范和园企共同发展大平台！">
   <!-- <link rel="stylesheet" href="/static/home/font/SourceHanSansCN-Normal.css"> -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="/static/assets/plugins/layui/layui.all.js"></script>
   <script src="/static/home/js/clamp.js"></script>
   <script src='/static/home/js/index.js'></script>
   <script src="/static/common/js/open.js"></script>
-  
+  <script>
+      var _hmt = _hmt || [];
+      (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?59bb232bf1ab5a4ee5ca776143a9d145";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+      })();
+  </script>
 
 </head>
 
@@ -767,5 +777,4 @@
 
   })
 </script>
-
 </html>
