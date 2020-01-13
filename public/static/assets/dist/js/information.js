@@ -44,6 +44,7 @@ $('.add_taxa').click(function(){
     var keywords    = $('#keywords').val();
     var sort        = $('#sort').val();
     var content     = ue.getContent();
+    var skeyword    = $('#skeyword').val();
     var urls        =  $(this).attr('data-url');
 
     if(title  == '' || title == undefined){
@@ -57,7 +58,12 @@ $('.add_taxa').click(function(){
     }
 
     if(description == '' || description == undefined){
-        layer.msg('请输入新闻描述信息');
+        layer.msg('请输入新闻seo描述');
+        return false;
+    }
+
+    if(skeyword =='' || skeyword == undefined){
+        layer.msg('请输入seo关键字');
         return false;
     }
 
@@ -66,7 +72,7 @@ $('.add_taxa').click(function(){
         return false;
     }
 
-    $.post(urls,{'title':title,'keyword':JSON.stringify(keywords),'imgs':imgs,'description':description,'content':content,'sort':sort},function(ret){
+    $.post(urls,{'title':title,'keyword':JSON.stringify(keywords),'imgs':imgs,'description':description,'content':content,'sort':sort,'skeyword':skeyword},function(ret){
             if(ret.code == 200){
                 layer.msg(ret.msg,{icon:6},function(){
                     parent.location.reload();
@@ -108,8 +114,9 @@ $('.edit_taxa').click(function(){
     var keywords    = $("#keywords").val();
     var sort        = $("#sort").val();
     var content     = ue.getContent();
-    var urls        =  $(this).attr('data-url');
+    var urls        = $(this).attr('data-url');
     var mid         = $('#mid').val();
+    var skeyword    = $('#skeyword').val();
 
     if(title  == '' || title == undefined){
         layer.msg('请输入新闻标题');
@@ -122,7 +129,7 @@ $('.edit_taxa').click(function(){
     }
 
     if(description == '' || description == undefined){
-        layer.msg('请输入新闻描述信息');
+        layer.msg('请输入新闻seo描述信息');
         return false;
     }
 
@@ -131,8 +138,13 @@ $('.edit_taxa').click(function(){
         return false;
     }
 
+    if(skeyword =='' || skeyword == undefined){
+        layer.msg('请输入seo关键字');
+        return false;
+    }
 
-    $.post(urls,{'title':title,'mid':mid,'keyword':JSON.stringify(keywords),'imgs':imgs,'description':description,'content':content,'sort':sort},function(ret){
+
+    $.post(urls,{'title':title,'mid':mid,'keyword':JSON.stringify(keywords),'imgs':imgs,'description':description,'content':content,'sort':sort,'skeyword':skeyword},function(ret){
 
          if(ret.code == 200){
             layer.msg(ret.msg,{icon:6},function(){

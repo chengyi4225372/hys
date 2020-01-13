@@ -20,7 +20,7 @@ class Index extends BaseController
             $this->assign('chart',$chart);
             //用户信息
             $this->assign('userinfo',$this->userinfo);
-            $this->assign('title','惠优税');
+            $this->assign('title','园区企业税收筹划_合理避税_个人所得税筹划平台-惠优税');
             return $this->fetch();
         }
         return false;

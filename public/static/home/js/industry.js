@@ -40,7 +40,7 @@ $(function(){
 });
 
 function trims(str){
-    return str.replace(/\s/g,'');  //去除字符算中的空格
+    return str.replace(/\s/g,'%20');  //去除字符算中的空格
 }
 
 
@@ -60,10 +60,14 @@ function hotsearch(obj) {
     var index = $.inArray(searchs,keyword);
 
     if(index >= 0){
+        keyword.push(searchs);
         keyword.pop(searchs); //如果数组中已经存在，则移除
+    }else{
+        keyword.push(searchs);
     }
 
-    keyword.push(searchs);
+
+    //console.log(keyword);
 
     if (keyword == '' || keyword == undefined || keyword == 'undefined') {
         return false;
@@ -163,12 +167,18 @@ function hotsearch(obj) {
 
 /** 清除关键字 **/
 function nullhot(obj){
-    var title = $(obj).parents('li').attr('data-title');
+    var title = $(obj).attr('data-title');
 
     urls  = $(obj).attr('data-url');
-    keyword.pop(title);
-    titles = keyword.join(',');
+    var index1 = $.inArray(title,keyword);
 
+    if(index1 >=0){
+        keyword.splice(index1,1);
+    }
+
+    //console.log(keyword);
+
+    titles = keyword.join(',');
     $.post(urls,{'title':titles},function(ret){
         if(ret.code == 200){
             if(ret.data.length<=0){
@@ -193,7 +203,7 @@ function nullhot(obj){
                     if(index.imgs == '' || index.imgs == undefined){
                         content+= "<img src='/static/home/images/infoItem.jpg'></div>";
                     }else{
-                        content+="<img src="+index.imgs+"></div>";
+                        content+="<img src="+trims(index.imgs)+"></div>";
                     }
                     content+= "<div class='infoRight'><div class='rightTop'>";
                     content+= "<div class='itemTitle'>"+index.title+"</div>";
@@ -304,7 +314,7 @@ function pagehrefs(purls,i,titles,pages,count){
                     if(index.imgs == '' || index.imgs == undefined){
                         content+= "<img src='/static/home/images/infoItem.jpg'></div>";
                     }else{
-                        content+="<img src="+index.imgs+"></div>";
+                        content+="<img src="+trims(index.imgs)+"></div>";
                     }
                     content+= "<div class='infoRight'><div class='rightTop'>";
                     content+= "<div class='itemTitle'>"+index.title+"</div>";
