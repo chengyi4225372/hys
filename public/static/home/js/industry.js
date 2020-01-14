@@ -122,12 +122,11 @@ function hotsearch(obj) {
                     content+= "</ul>";
                     $("#shang").append(content).show();
                 });
-
+                $('.page').remove();
                 // 分页
-                if(ret.count <= 0){
+                if(ret.count <= 0 || ret.data.length < ret.size){
                     return ;
                 } else {
-                    $('.page').remove();
                     var page  = '';
                     page += "<ul class='page'>";
                     //上一页
@@ -135,11 +134,11 @@ function hotsearch(obj) {
                     for(var i=1;i<=ret.count;i++){
                         //当前页
                         if(ret.page == i){
-                            page += "<li class='activePage' onclick='pagehrefs(urls,0,"+ret.page+","+ret.count+");'>"+i+"</li>";
+                            page += "<li class='activePage' onclick='pagehrefs(urls,"+i+"-1,titles,"+ret.page+","+ret.count+");'>"+i+"</li>";
                         }
                         //不是当前页
                         if(ret.page != i){
-                            page += "<li onclick='pagehrefs(urls,"+i+",titles,"+ret.page+","+ret.count+");'>"+i+"</li>";
+                            page += "<li onclick='pagehrefs(urls,"+i+"-1,titles,"+ret.page+","+ret.count+");'>"+i+"</li>";
                         }
 
                     }
@@ -221,23 +220,22 @@ function nullhot(obj){
                     content+= "</ul>";
                     $("#shang").append(content).show();
                 });
-
+                $('.page').remove();
                 // 分页
-                if(ret.count <= 0){
+                if(ret.count <= 0 || ret.data.length <ret.size){
                     return ;
                 } else {
-                    $('.page').remove();
                     var page  = '';
                     page += "<ul class='page'>";
                     page += "<li class='prev' onclick='pagehrefs(urls,-1,titles,"+ret.page+","+ret.count+");'>上一页</li>";
                     for(var i=1;i<=ret.count;i++){
                         //当前页
                         if(ret.page == i){
-                            page += "<li class='activePage' onclick='pagehrefs(urls,0,"+ret.page+","+ret.count+");'>"+i+"</li>";
+                            page += "<li class='activePage' onclick='pagehrefs(urls,"+i+"-1,titles,"+ret.page+","+ret.count+");'>"+i+"</li>";
                         }
                         //不是当前页
                         if(ret.page != i){
-                            page += "<li onclick='pagehrefs(urls,"+i+",titles,"+ret.page+","+ret.count+");'>"+i+"</li>";
+                            page += "<li onclick='pagehrefs(urls,"+i+"-1,titles,"+ret.page+","+ret.count+");'>"+i+"</li>";
                         }
 
                     }
@@ -272,7 +270,7 @@ function nullhot(obj){
  **/
 function pagehrefs(purls,i,titles,pages,count){
 
-    if(i == 0 || i == '' || i == undefined){
+    if(i == '' || i == undefined || i== 'undefined'){
         return false;
     }
 
@@ -332,22 +330,22 @@ function pagehrefs(purls,i,titles,pages,count){
                     content+= "</ul>";
                     $("#shang").append(content).show();
                 });
+                $('.page').remove();
                 // 分页
                 if(ret.count <= 0){
                     return ;
                 } else {
-                    $('.page').remove();
                     var page  = '';
                     page += "<ul class='page'>";
                     page += "<li class='prev' onclick='pagehrefs(urls,-1,titles,"+ret.page+","+ret.count+");'>上一页</li>";
                     for(var i=1;i<=ret.count;i++){
                         //当前页
                         if(ret.page == i){
-                            page += "<li class='activePage' onclick='pagehrefs(urls,0,"+ret.page+","+ret.count+");'>"+i+"</li>";
+                            page += "<li class='activePage' onclick='pagehrefs(urls,"+i+"-1,titles,"+ret.page+","+ret.count+");'>"+i+"</li>";
                         }
                         //不是当前页
                         if(ret.page != i){
-                            page += "<li onclick='pagehrefs(urls,"+i+",titles,"+ret.page+","+ret.count+");'>"+i+"</li>";
+                            page += "<li onclick='pagehrefs(urls,"+i+"-1,titles,"+ret.page+","+ret.count+");'>"+i+"</li>";
                         }
 
                     }
