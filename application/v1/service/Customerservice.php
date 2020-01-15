@@ -48,7 +48,7 @@ class Customerservice
                'title|description'=>['like','%'.$title.'%'],
            ];
        }
-       $list = Customer::instance()->where($w)->order('sort desc,create_time desc')->paginate(15);
+       $list = Customer::instance()->where($w)->order('sort desc,create_time desc')->paginate(9);
 
        return $list?$list:'';
     }

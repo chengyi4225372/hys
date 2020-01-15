@@ -49,7 +49,7 @@ class Taxationservice
            $w = ['status'=>1]; //正常
        }
 
-       $list = Taxation::instance()->where($w)->order(['sort'=>'desc'])->paginate(15);
+       $list = Taxation::instance()->where($w)->order(['sort'=>'desc'])->paginate(10);
        return  $list;
    }
 

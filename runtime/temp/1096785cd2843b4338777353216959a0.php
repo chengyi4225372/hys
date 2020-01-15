@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:105:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\index\index.html";i:1578294603;s:97:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\home\view\common\header.html";i:1577263984;s:97:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\home\view\common\footer.html";i:1578033521;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:105:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\index\index.html";i:1578447221;s:97:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\home\view\common\header.html";i:1577263984;s:97:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\home\view\common\footer.html";i:1578033521;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -19,8 +19,8 @@
   <link rel="stylesheet" href="/static/assets/plugins/layui/css/layui.css">
   <link rel="stylesheet" href="/static/home/css/index.css">
   <link rel="stylesheet" href="/static/home/font/syht.css">
-  <meta name="keyword" content="惠优税">
-  <meta name="description" content="惠优税">
+  <meta name="keyword" content="企业税收筹划,纳税筹划,园区税务筹划,政府园区税务筹划,个人避税,合理节税,节税筹划,合理避税,股权转让避税,惠优税">
+  <meta name="description" content="惠优税利用最安全、高效、合理的节税措施解决税务难题，打造全国地方政府园区联盟式星级服务新典范和园企共同发展大平台！">
   <!-- <link rel="stylesheet" href="/static/home/font/SourceHanSansCN-Normal.css"> -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="/static/assets/plugins/layui/layui.all.js"></script>

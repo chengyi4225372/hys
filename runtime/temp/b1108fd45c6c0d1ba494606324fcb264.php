@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\customer\index.html";i:1578294654;s:97:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\home\view\common\header.html";i:1577263984;s:97:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\home\view\common\footer.html";i:1578033521;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:108:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\public/../application/home\view\customer\index.html";i:1579074628;s:97:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\home\view\common\header.html";i:1577263984;s:97:"C:\Users\Administrator\Desktop\phpEnv5.6.0-Green\www\hys\application\home\view\common\footer.html";i:1578033521;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900">
   <link rel="stylesheet" href="/static/home/css/footer.css">
   <link rel="stylesheet" href="/static/home/font/syht.css">
+  <link rel="stylesheet" href="/static/home/css/news.css">
   <meta name="keyword" content="惠优税">
   <meta name="description" content="惠优税">
   <!--    <script src="/static/spirit/js/clamp.js"></script>-->
@@ -351,6 +352,11 @@
     </div>
   </div>
 
+  <!-- 分页 -->
+  <div class="pageNation">
+<?php echo $list->render();; ?>
+  </ul>
+  </div>
 
 
   <!-- 返回顶部 -->
