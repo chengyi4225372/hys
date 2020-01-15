@@ -50,7 +50,9 @@ class Taxationservice
        }
 
        $list = Taxation::instance()->where($w)->order(['sort'=>'desc'])->paginate(10);
+
        return  $list;
+
    }
 
     /**
