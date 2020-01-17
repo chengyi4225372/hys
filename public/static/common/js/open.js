@@ -36,7 +36,7 @@ function hide_open(){
     $('#popbox').hide();
 }
 /*接口 公海*/
-var gurl = "http://47.105.48.137:8089";
+var gurl = "https://test.zxrhgb.com";
 
 var urkl = gurl + "/api/wechatForeign/public/addGatewayPotentialCustomer";
 
