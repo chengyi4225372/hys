@@ -14,7 +14,7 @@ class Customer extends BaseController{
         if ($this->request->isGet()) {
             $list = Customerservice::instance()->getlist('');
             $this->assign('list',$list);
-            $this->assign('title','客户案例');
+            $this->assign('title','节税案例_避税案例_税务筹划案例_财税规划案例_客户案例-惠优税');
             return $this->fetch();
         }
         return false;

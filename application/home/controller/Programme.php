@@ -13,7 +13,7 @@ class Programme extends BaseController
   
      public function index (){
          if($this->request->isGet()){
-             $this->assign('title','行业解决方案');
+             $this->assign('title','节税方案_合法避税方法_税务筹划方案_行业解决方案-惠优税');
              return $this->fetch();
          }
         return false;
@@ -26,7 +26,7 @@ class Programme extends BaseController
      public function productservice()
      {
          if($this->request->isGet()){
-             $this->assign('title','产品服务');
+             $this->assign('title','合理节税产品_减少交税产品_合法节税方法_产品服务-惠优税');
              return $this->fetch();
          }
          return false;

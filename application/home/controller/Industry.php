@@ -33,7 +33,7 @@ class Industry extends BaseController
                $list[$key]['keywords'] = explode(',', $list[$key]['keywords']);
            }
            $this->assign('list',$list);
-           $this->assign('title','新闻资讯');
+           $this->assign('title','财税行业新闻_新闻资讯-惠优税');
            return $this->fetch();
        }
        return false;
