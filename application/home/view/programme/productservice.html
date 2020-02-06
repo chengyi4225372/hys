@@ -14,13 +14,13 @@
     <link rel="stylesheet" href="__HOME__/css/productservice.css">
     <link rel="stylesheet" href="__HOME__/css/footer.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900">
-    <link rel="stylesheet" href="__HOME__/font/syht.css">
     <meta name="keyword" content="合法避税产品,节税产品,税务筹划公司,合法节税方法,税收筹划产品,股权转让节税方法,纳税节税方法,财税节税产品,惠优税">
     <meta name="description" content="惠优税利用税收洼地为税务负担重,需要合理合法节税的企业,提供专业的节税产品及服务,使企业及个人通过合理合法节税方法,降低税务成本。">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="__PUBLIC__/assets/plugins/layui/layui.all.js"></script>
     <script src="__HOME__/js/productservice.js"></script>
     <script src="__PUBLIC__/common/js/open.js"></script>
+    <script src='__HOME__/js/lazysizes.min.js' async='async'></script>
     <script>
         var _hmt = _hmt || [];
         (function() {
@@ -62,12 +62,12 @@
                     <button class="btn1" onclick="alert_open()"></button>
 
                 </div>
-                <img src="__HOME__/images/series2.png" alt="">
-                <img src="__HOME__/images/service.png" alt="">
-                <img src="__HOME__/images/case.png" alt="">
-                <img src="__HOME__/images/step.png" alt="">
-                <img src="__HOME__/images/advantage2.png" alt="">
-                <img src="__HOME__/images/afterSales.png" alt="">
+                <img class="lazyload" data-src="__HOME__/images/series2.png" alt="">
+                <img class="lazyload" data-src="__HOME__/images/service.png" alt="">
+                <img class="lazyload" data-src="__HOME__/images/case.png" alt="">
+                <img class="lazyload" data-src="__HOME__/images/step.png" alt="">
+                <img class="lazyload" data-src="__HOME__/images/advantage2.png" alt="">
+                <img class="lazyload" data-src="__HOME__/images/afterSales.png" alt="">
                 <button class="btn2" onclick="alert_open()"></button>
                 <input type="button"  class="btn3" onclick="alert_open()" />
             </div>
@@ -99,7 +99,7 @@
         </div>
         <!-- 返回顶部  -->
         <div class='goTop' id="goTop">
-          <div><img src="__HOME__/images/top@2x.png" alt=""></div>
+          <div><img class="lazyload" data-src="__HOME__/images/top@2x.png" alt=""></div>
           <div>顶部</div>
         </div>
       </div>
@@ -135,17 +135,17 @@
 </body>
 <script>
     $(function () {
-        $('.nav ul li').on('click', function () {
-            $(this).addClass('nav-active chosenPage').siblings().removeClass('nav-active chosenPage')
-        })
-        $('.nav ul li').on('mouseenter', function () {
-            $(this).addClass('nav-active').siblings().removeClass('nav-active')
-        })
-        $('.nav').on('mouseleave', function () {
-            $('.nav ul li').removeClass('nav-active')
-            if ($('.chosenPage').length < 1) $('.nav ul li').eq(1).addClass('chosenPage')
-            $('.chosenPage').addClass('nav-active')
-        })
+        // $('.nav ul li').on('click', function () {
+        //     $(this).addClass('nav-active chosenPage').siblings().removeClass('nav-active chosenPage')
+        // })
+        // $('.nav ul li').on('mouseenter', function () {
+        //     $(this).addClass('nav-active').siblings().removeClass('nav-active')
+        // })
+        // $('.nav').on('mouseleave', function () {
+        //     $('.nav ul li').removeClass('nav-active')
+        //     if ($('.chosenPage').length < 1) $('.nav ul li').eq(1).addClass('chosenPage')
+        //     $('.chosenPage').addClass('nav-active')
+        // })
 
         /* 小按钮点击切换背景图 */
         $('.btn1').mousedown(function(){

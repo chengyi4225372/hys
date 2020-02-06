@@ -655,6 +655,10 @@ a {
   font-size: 1.125rem;
   line-height: 1.125rem;
   font-weight: 500;
+  width: 35rem;
+  white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   color: #333; }
 
 .infoRight .itemTime {

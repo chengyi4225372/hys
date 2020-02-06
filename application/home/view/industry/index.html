@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="__HOME__/css/news.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900">
     <link rel="stylesheet" href="__HOME__/css/footer.css">
-    <link rel="stylesheet" href="__HOME__/font/syht.css">
     <meta name="keyword" content="财税行业资讯,节税资讯,税务筹划资讯,财税行业新闻,节税新闻,税务筹划新闻,惠优税">
     <meta name="description" content="惠优税新闻资讯是包含海量财税行业资讯的新闻服务平台,反映各行各业的财税新闻热点,热门财税话题、财税人物动态、财税产品资讯等,快速了解财税行业的最新进展。">
     <script src="__PUBLIC__/assets/plugins/layui/layui.all.js"></script>
@@ -25,6 +24,8 @@
     <script src='__PUBLIC__/common/js/public.js'></script>
     <script src='__HOME__/js/industry.js'></script>
     <script src="__PUBLIC__/common/js/open.js"></script>
+    <script src='__HOME__/js/lazysizes.min.js' async='async'></script>
+
     <script>
         var _hmt = _hmt || [];
         (function() {
@@ -130,14 +131,14 @@
                                 onclick="home_module.show_detail(this)">
                                 <div class="infoItem">
                                     <div class="infoLeft">
-                                        <img src="{$lo.imgs?$lo.imgs:'__HOME__/images/infoItem.jpg'}" alt="">
+                                        <img class="lazyload" data-src="{$lo.imgs?$lo.imgs:'__HOME__/images/infoItem.jpg'}" alt="">
                                     </div>
 
                                     <div class="infoRight">
                                         <div class="rightTop">
                                             <div class="itemTitle">{$lo.title}</div>
                                             <span class="itemTime">
-                                                <img src="__HOME__/images/shijian2x.png"
+                                                <img class="lazyload" data-src="__HOME__/images/shijian2x.png"
                                                     alt=""><span>{$lo.create_time}</span>
                                             </span>
                                         </div>
@@ -213,7 +214,7 @@
         </div>
         <!-- 返回顶部  -->
         <div class='goTop' id="goTop">
-          <div><img src="__HOME__/images/top@2x.png" alt=""></div>
+          <div><img class="lazyload" data-src="__HOME__/images/top@2x.png" alt=""></div>
           <div>顶部</div>
         </div>
       </div>
