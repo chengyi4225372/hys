@@ -24,7 +24,14 @@ function check_number(number){
 /**
  * 弹窗 弹出
  */
-function alert_open(){
+function alert_open(source,identification){
+    if(source !== '' || source !== undefined){
+        $('#sources').val(source);//来源
+    }
+    if(identification !== '' || identification !== undefined){
+        $('#identifications').val(identification);//标识
+    }
+
     $('#popbox').show();
     $('.mask-box').hide();
 }
