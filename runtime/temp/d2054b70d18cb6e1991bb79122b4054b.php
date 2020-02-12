@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:64:"/opt/web/hys/public/../application/home/view/industry/index.html";i:1580963982;s:53:"/opt/web/hys/application/home/view/common/header.html";i:1580963987;s:53:"/opt/web/hys/application/home/view/common/footer.html";i:1580963986;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:64:"/opt/web/hys/public/../application/home/view/industry/index.html";i:1581413238;s:53:"/opt/web/hys/application/home/view/common/header.html";i:1580963987;s:53:"/opt/web/hys/application/home/view/common/footer.html";i:1580963986;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -512,7 +512,7 @@
     <!-- 侧边栏consultation资讯 -->
     <div class="consultation">
         <div>
-          <div class="consultation-title" onclick="alert_open()">咨询方案</div>
+          <div class="consultation-title" onclick="alert_open('惠优税新闻资讯','右导航')">咨询方案</div>
           <!-- <div class="consultation-item">
             <ul>
               <li><a href="/">惠优税</a></li>
