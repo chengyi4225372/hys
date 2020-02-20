@@ -13,13 +13,13 @@
     <link rel="stylesheet" href="__HOME__/css/infos.css">
     <link rel="stylesheet" href="__HOME__/css/footer.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900">
-    <link rel="stylesheet" href="__HOME__/font/syht.css">
     <meta name="keyword" content="{$info.keywords}">
     <meta name="description" content="{$info.description}">
     <script src="__HOME__/js/jquery.js"></script>
     <!--    <script src="__HOME__/js/programme.js"></script>-->
     <script src="__HOME__/js/customer.js"></script>
     <script src="__PUBLIC__/common/js/open.js"></script>
+    <script src='__HOME__/js/lazysizes.min.js' async='async'></script>
     <script>
         var _hmt = _hmt || [];
         (function() {
@@ -133,7 +133,7 @@
         </div>
         <!-- 返回顶部 -->
         <div class='goTop' id="goTop">
-            <div><img src="__HOME__/images/top@2x.png" alt=""></div>
+            <div><img class="lazyload" data-src="__HOME__/images/top@2x.png" alt=""></div>
             <div>顶部</div>
         </div>
     </div>

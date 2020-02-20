@@ -17,7 +17,6 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900">
   <link rel="stylesheet" href="__PUBLIC__/assets/plugins/layui/css/layui.css">
   <link rel="stylesheet" href="__HOME__/css/index.css">
-  <link rel="stylesheet" href="__HOME__/font/syht.css">
   <meta name="keyword" content="企业税收筹划,纳税筹划,园区税务筹划,政府园区税务筹划,个人避税,合理节税,节税筹划,合理避税,股权转让避税,惠优税">
   <meta name="description" content="惠优税利用最安全、高效、合理的节税措施解决税务难题,打造全国地方政府园区联盟式星级服务新典范和园企共同发展大平台。">
   <!-- <link rel="stylesheet" href="__HOME__/font/SourceHanSansCN-Normal.css"> -->
@@ -25,6 +24,7 @@
   <script src="__PUBLIC__/assets/plugins/layui/layui.all.js"></script>
   <script src="__HOME__/js/clamp.js"></script>
   <script src='__HOME__/js/index.js'></script>
+  <script src='__HOME__/js/lazysizes.min.js' async='async'></script>
   <script src="__PUBLIC__/common/js/open.js"></script>
   <script>
       var _hmt = _hmt || [];
@@ -67,12 +67,12 @@
           <div></div>
           <div><span class="hysTitle">惠优税产品</span></div>
           <div>利用全国各地税收优惠政策，打造低税率洼地。金牌财税顾问团队，量身定制税筹方案！</div>
-          <div onclick="alert_open()" class="getCase">获取解决方案</div>
+          <div onclick="alert_open('惠优税首页','产品获取方案')" class="getCase">获取解决方案</div>
         </div>
         <div class="preferential-content clearfix">
           <div class="preferential-content-item">
             <div class="preferential-content-item-img">
-              <img src="__HOME__/images/southeast@2x2.png" alt="">
+              <img class="lazyload" data-src="__HOME__/images/southeast@2x2.png" alt="">
             </div>
             <div class="preferential-content-item-content">
               <p>入驻型税筹产品</p>
@@ -84,7 +84,7 @@
           </div>
           <div class="preferential-content-item">
             <div class="preferential-content-item-img">
-              <img src="__HOME__/images/southeast@2x.png" alt="">
+              <img class="lazyload" data-src="__HOME__/images/southeast@2x.png" alt="">
             </div>
             <div class="preferential-content-item-content">
               <p>个人代报税产品</p>
@@ -100,7 +100,7 @@
 
     <!-- 税务问题 -->
     <div class="taxproblems-box clearfix">
-      <div class="taxproblems-left"><img src="__HOME__/images/southeast (3)@2x.png" alt=""></div>
+      <div class="taxproblems-left"><img class="lazyload" data-src="__HOME__/images/southeast (3)@2x.png" alt=""></div>
       <div class="taxproblems-right">
         <div></div>
         <div>
@@ -149,7 +149,7 @@
               <div class="tax-planning-solutions-content-btn">
                 分红个税
               </div>
-              <div class="tax-planning-solutions-content-btn2" onclick="alert_open()">
+              <div class="tax-planning-solutions-content-btn2" onclick="alert_open('惠优税首页方案','投资收益型')">
                 <a href="javascript:;">获取分红个税筹划方案</a>
               </div>
             </div>
@@ -165,7 +165,7 @@
               <div class="tax-planning-solutions-content-btn">
                 个人所得税
               </div>
-              <div class="tax-planning-solutions-content-btn2" onclick="alert_open()">
+              <div class="tax-planning-solutions-content-btn2" onclick="alert_open('惠优税首页方案','工资收入型')">
                 <a href="javascript:;">获取个人所得税筹划方案</a>
               </div>
             </div>
@@ -180,7 +180,7 @@
               <div class="tax-planning-solutions-content-btn">
                 企业所得税
               </div>
-              <div class="tax-planning-solutions-content-btn2" onclick="alert_open()">
+              <div class="tax-planning-solutions-content-btn2" onclick="alert_open('惠优税首页方案','企业利润型')">
                 <a href="javascript:;">获取企业所得税筹划方案</a>
               </div>
             </div>
@@ -196,7 +196,7 @@
               <div class="tax-planning-solutions-content-btn">
                 个人所得税
               </div>
-              <div class="tax-planning-solutions-content-btn2" onclick="alert_open()">
+              <div class="tax-planning-solutions-content-btn2" onclick="alert_open('惠优税首页方案','劳务收入型')">
                 <a href="javascript:;">获取个人所得税筹划方案</a>
               </div>
             </div>
@@ -210,7 +210,7 @@
               <div class="tax-planning-solutions-content-btn">
                 企业所得税
               </div>
-              <div class="tax-planning-solutions-content-btn2" onclick="alert_open()">
+              <div class="tax-planning-solutions-content-btn2" onclick="alert_open('惠优税首页方案','贸易采购型')">
                 <a href="javascript:;">获取企业所得税筹划方案</a>
               </div>
             </div>
@@ -224,7 +224,7 @@
               <div class="tax-planning-solutions-content-btn">
                 增值税
               </div>
-              <div class="tax-planning-solutions-content-btn2" onclick="alert_open()">
+              <div class="tax-planning-solutions-content-btn2" onclick="alert_open('惠优税首页方案','双软产业型')">
                 <a href="javascript:;">获取增值税筹划方案</a>
               </div>
             </div>
@@ -253,12 +253,12 @@
           <div class="preferential-taxadvantage-content-imgs">
             <ul class="clearfix">
               {volist name='chart' id='vo'}
-              <li><img src="{$vo.imgs}" alt=""></li>
+              <li><img class="lazyload" data-src="{$vo.imgs}" alt=""></li>
               {/volist}
 
             </ul>
-            <span class="fouse-left" title="1"><img src="__HOME__/images/focus-left.png" alt=""></span>
-            <span class="fouse-right" title="0"><img src="__HOME__/images/focus-right.png" alt=""></span>
+            <span class="fouse-left" title="1"><img class="lazyload" data-src="__HOME__/images/focus-left.png" alt=""></span>
+            <span class="fouse-right" title="0"><img class="lazyload" data-src="__HOME__/images/focus-right.png" alt=""></span>
           </div>
         </div>
       </div>
@@ -275,28 +275,28 @@
         </div>
         <div class="map-box">
           <div class="map-box-left">
-            <div><img src="__HOME__/images/jinxuanyuanqu1.png" alt=""></div>
-            <div><img src="__HOME__/images/jinxuanyuanqu2.png" alt=""></div>
-            <div><img src="__HOME__/images/jinxuanyuanqu3.png" alt=""></div>
+            <div><img class="lazyload" data-src="__HOME__/images/jinxuanyuanqu1.png" alt=""></div>
+            <div><img class="lazyload" data-src="__HOME__/images/jinxuanyuanqu2.png" alt=""></div>
+            <div><img class="lazyload" data-src="__HOME__/images/jinxuanyuanqu3.png" alt=""></div>
           </div>
           <div class="map-box-center">
             <div class="map-box-center-item active-map">
-              <img src="__HOME__/images/map1.gif" alt="">
+              <img class="lazyload" data-src="__HOME__/images/map1.gif" alt="">
             </div>
             <div class="map-box-center-item">
-              <img src="__HOME__/images/map2.gif" alt="">
+              <img class="lazyload" data-src="__HOME__/images/map2.gif" alt="">
 
             </div>
             <div class="map-box-center-item">
-              <img src="__HOME__/images/map3.gif" alt="">
+              <img class="lazyload" data-src="__HOME__/images/map3.gif" alt="">
 
             </div>
             <div class="map-box-center-item">
-              <img src="__HOME__/images/map4.gif" alt="">
+              <img class="lazyload" data-src="__HOME__/images/map4.gif" alt="">
 
             </div>
             <div class="map-box-center-item">
-              <img src="__HOME__/images/map5.gif" alt="">
+              <img class="lazyload" data-src="__HOME__/images/map5.gif" alt="">
             </div>
           </div>
           <div class="map-box-right">
@@ -347,7 +347,7 @@
           </div>
         </div>
         <div class="partner-img">
-          <img src="__HOME__/images/hezuohuoban2x.png" alt="">
+          <img class="lazyload" data-src="__HOME__/images/hezuohuoban2x.png" alt="">
         </div>
       </div>
     </div>
@@ -392,7 +392,7 @@
       </div>
       <!-- 返回顶部  -->
       <div class='goTop' id="goTop">
-        <div><img src="__HOME__/images/top@2x.png" alt=""></div>
+        <div><img class="lazyload" data-src="__HOME__/images/top@2x.png" alt=""></div>
         <div>顶部</div>
       </div>
     </div>

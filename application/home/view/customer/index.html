@@ -15,7 +15,6 @@
   <link rel="stylesheet" href="__HOME__/css/customer.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900">
   <link rel="stylesheet" href="__HOME__/css/footer.css">
-  <link rel="stylesheet" href="__HOME__/font/syht.css">
   <link rel="stylesheet" href="__HOME__/css/news.css">
   <meta name="keyword" content="企业节税案例,个人合规避税,节税案例,避税案例,税务筹划案例,财税规划案例,惠优税">
   <meta name="description" content="惠优税已服务全国各地众多行业,设计并落地实施众多企业合法节税案例,公司合理避税案例,个人节税案例,企业合法避税案例,税务筹划案例,税收策划案例,纳税筹划案例,财税规划案例等众多行业优化税收案例。">
@@ -26,6 +25,7 @@
   <script src='__PUBLIC__/common/js/public.js'></script>
   <script src='__HOME__/js/industry.js'></script>
   <script src="__PUBLIC__/common/js/open.js"></script>
+  <script src='__HOME__/js/lazysizes.min.js' async='async'></script>
   <script>
       var _hmt = _hmt || [];
       (function() {
@@ -69,7 +69,7 @@
           <li>
             <a href="{:url('/home/customer/info',['mid'=>$vo.id])}">
               <div class="item-img">
-                <img src="{$vo.imgs?$vo.imgs:''}" alt="">
+                <img class="lazyload" data-src="{$vo.imgs?$vo.imgs:''}" alt="">
               </div>
               <div class="item-content">
                 <p>
@@ -130,7 +130,7 @@
   <!-- 侧边栏consultation资讯 -->
   <div class="consultation">
     <div>
-      <div class="consultation-title" onclick="alert_open()">咨询方案</div>
+      <div class="consultation-title" onclick="alert_open('惠优税客户案例','右导航')">咨询方案</div>
     </div>
     <div>
       <div class="consultation-title2">联系我们</div>
@@ -147,7 +147,7 @@
     </div>
     <!-- 返回顶部 -->
     <div class='goTop' id="goTop">
-      <div><img src="__HOME__/images/top@2x.png" alt=""></div>
+      <div><img class="lazyload" data-src="__HOME__/images/top@2x.png" alt=""></div>
       <div>顶部</div>
     </div>
   </div>
@@ -155,17 +155,17 @@
 
   <script>
     $(function () {
-      $('.nav ul li').on('click', function () {
-        $(this).addClass('nav-active chosenPage').siblings().removeClass('nav-active chosenPage')
-      })
-      $('.nav ul li').on('mouseenter', function () {
-        $(this).addClass('nav-active').siblings().removeClass('nav-active')
-      })
-      $('.nav').on('mouseleave', function () {
-        $('.nav ul li').removeClass('nav-active')
-        if ($('.chosenPage').length < 1) $('.nav ul li').eq(3).addClass('chosenPage')
-        $('.chosenPage').addClass('nav-active')
-      })
+      // $('.nav ul li').on('click', function () {
+      //   $(this).addClass('nav-active chosenPage').siblings().removeClass('nav-active chosenPage')
+      // })
+      // $('.nav ul li').on('mouseenter', function () {
+      //   $(this).addClass('nav-active').siblings().removeClass('nav-active')
+      // })
+      // $('.nav').on('mouseleave', function () {
+      //   $('.nav ul li').removeClass('nav-active')
+      //   if ($('.chosenPage').length < 1) $('.nav ul li').eq(3).addClass('chosenPage')
+      //   $('.chosenPage').addClass('nav-active')
+      // })
 
       $('.limit').each(function () {
         if ($(this).text().length > 62) {

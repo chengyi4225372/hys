@@ -14,13 +14,13 @@
   <link rel="stylesheet" href="__HOME__/css/programme.css">
   <link rel="stylesheet" href="__HOME__/css/footer.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900">
-  <link rel="stylesheet" href="__HOME__/font/syht.css">
   <meta name="keyword" content="企业节税,个人节税,节税方案,合法避税方法,税务筹划方案,节税产品方案,如何节税方案,如何节税的方法,惠优税">
   <meta name="description" content="惠优税节税筹划行业解决方案,为服务行业,贸易行业,建筑行业等众多行业提供专业的企业合法节税方案,公司合理避税方案,个人节税方案,企业合法避税方法,税务筹划方案,税收策划方案,纳税筹划方案,财税规划方法等众多行业解决方案。">
   <script src="__HOME__/js/jquery.js"></script>
   <script src="__PUBLIC__/assets/plugins/layui/layui.all.js"></script>
   <script src="__HOME__/js/programme.js"></script>
   <script src="__PUBLIC__/common/js/open.js"></script>
+  <script src='__HOME__/js/lazysizes.min.js' async='async'></script>
   <script>
         var _hmt = _hmt || [];
         (function() {
@@ -69,27 +69,27 @@
 
         <ul class="tabCon">
           <li class="activTabCon">
-            <img src="__HOME__/images/tabImgA1.png" alt="">
-            <img src="__HOME__/images/tabImgA2.png" alt="">
-            <img src="__HOME__/images/tabImgA3.png" alt="">
-            <img src="__HOME__/images/tabImgA4.png" alt="">
+            <img class="lazyload" data-src="__HOME__/images/tabImgA1.png" alt="">
+            <img class="lazyload" data-src="__HOME__/images/tabImgA2.png" alt="">
+            <img class="lazyload" data-src="__HOME__/images/tabImgA3.png" alt="">
+            <img class="lazyload" data-src="__HOME__/images/tabImgA4.png" alt="">
           </li>
           <li>
-            <img src="__HOME__/images/tabImgB1.png" alt="">
-            <img src="__HOME__/images/tabImgB2.png" alt="">
-            <img src="__HOME__/images/tabImgB3.png" alt="">
-            <img src="__HOME__/images/tabImgB4.png" alt="">
+            <img class="lazyload" data-src="__HOME__/images/tabImgB1.png" alt="">
+            <img class="lazyload" data-src="__HOME__/images/tabImgB2.png" alt="">
+            <img class="lazyload" data-src="__HOME__/images/tabImgB3.png" alt="">
+            <img class="lazyload" data-src="__HOME__/images/tabImgB4.png" alt="">
           </li>
           <li>
-            <img src="__HOME__/images/tabImgC1.png" alt="">
-            <img src="__HOME__/images/tabImgC2.png" alt="">
-            <img src="__HOME__/images/tabImgC3.png" alt="">
-            <img src="__HOME__/images/tabImgC4.png" alt="">
+            <img class="lazyload" data-src="__HOME__/images/tabImgC1.png" alt="">
+            <img class="lazyload" data-src="__HOME__/images/tabImgC2.png" alt="">
+            <img class="lazyload" data-src="__HOME__/images/tabImgC3.png" alt="">
+            <img class="lazyload" data-src="__HOME__/images/tabImgC4.png" alt="">
           </li>
           <li>
-            <img src="__HOME__/images/tabImgD1.png" alt="">
-            <img src="__HOME__/images/tabImgD2.png" alt="">
-            <img src="__HOME__/images/tabImgD3.png" alt="">
+            <img class="lazyload" data-src="__HOME__/images/tabImgD1.png" alt="">
+            <img class="lazyload" data-src="__HOME__/images/tabImgD2.png" alt="">
+            <img class="lazyload" data-src="__HOME__/images/tabImgD3.png" alt="">
          
           </li>
         </ul>
@@ -146,7 +146,7 @@
   <!-- 侧边栏consultation资讯 -->
   <div class="consultation">
     <div>
-      <div class="consultation-title" onclick="alert_open()">咨询方案</div>
+      <div class="consultation-title" onclick="alert_open('惠优税行业方案','右导航')">咨询方案</div>
     </div>
     <div>
       <div class="consultation-title2">联系我们</div>
@@ -163,7 +163,7 @@
     </div>
     <!-- 返回顶部 -->
     <div class='goTop' id="goTop">
-      <div><img src="__HOME__/images/top@2x.png" alt=""></div>
+      <div><img class="lazyload" data-src="__HOME__/images/top@2x.png" alt=""></div>
       <div>顶部</div>
     </div>
   </div>
@@ -174,17 +174,17 @@
   $(function () {
 
     /* 头部导航点击和hover效果 */
-    $('.nav ul li').on('click', function () {
-      $(this).addClass('nav-active chosenPage').siblings().removeClass('nav-active chosenPage')
-    })
-    $('.nav ul li').on('mouseenter', function () {
-      $(this).addClass('nav-active').siblings().removeClass('nav-active')
-    })
-    $('.nav').on('mouseleave', function () {
-      $('.nav ul li').removeClass('nav-active')
-      if ($('.chosenPage').length < 1) $('.nav ul li').eq(2).addClass('chosenPage')
-      $('.chosenPage').addClass('nav-active')
-    })
+    // $('.nav ul li').on('click', function () {
+    //   $(this).addClass('nav-active chosenPage').siblings().removeClass('nav-active chosenPage')
+    // })
+    // $('.nav ul li').on('mouseenter', function () {
+    //   $(this).addClass('nav-active').siblings().removeClass('nav-active')
+    // })
+    // $('.nav').on('mouseleave', function () {
+    //   $('.nav ul li').removeClass('nav-active')
+    //   if ($('.chosenPage').length < 1) $('.nav ul li').eq(2).addClass('chosenPage')
+    //   $('.chosenPage').addClass('nav-active')
+    // })
 
     /* 选项卡切换 */
     // $('.tab ul li a').on('click', function () {
