@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:75:"/Users/zhanwen/Desktop/hys/public/../application/home/view/index/index.html";i:1580698017;s:67:"/Users/zhanwen/Desktop/hys/application/home/view/common/header.html";i:1580698017;s:67:"/Users/zhanwen/Desktop/hys/application/home/view/common/footer.html";i:1580698017;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:75:"/Users/zhanwen/Desktop/hys/public/../application/home/view/index/index.html";i:1580805331;s:67:"/Users/zhanwen/Desktop/hys/application/home/view/common/header.html";i:1580698017;s:67:"/Users/zhanwen/Desktop/hys/application/home/view/common/footer.html";i:1580698017;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="/static/home/css/index.css">
   <link rel="stylesheet" href="/static/home/font/syht.css">
   <meta name="keyword" content="企业税收筹划,纳税筹划,园区税务筹划,政府园区税务筹划,个人避税,合理节税,节税筹划,合理避税,股权转让避税,惠优税">
-  <meta name="description" content="惠优税利用最安全、高效、合理的节税措施解决税务难题，打造全国地方政府园区联盟式星级服务新典范和园企共同发展大平台！">
+  <meta name="description" content="惠优税利用最安全、高效、合理的节税措施解决税务难题,打造全国地方政府园区联盟式星级服务新典范和园企共同发展大平台。">
   <!-- <link rel="stylesheet" href="/static/home/font/SourceHanSansCN-Normal.css"> -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="/static/assets/plugins/layui/layui.all.js"></script>
@@ -727,7 +727,7 @@
       </div>
     </div>
 
-    <!-- 弹框 -->
+    <!-- 弹框  产品获取方案 -->
     <div class="pop-up-box" id="popbox">
       <div class="form">
         <div class="form-titile">
@@ -738,8 +738,8 @@
           <div><span class="title">您的姓名</span><input type="text" id="contactName" placeholder="请输您的姓名"></div>
           <div><span class="title">联系方式</span><input type="text" id="contactMobile" placeholder="请输入您的手机号"></div>
           <div><span class="title">公司名称</span><input type="text" id="companyName" placeholder="若无公司请填写自雇"></div>
-          <input type='hidden' id='sources' value='惠优税'>
-          <input type='hidden' id='identifications' value='企业税筹'>
+          <input type='hidden' id='sources' value='惠优税首页'>
+          <input type='hidden' id='identifications' value='产品获取方案'>
           <div class="form-btn" onclick="form_btn()">获取方案</div>
         </div>
         <!-- 提交成果后弹窗 -->
@@ -751,6 +751,8 @@
       </div>
 
     </div>
+
+   <!-- 税务筹划解决方案 弹窗 -->
 
 
   </div>

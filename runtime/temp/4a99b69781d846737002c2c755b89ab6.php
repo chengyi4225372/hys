@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:88:"/Users/zhanwen/Desktop/hys/public/../application/home/view/programme/productservice.html";i:1580698017;s:67:"/Users/zhanwen/Desktop/hys/application/home/view/common/header.html";i:1580698017;s:67:"/Users/zhanwen/Desktop/hys/application/home/view/common/footer.html";i:1580698017;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:88:"/Users/zhanwen/Desktop/hys/public/../application/home/view/programme/productservice.html";i:1580794245;s:67:"/Users/zhanwen/Desktop/hys/application/home/view/common/header.html";i:1580698017;s:67:"/Users/zhanwen/Desktop/hys/application/home/view/common/footer.html";i:1580698017;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="/static/home/css/footer.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900">
     <link rel="stylesheet" href="/static/home/font/syht.css">
-    <meta name="keyword" content="惠优税">
-    <meta name="description" content="惠优税">
+    <meta name="keyword" content="合法避税产品,节税产品,税务筹划公司,合法节税方法,税收筹划产品,股权转让节税方法,纳税节税方法,财税节税产品,惠优税">
+    <meta name="description" content="惠优税利用税收洼地为税务负担重,需要合理合法节税的企业,提供专业的节税产品及服务,使企业及个人通过合理合法节税方法,降低税务成本。">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="/static/assets/plugins/layui/layui.all.js"></script>
     <script src="/static/home/js/productservice.js"></script>
